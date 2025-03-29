@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "boringai_project_gmaps_analytics/app.py",
+      "src": "boring_ai_gmaps_analytics/app.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "boringai_project_gmaps_analytics/app.py"
+      "dest": "boring_ai_gmaps_analytics/app.py"
     }
   ]
 }
