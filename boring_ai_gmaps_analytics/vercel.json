@@ -1,0 +1,31 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "api/index.py",
+        "use": "@vercel/python"
+      },
+      {
+        "src": "static/**",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/",
+        "dest": "/static/index.html"
+      },
+      {
+        "src": "/api/(.*)",
+        "dest": "/api/index.py"
+      },
+      {
+        "src": "/static/(.*)",
+        "dest": "/static/$1"
+      }
+    ],
+    "env": {
+      "GOOGLE_API_KEY": "AIzaSyBIOcNl6j9S_4i20QcrDSEb2w9F40waxnk",
+      "OPENROUTER_API_KEY": "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"
+    }
+  }

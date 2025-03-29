@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: boring_ai_gmaps_analytics
+Version: 0.1.0
+Summary: A complete package for Analytics Data Gmaps with AI
+Author: Jiryan Farokhi
+Requires-Python: >=3.9
+Requires-Dist: requests>=2.31.0
+Requires-Dist: pandas>=2.2.1
+Requires-Dist: openai
+Requires-Dist: flask
