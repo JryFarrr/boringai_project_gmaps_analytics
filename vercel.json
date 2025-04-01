@@ -2,25 +2,25 @@
     "version": 2,
     "builds": [
       {
-        "src": "api/index.py",
+        "src": "boring_ai_gmaps_analytics/api/index.py",
         "use": "@vercel/python"
       },
       {
-        "src": "static/**",
+        "src": "boring_ai_gmaps_analytics/static/**",
         "use": "@vercel/static"
       }
     ],
     "routes": [
       {
         "src": "/",
-        "dest": "/static/index.html"
+        "dest": "boring_ai_gmaps_analytics/static/index.html"
       },
       {
-        "src": "/api/(.*)",
-        "dest": "/api/index.py"
+        "src": "boring_ai_gmaps_analytics/api/(.*)",
+        "dest": "boring_ai_gmaps_analytics/api/index.py"
       },
       {
-        "src": "/static/(.*)",
+        "src": "boring_ai_gmaps_analytics/static/(.*)",
         "dest": "/static/$1"
       }
     ],
