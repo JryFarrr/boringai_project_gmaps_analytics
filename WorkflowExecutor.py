@@ -134,7 +134,7 @@ class WorkflowExecutor:
 def run_simulation():
     executor = WorkflowExecutor()
     
-    prompt = "Find top 2 from 5 sushi restaurant in Tokyo that has a rating of at least 4.5 and at least 100 reviews."
+    prompt = "Find 25 sushi restaurant in Tokyo that has a rating of at least 4.5 and at least 100 reviews."
     # prompt nanti diparsing untuk menentukan businessType, location, dan numberOfLeads
     # prompt juga diparsing untuk contraints pada match percentage
     # untuk match percentage disimpan pada instance, dan hanya digunakan di analyze
@@ -163,6 +163,12 @@ def run_simulation():
     # Tampilkan Central Storage setelah selesai
     print("\nFinal Central Storage:")
     print(json.dumps(executor.get_storage(), indent=2))
+    
+    # Save the Central Storage to a JSON file
+    output_file = "central_storage_output.json"
+    with open(output_file, "w") as f:
+        json.dump(executor.get_storage(), f, indent=2)
+    print(f"Central Storage has been saved to {output_file}")
 
 if __name__ == "__main__":
     run_simulation()

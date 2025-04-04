@@ -1,0 +1,802 @@
+    "businessType": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "contact": {
+      "phone": "050-3145-0011",
+      "website": "https://www.noburestaurants.com/tokyo-jp-jp/home/"
+    },
+    "location": {
+      "lat": 35.6663129,
+      "lng": 139.7437919
+    },
+    "negativeReviews": [],
+    "placeName": "NOBU Tokyo",
+    "positiveReviews": [
+      "Great food with an excellent staff and atmosphere. Flavors here are more simple and delicate than other Nobu locations, which is nice as it\u2019s different and unique to Japan. Even got to meet Chef Nobu himself for a few minutes; what a cool guy and a real gentleman.",
+      "I\u2019ve visited Nobu locations all over the world\u2014Monaco, Ibiza, Barcelona, Dubai, the Bahamas, Malibu, Fairfax\u2026 the list goes on. But let me tell you, when it comes to hospitality, Nobu Tokyo stands out as one of the best.\n\nThe service here is impeccable. The staff is attentive, warm, and genuinely makes you feel taken care of. The ambiance strikes the perfect balance\u2014elegant yet inviting, refined but never pretentious. And the food? Classic Nobu, but with that unmistakable Tokyo touch. Every dish is executed flawlessly\u2014fresh, flavorful, and perfectly crafted.\n\nIf you\u2019re in Tokyo and craving top-tier Japanese fusion with A+ service, this is the place to be.",
+      "Came here for our final meal before leaving Tokyo! This was a great experience, we were made to feel welcomed by the staff. Restaurant was not very busy, but we made a reservation before we came.\n\nThe food was great, we tried various items from the menu and they didn\u2019t disappoint, everything we tried was fresh, tasty and flavourful. We thoroughly enjoyed everything.\n\nWe had a cocktail but then tried the sake from the bamboo shoot, this made the sake more flavourful.",
+      "Absolutely loved my experience here\nThe sushi was really good. Atmosphere 10 out of 10. Definitely will come back here if I ever come back to Tokyo, recommend anybody.",
+      "Outstanding fresh sushi, impeccable service. A bit noisy as mostly non Japanese diners. Love how the chefs  greet you when you arrive. Every dish was served perfectly. Champagne and hot and  cold sake also perfect complement."
+    ],
+    "priceRange": "$$$",
+    "rating": 4.3,
+    "totalRatings": 1020
+  },
+  "constraints": {
+    "min_rating": 4.5,
+    "min_reviews": 100,
+    "business_hours": "anytime"
+  }
+}
+Response from analyze: {
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "control",
+    "payload": {
+      "leadCount": "$state.leadCount",
+      "numberOfLeads": "$state.numberOfLeads",
+      "remainingPlaceIds": "$state.remainingPlaceIds",
+      "searchOffset": "$state.searchOffset"
+    }
+  },
+  "result": {
+    "address": "Japan, \u3012105-0001 Tokyo, Minato City, Toranomon, 4-ch\u014dme\u22121\u2212\uff12\uff18 \uff11\uff26",
+    "contact": {
+      "phone": "050-3145-0011",
+      "website": "https://www.noburestaurants.com/tokyo-jp-jp/home/"
+    },
+    "matchPercentage": 65.0,
+    "placeName": "NOBU Tokyo",
+    "summaryPositiveReviews": "Nobu Tokyo offers unique flavors, impeccable service, and a warm atmosphere. Fresh, flavorful dishes and attentive staff make it a standout experie..."
+  },
+  "state": {
+    "leadCount": 17
+  }
+}
+Executing task: control
+Payload: {
+  "leadCount": 17,
+  "numberOfLeads": 25,
+  "remainingPlaceIds": [
+    "ChIJAQAAAO-LGGARKzO3OXXP_mU",
+    "ChIJV4stTX2NGGAR3JcZ-EXcfhM",
+    "ChIJL5gxE9CMGGAR0Vtyrq_cFio"
+  ],
+  "searchOffset": 20
+}
+Response from control: {
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "scrape",
+    "payload": {
+      "placeId": "ChIJAQAAAO-LGGARKzO3OXXP_mU"
+    }
+  },
+  "result": null,
+  "state": {
+    "remainingPlaceIds": [
+      "ChIJV4stTX2NGGAR3JcZ-EXcfhM",
+      "ChIJL5gxE9CMGGAR0Vtyrq_cFio"
+    ]
+  }
+}
+Executing task: scrape
+Payload: {
+  "placeId": "ChIJAQAAAO-LGGARKzO3OXXP_mU"
+}
+Response from scrape: {
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "analyze",
+    "payload": {
+      "leadCount": "$state.leadCount",
+      "placeDetails": {
+        "address": "Japan, \u3012104-0061 Tokyo, Chuo City, Ginza, 6-ch\u014dme\u22124\u2212\uff11\uff16 Hanatsubaki Bldg, 2\u968e",
+        "businessHours": [
+          "Monday: Closed",
+          "Tuesday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
+          "Wednesday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
+          "Thursday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
+          "Friday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
+          "Saturday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
+          "Sunday: Closed"
+        ],
+        "businessType": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "contact": {
+          "phone": "03-3571-7900",
+          "website": "https://sushiya-ginza.myconciergejapan.net/"
+        },
+        "location": {
+          "lat": 35.6713494,
+          "lng": 139.7614256
+        },
+        "negativeReviews": [],
+        "placeName": "Sushi Ya",
+        "positiveReviews": [
+          "Amazing omakase experience, with a very friendly chef who speaks pretty good English. Really fresh seafood (chef emphasizes that it isn't frozen!). Reservation needed as the place can fill up fast.",
+          "Absolutely amazing Omakase dinner in an intimate 8-seater space. Food was grand, and chef recommended sakes that were to our palette - we had 5 different types of sake throughout the entire dinner and it was such an experience. Service was great as well.\n\nWould definitely return for another delicious dinner!",
+          "What a great experience!\nYou have to get a reservation since the place only fits 7 people at once and the master cook will prepare the fresh food directly for you. He is very skill and will explain every plate in English (more or less :) ) . Very fun, entertaining and super yummy. It is a little expensive but completely worth it.",
+          "Honestly Sushi Ya far exceeded my expectations, my partner and I had the nigiri lunch omakase, 16 courses in an intimate 8 person dining setting. Chef has 25 years experience and creates absolutely mouthwatering sushi of the highest quality.\n\nThe restaurant is on the second floor and slightly tricky to locate as the signage isn't in English for tourists.\n\nOne of the most memorable and delicious meals of my life.",      
+          "I had high hopes given the very high ratings here and on local sites, but unfortunately it fell slightly short.\n\nFirst, getting there - there are entryways from both the smaller alley and the main street on the other side.  You need to take the stairs or elevator to the second floor - the restaurants sign will be on the lobby directory.  Check out the pictures.\n\nAs for the service and ambiance, this is a pretty standard 8 seat omakase.  Everyone is exceedingly polite and speaks English well.  All the guests in my seating were American tourists.  The atmosphere is a bit more casual than most high end sushi restaurants - I wouldn't worry too much about dress code.\n\nFinally, the food.  Overall, solid, and better than what you would get from a standard sushi restaurant or kaiten; however, not by so much as to justify the rather high price.  Standouts were the squid and the horse mackerel.  The tuna was sliced a little thinner than I would expect, and the medium tuna had more viscera than I'd expect at this level.  The flounder was somewhat limp.  And then it goes down from there.  The rice was a little too cold - whereas I'd expect it to be closer to room or body temperature.  The fish was all pre-sliced, which opens it to oxidation.  And, finally, the soy/dashi wash was really heavily brushed on everything, so I was salted out by the end.  This is all much more American style than I would expect.\n\nFine overall experience, but wouldn't return, nor would I recommend to friends and family."
+        ],
+        "priceRange": "",
+        "rating": 4.8,
+        "totalRatings": 163
+      }
+    }
+  },
+  "result": null,
+  "state": null
+}
+Executing task: analyze
+Payload: {
+  "leadCount": 17,
+  "placeDetails": {
+    "address": "Japan, \u3012104-0061 Tokyo, Chuo City, Ginza, 6-ch\u014dme\u22124\u2212\uff11\uff16 Hanatsubaki Bldg, 2\u968e",
+    "businessHours": [
+      "Monday: Closed",
+      "Tuesday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
+      "Wednesday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
+      "Thursday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
+      "Friday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
+      "Saturday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
+      "Sunday: Closed"
+    ],
+    "businessType": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "contact": {
+      "phone": "03-3571-7900",
+      "website": "https://sushiya-ginza.myconciergejapan.net/"
+    },
+    "location": {
+      "lat": 35.6713494,
+      "lng": 139.7614256
+    },
+    "negativeReviews": [],
+    "placeName": "Sushi Ya",
+    "positiveReviews": [
+      "Amazing omakase experience, with a very friendly chef who speaks pretty good English. Really fresh seafood (chef emphasizes that it isn't frozen!). Reservation needed as the place can fill up fast.",
+      "Absolutely amazing Omakase dinner in an intimate 8-seater space. Food was grand, and chef recommended sakes that were to our palette - we had 5 different types of sake throughout the entire dinner and it was such an experience. Service was great as well.\n\nWould definitely return for another delicious dinner!",
+      "What a great experience!\nYou have to get a reservation since the place only fits 7 people at once and the master cook will prepare the fresh food directly for you. He is very skill and will explain every plate in English (more or less :) ) . Very fun, entertaining and super yummy. It is a little expensive but completely worth it.",
+      "Honestly Sushi Ya far exceeded my expectations, my partner and I had the nigiri lunch omakase, 16 courses in an intimate 8 person dining setting. Chef has 25 years experience and creates absolutely mouthwatering sushi of the highest quality.\n\nThe restaurant is on the second floor and slightly tricky to locate as the signage isn't in English for tourists.\n\nOne of the most memorable and delicious meals of my life.",
+      "I had high hopes given the very high ratings here and on local sites, but unfortunately it fell slightly short.\n\nFirst, getting there - there are entryways from both the smaller alley and the main street on the other side.  You need to take the stairs or elevator to the second floor - the restaurants sign will be on the lobby directory.  Check out the pictures.\n\nAs for the service and ambiance, this is a pretty standard 8 seat omakase.  Everyone is exceedingly polite and speaks English well.  All the guests in my seating were American tourists.  The atmosphere is a bit more casual than most high end sushi restaurants - I wouldn't worry too much about dress code.\n\nFinally, the food.  Overall, solid, and better than what you would get from a standard sushi restaurant or kaiten; however, not by so much as to justify the rather high price.  Standouts were the squid and the horse mackerel.  The tuna was sliced a little thinner than I would expect, and the medium tuna had more viscera than I'd expect at this level.  The flounder was somewhat limp.  And then it goes down from there.  The rice was a little too cold - whereas I'd expect it to be closer to room or body temperature.  The fish was all pre-sliced, which opens it to oxidation.  And, finally, the soy/dashi wash was really heavily brushed on everything, so I was salted out by the end.  This is all much more American style than I would expect.\n\nFine overall experience, but wouldn't return, nor would I recommend to friends and family."
+    ],
+    "priceRange": "",
+    "rating": 4.8,
+    "totalRatings": 163
+  },
+  "constraints": {
+    "min_rating": 4.5,
+    "min_reviews": 100,
+    "business_hours": "anytime"
+  }
+}
+Response from analyze: {
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "control",
+    "payload": {
+      "leadCount": "$state.leadCount",
+      "numberOfLeads": "$state.numberOfLeads",
+      "remainingPlaceIds": "$state.remainingPlaceIds",
+      "searchOffset": "$state.searchOffset"
+    }
+  },
+  "result": {
+    "address": "Japan, \u3012104-0061 Tokyo, Chuo City, Ginza, 6-ch\u014dme\u22124\u2212\uff11\uff16 Hanatsubaki Bldg, 2\u968e",
+    "contact": {
+      "phone": "03-3571-7900",
+      "website": "https://sushiya-ginza.myconciergejapan.net/"
+    },
+    "matchPercentage": 78.07,
+    "placeName": "Sushi Ya",
+    "summaryPositiveReviews": "Intimate 8-seat omakase offers friendly service, fresh seafood, and diverse sakes. Reservations needed; slightly pricey but memorable. Chef speaks ..."
+  },
+  "state": {
+    "leadCount": 18
+  }
+}
+Executing task: control
+Payload: {
+  "leadCount": 18,
+  "numberOfLeads": 25,
+  "remainingPlaceIds": [
+    "ChIJV4stTX2NGGAR3JcZ-EXcfhM",
+    "ChIJL5gxE9CMGGAR0Vtyrq_cFio"
+  ],
+  "searchOffset": 20
+}
+Response from control: {
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "scrape",
+    "payload": {
+      "placeId": "ChIJV4stTX2NGGAR3JcZ-EXcfhM"
+    }
+  },
+  "result": null,
+  "state": {
+    "remainingPlaceIds": [
+      "ChIJL5gxE9CMGGAR0Vtyrq_cFio"
+    ]
+  }
+}
+Executing task: scrape
+Payload: {
+  "placeId": "ChIJV4stTX2NGGAR3JcZ-EXcfhM"
+}
+Response from scrape: {
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "analyze",
+    "payload": {
+      "leadCount": "$state.leadCount",
+      "placeDetails": {
+        "address": "Japan, \u3012151-8583 Tokyo, Shibuya, Yoyogi, 2-ch\u014dme\u22122\u2212\uff11 \u5c0f\u7530\u6025\u30db\u30c6\u30eb\u30bb\u30f3\u30c1\u30e5\u30ea\u30fc\u30b5\u30b6\u30f3\u30bf\u30ef 19F sushi",
+        "businessHours": [
+          "Monday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+          "Tuesday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+          "Wednesday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+          "Thursday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+          "Friday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+          "Saturday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+          "Sunday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM"
+        ],
+        "businessType": [
+          "grocery_or_supermarket",
+          "store",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "contact": {
+          "phone": "080-7164-5210",
+          "website": "https://www.tablecheck.com/ja/shops/yurakuchokakida/reserve"
+        },
+        "location": {
+          "lat": 35.6863818,
+          "lng": 139.7004424
+        },
+        "negativeReviews": [],
+        "placeName": "Sushi\uff5cYurakucho Kakida\uff5cTokyo",
+        "positiveReviews": [
+          "What an incredible experience! Coming from Australia, this was easily one of the best dining experiences we\u2019ve had in Japan\u2014outstanding quality, affordability, and exceptional customer service all in one.\n\nWe were absolutely blown away by the freshness of the fish, the attentive service, and the unique end-of-course feature: unlimited refills of any dish you loved during the meal. It\u2019s a rare and unforgettable touch that elevated the entire experience.\n\nThis is an absolute must-visit, and I\u2019ll definitely be coming back in the future. Our server truly made the evening special, ensuring we felt welcomed and well cared for\u2014even without speaking Japanese. You\u2019ll leave both full and delighted.\n\nI didn\u2019t get a name of our serve but he\u2019s in the photos. He\u2019s awesome!",
+          "Quality of Sashimi and Sushi are reasonable.  Big pleasant surprise is at the end the chef ask everyone if more sushi is needed.  Super generous as the customer sitting next to me asked for 6 more pieces of Uni Sushi.  The chefs are really nice and funny which made all customers had a very entertaining and enjoyable experience.  However, the fifth star was not given because of the all-you-can-drink service, only one glass at a time and it took quite long to refill or serve another glass.  Furthermore, premium sake on the menu was not available like \u5341\u56db\u4ee3\u3002  Otherwise, spending just 19000 yen for almost all u can eat and drink quality omakase lunch is just unbeatable.",
+          "Highly recommend this omakase course! Tried many different types of sushi (ie. 3 types of tuna, uni, scallop, flounder, bonito, horse mackerel, salmon, unagi, etc)\u2026 was able to order more at the end! Even had a delicious platter of deserts to finish with. Lots of different tasty food, felt very satisfied and full at the end! Super oishi! \u3054\u3061\u305d\u3046\u3055\u307e\u3067\u3057\u305f!",
+          "Kenta is our chef, he\u2019s very friendly and funny. The restaurant staff speaks good English so there are many foreigner visitors that want to try Omakase.\n\nThey start with a round of serving first, the chef tells you want type of fish is coming up. And then after the whole serving, he asked us which type of fish we\u2019d like extra serving, and he\u2019d go get that for us.\n\nA very cheerful experience and you\u2019d walk out extremely full!",
+          "I really enjoyed the high quality food, service and viewpoint that this restaurant provided. The staff was extremely kind and the multiple course sushi meal was excellent! Another bonus is they allow you to have unlimited drinks at three different price points and allow to retry your favorite sushi rolls for no extra charge. This a must if you are staying anywhere in Shinjuku and want to have a high-end sushi experience!"  
+        ],
+        "priceRange": "",
+        "rating": 4.5,
+        "totalRatings": 2275
+      }
+    }
+  },
+  "result": null,
+  "state": null
+}
+Executing task: analyze
+Payload: {
+  "leadCount": 18,
+  "placeDetails": {
+    "address": "Japan, \u3012151-8583 Tokyo, Shibuya, Yoyogi, 2-ch\u014dme\u22122\u2212\uff11 \u5c0f\u7530\u6025\u30db\u30c6\u30eb\u30bb\u30f3\u30c1\u30e5\u30ea\u30fc\u30b5\u30b6\u30f3\u30bf\u30ef 19F sushi",
+    "businessHours": [
+      "Monday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Tuesday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Wednesday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Saturday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+      "Sunday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM"
+    ],
+    "businessType": [
+      "grocery_or_supermarket",
+      "store",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "contact": {
+      "phone": "080-7164-5210",
+      "website": "https://www.tablecheck.com/ja/shops/yurakuchokakida/reserve"
+    },
+    "location": {
+      "lat": 35.6863818,
+      "lng": 139.7004424
+    },
+    "negativeReviews": [],
+    "placeName": "Sushi\uff5cYurakucho Kakida\uff5cTokyo",
+    "positiveReviews": [
+      "What an incredible experience! Coming from Australia, this was easily one of the best dining experiences we\u2019ve had in Japan\u2014outstanding quality, affordability, and exceptional customer service all in one.\n\nWe were absolutely blown away by the freshness of the fish, the attentive service, and the unique end-of-course feature: unlimited refills of any dish you loved during the meal. It\u2019s a rare and unforgettable touch that elevated the entire experience.\n\nThis is an absolute must-visit, and I\u2019ll definitely be coming back in the future. Our server truly made the evening special, ensuring we felt welcomed and well cared for\u2014even without speaking Japanese. You\u2019ll leave both full and delighted.\n\nI didn\u2019t get a name of our serve but he\u2019s in the photos. He\u2019s awesome!",
+      "Quality of Sashimi and Sushi are reasonable.  Big pleasant surprise is at the end the chef ask everyone if more sushi is needed.  Super generous as the customer sitting next to me asked for 6 more pieces of Uni Sushi.  The chefs are really nice and funny which made all customers had a very entertaining and enjoyable experience.  However, the fifth star was not given because of the all-you-can-drink service, only one glass at a time and it took quite long to refill or serve another glass.  Furthermore, premium sake on the menu was not available like \u5341\u56db\u4ee3\u3002  Otherwise, spending just 19000 yen for almost all u can eat and drink quality omakase lunch is just unbeatable.",
+      "Highly recommend this omakase course! Tried many different types of sushi (ie. 3 types of tuna, uni, scallop, flounder, bonito, horse mackerel, salmon, unagi, etc)\u2026 was able to order more at the end! Even had a delicious platter of deserts to finish with. Lots of different tasty food, felt very satisfied and full at the end! Super oishi! \u3054\u3061\u305d\u3046\u3055\u307e\u3067\u3057\u305f!",
+      "Kenta is our chef, he\u2019s very friendly and funny. The restaurant staff speaks good English so there are many foreigner visitors that want to try Omakase.\n\nThey start with a round of serving first, the chef tells you want type of fish is coming up. And then after the whole serving, he asked us which type of fish we\u2019d like extra serving, and he\u2019d go get that for us.\n\nA very cheerful experience and you\u2019d walk out extremely full!",
+      "I really enjoyed the high quality food, service and viewpoint that this restaurant provided. The staff was extremely kind and the multiple course sushi meal was excellent! Another bonus is they allow you to have unlimited drinks at three different price points and allow to retry your favorite sushi rolls for no extra charge. This a must if you are staying anywhere in Shinjuku and want to have a high-end sushi experience!"      
+    ],
+    "priceRange": "",
+    "rating": 4.5,
+    "totalRatings": 2275
+  },
+  "constraints": {
+    "min_rating": 4.5,
+    "min_reviews": 100,
+    "business_hours": "anytime"
+  }
+}
+Response from analyze: {
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "control",
+    "payload": {
+      "leadCount": "$state.leadCount",
+      "numberOfLeads": "$state.numberOfLeads",
+      "remainingPlaceIds": "$state.remainingPlaceIds",
+      "searchOffset": "$state.searchOffset"
+    }
+  },
+  "result": {
+    "address": "Japan, \u3012151-8583 Tokyo, Shibuya, Yoyogi, 2-ch\u014dme\u22122\u2212\uff11 \u5c0f\u7530\u6025\u30db\u30c6\u30eb\u30bb\u30f3\u30c1\u30e5\u30ea\u30fc\u30b5\u30b6\u30f3\u30bf\u30ef 19F sushi",
+    "contact": {
+      "phone": "080-7164-5210",
+      "website": "https://www.tablecheck.com/ja/shops/yurakuchokakida/reserve"
+    },
+    "matchPercentage": 75.0,
+    "placeName": "Sushi\uff5cYurakucho Kakida\uff5cTokyo",
+    "summaryPositiveReviews": "Experience impeccable service, fresh sushi, and unique unlimited refills of favorite dishes. Delightful atmosphere with friendly staff. Must-visit ..."
+  },
+  "state": {
+    "leadCount": 19
+  }
+}
+Executing task: control
+Payload: {
+  "leadCount": 19,
+  "numberOfLeads": 25,
+  "remainingPlaceIds": [
+    "ChIJL5gxE9CMGGAR0Vtyrq_cFio"
+  ],
+  "searchOffset": 20
+}
+Response from control: {
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "scrape",
+    "payload": {
+      "placeId": "ChIJL5gxE9CMGGAR0Vtyrq_cFio"
+    }
+  },
+  "result": null,
+  "state": {
+    "remainingPlaceIds": []
+  }
+}
+Executing task: scrape
+Payload: {
+  "placeId": "ChIJL5gxE9CMGGAR0Vtyrq_cFio"
+}
+Response from scrape: {
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "analyze",
+    "payload": {
+      "leadCount": "$state.leadCount",
+      "placeDetails": {
+        "address": "5-ch\u014dme-24-55 Sendagaya, Shibuya, Tokyo 151-0051, Japan",
+        "businessHours": [
+          "Monday: 11:00\u202fAM\u2009\u2013\u20093:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
+          "Tuesday: 11:00\u202fAM\u2009\u2013\u20093:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
+          "Wednesday: 11:00\u202fAM\u2009\u2013\u20093:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
+          "Thursday: 11:00\u202fAM\u2009\u2013\u20093:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
+          "Friday: 11:00\u202fAM\u2009\u2013\u20093:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
+          "Saturday: 11:00\u202fAM\u2009\u2013\u20093:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
+          "Sunday: 11:00\u202fAM\u2009\u2013\u20093:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM"
+        ],
+        "businessType": [
+          "restaurant",
+          "point_of_interest",
+          "food",
+          "establishment"
+        ],
+        "contact": {
+          "phone": "03-6274-8540",
+          "website": "http://sushitokyo-ten.com/"
+        },
+        "location": {
+          "lat": 35.6884554,
+          "lng": 139.7005282
+        },
+        "negativeReviews": [],
+        "placeName": "Sushi Tokyo Ten",
+        "positiveReviews": [
+          "I came here with my family to have the Omakase. And it did not disappoint. Finding this location can be challenging however just know that it\u2019s on the bottom floor of the station and if you\u2019re coming from the street side, look for a side entrance to a food hall.\n\nThe Omakase that they served was absolutely delicious. There was no course that was not delicious. Although the one course that stood out was the soft tofu. The fish tasted so fresh that my mouth was happy to savor each bite.\n\nThe price for the Omakasa in American dollars is relatively inexpensive compared to what you would pay in America. So it is worth every dollar, or yen I should say.\n\nIt is easy to make reservations online. However, they will only seat you at your reservation time.",
+          "The restaurant is located inside the food hall. It has an intimate feel.\nWe sat at the counter and the chef served us sushi one by one. He was friendly and happy to serve us our food. He told us the names of each dish in Japanese and English. There were lots of fishes and not many fillers. Overall it was a positive experience from booking to dining. We walked away feeling very full.",
+          "Was very lucky to get a seat walking in. Was told I could have a seat if I could be done in 40 mins as all tables have been reserved. The food was great, service quick and effective without making me feel they wanted to kick me out. The next dish was always right there after getting half way through the prior one.\n\nAtmosphere was busy and (action-) packed - as would be expected.",
+          "It was good omakase experience to have however my wife and I agreed that there were many courses that didn\u2019t fit out palette. However, we got to try many different fish that we would have normally avoid at a sushi restaurant.\n\nThe entire dinner lasted for 1 hour and 15 mins. Kudos to the chef as he was really skillful and patient in explaining what fish it was and how to eat the pieces to fully enjoy them. It was a delightful experience for a small amount of money.\n\nIt was memorable, and you should try it once. I\u2019ll go somewhere else next!",
+          "Great sushi! We had the omakase experience for 9.900\u00a5, it was our fist one. Fish and seafood were great, really fresh, and really tasty. At the beginning, they ask if there\u2019s something you don\u2019t et or any allergies . We recommend it!\n@walkingaround.world"
+        ],
+        "priceRange": "$$",
+        "rating": 3.9,
+        "totalRatings": 925
+      }
+    }
+  },
+  "result": null,
+  "state": null
+}
+Executing task: analyze
+Payload: {
+  "leadCount": 19,
+  "placeDetails": {
+    "address": "5-ch\u014dme-24-55 Sendagaya, Shibuya, Tokyo 151-0051, Japan",
+    "businessHours": [
+      "Monday: 11:00\u202fAM\u2009\u2013\u20093:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
+      "Tuesday: 11:00\u202fAM\u2009\u2013\u20093:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
+      "Wednesday: 11:00\u202fAM\u2009\u2013\u20093:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
+      "Thursday: 11:00\u202fAM\u2009\u2013\u20093:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
+      "Friday: 11:00\u202fAM\u2009\u2013\u20093:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
+      "Saturday: 11:00\u202fAM\u2009\u2013\u20093:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
+      "Sunday: 11:00\u202fAM\u2009\u2013\u20093:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM"
+    ],
+    "businessType": [
+      "restaurant",
+      "point_of_interest",
+      "food",
+      "establishment"
+    ],
+    "contact": {
+      "phone": "03-6274-8540",
+      "website": "http://sushitokyo-ten.com/"
+    },
+    "location": {
+      "lat": 35.6884554,
+      "lng": 139.7005282
+    },
+    "negativeReviews": [],
+    "placeName": "Sushi Tokyo Ten",
+    "positiveReviews": [
+      "I came here with my family to have the Omakase. And it did not disappoint. Finding this location can be challenging however just know that it\u2019s on the bottom floor of the station and if you\u2019re coming from the street side, look for a side entrance to a food hall.\n\nThe Omakase that they served was absolutely delicious. There was no course that was not delicious. Although the one course that stood out was the soft tofu. The fish tasted so fresh that my mouth was happy to savor each bite.\n\nThe price for the Omakasa in American dollars is relatively inexpensive compared to what you would pay in America. So it is worth every dollar, or yen I should say.\n\nIt is easy to make reservations online. However, they will only seat you at your reservation time.",
+      "The restaurant is located inside the food hall. It has an intimate feel.\nWe sat at the counter and the chef served us sushi one by one. He was friendly and happy to serve us our food. He told us the names of each dish in Japanese and English. There were lots of fishes and not many fillers. Overall it was a positive experience from booking to dining. We walked away feeling very full.",
+      "Was very lucky to get a seat walking in. Was told I could have a seat if I could be done in 40 mins as all tables have been reserved. The food was great, service quick and effective without making me feel they wanted to kick me out. The next dish was always right there after getting half way through the prior one.\n\nAtmosphere was busy and (action-) packed - as would be expected.",
+      "It was good omakase experience to have however my wife and I agreed that there were many courses that didn\u2019t fit out palette. However, we got to try many different fish that we would have normally avoid at a sushi restaurant.\n\nThe entire dinner lasted for 1 hour and 15 mins. Kudos to the chef as he was really skillful and patient in explaining what fish it was and how to eat the pieces to fully enjoy them. It was a delightful experience for a small amount of money.\n\nIt was memorable, and you should try it once. I\u2019ll go somewhere else next!",
+      "Great sushi! We had the omakase experience for 9.900\u00a5, it was our fist one. Fish and seafood were great, really fresh, and really tasty. At the beginning, they ask if there\u2019s something you don\u2019t et or any allergies . We recommend it!\n@walkingaround.world"
+    ],
+    "priceRange": "$$",
+    "rating": 3.9,
+    "totalRatings": 925
+  },
+  "constraints": {
+    "min_rating": 4.5,
+    "min_reviews": 100,
+    "business_hours": "anytime"
+  }
+}
+Response from analyze: {
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "control",
+    "payload": {
+      "leadCount": "$state.leadCount",
+      "numberOfLeads": "$state.numberOfLeads",
+      "remainingPlaceIds": "$state.remainingPlaceIds",
+      "searchOffset": "$state.searchOffset"
+    }
+  },
+  "result": {
+    "address": "5-ch\u014dme-24-55 Sendagaya, Shibuya, Tokyo 151-0051, Japan",
+    "contact": {
+      "phone": "03-6274-8540",
+      "website": "http://sushitokyo-ten.com/"
+    },
+    "matchPercentage": 44.41,
+    "placeName": "Sushi Tokyo Ten",
+    "summaryPositiveReviews": "Delicious and affordable omakase with fresh fish. Chef is friendly, explains dishes, and offers a memorable experience. Easy reservations."
+  },
+  "state": {
+    "leadCount": 20
+  }
+}
+Executing task: control
+Payload: {
+  "leadCount": 20,
+  "numberOfLeads": 25,
+  "remainingPlaceIds": [],
+  "searchOffset": 20
+}
+Response from control: {
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "search",
+    "payload": {
+      "businessType": "$state.businessType",
+      "location": "$state.location",
+      "nextPageToken": "$state.nextPageToken",
+      "numberOfLeads": "$state.numberOfLeads",
+      "searchOffset": "$state.searchOffset"
+    }
+  },
+  "result": null,
+  "state": {
+    "searchOffset": 40
+  }
+}
+Executing task: search
+Payload: {
+  "businessType": "sushi restaurant",
+  "location": "Tokyo",
+  "nextPageToken": "AeeoHcKqDW6o1Uhs8k505uNO4ajyptyGH8OnFeWkFVRpeQaMWU4QdQ6eJ-KM3qr5jraEgK6UtWtWfPkUQW-jTZk3GG4gk6j7VNpK0TWIB5xMyfmilGo-PIHbe3yQ0K9le5le58WZngpu4WQUYGwPxKZxlni7uK8YrzKgQ_WHsv8dFNNCpOQ9MVdU4wp12dltxIq_EzersO4eN7lo898GQoN8HYzQ3l2ksj23LlD0QMEB8mUwzJEZnLmZW1rx1cfLHsYZYBJ5U9LoyZxVqhnfGxBdgp2DsdlF811ZgCgH4rLnYuz6w88n5EZU3gHXxZ4VgLoLMSIJ0PWCe4yHtnV2xzGR_cFOc9NWeJP5A_Y-tfLuAHWRGV2JwpEBTTNR9HYzK07TUhLWHI3k7HeCzNSlpWAbgPMeapdYPoc",
+  "numberOfLeads": 25,
+  "searchOffset": 40
+}
+Response from search: {
+  "done": true,
+  "error": "No more leads needed",
+  "next": null,
+  "result": null,
+  "state": null
+}
+Workflow completed!
+
+Final Central Storage:
+{
+  "$id": "700e19a6-3546-48af-8081-255e41938684",
+  "$state": {
+    "businessType": "sushi restaurant",
+    "leadCount": 20,
+    "location": "Tokyo",
+    "numberOfLeads": 25,
+    "remainingPlaceIds": [],
+    "searchOffset": 40,
+    "nextPageToken": "AeeoHcKqDW6o1Uhs8k505uNO4ajyptyGH8OnFeWkFVRpeQaMWU4QdQ6eJ-KM3qr5jraEgK6UtWtWfPkUQW-jTZk3GG4gk6j7VNpK0TWIB5xMyfmilGo-PIHbe3yQ0K9le5le58WZngpu4WQUYGwPxKZxlni7uK8YrzKgQ_WHsv8dFNNCpOQ9MVdU4wp12dltxIq_EzersO4eN7lo898GQoN8HYzQ3l2ksj23LlD0QMEB8mUwzJEZnLmZW1rx1cfLHsYZYBJ5U9LoyZxVqhnfGxBdgp2DsdlF811ZgCgH4rLnYuz6w88n5EZU3gHXxZ4VgLoLMSIJ0PWCe4yHtnV2xzGR_cFOc9NWeJP5A_Y-tfLuAHWRGV2JwpEBTTNR9HYzK07TUhLWHI3k7HeCzNSlpWAbgPMeapdYPoc"
+  },
+  "$results": [
+    {
+      "address": "Japan, \u3012160-0021 Tokyo, Shinjuku City, Kabukich\u014d, 2-ch\u014dme\u221225\u2212\uff18 \u30a8\u30b3\u30d7\u30ec\u30a4\u30b9\u65b0\u5bbf \uff11F",
+      "contact": {
+        "phone": "03-6457-6612",
+        "website": "http://site-1229809-8757-747.mystrikingly.com/"
+      },
+      "matchPercentage": 80.0,
+      "placeName": "KABUKI Sushi",
+      "summaryPositiveReviews": "Kabuki Sushi offers exceptional omakase and sushi with fresh, flavorful options, excellent service, and a chill vibe. Reservations recommended."
+    },
+    {
+      "address": "Japan, \u3012106-0031 Tokyo, Minato City, Nishiazabu, 4-ch\u014dme\u22121\u2212\uff11\uff15 \u30bb\u30d6\u30f3\u897f\u9ebb\u5e03 B1F",
+      "contact": {
+        "phone": "03-3499-9178",
+        "website": "https://www.sushisyomasa.com/"
+      },
+      "matchPercentage": 79.83,
+      "placeName": "Sushisho Masa",
+      "summaryPositiveReviews": "Experience an exceptional Omakase with fresh, beautifully crafted dishes and attentive service. Book in advance; 50+ courses over 2.5 hours. Welcom..."
+    },
+    {
+      "address": "8-ch\u014dme-7-6 Ginza, Chuo City, Tokyo 104-0061, Japan",
+      "contact": {
+        "phone": "03-3571-6523",
+        "website": "http://www.kyubey.jp/"
+      },
+      "matchPercentage": 65.0,
+      "placeName": "Ginza Ky\u016bbey Honten",
+      "summaryPositiveReviews": "Consistent, high-quality sushi with fresh ingredients and great value. Friendly, accommodating staff, recommended booking ahead but walk-ins possible."
+    },
+    {
+      "address": "Japan, \u3012106-0032 Tokyo, Minato City, Roppongi, 1-ch\u014dme\u22124\u2212\uff15 ARK Hills South Tower, 1F",
+      "contact": {
+        "phone": "03-3589-4412",
+        "website": "https://www.arkhills.com/gourmet_shops/0010.html"
+      },
+      "matchPercentage": 69.23,
+      "placeName": "Saito",
+      "summaryPositiveReviews": "Sushi Saito offers an unparalleled sushi experience with perfect balance, exceptional tsumami and nigiri, fresh seasonal seafood, and engaging chef..."
+    },
+    {
+      "address": "Japan, \u3012104-0061 Tokyo, Chuo City, Ginza, 8-ch\u014dme\u22122, 3\u756a\u5148 \u6771\u4eac\u9ad8\u901f\u9053\u8def\u5c71\u4e0b\u30d3\u30eb \uff11\u968e",
+      "contact": {
+        "phone": "03-5568-1212",
+        "website": "http://www.sushinomidori.co.jp/"
+      },
+      "matchPercentage": 65.0,
+      "placeName": "Sushi no Midori",
+      "summaryPositiveReviews": "Exceptional sushi, friendly staff, great value for money without intimidation, efficient ticket system for queues, and accommodating dietary changes."
+    },
+    {
+      "address": "Japan, \u3012104-0061 Tokyo, Chuo City, Ginza, 8-ch\u014dme\u221210\u2212\uff12 \u30eb\u30a2\u30f3\u30d3\u30eb \u5730\u4e0b1F", 
+      "contact": {
+        "phone": "03-6264-5855",
+        "website": "https://sushi-arai.com/"
+      },
+      "matchPercentage": 71.56,
+      "placeName": "Sushi Arai",
+      "summaryPositiveReviews": "Chef Usui\u2019s sushi shop offers top-notch quality, exceptional tuna, skilled knife work, and a warm atmosphere. The experience balances excellent ser..."
+    },
+    {
+      "address": "Japan, \u3012107-0052 Tokyo, Minato City, Akasaka, 3-ch\u014dme\u221210\u2212\uff11 \u5bfe\u7fe0\u9928\u30d3\u30eb 1F",
+      "contact": {
+        "phone": "03-6659-7288",
+        "website": "https://itamae.co.jp/shop/akasaka/"
+      },
+      "matchPercentage": 60.0,
+      "placeName": "TOKYO SUSHI ITAMAE SUSHI Akasaka",
+      "summaryNegativeReviews": "Customers reported poor service, high prices, and low sushi quality with mistakes in orders and inattentive staff. Consider improving staff trainin...",
+      "summaryPositiveReviews": "Customers praise the sushi and sashimi quality and freshness but find prices high. Service inconsistencies noted; needs more organization."
+    },
+    {
+      "address": "Japan, \u3012150-0043 Tokyo, Shibuya, D\u014dgenzaka, 2-ch\u014dme\u221229\u2212\uff11\uff11 Central Bldg. 6, \uff11\u968e",    
+      "contact": {
+        "phone": "03-3462-0241",
+        "website": "https://www.genkisushi.co.jp/search/map.php?id=232&utm_source=gmb&utm_medium=referral&utm_campaign=gmb&utm_content=U312"      
+      },
+      "matchPercentage": 65.0,
+      "placeName": "Uobei Shibuya Dogenzaka Store",
+      "summaryPositiveReviews": "Fun, affordable sushi with fast delivery via touchscreen ordering. Fresh tuna, salmon, easy ordering, and great value make it popular among locals ..."
+    },
+    {
+      "address": "Japan, \u3012150-0013 Tokyo, Shibuya, Ebisu, 2-ch\u014dme\u221237\u2212\uff18 \u30b0\u30e9\u30f3\u30c7\u30e5\u30aa\u5e83\u5c3e 1F",
+      "contact": {
+        "phone": "050-3390-0121",
+        "website": "https://gguh800.gorp.jp/"
+      },
+      "matchPercentage": 76.73,
+      "placeName": "Sushi Akira",
+      "summaryPositiveReviews": "Akira Sushi offers exceptional hospitality, expertly prepared dishes, and a standout omakase experience. Reservations are essential due to high dem..."
+    },
+    {
+      "address": "Japan, \u3012104-0061 Tokyo, Chuo City, Ginza, 7-ch\u014dme\u221211\u2212\uff16 Ginza Isono Bldg., 2F",
+      "contact": {
+        "phone": "03-3575-7880",
+        "website": "https://sushi-takeru.com/"
+      },
+      "matchPercentage": 72.12,
+      "placeName": "Sushi Takeru",
+      "summaryNegativeReviews": "Food is average; staff is disrespectful to non-Japanese speakers. Improve customer service and cultural sensitivity.",
+      "summaryPositiveReviews": "Sushi Takeru offers an authentic, high-quality omakase experience with standout tuna, excellent service, and an intimate setting. Reservations reco..."
+    },
+    {
+      "address": "\u30a2\u30c3\u30c8\u30db\u30fc\u30e0\u30b9\u30af\u30a8\u30a2 2F, 4-ch\u014dme-24-8 Minamiaoyama, Minato City, Tokyo 107-0062, Japan",
+      "contact": {
+        "phone": "03-6803-8436",
+        "website": "http://www.sushi-m.com/"
+      },
+      "matchPercentage": 68.32,
+      "placeName": "Sushi m",
+      "summaryPositiveReviews": "Sushi M provides an exceptional dining experience with fresh ingredients, expertly matched drinks, and attentive, knowledgeable staff, making guest..."
+    },
+    {
+      "address": "Japan, \u3012104-0061 Tokyo, Chuo City, Ginza, 7-ch\u014dme\u22128\u2212\uff11\uff13 Brown Place\uff19\uff26",
+      "contact": {
+        "phone": "03-6253-7331",
+        "website": "http://sushi-yoshitake.com/"
+      },
+      "matchPercentage": 60.23,
+      "placeName": "Sushi Yoshitake",
+      "summaryNegativeReviews": "Customers find it difficult to book, consider it overpriced, and criticize rude staff conduct, notably poor service from a staff member enforcing p...",
+      "summaryPositiveReviews": "Sushi Yoshitake offers an outstanding, personalized dining experience with expertly crafted sushi and a calm, sensory-focused atmosphere. The chef'..."
+    },
+    {
+      "address": "6-ch\u014dme-21-2 Tsukiji, Chuo City, Tokyo 104-0045, Japan",
+      "contact": {
+        "phone": "03-3541-3738",
+        "website": "N/A"
+      },
+      "matchPercentage": 70.0,
+      "placeName": "Sushi Dai",
+      "summaryPositiveReviews": "Sushi Dai offers excellent value omakase with fresh ingredients, friendly staff, and English menus. Highly recommended, but expect morning crowds."
+    },
+    {
+      "address": "Japan, \u3012160-0004 Tokyo, Shinjuku City, Yotsuya, 1-ch\u014dme\u2212\uff11\uff11 \u967d\u81e8\u5802\u30d3\u30eb 1F",
+      "contact": {
+        "phone": "03-3351-6387",
+        "website": "N/A"
+      },
+      "matchPercentage": 73.62,
+      "placeName": "Sushi Sho Yotsuya",
+      "summaryNegativeReviews": "Customers find the lunch service and food, including tea, mild and unremarkable. Reservations feel rushed; consider enhancing flavors and timing.",
+      "summaryPositiveReviews": "Customers praise the authentic Japanese food, particularly the Chirashi Don, highlighting fresh, quality ingredients and great value. Lunch is limi..."
+    },
+    {
+      "address": "6-ch\u014dme-5-1 Toyosu, Koto City, Tokyo 135-0061, Japan",
+      "contact": {
+        "phone": "03-6633-0042",
+        "website": "https://twitter.com/sushidai_toyosu?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+      },
+      "matchPercentage": 75.0,
+      "placeName": "Sushi Dai",
+      "summaryPositiveReviews": "Sushi Dai offers fresh, top-notch sushi with engaging chefs, making it worth the early wake-up. Improvements needed in lineup and reservation proce..."
+    },
+    {
+      "address": "2-ch\u014dme-24-8 Nishiazabu, Minato City, Tokyo 106-0031, Japan",
+      "contact": {
+        "phone": "03-6712-5533",
+        "website": "https://www.sushi-tou.com/"
+      },
+      "matchPercentage": 82.36,
+      "placeName": "Sushi Tou",
+      "summaryPositiveReviews": "Customers praise Sushi Tou for its intimate setting, exceptional sushi quality, chef interactions, and impeccable service, making it highly recomme..."
+    },
+    {
+      "address": "Japan, \u3012105-0001 Tokyo, Minato City, Toranomon, 4-ch\u014dme\u22121\u2212\uff12\uff18 \uff11\uff26",
+      "contact": {
+        "phone": "050-3145-0011",
+        "website": "https://www.noburestaurants.com/tokyo-jp-jp/home/"
+      },
+      "matchPercentage": 65.0,
+      "placeName": "NOBU Tokyo",
+      "summaryPositiveReviews": "Nobu Tokyo offers unique flavors, impeccable service, and a warm atmosphere. Fresh, flavorful dishes and attentive staff make it a standout experie..."
+    },
+    {
+      "address": "Japan, \u3012104-0061 Tokyo, Chuo City, Ginza, 6-ch\u014dme\u22124\u2212\uff11\uff16 Hanatsubaki Bldg, 2\u968e",
+      "contact": {
+        "phone": "03-3571-7900",
+        "website": "https://sushiya-ginza.myconciergejapan.net/"
+      },
+      "matchPercentage": 78.07,
+      "placeName": "Sushi Ya",
+      "summaryPositiveReviews": "Intimate 8-seat omakase offers friendly service, fresh seafood, and diverse sakes. Reservations needed; slightly pricey but memorable. Chef speaks ..."
+    },
+    {
+      "address": "Japan, \u3012151-8583 Tokyo, Shibuya, Yoyogi, 2-ch\u014dme\u22122\u2212\uff11 \u5c0f\u7530\u6025\u30db\u30c6\u30eb\u30bb\u30f3\u30c1\u30e5\u30ea\u30fc\u30b5\u30b6\u30f3\u30bf\u30ef 19F sushi",
+      "contact": {
+        "phone": "080-7164-5210",
+        "website": "https://www.tablecheck.com/ja/shops/yurakuchokakida/reserve"
+      },
+      "matchPercentage": 75.0,
+      "placeName": "Sushi\uff5cYurakucho Kakida\uff5cTokyo",
+      "summaryPositiveReviews": "Experience impeccable service, fresh sushi, and unique unlimited refills of favorite dishes. Delightful atmosphere with friendly staff. Must-visit ..."
+    },
+    {
+      "address": "5-ch\u014dme-24-55 Sendagaya, Shibuya, Tokyo 151-0051, Japan",
+      "contact": {
+        "phone": "03-6274-8540",
+        "website": "http://sushitokyo-ten.com/"
+      },
+      "matchPercentage": 44.41,
+      "placeName": "Sushi Tokyo Ten",
+      "summaryPositiveReviews": "Delicious and affordable omakase with fresh fish. Chef is friendly, explains dishes, and offers a memorable experience. Easy reservations."
+    }
+  ],
+  "$metadata": {
+    "createdAt": "2025-04-04T15:33:44.947804+00:00Z",
+    "startedAt": "2025-04-04T15:33:48.014834+00:00Z",
+    "executionTotal": 63
+  }
+}
+Central Storage has been saved to central_storage_output.json
+        "website": "http://sushitokyo-ten.com/"
+      },
+      "matchPercentage": 44.41,
+      "placeName": "Sushi Tokyo Ten",
+      "summaryPositiveReviews": "Delicious and affordable omakase with fresh fish. Chef is friendly, explains dishes, and offers a memorable experience. Easy reservations."
+    }
+  ],
+  "$metadata": {
+    "createdAt": "2025-04-04T15:33:44.947804+00:00Z",
+    "startedAt": "2025-04-04T15:33:48.014834+00:00Z",
+    "executionTotal": 63
+  }
+}
+Central Storage has been saved to central_storage_output.json

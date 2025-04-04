@@ -66,6 +66,9 @@ Output: {"business_type":"salon","location":"Bandung","min_rating":4.2,"min_revi
 Input: "Find top 5 sushi restaurants in Tokyo from 200 restaurants that has a rating of at least 4.5 and at least 100 reviews."
 Output: {"business_type":"sushi restaurants","location":"Tokyo","min_rating":4.5,"min_reviews":100,"price_range":"","business_hours":"anytime","keywords":"","numberOfLeads":200,"topPlaces":5}
 
+Input (only numberOfLeads): "Find 25 sushi restaurants in Tokyo that has a rating of at least 4.5 and at least 100 reviews."
+Output: {"business_type":"sushi restaurants","location":"Tokyo","min_rating":4.5,"min_reviews":100,"price_range":"","business_hours":"anytime","keywords":"","numberOfLeads":25,"topPlaces":""}
+
 Input: "Find the best Italian restaurant in New York with at least 4.7 rating."
 Output: {"business_type":"Italian restaurant","location":"New York","min_rating":4.7,"min_reviews":0,"price_range":"","business_hours":"anytime","keywords":"","numberOfLeads":"","topPlaces":""}
 
