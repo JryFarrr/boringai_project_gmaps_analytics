@@ -4,6 +4,7 @@ import requests
 import json
 import os
 from dotenv import load_dotenv
+from services.prompt_parser import parse_prompt
 
 # Load environment variables from .env file
 load_dotenv()
@@ -23,6 +24,9 @@ class WorkflowExecutor:
         }
         # Get API base URL from environment variable
         self.api_base_url = os.getenv("API_BASE_URL", "http://localhost:5000/task")
+        
+        # Menyimpan parameter sebagai properti kelas (bukan dalam storage)
+        self.parameters = {}
 
     def update_state(self, new_state):
         """Memperbarui $state dengan data baru menggunakan non-destructive patching"""
@@ -47,8 +51,26 @@ class WorkflowExecutor:
 
     def execute_task(self, task_key, payload):
         """Memanggil endpoint tugas dan memproses respons"""
+        # Enrich payload dengan parameter untuk task analyze
+        if task_key == "analyze" and self.parameters:
+            # Salin payload asli
+            enriched_payload = payload.copy()
+            
+            # Tambahkan parameter constraints yang diperlukan
+            constraint_keys = ["min_rating", "min_reviews", "price_range", 
+                              "business_hours", "keywords", "topPlaces"]
+            
+            for key in constraint_keys:
+                if key in self.parameters and self.parameters[key]:
+                    enriched_payload[key] = self.parameters[key]
+                    
+            payload = enriched_payload
+
         # URL endpoint from environment variable
         url = f"{self.api_base_url}/{task_key}"
+        print(f"Executing task: {task_key}")
+        print(f"Payload: {json.dumps(payload, indent=2)}")
+        
         try:
             response = requests.post(url, json=payload)
             response.raise_for_status()  # Lempar error jika status bukan 200
@@ -57,6 +79,7 @@ class WorkflowExecutor:
             return False
 
         data = response.json()
+        print(f"Response from {task_key}: {json.dumps(data, indent=2)}")
 
         # Proses respons sesuai unified contract
         self.update_state(data.get("state"))
@@ -76,9 +99,14 @@ class WorkflowExecutor:
 
         return True
 
-    def start_workflow(self, initial_input):
-        """Memulai workflow dengan input awal dari pengguna"""
+    def start_workflow(self, initial_input, parameters=None):
+        """Memulai workflow dengan input awal dari pengguna dan parameter tambahan"""
         self.storage["$metadata"]["startedAt"] = datetime.utcnow().isoformat() + "Z"
+        
+        # Simpan parameters sebagai properti kelas
+        if parameters:
+            self.parameters = parameters
+            
         return self.execute_task("input", initial_input)
 
     def get_storage(self):
@@ -89,20 +117,35 @@ class WorkflowExecutor:
 def run_simulation():
     executor = WorkflowExecutor()
     
-    # Input awal dari pengguna
+    prompt = "Find top 10 from 20 sushi restaurant in Tokyo that has a rating of at least 4.5 and at least 100 reviews."
+    # prompt nanti diparsing untuk menentukan businessType, location, dan numberOfLeads
+    # prompt juga diparsing untuk contraints pada match percentage
+    # untuk match percentage disimpan pada instance, dan hanya digunakan di analyze
+    
+    parameters = parse_prompt(prompt)
+    
+    # Create initial_input with business_type, location and numberOfLeads
     initial_input = {
-        "businessType": "Coffee Shop",
-        "location": "New York",
-        "numberOfLeads": 10
+        "business_type": parameters.get("business_type", ""),
+        "location": parameters.get("location", ""),
+        "numberOfLeads": parameters.get("numberOfLeads", "")
     }
     
-    # Jalankan workflow
-    print("Starting workflow...")
-    executor.start_workflow(initial_input)
+    # If numberOfLeads is empty, set it to 20; otherwise keep the original value
+    if initial_input["numberOfLeads"] == "":
+        initial_input["numberOfLeads"] = 20
+        parameters["numberOfLeads"] = 20
+        
+    print(f"Initial input: {initial_input}")
+    print(f"Full parameters: {parameters}")
+
+    # Jalankan workflow with parameters
+    # print("Starting workflow...")
+    # executor.start_workflow(initial_input, parameters)
     
-    # Tampilkan Central Storage setelah selesai
-    print("\nFinal Central Storage:")
-    print(json.dumps(executor.get_storage(), indent=2))
+    # # Tampilkan Central Storage setelah selesai
+    # print("\nFinal Central Storage:")
+    # print(json.dumps(executor.get_storage(), indent=2))
 
 if __name__ == "__main__":
     run_simulation()
