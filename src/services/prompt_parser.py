@@ -4,8 +4,8 @@ Module for parsing user prompts and extracting search parameters
 
 import json
 import re
-from config.config import DEFAULT_SEARCH_PARAMS
-from services.api_clients.factory import create_client
+from src.config.config import DEFAULT_SEARCH_PARAMS
+from src.services.api_clients.factory import create_client
 
 def get_system_prompt():
     """

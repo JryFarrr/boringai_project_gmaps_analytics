@@ -4,7 +4,7 @@ OpenAI API client implementation
 
 import os
 from openai import OpenAI
-from config.config import OPENAI_API_KEY
+from src.config.config import OPENAI_API_KEY
 
 def create_openai_client(api_key=None, organization=None):
     """

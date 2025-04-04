@@ -2,8 +2,8 @@
 Factory module for creating API clients
 """
 
-from services.api_clients.openai_client import create_openai_client
-from services.api_clients.openrouter_client import create_openrouter_client
+from src.services.api_clients.openai_client import create_openai_client
+from src.services.api_clients.openrouter_client import create_openrouter_client
 
 def create_client(provider="openai", **kwargs):
     """

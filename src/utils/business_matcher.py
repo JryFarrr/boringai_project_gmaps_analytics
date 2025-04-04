@@ -5,7 +5,7 @@ Module for matching businesses to search criteria (Codebase)
 import re
 from datetime import datetime
 import math
-from config.config import MATCH_WEIGHTS
+from src.config.config import MATCH_WEIGHTS
 
 
 def match_price_range(price_symbols, required_price_range):

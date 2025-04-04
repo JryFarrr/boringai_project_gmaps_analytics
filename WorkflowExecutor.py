@@ -1,10 +1,10 @@
 import uuid
-from datetime import datetime
+from datetime import datetime, UTC
 import requests
 import json
 import os
 from dotenv import load_dotenv
-from services.prompt_parser import parse_prompt
+from src.services.prompt_parser import parse_prompt
 
 # Load environment variables from .env file
 load_dotenv()
@@ -17,7 +17,7 @@ class WorkflowExecutor:
             "$state": {},              # State sementara untuk workflow
             "$results": [],            # Hasil akumulasi dari tugas
             "$metadata": {             # Metadata opsional
-                "createdAt": datetime.utcnow().isoformat() + "Z",
+                "createdAt": datetime.now(UTC).isoformat() + "Z",
                 "startedAt": None,
                 "executionTotal": 0
             }
@@ -56,15 +56,21 @@ class WorkflowExecutor:
             # Salin payload asli
             enriched_payload = payload.copy()
             
+            # Tambahkan parameter constraints dalam objek terpisah
+            enriched_payload["constraints"] = {}
+            
             # Tambahkan parameter constraints yang diperlukan
             constraint_keys = ["min_rating", "min_reviews", "price_range", 
-                              "business_hours", "keywords", "topPlaces"]
+                               "business_hours", "keywords", "topPlaces"]
             
             for key in constraint_keys:
                 if key in self.parameters and self.parameters[key]:
-                    enriched_payload[key] = self.parameters[key]
+                    enriched_payload["constraints"][key] = self.parameters[key]
                     
             payload = enriched_payload
+        
+        elif task_key == "control":
+            return True
 
         # URL endpoint from environment variable
         url = f"{self.api_base_url}/{task_key}"
@@ -77,31 +83,31 @@ class WorkflowExecutor:
         except requests.RequestException as e:
             print(f"Error calling {task_key}: {str(e)}")
             return False
-
+    
         data = response.json()
         print(f"Response from {task_key}: {json.dumps(data, indent=2)}")
-
+    
         # Proses respons sesuai unified contract
         self.update_state(data.get("state"))
         self.append_result(data.get("result"))
         self.storage["$metadata"]["executionTotal"] += 1
-
+    
         # Cek apakah workflow selesai
         if data.get("done"):
             print("Workflow completed!")
             return False
-
+    
         # Lanjutkan ke tugas berikutnya jika ada
         next_task = data.get("next")
         if next_task:
             resolved_payload = self.resolve_jsonpath(next_task["payload"])
             return self.execute_task(next_task["key"], resolved_payload)
-
+    
         return True
 
     def start_workflow(self, initial_input, parameters=None):
         """Memulai workflow dengan input awal dari pengguna dan parameter tambahan"""
-        self.storage["$metadata"]["startedAt"] = datetime.utcnow().isoformat() + "Z"
+        self.storage["$metadata"]["startedAt"] = datetime.now(UTC).isoformat() + "Z"
         
         # Simpan parameters sebagai properti kelas
         if parameters:
@@ -117,7 +123,7 @@ class WorkflowExecutor:
 def run_simulation():
     executor = WorkflowExecutor()
     
-    prompt = "Find top 10 from 20 sushi restaurant in Tokyo that has a rating of at least 4.5 and at least 100 reviews."
+    prompt = "Find top 2 from 5 sushi restaurant in Tokyo that has a rating of at least 4.5 and at least 100 reviews."
     # prompt nanti diparsing untuk menentukan businessType, location, dan numberOfLeads
     # prompt juga diparsing untuk contraints pada match percentage
     # untuk match percentage disimpan pada instance, dan hanya digunakan di analyze
@@ -126,7 +132,7 @@ def run_simulation():
     
     # Create initial_input with business_type, location and numberOfLeads
     initial_input = {
-        "business_type": parameters.get("business_type", ""),
+        "businessType": parameters.get("business_type", ""),
         "location": parameters.get("location", ""),
         "numberOfLeads": parameters.get("numberOfLeads", "")
     }
@@ -140,8 +146,8 @@ def run_simulation():
     print(f"Full parameters: {parameters}")
 
     # Jalankan workflow with parameters
-    # print("Starting workflow...")
-    # executor.start_workflow(initial_input, parameters)
+    print("Starting workflow...")
+    executor.start_workflow(initial_input, parameters)
     
     # # Tampilkan Central Storage setelah selesai
     # print("\nFinal Central Storage:")

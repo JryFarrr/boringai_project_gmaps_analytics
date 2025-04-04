@@ -4,7 +4,7 @@ OpenRouter API client implementation
 
 import os
 from openai import OpenAI
-from config.config import OPENROUTER_API_KEY
+from src.config.config import OPENROUTER_API_KEY
 
 def create_openrouter_client(api_key=None, referer_url=None, site_name=None):
     """
