@@ -69,9 +69,20 @@ class WorkflowExecutor:
                     
             payload = enriched_payload
         
+        # For control task, prepare complete payload with all required fields
         elif task_key == "control":
-            return True
-
+            # Ensure all required fields are included
+            complete_payload = {
+                "leadCount": self.storage["$state"].get("leadCount", 0),
+                "numberOfLeads": self.storage["$state"].get("numberOfLeads", 0),
+                "remainingPlaceIds": self.storage["$state"].get("remainingPlaceIds", []),
+                "searchOffset": self.storage["$state"].get("searchOffset", 0)
+            }
+            
+            # Update with any values from the original payload
+            complete_payload.update(payload)
+            payload = complete_payload
+    
         # URL endpoint from environment variable
         url = f"{self.api_base_url}/{task_key}"
         print(f"Executing task: {task_key}")
@@ -149,9 +160,9 @@ def run_simulation():
     print("Starting workflow...")
     executor.start_workflow(initial_input, parameters)
     
-    # # Tampilkan Central Storage setelah selesai
-    # print("\nFinal Central Storage:")
-    # print(json.dumps(executor.get_storage(), indent=2))
+    # Tampilkan Central Storage setelah selesai
+    print("\nFinal Central Storage:")
+    print(json.dumps(executor.get_storage(), indent=2))
 
 if __name__ == "__main__":
     run_simulation()
