@@ -17,7 +17,13 @@ def scrape_route():
             "formatted_phone_number",
             "website",
             "price_level",
-            "reviews"
+            "reviews",
+            "formatted_address",
+            "geometry",
+            "rating",
+            "user_ratings_total",
+            "opening_hours",
+            "types"
         ]
         place_details = get_place_details(place_id, fields=fields)
         print(place_details)
@@ -40,6 +46,12 @@ def scrape_route():
                 "phone": place_details.get('formatted_phone_number', 'N/A'),  # Default: 'N/A'
                 "website": place_details.get('website', 'N/A')  # Default: 'N/A'
             },
+            "address": place_details.get('formatted_address', 'N/A'),
+            "location": place_details.get('geometry', {}).get('location', {}),
+            "rating": place_details.get('rating', 0.0),
+            "totalRatings": place_details.get('user_ratings_total', 0),
+            "businessHours": place_details.get('opening_hours', {}).get('weekday_text', []),
+            "businessType": place_details.get('types', []),
             "priceRange": price_range,  # Menggunakan simbol dolar
             "positiveReviews": [
                 r['text'] for r in place_details.get('reviews', []) if r.get('rating', 0) >= 4

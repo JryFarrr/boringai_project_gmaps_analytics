@@ -1,6 +1,7 @@
-from flask import request, jsonify
+from flask import request, jsonify, current_app
 from src.utils.response_utils import error_response
 from src.services.google_maps_service import search_places
+import traceback
 
 def search_route():
     """Handle the search task endpoint using direct API approach"""
@@ -29,10 +30,19 @@ def search_route():
 
         # Panggil Google Maps API untuk mencari tempat
         if next_page_token:
+            current_app.logger.info(f"Searching with page token: {next_page_token}")
             response = search_places(page_token=next_page_token)
         else:
             query = f"{business_type} in {location}"
+            current_app.logger.info(f"Searching for: {query}")
             response = search_places(query=query)
+
+        # Log response for debugging
+        current_app.logger.debug(f"Search API response: {response}")
+        
+        # Check if response is valid and has results
+        if not response or 'results' not in response:
+            return error_response("Invalid response from search service", 500)
 
         # Ambil place_ids dari hasil pencarian
         place_ids = [place['place_id'] for place in response['results']]
@@ -69,6 +79,8 @@ def search_route():
             "error": None
         }
     except Exception as e:
+        error_details = traceback.format_exc()
+        current_app.logger.error(f"Search failed: {str(e)}\n{error_details}")
         return error_response(f"Search failed: {str(e)}", 500)
 
     return jsonify(response), 200
