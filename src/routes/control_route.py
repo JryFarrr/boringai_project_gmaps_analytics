@@ -1,18 +1,14 @@
+# Modified control_route.py
 from flask import request, jsonify
 from src.utils.response_utils import error_response
 
 def control_route():
     """
-    Handle the control task endpoint
-    
-    This route determines the next action in the workflow based on:
-    - Current lead count vs target number of leads
-    - Remaining place IDs to process
-    - Search offset for pagination
+    Handle the control task endpoint with improved lead collection strategy
     
     Scenarios:
     A. Continue with the next placeId - When there are remaining place IDs
-    B. Need more leads, but buffer is empty - Return to search with incremented offset
+    B. Need more leads, check next page token or increment search
     C. Reached target leads - End the workflow
     
     Returns:
@@ -23,7 +19,7 @@ def control_route():
         return error_response("Invalid JSON payload")
 
     # Validate required fields
-    required_fields = ["leadCount", "numberOfLeads"]
+    required_fields = ["numberOfLeads"]
     for field in required_fields:
         if field not in data:
             return error_response(f"Missing required field: {field}")
@@ -33,6 +29,9 @@ def control_route():
     number_of_leads = data.get("numberOfLeads", 0)
     remaining_place_ids = data.get("remainingPlaceIds", [])
     search_offset = data.get("searchOffset", 0)
+    next_page_token = data.get("nextPageToken")
+    business_type = data.get("businessType")
+    location = data.get("location")
     
     # SCENARIO C: Reached target leads → end workflow
     if lead_count >= number_of_leads:
@@ -67,24 +66,16 @@ def control_route():
         }
         return jsonify(response), 200
     
-    # SCENARIO B: Need more leads, but buffer is empty → go back to search
+    # SCENARIO B: Need more leads, check next page token or do new search
     else:
-        # Increment search offset for pagination
-        new_offset = search_offset + 20  # Assuming page size of 20
-        
+        # Simplified response format for Scenario B according to sample
         response = {
-            "state": {
-                "searchOffset": new_offset
-            },
+            "state": None,
             "result": None,
             "next": {
                 "key": "search",
                 "payload": {
-                    "businessType": "$state.businessType",
-                    "location": "$state.location",
-                    "searchOffset": "$state.searchOffset",
-                    "numberOfLeads": "$state.numberOfLeads",
-                    "nextPageToken": "$state.nextPageToken"
+                    "searchOffset": "$state.searchOffset"
                 }
             },
             "done": False,
