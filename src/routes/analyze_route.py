@@ -4,11 +4,13 @@ from src.utils.business_matcher import (
     match_price_range, 
     check_business_hours,
     search_reviews_for_keywords,
-    calculate_match_percentage
+    calculate_match_percentage,
+    calculate_match_percentage_with_ai,
+    extract_key_themes
 )
 from src.services.api_clients.factory import create_client
 
-def generate_review_summary(reviews, review_type="positive", max_length=150):
+def generate_review_summary(reviews, review_type="positive", max_length=200):
     """
     Generate a concise summary of reviews using OpenAI
     
@@ -46,7 +48,7 @@ def generate_review_summary(reviews, review_type="positive", max_length=150):
                 {"role": "system", "content": "You are a helpful assistant that summarizes business reviews concisely."},
                 {"role": "user", "content": prompt}
             ],
-            max_tokens=100  # Limit token count for concise response
+            max_tokens=150  # Increased token count for better summaries
         )
         
         # Extract and return the summary
@@ -67,7 +69,93 @@ def generate_review_summary(reviews, review_type="positive", max_length=150):
             summary_items.append(review[:100] + ("..." if len(review) > 100 else ""))
         return " | ".join(summary_items)
 
-# Modified analyze_route.py
+def generate_business_insights(place_details, match_percentage, match_analysis=None):
+    """
+    Generate business insights and recommendations using OpenAI
+    
+    Args:
+        place_details (dict): Details about the business
+        match_percentage (float): Match percentage calculated
+        match_analysis (dict): Analysis of the match percentage
+    
+    Returns:
+        dict: Dictionary containing insights and recommendations
+    """
+    try:
+        # Create client for OpenAI
+        client, headers, provider = create_client(provider="openai")
+        
+        # Extract key information for the prompt
+        business_name = place_details.get("placeName", "")
+        business_type = place_details.get("businessType", [])
+        rating = place_details.get("rating", 0)
+        total_ratings = place_details.get("totalRatings", 0)
+        price_range = place_details.get("priceRange", "")
+        
+        # Get positive and negative reviews
+        positive_reviews = place_details.get("positiveReviews", [])[:3]  # Limit to first 3
+        negative_reviews = place_details.get("negativeReviews", [])[:3]  # Limit to first 3
+        
+        positive_text = "\n".join(positive_reviews) if positive_reviews else ""
+        negative_text = "\n".join(negative_reviews) if negative_reviews else ""
+        
+        # Include match analysis if available
+        analysis_text = ""
+        if match_analysis and "reasoning" in match_analysis:
+            analysis_text = f"Match Analysis: {match_analysis['reasoning']}"
+        
+        # Prepare prompt for OpenAI
+        prompt = f"""Analyze the following business information and provide insights:
+
+        Business Name: {business_name}
+        Business Type: {', '.join(business_type) if isinstance(business_type, list) else business_type}
+        Rating: {rating}/5 (from {total_ratings} reviews)
+        Price Range: {price_range}
+        Match Percentage: {match_percentage}%
+        {analysis_text}
+        
+        Sample Positive Reviews:
+        {positive_text}
+        
+        Sample Negative Reviews:
+        {negative_text}
+        
+        Please provide:
+        1. A brief assessment of the business's strengths (2-3 points)
+        2. A brief assessment of the business's weaknesses (2-3 points)
+        3. Potential fit score (0-100) as a lead and a brief explanation why
+        
+        Format your response as JSON with the keys: "strengths", "weaknesses", "fitScore", and "fitReason".
+        """
+        
+        # Call OpenAI API with JSON mode enabled
+        response = client.chat.completions.create(
+            model="gpt-4o",
+            messages=[
+                {"role": "system", "content": "You are a business analyst that provides insights in JSON format only."},
+                {"role": "user", "content": prompt}
+            ],
+            response_format={"type": "json_object"},
+            max_tokens=300
+        )
+        
+        # Extract and return the insights
+        insights_json = response.choices[0].message.content.strip()
+        import json
+        insights = json.loads(insights_json)
+        
+        return insights
+        
+    except Exception as e:
+        print(f"Error generating business insights: {str(e)}")
+        # Fallback to basic insights
+        return {
+            "strengths": ["Based on available reviews"],
+            "weaknesses": ["Insufficient data for detailed analysis"],
+            "fitScore": int(match_percentage),
+            "fitReason": "Score based on match percentage only"
+        }
+
 def analyze_route():
     """
     Handle the analyze task endpoint
@@ -161,22 +249,27 @@ def analyze_route():
         keyword_matches = search_reviews_for_keywords(place_details_for_reviews, parameters["keywords"])
         place["keyword_matches"] = keyword_matches
     
-    # Calculate match percentage
-    match_percentage = calculate_match_percentage(place, parameters)
+    # Collect all reviews for AI analysis
+    all_reviews = []
+    all_reviews.extend(place_details.get("positiveReviews", []))
+    all_reviews.extend(place_details.get("negativeReviews", []))
     
-    # Apply multipliers for price and business hours matches
-    # If price doesn't match and it was specified, reduce match percentage
-    if parameters["price_range"] and place.get("price_match") is False:
-        match_percentage *= 0.7  # Reduce by 30%
+    # Calculate match percentage using OpenAI
+    try:
+        # Add business type to place info
+        place["types"] = place_details.get("businessType", [])
         
-    # If business hours don't match and they were specified, reduce match percentage
-    if parameters["business_hours"] != "anytime" and place.get("hours_match") is False:
-        match_percentage *= 0.7  # Reduce by 30%
-        
-    # Ensure match percentage is between 0-100 and rounded
-    match_percentage = round(max(0, min(100, match_percentage)), 2)
+        # Use OpenAI to calculate match percentage
+        match_percentage, match_analysis = calculate_match_percentage_with_ai(place, parameters, all_reviews)
+    except Exception as e:
+        print(f"Error using AI to calculate match percentage: {str(e)}")
+        # Fallback to traditional calculation if OpenAI fails
+        match_percentage = calculate_match_percentage(place, parameters)
+        match_analysis = {
+            "reasoning": "Calculated using traditional algorithm due to AI service unavailability."
+        }
     
-    # If place doesn't meet hard constraints, signal control to find another place
+    # Apply hard constraints check regardless of calculation method
     if not meets_constraints:
         # Return a special signal to control to skip this place and move to next
         response = {
@@ -214,17 +307,48 @@ def analyze_route():
     summary_positive = generate_review_summary(positive_reviews, "positive") if positive_reviews else ""
     summary_negative = generate_review_summary(negative_reviews, "negative") if negative_reviews else ""
     
+    # Extract key themes from reviews (uses business_matcher utility)
+    key_themes = []
+    if positive_reviews or negative_reviews:
+        key_themes = extract_key_themes(all_reviews)
+    
+    # Generate business insights including the match analysis
+    insights = generate_business_insights(place_details, match_percentage, match_analysis)
+    
     # Prepare the result object
     result = {
         "placeName": place_details["placeName"],
-        "matchPercentage": match_percentage
+        "matchPercentage": match_percentage,
+        "businessType": place_details.get("businessType", []),
+        "rating": place_details.get("rating", 0),
+        "totalRatings": place_details.get("totalRatings", 0),
+        "priceLevel": place_details.get("priceRange", ""),
     }
+    
+    # Add match analysis reasoning if available
+    if match_analysis and "reasoning" in match_analysis:
+        result["matchReasoning"] = match_analysis["reasoning"]
+    
+    # Add detailed factor scores if available
+    if match_analysis and "analysis" in match_analysis:
+        result["matchFactors"] = match_analysis["analysis"]
     
     # Add summaries if they exist
     if summary_positive:
         result["summaryPositiveReviews"] = summary_positive
     if summary_negative:
         result["summaryNegativeReviews"] = summary_negative
+    
+    # Add key themes
+    if key_themes:
+        result["keyThemes"] = key_themes
+    
+    # Add insights
+    if insights:
+        result["strengths"] = insights.get("strengths", [])
+        result["weaknesses"] = insights.get("weaknesses", [])
+        result["fitScore"] = insights.get("fitScore", match_percentage)
+        result["fitReason"] = insights.get("fitReason", "")
         
     # Add contact information if available
     if "contact" in place_details:
@@ -233,6 +357,10 @@ def analyze_route():
     # Add address if available
     if "address" in place_details:
         result["address"] = place_details["address"]
+    
+    # Add business hours if available
+    if "businessHours" in place_details:
+        result["businessHours"] = place_details["businessHours"]
     
     # Format the response according to the unified contract
     response = {
