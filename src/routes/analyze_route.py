@@ -67,6 +67,7 @@ def generate_review_summary(reviews, review_type="positive", max_length=150):
             summary_items.append(review[:100] + ("..." if len(review) > 100 else ""))
         return " | ".join(summary_items)
 
+# Modified analyze_route.py
 def analyze_route():
     """
     Handle the analyze task endpoint
@@ -82,6 +83,7 @@ def analyze_route():
     place_details = data["placeDetails"]
     lead_count = data["leadCount"]
     constraints = data.get("constraints", {})
+    skipped_count = data.get("skippedCount", 0)  # Get skipped count with default 0
     
     # Extract required parameters from constraints with defaults
     parameters = {
@@ -100,18 +102,31 @@ def analyze_route():
         "user_ratings_total": place_details.get("totalRatings", 0),
     }
     
+    # Flag to track if place meets all hard constraints
+    meets_constraints = True
+    
+    # Check if rating meets minimum required rating (HARD CONSTRAINT)
+    if parameters["min_rating"] > 0 and place["rating"] < parameters["min_rating"]:
+        meets_constraints = False
+    
+    # Check if total reviews meets minimum required (HARD CONSTRAINT)
+    if parameters["min_reviews"] > 0 and place["user_ratings_total"] < parameters["min_reviews"]:
+        meets_constraints = False
+    
     # Add price level if available
     if "priceRange" in place_details:
         # Convert $ symbols to numeric price_level
         price_level = len(place_details["priceRange"])
         place["price_level"] = price_level
         
-        # Check if price range matches the required price range
+        # Check if price range matches the required price range (HARD CONSTRAINT if specified)
         if parameters["price_range"]:
             price_match = match_price_range(place_details["priceRange"], parameters["price_range"])
             place["price_match"] = price_match
+            if not price_match:
+                meets_constraints = False
     
-    # Check if business hours match the required hours
+    # Check if business hours match the required hours (SOFT CONSTRAINT)
     if parameters["business_hours"] != "anytime" and "businessHours" in place_details:
         # Format place_details to match the expected structure for check_business_hours
         hours_details = {
@@ -127,7 +142,7 @@ def analyze_route():
         hours_match = check_business_hours(hours_details, parameters["business_hours"])
         place["hours_match"] = hours_match
     
-    # Process reviews to find keywords if specified
+    # Process reviews to find keywords if specified (SOFT CONSTRAINT)
     if parameters["keywords"]:
         # Create a format that matches the business_matcher expectations
         place_details_for_reviews = {
@@ -161,8 +176,37 @@ def analyze_route():
     # Ensure match percentage is between 0-100 and rounded
     match_percentage = round(max(0, min(100, match_percentage)), 2)
     
+    # If place doesn't meet hard constraints, signal control to find another place
+    if not meets_constraints:
+        # Return a special signal to control to skip this place and move to next
+        response = {
+            "state": {
+                "leadCount": lead_count,  # Don't increment lead count for skipped places
+                "skippedConstraints": True,  # Signal that we're skipping due to constraints
+                "skippedCount": skipped_count + 1  # Increment skipped count
+            },
+            "result": None,
+            "next": {
+                "key": "control",
+                "payload": {
+                    "leadCount": "$state.leadCount",
+                    "numberOfLeads": "$state.numberOfLeads",
+                    "remainingPlaceIds": "$state.remainingPlaceIds",
+                    "searchOffset": "$state.searchOffset",
+                    "nextPageToken": "$state.nextPageToken",
+                    "businessType": "$state.businessType",
+                    "location": "$state.location",
+                    "skippedConstraints": True,
+                    "skippedCount": "$state.skippedCount"  # Pass skipped count
+                }
+            },
+            "done": False,
+            "error": None
+        }
+        return jsonify(response), 200
+    
+    # If meets constraints, continue normal processing
     # Use OpenAI to generate review summaries
-    # First combine reviews for processing
     positive_reviews = place_details.get("positiveReviews", [])
     negative_reviews = place_details.get("negativeReviews", [])
     
@@ -193,7 +237,8 @@ def analyze_route():
     # Format the response according to the unified contract
     response = {
         "state": {
-            "leadCount": lead_count + 1
+            "leadCount": lead_count + 1,
+            "skippedCount": skipped_count  # Preserve skipped count in state
         },
         "result": result,
         "next": {
@@ -202,7 +247,11 @@ def analyze_route():
                 "leadCount": "$state.leadCount",
                 "numberOfLeads": "$state.numberOfLeads",
                 "remainingPlaceIds": "$state.remainingPlaceIds",
-                "searchOffset": "$state.searchOffset"
+                "searchOffset": "$state.searchOffset",
+                "nextPageToken": "$state.nextPageToken",
+                "businessType": "$state.businessType",
+                "location": "$state.location",
+                "skippedCount": "$state.skippedCount"  # Pass skipped count
             }
         },
         "done": False,

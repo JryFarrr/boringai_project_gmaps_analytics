@@ -134,7 +134,7 @@ class WorkflowExecutor:
 def run_simulation():
     executor = WorkflowExecutor()
     
-    prompt = "Find 25 sushi restaurant in Tokyo that has a rating of at least 4.5 and at least 100 reviews."
+    prompt = "Find 10 sushi restaurant in Surabaya that has a rating of at least 4.9 and at least 10 reviews."
     # prompt nanti diparsing untuk menentukan businessType, location, dan numberOfLeads
     # prompt juga diparsing untuk contraints pada match percentage
     # untuk match percentage disimpan pada instance, dan hanya digunakan di analyze

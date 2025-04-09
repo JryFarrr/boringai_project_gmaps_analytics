@@ -23,14 +23,29 @@ def search_route():
     search_offset = data["searchOffset"]
     number_of_leads = data["numberOfLeads"]
     next_page_token = data.get("nextPageToken")
-    lead_count = data.get("leadCount", 0)
+    lead_count = data["leadCount"] if "leadCount" in data else 0
+    skipped_count = data.get("skippedCount", 0)  # Get skipped count
     remaining_place_ids = data.get("remainingPlaceIds", [])
 
     try:
-        # Determine how many more leads are needed
+        # Determine how many more leads are needed (including compensation for skipped places)
         remaining_leads_needed = number_of_leads - lead_count
+        
+        # Jika kita sudah mencapai jumlah lead yang diminta, langsung kembalikan done=True
         if remaining_leads_needed <= 0:
-            return error_response("No more leads needed", 200)
+            current_app.logger.info(f"Lead target of {number_of_leads} already met with {lead_count} leads. Finishing workflow.")
+            return jsonify({
+                "state": None,
+                "result": None,
+                "next": None,
+                "done": True,
+                "error": None
+            }), 200
+            
+        # Total yang perlu dicari termasuk cadangan untuk yang mungkin dilewati
+        total_needed = remaining_leads_needed + skipped_count
+        
+        current_app.logger.info(f"Need {remaining_leads_needed} more leads. Including {skipped_count} skipped, total needed: {total_needed}")
 
         # Collect all place_ids needed to fulfill the request
         all_place_ids = []
@@ -41,14 +56,14 @@ def search_route():
             current_app.logger.info(f"Using {len(remaining_place_ids)} previously found place IDs")
             all_place_ids.extend(remaining_place_ids)
             # Reset token if we're using existing IDs to prevent issues
-            if len(all_place_ids) >= remaining_leads_needed:
+            if len(all_place_ids) >= total_needed:
                 current_next_page_token = None
         
         # Keep collecting place_ids until we have enough or run out of results
         page_count = 0
         max_pages = 3  # Limit the number of pages we try to fetch to avoid excessive API calls
         
-        while len(all_place_ids) < remaining_leads_needed and page_count < max_pages:
+        while len(all_place_ids) < total_needed and page_count < max_pages:
             page_count += 1
             
             try:
@@ -81,10 +96,10 @@ def search_route():
                     break
                 
                 # Log progress
-                current_app.logger.info(f"Collected {len(all_place_ids)} place IDs so far, need {remaining_leads_needed}")
+                current_app.logger.info(f"Collected {len(all_place_ids)} place IDs so far, need {total_needed}")
                 
                 # Add a delay before the next iteration if we're going to use the page token
-                if current_next_page_token and len(all_place_ids) < remaining_leads_needed:
+                if current_next_page_token and len(all_place_ids) < total_needed:
                     current_app.logger.info("Waiting 2 seconds before fetching next page...")
                     time.sleep(2)
             
@@ -103,22 +118,24 @@ def search_route():
         if not all_place_ids:
             return error_response("No businesses found", 404)
 
-        # Limit place_ids based on remaining leads needed
-        if len(all_place_ids) > remaining_leads_needed:
-            all_place_ids = all_place_ids[:remaining_leads_needed]
+        # Limit place_ids based on total needed
+        if len(all_place_ids) > total_needed:
+            all_place_ids = all_place_ids[:total_needed]
 
         # Take the first place ID to send to payload
         first_place_id = all_place_ids[0]
         new_remaining = all_place_ids[1:]
         
-        # Update lead count based on how many we'll process (starting with 1)
-        new_lead_count = lead_count + 1
-        
         # Prepare state object that matches the example format but includes necessary data
         state = {
             "remainingPlaceIds": new_remaining,
             "searchOffset": search_offset + len(all_place_ids),
-            "nextPageToken": current_next_page_token  # Always include nextPageToken, will be null if no token
+            "nextPageToken": current_next_page_token,  # Always include nextPageToken, will be null if no token
+            "skippedCount": skipped_count,  # Preserve skipped count in state
+            "leadCount": lead_count,  # Explicitly set leadCount in state to ensure it's preserved
+            "businessType": business_type,
+            "location": location,
+            "numberOfLeads": number_of_leads
         }
         
         # Prepare response
@@ -128,7 +145,10 @@ def search_route():
             "next": {
                 "key": "scrape",
                 "payload": {
-                    "placeId": first_place_id
+                    "placeId": first_place_id,
+                    "skippedCount": skipped_count,  # Pass skipped count to scrape
+                    "leadCount": lead_count,        # Pass lead count to scrape
+                    "numberOfLeads": number_of_leads # Pass number of leads to scrape
                 }
             },
             "done": False,
