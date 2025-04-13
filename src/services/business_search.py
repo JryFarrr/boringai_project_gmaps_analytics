@@ -7,7 +7,7 @@ from utils.business_matcher import (
     match_price_range, 
     check_business_hours, 
     search_reviews_for_keywords, 
-    calculate_match_percentage
+    calculate_match_percentage_with_ai
 )
 from config.config import MAX_DETAILED_PLACES
 
@@ -63,7 +63,7 @@ def search_businesses(parameters, api_key=None):
             #     continue
         
         # Add match percentages
-        place_details['match_percentage'] = calculate_match_percentage(place_details, parameters)
+        place_details['match_percentage'] = calculate_match_percentage_with_ai(place_details, parameters)
         
         detailed_places.append(place_details)
     
