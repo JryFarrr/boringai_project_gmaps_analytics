@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "$id": "e1685e85-876d-411d-9bc4-2dbf5041510d",
   "$state": {
     "businessType": "sushi restaurant",
@@ -9,10 +10,23 @@
     "searchOffset": 25,
     "nextPageToken": "AeeoHcJ_NrE3VDCWZxnoTxxK2f1P1UqUqQsxEp-4zfePr-cgiNvXqMp-xPsevfB_bloBhD_Ez1LcOTfcoTbeWbAwv3V53Mctp8vva2z6_J_blUOHzQT_3erpcZiYfBMWEBShNT1kHzBLWBg-cR5Bv9GMTNGGnOZf3aJhEI8EAprChmQRLfA_MW7p_QE-ecPRBIE29eiij1XNUKuwfwvjvt562eZRPHO0cgooCOnwo8241jSS_6h4Q1Lq7NwpuYjTEGah6l-4mwlS-WM4OcLZKWfSv1pEsVpdG8b91VoTXU01KLK0R0iVc2t34Ffq6V-SHo1NKW4orE8siz0PaeRQJAIIoYyNhSsqx4iDaQb-KyGu3QsMKJ7Y9cLPIlsOhFxmbLv9TH-6lJolFnkl2rF6JCE0QuzGwMfEEC8",
     "skippedCount": 1,
+=======
+  "$id": "d1191b48-bd8c-4889-9718-3b5176c0d288",
+  "$state": {
+    "businessType": "sushi restaurant",
+    "leadCount": 10,
+    "location": "Surabaya",
+    "numberOfLeads": 10,
+    "remainingPlaceIds": [],
+    "searchOffset": 46,
+    "nextPageToken": null,
+    "skippedCount": 36,
+>>>>>>> f4ac694ae964bda75418e157fdf939b8980e6cdc
     "skippedConstraints": true
   },
   "$results": [
     {
+<<<<<<< HEAD
       "address": "Japan, \u3012106-0032 Tokyo, Minato City, Roppongi, 1-ch\u014dme\u22124\u2212\uff15 ARK Hills South Tower, 1F",
       "businessHours": [
         "Monday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
@@ -174,5 +188,113 @@
     "createdAt": "2025-04-11T12:22:44.399597+00:00Z",
     "startedAt": "2025-04-11T12:22:47.705525+00:00Z",
     "executionTotal": 18
+=======
+      "address": "Pakuwon Mall Lantai 2 unit 65-66, Babatan, Kec. Wiyung, Surabaya, Jawa Timur 60216, Indonesia",
+      "contact": {
+        "phone": "0822-1000-6099",
+        "website": "N/A"
+      },
+      "matchPercentage": 75.0,
+      "placeName": "Okinawa sushi pakuwon mall",
+      "summaryPositiveReviews": "Great food quality and taste, with fresh ingredients. Service is attentive but meal delivery can be slow. Robot waiter is a fun novelty but not ess..."
+    },
+    {
+      "address": "Jl. Manyar Kertoarjo No.71, Mojo, Kec. Gubeng, Surabaya, Jawa Timur 60285, Indonesia",
+      "contact": {
+        "phone": "0822-2953-7345",
+        "website": "https://www.instagram.com/sushihiro_id/"
+      },
+      "matchPercentage": 75.0,
+      "placeName": "Sushi Hiro Manyar Surabaya",
+      "summaryNegativeReviews": "Lower standards than Jakarta, less tasty rice, hot in the afternoon. Good service, but food quality matches another lower-rated sushi place.",
+      "summaryPositiveReviews": "Great sushi variety and quality, attentive service, beautiful venue, standout dishes like truffle roll and beef hamburg, plus special promotions."
+    },
+    {
+      "address": "Jl. Dharmahusada Indah Timur No.35-37, Mulyorejo, Kec. Mulyorejo, Surabaya, Jawa Timur 60115, Indonesia",
+      "contact": {
+        "phone": "N/A",
+        "website": "https://www.instagram.com/sushihiro_id/"
+      },
+      "matchPercentage": 75.0,
+      "placeName": "Sushi Hiro - Galaxy Mall 1 Ground Floor",
+      "summaryPositiveReviews": "Sushi Hiro at Galaxy Mall offers fresh, high-quality sushi, great ambiance, and excellent service with friendly staff. A top choice for Japanese cu..."
+    },
+    {
+      "address": "Pakuwon Mall Lantai 2 unit 65-66, Babatan, Kec. Wiyung, Surabaya, Jawa Timur 60216, Indonesia",
+      "contact": {
+        "phone": "0822-1000-6099",
+        "website": "N/A"
+      },
+      "matchPercentage": 75.0,
+      "placeName": "Okinawa sushi pakuwon mall",
+      "summaryPositiveReviews": "Customers praise fresh ingredients and tasty food, commend service staff, and enjoy unique decor with robot waiters, but note long menus and higher..."
+    },
+    {
+      "address": "Jl. Manyar Kertoarjo No.71, Mojo, Kec. Gubeng, Surabaya, Jawa Timur 60285, Indonesia",
+      "contact": {
+        "phone": "0822-2953-7345",
+        "website": "https://www.instagram.com/sushihiro_id/"
+      },
+      "matchPercentage": 75.0,
+      "placeName": "Sushi Hiro Manyar Surabaya",
+      "summaryNegativeReviews": "The outlet has lower standards than Jakarta, with less appealing rice and uncomfortable temperatures, but matches in service and food quality to Su...",
+      "summaryPositiveReviews": "Customers love this sushi place for its fresh, varied dishes and attentive service. Popular items include unagi, truffle roll, and salmon dishes."
+    },
+    {
+      "address": "Jl. Dharmahusada Indah Timur No.35-37, Mulyorejo, Kec. Mulyorejo, Surabaya, Jawa Timur 60115, Indonesia",
+      "contact": {
+        "phone": "N/A",
+        "website": "https://www.instagram.com/sushihiro_id/"
+      },
+      "matchPercentage": 75.0,
+      "placeName": "Sushi Hiro - Galaxy Mall 1 Ground Floor",
+      "summaryPositiveReviews": "Sushi Hiro at Galaxy Mall is praised for its excellent service, friendly staff, fresh and high-quality ingredients, modern ambiance, and delicious ..."
+    },
+    {
+      "address": "Mall, Royal Plaza, lantai 3 02, Wonokromo, Kec. Wonokromo, Surabaya, Jawa Timur 60243, Indonesia",
+      "contact": {
+        "phone": "0812-3177-3705",
+        "website": "https://www.instagram.com/sushikun.id/"
+      },
+      "matchPercentage": 75.0,
+      "placeName": "Sushikun - Royal Plaza",
+      "summaryPositiveReviews": "Affordable sushi with fresh options, good ambiance, and varied dining choices at Royal Plaza. Promotions like \"all plates 10k\" are highly recommended."
+    },
+    {
+      "address": "Royal Plaza Lt.3 Unit U1 No.19, Wonokromo, Kec. Wonokromo, Surabaya, Jawa Timur, Indonesia",
+      "contact": {
+        "phone": "N/A",
+        "website": "N/A"
+      },
+      "matchPercentage": 75.0,
+      "placeName": "Suteki Sushi",
+      "summaryPositiveReviews": "Positive reviews highlight friendly service and recommend trying the food. Customers express gratitude and overall satisfaction."
+    },
+    {
+      "address": "Jl. Mayjen HR. Muhammad No.31, Putat Gede, Kec. Sukomanunggal, Surabaya, Jawa Timur 60189, Indonesia",
+      "contact": {
+        "phone": "(031) 7301888",
+        "website": "https://www.vasahotelsurabaya.com/restaurants/nagano"
+      },
+      "matchPercentage": 100,
+      "placeName": "Nagano Japanese Restaurant",
+      "summaryPositiveReviews": "Nagano offers top-quality meat, excellent service, and a cozy ambiance. Customers praise attentive staff and chefs, and the fresh, flavorful dishes."
+    },
+    {
+      "address": "Pakuwon Mall Surabaya, Jl. Puncak Indah Lontar II No.2 Lantai 2M Unit 30-32, Babatan, Kec. Wiyung, Jawa Timur, 60227, Indonesia",
+      "contact": {
+        "phone": "0852-1074-3051",
+        "website": "N/A"
+      },
+      "matchPercentage": 75.0,
+      "placeName": "Gion The Sushi Bar, Mall Pakuwon Surabaya",
+      "summaryPositiveReviews": "Customers praise the tasty food, especially salmon sashimi, and extensive menu. Service can be slow sometimes, but friendly. Slightly pricey. Ideal..."
+    }
+  ],
+  "$metadata": {
+    "createdAt": "2025-04-09T04:53:51.800597+00:00Z",
+    "startedAt": "2025-04-09T04:53:53.522146+00:00Z",
+    "executionTotal": 142
+>>>>>>> f4ac694ae964bda75418e157fdf939b8980e6cdc
   }
 }

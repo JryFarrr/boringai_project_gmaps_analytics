@@ -1,4 +1,4 @@
-from flask import request, jsonify
+from flask import request, jsonify, current_app
 from src.utils.response_utils import error_response
 from src.services.google_maps_service import get_place_details
 
@@ -9,6 +9,12 @@ def scrape_route():
         return error_response("Missing required field: placeId")
 
     place_id = data["placeId"]
+    # Get skipped count and other important state values
+    skipped_count = data.get("skippedCount", 0)
+    lead_count = data.get("leadCount", 0)  # Pass lead count through
+    number_of_leads = data.get("numberOfLeads", 0)  # Pass number of leads through
+
+    current_app.logger.info(f"Scraping place ID: {place_id} (leadCount={lead_count}, skippedCount={skipped_count})")
 
     try:
         # Tentukan field yang diinginkan dari Google Maps API
@@ -26,7 +32,7 @@ def scrape_route():
             "types"
         ]
         place_details = get_place_details(place_id, fields=fields)
-        print(place_details)
+        current_app.logger.info(f"Retrieved details for place: {place_details.get('name', 'Unknown')}")
 
         # Mapping price_level (integer) ke simbol dolar
         price_level = place_details.get('price_level', '')  # Default: kosong jika tidak ada
@@ -61,21 +67,39 @@ def scrape_route():
             ]  # Default: list kosong jika tidak ada ulasan
         }
 
+        # Check if we've already reached the target (to handle race conditions)
+        if lead_count >= number_of_leads:
+            current_app.logger.info(f"Target already reached during scrape! Lead count {lead_count} >= requested {number_of_leads}. Ending workflow.")
+            return jsonify({
+                "state": None,
+                "result": None,
+                "next": None,
+                "done": True,
+                "error": None
+            }), 200
+
         # Respons sesuai unified contract
         response = {
-            "state": None,
+            "state": {
+                "skippedCount": skipped_count,  # Preserve skipped count in state
+                "leadCount": lead_count,  # Explicitly pass leadCount through
+                "numberOfLeads": number_of_leads  # Explicitly pass numberOfLeads through
+            },
             "result": None,
             "next": {
                 "key": "analyze",
                 "payload": {
                     "placeDetails": place_data,
-                    "leadCount": "$state.leadCount"
+                    "leadCount": "$state.leadCount",
+                    "skippedCount": "$state.skippedCount",  # Pass skipped count to analyze
+                    "numberOfLeads": "$state.numberOfLeads"  # Pass numberOfLeads to analyze
                 }
             },
             "done": False,
             "error": None
         }
     except Exception as e:
+        current_app.logger.error(f"Scrape failed: {str(e)}")
         return error_response(f"Scrape failed: {str(e)}", 500)
 
     return jsonify(response), 200
