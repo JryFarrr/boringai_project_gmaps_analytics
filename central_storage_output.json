@@ -1,32 +1,38 @@
 {
-<<<<<<< HEAD
-  "$id": "e1685e85-876d-411d-9bc4-2dbf5041510d",
+  "$id": "90a33ea9-6f40-41c9-a937-ad1298dbf41d",
   "$state": {
-    "businessType": "sushi restaurant",
-    "leadCount": 3,
+    "businessType": "5 sushi restaurant",
+    "leadCount": 20,
     "location": "Tokyo",
-    "numberOfLeads": 5,
-    "remainingPlaceIds": [],
-    "searchOffset": 25,
-    "nextPageToken": "AeeoHcJ_NrE3VDCWZxnoTxxK2f1P1UqUqQsxEp-4zfePr-cgiNvXqMp-xPsevfB_bloBhD_Ez1LcOTfcoTbeWbAwv3V53Mctp8vva2z6_J_blUOHzQT_3erpcZiYfBMWEBShNT1kHzBLWBg-cR5Bv9GMTNGGnOZf3aJhEI8EAprChmQRLfA_MW7p_QE-ecPRBIE29eiij1XNUKuwfwvjvt562eZRPHO0cgooCOnwo8241jSS_6h4Q1Lq7NwpuYjTEGah6l-4mwlS-WM4OcLZKWfSv1pEsVpdG8b91VoTXU01KLK0R0iVc2t34Ffq6V-SHo1NKW4orE8siz0PaeRQJAIIoYyNhSsqx4iDaQb-KyGu3QsMKJ7Y9cLPIlsOhFxmbLv9TH-6lJolFnkl2rF6JCE0QuzGwMfEEC8",
-    "skippedCount": 1,
-=======
-  "$id": "d1191b48-bd8c-4889-9718-3b5176c0d288",
-  "$state": {
-    "businessType": "sushi restaurant",
-    "leadCount": 10,
-    "location": "Surabaya",
-    "numberOfLeads": 10,
-    "remainingPlaceIds": [],
-    "searchOffset": 46,
-    "nextPageToken": null,
-    "skippedCount": 36,
->>>>>>> f4ac694ae964bda75418e157fdf939b8980e6cdc
+    "numberOfLeads": 20,
+    "remainingPlaceIds": [
+      "ChIJIw1YEtmLGGARdWgvKs50S7A",
+      "ChIJaTXpw6mMGGARP-d-_tbssVE",
+      "ChIJiRDLCnCLGGARiICs7YnthzQ",
+      "ChIJSyag6ouMGGARSwIX8ayCNCM",
+      "ChIJOTwf1ueLGGAR8t0EkQWReM0",
+      "ChIJL5gxE9CMGGAR0Vtyrq_cFio",
+      "ChIJV4stTX2NGGAR3JcZ-EXcfhM",
+      "ChIJiT-k69eLGGARNGQG4N1vvR8",
+      "ChIJuzydSvqLGGARXTqdIJs_08Y",
+      "ChIJE6NVO9mLGGARUiKvcRmKzN4",
+      "ChIJ5-LVSdGMGGARO2nfNb18X8c",
+      "ChIJu9W4zVeLGGARXn0xCjGINF8",
+      "ChIJaaz3_Er71y0RimofmjXG4UE",
+      "ChIJyZOxItGNGGARWwp9_I4dZDA",
+      "ChIJj8jK03qLGGARwaWcPBbQuuI",
+      "ChIJPYBAAuaLGGARTwNCf6ag05s",
+      "ChIJAQBM40SJGGARE_FACL6szA0",
+      "ChIJw1zDlimLGGAR_tguy5YrvFY",
+      "ChIJVby9v-WLGGARZXCGPfhHpA4"
+    ],
+    "searchOffset": 62,
+    "nextPageToken": "AeeoHcIJXzGbKpBamYDD54UQiCW9lpxtQWt8LaXyTd6sW7xlw4z-JzjEKpLm4389dXXAyZoVtytctV07Xr4tBW9craRqiOrJExAIDtSvYm2FPB1_GfmOOoDKte9mQWXVVO8toWbafEwTh7yg5p_lEZDm_-yqnJ7fwGGdC5hx81O0XeQY1bciTIkSVIuwX34rKtBfRrkpK8jo8iqaoOfDrlnmAr1uw8es9bFvWKjsGH5Ih34WKB9qkRqfdUVhP4RkHKRcWgBPdFXE7qNjkLyuAZSfDYQDdnraPkVkNOiqNw1mA3_iWLeq8asT1vciq37us3w9rR-ZoTZKzo83BFYXlrT8-AIa5OWq_7QUBfGgYNoeOTkYyQmH3-4GkKMuSXCHQ6YIzvAUeBqOhSerp5uyXDUA8jJa98zix8Wivx1a9jf0urttCucoBJ7nPvyNidCca2uedXkXGRZGrCiJD6Jc541N3nHndEfMCgf4A9yCw11800stSoQxpalv0wFPU8GnQPDDNjqhZIMGOmdPVKqjttMFdE3DRpuGirEyM2jB3pehiLTeooqJDraa52p_DpAPzrALcbqYYE77wSnBrEgJ89POdQwTMeYJuoaQMIE5hbq5CHToZyG2519Abfs",
+    "skippedCount": 23,
     "skippedConstraints": true
   },
   "$results": [
     {
-<<<<<<< HEAD
       "address": "Japan, \u3012106-0032 Tokyo, Minato City, Roppongi, 1-ch\u014dme\u22124\u2212\uff15 ARK Hills South Tower, 1F",
       "businessHours": [
         "Monday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
@@ -39,94 +45,42 @@
       ],
       "businessType": [
         "restaurant",
-        "point_of_interest",
         "food",
+        "point_of_interest",
         "establishment"
       ],
       "contact": {
         "phone": "03-3589-4412",
         "website": "https://www.arkhills.com/gourmet_shops/0010.html"
       },
-      "fitReason": "Saito is a highly suitable lead due to its strong alignment with the constraints provided, including a perfect rating match, robust review count, and a premium price point that aligns with a luxury dining experience. The minor noted weaknesses do not significantly detract from overall customer satisfaction, making Saito a top candidate as a prestigious and high-quality establishment.",
-      "fitScore": 90,
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 94,
       "keyThemes": [
-        "Chef Takashi Saito",
-        "Perfect sushi balance",
-        "Difficult reservations",
-        "Fresh seasonal seafood",
-        "Consistent excellence"
+        "sushi",
+        "saito",
+        "amazing",
+        "best",
+        "great"
       ],
       "matchFactors": {
         "hours_factor": 1.0,
-        "keyword_factor": 0.75,
+        "keyword_factor": 0.0,
         "price_factor": 1.0,
-        "rating_factor": 1.0,
+        "rating_factor": 0.9,
         "review_count_factor": 1.0
       },
-      "matchPercentage": 90.0,
-      "matchReasoning": "The business 'Saito' meets or exceeds the constraints for minimum rating and review count, aligning perfectly with a 4.5 rating and 452 reviews, which fulfills the constraints of a minimum 4.5 rating and 100 reviews. The price range is unspecified in the constraints, but Saito's price level is high, indicating premium quality, which is often associated with a positive match for luxury or special dining that did not conflict with any set price constraints. Business hours being anytime also integrates seamlessly with no specific constraints. Although the reviews strongly support the quality of the sushi with superlative comments, the keyword factor is slightly below perfect due to limited contextual terms compared to potential expressive constraints not explicitly defined in the evaluation, like specific cuisines or specialties beyond sushi. Overall, 'Saito' is highly aligned with the provided constraints resulting in a strong match percentage.",
+      "matchPercentage": 94.70092289874255,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
       "placeName": "Saito",
       "priceLevel": "$$$$",
       "rating": 4.5,
       "strengths": [
-        "High rating of 4.5/5 from 452 reviews signifies exceptional customer satisfaction and strong reputation.",
-        "Premium pricing ($$$$) indicates a high-quality service and exclusive dining experience, often appealing to discerning customers seeking luxury.",
-        "Positive reviews highlight the exceptional quality of sushi, specifically Tsumami and Nigiri, and the culinary expertise of Chef Takashi Saito, enhancing the restaurant's appeal as a top-tier sushi destination."
+        "Based on available reviews"
       ],
-      "summaryPositiveReviews": "Sushi Saito offers perfection in sushi with Chef Saito's expertise, fresh seasonal seafood, and exceptional balance. Reservations are difficult but worth the effort for this top-tier sushi experience.",
+      "summaryPositiveReviews": "Really lived up to the hype. Chef Takashi Saito is great fun as well as preparing amazing sushi with... | Sushi Saito's sushi can be described in one sentence.\nPerfect Balance.\nSushi was served in second-co... | This is the pinnacle of sushi experiences. If you find yourself fortunate enough to get a seat with ...",
       "totalRatings": 452,
       "weaknesses": [
-        "The high price range may limit the customer base to only those seeking luxury experiences, potentially excluding budget-conscious diners.",
-        "Lack of a 'show' aspect in the dining experience and issues with seating arrangements were cited as minor disappointments in reviews, which could affect perceptions of an otherwise perfect dining experience.",
-        "Limited variety in keywords and cuisine context in reviews might affect the broad contextual appeal beyond sushi enthusiasts."
-      ]
-    },
-    {
-      "address": "Japan, \u3012160-0021 Tokyo, Shinjuku City, Kabukich\u014d, 2-ch\u014dme\u221225\u2212\uff18 \u30a8\u30b3\u30d7\u30ec\u30a4\u30b9\u65b0\u5bbf \uff11F",
-      "businessHours": [
-        "Monday: 6:00\u202fPM\u2009\u2013\u20094:00\u202fAM",
-        "Tuesday: 6:00\u202fPM\u2009\u2013\u20094:00\u202fAM",
-        "Wednesday: 6:00\u202fPM\u2009\u2013\u20094:00\u202fAM",
-        "Thursday: 6:00\u202fPM\u2009\u2013\u20094:00\u202fAM",
-        "Friday: 6:00\u202fPM\u2009\u2013\u20094:00\u202fAM",
-        "Saturday: 6:00\u202fPM\u2009\u2013\u20094:00\u202fAM",
-        "Sunday: 6:00\u202fPM\u2009\u2013\u20094:00\u202fAM"
-      ],
-      "businessType": [
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "03-6457-6612",
-        "website": "http://site-1229809-8757-747.mystrikingly.com/"
-      },
-      "fitReason": "KABUKI Sushi shows a strong alignment with the provided business constraints and metrics, with an exceptional rating, high number of reviews, and positive feedback on quality and service. The only minor deductions come from pricing concerns and some variability in individual taste preferences. Overall, it demonstrates solid potential as a lead in its market segment.",
-      "fitScore": 95,
-      "matchFactors": {
-        "hours_factor": 1.0,
-        "keyword_factor": 0.8,
-        "price_factor": 0.5,
-        "rating_factor": 1.0,
-        "review_count_factor": 1.0
-      },
-      "matchPercentage": 95.0,
-      "matchReasoning": "KABUKI Sushi has a high match percentage of 95% with the given constraints. It has a strong match in terms of rating (4.6) and review count (1203), both exceeding the minimum required thresholds of 4.5 and 100 respectively, translating to full scores in rating_factor and review_count_factor. The price_range constraint is not clearly defined, hence it is marked as 0.5 for price_factor; sample reviews suggest it might be pricier, but this is not a direct violation of the constraints. The hours open 'anytime' is satisfied automatically as there are no restrictions specified, hence scoring 1.0 in hours_factor. The sushi-related reviews are very positive, and the specific mention of the quality and reservation system aligns well with expectations, but slight deductions in keyword_factor are made due to lack of explicit mentions that would push it to a perfect score. Therefore, a 95% match indicates a strong alignment with the stated criteria.",
-      "placeName": "KABUKI Sushi",
-      "priceLevel": "",
-      "rating": 4.6,
-      "strengths": [
-        "High customer satisfaction with a strong rating of 4.6/5 from 1203 reviews, indicating consistent quality and service.",
-        "Exceptional quality of sushi noted in positive reviews, highlighting the freshness of ingredients and culinary artistry.",
-        "Efficient service and a pleasant dining experience, with praise for the reservation system and overall atmosphere."
-      ],
-      "summaryPositiveReviews": "Customers praise Kabuki Sushi for its exceptional sushi quality and artistry, outstanding service, and chill vibe. A reservation is recommended due to limited seating. Some dishes may not suit all ...",
-      "totalRatings": 1203,
-      "weaknesses": [
-        "Price range may be perceived as high, potentially deterring budget-conscious customers.",
-        "Some menu items, like the squid sushi, may not appeal to all customers, suggesting a need for broader flavor profiles.",
-        "Omakase experience may not cater to all palettes, which could limit appeal among diners seeking more specific preferences."
+        "Insufficient data for detailed analysis"
       ]
     },
     {
@@ -150,151 +104,962 @@
         "phone": "03-3499-9178",
         "website": "https://www.sushisyomasa.com/"
       },
-      "fitReason": "Sushisho Masa demonstrates exceptional alignment with key operational and customer satisfaction metrics, including high ratings, positive reviews, and operational adaptability. Despite its high price range and limited seating, the overwhelmingly positive experience reported by patrons secures its fit as a desirable lead with a potential fit score of 95.",
-      "fitScore": 95,
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 94,
       "keyThemes": [
-        "Authentic Omakase Experience",
-        "Exceptional Service",
-        "Large Number of Courses",
-        "Impressive Presentation",
-        "Advanced Reservations Required"
+        "you",
+        "omakase",
+        "experience",
+        "chef",
+        "sushi"
       ],
       "matchFactors": {
-        "hours_factor": 1,
-        "keyword_factor": 1,
-        "price_factor": 0.5,
-        "rating_factor": 1,
-        "review_count_factor": 1
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.96,
+        "review_count_factor": 1.0
       },
-      "matchPercentage": 95.0,
-      "matchReasoning": "Sushisho Masa perfectly matches the constraints related to rating and review count, as it has a high rating of 4.8 (above the minimum of 4.5) and 225 reviews (above the minimum of 100). While there is no explicit constraint on price range, price level is noted as '$$$$', which might not be ideal for all customers, resulting in a moderate price factor. The business operates at any time, matching the 'anytime' business hours constraint. Customer reviews highlight consistent quality and exceptional service, strongly aligning with customer satisfaction indicators, boosting the keyword factor. Consequently, the overall match percentage is very high.",
+      "matchPercentage": 94.48121678740908,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
       "placeName": "Sushisho Masa",
       "priceLevel": "$$$$",
       "rating": 4.8,
       "strengths": [
-        "High customer satisfaction with a 4.8/5 rating based on 225 reviews.",
-        "Exceptional service and quality of food, highlighted in positive customer reviews.",
-        "High match percentage due to nearly perfect alignment with business and customer constraints."
+        "Based on available reviews"
       ],
-      "summaryPositiveReviews": "Customers praise the omakase for its exquisite food, attentive service, intimate setting, and detailed presentations. The experience is enhanced by English-speaking staff and a knowledgeable chef. ...",
+      "summaryPositiveReviews": "My 4th consecutive year here already. It's one of my favourite omakase. Their food never fail to imp... | An incredible Omakase experience! The sushi was fresh, flavorful, and beautifully crafted by the hea... | Amazingly priced (33,000 yen) for 45 item omakase. Made a reservation on pocket concierge in advance...",
       "totalRatings": 225,
       "weaknesses": [
-        "High price range ($$$$) may deter price-sensitive customers.",
-        "Limited seat availability with only 2 seatings per day, potentially restricting customer access."
+        "Insufficient data for detailed analysis"
+      ]
+    },
+    {
+      "address": "Mayjend Yono Soewoyo 6H - J, Pradahkalikendal, Kec. Dukuhpakis, Surabaya, Jawa Timur 60187, Indonesia",
+      "businessHours": [
+        "Monday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Sunday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+      ],
+      "businessType": [
+        "restaurant",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(031) 99146663",
+        "website": "https://www.sushitoku.co.id/"
+      },
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 98,
+      "keyThemes": [
+        "their",
+        "salmon",
+        "yukke",
+        "nice",
+        "sushi"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.9400000000000001,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 98.2,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "placeName": "Sushi Toku - West Surabaya",
+      "priceLevel": "",
+      "rating": 4.7,
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "summaryPositiveReviews": "Sushitoku truly deserves to be called one of the best in Indonesia! Their sashimi is incredibly fres... | It was good. Got carried away that i forgot to take pic of our main course. Blame it to salmon yukke... | Nice atmosphere\nNice food\nNice service by Mbak Agustin.\nEverything served quite fast\nWill come back ...",
+      "totalRatings": 1304,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ]
+    },
+    {
+      "address": "Japan, \u3012104-0061 Tokyo, Chuo City, Ginza, 8-ch\u014dme\u221210\u2212\uff12 \u30eb\u30a2\u30f3\u30d3\u30eb \u5730\u4e0b1F",
+      "businessHours": [
+        "Monday: 12:00\u2009\u2013\u20092:30\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
+        "Tuesday: 12:00\u2009\u2013\u20092:30\u202fPM",
+        "Wednesday: Closed",
+        "Thursday: 12:00\u2009\u2013\u20092:30\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
+        "Friday: 12:00\u2009\u2013\u20092:30\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
+        "Saturday: 12:00\u2009\u2013\u20092:30\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
+        "Sunday: 12:00\u2009\u2013\u20092:30\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "03-6264-5855",
+        "website": "https://sushi-arai.com/"
+      },
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 94,
+      "keyThemes": [
+        "sushi",
+        "chef",
+        "counter",
+        "experience",
+        "quality"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.9199999999999999,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 94.13337961971433,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "placeName": "Sushi Arai",
+      "priceLevel": "$$$$",
+      "rating": 4.6,
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "summaryPositiveReviews": "I visited the second shop by the famous Sushi Arai, run by his apprentice, and it fully lived up to ... | I rarely give five stars, as I try to be conservative with my ratings. This restaurant, however, sta... | Most important part, you will not be allow to book the main counter by visiting the 2nd counter, hen...",
+      "totalRatings": 302,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ]
+    },
+    {
+      "address": "6-ch\u014dme-5-1 Toyosu, Koto City, Tokyo 135-0061, Japan",
+      "businessHours": [
+        "Monday: 6:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+        "Tuesday: 6:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+        "Wednesday: Closed",
+        "Thursday: 6:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+        "Friday: 6:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+        "Saturday: 6:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+        "Sunday: Closed"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "03-6633-0042",
+        "website": "https://twitter.com/sushidai_toyosu?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+      },
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 97,
+      "keyThemes": [
+        "were",
+        "experience",
+        "line",
+        "you",
+        "time"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.9,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 97.0,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "placeName": "Sushi Dai",
+      "priceLevel": "",
+      "rating": 4.5,
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "summaryPositiveReviews": "We had relatives who recommended as well as looking at reviews but found very few recent ones. We fo... | # My First Omakase Experience - A Mixed Bag\n\n## The Queueing System\nWhen we arrived around 7AM, we w... | Sooo worth the early wake up. We were advised to come to Sushi Dai on our first morning in Japan whe...",
+      "totalRatings": 1677,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ]
+    },
+    {
+      "address": "Japan, \u3012160-0004 Tokyo, Shinjuku City, Yotsuya, 1-ch\u014dme\u2212\uff11\uff11 \u967d\u81e8\u5802\u30d3\u30eb 1F",
+      "businessHours": [
+        "Monday: 11:30\u202fAM\u2009\u2013\u20091:30\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
+        "Tuesday: 6:00\u2009\u2013\u200911:00\u202fPM",
+        "Wednesday: 11:30\u202fAM\u2009\u2013\u20091:30\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
+        "Thursday: 6:00\u2009\u2013\u200911:00\u202fPM",
+        "Friday: 11:30\u202fAM\u2009\u2013\u20091:30\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
+        "Saturday: 11:30\u202fAM\u2009\u2013\u20091:30\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
+        "Sunday: Closed"
+      ],
+      "businessType": [
+        "restaurant",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "03-3351-6387",
+        "website": "N/A"
+      },
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 95,
+      "keyThemes": [
+        "lunch",
+        "chirashi",
+        "they",
+        "only",
+        "bowl"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.9199999999999999,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 95.03264810688756,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "placeName": "Sushi Sho Yotsuya",
+      "priceLevel": "$$$$",
+      "rating": 4.6,
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "summaryNegativeReviews": "Went there for the 2k lunch. Good but nothing outstanding from service to food. Taste is mild from r...",
+      "summaryPositiveReviews": "Local, Craft, Authentic Japanese food. I came across this restaurant after Tokyo marathon day 2025 f... | On the first of each month reservations of the following month is released. My friend helped call ea... | Could get a reservation for dinner so we decide to drop by for lunch.\n\nSushi sho is an Tokyo institu...",
+      "totalRatings": 412,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ]
+    },
+    {
+      "address": "2-ch\u014dme-24-8 Nishiazabu, Minato City, Tokyo 106-0031, Japan",
+      "businessHours": [
+        "Monday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u20099:30\u202fPM",
+        "Sunday: Closed"
+      ],
+      "businessType": [
+        "restaurant",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "03-6712-5533",
+        "website": "https://www.sushi-tou.com/"
+      },
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 95,
+      "keyThemes": [
+        "sushi",
+        "were",
+        "experience",
+        "food",
+        "restaurant"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.96,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 95.70196080028514,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "placeName": "Sushi Tou",
+      "priceLevel": "",
+      "rating": 4.8,
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "summaryPositiveReviews": "The sushi restaurant is one of the most amazing in Tokyo. Every dish is beautifully presented and de... | I asked hotel to make recommendations on traditional sushi restaurants with the following criteria: ... | A Phenomenal Dining Experience\n\nI had the omakase with recommended sake, and it was absolutely pheno...",
+      "totalRatings": 343,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ]
+    },
+    {
+      "address": "Japan, \u3012103-0014 Tokyo, Chuo City, Nihonbashikakigarach\u014d, 1-ch\u014dme\u221233\u2212\uff16 \u30d3\u30e5\u30fc\u30cf\u30a4\u30c4\u65e5\u672c\u6a4b \u5730\u4e0b\uff11\u968e",
+      "businessHours": [
+        "Monday: 12:00\u2009\u2013\u20092:45\u202fPM, 3:30\u2009\u2013\u20098:15\u202fPM, 8:30\u2009\u2013\u200911:00\u202fPM",
+        "Tuesday: 12:00\u2009\u2013\u20092:45\u202fPM, 3:30\u2009\u2013\u20098:15\u202fPM, 8:30\u2009\u2013\u200911:00\u202fPM",
+        "Wednesday: 12:00\u2009\u2013\u20092:45\u202fPM, 3:30\u2009\u2013\u20098:15\u202fPM, 8:30\u2009\u2013\u200911:00\u202fPM",
+        "Thursday: 12:00\u2009\u2013\u20092:45\u202fPM, 3:30\u2009\u2013\u20098:15\u202fPM, 8:30\u2009\u2013\u200911:00\u202fPM",
+        "Friday: 12:00\u2009\u2013\u20092:45\u202fPM, 3:30\u2009\u2013\u20098:15\u202fPM, 8:30\u2009\u2013\u200911:00\u202fPM",
+        "Saturday: 12:00\u2009\u2013\u20092:45\u202fPM, 3:30\u2009\u2013\u20098:15\u202fPM, 8:30\u2009\u2013\u200911:00\u202fPM",
+        "Sunday: 12:00\u2009\u2013\u20092:45\u202fPM, 3:30\u2009\u2013\u20098:15\u202fPM, 8:30\u2009\u2013\u200911:00\u202fPM"
+      ],
+      "businessType": [
+        "restaurant",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "03-3669-3855",
+        "website": "N/A"
+      },
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 94,
+      "keyThemes": [
+        "sushi",
+        "amazing",
+        "all",
+        "sugita",
+        "out"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.9199999999999999,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 94.19033811000295,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "placeName": "Nihombashi Kakigaracho Sugita",
+      "priceLevel": "$$$$",
+      "rating": 4.6,
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "summaryPositiveReviews": "The best sushi-ya in my opinion. Sugita-San sushi is out of this world. His technique to bring out t... | Quality ingredients and service. The sushi are very simple but perfect for what they are.   Most enj... | The most amazing sushi I ever had.\n\nBooking is quite challenging, so I ultimately used Pecotter to b...",
+      "totalRatings": 308,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ]
+    },
+    {
+      "address": "Japan, \u3012104-0061 Tokyo, Chuo City, Ginza, 6-ch\u014dme\u22124\u2212\uff11\uff16 Hanatsubaki Bldg, 2\u968e",
+      "businessHours": [
+        "Monday: Closed",
+        "Tuesday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: Closed"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "03-3571-7900",
+        "website": "https://sushiya-ginza.myconciergejapan.net/"
+      },
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 93,
+      "keyThemes": [
+        "experience",
+        "would",
+        "than",
+        "omakase",
+        "very"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.96,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 93.58322629475937,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "placeName": "Sushi Ya",
+      "priceLevel": "",
+      "rating": 4.8,
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "summaryPositiveReviews": "Amazing omakase experience, with a very friendly chef who speaks pretty good English. Really fresh s... | Absolutely amazing Omakase dinner in an intimate 8-seater space. Food was grand, and chef recommende... | Honestly Sushi Ya far exceeded my expectations, my partner and I had the nigiri lunch omakase, 16 co...",
+      "totalRatings": 165,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ]
+    },
+    {
+      "address": "Japan, \u3012106-0031 Tokyo, Minato City, Nishiazabu, 1-ch\u014dme\u22124\u2212\uff11\uff15 \u5bff\u53f8\u52c7",
+      "businessHours": [
+        "Monday: 5:00\u2009\u2013\u200911:30\u202fPM",
+        "Tuesday: 5:00\u2009\u2013\u200911:30\u202fPM",
+        "Wednesday: 5:00\u2009\u2013\u200911:30\u202fPM",
+        "Thursday: 5:00\u2009\u2013\u200911:30\u202fPM",
+        "Friday: 5:00\u2009\u2013\u200911:30\u202fPM",
+        "Saturday: 5:00\u2009\u2013\u200911:30\u202fPM",
+        "Sunday: Closed"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "03-3403-6467",
+        "website": "http://sushiyuu.com/"
+      },
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 95,
+      "keyThemes": [
+        "sushi",
+        "meal",
+        "experience",
+        "staff",
+        "english"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.9400000000000001,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 95.5830334880978,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "placeName": "Sushi Yuu",
+      "priceLevel": "$$$",
+      "rating": 4.7,
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "summaryPositiveReviews": "SushiYuu is an excellent choice for anyone looking to experience high-quality sushi in Tokyo (especi... | We came here on a recommendation from a friend and were so glad we did - this is the best omakase we... | Our dining experience was amazing from start to finish. The staff was very welcoming, spoke English ...",
+      "totalRatings": 405,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ]
+    },
+    {
+      "address": "Japan, \u3012151-8583 Tokyo, Shibuya, Yoyogi, 2-ch\u014dme\u22122\u2212\uff11 \u5c0f\u7530\u6025\u30db\u30c6\u30eb\u30bb\u30f3\u30c1\u30e5\u30ea\u30fc\u30b5\u30b6\u30f3\u30bf\u30ef 19F sushi",
+      "businessHours": [
+        "Monday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Tuesday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Wednesday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Thursday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Friday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Saturday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Sunday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM"
+      ],
+      "businessType": [
+        "grocery_or_supermarket",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "080-7164-5210",
+        "website": "https://www.tablecheck.com/ja/shops/yurakuchokakida/reserve"
+      },
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 97,
+      "keyThemes": [
+        "sushi",
+        "you",
+        "omakase",
+        "quality",
+        "are"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.9,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 97.0,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "placeName": "Sushi\uff5cYurakucho Kakida\uff5cTokyo",
+      "priceLevel": "",
+      "rating": 4.5,
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "summaryNegativeReviews": "I really wanted to enjoy this omakase, but at 13,000 yen, it just wasn\u2019t worth it. The quality of th...",
+      "summaryPositiveReviews": "Quality of Sashimi and Sushi are reasonable.  Big pleasant surprise is at the end the chef ask every... | Highly recommend this omakase course! Tried many different types of sushi (ie. 3 types of tuna, uni,... | Kenta is our chef, he\u2019s very friendly and funny. The restaurant staff speaks good English so there a...",
+      "totalRatings": 2314,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ]
+    },
+    {
+      "address": "Japan, \u3012106-0031 Tokyo, Minato City, Nishiazabu, 4-ch\u014dme\u22121\u2212\uff11\uff15 \u30bb\u30d6\u30f3\u897f\u9ebb\u5e03 B1F",
+      "businessHours": [
+        "Monday: Closed",
+        "Tuesday: 6:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+        "Wednesday: 6:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+        "Thursday: 6:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+        "Friday: 6:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+        "Saturday: 6:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+        "Sunday: 6:00\u202fPM\u2009\u2013\u200912:00\u202fAM"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "03-3499-9178",
+        "website": "https://www.sushisyomasa.com/"
+      },
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 94,
+      "keyThemes": [
+        "you",
+        "omakase",
+        "experience",
+        "chef",
+        "sushi"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.96,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 94.48121678740908,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "placeName": "Sushisho Masa",
+      "priceLevel": "$$$$",
+      "rating": 4.8,
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "summaryPositiveReviews": "My 4th consecutive year here already. It's one of my favourite omakase. Their food never fail to imp... | An incredible Omakase experience! The sushi was fresh, flavorful, and beautifully crafted by the hea... | Amazingly priced (33,000 yen) for 45 item omakase. Made a reservation on pocket concierge in advance...",
+      "totalRatings": 225,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ]
+    },
+    {
+      "address": "Japan, \u3012106-0032 Tokyo, Minato City, Roppongi, 1-ch\u014dme\u22124\u2212\uff15 ARK Hills South Tower, 1F",
+      "businessHours": [
+        "Monday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
+        "Tuesday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
+        "Wednesday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
+        "Thursday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
+        "Friday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
+        "Saturday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
+        "Sunday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "03-3589-4412",
+        "website": "https://www.arkhills.com/gourmet_shops/0010.html"
+      },
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 94,
+      "keyThemes": [
+        "sushi",
+        "saito",
+        "amazing",
+        "best",
+        "great"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.9,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 94.70092289874255,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "placeName": "Saito",
+      "priceLevel": "$$$$",
+      "rating": 4.5,
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "summaryPositiveReviews": "Really lived up to the hype. Chef Takashi Saito is great fun as well as preparing amazing sushi with... | Sushi Saito's sushi can be described in one sentence.\nPerfect Balance.\nSushi was served in second-co... | This is the pinnacle of sushi experiences. If you find yourself fortunate enough to get a seat with ...",
+      "totalRatings": 452,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ]
+    },
+    {
+      "address": "Japan, \u3012104-0061 Tokyo, Chuo City, Ginza, 8-ch\u014dme\u221210\u2212\uff12 \u30eb\u30a2\u30f3\u30d3\u30eb \u5730\u4e0b1F",
+      "businessHours": [
+        "Monday: 12:00\u2009\u2013\u20092:30\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
+        "Tuesday: 12:00\u2009\u2013\u20092:30\u202fPM",
+        "Wednesday: Closed",
+        "Thursday: 12:00\u2009\u2013\u20092:30\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
+        "Friday: 12:00\u2009\u2013\u20092:30\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
+        "Saturday: 12:00\u2009\u2013\u20092:30\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
+        "Sunday: 12:00\u2009\u2013\u20092:30\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM"
+      ],
+      "businessType": [
+        "restaurant",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "03-6264-5855",
+        "website": "https://sushi-arai.com/"
+      },
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 94,
+      "keyThemes": [
+        "sushi",
+        "chef",
+        "counter",
+        "experience",
+        "quality"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.9199999999999999,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 94.13337961971433,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "placeName": "Sushi Arai",
+      "priceLevel": "$$$$",
+      "rating": 4.6,
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "summaryPositiveReviews": "I visited the second shop by the famous Sushi Arai, run by his apprentice, and it fully lived up to ... | I rarely give five stars, as I try to be conservative with my ratings. This restaurant, however, sta... | Most important part, you will not be allow to book the main counter by visiting the 2nd counter, hen...",
+      "totalRatings": 302,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ]
+    },
+    {
+      "address": "6-ch\u014dme-5-1 Toyosu, Koto City, Tokyo 135-0061, Japan",
+      "businessHours": [
+        "Monday: 6:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+        "Tuesday: 6:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+        "Wednesday: Closed",
+        "Thursday: 6:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+        "Friday: 6:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+        "Saturday: 6:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
+        "Sunday: Closed"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "03-6633-0042",
+        "website": "https://twitter.com/sushidai_toyosu?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+      },
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 97,
+      "keyThemes": [
+        "were",
+        "experience",
+        "line",
+        "you",
+        "time"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.9,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 97.0,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "placeName": "Sushi Dai",
+      "priceLevel": "",
+      "rating": 4.5,
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "summaryPositiveReviews": "We had relatives who recommended as well as looking at reviews but found very few recent ones. We fo... | # My First Omakase Experience - A Mixed Bag\n\n## The Queueing System\nWhen we arrived around 7AM, we w... | Sooo worth the early wake up. We were advised to come to Sushi Dai on our first morning in Japan whe...",
+      "totalRatings": 1677,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ]
+    },
+    {
+      "address": "Japan, \u3012106-0032 Tokyo, Minato City, Roppongi, 7-ch\u014dme\u22123\u2212\uff11\uff15 Suzuya 2 Bldg, B1F",
+      "businessHours": [
+        "Monday: 12:30\u2009\u2013\u20093:00\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
+        "Tuesday: 12:30\u2009\u2013\u20093:00\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
+        "Wednesday: 12:30\u2009\u2013\u20093:00\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
+        "Thursday: 12:30\u2009\u2013\u20093:00\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
+        "Friday: 12:30\u2009\u2013\u20093:00\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
+        "Saturday: 12:30\u2009\u2013\u20093:00\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
+        "Sunday: 12:30\u2009\u2013\u20093:00\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "070-1408-8431",
+        "website": "https://sushiryuta.delivery-takeout-menu.com/"
+      },
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 92,
+      "keyThemes": [
+        "omakase",
+        "chef",
+        "experience",
+        "ryuta",
+        "had"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.96,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 92.75614456774824,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "placeName": "Sushi Ryuta",
+      "priceLevel": "",
+      "rating": 4.8,
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "summaryPositiveReviews": "Sorry for posting this late. We visited last December, and it was hands down the best omakase experi... | Absolutely phenomenal omakase experience! Chef Ryuta is incredibly welcoming and professional, with ... | Really loved the sushi here. The chef serves more uncommon cuts of neta here, but they all went well...",
+      "totalRatings": 124,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ]
+    },
+    {
+      "address": "Mayjend Yono Soewoyo 6H - J, Pradahkalikendal, Kec. Dukuhpakis, Surabaya, Jawa Timur 60187, Indonesia",
+      "businessHours": [
+        "Monday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Sunday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(031) 99146663",
+        "website": "https://www.sushitoku.co.id/"
+      },
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 98,
+      "keyThemes": [
+        "their",
+        "salmon",
+        "yukke",
+        "nice",
+        "sushi"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.9400000000000001,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 98.2,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "placeName": "Sushi Toku - West Surabaya",
+      "priceLevel": "",
+      "rating": 4.7,
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "summaryPositiveReviews": "Sushitoku truly deserves to be called one of the best in Indonesia! Their sashimi is incredibly fres... | It was good. Got carried away that i forgot to take pic of our main course. Blame it to salmon yukke... | Nice atmosphere\nNice food\nNice service by Mbak Agustin.\nEverything served quite fast\nWill come back ...",
+      "totalRatings": 1304,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ]
+    },
+    {
+      "address": "2-ch\u014dme-24-8 Nishiazabu, Minato City, Tokyo 106-0031, Japan",
+      "businessHours": [
+        "Monday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u20099:30\u202fPM",
+        "Sunday: Closed"
+      ],
+      "businessType": [
+        "restaurant",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "03-6712-5533",
+        "website": "https://www.sushi-tou.com/"
+      },
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 95,
+      "keyThemes": [
+        "sushi",
+        "were",
+        "experience",
+        "food",
+        "restaurant"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.96,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 95.70196080028514,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "placeName": "Sushi Tou",
+      "priceLevel": "",
+      "rating": 4.8,
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "summaryPositiveReviews": "The sushi restaurant is one of the most amazing in Tokyo. Every dish is beautifully presented and de... | I asked hotel to make recommendations on traditional sushi restaurants with the following criteria: ... | A Phenomenal Dining Experience\n\nI had the omakase with recommended sake, and it was absolutely pheno...",
+      "totalRatings": 343,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ]
+    },
+    {
+      "address": "Japan, \u3012104-0061 Tokyo, Chuo City, Ginza, 6-ch\u014dme\u22124\u2212\uff11\uff16 Hanatsubaki Bldg, 2\u968e",
+      "businessHours": [
+        "Monday: Closed",
+        "Tuesday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: Closed"
+      ],
+      "businessType": [
+        "restaurant",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "03-3571-7900",
+        "website": "https://sushiya-ginza.myconciergejapan.net/"
+      },
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 93,
+      "keyThemes": [
+        "experience",
+        "would",
+        "than",
+        "omakase",
+        "very"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.96,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 93.58322629475937,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "placeName": "Sushi Ya",
+      "priceLevel": "",
+      "rating": 4.8,
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "summaryPositiveReviews": "Amazing omakase experience, with a very friendly chef who speaks pretty good English. Really fresh s... | Absolutely amazing Omakase dinner in an intimate 8-seater space. Food was grand, and chef recommende... | Honestly Sushi Ya far exceeded my expectations, my partner and I had the nigiri lunch omakase, 16 co...",
+      "totalRatings": 165,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ]
+    },
+    {
+      "address": "Japan, \u3012106-0032 Tokyo, Minato City, Roppongi, 1-ch\u014dme\u22124\u2212\uff15 ARK Hills South Tower, 1F",
+      "businessHours": [
+        "Monday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
+        "Tuesday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
+        "Wednesday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
+        "Thursday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
+        "Friday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
+        "Saturday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
+        "Sunday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "03-3589-4412",
+        "website": "https://www.arkhills.com/gourmet_shops/0010.html"
+      },
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 94,
+      "keyThemes": [
+        "sushi",
+        "saito",
+        "amazing",
+        "best",
+        "great"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.9,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 94.70092289874255,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "placeName": "Saito",
+      "priceLevel": "$$$$",
+      "rating": 4.5,
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "summaryPositiveReviews": "Really lived up to the hype. Chef Takashi Saito is great fun as well as preparing amazing sushi with... | Sushi Saito's sushi can be described in one sentence.\nPerfect Balance.\nSushi was served in second-co... | This is the pinnacle of sushi experiences. If you find yourself fortunate enough to get a seat with ...",
+      "totalRatings": 452,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
       ]
     }
   ],
   "$metadata": {
-    "createdAt": "2025-04-11T12:22:44.399597+00:00Z",
-    "startedAt": "2025-04-11T12:22:47.705525+00:00Z",
-    "executionTotal": 18
-=======
-      "address": "Pakuwon Mall Lantai 2 unit 65-66, Babatan, Kec. Wiyung, Surabaya, Jawa Timur 60216, Indonesia",
-      "contact": {
-        "phone": "0822-1000-6099",
-        "website": "N/A"
-      },
-      "matchPercentage": 75.0,
-      "placeName": "Okinawa sushi pakuwon mall",
-      "summaryPositiveReviews": "Great food quality and taste, with fresh ingredients. Service is attentive but meal delivery can be slow. Robot waiter is a fun novelty but not ess..."
-    },
-    {
-      "address": "Jl. Manyar Kertoarjo No.71, Mojo, Kec. Gubeng, Surabaya, Jawa Timur 60285, Indonesia",
-      "contact": {
-        "phone": "0822-2953-7345",
-        "website": "https://www.instagram.com/sushihiro_id/"
-      },
-      "matchPercentage": 75.0,
-      "placeName": "Sushi Hiro Manyar Surabaya",
-      "summaryNegativeReviews": "Lower standards than Jakarta, less tasty rice, hot in the afternoon. Good service, but food quality matches another lower-rated sushi place.",
-      "summaryPositiveReviews": "Great sushi variety and quality, attentive service, beautiful venue, standout dishes like truffle roll and beef hamburg, plus special promotions."
-    },
-    {
-      "address": "Jl. Dharmahusada Indah Timur No.35-37, Mulyorejo, Kec. Mulyorejo, Surabaya, Jawa Timur 60115, Indonesia",
-      "contact": {
-        "phone": "N/A",
-        "website": "https://www.instagram.com/sushihiro_id/"
-      },
-      "matchPercentage": 75.0,
-      "placeName": "Sushi Hiro - Galaxy Mall 1 Ground Floor",
-      "summaryPositiveReviews": "Sushi Hiro at Galaxy Mall offers fresh, high-quality sushi, great ambiance, and excellent service with friendly staff. A top choice for Japanese cu..."
-    },
-    {
-      "address": "Pakuwon Mall Lantai 2 unit 65-66, Babatan, Kec. Wiyung, Surabaya, Jawa Timur 60216, Indonesia",
-      "contact": {
-        "phone": "0822-1000-6099",
-        "website": "N/A"
-      },
-      "matchPercentage": 75.0,
-      "placeName": "Okinawa sushi pakuwon mall",
-      "summaryPositiveReviews": "Customers praise fresh ingredients and tasty food, commend service staff, and enjoy unique decor with robot waiters, but note long menus and higher..."
-    },
-    {
-      "address": "Jl. Manyar Kertoarjo No.71, Mojo, Kec. Gubeng, Surabaya, Jawa Timur 60285, Indonesia",
-      "contact": {
-        "phone": "0822-2953-7345",
-        "website": "https://www.instagram.com/sushihiro_id/"
-      },
-      "matchPercentage": 75.0,
-      "placeName": "Sushi Hiro Manyar Surabaya",
-      "summaryNegativeReviews": "The outlet has lower standards than Jakarta, with less appealing rice and uncomfortable temperatures, but matches in service and food quality to Su...",
-      "summaryPositiveReviews": "Customers love this sushi place for its fresh, varied dishes and attentive service. Popular items include unagi, truffle roll, and salmon dishes."
-    },
-    {
-      "address": "Jl. Dharmahusada Indah Timur No.35-37, Mulyorejo, Kec. Mulyorejo, Surabaya, Jawa Timur 60115, Indonesia",
-      "contact": {
-        "phone": "N/A",
-        "website": "https://www.instagram.com/sushihiro_id/"
-      },
-      "matchPercentage": 75.0,
-      "placeName": "Sushi Hiro - Galaxy Mall 1 Ground Floor",
-      "summaryPositiveReviews": "Sushi Hiro at Galaxy Mall is praised for its excellent service, friendly staff, fresh and high-quality ingredients, modern ambiance, and delicious ..."
-    },
-    {
-      "address": "Mall, Royal Plaza, lantai 3 02, Wonokromo, Kec. Wonokromo, Surabaya, Jawa Timur 60243, Indonesia",
-      "contact": {
-        "phone": "0812-3177-3705",
-        "website": "https://www.instagram.com/sushikun.id/"
-      },
-      "matchPercentage": 75.0,
-      "placeName": "Sushikun - Royal Plaza",
-      "summaryPositiveReviews": "Affordable sushi with fresh options, good ambiance, and varied dining choices at Royal Plaza. Promotions like \"all plates 10k\" are highly recommended."
-    },
-    {
-      "address": "Royal Plaza Lt.3 Unit U1 No.19, Wonokromo, Kec. Wonokromo, Surabaya, Jawa Timur, Indonesia",
-      "contact": {
-        "phone": "N/A",
-        "website": "N/A"
-      },
-      "matchPercentage": 75.0,
-      "placeName": "Suteki Sushi",
-      "summaryPositiveReviews": "Positive reviews highlight friendly service and recommend trying the food. Customers express gratitude and overall satisfaction."
-    },
-    {
-      "address": "Jl. Mayjen HR. Muhammad No.31, Putat Gede, Kec. Sukomanunggal, Surabaya, Jawa Timur 60189, Indonesia",
-      "contact": {
-        "phone": "(031) 7301888",
-        "website": "https://www.vasahotelsurabaya.com/restaurants/nagano"
-      },
-      "matchPercentage": 100,
-      "placeName": "Nagano Japanese Restaurant",
-      "summaryPositiveReviews": "Nagano offers top-quality meat, excellent service, and a cozy ambiance. Customers praise attentive staff and chefs, and the fresh, flavorful dishes."
-    },
-    {
-      "address": "Pakuwon Mall Surabaya, Jl. Puncak Indah Lontar II No.2 Lantai 2M Unit 30-32, Babatan, Kec. Wiyung, Jawa Timur, 60227, Indonesia",
-      "contact": {
-        "phone": "0852-1074-3051",
-        "website": "N/A"
-      },
-      "matchPercentage": 75.0,
-      "placeName": "Gion The Sushi Bar, Mall Pakuwon Surabaya",
-      "summaryPositiveReviews": "Customers praise the tasty food, especially salmon sashimi, and extensive menu. Service can be slow sometimes, but friendly. Slightly pricey. Ideal..."
-    }
-  ],
-  "$metadata": {
-    "createdAt": "2025-04-09T04:53:51.800597+00:00Z",
-    "startedAt": "2025-04-09T04:53:53.522146+00:00Z",
-    "executionTotal": 142
->>>>>>> f4ac694ae964bda75418e157fdf939b8980e6cdc
+    "createdAt": "2025-04-14T06:32:23.509243+00:00Z",
+    "startedAt": "2025-04-14T06:32:24.831520+00:00Z",
+    "executionTotal": 133
   }
 }
