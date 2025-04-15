@@ -1,270 +1,67 @@
 {
-  "$id": "90a33ea9-6f40-41c9-a937-ad1298dbf41d",
+  "$id": "63f50fbc-7bf7-44ea-9206-c51e6771d69d",
   "$state": {
-    "businessType": "5 sushi restaurant",
+    "businessType": "3 hotels",
     "leadCount": 20,
-    "location": "Tokyo",
+    "location": "Surabaya",
     "numberOfLeads": 20,
     "remainingPlaceIds": [
-      "ChIJIw1YEtmLGGARdWgvKs50S7A",
-      "ChIJaTXpw6mMGGARP-d-_tbssVE",
-      "ChIJiRDLCnCLGGARiICs7YnthzQ",
-      "ChIJSyag6ouMGGARSwIX8ayCNCM",
-      "ChIJOTwf1ueLGGAR8t0EkQWReM0",
-      "ChIJL5gxE9CMGGAR0Vtyrq_cFio",
-      "ChIJV4stTX2NGGAR3JcZ-EXcfhM",
-      "ChIJiT-k69eLGGARNGQG4N1vvR8",
-      "ChIJuzydSvqLGGARXTqdIJs_08Y",
-      "ChIJE6NVO9mLGGARUiKvcRmKzN4",
-      "ChIJ5-LVSdGMGGARO2nfNb18X8c",
-      "ChIJu9W4zVeLGGARXn0xCjGINF8",
-      "ChIJaaz3_Er71y0RimofmjXG4UE",
-      "ChIJyZOxItGNGGARWwp9_I4dZDA",
-      "ChIJj8jK03qLGGARwaWcPBbQuuI",
-      "ChIJPYBAAuaLGGARTwNCf6ag05s",
-      "ChIJAQBM40SJGGARE_FACL6szA0",
-      "ChIJw1zDlimLGGAR_tguy5YrvFY",
-      "ChIJVby9v-WLGGARZXCGPfhHpA4"
+      "ChIJ44ELsFD51y0RAAMFEVBif5w",
+      "ChIJE6ZOaCP71y0RWogxW29CPYg",
+      "ChIJV1EaxKr71y0RYHHPpRHLB7s",
+      "ChIJBfcjrRP81y0RHH7rjPhJabo",
+      "ChIJ_S0D7L351y0RTm0hRAcOXQ4",
+      "ChIJqUxota371y0RjbARnYkrT98",
+      "ChIJoVgf87L71y0RvWupJyVrUMw",
+      "ChIJM2CxPX_xaS4Rljip4AOdpFc",
+      "ChIJr8YI9nT51y0Rk6u4efoz3-0",
+      "ChIJvVpyMVT71y0Rq74krTiJwhQ",
+      "ChIJ62W35Az81y0RMYYduz50Hcw",
+      "ChIJW40Umt_71y0RHHIrvjgFyQw",
+      "ChIJp_1h6Aj81y0RhOF7sO2wA4M",
+      "ChIJDZAgQxL71y0RBb23dGYeEpI",
+      "ChIJ35Gf9tn71y0Ryt96ykjKXX4",
+      "ChIJZaSSjIv71y0RQqzC3EmcanM",
+      "ChIJA_bAVSH91y0R1CdLI8Kr3-g",
+      "ChIJy9LIQeD41y0RwdbbDech4Pw",
+      "ChIJrzO3l2L51y0RheE4AAtvpCg",
+      "ChIJI-PQwGP51y0RGiOfAXxci1Q",
+      "ChIJPbqrXQD71y0Raq6Hhy5wg8c"
     ],
-    "searchOffset": 62,
-    "nextPageToken": "AeeoHcIJXzGbKpBamYDD54UQiCW9lpxtQWt8LaXyTd6sW7xlw4z-JzjEKpLm4389dXXAyZoVtytctV07Xr4tBW9craRqiOrJExAIDtSvYm2FPB1_GfmOOoDKte9mQWXVVO8toWbafEwTh7yg5p_lEZDm_-yqnJ7fwGGdC5hx81O0XeQY1bciTIkSVIuwX34rKtBfRrkpK8jo8iqaoOfDrlnmAr1uw8es9bFvWKjsGH5Ih34WKB9qkRqfdUVhP4RkHKRcWgBPdFXE7qNjkLyuAZSfDYQDdnraPkVkNOiqNw1mA3_iWLeq8asT1vciq37us3w9rR-ZoTZKzo83BFYXlrT8-AIa5OWq_7QUBfGgYNoeOTkYyQmH3-4GkKMuSXCHQ6YIzvAUeBqOhSerp5uyXDUA8jJa98zix8Wivx1a9jf0urttCucoBJ7nPvyNidCca2uedXkXGRZGrCiJD6Jc541N3nHndEfMCgf4A9yCw11800stSoQxpalv0wFPU8GnQPDDNjqhZIMGOmdPVKqjttMFdE3DRpuGirEyM2jB3pehiLTeooqJDraa52p_DpAPzrALcbqYYE77wSnBrEgJ89POdQwTMeYJuoaQMIE5hbq5CHToZyG2519Abfs",
-    "skippedCount": 23,
+    "searchOffset": 80,
+    "nextPageToken": "AeeoHcLbPjsD5XOCwrWiFrveBFE7-m10vlAbheuUuTfyupDX5sbCeUpJoQeODVKMWqg1JeYGNz8i8ipWXbLSY4AnOBPDHNjqpHCQujw2E3O0soL3dEdi0vAxHJLi5N5yMEFFOl3mRqh6JisPh2f7VQT23sWGevvfxWlMAG-LiXhejgaK2Snka2E9W3BykXfGhaCoWBhNW93roTInAZlHmaDLwUvBRy68fcekx0l5hQ75oatWtzpcqLnlQ2b4IjsJEZkyYXiNQw9r-F30PBitXU8I6QXp6dKVD6auiwUPYlaa4RKklruFXIQruPf9k69e2jipnuZhX-Y2hohATq6b0kYvqzDT1qdRhjLrduyCYgNBrfWiYa7crNwu_j9DigjinlRai0umfeUk0Eio51ofCrnhqvUQAYBPSR94Kk3T0i1LY3hO2aU1XsPnCveIWZN2F1t_RCHf_g8Hj6m1RQYyZnL9MIPvQExvYZOr36JCnc4gtG35qH75Ad8X66xoGCbzhwq5WB5fVTdNymlLbHgS263LLSkCzjy0NHtU38t-TUb5LUxXlOp9O5kW6uMEE0lNSq7OMQFqrlsdndQT7GH4oADnt7r7wVZZi-2sJKeUZLRGH6qoIQ",
+    "skippedCount": 39,
     "skippedConstraints": true
   },
   "$results": [
     {
-      "address": "Japan, \u3012106-0032 Tokyo, Minato City, Roppongi, 1-ch\u014dme\u22124\u2212\uff15 ARK Hills South Tower, 1F",
+      "address": "Jl. Gayung Kebonsari No.30, Gayungan, Kec. Gayungan, Surabaya, Jawa Timur 60235, Indonesia",
       "businessHours": [
-        "Monday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
-        "Tuesday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
-        "Wednesday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
-        "Thursday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
-        "Friday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
-        "Saturday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
-        "Sunday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM"
+        "Monday: Open 24 hours",
+        "Tuesday: Open 24 hours",
+        "Wednesday: Open 24 hours",
+        "Thursday: Open 24 hours",
+        "Friday: Open 24 hours",
+        "Saturday: Open 24 hours",
+        "Sunday: Open 24 hours"
       ],
       "businessType": [
-        "restaurant",
-        "food",
+        "lodging",
         "point_of_interest",
         "establishment"
       ],
       "contact": {
-        "phone": "03-3589-4412",
-        "website": "https://www.arkhills.com/gourmet_shops/0010.html"
-      },
-      "fitReason": "Score based on match percentage only",
-      "fitScore": 94,
-      "keyThemes": [
-        "sushi",
-        "saito",
-        "amazing",
-        "best",
-        "great"
-      ],
-      "matchFactors": {
-        "hours_factor": 1.0,
-        "keyword_factor": 0.0,
-        "price_factor": 1.0,
-        "rating_factor": 0.9,
-        "review_count_factor": 1.0
-      },
-      "matchPercentage": 94.70092289874255,
-      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
-      "placeName": "Saito",
-      "priceLevel": "$$$$",
-      "rating": 4.5,
-      "strengths": [
-        "Based on available reviews"
-      ],
-      "summaryPositiveReviews": "Really lived up to the hype. Chef Takashi Saito is great fun as well as preparing amazing sushi with... | Sushi Saito's sushi can be described in one sentence.\nPerfect Balance.\nSushi was served in second-co... | This is the pinnacle of sushi experiences. If you find yourself fortunate enough to get a seat with ...",
-      "totalRatings": 452,
-      "weaknesses": [
-        "Insufficient data for detailed analysis"
-      ]
-    },
-    {
-      "address": "Japan, \u3012106-0031 Tokyo, Minato City, Nishiazabu, 4-ch\u014dme\u22121\u2212\uff11\uff15 \u30bb\u30d6\u30f3\u897f\u9ebb\u5e03 B1F",
-      "businessHours": [
-        "Monday: Closed",
-        "Tuesday: 6:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-        "Wednesday: 6:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-        "Thursday: 6:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-        "Friday: 6:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-        "Saturday: 6:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-        "Sunday: 6:00\u202fPM\u2009\u2013\u200912:00\u202fAM"
-      ],
-      "businessType": [
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "03-3499-9178",
-        "website": "https://www.sushisyomasa.com/"
-      },
-      "fitReason": "Score based on match percentage only",
-      "fitScore": 94,
-      "keyThemes": [
-        "you",
-        "omakase",
-        "experience",
-        "chef",
-        "sushi"
-      ],
-      "matchFactors": {
-        "hours_factor": 1.0,
-        "keyword_factor": 0.0,
-        "price_factor": 1.0,
-        "rating_factor": 0.96,
-        "review_count_factor": 1.0
-      },
-      "matchPercentage": 94.48121678740908,
-      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
-      "placeName": "Sushisho Masa",
-      "priceLevel": "$$$$",
-      "rating": 4.8,
-      "strengths": [
-        "Based on available reviews"
-      ],
-      "summaryPositiveReviews": "My 4th consecutive year here already. It's one of my favourite omakase. Their food never fail to imp... | An incredible Omakase experience! The sushi was fresh, flavorful, and beautifully crafted by the hea... | Amazingly priced (33,000 yen) for 45 item omakase. Made a reservation on pocket concierge in advance...",
-      "totalRatings": 225,
-      "weaknesses": [
-        "Insufficient data for detailed analysis"
-      ]
-    },
-    {
-      "address": "Mayjend Yono Soewoyo 6H - J, Pradahkalikendal, Kec. Dukuhpakis, Surabaya, Jawa Timur 60187, Indonesia",
-      "businessHours": [
-        "Monday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Tuesday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Wednesday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Thursday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Friday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Saturday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Sunday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
-      ],
-      "businessType": [
-        "restaurant",
-        "point_of_interest",
-        "food",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "(031) 99146663",
-        "website": "https://www.sushitoku.co.id/"
-      },
-      "fitReason": "Score based on match percentage only",
-      "fitScore": 98,
-      "keyThemes": [
-        "their",
-        "salmon",
-        "yukke",
-        "nice",
-        "sushi"
-      ],
-      "matchFactors": {
-        "hours_factor": 1.0,
-        "keyword_factor": 0.0,
-        "price_factor": 1.0,
-        "rating_factor": 0.9400000000000001,
-        "review_count_factor": 1.0
-      },
-      "matchPercentage": 98.2,
-      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
-      "placeName": "Sushi Toku - West Surabaya",
-      "priceLevel": "",
-      "rating": 4.7,
-      "strengths": [
-        "Based on available reviews"
-      ],
-      "summaryPositiveReviews": "Sushitoku truly deserves to be called one of the best in Indonesia! Their sashimi is incredibly fres... | It was good. Got carried away that i forgot to take pic of our main course. Blame it to salmon yukke... | Nice atmosphere\nNice food\nNice service by Mbak Agustin.\nEverything served quite fast\nWill come back ...",
-      "totalRatings": 1304,
-      "weaknesses": [
-        "Insufficient data for detailed analysis"
-      ]
-    },
-    {
-      "address": "Japan, \u3012104-0061 Tokyo, Chuo City, Ginza, 8-ch\u014dme\u221210\u2212\uff12 \u30eb\u30a2\u30f3\u30d3\u30eb \u5730\u4e0b1F",
-      "businessHours": [
-        "Monday: 12:00\u2009\u2013\u20092:30\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
-        "Tuesday: 12:00\u2009\u2013\u20092:30\u202fPM",
-        "Wednesday: Closed",
-        "Thursday: 12:00\u2009\u2013\u20092:30\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
-        "Friday: 12:00\u2009\u2013\u20092:30\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
-        "Saturday: 12:00\u2009\u2013\u20092:30\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
-        "Sunday: 12:00\u2009\u2013\u20092:30\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM"
-      ],
-      "businessType": [
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "03-6264-5855",
-        "website": "https://sushi-arai.com/"
-      },
-      "fitReason": "Score based on match percentage only",
-      "fitScore": 94,
-      "keyThemes": [
-        "sushi",
-        "chef",
-        "counter",
-        "experience",
-        "quality"
-      ],
-      "matchFactors": {
-        "hours_factor": 1.0,
-        "keyword_factor": 0.0,
-        "price_factor": 1.0,
-        "rating_factor": 0.9199999999999999,
-        "review_count_factor": 1.0
-      },
-      "matchPercentage": 94.13337961971433,
-      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
-      "placeName": "Sushi Arai",
-      "priceLevel": "$$$$",
-      "rating": 4.6,
-      "strengths": [
-        "Based on available reviews"
-      ],
-      "summaryPositiveReviews": "I visited the second shop by the famous Sushi Arai, run by his apprentice, and it fully lived up to ... | I rarely give five stars, as I try to be conservative with my ratings. This restaurant, however, sta... | Most important part, you will not be allow to book the main counter by visiting the 2nd counter, hen...",
-      "totalRatings": 302,
-      "weaknesses": [
-        "Insufficient data for detailed analysis"
-      ]
-    },
-    {
-      "address": "6-ch\u014dme-5-1 Toyosu, Koto City, Tokyo 135-0061, Japan",
-      "businessHours": [
-        "Monday: 6:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
-        "Tuesday: 6:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
-        "Wednesday: Closed",
-        "Thursday: 6:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
-        "Friday: 6:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
-        "Saturday: 6:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
-        "Sunday: Closed"
-      ],
-      "businessType": [
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "03-6633-0042",
-        "website": "https://twitter.com/sushidai_toyosu?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+        "phone": "(031) 82518899",
+        "website": "http://pbsu.pphotels.com/"
       },
       "fitReason": "Score based on match percentage only",
       "fitScore": 97,
       "keyThemes": [
-        "were",
-        "experience",
-        "line",
-        "you",
-        "time"
+        "hotel",
+        "very",
+        "nice",
+        "room",
+        "stay"
       ],
       "matchFactors": {
         "hours_factor": 1.0,
@@ -275,47 +72,38 @@
       },
       "matchPercentage": 97.0,
       "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
-      "placeName": "Sushi Dai",
+      "placeName": "PrimeBiz Hotel Surabaya",
       "priceLevel": "",
       "rating": 4.5,
       "strengths": [
         "Based on available reviews"
       ],
-      "summaryPositiveReviews": "We had relatives who recommended as well as looking at reviews but found very few recent ones. We fo... | # My First Omakase Experience - A Mixed Bag\n\n## The Queueing System\nWhen we arrived around 7AM, we w... | Sooo worth the early wake up. We were advised to come to Sushi Dai on our first morning in Japan whe...",
-      "totalRatings": 1677,
+      "summaryPositiveReviews": "Very worth the price, one of the nicest affordable hotel I have ever been to. The hotel fragrance is... | Great rooms for triple and kingsuite. Fit for the family.\nFoods were great. Stay here for 1 night.\nS... | Been using this hotel for 2 years. Most value for money hotel.\nQuick response staff, location with c...",
+      "totalRatings": 4079,
       "weaknesses": [
         "Insufficient data for detailed analysis"
       ]
     },
     {
-      "address": "Japan, \u3012160-0004 Tokyo, Shinjuku City, Yotsuya, 1-ch\u014dme\u2212\uff11\uff11 \u967d\u81e8\u5802\u30d3\u30eb 1F",
-      "businessHours": [
-        "Monday: 11:30\u202fAM\u2009\u2013\u20091:30\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
-        "Tuesday: 6:00\u2009\u2013\u200911:00\u202fPM",
-        "Wednesday: 11:30\u202fAM\u2009\u2013\u20091:30\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
-        "Thursday: 6:00\u2009\u2013\u200911:00\u202fPM",
-        "Friday: 11:30\u202fAM\u2009\u2013\u20091:30\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
-        "Saturday: 11:30\u202fAM\u2009\u2013\u20091:30\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
-        "Sunday: Closed"
-      ],
+      "address": "Jl. Mayjen Sungkono No.101-103, Dukuh Pakis, Kec. Dukuhpakis, Surabaya, Jawa Timur 60224, Indonesia",
+      "businessHours": [],
       "businessType": [
-        "restaurant",
+        "lodging",
         "point_of_interest",
-        "food",
         "establishment"
       ],
       "contact": {
-        "phone": "03-3351-6387",
-        "website": "N/A"
+        "phone": "(031) 5621234",
+        "website": "http://www.javaparagon.com/"
       },
       "fitReason": "Score based on match percentage only",
-      "fitScore": 95,
+      "fitScore": 97,
       "keyThemes": [
-        "lunch",
-        "chirashi",
+        "room",
         "they",
-        "only",
-        "bowl"
+        "hotel",
+        "clean",
+        "even"
       ],
       "matchFactors": {
         "hours_factor": 1.0,
@@ -324,410 +112,105 @@
         "rating_factor": 0.9199999999999999,
         "review_count_factor": 1.0
       },
-      "matchPercentage": 95.03264810688756,
+      "matchPercentage": 97.6,
       "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
-      "placeName": "Sushi Sho Yotsuya",
-      "priceLevel": "$$$$",
-      "rating": 4.6,
-      "strengths": [
-        "Based on available reviews"
-      ],
-      "summaryNegativeReviews": "Went there for the 2k lunch. Good but nothing outstanding from service to food. Taste is mild from r...",
-      "summaryPositiveReviews": "Local, Craft, Authentic Japanese food. I came across this restaurant after Tokyo marathon day 2025 f... | On the first of each month reservations of the following month is released. My friend helped call ea... | Could get a reservation for dinner so we decide to drop by for lunch.\n\nSushi sho is an Tokyo institu...",
-      "totalRatings": 412,
-      "weaknesses": [
-        "Insufficient data for detailed analysis"
-      ]
-    },
-    {
-      "address": "2-ch\u014dme-24-8 Nishiazabu, Minato City, Tokyo 106-0031, Japan",
-      "businessHours": [
-        "Monday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
-        "Tuesday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
-        "Wednesday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
-        "Thursday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
-        "Friday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
-        "Saturday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u20099:30\u202fPM",
-        "Sunday: Closed"
-      ],
-      "businessType": [
-        "restaurant",
-        "point_of_interest",
-        "food",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "03-6712-5533",
-        "website": "https://www.sushi-tou.com/"
-      },
-      "fitReason": "Score based on match percentage only",
-      "fitScore": 95,
-      "keyThemes": [
-        "sushi",
-        "were",
-        "experience",
-        "food",
-        "restaurant"
-      ],
-      "matchFactors": {
-        "hours_factor": 1.0,
-        "keyword_factor": 0.0,
-        "price_factor": 1.0,
-        "rating_factor": 0.96,
-        "review_count_factor": 1.0
-      },
-      "matchPercentage": 95.70196080028514,
-      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
-      "placeName": "Sushi Tou",
+      "placeName": "Java Paragon Hotel & Residences",
       "priceLevel": "",
-      "rating": 4.8,
-      "strengths": [
-        "Based on available reviews"
-      ],
-      "summaryPositiveReviews": "The sushi restaurant is one of the most amazing in Tokyo. Every dish is beautifully presented and de... | I asked hotel to make recommendations on traditional sushi restaurants with the following criteria: ... | A Phenomenal Dining Experience\n\nI had the omakase with recommended sake, and it was absolutely pheno...",
-      "totalRatings": 343,
-      "weaknesses": [
-        "Insufficient data for detailed analysis"
-      ]
-    },
-    {
-      "address": "Japan, \u3012103-0014 Tokyo, Chuo City, Nihonbashikakigarach\u014d, 1-ch\u014dme\u221233\u2212\uff16 \u30d3\u30e5\u30fc\u30cf\u30a4\u30c4\u65e5\u672c\u6a4b \u5730\u4e0b\uff11\u968e",
-      "businessHours": [
-        "Monday: 12:00\u2009\u2013\u20092:45\u202fPM, 3:30\u2009\u2013\u20098:15\u202fPM, 8:30\u2009\u2013\u200911:00\u202fPM",
-        "Tuesday: 12:00\u2009\u2013\u20092:45\u202fPM, 3:30\u2009\u2013\u20098:15\u202fPM, 8:30\u2009\u2013\u200911:00\u202fPM",
-        "Wednesday: 12:00\u2009\u2013\u20092:45\u202fPM, 3:30\u2009\u2013\u20098:15\u202fPM, 8:30\u2009\u2013\u200911:00\u202fPM",
-        "Thursday: 12:00\u2009\u2013\u20092:45\u202fPM, 3:30\u2009\u2013\u20098:15\u202fPM, 8:30\u2009\u2013\u200911:00\u202fPM",
-        "Friday: 12:00\u2009\u2013\u20092:45\u202fPM, 3:30\u2009\u2013\u20098:15\u202fPM, 8:30\u2009\u2013\u200911:00\u202fPM",
-        "Saturday: 12:00\u2009\u2013\u20092:45\u202fPM, 3:30\u2009\u2013\u20098:15\u202fPM, 8:30\u2009\u2013\u200911:00\u202fPM",
-        "Sunday: 12:00\u2009\u2013\u20092:45\u202fPM, 3:30\u2009\u2013\u20098:15\u202fPM, 8:30\u2009\u2013\u200911:00\u202fPM"
-      ],
-      "businessType": [
-        "restaurant",
-        "point_of_interest",
-        "food",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "03-3669-3855",
-        "website": "N/A"
-      },
-      "fitReason": "Score based on match percentage only",
-      "fitScore": 94,
-      "keyThemes": [
-        "sushi",
-        "amazing",
-        "all",
-        "sugita",
-        "out"
-      ],
-      "matchFactors": {
-        "hours_factor": 1.0,
-        "keyword_factor": 0.0,
-        "price_factor": 1.0,
-        "rating_factor": 0.9199999999999999,
-        "review_count_factor": 1.0
-      },
-      "matchPercentage": 94.19033811000295,
-      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
-      "placeName": "Nihombashi Kakigaracho Sugita",
-      "priceLevel": "$$$$",
       "rating": 4.6,
       "strengths": [
         "Based on available reviews"
       ],
-      "summaryPositiveReviews": "The best sushi-ya in my opinion. Sugita-San sushi is out of this world. His technique to bring out t... | Quality ingredients and service. The sushi are very simple but perfect for what they are.   Most enj... | The most amazing sushi I ever had.\n\nBooking is quite challenging, so I ultimately used Pecotter to b...",
-      "totalRatings": 308,
+      "summaryPositiveReviews": "The hotel is generally good. The breakfast is delicious with a variety of options, the room was clea... | The hotel is kinda classic in style and yet they modernized it. Room is quite spacious. They install... | I am absolutely delighted with the service at this hotel. Every staff member, from the security team...",
+      "totalRatings": 6339,
       "weaknesses": [
         "Insufficient data for detailed analysis"
       ]
     },
     {
-      "address": "Japan, \u3012104-0061 Tokyo, Chuo City, Ginza, 6-ch\u014dme\u22124\u2212\uff11\uff16 Hanatsubaki Bldg, 2\u968e",
+      "address": "Jl. Basuki Rahmat No.147, Embong Kaliasin, Kec. Genteng, Surabaya, Jawa Timur 60271, Indonesia",
       "businessHours": [
-        "Monday: Closed",
-        "Tuesday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
-        "Wednesday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
-        "Thursday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
-        "Friday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
-        "Saturday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
-        "Sunday: Closed"
+        "Monday: Open 24 hours",
+        "Tuesday: Open 24 hours",
+        "Wednesday: Open 24 hours",
+        "Thursday: Open 24 hours",
+        "Friday: Open 24 hours",
+        "Saturday: Open 24 hours",
+        "Sunday: Open 24 hours"
       ],
       "businessType": [
+        "night_club",
+        "bar",
+        "spa",
+        "cafe",
+        "lodging",
         "restaurant",
         "food",
         "point_of_interest",
         "establishment"
       ],
       "contact": {
-        "phone": "03-3571-7900",
-        "website": "https://sushiya-ginza.myconciergejapan.net/"
+        "phone": "0812-3374-6588",
+        "website": "http://www.goldvitelhotel.com/"
       },
       "fitReason": "Score based on match percentage only",
-      "fitScore": 93,
+      "fitScore": 97,
       "keyThemes": [
-        "experience",
-        "would",
-        "than",
-        "omakase",
+        "room",
+        "but",
+        "all",
+        "are",
         "very"
       ],
       "matchFactors": {
         "hours_factor": 1.0,
         "keyword_factor": 0.0,
         "price_factor": 1.0,
-        "rating_factor": 0.96,
+        "rating_factor": 0.9199999999999999,
         "review_count_factor": 1.0
       },
-      "matchPercentage": 93.58322629475937,
+      "matchPercentage": 97.6,
       "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
-      "placeName": "Sushi Ya",
+      "placeName": "Goldvitel Hotel Surabaya",
       "priceLevel": "",
-      "rating": 4.8,
+      "rating": 4.6,
       "strengths": [
         "Based on available reviews"
       ],
-      "summaryPositiveReviews": "Amazing omakase experience, with a very friendly chef who speaks pretty good English. Really fresh s... | Absolutely amazing Omakase dinner in an intimate 8-seater space. Food was grand, and chef recommende... | Honestly Sushi Ya far exceeded my expectations, my partner and I had the nigiri lunch omakase, 16 co...",
-      "totalRatings": 165,
+      "summaryNegativeReviews": "The pictures online looked really nice. When I got here i honestly wanted to switch a different hote... | I upgrade my room from deluxe to junior suite but when I come to the room 1708 the room is really me...",
+      "summaryPositiveReviews": "Highly recommended for those who want to stay in Surabaya, very strategic location in the middle of ... | The hotel lobby is nicely maintained and clean, providing a peaceful atmosphere. However, I noticed ... | location and service are good. but some of details of room lil bit look alike unmaintenance.\nfor bre...",
+      "totalRatings": 2972,
       "weaknesses": [
         "Insufficient data for detailed analysis"
       ]
     },
     {
-      "address": "Japan, \u3012106-0031 Tokyo, Minato City, Nishiazabu, 1-ch\u014dme\u22124\u2212\uff11\uff15 \u5bff\u53f8\u52c7",
+      "address": "Jl. Slompretan No.26, Bongkaran, Kec. Pabean Cantikan, Surabaya, Jawa Timur 60161, Indonesia",
       "businessHours": [
-        "Monday: 5:00\u2009\u2013\u200911:30\u202fPM",
-        "Tuesday: 5:00\u2009\u2013\u200911:30\u202fPM",
-        "Wednesday: 5:00\u2009\u2013\u200911:30\u202fPM",
-        "Thursday: 5:00\u2009\u2013\u200911:30\u202fPM",
-        "Friday: 5:00\u2009\u2013\u200911:30\u202fPM",
-        "Saturday: 5:00\u2009\u2013\u200911:30\u202fPM",
-        "Sunday: Closed"
+        "Monday: Open 24 hours",
+        "Tuesday: Open 24 hours",
+        "Wednesday: Open 24 hours",
+        "Thursday: Open 24 hours",
+        "Friday: Open 24 hours",
+        "Saturday: Open 24 hours",
+        "Sunday: Open 24 hours"
       ],
       "businessType": [
-        "restaurant",
-        "food",
+        "lodging",
         "point_of_interest",
         "establishment"
       ],
       "contact": {
-        "phone": "03-3403-6467",
-        "website": "http://sushiyuu.com/"
-      },
-      "fitReason": "Score based on match percentage only",
-      "fitScore": 95,
-      "keyThemes": [
-        "sushi",
-        "meal",
-        "experience",
-        "staff",
-        "english"
-      ],
-      "matchFactors": {
-        "hours_factor": 1.0,
-        "keyword_factor": 0.0,
-        "price_factor": 1.0,
-        "rating_factor": 0.9400000000000001,
-        "review_count_factor": 1.0
-      },
-      "matchPercentage": 95.5830334880978,
-      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
-      "placeName": "Sushi Yuu",
-      "priceLevel": "$$$",
-      "rating": 4.7,
-      "strengths": [
-        "Based on available reviews"
-      ],
-      "summaryPositiveReviews": "SushiYuu is an excellent choice for anyone looking to experience high-quality sushi in Tokyo (especi... | We came here on a recommendation from a friend and were so glad we did - this is the best omakase we... | Our dining experience was amazing from start to finish. The staff was very welcoming, spoke English ...",
-      "totalRatings": 405,
-      "weaknesses": [
-        "Insufficient data for detailed analysis"
-      ]
-    },
-    {
-      "address": "Japan, \u3012151-8583 Tokyo, Shibuya, Yoyogi, 2-ch\u014dme\u22122\u2212\uff11 \u5c0f\u7530\u6025\u30db\u30c6\u30eb\u30bb\u30f3\u30c1\u30e5\u30ea\u30fc\u30b5\u30b6\u30f3\u30bf\u30ef 19F sushi",
-      "businessHours": [
-        "Monday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Tuesday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Wednesday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Thursday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Friday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Saturday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Sunday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM"
-      ],
-      "businessType": [
-        "grocery_or_supermarket",
-        "store",
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "080-7164-5210",
-        "website": "https://www.tablecheck.com/ja/shops/yurakuchokakida/reserve"
+        "phone": "(031) 3524638",
+        "website": "https://www.kokoonhotelsvillas.com/surabaya/"
       },
       "fitReason": "Score based on match percentage only",
       "fitScore": 97,
       "keyThemes": [
-        "sushi",
-        "you",
-        "omakase",
-        "quality",
-        "are"
-      ],
-      "matchFactors": {
-        "hours_factor": 1.0,
-        "keyword_factor": 0.0,
-        "price_factor": 1.0,
-        "rating_factor": 0.9,
-        "review_count_factor": 1.0
-      },
-      "matchPercentage": 97.0,
-      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
-      "placeName": "Sushi\uff5cYurakucho Kakida\uff5cTokyo",
-      "priceLevel": "",
-      "rating": 4.5,
-      "strengths": [
-        "Based on available reviews"
-      ],
-      "summaryNegativeReviews": "I really wanted to enjoy this omakase, but at 13,000 yen, it just wasn\u2019t worth it. The quality of th...",
-      "summaryPositiveReviews": "Quality of Sashimi and Sushi are reasonable.  Big pleasant surprise is at the end the chef ask every... | Highly recommend this omakase course! Tried many different types of sushi (ie. 3 types of tuna, uni,... | Kenta is our chef, he\u2019s very friendly and funny. The restaurant staff speaks good English so there a...",
-      "totalRatings": 2314,
-      "weaknesses": [
-        "Insufficient data for detailed analysis"
-      ]
-    },
-    {
-      "address": "Japan, \u3012106-0031 Tokyo, Minato City, Nishiazabu, 4-ch\u014dme\u22121\u2212\uff11\uff15 \u30bb\u30d6\u30f3\u897f\u9ebb\u5e03 B1F",
-      "businessHours": [
-        "Monday: Closed",
-        "Tuesday: 6:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-        "Wednesday: 6:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-        "Thursday: 6:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-        "Friday: 6:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-        "Saturday: 6:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-        "Sunday: 6:00\u202fPM\u2009\u2013\u200912:00\u202fAM"
-      ],
-      "businessType": [
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "03-3499-9178",
-        "website": "https://www.sushisyomasa.com/"
-      },
-      "fitReason": "Score based on match percentage only",
-      "fitScore": 94,
-      "keyThemes": [
-        "you",
-        "omakase",
-        "experience",
-        "chef",
-        "sushi"
-      ],
-      "matchFactors": {
-        "hours_factor": 1.0,
-        "keyword_factor": 0.0,
-        "price_factor": 1.0,
-        "rating_factor": 0.96,
-        "review_count_factor": 1.0
-      },
-      "matchPercentage": 94.48121678740908,
-      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
-      "placeName": "Sushisho Masa",
-      "priceLevel": "$$$$",
-      "rating": 4.8,
-      "strengths": [
-        "Based on available reviews"
-      ],
-      "summaryPositiveReviews": "My 4th consecutive year here already. It's one of my favourite omakase. Their food never fail to imp... | An incredible Omakase experience! The sushi was fresh, flavorful, and beautifully crafted by the hea... | Amazingly priced (33,000 yen) for 45 item omakase. Made a reservation on pocket concierge in advance...",
-      "totalRatings": 225,
-      "weaknesses": [
-        "Insufficient data for detailed analysis"
-      ]
-    },
-    {
-      "address": "Japan, \u3012106-0032 Tokyo, Minato City, Roppongi, 1-ch\u014dme\u22124\u2212\uff15 ARK Hills South Tower, 1F",
-      "businessHours": [
-        "Monday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
-        "Tuesday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
-        "Wednesday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
-        "Thursday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
-        "Friday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
-        "Saturday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
-        "Sunday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM"
-      ],
-      "businessType": [
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "03-3589-4412",
-        "website": "https://www.arkhills.com/gourmet_shops/0010.html"
-      },
-      "fitReason": "Score based on match percentage only",
-      "fitScore": 94,
-      "keyThemes": [
-        "sushi",
-        "saito",
-        "amazing",
-        "best",
-        "great"
-      ],
-      "matchFactors": {
-        "hours_factor": 1.0,
-        "keyword_factor": 0.0,
-        "price_factor": 1.0,
-        "rating_factor": 0.9,
-        "review_count_factor": 1.0
-      },
-      "matchPercentage": 94.70092289874255,
-      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
-      "placeName": "Saito",
-      "priceLevel": "$$$$",
-      "rating": 4.5,
-      "strengths": [
-        "Based on available reviews"
-      ],
-      "summaryPositiveReviews": "Really lived up to the hype. Chef Takashi Saito is great fun as well as preparing amazing sushi with... | Sushi Saito's sushi can be described in one sentence.\nPerfect Balance.\nSushi was served in second-co... | This is the pinnacle of sushi experiences. If you find yourself fortunate enough to get a seat with ...",
-      "totalRatings": 452,
-      "weaknesses": [
-        "Insufficient data for detailed analysis"
-      ]
-    },
-    {
-      "address": "Japan, \u3012104-0061 Tokyo, Chuo City, Ginza, 8-ch\u014dme\u221210\u2212\uff12 \u30eb\u30a2\u30f3\u30d3\u30eb \u5730\u4e0b1F",
-      "businessHours": [
-        "Monday: 12:00\u2009\u2013\u20092:30\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
-        "Tuesday: 12:00\u2009\u2013\u20092:30\u202fPM",
-        "Wednesday: Closed",
-        "Thursday: 12:00\u2009\u2013\u20092:30\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
-        "Friday: 12:00\u2009\u2013\u20092:30\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
-        "Saturday: 12:00\u2009\u2013\u20092:30\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
-        "Sunday: 12:00\u2009\u2013\u20092:30\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM"
-      ],
-      "businessType": [
-        "restaurant",
-        "point_of_interest",
-        "food",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "03-6264-5855",
-        "website": "https://sushi-arai.com/"
-      },
-      "fitReason": "Score based on match percentage only",
-      "fitScore": 94,
-      "keyThemes": [
-        "sushi",
-        "chef",
-        "counter",
-        "experience",
-        "quality"
+        "hotel",
+        "service",
+        "good",
+        "room",
+        "area"
       ],
       "matchFactors": {
         "hours_factor": 1.0,
@@ -736,151 +219,44 @@
         "rating_factor": 0.9199999999999999,
         "review_count_factor": 1.0
       },
-      "matchPercentage": 94.13337961971433,
+      "matchPercentage": 97.6,
       "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
-      "placeName": "Sushi Arai",
-      "priceLevel": "$$$$",
+      "placeName": "Kokoon Hotel Surabaya",
+      "priceLevel": "",
       "rating": 4.6,
       "strengths": [
         "Based on available reviews"
       ],
-      "summaryPositiveReviews": "I visited the second shop by the famous Sushi Arai, run by his apprentice, and it fully lived up to ... | I rarely give five stars, as I try to be conservative with my ratings. This restaurant, however, sta... | Most important part, you will not be allow to book the main counter by visiting the 2nd counter, hen...",
-      "totalRatings": 302,
+      "summaryPositiveReviews": "Hidden Gem!\nBeautiful boutique hotel with lots of history. It feels like entering museum hotels. Lot... | Was a great place to stay before my flight! Pillows were insanely cozy, ac worked well, and staff wa... | Overall good. Average breakfast, service is good by some and lesser by others. Decent location to Ch...",
+      "totalRatings": 2047,
       "weaknesses": [
         "Insufficient data for detailed analysis"
       ]
     },
     {
-      "address": "6-ch\u014dme-5-1 Toyosu, Koto City, Tokyo 135-0061, Japan",
-      "businessHours": [
-        "Monday: 6:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
-        "Tuesday: 6:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
-        "Wednesday: Closed",
-        "Thursday: 6:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
-        "Friday: 6:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
-        "Saturday: 6:00\u202fAM\u2009\u2013\u20092:00\u202fPM",
-        "Sunday: Closed"
-      ],
+      "address": "Jl. Mayjen HR. Muhammad No.31, Putat Gede, Kec. Sukomanunggal, Surabaya, Jawa Timur 60189, Indonesia",
+      "businessHours": [],
       "businessType": [
+        "night_club",
+        "lodging",
+        "bar",
         "restaurant",
         "food",
         "point_of_interest",
         "establishment"
       ],
       "contact": {
-        "phone": "03-6633-0042",
-        "website": "https://twitter.com/sushidai_toyosu?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-      },
-      "fitReason": "Score based on match percentage only",
-      "fitScore": 97,
-      "keyThemes": [
-        "were",
-        "experience",
-        "line",
-        "you",
-        "time"
-      ],
-      "matchFactors": {
-        "hours_factor": 1.0,
-        "keyword_factor": 0.0,
-        "price_factor": 1.0,
-        "rating_factor": 0.9,
-        "review_count_factor": 1.0
-      },
-      "matchPercentage": 97.0,
-      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
-      "placeName": "Sushi Dai",
-      "priceLevel": "",
-      "rating": 4.5,
-      "strengths": [
-        "Based on available reviews"
-      ],
-      "summaryPositiveReviews": "We had relatives who recommended as well as looking at reviews but found very few recent ones. We fo... | # My First Omakase Experience - A Mixed Bag\n\n## The Queueing System\nWhen we arrived around 7AM, we w... | Sooo worth the early wake up. We were advised to come to Sushi Dai on our first morning in Japan whe...",
-      "totalRatings": 1677,
-      "weaknesses": [
-        "Insufficient data for detailed analysis"
-      ]
-    },
-    {
-      "address": "Japan, \u3012106-0032 Tokyo, Minato City, Roppongi, 7-ch\u014dme\u22123\u2212\uff11\uff15 Suzuya 2 Bldg, B1F",
-      "businessHours": [
-        "Monday: 12:30\u2009\u2013\u20093:00\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
-        "Tuesday: 12:30\u2009\u2013\u20093:00\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
-        "Wednesday: 12:30\u2009\u2013\u20093:00\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
-        "Thursday: 12:30\u2009\u2013\u20093:00\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
-        "Friday: 12:30\u2009\u2013\u20093:00\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
-        "Saturday: 12:30\u2009\u2013\u20093:00\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM",
-        "Sunday: 12:30\u2009\u2013\u20093:00\u202fPM, 6:00\u2009\u2013\u200911:00\u202fPM"
-      ],
-      "businessType": [
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "070-1408-8431",
-        "website": "https://sushiryuta.delivery-takeout-menu.com/"
-      },
-      "fitReason": "Score based on match percentage only",
-      "fitScore": 92,
-      "keyThemes": [
-        "omakase",
-        "chef",
-        "experience",
-        "ryuta",
-        "had"
-      ],
-      "matchFactors": {
-        "hours_factor": 1.0,
-        "keyword_factor": 0.0,
-        "price_factor": 1.0,
-        "rating_factor": 0.96,
-        "review_count_factor": 1.0
-      },
-      "matchPercentage": 92.75614456774824,
-      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
-      "placeName": "Sushi Ryuta",
-      "priceLevel": "",
-      "rating": 4.8,
-      "strengths": [
-        "Based on available reviews"
-      ],
-      "summaryPositiveReviews": "Sorry for posting this late. We visited last December, and it was hands down the best omakase experi... | Absolutely phenomenal omakase experience! Chef Ryuta is incredibly welcoming and professional, with ... | Really loved the sushi here. The chef serves more uncommon cuts of neta here, but they all went well...",
-      "totalRatings": 124,
-      "weaknesses": [
-        "Insufficient data for detailed analysis"
-      ]
-    },
-    {
-      "address": "Mayjend Yono Soewoyo 6H - J, Pradahkalikendal, Kec. Dukuhpakis, Surabaya, Jawa Timur 60187, Indonesia",
-      "businessHours": [
-        "Monday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Tuesday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Wednesday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Thursday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Friday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Saturday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Sunday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
-      ],
-      "businessType": [
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "(031) 99146663",
-        "website": "https://www.sushitoku.co.id/"
+        "phone": "(031) 7301888",
+        "website": "http://www.vasahotelsurabaya.com/"
       },
       "fitReason": "Score based on match percentage only",
       "fitScore": 98,
       "keyThemes": [
-        "their",
-        "salmon",
-        "yukke",
-        "nice",
-        "sushi"
+        "are",
+        "elevator",
+        "hotel",
+        "you",
+        "here"
       ],
       "matchFactors": {
         "hours_factor": 1.0,
@@ -891,149 +267,39 @@
       },
       "matchPercentage": 98.2,
       "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
-      "placeName": "Sushi Toku - West Surabaya",
+      "placeName": "Vasa Hotel Surabaya",
       "priceLevel": "",
       "rating": 4.7,
       "strengths": [
         "Based on available reviews"
       ],
-      "summaryPositiveReviews": "Sushitoku truly deserves to be called one of the best in Indonesia! Their sashimi is incredibly fres... | It was good. Got carried away that i forgot to take pic of our main course. Blame it to salmon yukke... | Nice atmosphere\nNice food\nNice service by Mbak Agustin.\nEverything served quite fast\nWill come back ...",
-      "totalRatings": 1304,
+      "summaryNegativeReviews": "If you want to stay in a 5 stars hotel that service level feels like 3 or 4 stars hotel then this is...",
+      "summaryPositiveReviews": "Got the chance to taste the buffet here. Food was all good! Except for the roasted beef. The mushroo... | I stayed here in peak season. All rooms are fully occupied so the hotel was full of guest. It's hard... | Good place to stay in west surabaya, strategic location and also 5 stars service. The rooms are 5 st...",
+      "totalRatings": 18726,
       "weaknesses": [
         "Insufficient data for detailed analysis"
       ]
     },
     {
-      "address": "2-ch\u014dme-24-8 Nishiazabu, Minato City, Tokyo 106-0031, Japan",
-      "businessHours": [
-        "Monday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
-        "Tuesday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
-        "Wednesday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
-        "Thursday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
-        "Friday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
-        "Saturday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u20099:30\u202fPM",
-        "Sunday: Closed"
-      ],
+      "address": "Jl. Raya Jemursari no. 110 - 112, Jemur Wonosari, Kec. Wonocolo, Surabaya, Jawa Timur 60237, Indonesia",
+      "businessHours": [],
       "businessType": [
-        "restaurant",
-        "point_of_interest",
-        "food",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "03-6712-5533",
-        "website": "https://www.sushi-tou.com/"
-      },
-      "fitReason": "Score based on match percentage only",
-      "fitScore": 95,
-      "keyThemes": [
-        "sushi",
-        "were",
-        "experience",
-        "food",
-        "restaurant"
-      ],
-      "matchFactors": {
-        "hours_factor": 1.0,
-        "keyword_factor": 0.0,
-        "price_factor": 1.0,
-        "rating_factor": 0.96,
-        "review_count_factor": 1.0
-      },
-      "matchPercentage": 95.70196080028514,
-      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
-      "placeName": "Sushi Tou",
-      "priceLevel": "",
-      "rating": 4.8,
-      "strengths": [
-        "Based on available reviews"
-      ],
-      "summaryPositiveReviews": "The sushi restaurant is one of the most amazing in Tokyo. Every dish is beautifully presented and de... | I asked hotel to make recommendations on traditional sushi restaurants with the following criteria: ... | A Phenomenal Dining Experience\n\nI had the omakase with recommended sake, and it was absolutely pheno...",
-      "totalRatings": 343,
-      "weaknesses": [
-        "Insufficient data for detailed analysis"
-      ]
-    },
-    {
-      "address": "Japan, \u3012104-0061 Tokyo, Chuo City, Ginza, 6-ch\u014dme\u22124\u2212\uff11\uff16 Hanatsubaki Bldg, 2\u968e",
-      "businessHours": [
-        "Monday: Closed",
-        "Tuesday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
-        "Wednesday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
-        "Thursday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
-        "Friday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
-        "Saturday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:30\u2009\u2013\u200910:00\u202fPM",
-        "Sunday: Closed"
-      ],
-      "businessType": [
-        "restaurant",
-        "point_of_interest",
-        "food",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "03-3571-7900",
-        "website": "https://sushiya-ginza.myconciergejapan.net/"
-      },
-      "fitReason": "Score based on match percentage only",
-      "fitScore": 93,
-      "keyThemes": [
-        "experience",
-        "would",
-        "than",
-        "omakase",
-        "very"
-      ],
-      "matchFactors": {
-        "hours_factor": 1.0,
-        "keyword_factor": 0.0,
-        "price_factor": 1.0,
-        "rating_factor": 0.96,
-        "review_count_factor": 1.0
-      },
-      "matchPercentage": 93.58322629475937,
-      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
-      "placeName": "Sushi Ya",
-      "priceLevel": "",
-      "rating": 4.8,
-      "strengths": [
-        "Based on available reviews"
-      ],
-      "summaryPositiveReviews": "Amazing omakase experience, with a very friendly chef who speaks pretty good English. Really fresh s... | Absolutely amazing Omakase dinner in an intimate 8-seater space. Food was grand, and chef recommende... | Honestly Sushi Ya far exceeded my expectations, my partner and I had the nigiri lunch omakase, 16 co...",
-      "totalRatings": 165,
-      "weaknesses": [
-        "Insufficient data for detailed analysis"
-      ]
-    },
-    {
-      "address": "Japan, \u3012106-0032 Tokyo, Minato City, Roppongi, 1-ch\u014dme\u22124\u2212\uff15 ARK Hills South Tower, 1F",
-      "businessHours": [
-        "Monday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
-        "Tuesday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
-        "Wednesday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
-        "Thursday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
-        "Friday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
-        "Saturday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM",
-        "Sunday: 12:00\u2009\u2013\u20092:00\u202fPM, 5:00\u2009\u2013\u200911:00\u202fPM"
-      ],
-      "businessType": [
-        "restaurant",
-        "food",
+        "lodging",
         "point_of_interest",
         "establishment"
       ],
       "contact": {
-        "phone": "03-3589-4412",
-        "website": "https://www.arkhills.com/gourmet_shops/0010.html"
+        "phone": "(031) 8498999",
+        "website": "https://www.thesouthern-hotel.com/"
       },
       "fitReason": "Score based on match percentage only",
-      "fitScore": 94,
+      "fitScore": 97,
       "keyThemes": [
-        "sushi",
-        "saito",
-        "amazing",
-        "best",
-        "great"
+        "there",
+        "good",
+        "room",
+        "not",
+        "too"
       ],
       "matchFactors": {
         "hours_factor": 1.0,
@@ -1042,24 +308,696 @@
         "rating_factor": 0.9,
         "review_count_factor": 1.0
       },
-      "matchPercentage": 94.70092289874255,
+      "matchPercentage": 97.0,
       "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
-      "placeName": "Saito",
-      "priceLevel": "$$$$",
+      "placeName": "The Southern Hotel Surabaya",
+      "priceLevel": "",
       "rating": 4.5,
       "strengths": [
         "Based on available reviews"
       ],
-      "summaryPositiveReviews": "Really lived up to the hype. Chef Takashi Saito is great fun as well as preparing amazing sushi with... | Sushi Saito's sushi can be described in one sentence.\nPerfect Balance.\nSushi was served in second-co... | This is the pinnacle of sushi experiences. If you find yourself fortunate enough to get a seat with ...",
-      "totalRatings": 452,
+      "summaryNegativeReviews": "Do not go to the spa! I chose a 120 min aromatherapy massage and the masseuse did the real massage f...",
+      "summaryPositiveReviews": "Pros: Clean, comfy, well maintained room. Friendly staff. Located not too far from the airport. Mini... | Good services, compared to another 4stars hotel in Jemur Sari that I ever Stay too, southern so much... | Still my favourite hotel to stay and dine in with affordable price, nice atmosphere, delicious and v...",
+      "totalRatings": 6506,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ]
+    },
+    {
+      "address": "Jl. Jaksa Agung Suprapto No.37, Ketabang, Kec. Genteng, Surabaya, Jawa Timur 60272, Indonesia",
+      "businessHours": [],
+      "businessType": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(031) 5350388",
+        "website": "https://leedonhotelsuitesurabaya.com/"
+      },
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 98,
+      "keyThemes": [
+        "not",
+        "are",
+        "there",
+        "hotel",
+        "room"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.96,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 98.74150717128329,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "placeName": "Leedon Hotel & Suites Surabaya",
+      "priceLevel": "",
+      "rating": 4.8,
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "summaryNegativeReviews": "After multiple times stay in here, for the first time I'm being upset with my experience. Since ther...",
+      "summaryPositiveReviews": "I really enjoyed my stay at Leedon Hotel. The rooms were great, and we had a discount for the room, ... | Hotel is good and strategic near local go-to places. Service is good, especially in the restaurant. ... | Over all this hotel is very good and luxury,\nNice service and very helpfull reception from Ka Nella ...",
+      "totalRatings": 980,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ]
+    },
+    {
+      "address": "Jl. Ronggolawe No.27 - 29, Wonorejo, Kec. Tegalsari, Surabaya, Jawa Timur 60264, Indonesia",
+      "businessHours": [
+        "Monday: Open 24 hours",
+        "Tuesday: Open 24 hours",
+        "Wednesday: Open 24 hours",
+        "Thursday: Open 24 hours",
+        "Friday: Open 24 hours",
+        "Saturday: Open 24 hours",
+        "Sunday: Open 24 hours"
+      ],
+      "businessType": [
+        "lodging",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(031) 5660778",
+        "website": "https://www.questhotels.com/en/hotel/view/4/quest-hotel-darmo---surabaya"
+      },
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 97,
+      "keyThemes": [
+        "are",
+        "room",
+        "you",
+        "very",
+        "stay"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.9,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 97.0,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "placeName": "Quest Hotel Darmo Surabaya",
+      "priceLevel": "",
+      "rating": 4.5,
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "summaryPositiveReviews": "It was incredible stay in here. Loved with the room. The room was really neat and clean even though ... | The hotel is nice, clean and value for money. The breakfast was generous. However, the check in and ... | The room was extraordinary, clean, comfort, but next time you need to check on the TV connection bec...",
+      "totalRatings": 8748,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ]
+    },
+    {
+      "address": "Jl. Kapas Krampung No.45, Tambakrejo, Kec. Simokerto, Surabaya, Jawa Timur 60142, Indonesia",
+      "businessHours": [
+        "Monday: Open 24 hours",
+        "Tuesday: Open 24 hours",
+        "Wednesday: Open 24 hours",
+        "Thursday: Open 24 hours",
+        "Friday: Open 24 hours",
+        "Saturday: Open 24 hours",
+        "Sunday: Open 24 hours"
+      ],
+      "businessType": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(031) 3742000",
+        "website": "N/A"
+      },
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 97,
+      "keyThemes": [
+        "room",
+        "hotel",
+        "clean",
+        "really",
+        "parking"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.9,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 97.0,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "placeName": "PALM PARK Hotel & Convention Surabaya",
+      "priceLevel": "",
+      "rating": 4.5,
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "summaryNegativeReviews": "the rooms are quite spacious, clean and comfortable. very close to the mall. I get 2 tickets to watc...",
+      "summaryPositiveReviews": "Honestly, I was quite surprised with this hotel. The hotel located in the seedy environment because ... | Very good hotel , strategic place & good service also | Clean Room, Good Facilities and Accommodations.",
+      "totalRatings": 1621,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ]
+    },
+    {
+      "address": "Jl. Jenderal Basuki Rachmat No.106-128, Embong Kaliasin, Kec. Genteng, Surabaya, Jawa Timur 60271, Indonesia",
+      "businessHours": [],
+      "businessType": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(031) 5311234",
+        "website": "http://www.bumisurabaya.com/"
+      },
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 98,
+      "keyThemes": [
+        "hotel",
+        "are",
+        "you",
+        "room",
+        "surabaya"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.9400000000000001,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 98.2,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "placeName": "Bumi Surabaya City Resort",
+      "priceLevel": "",
+      "rating": 4.7,
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "summaryPositiveReviews": "I've had the pleasure of staying at Hotel Bumi Surabaya every time I visit this vibrant city! This r... | I had a wonderful stay at this 5-star hotel! The place is impeccably clean, and my room had a pleasa... | Rating: \u2605\u2605\u2605\u2605\u2606\nHotel Bumi Surabaya is a timeless gem that exudes old-world charm and elegance. The cl...",
+      "totalRatings": 13526,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ]
+    },
+    {
+      "address": "Jl. Raya Jemursari No.258, Prapen, Kec. Tenggilis Mejoyo, Surabaya, Jawa Timur 60237, Indonesia",
+      "businessHours": [],
+      "businessType": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "0852-3804-8808",
+        "website": "http://www.stayatcapital.com/"
+      },
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 96,
+      "keyThemes": [
+        "room",
+        "hotel",
+        "our",
+        "stay",
+        "capital"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.96,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 96.01375575274473,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "placeName": "The Capital Hotel Surabaya",
+      "priceLevel": "",
+      "rating": 4.8,
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "summaryNegativeReviews": "Great staff, but the room stinked of cigarettes although there was non-smoked floor. The room didnt ...",
+      "summaryPositiveReviews": "We are very happy with our stay at Capital Hotel. Initially we booked one room, and later at night w... | The capital hotel Made our table manner Unforgettable! Perfect ambiance, amazing staff, and deliciou... | The staffs are super super super nice and friendly. We had some trouble outside and they came and he...",
+      "totalRatings": 382,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ]
+    },
+    {
+      "address": "Surabaya Superblock, Ciputra World, Jl. Mayjen Sungkono No.87-89, Gn. Sari, Kec. Dukuhpakis, Surabaya, Jawa Timur 60224, Indonesia",
+      "businessHours": [
+        "Monday: Open 24 hours",
+        "Tuesday: Open 24 hours",
+        "Wednesday: Open 24 hours",
+        "Thursday: Open 24 hours",
+        "Friday: Open 24 hours",
+        "Saturday: Open 24 hours",
+        "Sunday: Open 24 hours"
+      ],
+      "businessType": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(031) 51201000",
+        "website": "https://www.swiss-belhotel.com/en-gb/hotel-ciputra-world-surabaya?utm_source=socialmedia&utm_campaign=page_view"
+      },
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 99,
+      "keyThemes": [
+        "hotel",
+        "great",
+        "breakfast",
+        "stay",
+        "all"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.9800000000000001,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 99.4,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "placeName": "Ciputra World Hotel Surabaya",
+      "priceLevel": "",
+      "rating": 4.9,
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "summaryPositiveReviews": "Great room and in strategic location (attached with big mall).\nTheir breakfast is decent. If only th... | I was very impressed with the level of service given in all areas of the hotel's accommodations. To ... | The best stay experience in Surabaya for me. I have stayed at different hotels in Surabaya but this ...",
+      "totalRatings": 12686,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ]
+    },
+    {
+      "address": "Jl. Mayjen HR. Muhammad No.2A, Putat Gede, Kec. Sukomanunggal, Surabaya, Jawa Timur 60189, Indonesia",
+      "businessHours": [
+        "Monday: Open 24 hours",
+        "Tuesday: Open 24 hours",
+        "Wednesday: Open 24 hours",
+        "Thursday: Open 24 hours",
+        "Friday: Open 24 hours",
+        "Saturday: Open 24 hours",
+        "Sunday: Open 24 hours"
+      ],
+      "businessType": [
+        "gym",
+        "lodging",
+        "spa",
+        "health",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(031) 99149199",
+        "website": "https://www.discoverasr.com/en/harris/indonesia/harris-hotel-conventions-bundaran-satelit-surabaya?utm_source=google&utm_medium=organic&utm_campaign=-google-organic-alwayson-20240906-all-en-id-id-HBSS--asrdeal&utm_content=txt--"
+      },
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 98,
+      "keyThemes": [
+        "hotel",
+        "stay",
+        "were",
+        "experience",
+        "harris"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.9400000000000001,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 98.2,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "placeName": "HARRIS Hotel & Conventions Bundaran Satelit Surabaya",
+      "priceLevel": "",
+      "rating": 4.7,
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "summaryPositiveReviews": "I had an excellent experience staying at Harris Hotel. From the moment I arrived, the check-in proce... | Stayed at Harris for celebrating my anniversary. And it was an amazing experience. The staff make ou... | It's a hotel with value for money and excellent services.\n\nHowever, personally the most highlight an...",
+      "totalRatings": 3143,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ]
+    },
+    {
+      "address": "Jl. Mayjen Sungkono No.120, Pakis, Kec. Sawahan, Surabaya, Jawa Timur 60256, Indonesia",
+      "businessHours": [
+        "Monday: Open 24 hours",
+        "Tuesday: Open 24 hours",
+        "Wednesday: Open 24 hours",
+        "Thursday: Open 24 hours",
+        "Friday: Open 24 hours",
+        "Saturday: Open 24 hours",
+        "Sunday: Open 24 hours"
+      ],
+      "businessType": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(031) 60038888",
+        "website": "https://www.shangri-la.com/surabaya/shangrila/"
+      },
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 98,
+      "keyThemes": [
+        "are",
+        "very",
+        "room",
+        "surabaya",
+        "service"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.9400000000000001,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 98.2,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "placeName": "Shangri-La Hotel Surabaya",
+      "priceLevel": "",
+      "rating": 4.7,
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "summaryPositiveReviews": "Pleasant stay, cozy&tidy room, nice view from 17th floor. Found out that room provided with clean sa... | Great business hotel in Surabaya.\n\nExcellent service from friendly staff.\n\nI have stayed here many t... | Easily one of the best hotels in Surabaya and at fair prices.\nThe rooms are very comfortable. The be...",
+      "totalRatings": 12176,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ]
+    },
+    {
+      "address": "Jl. Raya Jemursari No.15A, Jemur Wonosari, Kec. Wonocolo, Surabaya, Jawa Timur 60237, Indonesia",
+      "businessHours": [],
+      "businessType": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(031) 99859888",
+        "website": "http://www.bessmansionhotel.com/"
+      },
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 97,
+      "keyThemes": [
+        "room",
+        "also",
+        "stay",
+        "had",
+        "hotel"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.9,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 97.0,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "placeName": "BeSS Mansion Hotel Surabaya",
+      "priceLevel": "",
+      "rating": 4.5,
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "summaryNegativeReviews": "When we arrived I started speaking to the front reception in English, but she stopped speaking Engli...",
+      "summaryPositiveReviews": "I had a great stay at this hotel! The staff were super friendly and helpful, which made everything s... | I have been many times staying in this hotel with my wife and I like the view of this hotel and also... | Best place for stay in Surabaya, the hotel staff is very helpful, they also have cafeteria named bes...",
+      "totalRatings": 1880,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ]
+    },
+    {
+      "address": "Jl. Embong Malang No.25-31, Kedungdoro, Kec. Tegalsari, Surabaya, Jawa Timur 60261, Indonesia",
+      "businessHours": [],
+      "businessType": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(031) 5468000",
+        "website": "https://www.marriott.com/en-us/hotels/subsi-sheraton-surabaya-hotel-and-towers/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0"
+      },
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 98,
+      "keyThemes": [
+        "room",
+        "not",
+        "you",
+        "your",
+        "like"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.9400000000000001,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 98.2,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "placeName": "Sheraton Surabaya Hotel & Towers",
+      "priceLevel": "",
+      "rating": 4.7,
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "summaryNegativeReviews": "Oh, Sheraton Surabaya, where do I even begin? Staying in your \"classic\" bedroom felt like I was tran... | We booked the classic apartment room for 2 nights. The receptionist advised us during check in that ... | Restaurant: staffs very nice and food quite good (This is the only good point in this hotel)\nRoom:\nT...",
+      "summaryPositiveReviews": "Spacious room with very quite ambience. Try their pillow and bed of course, heal your exhaust. Must ... | My favorite hotel! I've stayed here many times, and it always feels like home. Everything is perfect...",
+      "totalRatings": 12661,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ]
+    },
+    {
+      "address": "Jl. Mayjen Sungkono No.101-103, Dukuh Pakis, Kec. Dukuhpakis, Surabaya, Jawa Timur 60224, Indonesia",
+      "businessHours": [],
+      "businessType": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(031) 5621234",
+        "website": "http://www.javaparagon.com/"
+      },
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 97,
+      "keyThemes": [
+        "room",
+        "they",
+        "hotel",
+        "clean",
+        "even"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.9199999999999999,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 97.6,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "placeName": "Java Paragon Hotel & Residences",
+      "priceLevel": "",
+      "rating": 4.6,
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "summaryPositiveReviews": "The hotel is generally good. The breakfast is delicious with a variety of options, the room was clea... | The hotel is kinda classic in style and yet they modernized it. Room is quite spacious. They install... | I am absolutely delighted with the service at this hotel. Every staff member, from the security team...",
+      "totalRatings": 6339,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ]
+    },
+    {
+      "address": "Jl. Gayung Kebonsari No.30, Gayungan, Kec. Gayungan, Surabaya, Jawa Timur 60235, Indonesia",
+      "businessHours": [
+        "Monday: Open 24 hours",
+        "Tuesday: Open 24 hours",
+        "Wednesday: Open 24 hours",
+        "Thursday: Open 24 hours",
+        "Friday: Open 24 hours",
+        "Saturday: Open 24 hours",
+        "Sunday: Open 24 hours"
+      ],
+      "businessType": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(031) 82518899",
+        "website": "http://pbsu.pphotels.com/"
+      },
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 97,
+      "keyThemes": [
+        "hotel",
+        "very",
+        "nice",
+        "room",
+        "stay"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.9,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 97.0,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "placeName": "PrimeBiz Hotel Surabaya",
+      "priceLevel": "",
+      "rating": 4.5,
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "summaryPositiveReviews": "Very worth the price, one of the nicest affordable hotel I have ever been to. The hotel fragrance is... | Great rooms for triple and kingsuite. Fit for the family.\nFoods were great. Stay here for 1 night.\nS... | Been using this hotel for 2 years. Most value for money hotel.\nQuick response staff, location with c...",
+      "totalRatings": 4079,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ]
+    },
+    {
+      "address": "Jl. Basuki Rahmat No.147, Embong Kaliasin, Kec. Genteng, Surabaya, Jawa Timur 60271, Indonesia",
+      "businessHours": [
+        "Monday: Open 24 hours",
+        "Tuesday: Open 24 hours",
+        "Wednesday: Open 24 hours",
+        "Thursday: Open 24 hours",
+        "Friday: Open 24 hours",
+        "Saturday: Open 24 hours",
+        "Sunday: Open 24 hours"
+      ],
+      "businessType": [
+        "night_club",
+        "cafe",
+        "bar",
+        "spa",
+        "lodging",
+        "restaurant",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "0812-3374-6588",
+        "website": "http://www.goldvitelhotel.com/"
+      },
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 97,
+      "keyThemes": [
+        "room",
+        "but",
+        "all",
+        "are",
+        "very"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.9199999999999999,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 97.6,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "placeName": "Goldvitel Hotel Surabaya",
+      "priceLevel": "",
+      "rating": 4.6,
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "summaryNegativeReviews": "The pictures online looked really nice. When I got here i honestly wanted to switch a different hote... | I upgrade my room from deluxe to junior suite but when I come to the room 1708 the room is really me...",
+      "summaryPositiveReviews": "Highly recommended for those who want to stay in Surabaya, very strategic location in the middle of ... | The hotel lobby is nicely maintained and clean, providing a peaceful atmosphere. However, I noticed ... | location and service are good. but some of details of room lil bit look alike unmaintenance.\nfor bre...",
+      "totalRatings": 2972,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ]
+    },
+    {
+      "address": "Jl. Slompretan No.26, Bongkaran, Kec. Pabean Cantikan, Surabaya, Jawa Timur 60161, Indonesia",
+      "businessHours": [
+        "Monday: Open 24 hours",
+        "Tuesday: Open 24 hours",
+        "Wednesday: Open 24 hours",
+        "Thursday: Open 24 hours",
+        "Friday: Open 24 hours",
+        "Saturday: Open 24 hours",
+        "Sunday: Open 24 hours"
+      ],
+      "businessType": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(031) 3524638",
+        "website": "https://www.kokoonhotelsvillas.com/surabaya/"
+      },
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 97,
+      "keyThemes": [
+        "hotel",
+        "service",
+        "good",
+        "room",
+        "area"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.0,
+        "price_factor": 1.0,
+        "rating_factor": 0.9199999999999999,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 97.6,
+      "matchReasoning": "Calculated using traditional algorithm due to specific AI service error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ghsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+      "placeName": "Kokoon Hotel Surabaya",
+      "priceLevel": "",
+      "rating": 4.6,
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "summaryPositiveReviews": "Hidden Gem!\nBeautiful boutique hotel with lots of history. It feels like entering museum hotels. Lot... | Was a great place to stay before my flight! Pillows were insanely cozy, ac worked well, and staff wa... | Overall good. Average breakfast, service is good by some and lesser by others. Decent location to Ch...",
+      "totalRatings": 2047,
       "weaknesses": [
         "Insufficient data for detailed analysis"
       ]
     }
   ],
   "$metadata": {
-    "createdAt": "2025-04-14T06:32:23.509243+00:00Z",
-    "startedAt": "2025-04-14T06:32:24.831520+00:00Z",
-    "executionTotal": 133
+    "createdAt": "2025-04-15T10:55:54.222145+00:00Z",
+    "startedAt": "2025-04-15T10:55:55.117252+00:00Z",
+    "executionTotal": 181
   }
 }

@@ -6,6 +6,7 @@ import json
 # === GLOBAL API KEYS ===
 api_key = None
 openai_api_key = None
+search_api_key = None  # New global variable for SearchAPI.io
 
 
 # === INIT API KEYS ===
@@ -20,6 +21,13 @@ def init_openai_key(key):
     """Initialize OpenAI API key"""
     global openai_api_key
     openai.api_key = key
+    return key
+
+
+def init_search_api_key(key):
+    """Initialize SearchAPI.io API key"""
+    global search_api_key
+    search_api_key = key
     return key
 
 
@@ -64,6 +72,14 @@ def get_api_key():
     return api_key
 
 
+# === GET SEARCH API KEY ===
+def get_search_api_key():
+    global search_api_key
+    if search_api_key is None:
+        raise ValueError("SearchAPI.io key not initialized. Call init_search_api_key first.")
+    return search_api_key
+
+
 # === GET PLACE DETAILS ===
 def get_place_details(place_id, fields=None):
     if not api_key:
@@ -96,15 +112,20 @@ def get_place_reviews(place_id, max_reviews=20):
     return reviews[:max_reviews]
 
 
-# === SEARCH VIA SEARCH API (e.g. SerpAPI) ===
-def search_business_with_search_api(keyword, api_key_searchapi, location="Indonesia", max_results=5):
-    search_url = "https://serpapi.com/search.json"
+# === SEARCH VIA SEARCHAPI.IO (replacing SerpAPI) ===
+def search_business_with_search_api(keyword, location="Indonesia", max_results=5):
+    # Get the SearchAPI.io key
+    api_key_searchapi = get_search_api_key()
+    
+    # SearchAPI.io endpoint for Google Maps
+    search_url = "https://www.searchapi.io/api/v1/search"
+    
     params = {
         "engine": "google_maps",
         "q": keyword,
-        "type": "search",
         "location": location,
-        "api_key": api_key_searchapi
+        "api_key": api_key_searchapi,
+        "num": max_results  # Number of results to return
     }
 
     try:
@@ -118,7 +139,7 @@ def search_business_with_search_api(keyword, api_key_searchapi, location="Indone
                 "title": biz.get("title"),
                 "address": biz.get("address"),
                 "place_id": biz.get("place_id"),
-                "gps_coordinates": biz.get("gps_coordinates"),
+                "gps_coordinates": biz.get("gps_coordinates", {}),
                 "rating": biz.get("rating"),
                 "reviews_count": biz.get("reviews"),
                 "google_maps_url": biz.get("link")
@@ -127,7 +148,7 @@ def search_business_with_search_api(keyword, api_key_searchapi, location="Indone
         return businesses
 
     except Exception as e:
-        raise RuntimeError(f"Search API failed: {str(e)}")
+        raise RuntimeError(f"SearchAPI.io request failed: {str(e)}")
 
 
 # === OPENAI: SUMMARIZE & EXTRACT KEYWORDS ===
@@ -148,7 +169,7 @@ def summarize_and_extract_keywords(reviews):
 
     try:
         response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4.1",
             messages=[
                 {"role": "system", "content": "You are a helpful business analyst."},
                 {"role": "user", "content": prompt}
@@ -164,9 +185,9 @@ def summarize_and_extract_keywords(reviews):
 
 
 # === MAIN SCRAPE TASK ===
-def scrape_business_data_by_keyword(keyword, api_key_searchapi, max_places=5, max_reviews_per_place=10):
+def scrape_business_data_by_keyword(keyword, max_places=5, max_reviews_per_place=10):
     all_data = []
-    businesses = search_business_with_search_api(keyword, api_key_searchapi, max_results=max_places)
+    businesses = search_business_with_search_api(keyword, max_results=max_places)
 
     for biz in businesses:
         place_id = biz.get("place_id")
