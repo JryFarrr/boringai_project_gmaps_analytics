@@ -1,7 +1,81 @@
 # Modified control_route.py
 from flask import request, jsonify, current_app
 from src.utils.response_utils import error_response
+from flasgger import swag_from
 
+@swag_from({
+    'tags': ['Task'],
+    'summary': 'Handle control task workflow',
+    'description': '''This endpoint handles control tasks for lead collection with several scenarios:
+    - Continue with the next placeId when there are remaining place IDs.
+    - Request more leads by searching for the next page or incrementing the search.
+    - End the workflow when the target lead count is reached.
+    - Skip the current place if constraints are not met and continue with the next.''',
+    'parameters': [
+        {
+            'name': 'data',
+            'in': 'body',
+            'description': 'Request body containing the control parameters for the lead collection process.',
+            'required': True,
+            'schema': {
+                'type': 'object',
+                'properties': {
+                    'leadCount': {'type': 'integer'},
+                    'numberOfLeads': {'type': 'integer'},
+                    'remainingPlaceIds': {
+                        'type': 'array',
+                        'items': {'type': 'string'}
+                    },
+                    'searchOffset': {'type': 'integer'},
+                    'nextPageToken': {'type': 'string'},
+                    'businessType': {'type': 'string'},
+                    'location': {'type': 'string'},
+                    'skippedConstraints': {'type': 'boolean'},
+                    'skippedCount': {'type': 'integer'}
+                },
+                'required': ['leadCount', 'numberOfLeads']
+            }
+        }
+    ],
+    'responses': {
+        '200': {
+            'description': 'Successfully handled the control flow with the current state or next action.',
+            'schema': {
+                'type': 'object',
+                'properties': {
+                    'state': {'type': 'object'},
+                    'result': {'type': 'object'},
+                    'next': {
+                        'type': 'object',
+                        'properties': {
+                            'key': {'type': 'string'},
+                            'payload': {
+                                'type': 'object',
+                                'properties': {
+                                    'placeId': {'type': 'string'},
+                                    'leadCount': {'type': 'integer'},
+                                    'numberOfLeads': {'type': 'integer'},
+                                    'skippedCount': {'type': 'integer'}
+                                }
+                            }
+                        }
+                    },
+                    'done': {'type': 'boolean'},
+                    'error': {'type': 'string'}
+                }
+            }
+        },
+        '400': {
+            'description': 'Bad Request - Invalid JSON payload or missing required fields.',
+            'schema': {
+                'type': 'object',
+                'properties': {
+                    'error': {'type': 'string'}
+                }
+            }
+        }
+    }
+})
 def control_route():
     """
     Handle the control task endpoint with improved lead collection strategy

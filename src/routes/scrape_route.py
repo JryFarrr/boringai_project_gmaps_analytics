@@ -1,6 +1,47 @@
 from flask import request, jsonify, current_app
 from src.utils.response_utils import error_response
 from src.services.google_maps_service import get_place_details, search_business_with_search_api
+from flasgger import swag_from
+
+@swag_from({
+    'tags': ['Task'],
+    'summary': 'Scrape business details using Google Maps API',
+    'description': 'Get detailed business information from a Place ID',
+    'parameters': [
+        {
+            'name': 'body',
+            'in': 'body',
+            'required': True,
+            'schema': {
+                'type': 'object',
+                'required': ['placeId'],
+                'properties': {
+                    'placeId': {'type': 'string', 'example': 'ChIJhS6qhGT51y0RUCoksi_dipo'},
+                    'skippedCount': {'type': 'integer', 'example': 1},
+                    'leadCount': {'type': 'integer', 'example': 5},
+                    'numberOfLeads': {'type': 'integer', 'example': 10}
+                }
+            }
+        }
+    ],
+    'responses': {
+        200: {
+            'description': 'Successful scrape',
+            'schema': {
+                'type': 'object',
+                'properties': {
+                    'state': {'type': 'object'},
+                    'result': {'type': 'object', 'nullable': True},
+                    'next': {'type': 'object'},
+                    'done': {'type': 'boolean', 'example': False},
+                    'error': {'type': 'string', 'nullable': True}
+                }
+            }
+        },
+        400: {'description': 'Missing required field: placeId'},
+        500: {'description': 'Scrape failed due to internal error'}
+    }
+})
 def scrape_route():
     """Handle the scrape task endpoint with SearchAPI.io integration"""
     data = request.get_json()

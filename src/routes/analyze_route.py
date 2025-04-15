@@ -9,6 +9,7 @@ from src.utils.business_matcher import (
     extract_key_themes
 )
 from src.services.api_clients.factory import create_client
+from flasgger import swag_from
 
 def generate_review_summary(reviews, review_type="positive", max_length=200):
     """
@@ -156,6 +157,83 @@ def generate_business_insights(place_details, match_percentage, match_analysis=N
             "fitReason": "Score based on match percentage only"
         }
 
+@swag_from({
+    'tags': ['Task'],
+    'summary': 'Analyze and generate business insights',
+    'description': 'Analyze business information, match percentage, and generate insights using OpenAI',
+    'parameters': [
+        {
+            'name': 'placeDetails',
+            'in': 'body',
+            'description': 'Details about the business for analysis',
+            'required': True,
+            'schema': {
+                'type': 'object',
+                'properties': {
+                    'placeName': {'type': 'string'},
+                    'businessType': {'type': 'array', 'items': {'type': 'string'}},
+                    'rating': {'type': 'number'},
+                    'totalRatings': {'type': 'number'},
+                    'priceRange': {'type': 'string'},
+                    'positiveReviews': {'type': 'array', 'items': {'type': 'string'}},
+                    'negativeReviews': {'type': 'array', 'items': {'type': 'string'}},
+                    'businessHours': {'type': 'array', 'items': {'type': 'string'}}
+                }
+            }
+        },
+        {
+            'name': 'leadCount',
+            'in': 'body',
+            'description': 'The number of leads already processed',
+            'required': True,
+            'schema': {
+                'type': 'integer'
+            }
+        },
+        {
+            'name': 'constraints',
+            'in': 'body',
+            'description': 'Constraints for filtering places',
+            'required': False,
+            'schema': {
+                'type': 'object',
+                'properties': {
+                    'min_rating': {'type': 'integer'},
+                    'min_reviews': {'type': 'integer'},
+                    'price_range': {'type': 'string'},
+                    'business_hours': {'type': 'string'},
+                    'keywords': {'type': 'string'},
+                    'topPlaces': {'type': 'integer'}
+                }
+            }
+        }
+    ],
+    'responses': {
+        '200': {
+            'description': 'Successful analysis and insights',
+            'schema': {
+                'type': 'object',
+                'properties': {
+                    'placeName': {'type': 'string'},
+                    'matchPercentage': {'type': 'number'},
+                    'strengths': {'type': 'array', 'items': {'type': 'string'}},
+                    'weaknesses': {'type': 'array', 'items': {'type': 'string'}},
+                    'fitScore': {'type': 'number'},
+                    'fitReason': {'type': 'string'}
+                }
+            }
+        },
+        '400': {
+            'description': 'Bad Request - Missing required fields',
+            'schema': {
+                'type': 'object',
+                'properties': {
+                    'error': {'type': 'string'}
+                }
+            }
+        }
+    }
+})
 def analyze_route():
     """
     Handle the analyze task endpoint

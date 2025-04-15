@@ -2,9 +2,49 @@
 from flask import request, jsonify, current_app
 from src.utils.response_utils import error_response
 from src.services.google_maps_service import search_places
+from flasgger import swag_from
 import traceback
 import time
 
+@swag_from({
+    'tags': ['Task'],
+    'summary': 'Search for businesses using Google Maps API',
+    'description': 'Collect place IDs from Google Maps based on business type and location. Handles pagination and lead skipping.',
+    'parameters': [
+        {
+            'name': 'body',
+            'in': 'body',
+            'required': True,
+            'schema': {
+                'type': 'object',
+                'required': ['businessType', 'location', 'searchOffset', 'numberOfLeads'],
+                'properties': {
+                    'businessType': {'type': 'string', 'example': 'coffee shop'},
+                    'location': {'type': 'string', 'example': 'surabaya'},
+                    'searchOffset': {'type': 'integer', 'example': 0},
+                    'numberOfLeads': {'type': 'integer', 'example': 10},
+                }
+            }
+        }
+    ],
+    'responses': {
+        200: {
+            'description': 'Successful search',
+            'schema': {
+                'type': 'object',
+                'properties': {
+                    'state': {'type': 'object'},
+                    'result': {'type': 'object', 'nullable': True},
+                    'next': {'type': 'object'},
+                    'done': {'type': 'boolean', 'example': False},
+                    'error': {'type': 'string', 'nullable': True}
+                }
+            }
+        },
+        400: {'description': 'Invalid JSON or missing fields'},
+        500: {'description': 'Internal server error'}
+    }
+})
 def search_route():
     """Handle the search task endpoint with improved lead collection strategy that collects all needed data at once"""
     data = request.get_json()

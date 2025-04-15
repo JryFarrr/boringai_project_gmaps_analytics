@@ -1,6 +1,71 @@
 from flask import request, jsonify
 from src.utils.response_utils import error_response
+from flasgger import swag_from
 
+@swag_from({
+    'tags': ['Task'],
+    'description': 'Memulai task input untuk pencarian lead.',
+    'parameters': [
+        {
+            'name': 'body',
+            'in': 'body',
+            'required': True,
+            'schema': {
+                'type': 'object',
+                'properties': {
+                    'businessType': {'type': 'string','example': 'restaurant'
+                    },
+                    'location': {'type': 'string','example': 'Surabaya'
+                    },
+                    'numberOfLeads': {'type': 'integer','example': 10
+                    },
+                    'searchOffset': {'type': 'integer','example': 0
+                    },
+                    'nextPageToken': {'type': 'string','example': 'abc123'
+                    },
+                    'remainingPlaceIds': {'type': 'array','items': {'type': 'string'},'example': ['place1', 'place2']
+                    }
+                },
+                'required': ['businessType', 'location', 'numberOfLeads']
+            }
+        }
+    ],
+    'responses': {
+        200: {
+            'description': 'Berhasil membuat initial state dan step berikutnya',
+            'examples': {
+                'application/json': {
+                    "state": {
+                        "businessType": "restaurant",
+                        "location": "Surabaya",
+                        "numberOfLeads": 10,
+                        "leadCount": 0,
+                        "searchOffset": 0,
+                        "remainingPlaceIds": []
+                    },
+                    "next": {
+                        "key": "search",
+                        "payload": {
+                            "businessType": "$state.businessType",
+                            "location": "$state.location",
+                            "searchOffset": "$state.searchOffset",
+                            "numberOfLeads": "$state.numberOfLeads"
+                        }
+                    },
+                    "result": None,
+                    "done": False,
+                    "error": None
+                }
+            }
+        },
+        400: {
+            'description': 'Request tidak valid',
+            'examples': {
+                'application/json': {"error": "Missing required field: location"}
+            }
+        }
+    }
+})
 def input_route():
     """Handle the input task endpoint"""
     data = request.get_json()
