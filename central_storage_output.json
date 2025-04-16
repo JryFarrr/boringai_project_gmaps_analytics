@@ -1,21 +1,18 @@
 {
-  "$id": "4dd1f68a-5ee4-4b1e-b919-9221461eef1d",
+  "$id": "1cb5a727-af7a-4dea-bec7-b4256480c47f",
   "$state": {
     "businessType": "hotels",
     "leadCount": 3,
     "location": "Surabaya",
     "numberOfLeads": 3,
-    "remainingPlaceIds": [
-      "ChIJEarruvD61y0RKOcIoxmLRpY"
-    ],
-    "searchOffset": 5,
-    "skippedCount": 1,
-    "nextPageToken": "AeeoHcKIkmxE4LaqpOuIwouvHIL6Q6Dhm52hltRilU6xKoqMUpC-eAmqpEuv5uyBNCXzFZcgpoTcMYMsiuZ3moc5DiQiAeH9532gY2_NTFuyqMWNfpvm1PA9ekmsJlApEsul-D7wUV15DNHKShQ8LqhVy1KRMupAGpSufsv6Ub0hSQlrPkD-L-uz822ArxeccF-0xtQug7yLJkrm16XZ8GoxhYcwQjIwi9C5dkY0rcx_kt6RnEQte8sZQqnZL8rpbbgMZjJd6Rxn_D4xKwJO6pWTL60MoKJxbjZT8OgsLUBMUHktwcw0SmNdL5SMzZbUZUAmxFf66uL61v54qIym9bGwtyPaNHWupOUV2DoZnzUyQaQle0_R86hsRRU8XfIhk8dEEfFvJDmnUFcRI0lWMgsDCRQfzFohgSxJ93PfG_yhltxP8yuXjkHNv5SIufhlPSMF3syULttEdqrsGP5wcBBErWv4VznX_bl14mESUHNKJu2pBOBL2FrwGIVqMN4ygrkVwosPnh_boxISxZs_WiEE6gFEHNbumt3pTPrpQjoPlypDEK4q5yH-tGJLNnrZfbU9m1VqQkNMu6wmgDq2_oxxFuRKPUbO21z8IOqo1aTHVBM",
-    "skippedConstraints": true
+    "remainingPlaceIds": [],
+    "searchOffset": 3,
+    "skippedCount": 0,
+    "nextPageToken": "AeeoHcLHeiTs5fdjJSdECO1lAvBlpiMW-RCPdttfrWLg3CLXzz1qlWo8pSfgvOPp7A5aJNck23_FnuZEZcKGGXr9hohRbeL1O02kjgAb-StfjYj1uXQcJlnpfiMkcy63-c6yqtS0u-WJG1rsY8luTGlnhHdIUQjzeJpjAcvH3_Nmaz4RopYJIREqd1_lZRkdVBg6m9_LrK-OZspmfiDwIagNijbuh8PSyp0gmX8syTjZM4qlpsdgMzseKezU5nHRdVR31vynAqs6r8mRa5ljeh2EBTNNo9zui5iAgSWvun6DgL5hsQO0yvrECRok9UKdhQPdv-W15bIj_s1b2gwi0T6wlAvfBU0t9eLdP6cbIDJ7yMga23EZcY_E6kk5jTNqRfziFSEJe5gLHuCwQEyqnAmcTw"
   },
   "$results": [
     {
-      "address": "Jl. Raya Lontar No.2, Lontar, Kec. Sambikerep, Surabaya, Jawa Timur 60216, Indonesia",
+      "address": "Jl. Embong Malang No.85-89, Kedungdoro, Kec. Tegalsari, Surabaya, Jawa Timur 60261, Indonesia",
       "businessHours": [],
       "businessType": [
         "lodging",
@@ -23,65 +20,11 @@
         "establishment"
       ],
       "contact": {
-        "phone": "(031) 29710000",
-        "website": "https://www.marriott.com/en-us/hotels/subwi-the-westin-surabaya/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0"
+        "phone": "(031) 5458888",
+        "website": "https://www.marriott.com/en-us/hotels/subjw-jw-marriott-hotel-surabaya/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0"
       },
-      "fitReason": "The Westin Surabaya demonstrates a high fit score due to its exceptional ratings, strong guest satisfaction, and consistent positive feedback on staff interaction and amenities. However, minor operational inconsistencies, particularly in dining service, slightly diminish the overall fit, suggesting room for improvement in those areas. Overall, the establishment aligns well with the majority of customer requirements and expectations.",
-      "fitScore": 92,
-      "keyThemes": [
-        "Outstanding staff service",
-        "Exceptional dining experience",
-        "Room upgrades and cleanliness",
-        "Breakfast buffet excellence",
-        "Service inconsistency and issues"
-      ],
-      "matchFactors": {
-        "hours_factor": 1,
-        "keyword_factor": 0.9,
-        "price_factor": 0.5,
-        "rating_factor": 1,
-        "review_count_factor": 1
-      },
-      "matchPercentage": 95.0,
-      "matchReasoning": "The Westin Surabaya has an excellent match with the given constraints. It exceeds the minimum rating requirement with a 4.8 rating, well above the 4.5 threshold, achieving the max rating factor of 1. The total number of reviews, 2391, is significantly higher than the minimum required 100, also garnering a full score for review_count_factor. The price_level is unspecified but aligns with the open-ended constraint and is given a moderate value of 0.5 for price_factor. Business hours match the 'anytime' requirement perfectly, achieving a score of 1 for hours_factor. The sample reviews speak positively about the service and amenities, suggesting high customer satisfaction, which supports a keyword_factor of 0.9. Overall, the excellent ratings and high volume of positive feedback justify a high match percentage of 95.",
-      "placeName": "The Westin Surabaya",
-      "priceLevel": "",
-      "rating": 4.8,
-      "strengths": [
-        "High customer satisfaction is evident from the 4.8/5 rating and the volume of positive reviews, indicating excellent service and amenities.",
-        "Well-regarded staff and personalized service enhance guest experience, as highlighted by numerous specific mentions of positive interactions with staff members.",
-        "Affiliated with quality amenities such as a well-regarded breakfast buffet, clean facilities, and well-connected location with easy access to nearby attractions."
-      ],
-      "summaryNegativeReviews": "Guests find the lack of in-restaurant sahur service inconvenient and experience inconsistent, rude service at the restaurant, pointing to a need for improved management and guest treatment.",
-      "summaryPositiveReviews": "Guests consistently praise The Westin Surabaya for exceptional service, friendly staff, and memorable dining experiences. Highlights include Chef Dayat's personal engagement, outstanding meals, and...",
-      "totalRatings": 2391,
-      "weaknesses": [
-        "Some guests experienced dissatisfaction specifically with the dining arrangements, such as the inconvenience during 'sahur' and issues with seating reservations, indicating a potential area for customer service improvement.",
-        "A specific negative impact has been noted due to inconsistent service experiences, which might affect repeat patronage and word-of-mouth recommendations if unresolved.",
-        "Though minor, the lack of specified price range might create confusion for potential customers in terms of cost expectations."
-      ]
-    },
-    {
-      "address": "Jl. Hayam Wuruk No.6, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242, Indonesia",
-      "businessHours": [],
-      "businessType": [
-        "lodging",
-        "point_of_interest",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "(031) 5631222",
-        "website": "https://artotelwanderlust.com/hotel/artotel-ts-suites-surabaya/g/Surabaya-en?checkIn=2024-03-12&checkOut=2024-03-13&id=TUEwNzEwMDExOA%3D%3D%20-%20TUEyMzExMDAwMDQ4&encodeId=TUEyMzExMDAwMDQ4"
-      },
-      "fitReason": "ARTOTEL TS Suites Surabaya demonstrates a high overall match percentage due to excellent ratings and location benefits, along with strong guest service. Although there are areas for improvement, particularly in cleanliness and maintenance consistency, these are not critical enough to heavily impact the fit for potential customers seeking lodging in Surabaya.",
-      "fitScore": 85,
-      "keyThemes": [
-        "Room cleanliness",
-        "Shower experience",
-        "Central location",
-        "Friendly staff",
-        "Surprises and promotions"
-      ],
+      "fitReason": "JW Marriott Hotel Surabaya has a high match percentage and strong overall rating. Its exceptional service and popularity among guests position it as an excellent lead despite minor shortcomings in keyword-driven marketing opportunities.",
+      "fitScore": 90,
       "matchFactors": {
         "hours_factor": 1,
         "keyword_factor": 0.5,
@@ -90,24 +33,24 @@
         "review_count_factor": 1
       },
       "matchPercentage": 90.0,
-      "matchReasoning": "The business ARTOTEL TS Suites Surabaya meets most of the constraints provided. It has a perfect 4.5-star rating, which matches the minimum rating required. The total number of reviews, 2318, significantly exceeds the minimum requirement of 100, indicating a substantial amount of customer feedback. The lack of a specified price range and business hours that are marked as 'anytime' allows full compliance with those aspects, contributing to a high match score.\n\nHowever, the sample reviews provide mixed feedback. While positive mentions of staff friendliness and an overall welcoming experience are noted, there are indications of areas needing improvement, specifically regarding cleanliness. These mixed sentiments in the user feedback affect the keyword factor, lowering the overall match percentage slightly. Nonetheless, these are not strong enough to drastically impact the match due to high compliance with numeric-based constraints.",
-      "placeName": "ARTOTEL TS Suites Surabaya",
-      "priceLevel": "",
-      "rating": 4.5,
+      "matchReasoning": "The JW Marriott Hotel Surabaya matches almost perfectly with the given constraints. The hotel's rating of 4.7 exceeds the minimum rating requirement of 4.5, resulting in a rating_factor of 1. With a total of 18,545 reviews, it greatly surpasses the minimum review requirement of 100, earning it a review_count_factor of 1. The price_level is unspecified in both the business description and constraints, giving it a neutral factor of 1 for price. The business hours are 'anytime', which matches any operational hours, so the hours_factor is 1. Regarding the keyword_factor, while the sample reviews reflect positive customer experiences, they do not directly mention keywords that could further align the reviews with specific constraint criteria, resulting in a keyword_factor of 0.5. Overall, the business aligns well with the constraints, yielding a high match percentage of 90.",
+      "placeName": "JW Marriott Hotel Surabaya",
+      "priceLevel": null,
+      "rating": 4.7,
       "strengths": [
-        "High rating of 4.5 out of 5 from 2318 reviews indicates strong customer satisfaction and a robust reputation.",
-        "Centrally located in Surabaya, offering convenience for guests to explore the city.",
-        "Positive customer service experiences, with staff noted for their friendliness and hospitality."
+        "The hotel has an impressive rating of 4.7 out of 5, indicating high customer satisfaction.",
+        "The staff are frequently mentioned for their exceptional service, which enhances the overall guest experience.",
+        "The hotel has a high number of positive reviews (18,545), showcasing its popularity and credibility among guests."
       ],
-      "summaryPositiveReviews": "ARTOTEL TS Suites Surabaya is centrally located with excellent service, welcoming staff, and memorable surprises like birthday perks. Focus on room cleanliness and amenities maintenance could enhan...",
-      "totalRatings": 2318,
+      "summaryPositiveReviews": "Marriott Surabaya's staff are consistently praised for their warmth and attentiveness. Guests commend the clean rooms, excellent executive lounge, and delightful breakfast. Some suggest firmer pill...",
+      "totalRatings": 18545,
       "weaknesses": [
-        "Cleanliness issues reported in multiple reviews, indicating a need for improvement in housekeeping.",
-        "Inconsistencies in room amenities and maintenance, such as missing shower gel and shampoo, which could impact guest satisfaction."
+        "The hotel's age is noted in reviews, suggesting the need for updates or renovations, which may be a consideration for some guests.",
+        "Keywords directly aligned with specific constraint criteria are lacking in reviews, which may affect certain targeted marketing strategies."
       ]
     },
     {
-      "address": "Jl. Ronggolawe No.27 - 29, Wonorejo, Kec. Tegalsari, Surabaya, Jawa Timur 60264, Indonesia",
+      "address": "Jl. Ketintang Baru I No.10-12, Ketintang, Kec. Gayungan, Surabaya, Jawa Timur 60231, Indonesia",
       "businessHours": [
         "Monday: Open 24 hours",
         "Tuesday: Open 24 hours",
@@ -118,54 +61,112 @@
         "Sunday: Open 24 hours"
       ],
       "businessType": [
+        "cafe",
+        "spa",
+        "night_club",
         "lodging",
+        "gym",
+        "restaurant",
+        "food",
+        "health",
+        "bar",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(031) 8286818",
+        "website": "https://surabaya.alanahotels.com/"
+      },
+      "fitReason": "The Alana Surabaya aligns exceptionally well with the set constraints, featuring an outstanding rating, extensive reviews, and operational convenience. Its minor pricing and environmental issues slightly diminish the alignment but do not significantly detract from its performance and customer approval, warranting a high potential fit score.",
+      "fitScore": 90,
+      "keyThemes": [
+        "Friendly staff",
+        "Comfortable rooms",
+        "Good location",
+        "Affordable pricing",
+        "Breakfast quality"
+      ],
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.8,
+        "price_factor": 0.5,
+        "rating_factor": 1.0,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 85.0,
+      "matchReasoning": "The Alana Surabaya meets the given constraints very well with some minor mismatches. The business has an excellent rating of 4.7, surpassing the minimum constraint of 4.5, resulting in a perfect rating factor score. It also significantly exceeds the minimum required number of reviews, with 15,418 compared to the 100 required, giving it a perfect review count factor. The price level is unspecified for both the business and constraints, leading to a neutral assessment for the price factor. Since the constraints allow for operation 'anytime,' which is consistent, the business hours factor is also perfect. Keyword analysis from the sample reviews suggests favorable customer experience with some room for improvement, reflecting in the keyword factor. Overall, the business aligns well with the constraints but has slight indeterminacy in its price level, causing a deduction in the overall match percentage.",
+      "placeName": "The Alana Surabaya",
+      "priceLevel": null,
+      "rating": 4.7,
+      "strengths": [
+        "High customer satisfaction with a rating of 4.7 based on a substantial number of reviews (15,418), indicating consistent quality and customer approval.",
+        "Exceptional service and staff, as noted in the positive reviews, which contribute to a welcoming and efficient customer experience.",
+        "Strategic location providing convenient access to the airport and other parts of the city, enhancing its appeal for both business and leisure travelers."
+      ],
+      "summaryPositiveReviews": "Customers praise the hotel's excellent service, friendly staff, comfortable rooms, cleanliness, and convenient airport drop-off. However, lobby ambiance and eco-friendly measures could improve.",
+      "totalRatings": 15418,
+      "weaknesses": [
+        "Indeterminate pricing and unspecified price level could be a disadvantage for potential customers looking for clear cost expectations.",
+        "Negative perception due to the ambiance of the lobby which could be improved to match or enhance the overall experience offered.",
+        "Location adjacent to a sewer causing unpleasant odors in the parking lot, which might affect the overall customer experience."
+      ]
+    },
+    {
+      "address": "Jl. Sidosermo II No.70a, Sidosermo, Kec. Wonocolo, Surabaya, Jawa Timur 60239, Indonesia",
+      "businessHours": [],
+      "businessType": [
+        "night_club",
+        "bar",
+        "lodging",
+        "spa",
         "restaurant",
         "food",
         "point_of_interest",
         "establishment"
       ],
       "contact": {
-        "phone": "(031) 5660778",
-        "website": "https://www.questhotels.com/en/hotel/view/4/quest-hotel-darmo---surabaya"
+        "phone": "(031) 99858575",
+        "website": "https://www.astonhotelsinternational.com/en/hotel/view/93/aston-inn-jemursari"
       },
-      "fitReason": "Quest Hotel Darmo Surabaya fits extremely well given the criteria. Its strong customer satisfaction, high volume of reviews, and alignment with operational criteria (such as 24/7 availability) contribute to its high fit score. While there are minor operational issues related to check-in/out processes and room soundproofing, these factors have only a slight impact on its overall suitability as a business lead.",
-      "fitScore": 90,
+      "fitReason": "Aston Inn Jemursari is a strong potential lead with an overall fit score of 85. Despite some operational and location-related challenges, the high rating, comprehensive amenities, and positive customer experiences make it an attractive choice for potential visitors, particularly those prioritizing quality service and diverse facilities over direct city center access.",
+      "fitScore": 85,
       "keyThemes": [
-        "Clean rooms",
-        "Helpful staff",
-        "Breakfast quality",
-        "Value for money",
-        "Room issues"
+        "Location Convenience",
+        "Room Comfort",
+        "Service Quality",
+        "Breakfast Variety",
+        "Maintenance Issues"
       ],
       "matchFactors": {
-        "hours_factor": 1,
-        "keyword_factor": 0.7,
-        "price_factor": 1,
-        "rating_factor": 1,
-        "review_count_factor": 1
+        "hours_factor": 1.0,
+        "keyword_factor": 0.75,
+        "price_factor": 0.5,
+        "rating_factor": 1.0,
+        "review_count_factor": 1.0
       },
-      "matchPercentage": 90.0,
-      "matchReasoning": "The business 'Quest Hotel Darmo Surabaya' matches the constraints very well. The rating is exactly 4.5, meeting the 'min_rating' constraint perfectly, resulting in a rating_factor of 1. The business has 8,749 reviews, substantially exceeding the 'min_reviews' requirement of 100, hence the review_count_factor is 1. Although the 'price_level' is unspecified, the constraint allows for any 'price_range', thus the price_factor is 1. The 'business_hours' constraint is 'anytime', which is met since lodging typically operates 24/7, therefore the hours_factor is 1. The keyword_factor considers the sentiment from the sample reviews: guests mentioned the hotel is 'nice, clean', and 'value for money' but also pointed out some minor issues with check-in/out processes, slightly reducing this factor to 0.7. Overall, these factors combine to give an excellent match of 90%.",
-      "placeName": "Quest Hotel Darmo Surabaya",
-      "priceLevel": "",
-      "rating": 4.5,
+      "matchPercentage": 85.0,
+      "matchReasoning": "Aston Inn Jemursari is a strong match for the given constraints with an overall match percentage of 85%. The business excels in the rating and review count factors, as it surpasses the minimum required rating of 4.5 with a 4.8 and the minimum review count of 100 with a total of 3695 reviews. The price factor is neutral due to the lack of specified price information from both the business and the constraints. The business is available anytime, fulfilling the 'business_hours' constraint perfectly. The keyword factor slightly reduces the match percentage; while the reviews suggest both positive aspects (e.g., beautiful setup, friendly staff) and minor negative issues (e.g., AC problems, restaurant not picking up calls), the location being in a residential area far from the city is a potential concern depending on customer priorities.",
+      "placeName": "Aston Inn Jemursari",
+      "priceLevel": null,
+      "rating": 4.8,
       "strengths": [
-        "High customer satisfaction with a rating of 4.5 out of 5, supported by a large volume of reviews (8,749).",
-        "Guests appreciate the cleanliness and spaciousness of the rooms and the helpfulness of the staff.",
-        "The hotel is regarded as offering good value for money with a positive perception of food quality and generous breakfast offerings."
+        "High customer satisfaction: Aston Inn Jemursari has a strong rating of 4.8 out of 5, supported by a significant volume of reviews (3695). This indicates consistent satisfaction among guests.",
+        "Comprehensive amenities: The establishment offers a wide range of services and facilities including lodging, bar, spa, restaurant, and more, enhancing its appeal to various customer needs.",
+        "Exceptional service and atmosphere: Positive reviews highlight the friendly staff, beautiful decor, cleanliness, and well-maintained amenities, suggesting a high level of customer care and pleasant environment."
       ],
-      "summaryPositiveReviews": "The hotel offers great value with clean, comfortable, and affordable rooms. Guests praise the helpful, friendly staff and excellent breakfast. Improvements needed in soundproofing and service speed.",
-      "totalRatings": 8749,
+      "summaryNegativeReviews": "Guests report problematic key cards, faulty power sockets, inconsistent shower temperatures, and poor hygiene due to insects. Location is also less than ideal.",
+      "summaryPositiveReviews": "Beautiful decor, welcoming staff, and cozy rooms are consistently praised. Breakfast is varied, though coffee needs improvement. Quick maintenance response and excellent dining options are noted. A...",
+      "totalRatings": 3695,
       "weaknesses": [
-        "Check-in and check-out processes could be improved to enhance guest experience, especially for those who are fatigued.",
-        "Rooms are not soundproof, which could affect guest privacy and comfort.",
-        "Technical issues like door malfunctions and TV disconnections were reported, indicating a need for better maintenance."
+        "Location challenges: Situated in a residential area, the location might not be ideal for guests seeking proximity to city attractions and conveniences.",
+        "Operational issues: Some guests have experienced functional problems such as faulty room key cards, inconsistent shower pressure, and service-related issues like unanswered calls to the restaurant.",
+        "Variable room quality: Certain reviews mention minor glitches like AC leaks and non-working power sockets, which could affect the overall guest experience."
       ]
     }
   ],
   "$metadata": {
-    "createdAt": "2025-04-16T04:27:23.142413+00:00Z",
-    "startedAt": "2025-04-16T04:27:25.254220+00:00Z",
-    "executionTotal": 15
+    "createdAt": "2025-04-16T16:50:50.424359+00:00Z",
+    "startedAt": "2025-04-16T16:50:52.423346+00:00Z",
+    "executionTotal": 11
   }
 }

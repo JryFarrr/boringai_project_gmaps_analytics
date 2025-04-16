@@ -13,6 +13,7 @@ load_dotenv(dotenv_path=env_path)
 GOOGLE_API_KEY = os.getenv("GOOGLE_MAPS_API_KEY")
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+SEARCHAPI_API_KEY = os.getenv("SEARCHAPI_API_KEY")
 
 # Default settings
 DEFAULT_REFERER_URL = os.getenv("DEFAULT_REFERER_URL")

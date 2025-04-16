@@ -162,12 +162,23 @@ def run_simulation():
     
     # Tampilkan Central Storage setelah selesai
     print("\nFinal Central Storage:")
-    print(json.dumps(executor.get_storage(), indent=2))
+    storage = executor.get_storage()
+    
+    # Sort $results by fitScore in descending order
+    storage["$results"].sort(key=lambda x: x.get("fitScore", 0), reverse=True)
+    
+    # Replace empty fields with None in $results
+    for result in storage["$results"]:
+        for key, value in result.items():
+            if value == "":
+                result[key] = None
+    
+    print(json.dumps(storage, indent=2))
     
     # Save the Central Storage to a JSON file
     output_file = "central_storage_output.json"
     with open(output_file, "w") as f:
-        json.dump(executor.get_storage(), f, indent=2)
+        json.dump(storage, f, indent=2)
     print(f"Central Storage has been saved to {output_file}")
 
 if __name__ == "__main__":

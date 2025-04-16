@@ -1,4 +1,4 @@
-from flask import request, jsonify
+from flask import request, jsonify, current_app
 from src.utils.response_utils import error_response
 from src.services.match_services import check_place_constraints
 from src.services.review_service import generate_review_summaries, extract_key_themes_from_reviews
@@ -12,62 +12,67 @@ def analyze_route():
     - Uses OpenAI to generate insightful review summaries
     - Returns formatted response with match results
     """
-    data = request.get_json()
-    if not data or "placeDetails" not in data or "leadCount" not in data:
-        return error_response("Missing required fields: placeDetails or leadCount")
+    try:
+        data = request.get_json()
+        if not data or "placeDetails" not in data or "leadCount" not in data:
+            return error_response("Missing required fields: placeDetails or leadCount")
 
-    place_details = data["placeDetails"]
-    lead_count = data["leadCount"]
-    constraints = data.get("constraints", {})
-    skipped_count = data.get("skippedCount", 0)
-    
-    # Check if place meets constraints
-    meets_constraints, match_percentage, match_analysis = check_place_constraints(place_details, constraints)
-    
-    # If constraints not met, return skip response
-    if not meets_constraints:
-        response = create_skip_response(lead_count, skipped_count)
+        place_details = data["placeDetails"]
+        lead_count = data["leadCount"]
+        constraints = data.get("constraints", {})
+        skipped_count = data.get("skippedCount", 0)
+        
+        # Check if place meets constraints
+        meets_constraints, match_percentage, match_analysis = check_place_constraints(place_details, constraints)
+        
+        # If constraints not met, return skip response
+        if not meets_constraints:
+            response = create_skip_response(lead_count, skipped_count)
+            return jsonify(response), 200
+        
+        # Process reviews and generate summaries
+        positive_reviews = place_details.get("positiveReviews", [])
+        negative_reviews = place_details.get("negativeReviews", [])
+        all_reviews = positive_reviews + negative_reviews
+        
+        # Get summaries and key themes
+        summaries = generate_review_summaries(positive_reviews, negative_reviews)
+        key_themes = extract_key_themes_from_reviews(all_reviews)
+        
+        # Generate business insights
+        insights = generate_business_insights(place_details, match_percentage, match_analysis)
+        
+        # Create and return response
+        result = create_result_object(place_details, match_percentage, match_analysis, 
+                                      summaries, key_themes, insights)
+        
+        response = {
+            "state": {
+                "leadCount": lead_count + 1,
+                "skippedCount": skipped_count
+            },
+            "result": result,
+            "next": {
+                "key": "control",
+                "payload": {
+                    "leadCount": "$state.leadCount",
+                    "numberOfLeads": "$state.numberOfLeads",
+                    "remainingPlaceIds": "$state.remainingPlaceIds",
+                    "searchOffset": "$state.searchOffset",
+                    "nextPageToken": "$state.nextPageToken",
+                    "businessType": "$state.businessType",
+                    "location": "$state.location",
+                    "skippedCount": "$state.skippedCount"
+                }
+            },
+            "done": False,
+            "error": None
+        }
         return jsonify(response), 200
-    
-    # Process reviews and generate summaries
-    positive_reviews = place_details.get("positiveReviews", [])
-    negative_reviews = place_details.get("negativeReviews", [])
-    all_reviews = positive_reviews + negative_reviews
-    
-    # Get summaries and key themes
-    summaries = generate_review_summaries(positive_reviews, negative_reviews)
-    key_themes = extract_key_themes_from_reviews(all_reviews)
-    
-    # Generate business insights
-    insights = generate_business_insights(place_details, match_percentage, match_analysis)
-    
-    # Create and return response
-    result = create_result_object(place_details, match_percentage, match_analysis, 
-                                  summaries, key_themes, insights)
-    
-    response = {
-        "state": {
-            "leadCount": lead_count + 1,
-            "skippedCount": skipped_count
-        },
-        "result": result,
-        "next": {
-            "key": "control",
-            "payload": {
-                "leadCount": "$state.leadCount",
-                "numberOfLeads": "$state.numberOfLeads",
-                "remainingPlaceIds": "$state.remainingPlaceIds",
-                "searchOffset": "$state.searchOffset",
-                "nextPageToken": "$state.nextPageToken",
-                "businessType": "$state.businessType",
-                "location": "$state.location",
-                "skippedCount": "$state.skippedCount"
-            }
-        },
-        "done": False,
-        "error": None
-    }
-    return jsonify(response), 200
+
+    except Exception as e:
+        current_app.logger.error(f"Analyze route failed: {str(e)}")
+        return error_response(f"Analyze route failed: {str(e)}", 500)
 
 def create_skip_response(lead_count, skipped_count):
     """
