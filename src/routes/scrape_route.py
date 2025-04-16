@@ -1,8 +1,25 @@
 from flask import request, jsonify, current_app
 from src.utils.response_utils import error_response
-from src.services.google_maps_service import get_place_details, search_business_with_search_api
+from src.services.scrape_service import (
+    search_and_get_place_id,
+    process_place_details,
+    create_scrape_response
+)
+
 def scrape_route():
-    """Handle the scrape task endpoint with SearchAPI.io integration"""
+    """
+    Handle the scrape task endpoint with SearchAPI.io integration
+    
+    Retrieves business details from Google Maps API using either:
+    1. A direct place_id provided in the request
+    2. A keyword search that returns a place_id to query
+    
+    The endpoint retrieves details such as business name, contact info,
+    address, ratings, reviews, and business hours.
+    
+    Returns:
+        tuple: JSON response and status code
+    """
     data = request.get_json()
     if not data:
         return error_response("Missing request data")
@@ -25,70 +42,19 @@ def scrape_route():
         # If we don't have a place_id but have a keyword, search first
         if not place_id and keyword:
             current_app.logger.info(f"Searching for keyword: {keyword} in {location}")
-            businesses = search_business_with_search_api(keyword, location=location, max_results=1)
+            place_id = search_and_get_place_id(keyword, location)
             
-            if not businesses:
-                return error_response("No businesses found for the search query", 404)
-            
-            place_id = businesses[0].get("place_id")
             if not place_id:
                 return error_response("No valid Place ID found in search results", 404)
-            
+                
             current_app.logger.info(f"Found place ID: {place_id} for keyword '{keyword}'")
 
         # Now we have a place_id, get the details
         current_app.logger.info(f"Scraping place ID: {place_id} (leadCount={lead_count}, skippedCount={skipped_count})")
-
-        # Define the fields we want from Google Maps API
-        fields = [
-            "name",
-            "formatted_phone_number",
-            "website",
-            "price_level",
-            "reviews",
-            "formatted_address",
-            "geometry",
-            "rating",
-            "user_ratings_total",
-            "opening_hours",
-            "types"
-        ]
         
-        place_details = get_place_details(place_id, fields=fields)
-        current_app.logger.info(f"Retrieved details for place: {place_details.get('name', 'Unknown')}")
-
-        # Map price_level (integer) to dollar symbols
-        price_level = place_details.get('price_level', '')
-        price_range_map = {
-            0: "",    # No price (empty)
-            1: "$",   # Inexpensive
-            2: "$$",  # Moderate
-            3: "$$$", # Expensive
-            4: "$$$$" # Very expensive
-        }
-        price_range = price_range_map.get(price_level, "") if price_level != '' else ""
-
-        # Consistent data structure with default values
-        place_data = {
-            "placeName": place_details.get('name', 'Unknown'),
-            "contact": {
-                "phone": place_details.get('formatted_phone_number', 'N/A'),
-                "website": place_details.get('website', 'N/A')
-            },
-            "address": place_details.get('formatted_address', 'N/A'),
-            "location": place_details.get('geometry', {}).get('location', {}),
-            "rating": place_details.get('rating', 0.0),
-            "totalRatings": place_details.get('user_ratings_total', 0),
-            "businessHours": place_details.get('opening_hours', {}).get('weekday_text', []),
-            "businessType": place_details.get('types', []),
-            "priceRange": price_range,
-            "positiveReviews": [
-                r['text'] for r in place_details.get('reviews', []) if r.get('rating', 0) >= 4
-            ],
-            "negativeReviews": [
-                r['text'] for r in place_details.get('reviews', []) if r.get('rating', 0) < 4
-            ]
-        }
+        # Process place details
+        place_data = process_place_details(place_id)
+        current_app.logger.info(f"Retrieved details for place: {place_data.get('placeName', 'Unknown')}")
 
         # Check if we've already reached the target (to handle race conditions)
         if lead_count >= number_of_leads:
@@ -101,28 +67,10 @@ def scrape_route():
                 "error": None
             }), 200
 
-        # Response according to unified contract
-        response = {
-            "state": {
-                "skippedCount": skipped_count,
-                "leadCount": lead_count,
-                "numberOfLeads": number_of_leads
-            },
-            "result": None,
-            "next": {
-                "key": "analyze",
-                "payload": {
-                    "placeDetails": place_data,
-                    "leadCount": "$state.leadCount",
-                    "skippedCount": "$state.skippedCount",
-                    "numberOfLeads": "$state.numberOfLeads"
-                }
-            },
-            "done": False,
-            "error": None
-        }
+        # Create response
+        response = create_scrape_response(place_data, lead_count, skipped_count, number_of_leads)
+        return jsonify(response), 200
+        
     except Exception as e:
         current_app.logger.error(f"Scrape failed: {str(e)}")
         return error_response(f"Scrape failed: {str(e)}", 500)
-
-    return jsonify(response), 200
