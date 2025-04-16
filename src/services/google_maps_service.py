@@ -2,6 +2,7 @@ import requests
 import time
 import openai
 import json
+from src.config import config
 
 # === GLOBAL API KEYS ===
 api_key = None
@@ -13,21 +14,21 @@ search_api_key = None  # New global variable for SearchAPI.io
 def init_api_key(key):
     """Initialize the Google Maps API key"""
     global api_key
-    api_key = key
+    api_key = config.GOOGLE_API_KEY
     return key
 
 
 def init_openai_key(key):
     """Initialize OpenAI API key"""
     global openai_api_key
-    openai.api_key = key
+    openai.api_key = config.OPENAI_API_KEY
     return key
 
 
 def init_search_api_key(key):
     """Initialize SearchAPI.io API key"""
     global search_api_key
-    search_api_key = key
+    search_api_key = config.SEARCHAPI_API_KEY
     return key
 
 

@@ -23,67 +23,71 @@ def search_route():
     Returns:
         tuple: JSON response and status code
     """
-    # Validate request data
-    data = request.get_json()
-    if not data:
-        return error_response("Invalid JSON payload")
-
-    # Validate required fields
-    validation_error = validate_search_payload(data)
-    if validation_error:
-        return error_response(validation_error)
-
-    # Extract data from request
-    business_type = data["businessType"]
-    location = data["location"]
-    search_offset = data["searchOffset"]
-    number_of_leads = data["numberOfLeads"]
-    next_page_token = data.get("nextPageToken")
-    lead_count = data.get("leadCount", 0)
-    skipped_count = data.get("skippedCount", 0)
-    remaining_place_ids = data.get("remainingPlaceIds", [])
-
     try:
-        # Determine how many more leads are needed
-        remaining_leads_needed = number_of_leads - lead_count
-        
-        # If target already reached, end workflow
-        if remaining_leads_needed <= 0:
-            current_app.logger.info(f"Lead target of {number_of_leads} already met with {lead_count} leads. Finishing workflow.")
-            return jsonify(create_target_reached_response()), 200
+        # Validate request data
+        data = request.get_json()
+        if not data:
+            return error_response("Invalid JSON payload")
+
+        # Validate required fields
+        validation_error = validate_search_payload(data)
+        if validation_error:
+            return error_response(validation_error)
+
+        # Extract data from request
+        business_type = data["businessType"]
+        location = data["location"]
+        search_offset = data["searchOffset"]
+        number_of_leads = data["numberOfLeads"]
+        next_page_token = data.get("nextPageToken")
+        lead_count = data.get("leadCount", 0)
+        skipped_count = data.get("skippedCount", 0)
+        remaining_place_ids = data.get("remainingPlaceIds", [])
+
+        try:
+            # Determine how many more leads are needed
+            remaining_leads_needed = number_of_leads - lead_count
             
-        # Total needed including compensation for potentially skipped places
-        total_needed = remaining_leads_needed + skipped_count
-        current_app.logger.info(f"Need {remaining_leads_needed} more leads. Including {skipped_count} skipped, total needed: {total_needed}")
+            # If target already reached, end workflow
+            if remaining_leads_needed <= 0:
+                current_app.logger.info(f"Lead target of {number_of_leads} already met with {lead_count} leads. Finishing workflow.")
+                return jsonify(create_target_reached_response()), 200
+                
+            # Total needed including compensation for potentially skipped places
+            total_needed = remaining_leads_needed + skipped_count
+            current_app.logger.info(f"Need {remaining_leads_needed} more leads. Including {skipped_count} skipped, total needed: {total_needed}")
 
-        # Collect all place_ids needed to fulfill the request
-        result = collect_place_ids(
-            business_type=business_type,
-            location=location,
-            total_needed=total_needed,
-            remaining_place_ids=remaining_place_ids,
-            next_page_token=next_page_token
-        )
-        
-        if not result["place_ids"]:
-            return error_response("No businesses found", 404)
+            # Collect all place_ids needed to fulfill the request
+            result = collect_place_ids(
+                business_type=business_type,
+                location=location,
+                total_needed=total_needed,
+                remaining_place_ids=remaining_place_ids,
+                next_page_token=next_page_token
+            )
+            
+            if not result["place_ids"]:
+                return error_response("No businesses found", 404)
 
-        # Create and return response
-        response = create_search_response(
-            place_ids=result["place_ids"],
-            next_page_token=result["next_page_token"],
-            search_offset=search_offset,
-            lead_count=lead_count,
-            skipped_count=skipped_count,
-            business_type=business_type,
-            location=location,
-            number_of_leads=number_of_leads
-        )
-        
-        return jsonify(response), 200
-        
+            # Create and return response
+            response = create_search_response(
+                place_ids=result["place_ids"],
+                next_page_token=result["next_page_token"],
+                search_offset=search_offset,
+                lead_count=lead_count,
+                skipped_count=skipped_count,
+                business_type=business_type,
+                location=location,
+                number_of_leads=number_of_leads
+            )
+            
+            return jsonify(response), 200
+            
+        except Exception as e:
+            import traceback
+            error_details = traceback.format_exc()
+            current_app.logger.error(f"Search failed: {str(e)}\n{error_details}")
+            return error_response(f"Search failed: {str(e)}", 500)
     except Exception as e:
-        import traceback
-        error_details = traceback.format_exc()
-        current_app.logger.error(f"Search failed: {str(e)}\n{error_details}")
-        return error_response(f"Search failed: {str(e)}", 500)
+        current_app.logger.error(f"Search route failed: {str(e)}")
+        return error_response(f"Search route failed: {str(e)}", 500)
