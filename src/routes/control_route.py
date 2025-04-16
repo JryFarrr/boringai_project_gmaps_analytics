@@ -1,4 +1,5 @@
 from flask import request, jsonify, current_app
+from flasgger import swag_from
 from src.utils.response_utils import error_response
 from src.services.control_service import (
     handle_target_reached,
@@ -7,6 +8,76 @@ from src.services.control_service import (
     handle_need_more_leads
 )
 
+@swag_from({
+    'tags': ['Task'],
+    'summary': 'Handle control task workflow',
+    'parameters': [
+        {
+            'name': 'data',
+            'in': 'body',
+            'required': True,
+            'schema': {
+                'type': 'object',
+                'properties': {
+                    'leadCount': {'type': 'integer', 'example': 1},
+                    'numberOfLeads': {'type': 'integer', 'example': 10},
+                    'remainingPlaceIds': {
+                        'type': 'array', 'items': {'type': 'string'}
+                    },
+                },
+                'required': ['leadCount', 'numberOfLeads']
+            }
+        }
+    ],
+    'responses': {
+        '200': {
+            'description': 'Successfully handled the control flow.',
+            'schema': {
+                'type': 'object',
+                'properties': {
+                    'state': {'type': 'object'},
+                    'result': {'type': 'object'},
+                    'next': {
+                        'type': 'object',
+                        'properties': {
+                            'key': {'type': 'string'},
+                            'payload': {
+                                'type': 'object',
+                                'properties': {
+                                    'placeId': {'type': 'string'},
+                                    'leadCount': {'type': 'integer'},
+                                    'numberOfLeads': {'type': 'integer'},
+                                    'skippedCount': {'type': 'integer'}
+                                }
+                            }
+                        }
+                    },
+                    'done': {'type': 'boolean'},
+                    'error': {'type': 'string'}
+                }
+            }
+        },
+        '500': {
+            'description': 'Internal server error',
+            'schema': {
+                'type': 'object',
+                'properties': {
+                    'state': {'type': 'object'},
+                    'result': {'type': 'object'},
+                    'next': {
+                        'type': 'object',
+                        'properties': {
+                            'key': {'type': 'string'},
+                            'payload': {'type': 'object'}
+                        }
+                    },
+                    'done': {'type': 'boolean'},
+                    'error': {'type': 'string'}
+                }
+            }
+        }
+    }
+})
 def control_route():
     """
     Handle the control task endpoint with improved lead collection strategy
