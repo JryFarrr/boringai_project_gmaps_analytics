@@ -1,48 +1,31 @@
 from flask import request, jsonify
 from src.utils.response_utils import error_response
+from src.utils.validation_utils import validate_input_payload
+from src.services.input_service import create_initial_state, create_input_response
 
 def input_route():
-    """Handle the input task endpoint"""
+    """
+    Handle the input task endpoint
+    
+    Processes the initial input for the workflow, validates required fields,
+    and sets up the initial state for the lead generation process.
+    
+    Returns:
+        tuple: JSON response and status code
+    """
+    # Get and validate JSON payload
     data = request.get_json()
     if not data:
         return error_response("Invalid JSON payload")
 
-    required_fields = ["businessType", "location", "numberOfLeads"]
-    for field in required_fields:
-        if field not in data:
-            return error_response(f"Missing required field: {field}")
+    # Validate required fields and their types
+    validation_error = validate_input_payload(data)
+    if validation_error:
+        return error_response(validation_error)
 
-    # Validasi input
-    if not isinstance(data["businessType"], str) or not data["businessType"].strip():
-        return error_response("businessType must be a non-empty string")
-    if not isinstance(data["location"], str) or not data["location"].strip():
-        return error_response("location must be a non-empty string")
-    if not isinstance(data["numberOfLeads"], int) or data["numberOfLeads"] <= 0:
-        return error_response("numberOfLeads must be a positive integer")
-
-    # Inisialisasi state awal
-    initial_state = {
-        "businessType": data["businessType"],
-        "location": data["location"],
-        "numberOfLeads": data["numberOfLeads"],
-        "leadCount": 0,
-        "searchOffset": 0,
-        "remainingPlaceIds": []
-    }
-
-    response = {
-        "state": initial_state,
-        "next": {
-            "key": "search",
-            "payload": {
-                "businessType": "$state.businessType",
-                "location": "$state.location",
-                "searchOffset": "$state.searchOffset",
-                "numberOfLeads": "$state.numberOfLeads"
-            }
-        },
-        "result": None,
-        "done": False,
-        "error": None
-    }
+    # Create initial state from validated input
+    initial_state = create_initial_state(data)
+    
+    # Create and return response with initial state
+    response = create_input_response(initial_state)
     return jsonify(response), 200

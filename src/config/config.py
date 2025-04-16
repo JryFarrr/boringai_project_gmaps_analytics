@@ -2,13 +2,21 @@
 Configuration module for API keys and settings
 """
 
+from dotenv import load_dotenv
+import os
+
+# Load environment variables from .env file
+env_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), '.env')
+load_dotenv(dotenv_path=env_path)
+
 # API Keys
-GOOGLE_API_KEY = "AIzaSyAw0cQAr5B_o-XI1iI7mPJRV88U0J6BTX0"
-OPENROUTER_API_KEY = "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"
+GOOGLE_API_KEY = os.getenv("GOOGLE_MAPS_API_KEY")
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 # Default settings
-DEFAULT_REFERER_URL = "https://your-website.com"
-DEFAULT_SITE_NAME = "Map Leads AI"
+DEFAULT_REFERER_URL = os.getenv("DEFAULT_REFERER_URL")
+DEFAULT_SITE_NAME = os.getenv("DEFAULT_SITE_NAME")
 
 # Default search parameters
 DEFAULT_SEARCH_PARAMS = {
@@ -35,7 +43,6 @@ MAX_DETAILED_PLACES = 20
 # Maximum number of pages to fetch in text search
 MAX_SEARCH_PAGES = 3
 
-OPENAI_API_KEY="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"
-DEFAULT_API_PROVIDER = "openai"  # Can be "openai" or "openrouter"
-DEFAULT_OPENAI_MODEL = "gpt-4o-mini"
-DEFAULT_OPENROUTER_MODEL = "openai/gpt-4o-mini"
+DEFAULT_API_PROVIDER = os.getenv("DEFAULT_API_PROVIDER")
+DEFAULT_OPENAI_MODEL = os.getenv("DEFAULT_OPENAI_MODEL")
+DEFAULT_OPENROUTER_MODEL = os.getenv("DEFAULT_OPENROUTER_MODEL")
