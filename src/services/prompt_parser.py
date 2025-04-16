@@ -18,6 +18,35 @@ def get_system_prompt():
 
 Your job is to analyze a search query and extract precise parameters for a business discovery system.
 
+PRICE RANGE CLASSIFICATION:
+When encountering price information in any currency or format, classify it into standard price level symbols ($, $$, $$$, $$$$) based on relative affordability within the local context.
+
+Follow these guidelines:
+1. Analyze the price information relative to the business type and location mentioned
+2. Convert any price format (numerical values, ranges, or descriptive terms) into the appropriate price level symbol
+3. Consider local economic context when determining affordability
+4. For any currency, classify based on relative expense level:
+   • $ = Budget/Inexpensive (bottom 25% price range for that business type in that location)
+   • $$ = Moderate (25-50% price range)
+   • $$$ = Upscale (50-75% price range)
+   • $$$$ = Luxury/Premium (top 25% price range)
+5. For text descriptions without numbers:
+   • Terms like "cheap," "budget," "affordable" → $
+   • Terms like "moderate," "standard," "average" → $$
+   • Terms like "upscale," "premium," "high-end" → $$$
+   • Terms like "luxury," "exclusive," "VIP" → $$$$
+6. Always normalize the output to use only standard price level symbols regardless of input format
+
+Examples of price range conversions:
+- "Rp5.000" → "$" 
+- "Rp10.000 - Rp25.000" → "$"
+- "Rp50.000 - Rp100.000" → "$$"
+- "Rp200.000+" → "$$$"
+- "harga terjangkau" → "$"
+- "premium price" → "$$$"
+- "200-300 baht" → "$$$" (for Thailand)
+- "₹500-₹1000" → "$$" (for India)
+
 INPUT FORMAT:
 The user will provide a query like this:
 "Find a {business type or specific category} in {location} that has a rating of at least {rating} and at least {number of reviews} number of reviews.
@@ -51,17 +80,16 @@ RULES:
    - keywords: "" (empty string)
    - numberOfLeads: "" (empty string if not explicitly mentioned)
    - topPlaces: "" (empty string if not explicitly mentioned)
-4. For price range with "rupiah" + "$" notation, preserve exactly as written
-5. For business hours, preserve the exact wording (e.g., "open now", "open 24 hours")
-6. IMPORTANT: For "numberOfLeads", extract the total number of establishments to search from (e.g., "find top 5 sushi restaurants from 200 restaurants" should set numberOfLeads to 200)
-7. For "topPlaces", extract the number of top results requested (e.g., "find top 5 sushi restaurants" should set topPlaces to 5)
+4. For business hours, preserve the exact wording (e.g., "open now", "open 24 hours")
+5. IMPORTANT: For "numberOfLeads", extract the total number of establishments to search from (e.g., "find top 5 sushi restaurants from 200 restaurants" should set numberOfLeads to 200)
+6. For "topPlaces", extract the number of top results requested (e.g., "find top 5 sushi restaurants" should set topPlaces to 5)
 
 EXAMPLES:
 Input: "Find a cozy café in Seattle that has a rating of at least 4.5 and at least 100 reviews."
 Output: {"business_type":"cozy café","location":"Seattle","min_rating":4.5,"min_reviews":100,"price_range":"","business_hours":"anytime","keywords":"","numberOfLeads":"","topPlaces":""}
 
-Input: "Find a salon in Bandung that has a rating of at least 4.2 and at least 50 number of reviews. Additional Requirements: • The business must have a price range of 'rupiah' + '$$'. • The business operates at open now. • Business reviews and descriptions must include 'premium, luxury, service'."
-Output: {"business_type":"salon","location":"Bandung","min_rating":4.2,"min_reviews":50,"price_range":"rupiah + $$","business_hours":"open now","keywords":"premium, luxury, service","numberOfLeads":"","topPlaces":""}
+Input: "Find a salon in Bandung that has a rating of at least 4.2 and at least 50 number of reviews. Additional Requirements: • The business must have a price range of Rp50.000 - Rp100.000. • The business operates at open now. • Business reviews and descriptions must include 'premium, luxury, service'."
+Output: {"business_type":"salon","location":"Bandung","min_rating":4.2,"min_reviews":50,"price_range":"$$","business_hours":"open now","keywords":"premium, luxury, service","numberOfLeads":"","topPlaces":""}
 
 Input: "Find top 5 sushi restaurants in Tokyo from 200 restaurants that has a rating of at least 4.5 and at least 100 reviews."
 Output: {"business_type":"sushi restaurants","location":"Tokyo","min_rating":4.5,"min_reviews":100,"price_range":"","business_hours":"anytime","keywords":"","numberOfLeads":200,"topPlaces":5}
@@ -74,6 +102,12 @@ Output: {"business_type":"Italian restaurant","location":"New York","min_rating"
 
 Input: "Show me top 10 coffee shops in Portland from 150 shops with at least 50 reviews and open on weekends."
 Output: {"business_type":"coffee shops","location":"Portland","min_rating":0,"min_reviews":50,"price_range":"","business_hours":"open on weekends","keywords":"","numberOfLeads":150,"topPlaces":10}
+
+Input: "Find a luxury hotel in Bali with a price range of Rp1.000.000 per night and rating at least 4.7"
+Output: {"business_type":"luxury hotel","location":"Bali","min_rating":4.7,"min_reviews":0,"price_range":"$$$$","business_hours":"anytime","keywords":"","numberOfLeads":"","topPlaces":""}
+
+Input: "Find affordable restaurants in Jakarta with prices under Rp25.000 per person"
+Output: {"business_type":"restaurants","location":"Jakarta","min_rating":0,"min_reviews":0,"price_range":"$","business_hours":"anytime","keywords":"","numberOfLeads":"","topPlaces":""}
 """
 
 
