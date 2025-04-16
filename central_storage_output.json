@@ -1,66 +1,109 @@
 {
-  "$id": "90de5e74-ab79-4a88-9d61-ab08d1273381",
+  "$id": "4dd1f68a-5ee4-4b1e-b919-9221461eef1d",
   "$state": {
     "businessType": "hotels",
     "leadCount": 3,
     "location": "Surabaya",
     "numberOfLeads": 3,
     "remainingPlaceIds": [
-      "ChIJ62W35Az81y0RMYYduz50Hcw",
-      "ChIJTSh4sIv71y0RkjfWo_VDMvo"
+      "ChIJEarruvD61y0RKOcIoxmLRpY"
     ],
-    "searchOffset": 7,
-    "skippedCount": 2,
-    "nextPageToken": "AeeoHcLob7BmGUYfaouTdaq9Ij9dO_9S4UP_3wRXKJIg11yZNIZwSz09TnHVAOoInc7qyINjuSkD0fNRySUnapeaP3K7uKtpJcnDpyql-xigRsaGnkKZw4uGKVFfQ91hze0u0FMSn1NMIDRJaRwSF0hOLkjrw-hbl-4IzT7ZtqoRBtMPbpTXsOfTqAZBn5I_LH2dwTeDg1xkGpwzLtzimkwxtz5YkZJDp2r32CaSkqdSfklqhAS53IVoAQ6O8MVGlLkOqi94xy9kzv4dsIplNITJdyDGKee1bGbTkbbEy9PELiho0zigjsgFuul8bidLJePAYRlPwm0iuFowFftn1npuBRji9gRXQS1l8zmugX-Ns_YHkswfYvTsZn2arjXGryGFc6blo1f06UzI32p_kdaCt16_nsClWgLkQ071aurnnvkqEQnwCoJkzUwPabat873QYW4FBOg3jfuD4at2gVBcf68VdLHFKOUHgn_bE3oL8pCQ_gM2TOsIFhOVcjttc5uEzyFgRvTmcLw-L0IAmR4goaS9AJr-eS-RNFRoFwm3PnzZZKbcgYVXaUXiSHOtlQooYKm6PusKCjmKg-1BNbDS7kSGEq22kVtw8XcjeQEYTns",
+    "searchOffset": 5,
+    "skippedCount": 1,
+    "nextPageToken": "AeeoHcKIkmxE4LaqpOuIwouvHIL6Q6Dhm52hltRilU6xKoqMUpC-eAmqpEuv5uyBNCXzFZcgpoTcMYMsiuZ3moc5DiQiAeH9532gY2_NTFuyqMWNfpvm1PA9ekmsJlApEsul-D7wUV15DNHKShQ8LqhVy1KRMupAGpSufsv6Ub0hSQlrPkD-L-uz822ArxeccF-0xtQug7yLJkrm16XZ8GoxhYcwQjIwi9C5dkY0rcx_kt6RnEQte8sZQqnZL8rpbbgMZjJd6Rxn_D4xKwJO6pWTL60MoKJxbjZT8OgsLUBMUHktwcw0SmNdL5SMzZbUZUAmxFf66uL61v54qIym9bGwtyPaNHWupOUV2DoZnzUyQaQle0_R86hsRRU8XfIhk8dEEfFvJDmnUFcRI0lWMgsDCRQfzFohgSxJ93PfG_yhltxP8yuXjkHNv5SIufhlPSMF3syULttEdqrsGP5wcBBErWv4VznX_bl14mESUHNKJu2pBOBL2FrwGIVqMN4ygrkVwosPnh_boxISxZs_WiEE6gFEHNbumt3pTPrpQjoPlypDEK4q5yH-tGJLNnrZfbU9m1VqQkNMu6wmgDq2_oxxFuRKPUbO21z8IOqo1aTHVBM",
     "skippedConstraints": true
   },
   "$results": [
     {
-      "address": "Jl. Basuki Rahmat No.123-127, Embong Kaliasin, Kec. Genteng, Surabaya, Jawa Timur 60271, Indonesia",
-      "businessHours": [
-        "Monday: Open 24 hours",
-        "Tuesday: Open 24 hours",
-        "Wednesday: Open 24 hours",
-        "Thursday: Open 24 hours",
-        "Friday: Open 24 hours",
-        "Saturday: Open 24 hours",
-        "Sunday: Open 24 hours"
-      ],
+      "address": "Jl. Raya Lontar No.2, Lontar, Kec. Sambikerep, Surabaya, Jawa Timur 60216, Indonesia",
+      "businessHours": [],
       "businessType": [
         "lodging",
         "point_of_interest",
         "establishment"
       ],
       "contact": {
-        "phone": "0811-3089-668",
-        "website": "http://www.crownprinceindonesia.com/"
+        "phone": "(031) 29710000",
+        "website": "https://www.marriott.com/en-us/hotels/subwi-the-westin-surabaya/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0"
       },
-      "fitReason": "Crown Prince Hotel Surabaya is an excellent fit as it meets key business criteria effectively, with high customer satisfaction and positive reviews outweighing the minor maintenance issues. Its strong strategic location and facilities make it a highly recommended choice for a wide range of travelers.",
-      "fitScore": 90,
+      "fitReason": "The Westin Surabaya demonstrates a high fit score due to its exceptional ratings, strong guest satisfaction, and consistent positive feedback on staff interaction and amenities. However, minor operational inconsistencies, particularly in dining service, slightly diminish the overall fit, suggesting room for improvement in those areas. Overall, the establishment aligns well with the majority of customer requirements and expectations.",
+      "fitScore": 92,
+      "keyThemes": [
+        "Outstanding staff service",
+        "Exceptional dining experience",
+        "Room upgrades and cleanliness",
+        "Breakfast buffet excellence",
+        "Service inconsistency and issues"
+      ],
       "matchFactors": {
         "hours_factor": 1,
-        "keyword_factor": 0.8,
+        "keyword_factor": 0.9,
+        "price_factor": 0.5,
+        "rating_factor": 1,
+        "review_count_factor": 1
+      },
+      "matchPercentage": 95.0,
+      "matchReasoning": "The Westin Surabaya has an excellent match with the given constraints. It exceeds the minimum rating requirement with a 4.8 rating, well above the 4.5 threshold, achieving the max rating factor of 1. The total number of reviews, 2391, is significantly higher than the minimum required 100, also garnering a full score for review_count_factor. The price_level is unspecified but aligns with the open-ended constraint and is given a moderate value of 0.5 for price_factor. Business hours match the 'anytime' requirement perfectly, achieving a score of 1 for hours_factor. The sample reviews speak positively about the service and amenities, suggesting high customer satisfaction, which supports a keyword_factor of 0.9. Overall, the excellent ratings and high volume of positive feedback justify a high match percentage of 95.",
+      "placeName": "The Westin Surabaya",
+      "priceLevel": "",
+      "rating": 4.8,
+      "strengths": [
+        "High customer satisfaction is evident from the 4.8/5 rating and the volume of positive reviews, indicating excellent service and amenities.",
+        "Well-regarded staff and personalized service enhance guest experience, as highlighted by numerous specific mentions of positive interactions with staff members.",
+        "Affiliated with quality amenities such as a well-regarded breakfast buffet, clean facilities, and well-connected location with easy access to nearby attractions."
+      ],
+      "summaryNegativeReviews": "Guests find the lack of in-restaurant sahur service inconvenient and experience inconsistent, rude service at the restaurant, pointing to a need for improved management and guest treatment.",
+      "summaryPositiveReviews": "Guests consistently praise The Westin Surabaya for exceptional service, friendly staff, and memorable dining experiences. Highlights include Chef Dayat's personal engagement, outstanding meals, and...",
+      "totalRatings": 2391,
+      "weaknesses": [
+        "Some guests experienced dissatisfaction specifically with the dining arrangements, such as the inconvenience during 'sahur' and issues with seating reservations, indicating a potential area for customer service improvement.",
+        "A specific negative impact has been noted due to inconsistent service experiences, which might affect repeat patronage and word-of-mouth recommendations if unresolved.",
+        "Though minor, the lack of specified price range might create confusion for potential customers in terms of cost expectations."
+      ]
+    },
+    {
+      "address": "Jl. Hayam Wuruk No.6, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242, Indonesia",
+      "businessHours": [],
+      "businessType": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(031) 5631222",
+        "website": "https://artotelwanderlust.com/hotel/artotel-ts-suites-surabaya/g/Surabaya-en?checkIn=2024-03-12&checkOut=2024-03-13&id=TUEwNzEwMDExOA%3D%3D%20-%20TUEyMzExMDAwMDQ4&encodeId=TUEyMzExMDAwMDQ4"
+      },
+      "fitReason": "ARTOTEL TS Suites Surabaya demonstrates a high overall match percentage due to excellent ratings and location benefits, along with strong guest service. Although there are areas for improvement, particularly in cleanliness and maintenance consistency, these are not critical enough to heavily impact the fit for potential customers seeking lodging in Surabaya.",
+      "fitScore": 85,
+      "keyThemes": [
+        "Room cleanliness",
+        "Shower experience",
+        "Central location",
+        "Friendly staff",
+        "Surprises and promotions"
+      ],
+      "matchFactors": {
+        "hours_factor": 1,
+        "keyword_factor": 0.5,
         "price_factor": 1,
         "rating_factor": 1,
         "review_count_factor": 1
       },
       "matchPercentage": 90.0,
-      "matchReasoning": "The business 'Crown Prince Hotel Surabaya' meets all the key constraints. The rating factor is perfect at 1.0 as the hotel's rating is exactly the minimum required. The review count far exceeds the minimum required number with a total of 5574 reviews, ensuring a solid review count factor. The price factor is at 1.0 due to the absence of a specified price constraint, aligning with the unfilled 'price_level' data of the business. The hours factor is satisfied as the constraint allows for 'anytime' business hours. The keyword factor is slightly less than perfect at 0.8, as reviews suggest a positive experience but do not heavily emphasize unique selling propositions or distinct features that could further strengthen brand identity. Overall, the hotel aligns well with the given constraints, leading to a high match percentage of 90%.",
-      "placeName": "Crown Prince Hotel Surabaya",
+      "matchReasoning": "The business ARTOTEL TS Suites Surabaya meets most of the constraints provided. It has a perfect 4.5-star rating, which matches the minimum rating required. The total number of reviews, 2318, significantly exceeds the minimum requirement of 100, indicating a substantial amount of customer feedback. The lack of a specified price range and business hours that are marked as 'anytime' allows full compliance with those aspects, contributing to a high match score.\n\nHowever, the sample reviews provide mixed feedback. While positive mentions of staff friendliness and an overall welcoming experience are noted, there are indications of areas needing improvement, specifically regarding cleanliness. These mixed sentiments in the user feedback affect the keyword factor, lowering the overall match percentage slightly. Nonetheless, these are not strong enough to drastically impact the match due to high compliance with numeric-based constraints.",
+      "placeName": "ARTOTEL TS Suites Surabaya",
       "priceLevel": "",
       "rating": 4.5,
       "strengths": [
-        "The hotel has a high customer rating of 4.5/5 based on 5574 reviews, indicating a strong overall customer satisfaction.",
-        "Strategic location offers easy access to shopping and transportation, making it appealing for both leisure and business travelers.",
-        "It provides excellent amenities and services, including a well-maintained pool, diverse breakfast options, and good service from staff."
+        "High rating of 4.5 out of 5 from 2318 reviews indicates strong customer satisfaction and a robust reputation.",
+        "Centrally located in Surabaya, offering convenience for guests to explore the city.",
+        "Positive customer service experiences, with staff noted for their friendliness and hospitality."
       ],
-      "summaryNegativeReviews": "The hotel is well-located, clean, and has good amenities. Issues include mildew smells, possible AC problems, a broken closet light, mold in showers, and a carb-heavy breakfast menu.",
-      "summaryPositiveReviews": "Guests praise the hotel for its strategic location, helpful staff, spacious rooms, and separate kids\u2019 pool. The impressive breakfast variety, featuring unique local dishes like ronde, is a highlight.",
-      "totalRatings": 5574,
+      "summaryPositiveReviews": "ARTOTEL TS Suites Surabaya is centrally located with excellent service, welcoming staff, and memorable surprises like birthday perks. Focus on room cleanliness and amenities maintenance could enhan...",
+      "totalRatings": 2318,
       "weaknesses": [
-        "Some reviewers noted issues such as mildew smell and maintenance concerns with room features like air conditioning and broken lights.",
-        "The breakfast menu could be improved by offering more protein options instead of too many carbs and fried foods.",
-        "Despite the high rating, there is always room for improvement, as suggested by the feedback in reviews."
+        "Cleanliness issues reported in multiple reviews, indicating a need for improvement in housekeeping.",
+        "Inconsistencies in room amenities and maintenance, such as missing shower gel and shampoo, which could impact guest satisfaction."
       ]
     },
     {
@@ -85,8 +128,15 @@
         "phone": "(031) 5660778",
         "website": "https://www.questhotels.com/en/hotel/view/4/quest-hotel-darmo---surabaya"
       },
-      "fitReason": "Quest Hotel Darmo Surabaya has a strong alignment with the constraints provided, evidenced by a high match percentage of 90%. This is based on the excellent customer satisfaction ratings and the overall positive sentiment reflected in the reviews. However, there are minor areas for service improvement which prevent it from achieving a perfect score. By addressing these issues, the fit score could potentially be higher.",
+      "fitReason": "Quest Hotel Darmo Surabaya fits extremely well given the criteria. Its strong customer satisfaction, high volume of reviews, and alignment with operational criteria (such as 24/7 availability) contribute to its high fit score. While there are minor operational issues related to check-in/out processes and room soundproofing, these factors have only a slight impact on its overall suitability as a business lead.",
       "fitScore": 90,
+      "keyThemes": [
+        "Clean rooms",
+        "Helpful staff",
+        "Breakfast quality",
+        "Value for money",
+        "Room issues"
+      ],
       "matchFactors": {
         "hours_factor": 1,
         "keyword_factor": 0.7,
@@ -95,65 +145,27 @@
         "review_count_factor": 1
       },
       "matchPercentage": 90.0,
-      "matchReasoning": "Quest Hotel Darmo Surabaya excellently matches the constraints provided for successful alignment. The business has a stellar rating of 4.5, which meets the minimum rating requirement perfectly, resulting in a rating_factor score of 1. With a total of 8749 reviews, the review_count_factor is also 1 as it significantly exceeds the minimum of 100 reviews needed. The price and hours factors score 1 each, as the constraints do not specify a price level and allow for any operational hours, both of which are met by the business's undefined constraints in price and always accessible (anytime) hours. However, the keyword factor is somewhat lower at 0.7 due to some identified areas for improvement found in reviews (e.g., issues with the door and the check-in/out process), indicating some service experience issues. Overall, the business strongly aligns with the constraints, with minor service improvement suggestions affecting the keyword factor.",
+      "matchReasoning": "The business 'Quest Hotel Darmo Surabaya' matches the constraints very well. The rating is exactly 4.5, meeting the 'min_rating' constraint perfectly, resulting in a rating_factor of 1. The business has 8,749 reviews, substantially exceeding the 'min_reviews' requirement of 100, hence the review_count_factor is 1. Although the 'price_level' is unspecified, the constraint allows for any 'price_range', thus the price_factor is 1. The 'business_hours' constraint is 'anytime', which is met since lodging typically operates 24/7, therefore the hours_factor is 1. The keyword_factor considers the sentiment from the sample reviews: guests mentioned the hotel is 'nice, clean', and 'value for money' but also pointed out some minor issues with check-in/out processes, slightly reducing this factor to 0.7. Overall, these factors combine to give an excellent match of 90%.",
       "placeName": "Quest Hotel Darmo Surabaya",
       "priceLevel": "",
       "rating": 4.5,
       "strengths": [
-        "High customer satisfaction with a rating of 4.5/5 based on a large number of reviews (8749), indicating overall positive experiences.",
-        "Positive feedback regarding cleanliness, room comfort, and the helpfulness of the staff.",
-        "Good value for money with generous and well-received breakfast offerings."
+        "High customer satisfaction with a rating of 4.5 out of 5, supported by a large volume of reviews (8,749).",
+        "Guests appreciate the cleanliness and spaciousness of the rooms and the helpfulness of the staff.",
+        "The hotel is regarded as offering good value for money with a positive perception of food quality and generous breakfast offerings."
       ],
-      "summaryPositiveReviews": "Guests consistently praise the hotel's clean, comfortable rooms and exceptional staff service. The breakfast is highly rated, but improvements are needed in check-in speed, soundproofing, TV signal...",
+      "summaryPositiveReviews": "The hotel offers great value with clean, comfortable, and affordable rooms. Guests praise the helpful, friendly staff and excellent breakfast. Improvements needed in soundproofing and service speed.",
       "totalRatings": 8749,
       "weaknesses": [
-        "Service experience issues such as problems with the check-in and check-out process being slow, which could impact guest satisfaction and return rates.",
-        "Some technical issues reported, such as door operation difficulties and TV signal problems, contributing to a lower keyword factor score.",
-        "Acoustic concerns with rooms not being soundproof, leading to potential noise disturbances for guests."
-      ]
-    },
-    {
-      "address": "BG Junction Mall, Jl. Bubutan No.1 - 7 Lantai L9, Bubutan, Kec. Bubutan, Surabaya, Jawa Timur 60174, Indonesia",
-      "businessHours": [],
-      "businessType": [
-        "lodging",
-        "point_of_interest",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "(031) 99242080",
-        "website": "http://www.choicecity-hotel.com/"
-      },
-      "fitReason": "Choice City Hotel BG Junction is a strong lead with a high guest satisfaction rating of 4.6/5 from 1088 reviews, indicating reliability. Its strategic location provides an advantage for travelers. The major constraint appears to be the unspecified pricing information, but given the context, it remains highly suitable for any-time availability lodging needs. Minimal negative feedback suggests strong quality consistency.",
-      "fitScore": 95,
-      "matchFactors": {
-        "hours_factor": 1,
-        "keyword_factor": 0.8,
-        "price_factor": 1,
-        "rating_factor": 1,
-        "review_count_factor": 1
-      },
-      "matchPercentage": 95.0,
-      "matchReasoning": "Choice City Hotel BG Junction is an excellent match for the given constraints. It has a high rating of 4.6, surpassing the minimum requirement of 4.5. The total number of reviews is 1,088, well above the minimum of 100, indicating reliability in its high rating. While the price level is unspecified, it does not affect the match as a particular price range is not a constraint. The business hours constraint is 'anytime,' which aligns perfectly with the typical 24-hour availability of a hotel. The reviews highlight key qualities such as location centrality and excellent service, enhancing the qualitative appeal, but the detailed mention of 'centralized' or 'easy access' wasn't explicit enough, slightly affecting the keyword factor. Overall, the business meets the constraints with a 95% match.",
-      "placeName": "Choice City Hotel BG Junction",
-      "priceLevel": "",
-      "rating": 4.6,
-      "strengths": [
-        "Excellent customer service with friendly and helpful staff, both at the reception and in the restaurant.",
-        "Convenient location with ease of access to transportation options such as proximity to the railway station and the attached mall.",
-        "Highly rated cleanliness of the rooms and overall hotel environment, contributing positively to guest satisfaction."
-      ],
-      "summaryPositiveReviews": "The hotel offers clean, comfortable rooms with friendly staff, convenient mall location, easy access to transport, good food options, and free guest parking. Highly recommended.",
-      "totalRatings": 1088,
-      "weaknesses": [
-        "Lack of explicit detail around 'centralized location' and 'easy access' in reviews which may impact those seeking detailed information about accessibility.",
-        "The price range is unspecified, which might be crucial information for potential guests concerned about budget."
+        "Check-in and check-out processes could be improved to enhance guest experience, especially for those who are fatigued.",
+        "Rooms are not soundproof, which could affect guest privacy and comfort.",
+        "Technical issues like door malfunctions and TV disconnections were reported, indicating a need for better maintenance."
       ]
     }
   ],
   "$metadata": {
-    "createdAt": "2025-04-16T04:00:06.260336+00:00Z",
-    "startedAt": "2025-04-16T04:00:09.709026+00:00Z",
-    "executionTotal": 18
+    "createdAt": "2025-04-16T04:27:23.142413+00:00Z",
+    "startedAt": "2025-04-16T04:27:25.254220+00:00Z",
+    "executionTotal": 15
   }
 }
