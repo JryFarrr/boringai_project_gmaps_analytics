@@ -58,15 +58,14 @@ Additional Requirements:
 OUTPUT FORMAT:
 You must return ONLY a valid JSON object with these exact fields (no explanations or other text):
 {
-  "business_type": "The exact business type or category mentioned",
+  "business_type": "The core business type or category (e.g., 'hotels' instead of 'luxury hotels')",
   "location": "The exact location mentioned", 
   "min_rating": float, // The minimum rating as a decimal number (e.g., 4.2)
   "min_reviews": int, // The minimum number of reviews as an integer
   "price_range": "The exact price range mentioned (e.g., '$', '$$', '$$$')",
   "business_hours": "The exact business hours requirement",
-  "keywords": "The exact keywords mentioned, comma-separated if multiple",
-  "numberOfLeads": "", // The number of establishments to search from, not the number of top results
-  "topPlaces": "" // The number of top places to return (e.g., "top 5"), empty string if not specified
+  "keywords": "Descriptive adjectives or specific keywords mentioned, comma-separated if multiple",
+  "numberOfLeads": "" // The number of establishments to search from, not the number of top results
 }
 
 RULES:
@@ -79,37 +78,38 @@ RULES:
    - business_hours: "anytime"
    - keywords: "" (empty string)
    - numberOfLeads: "" (empty string if not explicitly mentioned)
-   - topPlaces: "" (empty string if not explicitly mentioned)
 4. For business hours, preserve the exact wording (e.g., "open now", "open 24 hours")
-5. IMPORTANT: For "numberOfLeads", extract the total number of establishments to search from (e.g., "find top 5 sushi restaurants from 200 restaurants" should set numberOfLeads to 200)
-6. For "topPlaces", extract the number of top results requested (e.g., "find top 5 sushi restaurants" should set topPlaces to 5)
+5. For "numberOfLeads", extract the total number of establishments to search from (e.g., "find top 5 sushi restaurants from 200 restaurants" should set numberOfLeads to 200, or "find 3 luxury hotels" should set numberOfLeads to 3)
+6. Remove "topPlaces" entirely from the output format and parsing logic
+7. For "business_type", extract the core business type by removing descriptive adjectives (e.g., "luxury hotels" → "hotels", "cozy cafés" → "cafés")
+8. For "keywords", include any descriptive adjectives (e.g., "luxury", "cozy", "affordable", "premium", "upscale") found in the business type or elsewhere in the prompt, unless they are explicitly tied to another field like price_range. Also include any explicitly mentioned keywords (e.g., from "must include {keywords}").
+9. If a descriptive term like "luxury" is used and no explicit price range is provided, infer a price_range of "$$$$" for terms like "luxury", "exclusive", or "VIP".
 
 EXAMPLES:
+Input: "Find 3 luxury hotels in Surabaya that has a rating of at least 4.5 and at least 100 reviews."
+Output: {"business_type":"hotels","location":"Surabaya","min_rating":4.5,"min_reviews":100,"price_range":"$$$$","business_hours":"anytime","keywords":"luxury","numberOfLeads":3}
+
 Input: "Find a cozy café in Seattle that has a rating of at least 4.5 and at least 100 reviews."
-Output: {"business_type":"cozy café","location":"Seattle","min_rating":4.5,"min_reviews":100,"price_range":"","business_hours":"anytime","keywords":"","numberOfLeads":"","topPlaces":""}
+Output: {"business_type":"café","location":"Seattle","min_rating":4.5,"min_reviews":100,"price_range":"","business_hours":"anytime","keywords":"cozy","numberOfLeads":""}
 
 Input: "Find a salon in Bandung that has a rating of at least 4.2 and at least 50 number of reviews. Additional Requirements: • The business must have a price range of Rp50.000 - Rp100.000. • The business operates at open now. • Business reviews and descriptions must include 'premium, luxury, service'."
-Output: {"business_type":"salon","location":"Bandung","min_rating":4.2,"min_reviews":50,"price_range":"$$","business_hours":"open now","keywords":"premium, luxury, service","numberOfLeads":"","topPlaces":""}
+Output: {"business_type":"salon","location":"Bandung","min_rating":4.2,"min_reviews":50,"price_range":"$$","business_hours":"open now","keywords":"premium, luxury, service","numberOfLeads":""}
 
-Input: "Find top 5 sushi restaurants in Tokyo from 200 restaurants that has a rating of at least 4.5 and at least 100 reviews."
-Output: {"business_type":"sushi restaurants","location":"Tokyo","min_rating":4.5,"min_reviews":100,"price_range":"","business_hours":"anytime","keywords":"","numberOfLeads":200,"topPlaces":5}
-
-Input (only numberOfLeads): "Find 25 sushi restaurants in Tokyo that has a rating of at least 4.5 and at least 100 reviews."
-Output: {"business_type":"sushi restaurants","location":"Tokyo","min_rating":4.5,"min_reviews":100,"price_range":"","business_hours":"anytime","keywords":"","numberOfLeads":25,"topPlaces":""}
+Input: "Find 25 sushi restaurants in Tokyo that has a rating of at least 4.5 and at least 100 reviews."
+Output: {"business_type":"sushi restaurants","location":"Tokyo","min_rating":4.5,"min_reviews":100,"price_range":"","business_hours":"anytime","keywords":"","numberOfLeads":25}
 
 Input: "Find the best Italian restaurant in New York with at least 4.7 rating."
-Output: {"business_type":"Italian restaurant","location":"New York","min_rating":4.7,"min_reviews":0,"price_range":"","business_hours":"anytime","keywords":"","numberOfLeads":"","topPlaces":""}
+Output: {"business_type":"Italian restaurant","location":"New York","min_rating":4.7,"min_reviews":0,"price_range":"","business_hours":"anytime","keywords":"best","numberOfLeads":""}
 
-Input: "Show me top 10 coffee shops in Portland from 150 shops with at least 50 reviews and open on weekends."
-Output: {"business_type":"coffee shops","location":"Portland","min_rating":0,"min_reviews":50,"price_range":"","business_hours":"open on weekends","keywords":"","numberOfLeads":150,"topPlaces":10}
+Input: "Show me coffee shops in Portland from 150 shops with at least 50 reviews and open on weekends."
+Output: {"business_type":"coffee shops","location":"Portland","min_rating":0,"min_reviews":50,"price_range":"","business_hours":"open on weekends","keywords":"","numberOfLeads":150}
 
 Input: "Find a luxury hotel in Bali with a price range of Rp1.000.000 per night and rating at least 4.7"
-Output: {"business_type":"luxury hotel","location":"Bali","min_rating":4.7,"min_reviews":0,"price_range":"$$$$","business_hours":"anytime","keywords":"","numberOfLeads":"","topPlaces":""}
+Output: {"business_type":"hotel","location":"Bali","min_rating":4.7,"min_reviews":0,"price_range":"$$$$","business_hours":"anytime","keywords":"luxury","numberOfLeads":""}
 
 Input: "Find affordable restaurants in Jakarta with prices under Rp25.000 per person"
-Output: {"business_type":"restaurants","location":"Jakarta","min_rating":0,"min_reviews":0,"price_range":"$","business_hours":"anytime","keywords":"","numberOfLeads":"","topPlaces":""}
+Output: {"business_type":"restaurants","location":"Jakarta","min_rating":0,"min_reviews":0,"price_range":"$","business_hours":"anytime","keywords":"affordable","numberOfLeads":""}
 """
-
 
 def parse_prompt_with_ai(prompt, client, headers, provider="openai"):
     """
@@ -150,15 +150,16 @@ def parse_prompt_with_ai(prompt, client, headers, provider="openai"):
         parsed_parameters["min_rating"] = float(parsed_parameters.get("min_rating", 0))
         parsed_parameters["min_reviews"] = int(parsed_parameters.get("min_reviews", 0))
         
-        # Ensure numberOfLeads and topPlaces are present but empty if not specified
+        # Ensure numberOfLeads is present but empty if not specified
         if "numberOfLeads" not in parsed_parameters:
             parsed_parameters["numberOfLeads"] = ""
-        if "topPlaces" not in parsed_parameters:
-            parsed_parameters["topPlaces"] = ""
+        
+        # Remove topPlaces from parsed parameters
+        parsed_parameters.pop("topPlaces", None)
         
         # Set default values for missing parameters
         for key, default_value in DEFAULT_SEARCH_PARAMS.items():
-            if key != "numberOfLeads" and key != "topPlaces" and (key not in parsed_parameters or parsed_parameters[key] is None):
+            if key != "numberOfLeads" and (key not in parsed_parameters or parsed_parameters[key] is None):
                 parsed_parameters[key] = default_value
                 
         return parsed_parameters
@@ -180,28 +181,19 @@ def regex_pattern_parsing(prompt):
     """
     # Initialize with default values
     parameters = DEFAULT_SEARCH_PARAMS.copy()
-    # Always include numberOfLeads and topPlaces but set to empty string by default
+    # Always include numberOfLeads but set to empty string by default
     parameters["numberOfLeads"] = ""
-    parameters["topPlaces"] = ""
     
     # Extract business type, location, and potentially top places
-    match = re.search(r"Find (?:top\s+(\d+)\s+)?(?:a )?(.*?) in (.*?) (?:that|with|from)", prompt, re.IGNORECASE)
+    match = re.search(r"Find (?:a )?(.*?) in (.*?) (?:that|with|from)", prompt, re.IGNORECASE)
     if match:
-        if match.group(1):  # If "top N" is found
-            parameters['topPlaces'] = int(match.group(1))
-        parameters['business_type'] = match.group(2).strip()
-        parameters['location'] = match.group(3).strip()
+        parameters['business_type'] = match.group(1).strip()
+        parameters['location'] = match.group(2).strip()
     
     # Extract number of leads (total to search from)
     match = re.search(r"from (\d+) (?:places|businesses|stores|shops|restaurants)", prompt, re.IGNORECASE)
     if match:
         parameters['numberOfLeads'] = int(match.group(1))
-    
-    # Extract top places from other patterns if not already set
-    if parameters['topPlaces'] == "":
-        match = re.search(r"(?:show|get|find|display) (?:me )?(?:the )?top (\d+)", prompt, re.IGNORECASE)
-        if match:
-            parameters['topPlaces'] = int(match.group(1))
     
     # Extract minimum rating
     match = re.search(r"rating of at least ([0-9.]+)", prompt)
