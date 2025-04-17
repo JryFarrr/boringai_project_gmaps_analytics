@@ -1,4 +1,4 @@
-from src.services.google_maps_service import get_place_details, search_business_with_search_api
+from src.services.google_maps_service import get_place_details, scrape_business_data_by_keyword
 from src.utils.data_mapping_utils import map_price_level, format_place_data
 
 def search_and_get_place_id(keyword, location="Indonesia", max_results=1):
@@ -13,7 +13,7 @@ def search_and_get_place_id(keyword, location="Indonesia", max_results=1):
     Returns:
         str or None: The place ID of the first result, or None if no results
     """
-    businesses = search_business_with_search_api(keyword, location=location, max_results=max_results)
+    businesses = scrape_business_data_by_keyword(keyword, location=location, max_results=max_results)
     
     if not businesses:
         return None

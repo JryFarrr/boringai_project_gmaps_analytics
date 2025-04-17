@@ -7,8 +7,7 @@ from src.config import config
 # === GLOBAL API KEYS ===
 api_key = None
 openai_api_key = None
-search_api_key = None  # New global variable for SearchAPI.io
-
+search_api_key = None 
 
 # === INIT API KEYS ===
 def init_api_key(key):
