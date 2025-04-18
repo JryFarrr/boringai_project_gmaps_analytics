@@ -1,62 +1,17 @@
 {
-  "$id": "4d07556f-ad96-416b-b111-27f3fbe88539",
+  "$id": "c2e28ee5-d8a8-4008-af89-f01e1acff2bf",
   "$state": {
     "businessType": "caffe",
-    "leadCount": 20,
+    "leadCount": 3,
     "location": "Surabaya",
-    "numberOfLeads": 20,
+    "numberOfLeads": 3,
     "remainingPlaceIds": [],
-    "searchOffset": 46,
-    "skippedCount": 0,
-    "nextPageToken": "AeeoHcKq9GcA8URK7aAoc8289sj9A3VIY-zzO51obg4vcV_IAvQ-lDJc-wchps5UtC-TQZsRIkyLrwM8-qB5xXBDvThKzgwz9z-x-JENmI8U8EuBWVW8AIpbRpClvAYwMWWgApxAAKw-ULTTewG1ouY-_10uRohED496rHMBWtms0Js_PxNOIRO2B8H589jirRpDKM6CladCQ3RXJRdzUhYMpTKX-XTpDE18fEgdoVwRp1qebWB7hntH2GaysID812te5b3GXIdVunrRkGep7XuRHlR6oxT-PFFbYpI0sreeRAO_vKT23ee8JxMioVP1_NqpPIHqc58xYA213ggZ9U9wbAI4G1RK1LjQtSAwzFycZLB_ZNMrn45-xOuALFRyKImwNL_xuJSer3VcJxQ1aYnR",
+    "searchOffset": 6,
+    "skippedCount": 2,
+    "nextPageToken": "AeeoHcL0NSmXTzswYlbZkgDi8CuXVDtyZe46EW1ZxLCRmNoIDIody22eIRNGqPrerSmzYWXIpCHTUpAvylznaxbJ3A7k-EWncQJdaC4087uY9zogAreu0rYRefutTSc_6pbRCmjcOxng92CoaUtVeluJE_raNPs0CUUa70FsFfHST5bC_6yprDnEL7CbpkS1pFQy64YOF0VShCGEI8DyD_JnVtcXkMsPqttL2LCZS93XXxgMoj5l9t2cCbPIt3S_ZjW90H7Noo1xtfARnp8MbxJVI_yK4-LdUmyzr88jBswRxI5iq4RT_gfudhzue_fQliaF7ST5dOlRLYsz_Uj__pGTFnddh15GsIq7rPNDCcZSifWO77Al6qcxSqgpk_tTii-3wQUFzZZGGuLVn3ljcDYVNT6zNg53uyvz6ZiMPfcodo-oa1a75OUfZ5omKYelzafAd1X4EC9w-MaLsPPHD_X8hXVxkDrpieUAR1VmV0r3SE2WSJE7rnvAUFJ6GwXuA0cjdaoMue7wDSTDfFr6xAuMPknnFGHRWLmtwkPUQq73-2ZrnGYNvPl8_N9bf4bjAMB_3BlB5F8ymBy1Wf34fsGmcfX0PMuzvVtw7TQptJuylQ",
     "skippedConstraints": true
   },
   "$results": [
-    {
-      "address": "Jl. Gubeng Kertajaya IX Raya C Raya No.23, Airlangga, Kec. Gubeng, Surabaya, Jawa Timur 60286, Indonesia",
-      "businessHours": [
-        "Monday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Tuesday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Wednesday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Thursday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Friday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Saturday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Sunday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
-      ],
-      "businessType": [
-        "cafe",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "0823-1207-7948",
-        "website": "N/A"
-      },
-      "fitReason": "Score based on match percentage only",
-      "fitScore": 95,
-      "matchFactors": {
-        "hours_factor": 1.0,
-        "keyword_factor": 0.8,
-        "price_factor": 1.0,
-        "rating_factor": 1.0,
-        "review_count_factor": 1.0
-      },
-      "matchPercentage": 95.0,
-      "matchReasoning": "MADANI CAFE SURABAYA meets or exceeds all the given constraints very well. The business has a high rating of 4.6, significantly above the minimum rating of 4.0, and has more than sufficient reviews (222 versus a minimum of 50), ensuring reliability. The price level is exactly at the expected '$$', and the business hours are 'anytime', fitting perfectly with the given constraint. However, the keyword factor is slightly less than perfect since customer reviews suggest some minor improvements, mainly concerning the outdoor area which could be a factor affecting customer experience mildly. Despite this, the cafe is largely appreciated for its features, making it an excellent match overall for the given criteria.",
-      "placeName": "MADANI CAFE SURABAYA",
-      "priceLevel": "$$",
-      "rating": 4.6,
-      "strengths": [
-        "Based on available reviews"
-      ],
-      "summaryNegativeReviews": "Customers find the location convenient but suggest improving drink quality, as they only describe it as \"pretty ok.\" Enhancing beverage offerings could elevate the overall experience.",
-      "summaryPositiveReviews": "The cafe is praised for its tasty food, comfortable ambiance, and clean prayer room. Suggestions include enhancing the outdoor area with glass cover and AC, and expanding car parking.",
-      "totalRatings": 222,
-      "weaknesses": [
-        "Insufficient data for detailed analysis"
-      ]
-    },
     {
       "address": "Jl. Pandan No.5, Ketabang, Kec. Genteng, Surabaya, Jawa Timur 60272, Indonesia",
       "businessHours": [
@@ -70,8 +25,8 @@
       ],
       "businessType": [
         "cafe",
-        "point_of_interest",
         "food",
+        "point_of_interest",
         "establishment"
       ],
       "contact": {
@@ -81,796 +36,31 @@
       "fitReason": "Score based on match percentage only",
       "fitScore": 95,
       "keyThemes": [
-        "Popular with Gen Z",
-        "Affordable prices",
-        "Small indoor space",
+        "Gen Z hangout spot",
+        "Affordable pricing",
+        "Mixed food quality",
         "Cozy ambience",
-        "Pay first system"
+        "Small indoor space"
       ],
       "matchFactors": {
-        "hours_factor": 1,
+        "hours_factor": 1.0,
         "keyword_factor": 0.75,
-        "price_factor": 1,
-        "rating_factor": 1,
-        "review_count_factor": 1
+        "price_factor": 1.0,
+        "rating_factor": 1.0,
+        "review_count_factor": 1.0
       },
       "matchPercentage": 95.0,
-      "matchReasoning": "Mawu Cafe matches the specified constraints very well. It has a high rating of 4.4, exceeding the minimum requirement of 4.0, resulting in a perfect rating factor. The cafe has a substantial number of reviews (579), which is far above the minimum 50 reviews needed for review count, again achieving a perfect factor. The price level of $$ matches the specified constraint precisely, providing a perfect match in terms of price. Although the constraint specifies 'anytime' business hours, the available information does not contradict it, resulting in a perfect match for business hours. The sample reviews suggest that the cafe is popular among Gen Z, indicating relevance due to factors like location and affordability. However, the keyword factor is slightly less than perfect due to limited direct evidence of keyword match beyond the implication. Overall, Mawu Cafe fits well within the given constraints, with minor room for improvement based on comprehensive keyword relevance.",
+      "matchReasoning": "Mawu Cafe matches the constraints very closely. It exceeds the minimum rating of 4.0 with a 4.4, and the number of reviews (581) is well above the required 50, resulting in both a rating_factor and review_count_factor of 1.0. The price level of '$$' matches perfectly with the constraint, giving a price_factor of 1.0. The business is categorized as 'anytime' suggesting it is open to fulfilling various time-based needs, aligning it perfectly with the business_hours constraint, thus a hours_factor of 1.0. However, the keyword_factor is slightly lower at 0.75; although Mawu Cafe is a popular hangout for Gen Z, as inferred from the sample reviews, the constraint does not mention a specific target demographic, causing a slight deduction as broader appeal is not explicitly highlighted. Overall, the cafe fits extremely well within the provided constraints, yielding a high match percentage of 95%.",
       "placeName": "Mawu Cafe",
       "priceLevel": "$$",
       "rating": 4.4,
       "strengths": [
         "Based on available reviews"
       ],
-      "summaryPositiveReviews": "Popular with Gen Z for its affordable menu and cozy ambiance near a school. Fast service, photobooth, and a comfy two-floor setup with indoor/outdoor seating draw students.",
-      "totalRatings": 579,
+      "summaryPositiveReviews": "Popular with Gen Z, this cafe offers cozy seating and quick service. It features a photobooth, affordable menu, and easy self-pickup system. Indoor space is limited.",
+      "totalRatings": 581,
       "weaknesses": [
         "Insufficient data for detailed analysis"
-      ]
-    },
-    {
-      "address": "Jl. Arief Rahman Hakim No.40, Klampis Ngasem, Kec. Sukolilo, Surabaya, Jawa Timur 60117, Indonesia",
-      "businessHours": [
-        "Monday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Tuesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Wednesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Thursday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Friday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Saturday: 9:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Sunday: 9:00\u202fAM\u2009\u2013\u20099:00\u202fPM"
-      ],
-      "businessType": [
-        "cafe",
-        "restaurant",
-        "point_of_interest",
-        "food",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "(031) 5937373",
-        "website": "N/A"
-      },
-      "fitReason": "Score based on match percentage only",
-      "fitScore": 95,
-      "matchFactors": {
-        "hours_factor": 1.0,
-        "keyword_factor": 0.8,
-        "price_factor": 1.0,
-        "rating_factor": 1.0,
-        "review_count_factor": 1.0
-      },
-      "matchPercentage": 95.0,
-      "matchReasoning": "The Localist Coffee and Bistro Surabaya matches the constraints with a high percentage because it satisfies all the main criteria. Its rating of 4.3 exceeds the minimum rating requirement of 4.0, giving it a full mark for rating_factor. The total reviews count at 651 is well above the minimum 50 reviews, ensuring a strong review_count_factor. The price level of '$$' aligns perfectly with the specified price_range, resulting in a full score for price_factor. The 'business_hours: anytime' constraint provides maximum flexibility, which the business inherently satisfies, producing a full score for hours_factor. As for the keyword_factor, the sample reviews describe it as a 'cafe' and 'restaurant', which aligns with the 'types' specified, though the additional context about connections to the eye clinic and playground suggests it might not be a standalone 'point_of_interest', slightly reducing the keyword_factor. Overall, the business fits very well with the given constraints, awarding it a match percentage of 95.",
-      "placeName": "The Localist Coffee and Bistro Surabaya",
-      "priceLevel": "$$",
-      "rating": 4.3,
-      "strengths": [
-        "Based on available reviews"
-      ],
-      "summaryPositiveReviews": "A cozy cafe located in an eye clinic, with indoor/outdoor seating and a playground for kids. It's great for family hangouts and long stays. The food is decent but a bit pricey. Excellent spaghetti ...",
-      "totalRatings": 651,
-      "weaknesses": [
-        "Insufficient data for detailed analysis"
-      ]
-    },
-    {
-      "address": "Jl. Manyar Kertoarjo No.75, Mojo, Kec. Gubeng, Surabaya, Jawa Timur 60116, Indonesia",
-      "businessHours": [
-        "Monday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Tuesday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Wednesday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Thursday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Friday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Saturday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Sunday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
-      ],
-      "businessType": [
-        "cafe",
-        "point_of_interest",
-        "store",
-        "food",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "0851-7963-9729",
-        "website": "N/A"
-      },
-      "fitReason": "The business offers a perfect match to all constraints with a high rating, significant number of positive reviews, and competitive pricing. The strengths, such as versatile seating and a work-friendly environment, align well with customer needs and preferences, making PAPER CUP COFFEE MANYAR a very strong lead with a fit score of 95. However, the absence of negative reviews or noted unique offerings suggests a minor gap in differentiation and critical feedback analysis.",
-      "fitScore": 95,
-      "keyThemes": [
-        "Indoor and outdoor seating",
-        "Power outlets and charging",
-        "Affordable coffee and food",
-        "Friendly staff",
-        "Ambiance and comfort"
-      ],
-      "matchFactors": {
-        "hours_factor": 1.0,
-        "keyword_factor": 1.0,
-        "price_factor": 1.0,
-        "rating_factor": 1.0,
-        "review_count_factor": 1.0
-      },
-      "matchPercentage": 100,
-      "matchReasoning": "PAPER CUP COFFEE MANYAR fully matches all the given constraints. The business has a high rating of 4.7, which exceeds the minimum requirement of 4.0. It also has 1028 reviews, surpassing the minimum required 50 reviews. The price level is correctly aligned with the constraint requiring '$$'. The business hours constraint is satisfied by default since it allows 'anytime'. Additionally, the reviews highlight aspects favorable to the constraints, such as offering both indoor and outdoor seating and being a suitable spot for various occasions, which aligns with being a 'cafe' or 'point_of_interest'. Therefore, there is a perfect match across all assessed factors, leading to a match percentage of 100.",
-      "placeName": "PAPER CUP COFFEE MANYAR",
-      "priceLevel": "$$",
-      "rating": 4.7,
-      "strengths": [
-        "High customer satisfaction is evident with a 4.7/5 rating from 1028 reviews, showcasing consistent quality in service and products.",
-        "Versatile seating options including indoor and outdoor areas make it suitable for a variety of occasions and customer preferences, enhancing its appeal as a 'point of interest'.",
-        "The cafe offers a conducive environment for work, as indicated by the availability of power sources and willingness to provide extra equipment, appealing to digital nomads and tech-savvy customers."
-      ],
-      "summaryPositiveReviews": "Paper Cup Coffee offers a cozy atmosphere with both indoor/outdoor seating, ideal for groups, digital nomads, and families. Customers praise the friendly staff, fast service, and charging options. ...",
-      "totalRatings": 1028,
-      "weaknesses": [
-        "While a wide range of food and beverages is offered, there is no specific mention of uniqueness or signature offerings, which could distinguish it from competitors.",
-        "Limited information on any potential drawbacks or areas for improvement as there are no negative reviews provided, suggesting a potential gap in feedback for business optimization."
-      ]
-    },
-    {
-      "address": "Jl. Raya Dharma Husada Indah AA20 No.106, Mojo, Kec. Gubeng, Surabaya, Jawa Timur 60285, Indonesia",
-      "businessHours": [
-        "Monday: 11:00\u202fAM\u2009\u2013\u20092:00\u202fAM",
-        "Tuesday: 11:00\u202fAM\u2009\u2013\u20092:00\u202fAM",
-        "Wednesday: 11:00\u202fAM\u2009\u2013\u20092:00\u202fAM",
-        "Thursday: 11:00\u202fAM\u2009\u2013\u20092:00\u202fAM",
-        "Friday: 11:00\u202fAM\u2009\u2013\u20092:00\u202fAM",
-        "Saturday: 11:00\u202fAM\u2009\u2013\u20093:00\u202fAM",
-        "Sunday: 11:00\u202fAM\u2009\u2013\u20092:00\u202fAM"
-      ],
-      "businessType": [
-        "cafe",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "(031) 5927778",
-        "website": "N/A"
-      },
-      "fitReason": "Strike Pool & Cafe demonstrates a strong fit due to its high customer satisfaction rating, alignment with price range expectations, and superior match with operational constraints like flexible hours and service quality. The establishment's emphasis on providing a positive ambiance and affordable pricing further enhances its attractiveness as a leading option in its category, which is reflected in the high match percentage of 95.",
-      "fitScore": 95,
-      "keyThemes": [
-        "Ambiance",
-        "Service",
-        "Food and Drinks",
-        "Prices",
-        "Equipment"
-      ],
-      "matchFactors": {
-        "hours_factor": 1,
-        "keyword_factor": 0.75,
-        "price_factor": 1,
-        "rating_factor": 1,
-        "review_count_factor": 1
-      },
-      "matchPercentage": 95.0,
-      "matchReasoning": "Strike Pool & Cafe matches very well with the given constraints. The establishment has a high rating of 4.4, surpassing the minimum rating requirement of 4.0, contributing a full score to the rating_factor. With a total of 1048 reviews, it also satisfies the minimum review requirement of 50, giving a full score for review_count_factor. The price level is $$, exactly matching the specified price range constraint, leading to a complete score for the price_factor. The business hours constraint is 'anytime', which is the most flexible and met by the business, resulting in a full score for hours_factor. Based on the sample reviews, keywords such as 'good service', 'affordable prices', 'cool ambiance', and 'good food' align well with positive customer experiences, earning a high keyword_factor score. However, since the reviews are limited in quantity for a holistic sentiment analysis, the keyword_factor is slightly reduced to 0.75. Overall, these factors combine to yield a strong match percentage of 95.",
-      "placeName": "Strike Pool & Cafe",
-      "priceLevel": "$$",
-      "rating": 4.4,
-      "strengths": [
-        "High customer rating of 4.4 from over 1000 reviews, indicating consistent customer satisfaction.",
-        "Positive keywords highlighted in reviews such as 'good service', 'cool ambiance', and 'good food' signify a strong customer experience.",
-        "The business operates with flexibility, meeting the 'anytime' business hours constraint, which is beneficial for attracting a diverse customer base."
-      ],
-      "summaryPositiveReviews": "Customers appreciate the good ambiance, decor, and well-maintained equipment. The venue is affordable, clean, and has a friendly atmosphere, but service speed and friendliness need improvement.",
-      "totalRatings": 1048,
-      "weaknesses": [
-        "The lack of detailed negative reviews prevents a comprehensive understanding of areas needing improvement, limiting the assessment of potential issues.",
-        "Reliance on positive experiences mentioned in reviews suggests a need for diversity in feedback to ensure a balanced view of customer sentiments."
-      ]
-    },
-    {
-      "address": "Jl. Klampis Jaya No.144, Klampis Ngasem, Kec. Sukolilo, Surabaya, Jawa Timur 60117, Indonesia",
-      "businessHours": [
-        "Monday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Tuesday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Wednesday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Thursday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Friday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Saturday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Sunday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
-      ],
-      "businessType": [
-        "cafe",
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "store",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "(031) 5995500",
-        "website": "https://www.instagram.com/demandailingcafe"
-      },
-      "fitReason": "Demandailing Cafe & Eatery is an excellent fit as a lead with a match percentage of 95%. The business exceeds the specified requirements in terms of customer reviews, ratings, and price range. However, minor improvements in beverage quality and customer service consistency could enhance overall customer satisfaction and experience.",
-      "fitScore": 95,
-      "keyThemes": [
-        "great",
-        "food",
-        "but",
-        "are",
-        "place"
-      ],
-      "matchFactors": {
-        "hours_factor": 1,
-        "keyword_factor": 0.7,
-        "price_factor": 1,
-        "rating_factor": 1,
-        "review_count_factor": 1
-      },
-      "matchPercentage": 95.0,
-      "matchReasoning": "Demandailing Cafe & Eatery matches the specified constraints very well. The business has an excellent rating of 4.6, exceeding the minimum required rating of 4.0. With 2484 reviews, it far surpasses the requirement of 50 reviews, indicating a strong and established customer base. The cafe's price level of '$$' fits perfectly within the specified price range, and no specific business hours constraint means the 'anytime' condition is inherently satisfied. The sample reviews mention positive aspects such as great food quality, cozy atmosphere, and affordable prices, all of which align with the constraints. However, there are minor points in the reviews like the beverages could be improved and the place being a bit hot, suggesting possible areas for improvement, which impact the keyword_factor slightly downward at 0.7. Combined, these factors result in a high match percentage of 95.",
-      "placeName": "Demandailing Cafe & Eatery",
-      "priceLevel": "$$",
-      "rating": 4.6,
-      "strengths": [
-        "The Demandailing Cafe & Eatery has an excellent average rating of 4.6 from 2484 reviews, indicating strong customer satisfaction and a well-established reputation.",
-        "The business offers a cozy atmosphere and is well-regarded for its tasty, savory food and affordable prices, making it an attractive option for a wide-ranging clientele, including students.",
-        "The menu is described as having a good variety, particularly in desserts and beverages, which aligns well with customer expectations and diversification in offerings."
-      ],
-      "summaryNegativeReviews": "Customers mention a gloomy atmosphere, lack of promo communication, long wait times, and food quality issues (cold roulades, paste-like chocolate) at Klampis compared to better experiences at Merr.",
-      "summaryPositiveReviews": "Customers commend the cafe for its tasty and affordable food, great ambience, and quick service. While beverages are generally good, improvements could be made. Some note the cozy but slightly hot ...",
-      "totalRatings": 2484,
-      "weaknesses": [
-        "There are reports of the beverages needing improvement and issues with the temperature inside the cafe, which could potentially deter some customers.",
-        "Customer service inconsistency is noted, particularly concerning promotional offers and slow service, which could affect the overall customer experience negatively.",
-        "Specific locations like the Demandailing at Klampis have not matched the quality expected based on experiences at other branches, which may damage the brand's reputation."
-      ]
-    },
-    {
-      "address": "Jl. Gubeng Kertajaya IX Raya C Raya No.23, Airlangga, Kec. Gubeng, Surabaya, Jawa Timur 60286, Indonesia",
-      "businessHours": [
-        "Monday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Tuesday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Wednesday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Thursday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Friday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Saturday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Sunday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
-      ],
-      "businessType": [
-        "cafe",
-        "point_of_interest",
-        "food",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "0823-1207-7948",
-        "website": "N/A"
-      },
-      "fitReason": "Score based on match percentage only",
-      "fitScore": 95,
-      "keyThemes": [
-        "place",
-        "outdoor",
-        "good",
-        "surabaya",
-        "can"
-      ],
-      "matchFactors": {
-        "hours_factor": 1,
-        "keyword_factor": 0.75,
-        "price_factor": 1,
-        "rating_factor": 1,
-        "review_count_factor": 1
-      },
-      "matchPercentage": 95.0,
-      "matchReasoning": "MADANI CAFE SURABAYA closely meets all the given constraints with a high rating of 4.6 (above the minimum of 4.0), a substantial number of total reviews (222, above the minimum of 50), and a matching price range ($$). The business hours are specified as 'anytime', which the cafe satisfies, assuming typical cafe hours. The keyword factor is slightly lower because, while sample reviews highlight positive aspects of the environment and amenities, there is a note about the discomfort with the outdoor section due to hot weather, which may slightly detract from the overall experience. However, the suggestion to improve the space shows constructive engagement, thus still mostly aligning with expectations and contributing to a high match percentage.",
-      "placeName": "MADANI CAFE SURABAYA",
-      "priceLevel": "$$",
-      "rating": 4.6,
-      "strengths": [
-        "Based on available reviews"
-      ],
-      "summaryNegativeReviews": "Customers appreciate the location and ambiance. Focus on improving drink quality for more positive feedback.",
-      "summaryPositiveReviews": "Customers appreciate the clean, comfortable prayer room and tasty food and drinks at standard Surabaya caf\u00e9 prices. Suggestions include better cooling indoors and shaded outdoor areas. Parking is l...",
-      "totalRatings": 222,
-      "weaknesses": [
-        "Insufficient data for detailed analysis"
-      ]
-    },
-    {
-      "address": "Jl. Klampis Jaya No.144, Klampis Ngasem, Kec. Sukolilo, Surabaya, Jawa Timur 60117, Indonesia",
-      "businessHours": [
-        "Monday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Tuesday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Wednesday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Thursday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Friday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Saturday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Sunday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
-      ],
-      "businessType": [
-        "cafe",
-        "restaurant",
-        "store",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "(031) 5995500",
-        "website": "https://www.instagram.com/demandailingcafe"
-      },
-      "fitReason": "Demandailing Cafe & Eatery scores highly as a potential lead due to its excellent customer ratings, affordable pricing, and positive overall experience as reflected in many reviews. However, certain areas such as environment comfort and service consistency need attention to strengthen and maintain its reputation. Addressing these minor issues could potentially enhance customer trust and lead to an even higher market fit.",
-      "fitScore": 92,
-      "keyThemes": [
-        "Food Quality",
-        "Ambience",
-        "Price Affordability",
-        "Service Speed",
-        "Drink Variety"
-      ],
-      "matchFactors": {
-        "hours_factor": 1.0,
-        "keyword_factor": 0.75,
-        "price_factor": 1.0,
-        "rating_factor": 1.0,
-        "review_count_factor": 1.0
-      },
-      "matchPercentage": 95.0,
-      "matchReasoning": "Demandailing Cafe & Eatery matches the given constraints almost perfectly. The business exceeds the minimum rating requirement with a strong 4.6 and has a substantial number of reviews, indicating robust customer feedback. The price level is in the desired range ($$). The 'anytime' business hours constraint does not impose any limitations, so the cafe matches this requirement seamlessly. In terms of qualitative analysis, the sample reviews reveal generally positive sentiments with some minor critiques, such as the indoor temperature and quality of beverages, impacting the keyword factor slightly. Overall, the minor criticisms don't significantly detract from the overall positive assessment, resulting in a high match percentage.",
-      "placeName": "Demandailing Cafe & Eatery",
-      "priceLevel": "$$",
-      "rating": 4.6,
-      "strengths": [
-        "The business has a strong customer approval rating of 4.6 out of 5, supported by a substantial number of reviews (2484). This suggests consistency in delivering customer satisfaction.",
-        "The price range ($$) is perceived as affordable and reasonable by customers, which broadens its appeal to a wide demographic, including students as pointed out in the positive reviews.",
-        "The ambiance and service quality are highly appreciated, enhancing the overall customer experience and making it a favorite spot for hangouts and casual dining."
-      ],
-      "summaryNegativeReviews": "Customers criticize Demandailing Klampis for a gloomy atmosphere, poor communication on promotions, long wait times, and disappointing food quality compared to Merr.",
-      "summaryPositiveReviews": "Great food and affordable prices, cozy ambiance, and excellent service. Desserts and drink variety impress, but the space can get hot and crowded due to decor obstructing airflow.",
-      "totalRatings": 2484,
-      "weaknesses": [
-        "There are occasional concerns related to indoor temperature control, possibly due to physical obstructions like artificial plants, which could affect comfort levels.",
-        "Inconsistent quality in specific offerings such as beverages and desserts, as some reviews mention issues with drink quality and dessert temperature or taste.",
-        "Communication and customer service discrepancies, as highlighted in a negative review regarding promotional offers and staff responses, which can affect customer trust and satisfaction."
-      ]
-    },
-    {
-      "address": "Jl. Gubeng Masjid, Pacar Keling, Kec. Tambaksari, Surabaya, Jawa Timur 60131, Indonesia",
-      "businessHours": [
-        "Monday: 7:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
-        "Tuesday: 7:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
-        "Wednesday: 7:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
-        "Thursday: 7:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
-        "Friday: 7:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
-        "Saturday: 7:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
-        "Sunday: 7:00\u202fAM\u2009\u2013\u20098:00\u202fPM"
-      ],
-      "businessType": [
-        "cafe",
-        "store",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "N/A",
-        "website": "https://instagram.com/lokocafe?igshid=OTJlNzQ0NWM="
-      },
-      "fitReason": "LOKO CAFE STASIUN GUBENG is an excellent fit for travelers and locals who appreciate good food and excellent service. Its high rating, ample reviews, and perfect match to given constraints suggest a significant net positive perception and reliability as a dining option. However, slight issues related to atmosphere and initial accessibility prevent a perfect score.",
-      "fitScore": 90,
-      "keyThemes": [
-        "Friendly service",
-        "Variety of food options",
-        "Convenient location",
-        "Atmosphere and seating",
-        "Affordable prices"
-      ],
-      "matchFactors": {
-        "hours_factor": 1.0,
-        "keyword_factor": 1.0,
-        "price_factor": 1.0,
-        "rating_factor": 1.0,
-        "review_count_factor": 1.0
-      },
-      "matchPercentage": 100,
-      "matchReasoning": "The business 'LOKO CAFE STASIUN GUBENG' perfectly matches all the given constraints. It has a high rating of 4.7, surpassing the minimum requirement of 4.0, and an ample number of reviews (178), which is well above the minimum of 50. The price range of the business is '$$', which aligns exactly with the constraint. The specified business hours are 'anytime', which match any operating hours given; thus, the place is available as required. Finally, the nature of the business as a 'cafe' and 'food' establishment corresponds well with the implied setting in the reviews regarding food quality and hospitality, justifying a full keyword match. Therefore, all factors score a perfect 1.0, resulting in a 100% match percentage.",
-      "placeName": "LOKO CAFE STASIUN GUBENG",
-      "priceLevel": "$$",
-      "rating": 4.7,
-      "strengths": [
-        "Highly rated: LOKO CAFE STASIUN GUBENG boasts a high customer satisfaction score of 4.7 out of 5, indicating consistent positive experiences.",
-        "Excellent service: Customers frequently mention the outstanding hospitality and kindness of the staff, contributing to a positive overall experience.",
-        "Convenient location: Located within Gubeng Station, it serves travelers or people in transit who need a quick, satisfying meal with the additional convenience of take-away options."
-      ],
-      "summaryPositiveReviews": "Customers appreciate the friendly service, variety of menu options, reasonable pricing, and convenience for quick meals at the station. Suggestions include improving the atmosphere and location wit...",
-      "totalRatings": 178,
-      "weaknesses": [
-        "Atmosphere limitation: While generally positive, the atmosphere is noted as not being the best compared to other Loko Cafes at different stations.",
-        "Visibility issues: The cafe might be difficult to locate for visitors unfamiliar with Gubeng Station, as suggested by some customer feedback."
-      ]
-    },
-    {
-      "address": "Jl. Walikota Mustajab No.67 - 69, Ketabang, Kec. Genteng, Surabaya, Jawa Timur 60272, Indonesia",
-      "businessHours": [
-        "Monday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Tuesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Wednesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Thursday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Friday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Saturday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Sunday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
-      ],
-      "businessType": [
-        "cafe",
-        "store",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "0812-2941-8452",
-        "website": "https://instagram.com/calibrecoffeeroasters"
-      },
-      "fitReason": "Calibre Coffee Roasters exhibits strong alignment with customer expectations through its high ratings, positive reviews regarding ambiance, and supportive amenities for a work-friendly environment. These factors result in a high potential fit score. However, the limited food variety and perceived pricing concerns could slightly detract from its universal appeal, affecting customer attraction and retention for those seeking diverse and competitively priced offerings.",
-      "fitScore": 90,
-      "matchFactors": {
-        "hours_factor": 1,
-        "keyword_factor": 0.75,
-        "price_factor": 1,
-        "rating_factor": 1,
-        "review_count_factor": 1
-      },
-      "matchPercentage": 95.0,
-      "matchReasoning": "Calibre Coffee Roasters matches the constraints very well. The business exceeds the minimum rating requirement with a rating of 4.5 out of 5 and has a high number of total reviews (2092), surpassing the minimum review count of 50. It falls perfectly within the specified price range of '$$'. The constraint 'business hours: anytime' is not restrictive, assuming standard cafe hours, thus not affecting the match score. From the sample reviews, the words 'delicious', 'comfortable', and 'beautiful' support a positive view consistent with the constraints, and the presence of amenities like power outlets aligns with expectations of a conducive work environment. Keywords that enhance the experience mentioned like 'atmosphere', 'cozy', and 'clean' were found, slightly offset by less emphasis on qualities customers might prioritize like the food variety which affects the keyword factor slightly, resulting in an overall solid match percentage.",
-      "placeName": "Calibre Coffee Roasters",
-      "priceLevel": "$$",
-      "rating": 4.5,
-      "strengths": [
-        "High customer rating with 4.5 out of 5 based on 2092 reviews, indicating strong customer satisfaction.",
-        "Positive atmosphere with descriptors like 'comfortable', 'beautiful', 'cozy', and 'clean', making it an inviting space for customers.",
-        "The availability of amenities such as power outlets enhances its appeal as a working environment, especially for remote workers or students."
-      ],
-      "summaryPositiveReviews": "Customers love the comfortable, naturally-lit atmosphere and friendly staff. The great coffee and cozy ambiance make it ideal for working. Offers diverse beans and good food, though slightly pricey.",
-      "totalRatings": 2092,
-      "weaknesses": [
-        "Limited food variety, notably in not offering rice dishes, which may deter customers seeking a diverse menu.",
-        "Price point perceived as high for drinks and pasta, which might be a barrier for price-sensitive customers.",
-        "While there\u2019s an overall positive sentiment, more emphasis on food variety could improve the comprehensive dining experience."
-      ]
-    },
-    {
-      "address": "Jl. Basuki Rahmat No.23, belakang McD, Kec. Genteng, Surabaya, Jawa Timur 60261, Indonesia",
-      "businessHours": [
-        "Monday: 6:00\u202fAM\u2009\u2013\u200911:55\u202fPM",
-        "Tuesday: 6:00\u202fAM\u2009\u2013\u200911:55\u202fPM",
-        "Wednesday: 6:00\u202fAM\u2009\u2013\u200911:55\u202fPM",
-        "Thursday: 6:00\u202fAM\u2009\u2013\u200911:55\u202fPM",
-        "Friday: 6:00\u202fAM\u2009\u2013\u200911:55\u202fPM",
-        "Saturday: 6:00\u202fAM\u2009\u2013\u200911:55\u202fPM",
-        "Sunday: 6:00\u202fAM\u2009\u2013\u200911:55\u202fPM"
-      ],
-      "businessType": [
-        "cafe",
-        "store",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "0812-3778-7875",
-        "website": "http://coffeetgc.com/"
-      },
-      "fitReason": "Coffee TGC basra demonstrates strong alignment with key customer expectations in terms of atmosphere, location, and product variety, contributing to its high match percentage and positive overall rating. However, service speed and staff attitude weaknesses might hinder some customer experiences, slightly lowering the potential fit score.",
-      "fitScore": 90,
-      "keyThemes": [
-        "Relaxed atmosphere",
-        "Slow service",
-        "Cozy seating",
-        "Limited parking",
-        "Staff behavior"
-      ],
-      "matchFactors": {
-        "hours_factor": 1.0,
-        "keyword_factor": 0.8,
-        "price_factor": 1.0,
-        "rating_factor": 1.0,
-        "review_count_factor": 1.0
-      },
-      "matchPercentage": 95.0,
-      "matchReasoning": "The business 'Coffee TGC basra' has a high rating of 4.5, well above the minimum requirement of 4.0, earning a full score for the rating factor. It also has a total of 2187 reviews, far exceeding the minimum requirement of 50 reviews, resulting in a perfect score for the review count factor. The business matches the specified price range of '$$', which also scores a full point for the price factor. Since the constraints specify business hours as 'anytime', this requirement is inherently satisfied, giving full marks for the hours factor. The sample reviews mention features like a relaxed atmosphere and being a good place for meetings, but there are no significant negative keywords that prevent a slightly lower score for the keyword factor. Overall, the business closely aligns with the constraints, resulting in a high match percentage of 95.",
-      "placeName": "Coffee TGC basra",
-      "priceLevel": "$$",
-      "rating": 4.5,
-      "strengths": [
-        "The business has a high customer rating of 4.5 out of 5, indicating strong customer satisfaction and positive customer experience.",
-        "It is strategically located in a city area that enhances accessibility and convenience for customers, making it an attractive spot for meetings and casual gatherings.",
-        "The cafe offers a variety of beverages and meals, and features a cozy and clean environment, contributing positively to the overall atmosphere."
-      ],
-      "summaryNegativeReviews": "Key issues include slow service, understaffing, and order mistakes. Staff appear disinterested and unhelpful. Focus on improving efficiency, accuracy, and employee engagement.",
-      "summaryPositiveReviews": "The coffee shop in Surabaya offers a cozy, relaxed atmosphere with great coffee and diverse beverages. It's a good spot for meetings or work, though seating lacks comfort. Cleanliness is a strong p...",
-      "totalRatings": 2187,
-      "weaknesses": [
-        "Service efficiency is a significant issue, with reports of slow food preparation and serving times, which could deter potential repeat customers.",
-        "There are recurring complaints about staff behavior, indicating a potential need for better staff training and customer service improvements.",
-        "Limited parking availability might pose a problem for customers preferring to drive, possibly affecting customer flow."
-      ]
-    },
-    {
-      "address": "Jl. Gubeng Kertajaya IX Raya C Raya No.23, Airlangga, Kec. Gubeng, Surabaya, Jawa Timur 60286, Indonesia",
-      "businessHours": [
-        "Monday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Tuesday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Wednesday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Thursday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Friday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Saturday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Sunday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
-      ],
-      "businessType": [
-        "cafe",
-        "point_of_interest",
-        "food",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "0823-1207-7948",
-        "website": "N/A"
-      },
-      "fitReason": "MADANI CAFE SURABAYA exhibits a high potential fit score of 90 due to its excellent customer ratings, good alignment with price standards, and services that accommodate diverse consumer needs. However, environmental comfort issues related to temperature and shade slightly lower its perfect fit potential, indicating marginal areas for improvement.",
-      "fitScore": 90,
-      "keyThemes": [
-        "place",
-        "outdoor",
-        "good",
-        "surabaya",
-        "can"
-      ],
-      "matchFactors": {
-        "hours_factor": 1.0,
-        "keyword_factor": 0.75,
-        "price_factor": 1.0,
-        "rating_factor": 1.0,
-        "review_count_factor": 1.0
-      },
-      "matchPercentage": 95.0,
-      "matchReasoning": "MADANI CAFE SURABAYA fits well within the given constraints. It has a high rating of 4.6, surpassing the minimum required rating of 4.0, and boasts a substantial number of reviews (222) which is well above the minimum of 50. The price level ($$) aligns perfectly with the constraint, and the business hours being 'anytime' shows there are no restrictions, ensuring full compliance with the hours factor. The keywords from sample reviews match partially; there is only a minor issue with the outdoor experience due to hot weather and lack of outdoor covers, which slightly impacts the keyword factor. Overall, the cafe aligns remarkably well with the constraints, leading to a high match percentage of 95.",
-      "placeName": "MADANI CAFE SURABAYA",
-      "priceLevel": "$$",
-      "rating": 4.6,
-      "strengths": [
-        "MADANI CAFE SURABAYA has a high customer rating of 4.6 out of 5, indicating strong customer satisfaction and positive experiences.",
-        "The cafe offers a clean and comfortable prayer room, which adds unique value and appeals to culturally-sensitive visitors.",
-        "The cafe maintains competitive pricing akin to Surabaya's caf\u00e9 standards, making it an accessible and reasonable option for consumers."
-      ],
-      "summaryNegativeReviews": "Although the location is convenient, improvements could focus on enhancing the drink quality and overall experience.",
-      "summaryPositiveReviews": "Customers appreciate the caf\u00e9's tasty food, clean prayer room, and good tea with refills. They suggest covering outdoor areas for comfort, enhancing indoor cooling, and addressing parking limits.",
-      "totalRatings": 222,
-      "weaknesses": [
-        "The outdoor setting lacks adequate shade and weather protection, diminishing comfort during hot periods, potentially driving clientele indoors or elsewhere.",
-        "Parking space is limited for cars, potentially deterring customers who drive, especially during peak hours or busy periods.",
-        "Temperature regulation indoors might need enhancement to increase comfort for guests during hotter days, impacting overall satisfaction in climate-sensitive zones."
-      ]
-    },
-    {
-      "address": "Jl. Manyar Kertoarjo IV No.8, Mojo, Kec. Gubeng, Surabaya, Jawa Timur 60285, Indonesia",
-      "businessHours": [
-        "Monday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Tuesday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Wednesday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Thursday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Friday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Saturday: 7:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Sunday: 7:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
-      ],
-      "businessType": [
-        "cafe",
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "0812-3446-0168",
-        "website": "https://www.instagram.com/kosakucoffee"
-      },
-      "fitReason": "Kosaku Coffee Lab scores a high 88 out of 100 as a fit due to its strong alignment with the constraints provided and its excellent customer feedback, despite minor issues in food pricing and service quality. Its broad appeal as a cozy, aesthetically pleasing location with flexible offerings matches business demands effectively, positioning it as a strong candidate.",
-      "fitScore": 88,
-      "keyThemes": [
-        "cozy atmosphere",
-        "Japanese style",
-        "friendly staff",
-        "variety of drinks",
-        "meeting spaces"
-      ],
-      "matchFactors": {
-        "hours_factor": 1,
-        "keyword_factor": 0.8,
-        "price_factor": 1,
-        "rating_factor": 1,
-        "review_count_factor": 1
-      },
-      "matchPercentage": 90.0,
-      "matchReasoning": "Kosaku Coffee Lab is a well-reviewed and popular choice with a strong alignment to the provided constraints. It has an excellent rating of 4.5, surpassing the minimum required rating of 4.0. Similarly, it has 390 reviews, which easily meets the minimum requirement of 50 reviews. The price level of $$ matches exactly with the constraints. The business hour flexibility required ('anytime') is noted by the constraints and assumed to be compatible here given the broad specification. The presence of keywords in the sample reviews such as 'cafe', 'food', 'meeting', and 'friends' aligns well with the business constraints, though there is a minor discrepancy in terms of specific keyword matching (hence, the keyword_factor is slightly deducted to 0.8). Overall, Kosaku Coffee Lab exhibits strong compliance with the provided constraints, resulting in a high match percentage of 90%.",
-      "placeName": "Kosaku Coffee Lab",
-      "priceLevel": "$$",
-      "rating": 4.5,
-      "strengths": [
-        "Kosaku Coffee Lab has a high customer satisfaction rating of 4.5 out of 5, indicating strong overall approval from patrons.",
-        "The cafe is noted for its appealing ambiance, with a cozy atmosphere and aesthetic that resembles a Japanese cafe, making it attractive for both individual and group visits.",
-        "It offers versatility in its space, providing private rooms for meetings and gatherings and a large parking area, enhancing its convenience and suitability for various occasions."
-      ],
-      "summaryNegativeReviews": "Customers find the food mediocre and overpriced. Service issues include lack of transparency about changes to menu ingredients. Improvements needed in food quality and communication.",
-      "summaryPositiveReviews": "Comfy cafe with Japanese-style ambiance, delicious food, and friendly staff. Excellent for meetings and gatherings with ample parking. Recommend trying nasi ayam cabe garam and Vienna kohi.",
-      "totalRatings": 390,
-      "weaknesses": [
-        "Some reviews cite the food quality as merely average and suggest that it may be overpriced relative to the value provided, which could impact price-sensitive patrons.",
-        "Service issues are mentioned, including lack of communication about menu changes, which could affect customer experience and needs addressing for improvement."
-      ]
-    },
-    {
-      "address": "Jl. Sumatera No.40, Gubeng, Kec. Gubeng, Surabaya, Jawa Timur 60281, Indonesia",
-      "businessHours": [
-        "Monday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Tuesday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Wednesday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Thursday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Friday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Saturday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Sunday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM"
-      ],
-      "businessType": [
-        "cafe",
-        "point_of_interest",
-        "store",
-        "food",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "(031) 5033003",
-        "website": "http://www.society.co.id/"
-      },
-      "fitReason": "Historica has a strong overall match with a high satisfaction rating and good alignment with pricing expectations. The business excels with versatile offerings and scenic design, suitable for gatherings and events. Despite some negative impressions regarding ambiance and minor service areas, the high number of positive customer experiences and positive attributes outweigh these points, resulting in a high fit score.",
-      "fitScore": 85,
-      "keyThemes": [
-        "Ambience and atmosphere",
-        "Food and beverage options",
-        "Price and value",
-        "Staff friendliness",
-        "Event and group accommodations"
-      ],
-      "matchFactors": {
-        "hours_factor": 1,
-        "keyword_factor": 0.6,
-        "price_factor": 1,
-        "rating_factor": 1,
-        "review_count_factor": 1
-      },
-      "matchPercentage": 90.0,
-      "matchReasoning": "Historica meets almost all of the provided constraints very well. It exceeds the minimum rating requirement with a rating of 4.4, which contributes a rating factor of 1. The total reviews of 1935 greatly surpass the minimum review count requirement of 50, giving a review count factor of 1. The price level of '$$' aligns perfectly with the specified price range constraint, also attributing a price factor of 1. The constraint for business hours is 'anytime', which is the most flexible and therefore not a limiting factor in this evaluation, contributing an hours factor of 1. However, the keyword factor is slightly lower at 0.6 because sample reviews included some negative comments about the ambiance, such as the place initially appearing abandoned and having a smelly odor, though positive aspects such as the stylistic design and venue size were mentioned. Overall, the business is a strong match with a minor deduction due to initial negative impressions in sample reviews.",
-      "placeName": "Historica",
-      "priceLevel": "$$",
-      "rating": 4.4,
-      "strengths": [
-        "High customer satisfaction with a rating of 4.4 out of 5 based on 1935 reviews, indicating a generally positive customer experience.",
-        "Versatile space offering a cafe, restaurant, and bar, which provides a diverse range of services and enhances visitor appeal.",
-        "Strong match with pricing, falling perfectly within the expected price range, making it accessible to a wide audience."
-      ],
-      "summaryPositiveReviews": "Historica Garden offers a spacious, well-designed setting with friendly staff, a cozy ambiance, and tasty western cuisine. It's ideal for events or relaxing with friends. Reasonable prices and grea...",
-      "totalRatings": 1935,
-      "weaknesses": [
-        "Initial negative impressions noted about the ambiance, such as the initial appearance of being abandoned and a smelly odor, could deter first-time visitors.",
-        "Certain aspects such as food taste and maintenance of the restroom are highlighted as areas needing improvement to enhance the overall customer experience.",
-        "The keyword factor is lower due to some negative feedback, which suggests that marketing and branding might not fully capture the business's strengths."
-      ]
-    },
-    {
-      "address": "Jl. Manyar Jaya No.2e, Menur Pumpungan, Kec. Sukolilo, Surabaya, Jawa Timur 60118, Indonesia",
-      "businessHours": [
-        "Monday: 8:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Tuesday: 8:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Wednesday: 8:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Thursday: 8:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Friday: 8:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Saturday: 7:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Sunday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
-      ],
-      "businessType": [
-        "cafe",
-        "store",
-        "point_of_interest",
-        "food",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "0812-6001-0910",
-        "website": "N/A"
-      },
-      "fitReason": "Eicy Cafe aligns well with its identity as a cozy hangout spot with a strong customer satisfaction rating and diverse offerings. However, perceived high prices and average food quality slightly reduce its fit for customers seeking exceptional culinary value and larger portion sizes. The high match percentage and positive ambience feedback contribute significantly to its overall fit as a highly recommended cafe.",
-      "fitScore": 85,
-      "keyThemes": [
-        "Cozy ambience",
-        "Variety of menu options",
-        "Decor and interior design",
-        "Board games available",
-        "Small portion sizes"
-      ],
-      "matchFactors": {
-        "hours_factor": 1,
-        "keyword_factor": 0.8,
-        "price_factor": 1,
-        "rating_factor": 1,
-        "review_count_factor": 1
-      },
-      "matchPercentage": 92.0,
-      "matchReasoning": "Eicy Cafe scores highly due to its excellent rating (4.6), which exceeds the minimum required (4.0), indicating customer satisfaction. The total reviews (585) also surpass the minimum requirement (50), ensuring a reliable sample size for evaluation. The price level ($$) aligns perfectly with the specified price range, maintaining financial accessibility. Additionally, there are no constraints on business hours, thus fully satisfying this factor. The keyword factor is slightly less than perfect (0.8), as the reviews highlight the ambience and to a lesser degree, the quality of food, which is noted as 'decent' but not extraordinary. Nonetheless, the place is seen positively as a hangout spot, which correlates well with being a cafe. Overall, Eicy Cafe matches the constraints well, leading to a high match percentage.",
-      "placeName": "Eicy Cafe",
-      "priceLevel": "$$",
-      "rating": 4.6,
-      "strengths": [
-        "Eicy Cafe boasts a high customer satisfaction rating of 4.6 out of 5 from 585 reviews, indicating strong approval from its clientele.",
-        "The cafe offers a diverse and appealing menu, including pastries, main dishes, and beverages, providing a wide range of choices for customers.",
-        "Eicy Cafe is praised for its superb ambience with a cozy atmosphere and features like board games and a library, making it an attractive hangout spot."
-      ],
-      "summaryNegativeReviews": "Customers find the cafe's small food and beverage portions unsatisfactory for the price. The taste is mediocre, making it less appealing for college students on a budget.",
-      "summaryPositiveReviews": "Eicy Cafe is a cozy, hidden gem in Surabaya with superb ambience and decor, offering diverse menus and great coffee. Customers appreciate the games, books, and suggest better maintenance and health...",
-      "totalRatings": 585,
-      "weaknesses": [
-        "Feedback suggests that food and beverage portions are small, which might not meet the expectations of all customers, leading to perceived inadequacy in value for money.",
-        "Some customers find the food taste to be average, potentially affecting repeat business from those seeking exceptional culinary experiences.",
-        "The cafe\u2019s pricing may not be suitable for college students or budget-conscious customers, potentially limiting its target audience."
-      ]
-    },
-    {
-      "address": "Jl. Dharmahusada Indah II No.175 Blok C, Mulyorejo, Kec. Mulyorejo, Surabaya, Jawa Timur 60115, Indonesia",
-      "businessHours": [
-        "Monday: 7:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Tuesday: 7:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Wednesday: 7:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Thursday: 7:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Friday: 7:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Saturday: 7:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
-        "Sunday: 7:00\u202fAM\u2009\u2013\u200912:00\u202fAM"
-      ],
-      "businessType": [
-        "cafe",
-        "store",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "N/A",
-        "website": "N/A"
-      },
-      "fitReason": "Thirty3brew Dharmahusada scores an 85 as a potential lead due to its excellent rating and popularity, which reflect its strong position in customer satisfaction. Its ambiance and beverage offerings are particularly strong, aligning well with consumer preferences for coffee and casual environments. However, potential concerns over food quality and pricing may hinder its appeal to some segments, thus slightly lowering its fit score.",
-      "fitScore": 85,
-      "keyThemes": [
-        "Coffee quality",
-        "Atmosphere and ambience",
-        "Food quality",
-        "Pricing concerns",
-        "Service and staff"
-      ],
-      "matchFactors": {
-        "hours_factor": 1,
-        "keyword_factor": 0.75,
-        "price_factor": 1,
-        "rating_factor": 1,
-        "review_count_factor": 1
-      },
-      "matchPercentage": 95.0,
-      "matchReasoning": "Thirty3brew Dharmahusada matches exceptionally well with the given constraints. It meets or exceeds the minimum rating requirement with a strong 4.7 out of 5, is well-established with 873 reviews, and matches the specified price level of '$$'. The business is accessible 'anytime', aligning with the 'anytime' business hours constraint. The keyword factor is slightly lower because although the sample reviews mention decent food and good drinks, the food is described as ordinary, but drinks like the Hot Caramel Latte were praised, suggesting a strength in beverages over food. Overall, the business aligns very well with the constraints and sample reviews are largely positive, hence the high match percentage of 95.",
-      "placeName": "Thirty3brew Dharmahusada",
-      "priceLevel": "$$",
-      "rating": 4.7,
-      "strengths": [
-        "High customer rating of 4.7 out of 5 based on 873 reviews, indicating strong overall customer satisfaction.",
-        "Cozy and versatile atmosphere with various seating options (indoor non-smoking, indoor smoking, and outdoor), making it a suitable place for different types of activities such as working, hangouts, and casual meetings.",
-        "Highly praised beverages, particularly the Hot Caramel Latte and coffee varieties, which are highlighted as strengths by customers."
-      ],
-      "summaryNegativeReviews": "The drinks and food are underwhelming and overpriced, with the chicken wings and iced chocolate particularly disappointing. Customers expected better given the establishment's reputation.",
-      "summaryPositiveReviews": "Thirty3brew offers a cozy atmosphere with various seating options, friendly staff, good coffee, and a cool ambiance, making it ideal for work or hangout despite slightly high prices.",
-      "totalRatings": 873,
-      "weaknesses": [
-        "Food offerings are described as ordinary or underwhelming in multiple reviews, suggesting a need for improvement in the food menu quality.",
-        "Price perception could be a concern as some customers feel that the prices do not match the quality of the offerings, particularly for certain beverages.",
-        "Some negative reviews highlight disappointments in specific menu items like the iced chocolate and chicken wings, indicating inconsistency in product quality."
       ]
     },
     {
@@ -895,80 +85,38 @@
         "phone": "0857-3333-1107",
         "website": "N/A"
       },
-      "fitReason": "Grandfather Coffeeshop is an attractive lead due to its high customer satisfaction, unique ambiance, and affordability. However, the fit score is slightly reduced due to service delays, which could affect customer experience and lead conversion negatively. Improving service efficiency would likely enhance its appeal further.",
-      "fitScore": 85,
-      "matchFactors": {
-        "hours_factor": 1,
-        "keyword_factor": 0.8,
-        "price_factor": 1,
-        "rating_factor": 1,
-        "review_count_factor": 1
-      },
-      "matchPercentage": 92.0,
-      "matchReasoning": "Grandfather Coffeeshop is an excellent match with the provided constraints. It meets or exceeds the minimum rating and review count with a 4.5-star average and 958 reviews, showing high customer satisfaction and popularity. The price level ($$) matches perfectly with the required price range. The constraint of 'business hours: anytime' is met implicitly as there are no specific limitations here. Although the reviews highlight positive atmosphere, service, and affordability, the keyword factor receives a slight reduction since there's not a strong emphasis on any specific constraints-related keyword beyond 'affordable.' Overall, this business closely aligns with the constraints, warranting a high match percentage.",
-      "placeName": "Grandfather Coffeeshop",
-      "priceLevel": "$$",
-      "rating": 4.5,
-      "strengths": [
-        "Excellent customer satisfaction with a 4.5/5 rating and 958 reviews, indicating a strong reputation and popularity.",
-        "Unique vintage atmosphere and decor that provide a cozy and pleasant dining experience, enhancing customer enjoyment.",
-        "Affordable pricing that aligns well with customer expectations, making it accessible to a wide range of patrons including students."
+      "fitReason": "The Grandfather Coffeeshop scores highly due to its alignment with critical business constraints: high customer rating, numerous reviews, ideal price range, and unrestricted business hours. Despite minor issues with service delays and a slight gap in keyword relevancy, the overall strong customer experience and ambiance-focused offering make it a compelling choice for consumers valuing atmosphere and affordability.",
+      "fitScore": 95,
+      "keyThemes": [
+        "Vintage decor",
+        "Food variety",
+        "Service quality",
+        "Cozy atmosphere",
+        "Affordable pricing"
       ],
-      "summaryNegativeReviews": "Beautiful decor but extremely slow service with long wait times and little communication. Not ideal for those seeking quick dining.",
-      "summaryPositiveReviews": "Customers appreciate the cozy, vintage atmosphere, ideal for study or meetings. The service, affordable prices, and diverse menu\u2014from spicy tofu to ginger lemon tea\u2014receive praise.",
-      "totalRatings": 958,
-      "weaknesses": [
-        "Service efficiency concerns, notably long wait times for food, which may deter customers looking for a timely dining experience.",
-        "Limited emphasis on specific constraints-related keywords, which might leave potential customers unsure about additional offerings or specialties.",
-        "Potential inconsistency in service experience, as indicated by mixed reviews, which could impact repeat business and customer satisfaction."
-      ]
-    },
-    {
-      "address": "Jl. Pandan No.5, Ketabang, Kec. Genteng, Surabaya, Jawa Timur 60272, Indonesia",
-      "businessHours": [
-        "Monday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Tuesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Wednesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Thursday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Friday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Saturday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Sunday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
-      ],
-      "businessType": [
-        "cafe",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "N/A",
-        "website": "N/A"
-      },
-      "fitReason": "Mawu Cafe aligns well with target demographic needs and shows strong performance in crucial areas, scoring a potential fit score of 85. The strengths significantly outweigh the weaknesses, but improvements in managing indoor space and maintaining menu item quality could enhance customer experience and satisfaction further.",
-      "fitScore": 85,
       "matchFactors": {
         "hours_factor": 1.0,
-        "keyword_factor": 0.5,
+        "keyword_factor": 0.75,
         "price_factor": 1.0,
         "rating_factor": 1.0,
         "review_count_factor": 1.0
       },
-      "matchPercentage": 90.0,
-      "matchReasoning": "Mawu Cafe meets the constraints effectively with a high rating of 4.4 and a substantial number of 579 reviews, both exceeding the minimum requirements. The price level '$$' aligns perfectly with the specified price range, and the business hours constraint of 'anytime' is satisfied, based on the assumption that 'anytime' allows for flexible business hours. However, while sample reviews indicate popularity among a younger demographic and a favorable hangout venue, they also highlight a limitation regarding the small indoor area, which impacts the keyword factor. The indoor area's limited space could affect the comfort and capacity during busy times, hence the keyword factor is adjusted to 0.5. Overall, the business substantially aligns with the given constraints, resulting in a 90% match percentage.",
-      "placeName": "Mawu Cafe",
+      "matchPercentage": 95.0,
+      "matchReasoning": "The Grandfather Coffeeshop perfectly aligns with most of the constraints provided. The business has a high rating of 4.5, which exceeds the minimum required rating of 4.0 (rating_factor = 1.0). It also has 958 total reviews, far exceeding the minimum requirement of 50 reviews (review_count_factor = 1.0). The price level of the business is '$$', which matches the desired price range exactly (price_factor = 1.0). Furthermore, there's no constraint limiting the business hours, making the business hours a perfect match (hours_factor = 1.0). However, the sample reviews suggest elements like atmosphere and affordability but make less specific mention of keywords related to tasks beyond its ambiance, which provides only partial relevancy to specific business-focused keywords (keyword_factor = 0.75). This small gap in keyword relevancy reflects the slightly lower but still high match percentage of 95%. Overall, the business is an excellent match for the constraints provided.",
+      "placeName": "Grandfather Coffeeshop",
       "priceLevel": "$$",
-      "rating": 4.4,
+      "rating": 4.5,
       "strengths": [
-        "Highly rated with a 4.4 out of 5 from 579 reviews, indicating strong customer satisfaction.",
-        "Strategically located near a school, attracting a steady flow of young customers and ensuring consistent patronage.",
-        "Offers a cozy ambiance with both indoor and outdoor seating, which is appealing for various customer preferences."
+        "High rating of 4.5 from 958 reviews indicates strong customer satisfaction and popularity.",
+        "Cozy atmosphere and unique vintage design that provide a distinctive dining experience and appeal to customers seeking an ambiance-focused venue.",
+        "Affordable pricing within a standard cafe range, making it accessible to students and casual diners."
       ],
-      "summaryPositiveReviews": "Popular with Gen Z due to affordable prices and proximity to schools. Offers cozy ambiance, quick service, and photobooth. Indoor space limited but outdoor and design appeal to students.",
-      "totalRatings": 579,
+      "summaryNegativeReviews": "Customers praise the unique antique decor but criticize the excessively long service wait (two hours) with poor communication, suggesting improvement in service speed and updates.",
+      "summaryPositiveReviews": "Customers love the cozy, vintage atmosphere with live music, making it ideal for work or dining. It offers a diverse menu with highlights like Spicy Tofu and ginger lemon tea\u2014all at affordable prices.",
+      "totalRatings": 958,
       "weaknesses": [
-        "The indoor area is limited in size, which may lead to discomfort during peak hours and limit capacity.",
-        "Quality inconsistency in certain menu items, such as the Ferrero Latte, may affect repeat business from previously satisfied customers.",
-        "The spiciness level in certain dishes does not consistently match customer preferences, which could lead to dissatisfaction."
+        "Significant delays in service, with some customers experiencing long wait times for food, which can impact customer satisfaction negatively.",
+        "Less emphasis on task-specific business keywords in reviews, which may suggest the need for improvement in marketing specific offerings beyond ambiance."
       ]
     },
     {
@@ -984,73 +132,17 @@
       ],
       "businessType": [
         "cafe",
+        "point_of_interest",
         "store",
         "food",
-        "point_of_interest",
         "establishment"
       ],
       "contact": {
         "phone": "(031) 5033003",
         "website": "http://www.society.co.id/"
       },
-      "fitReason": "Historica is a strong lead with a high match percentage and significant positive reviews that highlight its diverse offerings and good customer service. However, the noted ambiance issues and mixed sentiments in the reviews indicate areas for improvement, slightly affecting its fit score. Addressing these weaknesses could enhance its appeal and increase customer retention.",
-      "fitScore": 85,
-      "keyThemes": [
-        "Ambience and atmosphere",
-        "Food and drink quality",
-        "Pricing and value",
-        "Staff friendliness",
-        "Venue space and layout"
-      ],
-      "matchFactors": {
-        "hours_factor": 1.0,
-        "keyword_factor": 0.75,
-        "price_factor": 1.0,
-        "rating_factor": 1.0,
-        "review_count_factor": 1.0
-      },
-      "matchPercentage": 90.0,
-      "matchReasoning": "Historica matches the constraints very well. The business meets all of the core requirements: it has a rating above the minimum required (4.4 vs. 4.0), its review count is well beyond the threshold (1935 vs. 50), and it is at the correct price level ($$). As the business hours constraint is 'anytime', there is no conflict here. However, there is a slight reduction in keyword factoring, as the sample reviews include mixed sentiments indicating potential issues such as ambiance with a 'smelly odor' and first impressions of seeming 'abandoned', although there are positive notes on space, design, and entertainment. Given these factors, the overall match percentage is high at 90%.",
-      "placeName": "Historica",
-      "priceLevel": "$$",
-      "rating": 4.4,
-      "strengths": [
-        "Historica boasts a strong rating of 4.4 out of 5 from a significant number of reviews (1935), indicating consistent customer satisfaction.",
-        "The venue is well-designed and has a versatile space that includes a restaurant, caf\u00e9, and bar, along with live band performances, enhancing its appeal as a multifunctional entertainment spot.",
-        "The staff is noted to be friendly and the establishment offers promotions and a wide range of options for food and drinks, which are mostly well-received for their taste and value."
-      ],
-      "summaryPositiveReviews": "Historica Garden offers a spacious, stylish cafe-bar-restaurant combo with a cozy, quiet atmosphere ideal for meet-ups. It features good coffee, tasty food options, and friendly staff, but could im...",
-      "totalRatings": 1935,
-      "weaknesses": [
-        "Some reviews mention issues with the ambiance, specifically noting odors and an initial impression of the place being abandoned, which could deter potential customers.",
-        "There are suggestions for improvement in food taste and maintenance of facilities like toilets, indicating areas where the customer experience is not meeting expectations.",
-        "Despite the high review count and rating, the mention of mixed sentiments could suggest underlying issues that are not immediately apparent but may affect repeat patronage."
-      ]
-    },
-    {
-      "address": "Jl. Manyar Kertoarjo III No.9, Manyar Sabrangan, Kec. Mulyorejo, Surabaya, Jawa Timur 60116, Indonesia",
-      "businessHours": [
-        "Monday: 7:00\u202fAM\u2009\u2013\u20097:45\u202fPM",
-        "Tuesday: 7:00\u202fAM\u2009\u2013\u20097:45\u202fPM",
-        "Wednesday: 7:00\u202fAM\u2009\u2013\u20097:45\u202fPM",
-        "Thursday: 7:00\u202fAM\u2009\u2013\u20097:45\u202fPM",
-        "Friday: 7:00\u202fAM\u2009\u2013\u20097:45\u202fPM",
-        "Saturday: 7:00\u202fAM\u2009\u2013\u20097:45\u202fPM",
-        "Sunday: 7:00\u202fAM\u2009\u2013\u20097:45\u202fPM"
-      ],
-      "businessType": [
-        "cafe",
-        "food",
-        "point_of_interest",
-        "store",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "0821-1688-1683",
-        "website": "http://instagram.com/aucafe.id"
-      },
-      "fitReason": "Aucafe Specialty Coffee is a strong candidate with a remarkable rating, appealing ambiance, and a perfect fit for the given constraints. However, the limited menu, accessibility issues, and service quality - as highlighted in the reviews - slightly decrease its suitability. Addressing these areas could enhance its attractiveness and increase potential customer satisfaction.",
-      "fitScore": 82,
+      "fitReason": "Historica possesses a strong foundation with a high customer satisfaction rate and diverse offerings, which align well with primary business constraints. However, noted issues with ambiance and certain operational aspects may require attention to fully realize its potential. With improvements in these areas, Historica can better enhance its customer experience and overall attraction.",
+      "fitScore": 78,
       "matchFactors": {
         "hours_factor": 1.0,
         "keyword_factor": 0.5,
@@ -1058,29 +150,28 @@
         "rating_factor": 1.0,
         "review_count_factor": 1.0
       },
-      "matchPercentage": 90.0,
-      "matchReasoning": "The business 'Aucafe Specialty Coffee' is an excellent match for the given constraints. It has a high rating of 4.7, exceeding the minimum requirement of 4.0, which results in a perfect rating_factor. The total reviews count of 456 also surpasses the minimum requirement of 50, resulting in a perfect review_count_factor. The price level '$$' is exactly the same as the desired price_range, leading to a perfect price_factor. The constraint on business hours is 'anytime', which is non-restrictive, hence the hours_factor is 1.0. However, there is some feedback in the reviews regarding overpriced drinks and the quality of service (e.g., not serving hot drinks as expected), which slightly impacts the keyword_factor. This reduces the overall match percentage slightly, as indicated by the keyword_factor of 0.5.",
-      "placeName": "Aucafe Specialty Coffee",
+      "matchPercentage": 85.0,
+      "matchReasoning": "Historica meets all primary constraints: it has a high rating (4.4), exceeds the minimum review count (1935 reviews), adheres to the specified price range ($$), and offers compatibility with the open business hours constraint ('anytime'). The keyword analysis, based on sample reviews, suggests mixed feedback regarding ambiance and odor, impacting the keyword factor negatively and slightly lowering the match percentage overall.",
+      "placeName": "Historica",
       "priceLevel": "$$",
-      "rating": 4.7,
+      "rating": 4.4,
       "strengths": [
-        "High customer rating of 4.7/5 from 456 reviews, indicating a generally positive customer experience.",
-        "Unique Japanese ambiance and concept that appeals to those looking for a distinctive environment.",
-        "Offers both indoor and outdoor seating, providing flexibility and accommodating different customer preferences for seating."
+        "High customer rating of 4.4 out of 5 based on 1935 reviews indicates a strong customer satisfaction and reliable service quality.",
+        "Diverse offerings including a cafe, bar, and restaurant provide a multifaceted dining experience which can attract a broad customer base.",
+        "The establishment is described as cozy and well-designed, making it appealing for gatherings and events. This adds value and attractiveness for customers seeking venues for social or corporate events."
       ],
-      "summaryNegativeReviews": "Customers like the cafe's aesthetics and concept but find the food options limited and often sold out. Signage and parking pose accessibility issues. Expand the menu and improve visibility.",
-      "summaryPositiveReviews": "Customers appreciate the caf\u00e9's cozy Japanese vibe and good coffee but highlight issues with limited non-coffee drink options, a small food menu, and a difficult parking situation. They suggest exp...",
-      "totalRatings": 456,
+      "summaryPositiveReviews": "Historica Garden offers a cozy ambiance with spacious design, friendly staff, live band, good coffee, and delicious Western cuisine. Suitable for events with reasonable pricing and Instagrammable s...",
+      "totalRatings": 1935,
       "weaknesses": [
-        "Limited food and drink options, particularly for non-coffee drinkers, which can deter some potential customers.",
-        "Difficult to find due to lack of visible signage and inadequate parking, creating inconvenience for new visitors.",
-        "Some feedback on the high prices and the quality of service, notably the temperature of served drinks and staff attentiveness."
+        "Negative feedback regarding ambiance and odor (such as a smelly odor like old humid fabric) has been noted, which can deter potential customers and impact overall customer experience.",
+        "Mixed reviews on food taste and areas like toilet odor suggest the need for improvements in specific operational aspects to enhance customer satisfaction.",
+        "The initial appearance of the establishment as an 'abandoned place' could generate negative first impressions, potentially influencing customer willingness to visit."
       ]
     }
   ],
   "$metadata": {
-    "createdAt": "2025-04-17T09:00:23.658511+00:00Z",
-    "startedAt": "2025-04-17T09:00:26.491321+00:00Z",
-    "executionTotal": 143
+    "createdAt": "2025-04-18T06:18:42.302667+00:00Z",
+    "startedAt": "2025-04-18T06:18:46.341656+00:00Z",
+    "executionTotal": 22
   }
 }
