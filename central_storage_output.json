@@ -1,122 +1,81 @@
 {
-  "$id": "c2e28ee5-d8a8-4008-af89-f01e1acff2bf",
+  "$id": "9d3772ab-7bba-4398-8315-86d5b1f9a9eb",
   "$state": {
-    "businessType": "caffe",
+    "businessType": "cafes",
     "leadCount": 3,
     "location": "Surabaya",
     "numberOfLeads": 3,
     "remainingPlaceIds": [],
-    "searchOffset": 6,
-    "skippedCount": 2,
-    "nextPageToken": "AeeoHcL0NSmXTzswYlbZkgDi8CuXVDtyZe46EW1ZxLCRmNoIDIody22eIRNGqPrerSmzYWXIpCHTUpAvylznaxbJ3A7k-EWncQJdaC4087uY9zogAreu0rYRefutTSc_6pbRCmjcOxng92CoaUtVeluJE_raNPs0CUUa70FsFfHST5bC_6yprDnEL7CbpkS1pFQy64YOF0VShCGEI8DyD_JnVtcXkMsPqttL2LCZS93XXxgMoj5l9t2cCbPIt3S_ZjW90H7Noo1xtfARnp8MbxJVI_yK4-LdUmyzr88jBswRxI5iq4RT_gfudhzue_fQliaF7ST5dOlRLYsz_Uj__pGTFnddh15GsIq7rPNDCcZSifWO77Al6qcxSqgpk_tTii-3wQUFzZZGGuLVn3ljcDYVNT6zNg53uyvz6ZiMPfcodo-oa1a75OUfZ5omKYelzafAd1X4EC9w-MaLsPPHD_X8hXVxkDrpieUAR1VmV0r3SE2WSJE7rnvAUFJ6GwXuA0cjdaoMue7wDSTDfFr6xAuMPknnFGHRWLmtwkPUQq73-2ZrnGYNvPl8_N9bf4bjAMB_3BlB5F8ymBy1Wf34fsGmcfX0PMuzvVtw7TQptJuylQ",
+    "searchOffset": 4,
+    "skippedCount": 0,
+    "nextPageToken": "AeeoHcIyfJ4cAmw_4KcY8AAJiDt70AERv1hv78b5R3Zd8VU8BEix0-V0yLeRTTenOAXVeWYytWqv1iKtSYDrktdTEcoec9w6hEHEbmg5NQ7e3KVRA0nPETcjmv09Ek0s9aVmbkIWjqhA1Vg89dnq19yXkTQvzqpBPlCTuyfyEZeDPwxgz2IFGwwogeCBg6XynJZecKSznwvtJFhBAOe9ZGuYE2dsKa67_DFX2Ko9CRCeVFnwmoQRwpkcvwG83QQjLA9YVPURwl8pgNyWi_OlxcgMjuwEhnAXb0x31Ibch-OQAyWPh5zBkSz6_WjrltGLwz25wk0yj41imsbD8266rTqGCt1fUBxY3c4A29qUa8MeBbdGQct1v38rXF1D3D0AUKCksKvydHpyhjAz9bcBrhO1",
+    "searchKeyword": "",
     "skippedConstraints": true
   },
   "$results": [
     {
-      "address": "Jl. Pandan No.5, Ketabang, Kec. Genteng, Surabaya, Jawa Timur 60272, Indonesia",
+      "address": "Jl. Sumatera No.40, Gubeng, Kec. Gubeng, Surabaya, Jawa Timur 60281, Indonesia",
       "businessHours": [
-        "Monday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Tuesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Wednesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Thursday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Friday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Saturday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Sunday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+        "Monday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Tuesday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Wednesday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Thursday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Friday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Saturday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Sunday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM"
       ],
       "businessType": [
         "cafe",
         "food",
+        "store",
         "point_of_interest",
         "establishment"
       ],
       "contact": {
-        "phone": "N/A",
-        "website": "N/A"
+        "phone": "(031) 5033003",
+        "website": "http://www.society.co.id/"
       },
-      "fitReason": "Score based on match percentage only",
-      "fitScore": 95,
+      "fitReason": "Historica is a high-potential business lead with a match percentage of 90.0%. The cafe effectively meets most of the given constraints, scoring well in rating, review count, price range, and business hours compatibility. However, minor ambiance factors based on customer feedback suggest further improvement to maximize positive customer experiences. Despite a few areas for improvement, its extensive reviews and strong ratings support its status as an appealing business proposition.",
+      "fitScore": 90,
       "keyThemes": [
-        "Gen Z hangout spot",
-        "Affordable pricing",
-        "Mixed food quality",
-        "Cozy ambience",
-        "Small indoor space"
+        "ambience",
+        "food quality",
+        "drink quality",
+        "staff friendliness",
+        "venue design"
       ],
+      "keywordAnalysis": {
+        "foundKeywords": {},
+        "keywordMatches": 0,
+        "message": "0 keyword found from 0 reviews",
+        "relatedKeywords": [],
+        "searchKeyword": "",
+        "synonymMapping": {},
+        "totalReviews": 5
+      },
       "matchFactors": {
         "hours_factor": 1.0,
-        "keyword_factor": 0.75,
+        "keyword_factor": 0.5,
         "price_factor": 1.0,
         "rating_factor": 1.0,
         "review_count_factor": 1.0
       },
-      "matchPercentage": 95.0,
-      "matchReasoning": "Mawu Cafe matches the constraints very closely. It exceeds the minimum rating of 4.0 with a 4.4, and the number of reviews (581) is well above the required 50, resulting in both a rating_factor and review_count_factor of 1.0. The price level of '$$' matches perfectly with the constraint, giving a price_factor of 1.0. The business is categorized as 'anytime' suggesting it is open to fulfilling various time-based needs, aligning it perfectly with the business_hours constraint, thus a hours_factor of 1.0. However, the keyword_factor is slightly lower at 0.75; although Mawu Cafe is a popular hangout for Gen Z, as inferred from the sample reviews, the constraint does not mention a specific target demographic, causing a slight deduction as broader appeal is not explicitly highlighted. Overall, the cafe fits extremely well within the provided constraints, yielding a high match percentage of 95%.",
-      "placeName": "Mawu Cafe",
+      "matchPercentage": 90.0,
+      "matchReasoning": "The business 'Historica' matches exceptionally well with the given constraints. It exceeds the minimum rating requirement of 4.0 with a rating of 4.4, and has a significant number of reviews (1936), which is much higher than the minimum required count of 5, resulting in both the rating and review count factors scoring 1.0. The price level falls directly within the specified '$$' price range, scoring a price factor of 1.0. Since the constraint for business hours is 'anytime', it is fully compatible, giving an hours factor of 1.0. However, based on the sample reviews provided, the keyword factor is slightly lower at 0.5 due to mixed sentiments evident in the reviews: while some aspects like the space, design, and music are well appreciated, initial impressions of the cafe being quiet and having a smelly odor slightly detract from an otherwise positive experience. The overall match percentage is high at 90, demonstrating that the business generally aligns well with the constraints despite minor areas for improvement in ambiance as suggested by customer feedback.",
+      "placeName": "Historica",
       "priceLevel": "$$",
       "rating": 4.4,
       "strengths": [
-        "Based on available reviews"
+        "Historica has a strong customer rating of 4.4/5 from a substantial number of reviews (1936), indicating consistent customer satisfaction.",
+        "The establishment is well-designed with diverse space utilization, featuring a cafe, restaurant, and a bar, which are well-appreciated aspects in reviews.",
+        "It offers a variety of food, beverage, and dessert options, mainly western cuisine, with portions and prices considered reasonable by patrons."
       ],
-      "summaryPositiveReviews": "Popular with Gen Z, this cafe offers cozy seating and quick service. It features a photobooth, affordable menu, and easy self-pickup system. Indoor space is limited.",
-      "totalRatings": 581,
+      "summaryPositiveReviews": "Historica Garden is a spacious, stylish spot ideal for socializing, offering good coffee, satisfactory food, live music, and event booking. Improvements needed in food taste and toilet odor.",
+      "totalRatings": 1936,
       "weaknesses": [
-        "Insufficient data for detailed analysis"
-      ]
-    },
-    {
-      "address": "Jl. Kalasan No.25 I, Pacar Keling, Kec. Tambaksari, Surabaya, Jawa Timur 60131, Indonesia",
-      "businessHours": [
-        "Monday: 5:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-        "Tuesday: 5:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-        "Wednesday: 5:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-        "Thursday: 5:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-        "Friday: 5:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-        "Saturday: 5:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-        "Sunday: 5:00\u202fPM\u2009\u2013\u200912:00\u202fAM"
-      ],
-      "businessType": [
-        "cafe",
-        "store",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "0857-3333-1107",
-        "website": "N/A"
-      },
-      "fitReason": "The Grandfather Coffeeshop scores highly due to its alignment with critical business constraints: high customer rating, numerous reviews, ideal price range, and unrestricted business hours. Despite minor issues with service delays and a slight gap in keyword relevancy, the overall strong customer experience and ambiance-focused offering make it a compelling choice for consumers valuing atmosphere and affordability.",
-      "fitScore": 95,
-      "keyThemes": [
-        "Vintage decor",
-        "Food variety",
-        "Service quality",
-        "Cozy atmosphere",
-        "Affordable pricing"
-      ],
-      "matchFactors": {
-        "hours_factor": 1.0,
-        "keyword_factor": 0.75,
-        "price_factor": 1.0,
-        "rating_factor": 1.0,
-        "review_count_factor": 1.0
-      },
-      "matchPercentage": 95.0,
-      "matchReasoning": "The Grandfather Coffeeshop perfectly aligns with most of the constraints provided. The business has a high rating of 4.5, which exceeds the minimum required rating of 4.0 (rating_factor = 1.0). It also has 958 total reviews, far exceeding the minimum requirement of 50 reviews (review_count_factor = 1.0). The price level of the business is '$$', which matches the desired price range exactly (price_factor = 1.0). Furthermore, there's no constraint limiting the business hours, making the business hours a perfect match (hours_factor = 1.0). However, the sample reviews suggest elements like atmosphere and affordability but make less specific mention of keywords related to tasks beyond its ambiance, which provides only partial relevancy to specific business-focused keywords (keyword_factor = 0.75). This small gap in keyword relevancy reflects the slightly lower but still high match percentage of 95%. Overall, the business is an excellent match for the constraints provided.",
-      "placeName": "Grandfather Coffeeshop",
-      "priceLevel": "$$",
-      "rating": 4.5,
-      "strengths": [
-        "High rating of 4.5 from 958 reviews indicates strong customer satisfaction and popularity.",
-        "Cozy atmosphere and unique vintage design that provide a distinctive dining experience and appeal to customers seeking an ambiance-focused venue.",
-        "Affordable pricing within a standard cafe range, making it accessible to students and casual diners."
-      ],
-      "summaryNegativeReviews": "Customers praise the unique antique decor but criticize the excessively long service wait (two hours) with poor communication, suggesting improvement in service speed and updates.",
-      "summaryPositiveReviews": "Customers love the cozy, vintage atmosphere with live music, making it ideal for work or dining. It offers a diverse menu with highlights like Spicy Tofu and ginger lemon tea\u2014all at affordable prices.",
-      "totalRatings": 958,
-      "weaknesses": [
-        "Significant delays in service, with some customers experiencing long wait times for food, which can impact customer satisfaction negatively.",
-        "Less emphasis on task-specific business keywords in reviews, which may suggest the need for improvement in marketing specific offerings beyond ambiance."
+        "Initial impressions of the cafe as quiet with a notably unpleasant odor upon entry detract from the overall experience, needing improvement in ambiance.",
+        "Although praised for ambiance and space, the taste of food has received mixed feedback, indicating potential areas for enhancement in menu offerings.",
+        "Facilities such as restrooms have had mixed reviews and may benefit from maintenance improvements to enhance customer satisfaction."
       ]
     },
     {
@@ -132,46 +91,127 @@
       ],
       "businessType": [
         "cafe",
-        "point_of_interest",
         "store",
         "food",
+        "point_of_interest",
         "establishment"
       ],
       "contact": {
         "phone": "(031) 5033003",
         "website": "http://www.society.co.id/"
       },
-      "fitReason": "Historica possesses a strong foundation with a high customer satisfaction rate and diverse offerings, which align well with primary business constraints. However, noted issues with ambiance and certain operational aspects may require attention to fully realize its potential. With improvements in these areas, Historica can better enhance its customer experience and overall attraction.",
-      "fitScore": 78,
-      "matchFactors": {
-        "hours_factor": 1.0,
-        "keyword_factor": 0.5,
-        "price_factor": 1.0,
-        "rating_factor": 1.0,
-        "review_count_factor": 1.0
+      "fitReason": "Historica demonstrates a high match percentage of 90% with strong overall ratings and an appealing establishment concept. Despite some mentioned environmental drawbacks and minor service areas for improvement, the cafe offers a unique setting with additional perks like event space and live music, making it a compelling choice for social and dining outings. The presence of some negative keywords in reviews slightly detracts from reaching a perfect fit score but still positions Historica as a strong lead.",
+      "fitScore": 85,
+      "keyThemes": [
+        "Ambience",
+        "Food Quality",
+        "Service",
+        "Space and Design",
+        "Price"
+      ],
+      "keywordAnalysis": {
+        "foundKeywords": {},
+        "keywordMatches": 0,
+        "message": "0 keyword found from 0 reviews",
+        "relatedKeywords": [],
+        "searchKeyword": "",
+        "synonymMapping": {},
+        "totalReviews": 5
       },
-      "matchPercentage": 85.0,
-      "matchReasoning": "Historica meets all primary constraints: it has a high rating (4.4), exceeds the minimum review count (1935 reviews), adheres to the specified price range ($$), and offers compatibility with the open business hours constraint ('anytime'). The keyword analysis, based on sample reviews, suggests mixed feedback regarding ambiance and odor, impacting the keyword factor negatively and slightly lowering the match percentage overall.",
+      "matchFactors": {
+        "hours_factor": 1,
+        "keyword_factor": 0.8,
+        "price_factor": 1,
+        "rating_factor": 1,
+        "review_count_factor": 1
+      },
+      "matchPercentage": 90.0,
+      "matchReasoning": "Historica meets or exceeds all the defined constraints. The business has a high rating of 4.4, which is above the minimum required 4.0, resulting in a perfect rating factor. The total number of reviews, 1936, significantly exceeds the minimum requirement of 5, ensuring a complete review count factor. The price level of $$ matches the specified price range, contributing to a high price factor. The constraint for business hours being 'anytime' is inherently satisfied, resulting in a perfect hours factor. However, the keywords in the reviews\u2014such as 'abandoned', 'smelly', and 'humid'\u2014suggest some negative elements that could detract from the overall customer experience, slightly reducing the keyword factor to 0.8. This small deduction results in the overall match percentage being 90 instead of 100.",
       "placeName": "Historica",
       "priceLevel": "$$",
       "rating": 4.4,
       "strengths": [
-        "High customer rating of 4.4 out of 5 based on 1935 reviews indicates a strong customer satisfaction and reliable service quality.",
-        "Diverse offerings including a cafe, bar, and restaurant provide a multifaceted dining experience which can attract a broad customer base.",
-        "The establishment is described as cozy and well-designed, making it appealing for gatherings and events. This adds value and attractiveness for customers seeking venues for social or corporate events."
+        "Historica maintains a strong overall rating of 4.4 out of 5 from a large pool of 1936 reviews, indicating a generally favorable reception from customers.",
+        "The establishment offers a versatile space including a restaurant, cafe, and bar, which appeals to a wide range of customer preferences and occasions.",
+        "The price range is seen as fair and reasonable ($$), which contributes positively to customer satisfaction and value perception."
       ],
-      "summaryPositiveReviews": "Historica Garden offers a cozy ambiance with spacious design, friendly staff, live band, good coffee, and delicious Western cuisine. Suitable for events with reasonable pricing and Instagrammable s...",
-      "totalRatings": 1935,
+      "summaryPositiveReviews": "Historica Garden is stylish, spacious, and has a friendly staff, making it ideal for gatherings. It offers diverse food options, good coffee, and booking options for events. The ambience is cozy an...",
+      "totalRatings": 1936,
       "weaknesses": [
-        "Negative feedback regarding ambiance and odor (such as a smelly odor like old humid fabric) has been noted, which can deter potential customers and impact overall customer experience.",
-        "Mixed reviews on food taste and areas like toilet odor suggest the need for improvements in specific operational aspects to enhance customer satisfaction.",
-        "The initial appearance of the establishment as an 'abandoned place' could generate negative first impressions, potentially influencing customer willingness to visit."
+        "Customer feedback highlights areas of concern regarding the ambiance, with specific mentions of an unpleasant odor described as 'smelly' and 'humid', which could adversely affect the customer experience.",
+        "Currently, food taste and specific facilities like the toilets have been pointed out for improvements, potentially impacting repeat visits and overall customer satisfaction."
+      ]
+    },
+    {
+      "address": "Jl. Kalasan No.25 I, Pacar Keling, Kec. Tambaksari, Surabaya, Jawa Timur 60131, Indonesia",
+      "businessHours": [
+        "Monday: 5:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+        "Tuesday: 5:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+        "Wednesday: 5:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+        "Thursday: 5:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+        "Friday: 5:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+        "Saturday: 5:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
+        "Sunday: 5:00\u202fPM\u2009\u2013\u200912:00\u202fAM"
+      ],
+      "businessType": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "0857-3333-1107",
+        "website": "N/A"
+      },
+      "fitReason": "Grandfather Coffeeshop exhibits a strong fit with customer expectations based on its high rating, distinctive atmosphere, and value pricing. This is somewhat offset by the notable service speed issues and lack of keyword diversity in customer reviews. Overall, the cafe is appealing to those valuing unique dining experiences and vintage aesthetics but may lose potential customers seeking prompt service.",
+      "fitScore": 85,
+      "keyThemes": [
+        "Vintage ambience",
+        "Cozy atmosphere",
+        "Service quality",
+        "Affordable pricing",
+        "Diverse menu"
+      ],
+      "keywordAnalysis": {
+        "foundKeywords": {},
+        "keywordMatches": 0,
+        "message": "0 keyword found from 0 reviews",
+        "relatedKeywords": [],
+        "searchKeyword": "",
+        "synonymMapping": {},
+        "totalReviews": 5
+      },
+      "matchFactors": {
+        "hours_factor": 1.0,
+        "keyword_factor": 0.8,
+        "price_factor": 1.0,
+        "rating_factor": 1.0,
+        "review_count_factor": 1.0
+      },
+      "matchPercentage": 95.0,
+      "matchReasoning": "Grandfather Coffeeshop strongly matches the given constraints. The business meets or exceeds the minimum rating requirement with a 4.5 rating, which is comfortably above the minimum of 4.0. It also surpasses the minimum review threshold, having 962 reviews, well above the required 5. The price level is exactly as specified in the constraints ($$), and the business hours being listed as 'anytime' fits the given criterion, indicating no specified hours constraints. Keywords from sample reviews such as \u2018atmosphere\u2019, \u2018meeting\u2019, \u2018service\u2019, \u2018affordable price\u2019, and \u2018taste is good\u2019 align closely with the implied desirable features, enhancing the keyword factor slightly less than perfect due to limited varieties of keywords directly related to constraints, achieving an 80% match on that factor. Overall, the business is a strong fit for the constraints, with only a minor drawback in the keyword diversity.",
+      "placeName": "Grandfather Coffeeshop",
+      "priceLevel": "$$",
+      "rating": 4.5,
+      "strengths": [
+        "The business has a high customer satisfaction rating of 4.5 out of 5, based on 962 reviews, indicating strong overall customer approval.",
+        "The cafe provides a unique and well-received atmosphere with vintage design and antique decor, enhancing the dining experience.",
+        "Pricing is affordable, matching customer expectations and making it accessible to a broad audience, including students."
+      ],
+      "summaryNegativeReviews": "Beautiful antique decor but extremely slow service; waited two hours for food with poor staff communication. Not ideal for quick dining despite the charming atmosphere.",
+      "summaryPositiveReviews": "Customers appreciate the cozy, vintage atmosphere and affordable prices. It's ideal for meetings and studying. The Spicy Tofu and ginger lemon tea are favorites. A hidden gem with a retro vibe.",
+      "totalRatings": 962,
+      "weaknesses": [
+        "Service speed is reported as a significant issue, with instances of long wait times, which could deter customers looking for quick dining experiences.",
+        "Limited keyword diversity in reviews indicates potential areas for improvement in offerings or experience to fully align with varied consumer expectations.",
+        "Communication from staff during delays has been flagged as insufficient, potentially impacting customer satisfaction negatively."
       ]
     }
   ],
   "$metadata": {
-    "createdAt": "2025-04-18T06:18:42.302667+00:00Z",
-    "startedAt": "2025-04-18T06:18:46.341656+00:00Z",
-    "executionTotal": 22
+    "createdAt": "2025-04-24T16:12:57.916546+00:00Z",
+    "startedAt": "2025-04-24T16:13:00.520961+00:00Z",
+    "executionTotal": 15
   }
 }
