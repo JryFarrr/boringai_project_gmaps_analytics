@@ -15,11 +15,13 @@ input_dict = {
                     },
                     'numberOfLeads': {'type': 'integer','example': 3
                     },
-                    'minRating': {'type': 'number','format': 'float','example': 4.0
+                    'min_rating': {'type': 'number','format': 'float','example': 4.0
                     },
-                    'minReviews': {'type': 'integer','example': 50
+                    'min_reviews': {'type': 'integer','example': 50
                     },
-                    'priceRange': {'type': 'string','example': '$$'
+                    'max_reviews': {'type': 'integer','example': 100
+                    },
+                    'price_range': {'type': 'string','example': '$$'
                     },
                     'keywords': {'type': 'string','example': 'cocok buat nugas'
                     },

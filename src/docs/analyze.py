@@ -91,18 +91,11 @@ analyze_dict = {
                                 'items': {'type': 'string'},
                                 'example': ["The cashier & greater are not friendly.  The smoking area is dirty and smells like a cat's poop."]
                             },
-                            'priceRange': {
-                                'type': 'string',
-                                'example': '$$'
+                            'priceRange': {'type': 'string','example': '$$'
                             },
-                            'rating': {
-                                'type': 'number',
-                                'format': 'float',
-                                'example': 4.5
+                            'rating': {'type': 'number','format': 'float','example': 4.5
                             },
-                            'totalRatings': {
-                                'type': 'integer',
-                                'example': 4202
+                            'totalRatings': {'type': 'integer','example': 4202
                             }
                         }
                     },
@@ -113,26 +106,17 @@ analyze_dict = {
                     'constraints': {
                         'type': 'object',
                         'properties': {
-                            'min_rating': {
-                                'type': 'number',
-                                'format': 'float',
-                                'example': 4.0
+                            'min_rating': {'type': 'number','format': 'float','example': 4.0
                             },
-                            'min_reviews': {
-                                'type': 'integer',
-                                'example': 50
+                            'min_reviews': {'type': 'integer','example': 50
                             },
-                            'price_range': {
-                                'type': 'string',
-                                'example': '$$'
+                            'max_reviews': {'type': 'integer','example': 100
                             },
-                            'business_hours': {
-                                'type': 'string',
-                                'example': 'anytime'
+                            'price_range': {'type': 'string','example': '$$'
                             },
-                            'keywords': {
-                                'type': 'string',
-                                'example': 'cocok buat nugas'
+                            'business_hours': {'type': 'string','example': 'anytime'
+                            },
+                            'keywords': {'type': 'string','example': 'cocok buat nugas'
                             }
                         }
                     }
