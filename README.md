@@ -52,7 +52,13 @@ DEFAULT_OPENROUTER_MODEL=openai/gpt-4o-mini
 python app.py
 ```
 
-### 4. Server Berjalan di `http://localhost:5000`
+### 4. Jalankan Workflow Executor
+
+```bash
+python WorkflowExecutor.py
+```
+
+### 5. Server Berjalan di `http://localhost:5000`
 
 ## Dokumentasi Swagger
 
