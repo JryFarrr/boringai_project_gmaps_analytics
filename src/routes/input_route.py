@@ -15,12 +15,21 @@ from src.services.input_service import create_initial_state, create_input_respon
             'schema': {
                 'type': 'object',
                 'properties': {
-                    'businessType': {'type': 'string','example': 'restaurant'
+                    'businessType': {'type': 'string','example': 'cafe'
                     },
                     'location': {'type': 'string','example': 'Surabaya'
                     },
-                    'numberOfLeads': {'type': 'integer','example': 10
+                    'numberOfLeads': {'type': 'integer','example': 3
                     },
+                    'minRating': {'type': 'number','format': 'float','example': 4.0
+                    },
+                    'minReviews': {'type': 'integer','example': 50
+                    },
+                    'priceRange': {'type': 'string','example': '$$'
+                    },
+                    'keywords': {'type': 'string','example': 'cocok buat nugas'
+                    },
+                    'business_hours': {'type': 'string', 'example': 'anytime'}
                 },
                 'required': ['businessType', 'location']
             }

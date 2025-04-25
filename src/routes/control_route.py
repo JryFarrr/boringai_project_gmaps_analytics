@@ -19,11 +19,29 @@ from src.services.control_service import (
             'schema': {
                 'type': 'object',
                 'properties': {
-                    'leadCount': {'type': 'integer', 'example': 1},
-                    'numberOfLeads': {'type': 'integer', 'example': 10},
-                    'remainingPlaceIds': {
-                        'type': 'array', 'items': {'type': 'string'}
+                    'leadCount': {'type': 'integer','example': 5
                     },
+                    'numberOfLeads': {'type': 'integer','example': 10
+                    },
+                    'remainingPlaceIds': {
+                        'type': 'array',
+                        'items': {
+                            'type': 'string'
+                        },
+                        'example': ['placeId1', 'placeId2', 'placeId3']
+                    },
+                    'searchOffset': {'type': 'integer','example': 2
+                    },
+                    'nextPageToken': {'type': 'string','example': 'nextPageTokenExample'
+                    },
+                    'business_type': {'type': 'string','example': 'restaurant'
+                    },
+                    'location': {'type': 'string','example': 'New York, NY'
+                    },
+                    'skippedConstraints': {'type': 'boolean','example': True
+                    },
+                    'skippedCount': {'type': 'integer','example': 1
+                    }
                 },
                 'required': ['leadCount', 'numberOfLeads']
             }
