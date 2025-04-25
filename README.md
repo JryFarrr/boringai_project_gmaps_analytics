@@ -89,19 +89,27 @@ Setelah server berjalan, dokumentasi API dapat diakses melalui:
 
 ```json
 {
-  "businessType": "restaurant",
+  "businessType": "cafe",
   "location": "Surabaya",
-  "numberOfLeads": 10,
-  "searchOffset": 0
+  "numberOfLeads": 3,
+  "min_rating": 4.0,
+  "min_reviews": 50,
+  "price_range": "$$",
+  "keywords": "cocok buat nugas",
+  "business_hours": "anytime"
 }
 ```
 
-| Parameter       | Type    | Required | Description                                              | Example      |
-| --------------- | ------- | -------- | -------------------------------------------------------- | ------------ |
-| `businessType`  | string  | Yes      | Jenis bisnis yang dicari (misalnya: restoran, kafe, dll) | `restaurant` |
-| `location`      | string  | Yes      | Lokasi pencarian                                         | `Surabaya`   |
-| `numberOfLeads` | integer | Yes      | Jumlah lead yang diinginkan                              | `10`         |
-| `searchOffset`  | integer | No       | Offset untuk pencarian lebih lanjut                      | `0`          |
+| Parameter        | Type    | Required | Description                                                   | Example              |
+| ---------------- | ------- | -------- | ------------------------------------------------------------- | -------------------- |
+| `businessType`   | string  | Yes      | Jenis bisnis yang akan dicari (misalnya: restoran, kafe, dll) | `"cafe"`             |
+| `location`       | string  | Yes      | Lokasi tempat pencarian dilakukan                             | `"Surabaya"`         |
+| `numberOfLeads`  | integer | Yes      | Jumlah lead yang diinginkan                                   | `3`                  |
+| `min_rating`     | float   | No       | Rating minimal dari tempat yang dicari                        | `4.0`                |
+| `min_reviews`    | integer | No       | Jumlah minimal review dari tempat tersebut                    | `50`                 |
+| `price_range`    | string  | No       | Rentang harga dari tempat                                     | `"$$"`               |
+| `keywords`       | string  | No       | Kata kunci tambahan yang relevan dengan kebutuhan pengguna    | `"cocok buat nugas"` |
+| `business_hours` | string  | No       | Waktu operasional yang diinginkan (`anytime` / jam tertentu)  | `"anytime"`          |
 
 ### `POST /task/scrape`
 
@@ -129,31 +137,85 @@ Setelah server berjalan, dokumentasi API dapat diakses melalui:
 
 ```json
 {
+  "leadCount": 0,
+  "numberOfLeads": 3,
   "placeDetails": {
-    "placeName": "Cafe Delight",
+    "address": "Jl. Raya Jemursari No.71, Jemur Wonosari, Kec. Wonocolo, Surabaya, Jawa Timur 60237, Indonesia",
+    "businessHours": [
+      "Monday: 8:00 AM – 10:00 PM",
+      "Tuesday: 8:00 AM – 10:00 PM",
+      "Wednesday: 8:00 AM – 10:00 PM",
+      "Thursday: 8:00 AM – 10:00 PM",
+      "Friday: 8:00 AM – 10:00 PM",
+      "Saturday: 8:00 AM – 10:00 PM",
+      "Sunday: 8:00 AM – 10:00 PM"
+    ],
+    "businessType": [
+      "cafe",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "store",
+      "establishment"
+    ],
     "contact": {
-      "phone": "123-456-7890",
-      "website": "https://cafedelight.com"
+      "phone": "(031) 8480367",
+      "website": "http://instagram.com/demandailingcafe"
     },
+    "location": {
+      "lat": -7.3225321,
+      "lng": 112.7423232
+    },
+    "negativeReviews": [
+      "The cashier & greater are not friendly.  The smoking area is dirty and smells like a cat's poop."
+    ],
+    "placeName": "Demandailing Cafe",
+    "positiveReviews": [
+      "Always like being here...",
+      "It was my very first visit to Demandailing Cafe...",
+      "Good services and kind staff...",
+      "Best pancake I've ever tasted..."
+    ],
     "priceRange": "$$",
-    "positiveReviews": ["Great vibe"],
-    "negativeReviews": ["Crowded"]
+    "rating": 4.5,
+    "totalRatings": 4202
   },
-  "leadCount": 0
+  "skippedCount": 0,
+  "constraints": {
+    "min_rating": 4.0,
+    "min_reviews": 50,
+    "price_range": "$$",
+    "business_hours": "anytime",
+    "keywords": "cocok buat nugas"
+  }
 }
 ```
 
-| Parameter                      | Type    | Required | Description                                | Example                   |
-| ------------------------------ | ------- | -------- | ------------------------------------------ | ------------------------- |
-| `placeDetails`                 | object  | Yes      | Objek yang berisi informasi detail bisnis  | `{...}`                   |
-| `placeDetails.placeName`       | string  | Yes      | Nama bisnis atau tempat                    | `Cafe Delight`            |
-| `placeDetails.contact`         | object  | Yes      | Informasi kontak bisnis                    | `{...}`                   |
-| `placeDetails.contact.phone`   | string  | No       | Nomor telepon bisnis                       | `123-456-7890`            |
-| `placeDetails.contact.website` | string  | No       | Website resmi bisnis                       | `https://cafedelight.com` |
-| `placeDetails.priceRange`      | string  | No       | Rentang harga                              | `$$`                      |
-| `placeDetails.positiveReviews` | array   | No       | Daftar ulasan positif dari pelanggan       | `["Great vibe"]`          |
-| `placeDetails.negativeReviews` | array   | No       | Daftar ulasan negatif dari pelanggan       | `["Crowded"]`             |
-| `leadCount`                    | integer | Yes      | Jumlah lead yang sudah diproses sebelumnya | `0`                       |
+| Parameter                      | Type    | Required | Description                                            | Example                                   |
+| ------------------------------ | ------- | -------- | ------------------------------------------------------ | ----------------------------------------- |
+| `leadCount`                    | integer | Yes      | Jumlah lead yang telah dianalisis                      | `0`                                       |
+| `numberOfLeads`                | integer | Yes      | Jumlah total lead yang ingin dianalisis                | `3`                                       |
+| `placeDetails`                 | object  | Yes      | Objek yang berisi informasi lengkap mengenai tempat    | `{...}`                                   |
+| `placeDetails.placeName`       | string  | Yes      | Nama tempat bisnis                                     | `"Demandailing Cafe"`                     |
+| `placeDetails.address`         | string  | No       | Alamat lengkap tempat bisnis                           | `"Jl. Raya Jemursari No.71, ..."`         |
+| `placeDetails.businessHours`   | array   | No       | Jam operasional bisnis                                 | `[ "Monday: 8:00 AM – 10:00 PM", ... ]`   |
+| `placeDetails.businessType`    | array   | No       | Jenis-jenis bisnis yang teridentifikasi                | `["cafe", "restaurant", ...]`             |
+| `placeDetails.contact`         | object  | No       | Informasi kontak bisnis                                | `{ "phone": "...", "website": "..." }`    |
+| `placeDetails.contact.phone`   | string  | No       | Nomor telepon tempat bisnis                            | `"(031) 8480367"`                         |
+| `placeDetails.contact.website` | string  | No       | Website resmi dari tempat bisnis                       | `"http://instagram.com/demandailingcafe"` |
+| `placeDetails.location`        | object  | No       | Lokasi geografis bisnis (latitude & longitude)         | `{ "lat": -7.32253, "lng": 112.74232 }`   |
+| `placeDetails.positiveReviews` | array   | No       | Review positif dari pelanggan                          | `["Great food!", "Nice place."]`          |
+| `placeDetails.negativeReviews` | array   | No       | Review negatif dari pelanggan                          | `["Bad service."]`                        |
+| `placeDetails.priceRange`      | string  | No       | Rentang harga dari bisnis                              | `"$$"`                                    |
+| `placeDetails.rating`          | float   | No       | Rating rata-rata dari pelanggan                        | `4.5`                                     |
+| `placeDetails.totalRatings`    | integer | No       | Jumlah total rating yang diterima                      | `4202`                                    |
+| `skippedCount`                 | integer | No       | Jumlah tempat yang dilewati karena tidak sesuai filter | `0`                                       |
+| `constraints`                  | object  | No       | Syarat/parameter filtering pencarian                   | `{...}`                                   |
+| `constraints.min_rating`       | float   | No       | Rating minimum tempat                                  | `4.0`                                     |
+| `constraints.min_reviews`      | integer | No       | Jumlah review minimum                                  | `50`                                      |
+| `constraints.price_range`      | string  | No       | Rentang harga yang diinginkan                          | `"$$"`                                    |
+| `constraints.business_hours`   | string  | No       | Waktu operasional yang diinginkan                      | `"anytime"`                               |
+| `constraints.keywords`         | string  | No       | Kata kunci relevan untuk analisis                      | `"cocok buat nugas"`                      |
 
 ### `POST /task/control`
 
@@ -163,14 +225,26 @@ Setelah server berjalan, dokumentasi API dapat diakses melalui:
 
 ```json
 {
-  "leadCount": 1,
+  "leadCount": 5,
   "numberOfLeads": 10,
-  "remainingPlaceIds": ["def456", "ghi789"]
+  "remainingPlaceIds": ["placeId1", "placeId2", "placeId3"],
+  "searchOffset": 2,
+  "nextPageToken": "nextPageTokenExample",
+  "business_type": "restaurant",
+  "location": "New York, NY",
+  "skippedConstraints": true,
+  "skippedCount": 1
 }
 ```
 
-| Parameter           | Type    | Required | Description                           | Example                |
-| ------------------- | ------- | -------- | ------------------------------------- | ---------------------- |
-| `leadCount`         | integer | Yes      | Jumlah lead yang sudah diproses       | `1`                    |
-| `numberOfLeads`     | integer | Yes      | Jumlah total lead yang ingin diproses | `10`                   |
-| `remainingPlaceIds` | array   | No       | Daftar Place ID yang belum diproses   | `["def456", "ghi789"]` |
+| Parameter            | Type    | Required | Description                                                       | Example                    |
+| -------------------- | ------- | -------- | ----------------------------------------------------------------- | -------------------------- |
+| `leadCount`          | integer | Yes      | Jumlah lead yang sudah berhasil dikumpulkan                       | `5`                        |
+| `numberOfLeads`      | integer | Yes      | Jumlah total lead yang ingin dikumpulkan                          | `10`                       |
+| `remainingPlaceIds`  | array   | No       | Daftar `place_id` yang belum diproses                             | `["placeId1", "placeId2"]` |
+| `searchOffset`       | integer | No       | Posisi offset pencarian berikutnya dalam pagination               | `2`                        |
+| `nextPageToken`      | string  | No       | Token halaman berikutnya dari Google Places API                   | `"nextPageTokenExample"`   |
+| `business_type`      | string  | No       | Jenis bisnis yang sedang diproses                                 | `"restaurant"`             |
+| `location`           | string  | No       | Lokasi dari pencarian lead                                        | `"New York, NY"`           |
+| `skippedConstraints` | boolean | No       | Apakah constraint dilewati (misalnya min_rating, reviews, dll)    | `true`                     |
+| `skippedCount`       | integer | No       | Jumlah tempat yang dilewati karena tidak sesuai dengan constraint | `1`                        |
