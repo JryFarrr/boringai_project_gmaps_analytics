@@ -44,10 +44,6 @@ def check_place_constraints(place_details, constraints):
     if parameters["min_rating"] > 0 and place["rating"] < parameters["min_rating"]:
         meets_constraints = False
     
-    # Check if total reviews meets minimum required (HARD CONSTRAINT)
-    if parameters["min_reviews"] > 0 and place["user_ratings_total"] < parameters["min_reviews"]:
-        meets_constraints = False
-    
     # Add price level if available
     if "priceRange" in place_details:
         # Convert $ symbols to numeric price_level
@@ -60,22 +56,6 @@ def check_place_constraints(place_details, constraints):
             place["price_match"] = price_match
             if not price_match:
                 meets_constraints = False
-    
-    # Check if business hours match the required hours (SOFT CONSTRAINT)
-    if parameters["business_hours"] != "anytime" and "businessHours" in place_details:
-        # Format place_details to match the expected structure for check_business_hours
-        hours_details = {
-            "opening_hours": {
-                "weekday_text": place_details["businessHours"] if isinstance(place_details["businessHours"], list) else []
-            }
-        }
-        
-        # If "open_now" key is present in the data, add it to the structure
-        if "open_now" in place_details:
-            hours_details["opening_hours"]["open_now"] = place_details["open_now"]
-            
-        hours_match = check_business_hours(hours_details, parameters["business_hours"])
-        place["hours_match"] = hours_match
     
     # Process reviews to find keywords if specified (SOFT CONSTRAINT)
     if parameters["keywords"]:

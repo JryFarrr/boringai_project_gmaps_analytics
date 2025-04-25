@@ -1,5 +1,5 @@
 {
-  "$id": "d2086a9c-16d8-4c8d-ba57-52ef238dc5a4",
+  "$id": "aff11a9a-5353-429c-a00b-3af425a72798",
   "$state": {
     "business_hours": "anytime",
     "business_type": "caffe",
@@ -11,64 +11,60 @@
     "numberOfLeads": 3,
     "price_range": "$$",
     "remainingPlaceIds": [
-      "ChIJQXPd5tf71y0RrZP3as0d_Hw"
+      "ChIJGeSmp1v51y0RFyutEwermkE",
+      "ChIJQYkoC5751y0RyWIWHsh556o"
     ],
     "searchOffset": 7,
-    "skippedCount": 3,
+    "skippedCount": 2,
     "businessType": "caffe",
-    "nextPageToken": "AeeoHcKDCQ3N57lZDuX2D2QHq0BygMVTPut_KBFhsQjQ_njhFcv6lEgLCgDl4q0pnEnNdtnGREPxSaxKBz7BBMdsrazrk4zJdx6zCH1MY0RkyngVkgc01cXfclGVdCTmallX-eJoGmiQEil_KPcSrQ0cNNlg0CVBhnr2gk7FIaDX59xkG1jkQxPFsRudjWAyaKyn8P42QGjQwJ-4vAi5EVMqGJqk4YRJDN_-nO9EcV1M3bKec0GjTlkPrO89l-QFMJeZQnbUwBZ93L_AKqyEYwu6Y2LV8f5d2r3rKtjO8HC29NgcbNpqE9qXAVX8qVrHCKUAiRhBFKG0VFrq7xq_-Jek9hSJqSXNq0_8yhodQjBq0kEtQdlGrBtyypYYctpyUi6c1S5g2JDheYPV_9KHu54ElEtbOAMY1L65yDoMKFCBuR4a9nGrdSxHV7trD_2we20aGWVLVRrj1hjz2pcZPGUskAhNlkn4UssU8_mNU6-PJgvJ1Px1JW3WBBzyUwiqY8N2AojuA25ErO2yP1iWlp6p29-Trf8Ud4YGEKh-MUr4i5GZwv6LEkzIUHyubfqRAgXx02EdRH-In2QiAP-fBAOvUr8-AZG8ETcSmBSfoCOWhA",
+    "nextPageToken": "AeeoHcLEO3uAHjejtqmIxj-ANb4PemcOj8voTNgXMAN8enc6SF-sYsihjafokNeUJxacC2SujZsZeLfXncAD_CjyqOXIDFBPPQJnXYpR_9jQh9VAJ85apU9Ho7rmDWJUb8I7w74QUHcv8Fthn5DZZz9iShN8-PjsHLMAVAw7op84HPzUsNaodEIDDQ8dW1KrtXsEqfswTxZb5JavrYTRuht4s47eYmjbdIeZYJaxGQVmUosO4AV3YJDNXmuXJYC6hCYZ6PqAvW3QMexK8L_Cu0ZZUVyxfNR5yaRYHZt7HG6zj537P05BBvO3-F2zxpm3EO9q215YkBZtE8asU5ltxGxhF0JVfdGHanVKLFhBoB8HZBv6wszLFNlus15DSE448t5FaRtdakuDOW6vuUONVX14Sh3boOROdG_DbOE9duSZ9zXfavKCHQom_tkNN47ndan9O4up0LyS0Og0ufLi2dxlPoR7RyzmDR5hfiSO75QpLP8h7DSEGx4x3z0ptI9fwPTdkjlEHWFNT_RAjUU-BGu6PjXEw8atEf4RYSlr57nHCYg6tCrz9EEO8HVH4p76LrZCdE_Xi78JSrwj9F7b2T0BuyT10ey9yj0fdGb581LTLw",
     "skippedConstraints": true
   },
   "$results": [
     {
-      "address": "PQV2+2R8, Jl. Ketabang Kali No.53, Ketabang, Kec. Genteng, Surabaya, Jawa Timur 60272, Indonesia",
+      "address": "Jl. Walikota Mustajab No.67 - 69, Ketabang, Kec. Genteng, Surabaya, Jawa Timur 60272, Indonesia",
       "businessHours": [
-        "Monday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Tuesday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Wednesday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Thursday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Friday: 10:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
-        "Saturday: 10:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
-        "Sunday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM"
+        "Monday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Sunday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
       ],
       "business_type": [],
       "contact": {
-        "phone": "0817-328-080",
-        "website": "N/A"
+        "phone": "0812-2941-8452",
+        "website": "https://instagram.com/calibrecoffeeroasters"
       },
-      "fitReason": "Score based on match percentage only",
-      "fitScore": 100,
-      "keyThemes": [
-        "very",
-        "our",
-        "food",
-        "nice",
-        "place"
-      ],
+      "fitReason": "Calibre Coffee Roasters perfectly aligns with all specified business constraints and offers exceptional value in terms of product quality, customer service, and ambiance. The high customer rating and positive reviews suggest strong market positioning, while the minimal weaknesses identified do not significantly detract from its appeal as a standout cafe choice in central Surabaya.",
+      "fitScore": 95,
       "matchFactors": {
-        "hours_factor": 1.0,
-        "keyword_factor": 1.0,
-        "price_factor": 1.0,
-        "rating_factor": 1.0,
-        "review_count_factor": 1.0
+        "hours_factor": 1,
+        "keyword_factor": 1,
+        "price_factor": 1,
+        "rating_factor": 1,
+        "review_count_factor": 1
       },
       "matchPercentage": 100,
-      "matchReasoning": "Sambang Cafe & Eatery matches all the given constraints perfectly. The cafe has a high rating of 4.7, which exceeds the minimum rating requirement of 4.0. With 993 total reviews, it surpasses the minimum reviews constraint of 50. The price level of $$ directly matches the specified price range. The constraint 'business_hours: anytime' does not restrict the operating hours of the cafe, ensuring full compatibility. Additionally, the sample reviews highlight a positive atmosphere, good service, and quality food, making the keyword factor flawlessly align with consumer expectations. All criteria fit the constraints without any deviations, resulting in a match percentage of 100%.",
-      "placeName": "Sambang Cafe & Eatery",
+      "matchReasoning": "Calibre Coffee Roasters perfectly matches all given constraints. The business has a high rating of 4.5, which meets the minimum rating requirement of 4.0, resulting in a rating factor of 1. The total review count is 2092, far exceeding the minimum requirement of 50, leading to a review count factor of 1. The price level '$$' matches exactly with the specified price range, giving a price factor of 1. The business hours are listed as 'anytime', which matches the constraint of 'anytime', resulting in an hours factor of 1. The sample reviews mention key features such as great coffee, a suitable atmosphere for work with power outlets, and friendly staff, which align with the desired characteristics of a cafe, resulting in a keyword factor of 1. Therefore, the overall match percentage is 100, indicating a perfect alignment with the specified constraints.",
+      "placeName": "Calibre Coffee Roasters",
       "priceLevel": "$$",
-      "rating": 4.7,
+      "rating": 4.5,
       "strengths": [
-        "Based on available reviews"
+        "Calibre Coffee Roasters has an excellent customer rating of 4.5/5 based on a significant number of reviews (2092), indicating high customer satisfaction and consistent quality.",
+        "The cafe offers a well-balanced ambiance that is both modern and cozy, providing an atmosphere suitable for both work and relaxation, as highlighted by the availability of power outlets.",
+        "A diverse and high-quality selection of in-house roasted coffee beans enables a personalized coffee experience for various taste preferences, making it a go-to destination for coffee enthusiasts."
       ],
-      "summaryNegativeReviews": "Customers find the food underwhelming and cold, service slow and disorganized. Staff seem inattentive, and the ambiance is uninviting. Improvements needed in food quality and service efficiency.",
-      "summaryPositiveReviews": "Customers praise the welcoming atmosphere, delicious food, great coffee, friendly staff, and affordable prices. The place is described as comfortable and enjoyable, suitable for both work and socia...",
-      "totalRatings": 993,
+      "summaryPositiveReviews": "Great coffee and cozy atmosphere make this cafe ideal for work. The in-house roaster offers diverse beans, while food is delicious despite limited variety. Staff are friendly; prices are worth the ...",
+      "totalRatings": 2092,
       "weaknesses": [
-        "Insufficient data for detailed analysis"
+        "There is limited variety in the food menu with no rice dishes, which might restrict choices for customers looking for a more extensive meal selection.",
+        "The price point is considered slightly high for drinks and pasta, which could deter budget-conscious patrons despite the overall quality and ambiance."
       ]
     },
     {
-      "address": "Jl. Raya Jemursari No.71, Jemur Wonosari, Kec. Wonocolo, Surabaya, Jawa Timur 60237, Indonesia",
+      "address": "Jl. Tegalsari No.35, Tegalsari, Kec. Tegalsari, Surabaya, Jawa Timur 60262, Indonesia",
       "businessHours": [
         "Monday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
         "Tuesday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
@@ -80,87 +76,89 @@
       ],
       "business_type": [],
       "contact": {
-        "phone": "(031) 8480367",
-        "website": "http://instagram.com/demandailingcafe"
+        "phone": "(031) 99299930",
+        "website": "http://instagram.com/vismagallery"
       },
-      "fitReason": "Demandailing Cafe demonstrates strong fit potential due to its excellent alignment with the specified criteria, notably its outstanding rating and substantial number of positive reviews. The versatile and accommodating atmosphere further enhances its attractiveness as a lead. Minor issues, such as occasional service lapses and smoking area complaints, slightly detract from its overall score but do not significantly impinge on its high potential.",
-      "fitScore": 92,
-      "matchFactors": {
-        "hours_factor": 1,
-        "keyword_factor": 0.75,
-        "price_factor": 1,
-        "rating_factor": 1,
-        "review_count_factor": 1
-      },
-      "matchPercentage": 95.0,
-      "matchReasoning": "Demandailing Cafe closely aligns with the specified constraints. The business has a high rating of 4.5, exceeding the minimum requirement of 4.0, resulting in a perfect rating_factor. The total number of reviews is significantly higher than the minimum required 50, earning a perfect review_count_factor. The price level matches exactly with the expected '$$', thus a perfect price_factor is obtained. There are no specified constraints regarding business hours, rendering the hours_factor perfect. Sample reviews emphasize themes like group enjoyment and accommodating atmosphere, partially matching 'celebration', but not completely aligning with potential constraints like specific appraisals of food or service, resulting in a keyword_factor of 0.75. Overall, Demandailing Cafe achieves a high match percentage due to its strong alignment with specified constraints and favorable reviews, with minor room for improvement in keyword-based relevance.",
-      "placeName": "Demandailing Cafe",
-      "priceLevel": "$$",
-      "rating": 4.5,
-      "strengths": [
-        "High customer satisfaction with a robust rating of 4.5/5 based on substantial feedback from 4202 reviews.",
-        "Strong emphasis on group enjoyment and accommodating atmosphere, especially for families with children, suggesting a versatile setting suitable for various social gatherings.",
-        "Portion sizes and menu variety are praised, indicating an ability to cater to different appetites and preferences."
-      ],
-      "summaryNegativeReviews": "Customers note unfriendly staff and unhygienic, foul-smelling smoking area. Improvement in staff attitude and cleanliness is needed.",
-      "summaryPositiveReviews": "Customers love the generous portions and delicious menu. The cafe is spacious and family-friendly with attentive staff and quick service. It's easy to find and offers great coffee and atmosphere.",
-      "totalRatings": 4202,
-      "weaknesses": [
-        "Isolated instances of poor customer service experience at the cashier and greater, indicating occasional lapses in consistency of staff friendliness.",
-        "The smoking area is cited as unpleasant, with cleanliness issues and odors negatively impacting some customers' experiences."
-      ]
-    },
-    {
-      "address": "No.157, Jl. Raya Jemursari, Kendangsari, Kec. Tenggilis Mejoyo, Surabaya, Jawa Timur 60239, Indonesia",
-      "businessHours": [
-        "Monday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Tuesday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Wednesday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Thursday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Friday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Saturday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Sunday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
-      ],
-      "business_type": [],
-      "contact": {
-        "phone": "(031) 848300",
-        "website": "N/A"
-      },
-      "fitReason": "Score based on match percentage only",
-      "fitScore": 90,
+      "fitReason": "VISMA | Coffee, Art & Co - Working Space scores very well as a lead due to its excellent customer reviews, alignment with desired price range, and unique offering of a working space alongside arts and cultural events. These aspects contribute significantly to its high match percentage of 98.0%. The slight deductions are due to minor operational issues like restroom maintenance and the potential need to emphasize the 'art' aspect more in its branding and marketing strategies.",
+      "fitScore": 95,
       "keyThemes": [
-        "Ambience",
-        "WiFi",
-        "Food Quality",
-        "Coffee Quality",
-        "Pricing"
+        "Artistic ambiance",
+        "Work/study friendly",
+        "Variety of food and drinks",
+        "Indoor and outdoor seating",
+        "Events and gallery"
       ],
       "matchFactors": {
         "hours_factor": 1.0,
-        "keyword_factor": 0.75,
+        "keyword_factor": 0.9,
         "price_factor": 1.0,
         "rating_factor": 1.0,
         "review_count_factor": 1.0
       },
-      "matchPercentage": 90.0,
-      "matchReasoning": "The Origin Coffee & Dine closely matches the given constraints, achieving a 90% match percentage. It meets the minimum rating constraint with a 4.3 rating (rating_factor: 1.0) and surpasses the minimum review count with 263 reviews (review_count_factor: 1.0). The price level of '$$' matches the constraint perfectly (price_factor: 1.0), and the 'anytime' business hours do not impose a limitation on the match (hours_factor: 1.0). While the main business types\u2014cafe and restaurant\u2014fit the context, the keyword factor is slightly reduced to 0.75 due to some reviews mentioning the food as 'okay but not that great,' indicating a minor misalignment with exceptional food experience expectations in a cafe/restaurant context.",
-      "placeName": "The Origin Coffee & Dine",
+      "matchPercentage": 98.0,
+      "matchReasoning": "The business 'VISMA | Coffee, Art & Co - Working Space' matches extremely well with the given constraints. The rating of 4.6 is well above the minimum required rating of 4.0, giving a perfect rating factor. Similarly, with 1062 reviews, it far exceeds the minimum requirement of 50 reviews, resulting in a full score for the review count factor. The price level of '$$' aligns exactly with the specified price range, also earning a full score for this factor. As there is no specific constraint on business hours and the business can operate 'anytime', it receives a full score for hours factor. The sample reviews mention key features like it being work/study space friendly, cozy, offering various foods, snacks, and coffee, which closely align with the idea of a working space with coffee and food offerings. However, the keyword factor slightly misses a perfect score because not all review snippets provided explicitly highlight the 'art' aspect included in the business name, but otherwise it checks most of the boxes desired in a coherent manner.",
+      "placeName": "VISMA | Coffee, Art & Co - Working Space",
       "priceLevel": "$$",
-      "rating": 4.3,
+      "rating": 4.6,
       "strengths": [
-        "Based on available reviews"
+        "High customer satisfaction with a 4.6/5 rating from 1062 reviews indicates consistent quality and positive customer experience.",
+        "Diverse offerings, including a variety of food options, artisan teas, and coffee with selected Indonesian beans, support its identity as both a cafe and a working space.",
+        "The integration of art and events, such as galleries and poetry shows, enhances its unique appeal as a cultural and community-centric venue."
       ],
-      "summaryNegativeReviews": "Customers appreciate the nice atmosphere and quick service but suggest a distinct separation between the hotel lobby and cafe for a clearer division of spaces.",
-      "summaryPositiveReviews": "The cafe offers a quiet workspace with fast Wi-Fi, great ambience, and friendly staff. Customers enjoy its affordable prices, coffee, and tea varieties, but suggest improving the main courses and W...",
-      "totalRatings": 263,
+      "summaryPositiveReviews": "The cafe is cozy, artsy, and ideal for work, study, or hangouts. It offers diverse food, excellent coffee, and has indoor/outdoor seating. Art events enhance its charm; minor toilet issues noted.",
+      "totalRatings": 1062,
       "weaknesses": [
-        "Insufficient data for detailed analysis"
+        "Some feedback indicates that the restroom facilities need improvement, which can affect customer perception of overall cleanliness and comfort.",
+        "While the business is marketed to emphasize art, some reviews do not highlight this aspect strongly, suggesting a potential area for better communication of this offering."
+      ]
+    },
+    {
+      "address": "Jl. Simpang Dukuh No.21, Embong Kaliasin, Kec. Genteng, Surabaya, Jawa Timur 60275, Indonesia",
+      "businessHours": [
+        "Monday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Sunday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+      ],
+      "business_type": [],
+      "contact": {
+        "phone": "0822-3344-4740",
+        "website": "N/A"
+      },
+      "fitReason": "IMHO Coffee scores highly as a prospective lead due to perfect alignment with rating, review count, and price range criteria, resulting in a 100% match analysis. The enthusiastic feedback on ambiance and service, coupled with its central location, underscores its strong potential in attracting a steady customer base. However, minor concerns about seating capacity and coffee quality offer opportunities for enhancing the customer experience and expanding its appeal.",
+      "fitScore": 90,
+      "matchFactors": {
+        "hours_factor": 1,
+        "keyword_factor": 1,
+        "price_factor": 1,
+        "rating_factor": 1,
+        "review_count_factor": 1
+      },
+      "matchPercentage": 100,
+      "matchReasoning": "IMHO Coffee perfectly meets all the constraints outlined. It has a high rating of 4.7, which is above the minimum required rating of 4.0. With 188 total reviews, it satisfies the constraint of having at least 50 reviews. The price level is $$, which exactly matches the specified price range. The business hours requirement was 'anytime', implying flexibility, and given that there is no information to the contrary, the factor is a complete match. Additionally, the sample reviews depict positive sentiments towards coffee, aligning with the concept of a cafe and store, which contributes positively to the keyword factor. All factors align perfectly, leading to a match percentage of 100.",
+      "placeName": "IMHO Coffee",
+      "priceLevel": "$$",
+      "rating": 4.7,
+      "strengths": [
+        "High customer satisfaction with a 4.7/5 rating based on 188 reviews, indicating consistent quality and reliable service.",
+        "Positive atmosphere and experience, highlighted by reviews mentioning good ambiance and friendly, responsive staff, making it a pleasant place to visit.",
+        "Strategic location in the middle of Surabaya, which enhances its accessibility and convenience for potential customers."
+      ],
+      "summaryNegativeReviews": "Even though the caf\u00e9 is aesthetically pleasing and well-located, customers find the coffee average and the place too small, despite accommodating 25 people.",
+      "summaryPositiveReviews": "Customers appreciate the good coffee, nice ambiance, and friendly staff. Recurring themes include interesting decor and a memorable atmosphere. Latte art and taste are positively noted.",
+      "totalRatings": 188,
+      "weaknesses": [
+        "Limited seating capacity, which may restrict customer volume and could lead to discomfort during peak hours.",
+        "Coffee quality perceived as standard by some, suggesting potential improvements or differentiation to better meet varied customer preferences."
       ]
     }
   ],
   "$metadata": {
-    "createdAt": "2025-04-25T05:40:56.067254+00:00Z",
-    "startedAt": "2025-04-25T05:40:58.267695+00:00Z",
-    "executionTotal": 21
+    "createdAt": "2025-04-25T08:45:44.362537+00:00Z",
+    "startedAt": "2025-04-25T08:45:46.270301+00:00Z",
+    "executionTotal": 18
   }
 }
