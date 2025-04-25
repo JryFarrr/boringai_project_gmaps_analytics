@@ -24,10 +24,10 @@ def check_place_constraints(place_details, constraints):
     parameters = {
         "min_rating": constraints.get("min_rating", 0),
         "min_reviews": constraints.get("min_reviews", 0),
+        "max_reviews": constraints.get("max_reviews", None),
         "price_range": constraints.get("price_range", ""),
         "business_hours": constraints.get("business_hours", "anytime"),
         "keywords": constraints.get("keywords", ""),
-        "topPlaces": constraints.get("topPlaces", 5)
     }
     
     # Create a place object compatible with calculate_match_percentage
