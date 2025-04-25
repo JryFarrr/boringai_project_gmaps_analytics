@@ -49,6 +49,7 @@ def format_place_data(place_details):
         "businessHours": place_details.get('opening_hours', {}).get('weekday_text', []),
         "businessType": place_details.get('types', []),
         "priceRange": price_range,
+        "Keywords" : place_details.get('keywords', []),
         "positiveReviews": [
             r['text'] for r in place_details.get('reviews', []) if r.get('rating', 0) >= 4
         ],
