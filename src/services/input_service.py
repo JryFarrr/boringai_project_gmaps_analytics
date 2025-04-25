@@ -19,6 +19,7 @@ def create_initial_state(data):
         "business_hours": data.get("business_hours", None),
         "min_rating": data.get("min_rating", None),
         "min_reviews": data.get("min_reviews", None),
+        "max_reviews": data.get("max_reviews", None),
         "price_range": data.get("price_range", None),
         "keywords": data.get("keywords", None),
         "leadCount": 0,

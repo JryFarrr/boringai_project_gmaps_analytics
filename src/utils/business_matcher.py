@@ -217,6 +217,7 @@ def calculate_match_percentage_with_ai(place, parameters, reviews=None):
         constraints_data = {
             "min_rating": parameters.get("min_rating", 0),
             "min_reviews": parameters.get("min_reviews", 0),
+            "max_reviews": parameters.get("max_reviews",None),
             "price_range": parameters.get("price_range", ""),
             "business_hours": parameters.get("business_hours", "anytime"),
         }

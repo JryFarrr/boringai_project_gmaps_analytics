@@ -53,7 +53,7 @@ class WorkflowExecutor:
             enriched_payload = payload.copy()
             enriched_payload["constraints"] = {}
             
-            constraint_keys = ["min_rating", "min_reviews", "price_range", 
+            constraint_keys = ["min_rating", "min_reviews", "max_reviews", "price_range", 
                                "business_hours", "keywords"]
             
             for key in constraint_keys:
@@ -129,17 +129,26 @@ class WorkflowExecutor:
 def run_simulation():
     executor = WorkflowExecutor()
     
-    prompt = "Temukan 3 caffe di Surabaya dengan rating minimal 4 dan reviews lebih dari 50 yang cocok buat nugas dan murah dengan harga di antara 20.000 sampai 100.000 yang buka pada jam 10 pagi sampai 6 malam"
+    prompt = "Temukan 3 caffe di Surabaya dengan rating minimal 4 dan reviews lebih dari 50 dan kurang dari 200 yang cocok buat nugas dan murah dengan harga di antara 20.000 sampai 100.000 yang buka pada jam 10 pagi sampai 6 malam"
     # prompt nanti diparsing untuk menentukan businessType, location, dan numberOfLeads
     # prompt juga diparsing untuk contraints pada match percentage
     # untuk match percentage disimpan pada instance, dan hanya digunakan di analyze
     
     parameters = parse_prompt(prompt)
     
+    # Check if parsing returned an error response
+    if "error" in parameters and parameters.get("done", False):
+        print(f"Error: {parameters['error']}")
+        print("Cannot proceed with workflow execution due to parsing failure.")
+        return
+    
     # If numberOfLeads is empty, set it to 20; otherwise keep the original value
     if parameters["numberOfLeads"] == "":
         parameters["numberOfLeads"] = 20
-        parameters["numberOfLeads"] = 20
+    
+    # Make sure max_reviews is properly handled
+    if "max_reviews" not in parameters:
+        parameters["max_reviews"] = None
 
     print(f"Full parameters: {parameters}")
 
