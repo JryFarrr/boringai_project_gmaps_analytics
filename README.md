@@ -69,11 +69,12 @@ Setelah server berjalan, dokumentasi API dapat diakses melalui:
 
 ```json
 {
-  "businessType": "cafe",
+  "business_type": "cafe",
   "location": "Surabaya",
   "numberOfLeads": 3,
   "min_rating": 4.0,
   "min_reviews": 50,
+  "max_reviews": 100,
   "price_range": "$$",
   "keywords": "cocok buat nugas",
   "business_hours": "anytime"
@@ -82,11 +83,12 @@ Setelah server berjalan, dokumentasi API dapat diakses melalui:
 
 | Parameter        | Type    | Required | Description                                                   | Example              |
 | ---------------- | ------- | -------- | ------------------------------------------------------------- | -------------------- |
-| `businessType`   | string  | Yes      | Jenis bisnis yang akan dicari (misalnya: restoran, kafe, dll) | `"cafe"`             |
+| `business_type`  | string  | Yes      | Jenis bisnis yang akan dicari (misalnya: restoran, kafe, dll) | `"cafe"`             |
 | `location`       | string  | Yes      | Lokasi tempat pencarian dilakukan                             | `"Surabaya"`         |
 | `numberOfLeads`  | integer | Yes      | Jumlah lead yang diinginkan                                   | `3`                  |
 | `min_rating`     | float   | No       | Rating minimal dari tempat yang dicari                        | `4.0`                |
 | `min_reviews`    | integer | No       | Jumlah minimal review dari tempat tersebut                    | `50`                 |
+| `max_reviews`    | integer | No       | Jumlah maximal review dari tempat tersebut                    | `100`                |
 | `price_range`    | string  | No       | Rentang harga dari tempat                                     | `"$$"`               |
 | `keywords`       | string  | No       | Kata kunci tambahan yang relevan dengan kebutuhan pengguna    | `"cocok buat nugas"` |
 | `business_hours` | string  | No       | Waktu operasional yang diinginkan (`anytime` / jam tertentu)  | `"anytime"`          |
@@ -99,7 +101,7 @@ Setelah server berjalan, dokumentasi API dapat diakses melalui:
 
 ```json
 {
-  "businessType": "restaurant",
+  "business_type": "restaurant",
   "location": "Surabaya",
   "numberOfLeads": 10,
   "searchOffset": 0
@@ -108,7 +110,7 @@ Setelah server berjalan, dokumentasi API dapat diakses melalui:
 
 | Parameter       | Type    | Required | Description                                              | Example      |
 | --------------- | ------- | -------- | -------------------------------------------------------- | ------------ |
-| `businessType`  | string  | Yes      | Jenis bisnis yang dicari (misalnya: restoran, kafe, dll) | `restaurant` |
+| `business_type` | string  | Yes      | Jenis bisnis yang dicari (misalnya: restoran, kafe, dll) | `restaurant` |
 | `location`      | string  | Yes      | Lokasi pencarian                                         | `Surabaya`   |
 | `numberOfLeads` | integer | Yes      | Jumlah lead yang diinginkan                              | `10`         |
 | `searchOffset`  | integer | No       | Offset untuk pencarian lebih lanjut                      | `0`          |
@@ -186,6 +188,7 @@ Setelah server berjalan, dokumentasi API dapat diakses melalui:
   "constraints": {
     "min_rating": 4.0,
     "min_reviews": 50,
+    "max_reviews": 100,
     "price_range": "$$",
     "business_hours": "anytime",
     "keywords": "cocok buat nugas"
@@ -215,6 +218,7 @@ Setelah server berjalan, dokumentasi API dapat diakses melalui:
 | `constraints`                  | object  | No       | Syarat/parameter filtering pencarian                   | `{...}`                                   |
 | `constraints.min_rating`       | float   | No       | Rating minimum tempat                                  | `4.0`                                     |
 | `constraints.min_reviews`      | integer | No       | Jumlah review minimum                                  | `50`                                      |
+| `constraints.max_reviews`      | integer | No       | Jumlah review maximum                                  | `100`                                     |
 | `constraints.price_range`      | string  | No       | Rentang harga yang diinginkan                          | `"$$"`                                    |
 | `constraints.business_hours`   | string  | No       | Waktu operasional yang diinginkan                      | `"anytime"`                               |
 | `constraints.keywords`         | string  | No       | Kata kunci relevan untuk analisis                      | `"cocok buat nugas"`                      |
