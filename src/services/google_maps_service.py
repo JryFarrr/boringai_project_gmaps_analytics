@@ -32,9 +32,25 @@ def init_search_api_key(key):
 
 
 # === GOOGLE PLACES TEXT SEARCH ===
-def search_places(query=None, page_token=None):
+def search_places(query=None, page_token=None, min_rating=None, price_range=None):
     base_url = "https://maps.googleapis.com/maps/api/place/textsearch/json"
-    params = {'key': get_api_key()}
+    
+    price_mapping = {
+        1: "$",
+        2: "$$",
+        3: "$$$",
+        4: "$$$$",
+        5: "$$$$$"
+    }
+
+    params = {
+        'key': get_api_key(),
+        'minrating': min_rating,
+    }
+
+    if price_range in price_mapping:
+        params['minprice'] = price_mapping[price_range]
+        params['maxprice'] = price_mapping[price_range]
 
     if page_token is not None:
         params['pagetoken'] = page_token

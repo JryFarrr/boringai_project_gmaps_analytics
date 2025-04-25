@@ -2,7 +2,21 @@ import time
 from flask import current_app
 from src.services.google_maps_service import search_places
 
-def collect_place_ids(business_type, location, total_needed, remaining_place_ids=None, next_page_token=None):
+def build_query(business_type, keywords, location):
+    # Ensure keywords is a list; convert single string to a list if needed
+    if isinstance(keywords, str):
+        keywords = [keywords]
+    elif not isinstance(keywords, list):
+        keywords = []  # Fallback to empty list if invalid input
+    
+    # Join keywords with spaces, preserving multi-word phrases
+    keyword_string = " ".join(keywords) if keywords else ""
+    
+    # Construct the query, stripping extra spaces
+    query = f"{business_type} {keyword_string} in {location}".strip()
+    return query
+
+def collect_place_ids(business_type, location, total_needed, remaining_place_ids=None, next_page_token=None, min_rating=None, price_range=None, keywords=None):
     """
     Collects place IDs by using existing IDs, next page token, or new search
     
@@ -45,9 +59,9 @@ def collect_place_ids(business_type, location, total_needed, remaining_place_ids
                 current_app.logger.info(f"Searching with page token (page {page_count}): {current_next_page_token[:30]}...")
                 response = search_places(page_token=current_next_page_token)
             else:
-                query = f"{business_type} in {location}"
+                query = build_query(business_type, keywords, location)
                 current_app.logger.info(f"Searching for: {query} (page {page_count})")
-                response = search_places(query=query)
+                response = search_places(query=query, min_rating=min_rating, price_range=price_range)
             
             # Extract new place_ids and add to our collection
             new_place_ids = [place['place_id'] for place in response.get('results', [])]

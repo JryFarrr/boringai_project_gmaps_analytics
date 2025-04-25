@@ -119,6 +119,9 @@ def search_route():
         # Extract data from request
         business_type = data["business_type"]
         location = data["location"]
+        price_range = data.get("price_range")
+        min_rating = data.get("min_rating")
+        keywords = data.get("keywords")
         search_offset = data["searchOffset"]
         number_of_leads = data["numberOfLeads"]
         next_page_token = data.get("nextPageToken")
@@ -145,7 +148,10 @@ def search_route():
                 location=location,
                 total_needed=total_needed,
                 remaining_place_ids=remaining_place_ids,
-                next_page_token=next_page_token
+                next_page_token=next_page_token,
+                min_rating=min_rating,
+                price_range=price_range,
+                keywords=keywords
             )
             
             if not result["place_ids"]:

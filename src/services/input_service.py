@@ -48,7 +48,10 @@ def create_input_response(initial_state):
                 "business_type": "$state.business_type",
                 "location": "$state.location",
                 "searchOffset": "$state.searchOffset",
-                "numberOfLeads": "$state.numberOfLeads"
+                "numberOfLeads": "$state.numberOfLeads",
+                "min_rating": "$state.min_rating",
+                "keywords": "$state.keywords",
+                "price_range": "$state.price_range"
             }
         },
         "result": None,
