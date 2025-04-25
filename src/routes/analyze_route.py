@@ -4,90 +4,12 @@ from src.utils.response_utils import error_response
 from src.services.match_services import check_place_constraints
 from src.services.review_service import generate_review_summaries, extract_key_themes_from_reviews
 from src.services.insight_service import generate_business_insights
-
+from src.docs.analyze import analyze_dict
 # Create the blueprint
 analyze_bp = Blueprint('analyze', __name__)
 
 @analyze_bp.route('/task/analyze', methods=['POST'])
-@swag_from({
-    'tags': ['Task'],
-    'summary': 'Analyze and generate business insights',
-    'description': 'Analyze business information, match percentage, and generate insights using OpenAI',
-    'parameters': [
-        {
-            'name': 'data',
-            'in': 'body',
-            'description': 'Details for analysis and lead handling',
-            'required': True,
-            'schema': {
-                'type': 'object',
-                'properties': {
-                    'placeDetails': {
-                        'type': 'object',
-                        'properties': {
-                            'placeName': {'type': 'string', 'example': 'Cafe Delight'},
-                            'contact': {
-                                'type': 'object',
-                                'properties': {
-                                    'phone': {'type': 'string', 'example': '123-456-7890'},
-                                    'website': {'type': 'string', 'example': 'https://cafedelight.com'}
-                                }
-                            },
-                            'priceRange': {'type': 'string', 'example': '$$'},
-                            'positiveReviews': {
-                                'type': 'array',
-                                'items': {'type': 'string'},
-                                'example': ['Great vibe']
-                            },
-                            'negativeReviews': {
-                                'type': 'array',
-                                'items': {'type': 'string'},
-                                'example': ['Crowded']
-                            }
-                        }
-                    },
-                    'leadCount': {'type': 'integer', 'example': 0}
-                },
-                'required': ['placeDetails', 'leadCount']
-            }
-        }
-    ],
-    'responses': {
-        '200': {
-            'description': 'Successful analysis and insights',
-            'schema': {
-                'type': 'object',
-                'properties': {
-                    'placeName': {'type': 'string'},
-                    'matchPercentage': {'type': 'number'},
-                    'strengths': {'type': 'array', 'items': {'type': 'string'}},
-                    'weaknesses': {'type': 'array', 'items': {'type': 'string'}},
-                    'fitScore': {'type': 'number'},
-                    'fitReason': {'type': 'string'}
-                }
-            }
-        },
-        '500': {
-            'description': 'Internal server error',
-            'schema': {
-                'type': 'object',
-                'properties': {
-                    'state': {'type': 'object'},
-                    'result': {'type': 'object'},
-                    'next': {
-                        'type': 'object',
-                        'properties': {
-                            'key': {'type': 'string'},
-                            'payload': {'type': 'object'}
-                        }
-                    },
-                    'done': {'type': 'boolean'},
-                    'error': {'type': 'string'}
-                }
-            }
-        }
-    }
-})
+@swag_from(analyze_dict)
 def analyze_route():
     """
     Analyzes a place against the specified constraints and generates insights
