@@ -69,26 +69,6 @@ Setelah server berjalan, dokumentasi API dapat diakses melalui:
 
 ```json
 {
-  "businessType": "restaurant",
-  "location": "Surabaya",
-  "numberOfLeads": 10
-}
-```
-
-| Parameter       | Type    | Required | Description                                                   | Example        |
-| --------------- | ------- | -------- | ------------------------------------------------------------- | -------------- |
-| `businessType`  | string  | Yes      | Jenis bisnis yang akan dicari (misalnya: restoran, kafe, dll) | `"restaurant"` |
-| `location`      | string  | Yes      | Lokasi tempat pencarian dilakukan                             | `"Surabaya"`   |
-| `numberOfLeads` | integer | Yes      | Jumlah lead yang diinginkan                                   | `10`           |
-
-### `POST /task/search`
-
-### Request Body
-
-#### Request JSON Example
-
-```json
-{
   "businessType": "cafe",
   "location": "Surabaya",
   "numberOfLeads": 3,
@@ -110,6 +90,28 @@ Setelah server berjalan, dokumentasi API dapat diakses melalui:
 | `price_range`    | string  | No       | Rentang harga dari tempat                                     | `"$$"`               |
 | `keywords`       | string  | No       | Kata kunci tambahan yang relevan dengan kebutuhan pengguna    | `"cocok buat nugas"` |
 | `business_hours` | string  | No       | Waktu operasional yang diinginkan (`anytime` / jam tertentu)  | `"anytime"`          |
+
+### `POST /task/search`
+
+### Request Body
+
+#### Request JSON Example
+
+```json
+{
+  "businessType": "restaurant",
+  "location": "Surabaya",
+  "numberOfLeads": 10,
+  "searchOffset": 0
+}
+```
+
+| Parameter       | Type    | Required | Description                                              | Example      |
+| --------------- | ------- | -------- | -------------------------------------------------------- | ------------ |
+| `businessType`  | string  | Yes      | Jenis bisnis yang dicari (misalnya: restoran, kafe, dll) | `restaurant` |
+| `location`      | string  | Yes      | Lokasi pencarian                                         | `Surabaya`   |
+| `numberOfLeads` | integer | Yes      | Jumlah lead yang diinginkan                              | `10`         |
+| `searchOffset`  | integer | No       | Offset untuk pencarian lebih lanjut                      | `0`          |
 
 ### `POST /task/scrape`
 
