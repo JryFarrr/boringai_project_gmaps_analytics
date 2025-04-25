@@ -11,14 +11,14 @@ def validate_input_payload(data):
         str or None: Error message if validation fails, None if validation passes
     """
     # Check for required fields
-    required_fields = ["businessType", "location", "numberOfLeads"]
+    required_fields = ["business_type", "location", "numberOfLeads"]
     for field in required_fields:
         if field not in data:
             return f"Missing required field: {field}"
     
     # Validate business type
-    if not isinstance(data["businessType"], str) or not data["businessType"].strip():
-        return "businessType must be a non-empty string"
+    if not isinstance(data["business_type"], str) or not data["business_type"].strip():
+        return "business_type must be a non-empty string"
     
     # Validate location
     if not isinstance(data["location"], str) or not data["location"].strip():
@@ -42,14 +42,14 @@ def validate_search_payload(data):
         str or None: Error message if validation fails, None if validation passes
     """
     # Check required fields
-    required_fields = ["businessType", "location", "searchOffset", "numberOfLeads"]
+    required_fields = ["business_type", "location", "searchOffset", "numberOfLeads"]
     for field in required_fields:
         if field not in data:
             return f"Missing required field: {field}"
     
     # Validate business type
-    if not isinstance(data["businessType"], str) or not data["businessType"].strip():
-        return "businessType must be a non-empty string"
+    if not isinstance(data["business_type"], str) or not data["business_type"].strip():
+        return "business_type must be a non-empty string"
     
     # Validate location
     if not isinstance(data["location"], str) or not data["location"].strip():
