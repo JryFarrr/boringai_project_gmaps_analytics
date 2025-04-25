@@ -9,7 +9,7 @@ input_dict = {
             'schema': {
                 'type': 'object',
                 'properties': {
-                    'businessType': {'type': 'string','example': 'cafe'
+                    'business_type': {'type': 'string','example': 'cafe'
                     },
                     'location': {'type': 'string','example': 'Surabaya'
                     },
@@ -25,7 +25,7 @@ input_dict = {
                     },
                     'business_hours': {'type': 'string', 'example': 'anytime'}
                 },
-                'required': ['businessType', 'location']
+                'required': ['business_type', 'location']
             }
         }
     ],
@@ -35,7 +35,7 @@ input_dict = {
             'examples': {
                 'application/json': {
                     "state": {
-                        "businessType": "restaurant",
+                        "business_type": "restaurant",
                         "location": "Surabaya",
                         "numberOfLeads": 10,
                         "leadCount": 0,
@@ -45,7 +45,7 @@ input_dict = {
                     "next": {
                         "key": "search",
                         "payload": {
-                            "businessType": "$state.businessType",
+                            "business_type": "$state.business_type",
                             "location": "$state.location",
                             "searchOffset": "$state.searchOffset",
                             "numberOfLeads": "$state.numberOfLeads"

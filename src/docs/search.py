@@ -9,9 +9,9 @@ search_dict = {
             'required': True,
             'schema': {
                 'type': 'object',
-                'required': ['businessType', 'location', 'numberOfLeads'],
+                'required': ['business_type', 'location', 'numberOfLeads'],
                 'properties': {
-                    'businessType': {'type': 'string', 'example': 'coffee shop'},
+                    'business_type': {'type': 'string', 'example': 'coffee shop'},
                     'location': {'type': 'string', 'example': 'surabaya'},
                     'searchOffset': {'type': 'integer', 'example': 0},
                     'numberOfLeads': {'type': 'integer', 'example': 10},
