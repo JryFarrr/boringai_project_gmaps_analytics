@@ -37,7 +37,6 @@ cd boringai_project_gmaps_analytics
 
 ```ini
 GOOGLE_MAPS_API_KEY=
-OPENROUTER_API_KEY=
 OPENAI_API_KEY=
 SEARCHAPI_API_KEY=
 DEFAULT_REFERER_URL=https://your-website.com
