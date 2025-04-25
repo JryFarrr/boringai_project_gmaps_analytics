@@ -1,14 +1,22 @@
 {
-  "$id": "7ec7bed1-c180-415d-bd6d-f7b876ad9abb",
+  "$id": "2c288931-7426-4880-9d6f-b2fde0e4d7c3",
   "$state": {
-    "businessType": null,
-    "leadCount": 2,
-    "location": null,
+    "business_hours": "anytime",
+    "business_type": "cafes",
+    "keywords": "cozy",
+    "leadCount": 3,
+    "location": "Surabaya",
+    "min_rating": 4.0,
+    "min_reviews": 5,
     "numberOfLeads": 3,
-    "remainingPlaceIds": [],
-    "searchOffset": 3,
+    "price_range": "$$",
+    "remainingPlaceIds": [
+      "ChIJ53t1ep371y0RytCRcJjvL74"
+    ],
+    "searchOffset": 5,
     "skippedCount": 1,
-    "nextPageToken": null,
+    "businessType": "cafes",
+    "nextPageToken": "AeeoHcJ4ADqxZwx4khfQgR99iRuOfMqwexyK8pHLlV2W1rEMzsQA5YCRIo52mYVOlLMwAjk_Ev_rF9XEEpC_1vIQp_GEyVWPdCtUpdqkAGicEDNWDkYod-0KqgNMc4QMk1RX04-vLi68dfDS_9Q9X7-RAdfae9P65KE3DJW0dp4mZT486W2WMGVd3d1pPNR_-ArYHz8tSLFjUjiw5Du73GYRsxkZlBNGlGzFUDAh3xOhrHA0u-31sOEpHp0Ej8YbDt_zkTwSXZHVyRXk3bW2pvQBbs3Bzum6lRCnzUZ5TpRWJ25bsTF1uFyOX04C0RyNxTl449yRIxv-sB8AfqOGJHIGRmK-nfkqvfUc329fngibDfHtYHswkXxhWSBKjKUSKDKMsixcRttuvqCqptazdLxMJZetVgpnAerQZtrO6-V4ZHE0iVC-AeXIKQVPCmNAAw8_A_xwT3EYzThYraOREqwmV98g0nS8cOyb1G8Q_G6pn7VKag45C4CpA3k6dyNYd0LTGbG0JH3jFn-Ill1p1hyGSz9316iN6B1XLNTytXazCR6LDLBf9-dFy1FXjnpa9uAYuux9dKYs2ehkz7lPyDcfp9TlRCnvfpW7YH0E863STg",
     "skippedConstraints": true
   },
   "$results": [
@@ -26,34 +34,34 @@
       "businessType": [
         "cafe",
         "restaurant",
-        "point_of_interest",
         "food",
+        "point_of_interest",
         "establishment"
       ],
       "coordinates": {},
-      "fitReason": "Carpentier Kitchen achieves a high match percentage of 95% due to its excellent alignment with business constraints such as rating, review count, price range, and flexible hours. While the strengths in customer satisfaction, food quality, and ambiance enhance its potential as a lead, the weaknesses in service and cleanliness slightly reduce its overall fit score. Addressing these issues could bring the score even higher, solidifying its stand as a leading cafe and restaurant in the area.",
+      "fitReason": "Carpentier Kitchen achieves a fit score of 92 due to its strong alignment with desired criteria such as excellent ratings, satisfactory price range, and positive customer experiences highlighted in numerous reviews. The primary areas needing attention are related to service efficiency and cleanliness, which slightly affect the otherwise high match percentage. Overall, its eclectic vibe, good food quality, and amenities make it a strong candidate as a lead.",
       "fitScore": 92,
       "keywordMatch": "1 keywords found from 5 reviews",
-      "matchPercentage": 95.0,
+      "matchPercentage": 92.0,
       "phone": null,
       "placeId": null,
       "placeName": "Carpentier Kitchen",
       "priceRange": "$$",
       "rating": 4.6,
       "reviewSummary": {
-        "negative": "Carpentier offers good food and useful amenities but needs to improve service responsiveness, cleanliness, and parking limitations to boost customer satisfaction.",
-        "positive": "Carpentier Kitchen offers consistently quality food, especially chicken and salmon, with a cozy, homey ambiance. It's a hidden gem with fresh, affordable options and a boutique shop. Parking is lim..."
+        "negative": "Carpentier offers good food and amenities but needs to improve service, cleanliness, and parking options for a better customer experience.",
+        "positive": "Carpentier Kitchen in Surabaya offers consistently fresh, high-quality food with standout dishes like Willa's Chicken and salmon. The cozy, vintage charm and boutique add appeal, though parking is ..."
       },
       "strengths": [
-        "Carpentier Kitchen enjoys a high customer rating of 4.6/5 based on 2620 reviews, indicating strong customer satisfaction and a positive reputation.",
-        "The menu offers a diverse range of food and drink options that are fresh and consistently of high quality, which aligns well with its cafe and restaurant business model.",
-        "The establishment has a unique and cozy ambiance with decor that includes vintage charm, contributing to a laid-back dining experience."
+        "Carpentier Kitchen boasts an excellent customer rating of 4.6 out of 5 from a significant number of reviews (2620), indicating high customer satisfaction and consistent food quality.",
+        "The establishment offers a cozy and laid-back atmosphere with a diverse menu that is well-received for its fresh and flavorful offerings.",
+        "The business provides flexible payment options and amenities like Wi-Fi and power outlets, making it an ideal spot for both dining and remote work."
       ],
       "totalRatings": 2620,
       "weaknesses": [
-        "Cleanliness and staff responsiveness are highlighted concerns, with reports of unattended litter and inefficient service at the bar station, which could negatively affect the customer experience.",
-        "Limited parking availability and lack of proactive service management may pose challenges for customer convenience and satisfaction, particularly during busy hours.",
-        "The keyword analysis shows a slightly lower alignment with specified business constraints, indicating potential gaps in market positioning or branding efforts."
+        "Cleanliness and service issues such as unattended litter and inefficient service at the bar station have been pointed out by customers, which could detract from the overall dining experience.",
+        "Limited parking availability can inconvenience potential customers, particularly in a residential location where parking may already be constrained.",
+        "There is room for improvement in staff communication and responsiveness, as noted in negative reviews, which could improve overall customer satisfaction."
       ],
       "website": null
     },
@@ -70,14 +78,14 @@
       ],
       "businessType": [
         "cafe",
+        "food",
         "store",
         "point_of_interest",
-        "food",
         "establishment"
       ],
       "coordinates": {},
-      "fitReason": "Historica fits well as a lead due to its high rating and diverse offerings that align with typical cafe and restaurant objectives. However, the noted issues with ambiance and certain environmental aspects such as odor need to be addressed to enhance the customer experience and capitalize on its strong potential.",
-      "fitScore": 80,
+      "fitReason": "Historica closely aligns with key business constraints including an acceptable rating, sufficient number of reviews, and matching price range. However, the noted issues with odor and initial impressions impact its potential as a perfect lead. The establishment possesses solid foundations and offerings, but refining certain aspects could improve its overall appeal and matching percentage.",
+      "fitScore": 85,
       "keywordMatch": "2 keywords found from 5 reviews",
       "matchPercentage": 85.0,
       "phone": null,
@@ -87,25 +95,67 @@
       "rating": 4.4,
       "reviewSummary": {
         "negative": "",
-        "positive": "Historica Garden is a cozy, well-designed cafe with friendly staff, offering good coffee, satisfactory food, live music, and event bookings. It's ideal for meet-ups, with reasonable prices and a va..."
+        "positive": "Historica Garden is spacious, stylish, with good staff and a cozy atmosphere. Great for meet-ups with friends, offering tasty food and coffee. Well-designed with Instagram-worthy spots and reasonab..."
       },
       "strengths": [
-        "Historica boasts a strong overall customer rating of 4.4 out of 5 based on 1936 reviews, indicating a consistently positive customer experience.",
-        "The business has a diverse offering as a cafe, store, and point of interest with food and beverage options, which provides multiple revenue streams and appeals to a wide range of customers.",
-        "The establishment is described as having a well-designed and spacious layout with areas like a restaurant, cafe, and bar, which enhances its attractiveness for gatherings and events."
+        "High customer rating of 4.4 out of 5 from a large number of reviews (1936), indicating strong overall customer satisfaction.",
+        "Wide variety of offerings including a restaurant, cafe, bar, and store, which can attract a diverse customer base.",
+        "Positive feedback on the ambiance, friendly staff, and promotional offerings, which can enhance customer experience and loyalty."
       ],
       "totalRatings": 1936,
       "weaknesses": [
-        "Some reviews highlight an 'abandoned' feel and an unpleasant 'smelly odor', indicating potential issues with cleanliness or maintenance that could deter customers.",
-        "The food taste is noted as an area for improvement, which can impact the dining experience and lead to negative reviews if not addressed.",
-        "Despite a promising space, the ambiance could be improved to avoid initial negative impressions upon arrival, as described in some customer feedback."
+        "Reports of a smelly odor upon arrival and initial perception as an abandoned place, which may deter first-time visitors.",
+        "Negative feedback on food taste and lingering toilet odor suggests potential areas for improvement in service quality and maintenance.",
+        "While the rating and review volume are strong, these qualitative issues can negatively impact word-of-mouth and repeat business."
+      ],
+      "website": null
+    },
+    {
+      "address": "Jl. Ngagel Jaya Selatan No.33, RT.001/RW.05, Pucang Sewu, Kec. Gubeng, Surabaya, Jawa Timur 60283, Indonesia",
+      "businessHours": [
+        "Monday: 8:00\u202fAM\u2009\u2013\u20093:00\u202fAM",
+        "Tuesday: 8:00\u202fAM\u2009\u2013\u20093:00\u202fAM",
+        "Wednesday: 8:00\u202fAM\u2009\u2013\u20093:00\u202fAM",
+        "Thursday: 8:00\u202fAM\u2009\u2013\u20093:00\u202fAM",
+        "Friday: 8:00\u202fAM\u2009\u2013\u20093:00\u202fAM",
+        "Saturday: 8:00\u202fAM\u2009\u2013\u20093:00\u202fAM",
+        "Sunday: 8:00\u202fAM\u2009\u2013\u20093:00\u202fAM"
+      ],
+      "businessType": [
+        "cafe",
+        "bar",
+        "restaurant",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "coordinates": {},
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 85,
+      "keywordMatch": "0 keywords found from 5 reviews",
+      "matchPercentage": 85.0,
+      "phone": null,
+      "placeId": null,
+      "placeName": "DEJAVU",
+      "priceRange": "$$",
+      "rating": 4.4,
+      "reviewSummary": {
+        "negative": "The place has a convenient location and good menu variety. However, it lacks non-smoking areas, which can be disturbing due to widespread smoke.",
+        "positive": "Customers enjoy the affordable pricing, spacious ambiance, and diverse food selection, especially the beer. Quick service and good Wi-Fi are appreciated. Quality can vary, but staff is accommodating."
+      },
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "totalRatings": 3173,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
       ],
       "website": null
     }
   ],
   "$metadata": {
-    "createdAt": "2025-04-25T06:22:20.636996+00:00Z",
-    "startedAt": "2025-04-25T06:22:23.501659+00:00Z",
-    "executionTotal": 11
+    "createdAt": "2025-04-25T06:36:33.091241+00:00Z",
+    "startedAt": "2025-04-25T06:36:35.065936+00:00Z",
+    "executionTotal": 15
   }
 }

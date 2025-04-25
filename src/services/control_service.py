@@ -51,7 +51,7 @@ def handle_skipped_constraints(params):
                 "nextPageToken": next_page_token,
                 "searchOffset": search_offset,
                 "leadCount": lead_count,
-                "businessType": business_type,
+                "business_type": business_type,
                 "location": location,
                 "numberOfLeads": number_of_leads,
                 "skippedCount": skipped_count
@@ -80,7 +80,7 @@ def handle_skipped_constraints(params):
             "next": {
                 "key": "search",
                 "payload": {
-                    "businessType": business_type,
+                    "business_type": business_type,
                     "location": location,
                     "nextPageToken": next_page_token,
                     "numberOfLeads": number_of_leads,
@@ -101,7 +101,7 @@ def handle_skipped_constraints(params):
             "next": {
                 "key": "search",
                 "payload": {
-                    "businessType": business_type,
+                    "business_type": business_type,
                     "location": location,
                     "searchOffset": search_offset,
                     "numberOfLeads": number_of_leads,
@@ -149,7 +149,7 @@ def handle_next_place_id(params):
             "remainingPlaceIds": new_remaining,
             "leadCount": lead_count,
             "numberOfLeads": number_of_leads,
-            "businessType": business_type,
+            "business_type": business_type,
             "location": location,
             "searchOffset": search_offset,
             "nextPageToken": next_page_token,
@@ -198,7 +198,7 @@ def handle_need_more_leads(params):
         "next": {
             "key": "search",
             "payload": {
-                "businessType": business_type,
+                "business_type": business_type,
                 "location": location,
                 "searchOffset": search_offset,
                 "numberOfLeads": number_of_leads,

@@ -248,7 +248,7 @@ def parse_prompt(prompt, provider="openai", **kwargs):
         dict: Dictionary containing extracted search parameters
     """
     # Create the appropriate client
-    client, headers, actual_provider = create_client(provider=provider, **kwargs)
+    client, headers, actual_provider = create_client(**kwargs)
     
     # Get the full parameters from the prompt using the selected API
     parameters = parse_prompt_with_ai(prompt, client, headers, provider=actual_provider)

@@ -13,9 +13,14 @@ def create_initial_state(data):
         dict: Initial state object with all necessary parameters
     """
     return {
-        "businessType": data["businessType"],
+        "business_type": data["business_type"],
         "location": data["location"],
         "numberOfLeads": data["numberOfLeads"],
+        "business_hours": data.get("business_hours", None),
+        "min_rating": data.get("min_rating", None),
+        "min_reviews": data.get("min_reviews", None),
+        "price_range": data.get("price_range", None),
+        "keywords": data.get("keywords", None),
         "leadCount": 0,
         "searchOffset": 0,
         "remainingPlaceIds": [],
@@ -40,7 +45,7 @@ def create_input_response(initial_state):
         "next": {
             "key": "search",
             "payload": {
-                "businessType": "$state.businessType",
+                "business_type": "$state.business_type",
                 "location": "$state.location",
                 "searchOffset": "$state.searchOffset",
                 "numberOfLeads": "$state.numberOfLeads"

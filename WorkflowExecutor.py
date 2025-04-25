@@ -24,9 +24,6 @@ class WorkflowExecutor:
         }
         # Get API base URL from environment variable
         self.api_base_url = os.getenv("API_BASE_URL", "http://localhost:5000/task")
-        
-        # Menyimpan parameter sebagai properti kelas (bukan dalam storage)
-        self.parameters = {}
 
     def update_state(self, new_state):
         """Memperbarui $state dengan data baru menggunakan non-destructive patching"""
@@ -52,23 +49,21 @@ class WorkflowExecutor:
     def execute_task(self, task_key, payload):
         """Memanggil endpoint tugas dan memproses respons"""
         # Enrich payload dengan parameter untuk task analyze
-        if task_key == "analyze" and self.parameters:
-            # Salin payload asli
+        if task_key == "analyze":
             enriched_payload = payload.copy()
-            
-            # Tambahkan parameter constraints dalam objek terpisah
             enriched_payload["constraints"] = {}
             
-            # Tambahkan parameter constraints yang diperlukan
             constraint_keys = ["min_rating", "min_reviews", "price_range", 
-                               "business_hours", "keywords", "topPlaces"]
+                               "business_hours", "keywords"]
             
             for key in constraint_keys:
-                if key in self.parameters and self.parameters[key]:
-                    enriched_payload["constraints"][key] = self.parameters[key]
-                    
+                if key in self.storage["$state"] and self.storage["$state"][key] is not None:
+                    enriched_payload["constraints"][key] = self.storage["$state"][key]
+                    print(f"Added constraint from state: {key} = {self.storage['$state'][key]}")
+            
             payload = enriched_payload
-        
+            print(f"Analyze payload after adding constraints from state: {json.dumps(payload, indent=2)}")
+            
         # For control task, prepare complete payload with all required fields
         elif task_key == "control":
             # Ensure all required fields are included
@@ -82,6 +77,7 @@ class WorkflowExecutor:
             # Update with any values from the original payload
             complete_payload.update(payload)
             payload = complete_payload
+            print(f"Control payload: {json.dumps(payload, indent=2)}")
     
         # URL endpoint from environment variable
         url = f"{self.api_base_url}/{task_key}"
@@ -116,15 +112,14 @@ class WorkflowExecutor:
     
         return True
 
-    def start_workflow(self, initial_input, parameters=None):
+    def start_workflow(self, parameters):
         """Memulai workflow dengan input awal dari pengguna dan parameter tambahan"""
         self.storage["$metadata"]["startedAt"] = datetime.now(UTC).isoformat() + "Z"
-        
-        # Simpan parameters sebagai properti kelas
-        if parameters:
-            self.parameters = parameters
             
-        return self.execute_task("input", initial_input)
+        # Save all parameters including constraints to the instance
+        self.parameters = parameters
+    
+        return self.execute_task("input", parameters)
 
     def get_storage(self):
         """Mengembalikan isi Central Storage untuk inspeksi"""
@@ -141,24 +136,16 @@ def run_simulation():
     
     parameters = parse_prompt(prompt)
     
-    # Create initial_input with business_type, location and numberOfLeads
-    initial_input = {
-        "businessType": parameters.get("business_type", ""),
-        "location": parameters.get("location", ""),
-        "numberOfLeads": parameters.get("numberOfLeads", "")
-    }
-    
     # If numberOfLeads is empty, set it to 20; otherwise keep the original value
-    if initial_input["numberOfLeads"] == "":
-        initial_input["numberOfLeads"] = 20
+    if parameters["numberOfLeads"] == "":
         parameters["numberOfLeads"] = 20
-        
-    print(f"Initial input: {initial_input}")
+        parameters["numberOfLeads"] = 20
+
     print(f"Full parameters: {parameters}")
 
     # Jalankan workflow with parameters
     print("Starting workflow...")
-    executor.start_workflow(initial_input, parameters)
+    executor.start_workflow(parameters)
     
     # Tampilkan Central Storage setelah selesai
     print("\nFinal Central Storage:")
