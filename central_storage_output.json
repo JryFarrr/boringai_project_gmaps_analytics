@@ -1,164 +1,168 @@
 {
-  "$id": "aff11a9a-5353-429c-a00b-3af425a72798",
+  "$id": "788aa3e7-4ab1-4380-a9f2-e75c37ab7787",
   "$state": {
-    "business_hours": "anytime",
-    "business_type": "cafes",
-    "keywords": "cozy",
+    "business_hours": "10 pagi sampai 6 malam",
+    "business_type": "caffe",
+    "keywords": "cocok buat nugas, murah",
     "leadCount": 3,
     "location": "Surabaya",
+    "max_reviews": 199,
     "min_rating": 4.0,
-    "min_reviews": 5,
+    "min_reviews": 51,
     "numberOfLeads": 3,
-    "price_range": "$$",
+    "price_range": "$",
     "remainingPlaceIds": [
-      "ChIJGeSmp1v51y0RFyutEwermkE",
-      "ChIJQYkoC5751y0RyWIWHsh556o"
+      "ChIJ4etu3rr71y0Rzf_T8k99l0I",
+      "ChIJ7Q9M_JD71y0RgqAOEJlHCXc",
+      "ChIJe4RW5t771y0REW_-3wtgP1M"
     ],
-    "searchOffset": 7,
-    "skippedCount": 2,
+    "searchOffset": 19,
+    "skippedCount": 13,
     "businessType": "caffe",
-    "nextPageToken": "AeeoHcLEO3uAHjejtqmIxj-ANb4PemcOj8voTNgXMAN8enc6SF-sYsihjafokNeUJxacC2SujZsZeLfXncAD_CjyqOXIDFBPPQJnXYpR_9jQh9VAJ85apU9Ho7rmDWJUb8I7w74QUHcv8Fthn5DZZz9iShN8-PjsHLMAVAw7op84HPzUsNaodEIDDQ8dW1KrtXsEqfswTxZb5JavrYTRuht4s47eYmjbdIeZYJaxGQVmUosO4AV3YJDNXmuXJYC6hCYZ6PqAvW3QMexK8L_Cu0ZZUVyxfNR5yaRYHZt7HG6zj537P05BBvO3-F2zxpm3EO9q215YkBZtE8asU5ltxGxhF0JVfdGHanVKLFhBoB8HZBv6wszLFNlus15DSE448t5FaRtdakuDOW6vuUONVX14Sh3boOROdG_DbOE9duSZ9zXfavKCHQom_tkNN47ndan9O4up0LyS0Og0ufLi2dxlPoR7RyzmDR5hfiSO75QpLP8h7DSEGx4x3z0ptI9fwPTdkjlEHWFNT_RAjUU-BGu6PjXEw8atEf4RYSlr57nHCYg6tCrz9EEO8HVH4p76LrZCdE_Xi78JSrwj9F7b2T0BuyT10ey9yj0fdGb581LTLw",
+    "nextPageToken": null,
     "skippedConstraints": true
   },
   "$results": [
     {
-      "address": "Jl. Walikota Mustajab No.67 - 69, Ketabang, Kec. Genteng, Surabaya, Jawa Timur 60272, Indonesia",
+      "address": "Jl. Ngagel No.152, Ngagel, Kec. Wonokromo, Surabaya, Jawa Timur 60245, Indonesia",
       "businessHours": [
-        "Monday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Tuesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Wednesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Thursday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Friday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Saturday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Sunday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+        "Monday: 6:30\u202fPM\u2009\u2013\u200912:00\u202fAM",
+        "Tuesday: 6:30\u202fPM\u2009\u2013\u200912:00\u202fAM",
+        "Wednesday: 6:30\u202fPM\u2009\u2013\u200912:00\u202fAM",
+        "Thursday: 6:30\u202fPM\u2009\u2013\u200912:00\u202fAM",
+        "Friday: 6:30\u202fPM\u2009\u2013\u200912:00\u202fAM",
+        "Saturday: 6:30\u202fPM\u2009\u2013\u200912:00\u202fAM",
+        "Sunday: 6:30\u202fPM\u2009\u2013\u200912:00\u202fAM"
       ],
-      "business_type": [],
-      "contact": {
-        "phone": "0812-2941-8452",
-        "website": "https://instagram.com/calibrecoffeeroasters"
-      },
-      "fitReason": "Calibre Coffee Roasters perfectly aligns with all specified business constraints and offers exceptional value in terms of product quality, customer service, and ambiance. The high customer rating and positive reviews suggest strong market positioning, while the minimal weaknesses identified do not significantly detract from its appeal as a standout cafe choice in central Surabaya.",
-      "fitScore": 95,
-      "matchFactors": {
-        "hours_factor": 1,
-        "keyword_factor": 1,
-        "price_factor": 1,
-        "rating_factor": 1,
-        "review_count_factor": 1
-      },
-      "matchPercentage": 100,
-      "matchReasoning": "Calibre Coffee Roasters perfectly matches all given constraints. The business has a high rating of 4.5, which meets the minimum rating requirement of 4.0, resulting in a rating factor of 1. The total review count is 2092, far exceeding the minimum requirement of 50, leading to a review count factor of 1. The price level '$$' matches exactly with the specified price range, giving a price factor of 1. The business hours are listed as 'anytime', which matches the constraint of 'anytime', resulting in an hours factor of 1. The sample reviews mention key features such as great coffee, a suitable atmosphere for work with power outlets, and friendly staff, which align with the desired characteristics of a cafe, resulting in a keyword factor of 1. Therefore, the overall match percentage is 100, indicating a perfect alignment with the specified constraints.",
-      "placeName": "Calibre Coffee Roasters",
-      "priceLevel": "$$",
-      "rating": 4.5,
-      "strengths": [
-        "Calibre Coffee Roasters has an excellent customer rating of 4.5/5 based on a significant number of reviews (2092), indicating high customer satisfaction and consistent quality.",
-        "The cafe offers a well-balanced ambiance that is both modern and cozy, providing an atmosphere suitable for both work and relaxation, as highlighted by the availability of power outlets.",
-        "A diverse and high-quality selection of in-house roasted coffee beans enables a personalized coffee experience for various taste preferences, making it a go-to destination for coffee enthusiasts."
+      "businessType": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
       ],
-      "summaryPositiveReviews": "Great coffee and cozy atmosphere make this cafe ideal for work. The in-house roaster offers diverse beans, while food is delicious despite limited variety. Staff are friendly; prices are worth the ...",
-      "totalRatings": 2092,
-      "weaknesses": [
-        "There is limited variety in the food menu with no rice dishes, which might restrict choices for customers looking for a more extensive meal selection.",
-        "The price point is considered slightly high for drinks and pasta, which could deter budget-conscious patrons despite the overall quality and ambiance."
-      ]
-    },
-    {
-      "address": "Jl. Tegalsari No.35, Tegalsari, Kec. Tegalsari, Surabaya, Jawa Timur 60262, Indonesia",
-      "businessHours": [
-        "Monday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Tuesday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Wednesday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Thursday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Friday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Saturday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Sunday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM"
-      ],
-      "business_type": [],
-      "contact": {
-        "phone": "(031) 99299930",
-        "website": "http://instagram.com/vismagallery"
-      },
-      "fitReason": "VISMA | Coffee, Art & Co - Working Space scores very well as a lead due to its excellent customer reviews, alignment with desired price range, and unique offering of a working space alongside arts and cultural events. These aspects contribute significantly to its high match percentage of 98.0%. The slight deductions are due to minor operational issues like restroom maintenance and the potential need to emphasize the 'art' aspect more in its branding and marketing strategies.",
-      "fitScore": 95,
-      "keyThemes": [
-        "Artistic ambiance",
-        "Work/study friendly",
-        "Variety of food and drinks",
-        "Indoor and outdoor seating",
-        "Events and gallery"
-      ],
-      "matchFactors": {
-        "hours_factor": 1.0,
-        "keyword_factor": 0.9,
-        "price_factor": 1.0,
-        "rating_factor": 1.0,
-        "review_count_factor": 1.0
-      },
-      "matchPercentage": 98.0,
-      "matchReasoning": "The business 'VISMA | Coffee, Art & Co - Working Space' matches extremely well with the given constraints. The rating of 4.6 is well above the minimum required rating of 4.0, giving a perfect rating factor. Similarly, with 1062 reviews, it far exceeds the minimum requirement of 50 reviews, resulting in a full score for the review count factor. The price level of '$$' aligns exactly with the specified price range, also earning a full score for this factor. As there is no specific constraint on business hours and the business can operate 'anytime', it receives a full score for hours factor. The sample reviews mention key features like it being work/study space friendly, cozy, offering various foods, snacks, and coffee, which closely align with the idea of a working space with coffee and food offerings. However, the keyword factor slightly misses a perfect score because not all review snippets provided explicitly highlight the 'art' aspect included in the business name, but otherwise it checks most of the boxes desired in a coherent manner.",
-      "placeName": "VISMA | Coffee, Art & Co - Working Space",
-      "priceLevel": "$$",
-      "rating": 4.6,
-      "strengths": [
-        "High customer satisfaction with a 4.6/5 rating from 1062 reviews indicates consistent quality and positive customer experience.",
-        "Diverse offerings, including a variety of food options, artisan teas, and coffee with selected Indonesian beans, support its identity as both a cafe and a working space.",
-        "The integration of art and events, such as galleries and poetry shows, enhances its unique appeal as a cultural and community-centric venue."
-      ],
-      "summaryPositiveReviews": "The cafe is cozy, artsy, and ideal for work, study, or hangouts. It offers diverse food, excellent coffee, and has indoor/outdoor seating. Art events enhance its charm; minor toilet issues noted.",
-      "totalRatings": 1062,
-      "weaknesses": [
-        "Some feedback indicates that the restroom facilities need improvement, which can affect customer perception of overall cleanliness and comfort.",
-        "While the business is marketed to emphasize art, some reviews do not highlight this aspect strongly, suggesting a potential area for better communication of this offering."
-      ]
-    },
-    {
-      "address": "Jl. Simpang Dukuh No.21, Embong Kaliasin, Kec. Genteng, Surabaya, Jawa Timur 60275, Indonesia",
-      "businessHours": [
-        "Monday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Tuesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Wednesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Thursday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Friday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Saturday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Sunday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
-      ],
-      "business_type": [],
-      "contact": {
-        "phone": "0822-3344-4740",
-        "website": "N/A"
-      },
-      "fitReason": "IMHO Coffee scores highly as a prospective lead due to perfect alignment with rating, review count, and price range criteria, resulting in a 100% match analysis. The enthusiastic feedback on ambiance and service, coupled with its central location, underscores its strong potential in attracting a steady customer base. However, minor concerns about seating capacity and coffee quality offer opportunities for enhancing the customer experience and expanding its appeal.",
+      "coordinates": {},
+      "fitReason": "Kafe GUNOZ exhibits a high alignment with given constraints, showing a strong overall match percentage of 90. Despite minor concerns regarding pricing and limited operating hours, the business excels in offering a pleasant and satisfying customer experience, supported by a variety of menu items and reliable Wi-Fi service. These factors collectively suggest that it stands as a promising lead in its market segment.",
       "fitScore": 90,
-      "matchFactors": {
-        "hours_factor": 1,
-        "keyword_factor": 1,
-        "price_factor": 1,
-        "rating_factor": 1,
-        "review_count_factor": 1
+      "keywordMatch": "0 keywords found from 10 reviews",
+      "matchPercentage": 90.0,
+      "phone": null,
+      "placeId": null,
+      "placeName": "Kafe GUNOZ",
+      "priceRange": "$",
+      "rating": 4.3,
+      "reviewCount": 10,
+      "reviewSummary": {
+        "negative": "",
+        "positive": "Cozy cafe with varied menu, reasonable prices despite some pricey items. Good service and fast Wi-Fi make it ideal for socializing."
       },
-      "matchPercentage": 100,
-      "matchReasoning": "IMHO Coffee perfectly meets all the constraints outlined. It has a high rating of 4.7, which is above the minimum required rating of 4.0. With 188 total reviews, it satisfies the constraint of having at least 50 reviews. The price level is $$, which exactly matches the specified price range. The business hours requirement was 'anytime', implying flexibility, and given that there is no information to the contrary, the factor is a complete match. Additionally, the sample reviews depict positive sentiments towards coffee, aligning with the concept of a cafe and store, which contributes positively to the keyword factor. All factors align perfectly, leading to a match percentage of 100.",
-      "placeName": "IMHO Coffee",
-      "priceLevel": "$$",
-      "rating": 4.7,
       "strengths": [
-        "High customer satisfaction with a 4.7/5 rating based on 188 reviews, indicating consistent quality and reliable service.",
-        "Positive atmosphere and experience, highlighted by reviews mentioning good ambiance and friendly, responsive staff, making it a pleasant place to visit.",
-        "Strategic location in the middle of Surabaya, which enhances its accessibility and convenience for potential customers."
+        "Kafe GUNOZ has a strong customer satisfaction reflected by a high rating of 4.3 out of 5 based on 179 reviews.",
+        "The cafe's environment is appreciated for being a good place to converse and spend time, with positive mentions on the variety of menu options and the quality of offerings.",
+        "It provides good amenities such as fast Wi-Fi, enhancing customer experience and making it an appealing spot for both social and solo visits."
       ],
-      "summaryNegativeReviews": "Even though the caf\u00e9 is aesthetically pleasing and well-located, customers find the coffee average and the place too small, despite accommodating 25 people.",
-      "summaryPositiveReviews": "Customers appreciate the good coffee, nice ambiance, and friendly staff. Recurring themes include interesting decor and a memorable atmosphere. Latte art and taste are positively noted.",
-      "totalRatings": 188,
+      "totalRatings": 179,
       "weaknesses": [
-        "Limited seating capacity, which may restrict customer volume and could lead to discomfort during peak hours.",
-        "Coffee quality perceived as standard by some, suggesting potential improvements or differentiation to better meet varied customer preferences."
-      ]
+        "Some customers perceive the pricing to be slightly high which could deter price-sensitive guests, even with affordable options available.",
+        "The cafe operates for only 8 hours, which might not accommodate customers looking for longer service hours, potentially limiting guest visits."
+      ],
+      "website": null
+    },
+    {
+      "address": "Jl. Ngagel Rejo Utara No.25, Ngagelrejo, Kec. Wonokromo, Surabaya, Jawa Timur 60245, Indonesia",
+      "businessHours": [
+        "Monday: Open 24 hours",
+        "Tuesday: Open 24 hours",
+        "Wednesday: Open 24 hours",
+        "Thursday: Open 24 hours",
+        "Friday: Open 24 hours",
+        "Saturday: Open 24 hours",
+        "Sunday: Open 24 hours"
+      ],
+      "businessType": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "fitReason": "Cafein Warkop is a strong fit as a business lead with a high match percentage of 90.0% and a positive community presence as indicated by its high rating. However, unverified business hours and noted operational issues slightly reduce its fit score. Addressing these weaknesses could enhance its attractiveness to a broader audience.",
+      "fitScore": 85,
+      "keywordMatch": "2 keywords found from 10 reviews",
+      "matchPercentage": 90.0,
+      "phone": null,
+      "placeId": null,
+      "placeName": "Cafein Warkop",
+      "priceRange": "$",
+      "rating": 4.4,
+      "reviewCount": 10,
+      "reviewSummary": {
+        "negative": "The reviews criticize high prices, disorganized space, slow Wi-Fi, inadequate parking, stingy with ice and sugar, slow service, and unsmiling staff.",
+        "positive": "Customers find it a great hangout spot, consistently describing the place as cool, nice, and top-notch."
+      },
+      "strengths": [
+        "Cafein Warkop has a high customer satisfaction rate with a rating of 4.4 out of 5, indicating high-quality service and ambiance.",
+        "The cafe aligns perfectly with most constraints, such as the price range and minimum review count, showing it\u2019s a popular and affordable choice for its target audience.",
+        "Positive reviews highlight the cafe as a popular place for social gatherings, suggesting a strong community presence and lively atmosphere."
+      ],
+      "totalRatings": 102,
+      "weaknesses": [
+        "Some negative reviews indicate issues with price perception, describing it as expensive, which could deter budget-sensitive customers.",
+        "Complaints about service issues such as waiting times and unfriendly staff point to potential operational inefficiencies that may impact customer satisfaction.",
+        "According to negative feedback, there are logistical challenges like inadequate parking and unreliable wifi, which could affect customer convenience and repeat visits."
+      ],
+      "website": null
+    },
+    {
+      "address": "Jl. Wonokromo Tangkis No.52, Wonokromo, Kec. Wonokromo, Surabaya, Jawa Timur 60243, Indonesia",
+      "businessHours": [
+        "Monday: 7:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 7:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 7:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 7:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 7:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 7:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: 7:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "store",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "coordinates": {},
+      "fitReason": "Brain Coffee Surabaya has a compelling offering with high customer satisfaction and affordability, however, it falls short due to an excessive number of reviews that do not meet constraints and some inconsistencies in flavor profiles. The lack of detailed information on operational hours also slightly reduces fit. Overall, it remains a viable lead but with considerations regarding improvements in specific areas.",
+      "fitScore": 60,
+      "keywordMatch": "0 keywords found from 10 reviews",
+      "matchPercentage": 60.0,
+      "phone": null,
+      "placeId": null,
+      "placeName": "Brain Coffee Surabaya",
+      "priceRange": "$",
+      "rating": 4.6,
+      "reviewCount": 10,
+      "reviewSummary": {
+        "negative": "",
+        "positive": "Customers praise the cafe's delicious and affordable food, creative plating, and excellent staff service. The aesthetic presentation and lively atmosphere, despite limited space, attract a young cr..."
+      },
+      "strengths": [
+        "High customer satisfaction as evidenced by a strong rating of 4.6/5 from 1488 reviews, indicating overall positive customer experiences.",
+        "Affordable pricing with the business fitting perfectly into the '$' price range, making it accessible to a wide customer base.",
+        "Well-received ambiance and service, with reviews highlighting the aesthetic presentation of food, excellent service, and a clean environment."
+      ],
+      "totalRatings": 1488,
+      "weaknesses": [
+        "High review count exceeds the specified maximum constraint, negatively affecting the match score.",
+        "Inconsistency in menu flavors as noted in reviews, such as sweets not balancing well with certain dishes and unexpected flavors in traditional dishes like pesto pasta.",
+        "Incomplete business hours information resulting in only a partial score for the hours_factor, which might lead to customer confusion or dissatisfaction regarding availability."
+      ],
+      "website": null
     }
   ],
   "$metadata": {
-    "createdAt": "2025-04-25T08:45:44.362537+00:00Z",
-    "startedAt": "2025-04-25T08:45:46.270301+00:00Z",
-    "executionTotal": 18
+    "createdAt": "2025-04-25T16:00:31.036890+00:00Z",
+    "startedAt": "2025-04-25T16:00:34.260093+00:00Z",
+    "executionTotal": 52
   }
 }

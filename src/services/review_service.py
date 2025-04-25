@@ -1,6 +1,7 @@
 from src.services.api_clients.factory import create_client
 from src.utils.business_matcher import extract_key_themes
 from flask import current_app
+from src.services.google_maps_service import get_place_reviews
 
 def generate_review_summaries(positive_reviews, negative_reviews, keywords=""):
     """
@@ -185,3 +186,27 @@ def extract_key_themes_from_reviews(reviews):
         return []
     
     return extract_key_themes(reviews)
+
+def get_reviews_for_place(place_id, max_reviews=100):
+    """
+    Get reviews for a place using SearchAPI.io
+    
+    Args:
+        place_id (str): Google Place ID
+        max_reviews (int): Maximum number of reviews to fetch (default: 100)
+        
+    Returns:
+        dict: Dictionary with positive_reviews and negative_reviews separated
+    """
+    # Get reviews using SearchAPI.io
+    all_reviews = get_place_reviews(place_id, max_reviews)
+    
+    # Separate into positive and negative reviews
+    positive_reviews = [r['text'] for r in all_reviews if r.get('rating', 0) >= 4]
+    negative_reviews = [r['text'] for r in all_reviews if r.get('rating', 0) < 4]
+    
+    return {
+        "positive_reviews": positive_reviews,
+        "negative_reviews": negative_reviews,
+        "all_reviews": all_reviews
+    }

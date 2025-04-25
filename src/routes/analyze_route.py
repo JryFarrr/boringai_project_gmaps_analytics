@@ -105,11 +105,13 @@ def analyze_route():
             "coordinates": place_details.get("coordinates", {}),
             "reviewSummary": place_details.get("reviewSummary", {}),
             # Make sure keywordMatch is included in the final result
-            "keywordMatch": place_details.get("keywordMatch", "0 keywords found from 0 reviews")
+            "keywordMatch": place_details.get("keywordMatch", "0 keywords found from 0 reviews"),
+            "reviewCount": len(place_details.get("positiveReviews", [])) + len(place_details.get("negativeReviews", []))
         }
         
         # Log the keywordMatch value in the final result
         current_app.logger.info(f"keywordMatch in final result: {result.get('keywordMatch', 'Not found')}")
+        current_app.logger.info(f"Total reviews analyzed: {result.get('reviewCount', 0)}")
         
         # Return response with result and next action
         response = {
@@ -203,6 +205,7 @@ def create_result_object(place_details, match_percentage, match_analysis, summar
         "rating": place_details.get("rating", 0),
         "totalRatings": place_details.get("totalRatings", 0),
         "priceLevel": place_details.get("priceRange", ""),
+        "reviewCount": len(place_details.get("positiveReviews", [])) + len(place_details.get("negativeReviews", []))
     }
     
     # Add match analysis reasoning if available

@@ -13,7 +13,7 @@ load_dotenv(dotenv_path=env_path)
 GOOGLE_API_KEY = os.getenv("GOOGLE_MAPS_API_KEY")
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-SEARCHAPI_API_KEY = os.getenv("SEARCHAPI_API_KEY")
+SEARCHAPI_API_KEY = os.getenv("SEARCHAPI_API_KEY", "DhyaGcMobTCxHcd2GaUJ6Z5o")  # Default key added
 
 # Default settings
 DEFAULT_REFERER_URL = os.getenv("DEFAULT_REFERER_URL")
@@ -43,6 +43,9 @@ MAX_DETAILED_PLACES = 20
 
 # Maximum number of pages to fetch in text search
 MAX_SEARCH_PAGES = 3
+
+# Maximum number of reviews to fetch per place
+MAX_REVIEWS_PER_PLACE = 100
 
 DEFAULT_API_PROVIDER = os.getenv("DEFAULT_API_PROVIDER")
 DEFAULT_OPENAI_MODEL = os.getenv("DEFAULT_OPENAI_MODEL")

@@ -3,6 +3,7 @@ import time
 import openai
 import json
 from src.config import config
+from datetime import datetime
 
 # === GLOBAL API KEYS ===
 api_key = None
@@ -10,25 +11,34 @@ openai_api_key = None
 search_api_key = None 
 
 # === INIT API KEYS ===
-def init_api_key(key):
+def init_api_key(key=None):
     """Initialize the Google Maps API key"""
     global api_key
-    api_key = config.GOOGLE_API_KEY
-    return key
+    if key:
+        api_key = key
+    else:
+        api_key = config.GOOGLE_API_KEY
+    return api_key
 
 
-def init_openai_key(key):
+def init_openai_key(key=None):
     """Initialize OpenAI API key"""
     global openai_api_key
-    openai.api_key = config.OPENAI_API_KEY
-    return key
+    if key:
+        openai_api_key = key
+    else:
+        openai_api_key = config.OPENAI_API_KEY
+    return openai_api_key
 
 
-def init_search_api_key(key):
+def init_search_api_key(key=None):
     """Initialize SearchAPI.io API key"""
     global search_api_key
-    search_api_key = config.SEARCHAPI_API_KEY
-    return key
+    if key:
+        search_api_key = key
+    else:
+        search_api_key = config.SEARCHAPI_API_KEY
+    return search_api_key
 
 
 # === GOOGLE PLACES TEXT SEARCH ===
@@ -68,7 +78,10 @@ def search_places(query=None, page_token=None):
 def get_api_key():
     global api_key
     if api_key is None:
-        raise ValueError("API key not initialized. Call init_api_key first.")
+        # Initialize the API key if not already done
+        api_key = init_api_key()
+        if not api_key:
+            raise ValueError("Google Maps API key not found. Make sure it's set in your config.")
     return api_key
 
 
@@ -76,40 +89,138 @@ def get_api_key():
 def get_search_api_key():
     global search_api_key
     if search_api_key is None:
-        raise ValueError("SearchAPI.io key not initialized. Call init_search_api_key first.")
+        # Initialize the API key if not already done
+        search_api_key = init_search_api_key()
+        if not search_api_key:
+            raise ValueError("SearchAPI.io key not found. Make sure it's set in your config.")
     return search_api_key
 
 
 # === GET PLACE DETAILS ===
 def get_place_details(place_id, fields=None):
-    if not api_key:
-        raise ValueError("Google Maps API key is not initialized. Call init_api_key first.")
+    google_api_key = get_api_key()  # Ensure we have an API key
 
     url = "https://maps.googleapis.com/maps/api/place/details/json"
     params = {
         "place_id": place_id,
-        "key": api_key
+        "key": google_api_key
     }
     if fields:
         params["fields"] = ",".join(fields)
 
     try:
+        print(f"Fetching place details for place_id: {place_id}")
         response = requests.get(url, params=params)
         response.raise_for_status()
         data = response.json()
+        
         if data["status"] != "OK":
+            print(f"API error for place_id {place_id}: {data.get('error_message', data['status'])}")
             raise Exception(f"API error: {data.get('error_message', data['status'])}")
-        return data.get("result", {})
+        
+        # Get the basic place details
+        place_details = data.get("result", {})
+        
+        # Add reviews from SearchAPI.io
+        place_details["reviews"] = get_place_reviews(place_id)
+        
+        return place_details
     except requests.RequestException as e:
+        print(f"Request error for place_id {place_id}: {str(e)}")
         raise Exception(f"Failed to call Google Maps API: {str(e)}")
 
 
 # === GET REVIEWS FOR A PLACE ===
-def get_place_reviews(place_id, max_reviews=20):
-    fields = ["review", "name", "rating", "user_ratings_total", "formatted_address", "types", "url"]
-    place_details = get_place_details(place_id, fields=fields)
-    reviews = place_details.get("reviews", [])
-    return reviews[:max_reviews]
+def get_place_reviews(place_id, max_reviews=10):
+    """
+    Get reviews using SearchAPI.io with pagination to overcome the 20 review limit
+    
+    Args:
+        place_id (str): Google place_id for the business
+        max_reviews (int): Maximum number of reviews to retrieve (default: 100)
+        
+    Returns:
+        list: List of reviews from SearchAPI.io
+    """
+    try:
+        url = "https://www.searchapi.io/api/v1/search"
+        all_reviews = []
+        next_page_token = None
+        
+        # Get the SearchAPI.io API key
+        api_key_searchapi = get_search_api_key()
+        
+        print(f"Starting to fetch reviews for place_id: {place_id}")
+        
+        # Continue fetching until we have enough reviews or no more pages
+        attempts = 0
+        while len(all_reviews) < max_reviews and attempts < 5:  # Limit to 5 attempts to prevent infinite loops
+            attempts += 1
+            
+            # Set up parameters for the API request
+            params = {
+                "engine": "google_maps_reviews",
+                "place_id": place_id,
+                "api_key": api_key_searchapi,
+                # Don't set num higher than 20 or omit to use API default
+            }
+            
+            # Add next_page_token if we have one from a previous request
+            if next_page_token:
+                params["next_page_token"] = next_page_token
+            
+            print(f"Fetching reviews for place_id {place_id} from SearchAPI.io... (Attempt {attempts})")
+            response = requests.get(url, params=params)
+            
+            if response.status_code != 200:
+                print(f"Error fetching reviews from SearchAPI.io: {response.status_code}")
+                print(f"Response: {response.text}")
+                return all_reviews  # Return what we've collected so far
+                
+            data = response.json()
+            
+            # Extract reviews from the response
+            reviews = data.get('reviews', [])
+            
+            # If no reviews were returned, break the loop
+            if not reviews:
+                print(f"No reviews found for place_id {place_id} on this page")
+                break
+            
+            # Add the reviews to our collection
+            all_reviews.extend(reviews)
+            
+            # Get the next page token for pagination
+            next_page_token = data.get("pagination", {}).get("next_page_token")
+            
+            # If there's no next page token, we've reached the end
+            if not next_page_token:
+                print(f"No more pages of reviews available for place_id {place_id}")
+                break
+            
+            print(f"Fetched {len(reviews)} reviews. Total so far: {len(all_reviews)}")
+            
+            # Small delay between requests
+            time.sleep(1)
+        
+        # Format reviews to match Google Maps API format
+        formatted_reviews = []
+        for review in all_reviews[:max_reviews]:
+            formatted_review = {
+                'author_name': review.get('user', {}).get('name', 'Anonymous'),
+                'rating': review.get('rating', 0),
+                'text': review.get('text', ''),
+                'time': datetime.strptime(review.get('iso_date', datetime.now().isoformat()), "%Y-%m-%dT%H:%M:%SZ").timestamp() if 'iso_date' in review else time.time(),
+                'relative_time_description': review.get('date', 'recently')
+            }
+            formatted_reviews.append(formatted_review)
+        
+        print(f"Retrieved {len(formatted_reviews)} reviews from SearchAPI.io for place_id {place_id}")
+        return formatted_reviews
+        
+    except Exception as e:
+        print(f"Error fetching reviews from SearchAPI.io for place_id {place_id}: {str(e)}")
+        return []
 
 
 # === SEARCH VIA SEARCHAPI.IO (replacing SerpAPI) ===
@@ -153,8 +264,14 @@ def search_business_with_search_api(keyword, location="Indonesia", max_results=5
 
 # === OPENAI: SUMMARIZE & EXTRACT KEYWORDS ===
 def summarize_and_extract_keywords(reviews):
-    if not openai.api_key:
-        raise ValueError("OpenAI API key not initialized. Call init_openai_key first.")
+    # Initialize OpenAI API key if not already done
+    global openai_api_key
+    if not openai_api_key:
+        openai_api_key = init_openai_key()
+        if not openai_api_key:
+            raise ValueError("OpenAI API key not found in config")
+    
+    openai.api_key = openai_api_key
 
     review_texts = [r.get("text", "") for r in reviews if r.get("text")]
     joined_reviews = "\n".join(review_texts[:10])
@@ -185,29 +302,20 @@ def summarize_and_extract_keywords(reviews):
 
 
 # === MAIN SCRAPE TASK ===
-def scrape_business_data_by_keyword(keyword, max_places=5, max_reviews_per_place=10):
-    all_data = []
-    businesses = search_business_with_search_api(keyword, max_results=max_places)
-
-    for biz in businesses:
-        place_id = biz.get("place_id")
-        if not place_id:
-            continue
-
-        details = get_place_details(place_id, fields=[
-            "name", "place_id", "rating", "formatted_address", "types", "url"
-        ])
-        reviews = get_place_reviews(place_id, max_reviews=max_reviews_per_place)
-
-        try:
-            analysis = summarize_and_extract_keywords(reviews)
-        except Exception as e:
-            analysis = {"summary": None, "keywords": [], "error": str(e)}
-
-        all_data.append({
-            "business": details,
-            "reviews": reviews,
-            "analysis": analysis
-        })
-
-    return all_data
+def scrape_business_data_by_keyword(keyword, location="Indonesia", max_results=5):
+    """
+    Scrapes business data by keyword using SearchAPI.io
+    
+    Args:
+        keyword (str): The keyword to search for
+        location (str): The location to search in
+        max_results (int): Maximum number of results to return
+        
+    Returns:
+        list: List of businesses with place_id and other basic info
+    """
+    print(f"Searching for businesses with keyword: '{keyword}' in {location}")
+    # Search for businesses using SearchAPI.io
+    businesses = search_business_with_search_api(keyword, location=location, max_results=max_results)
+    print(f"Found {len(businesses)} businesses matching the keyword")
+    return businesses
