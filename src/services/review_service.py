@@ -1,17 +1,23 @@
 from src.services.api_clients.factory import create_client
 from src.utils.business_matcher import extract_key_themes
+from flask import current_app
 
-def generate_review_summaries(positive_reviews, negative_reviews):
+def generate_review_summaries(positive_reviews, negative_reviews, keywords=""):
     """
     Generates summaries for both positive and negative reviews
     
     Args:
         positive_reviews (list): List of positive review texts
         negative_reviews (list): List of negative review texts
+        keywords (str): Optional keywords to count in reviews
         
     Returns:
-        dict: Dictionary containing positive and negative summaries
+        dict: Dictionary containing positive and negative summaries and keyword match
     """
+    # Tambahkan log di awal fungsi
+    current_app.logger.info(f"generate_review_summaries called with keywords: '{keywords}'")
+    current_app.logger.info(f"Number of reviews: positive={len(positive_reviews)}, negative={len(negative_reviews)}")
+    
     result = {}
     
     # Get positive review summary
@@ -21,7 +27,89 @@ def generate_review_summaries(positive_reviews, negative_reviews):
     # Get negative review summary
     if negative_reviews:
         result["negative"] = generate_review_summary(negative_reviews, "negative")
+    
+    # Calculate keyword match regardless of whether explicit keywords are provided
+    # This ensures keywordMatch is always in the result
+    all_reviews = []
+    all_reviews.extend(positive_reviews)
+    all_reviews.extend(negative_reviews)
+    review_count = len(all_reviews)
+    
+    if keywords:
+        # Tambahkan log sebelum mencari keywords
+        current_app.logger.info(f"Searching for keywords: '{keywords}'")
         
+        # Count keywords and add to result
+        result["keywordMatch"] = count_keywords_in_reviews(all_reviews, keywords)
+        
+        # Tambahkan log setelah menghitung keywords
+        current_app.logger.info(f"Keyword match result: {result.get('keywordMatch', 'Not found')}")
+    else:
+        # Provide default value when no keywords specified
+        current_app.logger.warning("No keywords provided, adding default keywordMatch")
+        result["keywordMatch"] = f"0 keywords found from {review_count} reviews"
+    
+    # Fallback mechanism in case count_keywords_in_reviews fails
+    if "keywordMatch" not in result:
+        current_app.logger.warning("keywordMatch missing, adding fallback calculation")
+        keyword_count = 0
+        
+        if keywords and review_count > 0:
+            # Split keywords if multiple (comma separated)
+            keyword_list = [k.strip().lower() for k in keywords.split(',')]
+            current_app.logger.info(f"Fallback - Keyword list: {keyword_list}")
+            
+            # Search in all reviews
+            for review in all_reviews:
+                current_app.logger.debug(f"Checking review: {review[:50]}...")
+                for keyword in keyword_list:
+                    if keyword.lower() in review.lower():  # Case insensitive search
+                        keyword_count += 1
+                        current_app.logger.debug(f"Found keyword '{keyword}' in review")
+        
+        result["keywordMatch"] = f"{keyword_count} keywords found from {review_count} reviews"
+    
+    # Tambahkan log untuk hasil akhir
+    current_app.logger.info(f"Final review summary result keys: {result.keys()}")
+    current_app.logger.info(f"Final keywordMatch: {result.get('keywordMatch', 'Still missing!')}")
+    
+    return result
+
+def count_keywords_in_reviews(reviews, keywords):
+    """
+    Counts how many reviews contain the specified keywords
+    
+    Args:
+        reviews (list): List of review texts
+        keywords (str): Comma-separated keywords to search for
+        
+    Returns:
+        str: String describing the keyword match
+    """
+    keyword_count = 0
+    review_count = len(reviews)
+    
+    # Split keywords if multiple (comma separated)
+    keyword_list = [k.strip().lower() for k in keywords.split(',')]
+    current_app.logger.info(f"Keyword list for counting: {keyword_list}")
+    
+    # Add detailed logging for each review and keyword
+    for i, review in enumerate(reviews):
+        review_matched = False
+        current_app.logger.debug(f"Checking review #{i+1}: {review[:50]}...")
+        
+        for keyword in keyword_list:
+            if keyword.lower() in review.lower():  # Case insensitive search
+                keyword_count += 1
+                review_matched = True
+                current_app.logger.debug(f"Found keyword '{keyword}' in review #{i+1}")
+                break  # Count each review only once
+        
+        if review_matched:
+            current_app.logger.debug(f"Review #{i+1} matched at least one keyword")
+    
+    result = f"{keyword_count} keywords found from {review_count} reviews"
+    current_app.logger.info(f"Keyword count result: {result}")
     return result
 
 def generate_review_summary(reviews, review_type="positive", max_length=200):

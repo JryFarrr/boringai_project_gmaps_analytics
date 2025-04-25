@@ -79,6 +79,7 @@ def create_scrape_response(place_data, lead_count, skipped_count, number_of_lead
             "payload": {
                 "placeDetails": place_data,
                 "leadCount": "$state.leadCount",
+                "constraints": place_data.get("constraints", {}),
                 "skippedCount": "$state.skippedCount",
                 "numberOfLeads": "$state.numberOfLeads"
             }

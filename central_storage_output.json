@@ -2,12 +2,12 @@
   "$id": "aff11a9a-5353-429c-a00b-3af425a72798",
   "$state": {
     "business_hours": "anytime",
-    "business_type": "caffe",
-    "keywords": "cocok buat nugas",
+    "business_type": "cafes",
+    "keywords": "cozy",
     "leadCount": 3,
     "location": "Surabaya",
     "min_rating": 4.0,
-    "min_reviews": 50,
+    "min_reviews": 5,
     "numberOfLeads": 3,
     "price_range": "$$",
     "remainingPlaceIds": [
@@ -66,13 +66,13 @@
     {
       "address": "Jl. Tegalsari No.35, Tegalsari, Kec. Tegalsari, Surabaya, Jawa Timur 60262, Indonesia",
       "businessHours": [
-        "Monday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Tuesday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Wednesday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Thursday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Friday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Saturday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Sunday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+        "Monday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Tuesday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Wednesday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Thursday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Friday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Saturday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Sunday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM"
       ],
       "business_type": [],
       "contact": {
