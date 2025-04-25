@@ -140,8 +140,7 @@ def run_simulation():
     if parameters["numberOfLeads"] == "":
         parameters["numberOfLeads"] = 20
         parameters["numberOfLeads"] = 20
-        
-    print(f"Initial input: {parameters}")
+
     print(f"Full parameters: {parameters}")
 
     # Jalankan workflow with parameters

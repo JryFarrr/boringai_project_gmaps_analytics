@@ -133,7 +133,7 @@ def extract_key_themes(reviews, max_themes=5):
     
     try:
         # Create client for OpenAI
-        client, headers, provider = create_client(provider="openai")
+        client, headers, provider = create_client()
         
         # Prepare prompt for OpenAI
         prompt = f"""Extract the {max_themes} most important themes or topics from these business reviews.
@@ -202,7 +202,7 @@ def calculate_match_percentage_with_ai(place, parameters, reviews=None):
     """
     try:
         # Create client for OpenAI
-        client, headers, provider = create_client(provider="openai")
+        client, headers, provider = create_client()
         
         # Simplify place data for OpenAI to reduce complexity
         place_data = {
