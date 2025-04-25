@@ -140,7 +140,7 @@ def analyze_route():
                     "remainingPlaceIds": "$state.remainingPlaceIds",
                     "searchOffset": "$state.searchOffset",
                     "nextPageToken": "$state.nextPageToken",
-                    "businessType": "$state.businessType",
+                    "business_type": "$state.business_type",
                     "location": "$state.location",
                     "skippedCount": "$state.skippedCount"
                 }
@@ -180,7 +180,7 @@ def create_skip_response(lead_count, skipped_count):
                 "remainingPlaceIds": "$state.remainingPlaceIds",
                 "searchOffset": "$state.searchOffset",
                 "nextPageToken": "$state.nextPageToken",
-                "businessType": "$state.businessType",
+                "business_type": "$state.business_type",
                 "location": "$state.location",
                 "skippedConstraints": True,
                 "skippedCount": "$state.skippedCount"
@@ -208,7 +208,7 @@ def create_result_object(place_details, match_percentage, match_analysis, summar
     result = {
         "placeName": place_details["placeName"],
         "matchPercentage": match_percentage,
-        "businessType": place_details.get("businessType", []),
+        "business_type": place_details.get("business_type", []),
         "rating": place_details.get("rating", 0),
         "totalRatings": place_details.get("totalRatings", 0),
         "priceLevel": place_details.get("priceRange", ""),

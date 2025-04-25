@@ -15,7 +15,7 @@ def generate_business_insights(place_details, match_percentage, match_analysis=N
     """
     try:
         # Create client for OpenAI
-        client, headers, provider = create_client(provider="openai")
+        client, headers, provider = create_client()
         
         # Extract key information for the prompt
         business_name = place_details.get("placeName", "")

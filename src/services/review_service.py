@@ -44,7 +44,7 @@ def generate_review_summary(reviews, review_type="positive", max_length=200):
     
     try:
         # Create client for OpenAI
-        client, headers, provider = create_client(provider="openai")
+        client, headers, provider = create_client()
         
         # Prepare prompt for OpenAI
         prompt = f"""Summarize the following {review_type} reviews for a business.

@@ -1,98 +1,139 @@
 {
-  "$id": "c2e28ee5-d8a8-4008-af89-f01e1acff2bf",
+  "$id": "d2086a9c-16d8-4c8d-ba57-52ef238dc5a4",
   "$state": {
-    "businessType": "caffe",
+    "business_hours": "anytime",
+    "business_type": "caffe",
+    "keywords": "cocok buat nugas",
     "leadCount": 3,
     "location": "Surabaya",
+    "min_rating": 4.0,
+    "min_reviews": 50,
     "numberOfLeads": 3,
-    "remainingPlaceIds": [],
-    "searchOffset": 6,
-    "skippedCount": 2,
-    "nextPageToken": "AeeoHcL0NSmXTzswYlbZkgDi8CuXVDtyZe46EW1ZxLCRmNoIDIody22eIRNGqPrerSmzYWXIpCHTUpAvylznaxbJ3A7k-EWncQJdaC4087uY9zogAreu0rYRefutTSc_6pbRCmjcOxng92CoaUtVeluJE_raNPs0CUUa70FsFfHST5bC_6yprDnEL7CbpkS1pFQy64YOF0VShCGEI8DyD_JnVtcXkMsPqttL2LCZS93XXxgMoj5l9t2cCbPIt3S_ZjW90H7Noo1xtfARnp8MbxJVI_yK4-LdUmyzr88jBswRxI5iq4RT_gfudhzue_fQliaF7ST5dOlRLYsz_Uj__pGTFnddh15GsIq7rPNDCcZSifWO77Al6qcxSqgpk_tTii-3wQUFzZZGGuLVn3ljcDYVNT6zNg53uyvz6ZiMPfcodo-oa1a75OUfZ5omKYelzafAd1X4EC9w-MaLsPPHD_X8hXVxkDrpieUAR1VmV0r3SE2WSJE7rnvAUFJ6GwXuA0cjdaoMue7wDSTDfFr6xAuMPknnFGHRWLmtwkPUQq73-2ZrnGYNvPl8_N9bf4bjAMB_3BlB5F8ymBy1Wf34fsGmcfX0PMuzvVtw7TQptJuylQ",
+    "price_range": "$$",
+    "remainingPlaceIds": [
+      "ChIJQXPd5tf71y0RrZP3as0d_Hw"
+    ],
+    "searchOffset": 7,
+    "skippedCount": 3,
+    "businessType": "caffe",
+    "nextPageToken": "AeeoHcKDCQ3N57lZDuX2D2QHq0BygMVTPut_KBFhsQjQ_njhFcv6lEgLCgDl4q0pnEnNdtnGREPxSaxKBz7BBMdsrazrk4zJdx6zCH1MY0RkyngVkgc01cXfclGVdCTmallX-eJoGmiQEil_KPcSrQ0cNNlg0CVBhnr2gk7FIaDX59xkG1jkQxPFsRudjWAyaKyn8P42QGjQwJ-4vAi5EVMqGJqk4YRJDN_-nO9EcV1M3bKec0GjTlkPrO89l-QFMJeZQnbUwBZ93L_AKqyEYwu6Y2LV8f5d2r3rKtjO8HC29NgcbNpqE9qXAVX8qVrHCKUAiRhBFKG0VFrq7xq_-Jek9hSJqSXNq0_8yhodQjBq0kEtQdlGrBtyypYYctpyUi6c1S5g2JDheYPV_9KHu54ElEtbOAMY1L65yDoMKFCBuR4a9nGrdSxHV7trD_2we20aGWVLVRrj1hjz2pcZPGUskAhNlkn4UssU8_mNU6-PJgvJ1Px1JW3WBBzyUwiqY8N2AojuA25ErO2yP1iWlp6p29-Trf8Ud4YGEKh-MUr4i5GZwv6LEkzIUHyubfqRAgXx02EdRH-In2QiAP-fBAOvUr8-AZG8ETcSmBSfoCOWhA",
     "skippedConstraints": true
   },
   "$results": [
     {
-      "address": "Jl. Pandan No.5, Ketabang, Kec. Genteng, Surabaya, Jawa Timur 60272, Indonesia",
+      "address": "PQV2+2R8, Jl. Ketabang Kali No.53, Ketabang, Kec. Genteng, Surabaya, Jawa Timur 60272, Indonesia",
       "businessHours": [
-        "Monday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Tuesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Wednesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Thursday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Friday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Saturday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Sunday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+        "Monday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Tuesday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Wednesday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Thursday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Friday: 10:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Saturday: 10:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Sunday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM"
       ],
-      "businessType": [
-        "cafe",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
+      "business_type": [],
       "contact": {
-        "phone": "N/A",
+        "phone": "0817-328-080",
         "website": "N/A"
       },
       "fitReason": "Score based on match percentage only",
-      "fitScore": 95,
+      "fitScore": 100,
       "keyThemes": [
-        "Gen Z hangout spot",
-        "Affordable pricing",
-        "Mixed food quality",
-        "Cozy ambience",
-        "Small indoor space"
+        "very",
+        "our",
+        "food",
+        "nice",
+        "place"
       ],
       "matchFactors": {
         "hours_factor": 1.0,
-        "keyword_factor": 0.75,
+        "keyword_factor": 1.0,
         "price_factor": 1.0,
         "rating_factor": 1.0,
         "review_count_factor": 1.0
       },
-      "matchPercentage": 95.0,
-      "matchReasoning": "Mawu Cafe matches the constraints very closely. It exceeds the minimum rating of 4.0 with a 4.4, and the number of reviews (581) is well above the required 50, resulting in both a rating_factor and review_count_factor of 1.0. The price level of '$$' matches perfectly with the constraint, giving a price_factor of 1.0. The business is categorized as 'anytime' suggesting it is open to fulfilling various time-based needs, aligning it perfectly with the business_hours constraint, thus a hours_factor of 1.0. However, the keyword_factor is slightly lower at 0.75; although Mawu Cafe is a popular hangout for Gen Z, as inferred from the sample reviews, the constraint does not mention a specific target demographic, causing a slight deduction as broader appeal is not explicitly highlighted. Overall, the cafe fits extremely well within the provided constraints, yielding a high match percentage of 95%.",
-      "placeName": "Mawu Cafe",
+      "matchPercentage": 100,
+      "matchReasoning": "Sambang Cafe & Eatery matches all the given constraints perfectly. The cafe has a high rating of 4.7, which exceeds the minimum rating requirement of 4.0. With 993 total reviews, it surpasses the minimum reviews constraint of 50. The price level of $$ directly matches the specified price range. The constraint 'business_hours: anytime' does not restrict the operating hours of the cafe, ensuring full compatibility. Additionally, the sample reviews highlight a positive atmosphere, good service, and quality food, making the keyword factor flawlessly align with consumer expectations. All criteria fit the constraints without any deviations, resulting in a match percentage of 100%.",
+      "placeName": "Sambang Cafe & Eatery",
       "priceLevel": "$$",
-      "rating": 4.4,
+      "rating": 4.7,
       "strengths": [
         "Based on available reviews"
       ],
-      "summaryPositiveReviews": "Popular with Gen Z, this cafe offers cozy seating and quick service. It features a photobooth, affordable menu, and easy self-pickup system. Indoor space is limited.",
-      "totalRatings": 581,
+      "summaryNegativeReviews": "Customers find the food underwhelming and cold, service slow and disorganized. Staff seem inattentive, and the ambiance is uninviting. Improvements needed in food quality and service efficiency.",
+      "summaryPositiveReviews": "Customers praise the welcoming atmosphere, delicious food, great coffee, friendly staff, and affordable prices. The place is described as comfortable and enjoyable, suitable for both work and socia...",
+      "totalRatings": 993,
       "weaknesses": [
         "Insufficient data for detailed analysis"
       ]
     },
     {
-      "address": "Jl. Kalasan No.25 I, Pacar Keling, Kec. Tambaksari, Surabaya, Jawa Timur 60131, Indonesia",
+      "address": "Jl. Raya Jemursari No.71, Jemur Wonosari, Kec. Wonocolo, Surabaya, Jawa Timur 60237, Indonesia",
       "businessHours": [
-        "Monday: 5:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-        "Tuesday: 5:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-        "Wednesday: 5:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-        "Thursday: 5:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-        "Friday: 5:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-        "Saturday: 5:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-        "Sunday: 5:00\u202fPM\u2009\u2013\u200912:00\u202fAM"
+        "Monday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
       ],
-      "businessType": [
-        "cafe",
-        "store",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
+      "business_type": [],
       "contact": {
-        "phone": "0857-3333-1107",
+        "phone": "(031) 8480367",
+        "website": "http://instagram.com/demandailingcafe"
+      },
+      "fitReason": "Demandailing Cafe demonstrates strong fit potential due to its excellent alignment with the specified criteria, notably its outstanding rating and substantial number of positive reviews. The versatile and accommodating atmosphere further enhances its attractiveness as a lead. Minor issues, such as occasional service lapses and smoking area complaints, slightly detract from its overall score but do not significantly impinge on its high potential.",
+      "fitScore": 92,
+      "matchFactors": {
+        "hours_factor": 1,
+        "keyword_factor": 0.75,
+        "price_factor": 1,
+        "rating_factor": 1,
+        "review_count_factor": 1
+      },
+      "matchPercentage": 95.0,
+      "matchReasoning": "Demandailing Cafe closely aligns with the specified constraints. The business has a high rating of 4.5, exceeding the minimum requirement of 4.0, resulting in a perfect rating_factor. The total number of reviews is significantly higher than the minimum required 50, earning a perfect review_count_factor. The price level matches exactly with the expected '$$', thus a perfect price_factor is obtained. There are no specified constraints regarding business hours, rendering the hours_factor perfect. Sample reviews emphasize themes like group enjoyment and accommodating atmosphere, partially matching 'celebration', but not completely aligning with potential constraints like specific appraisals of food or service, resulting in a keyword_factor of 0.75. Overall, Demandailing Cafe achieves a high match percentage due to its strong alignment with specified constraints and favorable reviews, with minor room for improvement in keyword-based relevance.",
+      "placeName": "Demandailing Cafe",
+      "priceLevel": "$$",
+      "rating": 4.5,
+      "strengths": [
+        "High customer satisfaction with a robust rating of 4.5/5 based on substantial feedback from 4202 reviews.",
+        "Strong emphasis on group enjoyment and accommodating atmosphere, especially for families with children, suggesting a versatile setting suitable for various social gatherings.",
+        "Portion sizes and menu variety are praised, indicating an ability to cater to different appetites and preferences."
+      ],
+      "summaryNegativeReviews": "Customers note unfriendly staff and unhygienic, foul-smelling smoking area. Improvement in staff attitude and cleanliness is needed.",
+      "summaryPositiveReviews": "Customers love the generous portions and delicious menu. The cafe is spacious and family-friendly with attentive staff and quick service. It's easy to find and offers great coffee and atmosphere.",
+      "totalRatings": 4202,
+      "weaknesses": [
+        "Isolated instances of poor customer service experience at the cashier and greater, indicating occasional lapses in consistency of staff friendliness.",
+        "The smoking area is cited as unpleasant, with cleanliness issues and odors negatively impacting some customers' experiences."
+      ]
+    },
+    {
+      "address": "No.157, Jl. Raya Jemursari, Kendangsari, Kec. Tenggilis Mejoyo, Surabaya, Jawa Timur 60239, Indonesia",
+      "businessHours": [
+        "Monday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+      ],
+      "business_type": [],
+      "contact": {
+        "phone": "(031) 848300",
         "website": "N/A"
       },
-      "fitReason": "The Grandfather Coffeeshop scores highly due to its alignment with critical business constraints: high customer rating, numerous reviews, ideal price range, and unrestricted business hours. Despite minor issues with service delays and a slight gap in keyword relevancy, the overall strong customer experience and ambiance-focused offering make it a compelling choice for consumers valuing atmosphere and affordability.",
-      "fitScore": 95,
+      "fitReason": "Score based on match percentage only",
+      "fitScore": 90,
       "keyThemes": [
-        "Vintage decor",
-        "Food variety",
-        "Service quality",
-        "Cozy atmosphere",
-        "Affordable pricing"
+        "Ambience",
+        "WiFi",
+        "Food Quality",
+        "Coffee Quality",
+        "Pricing"
       ],
       "matchFactors": {
         "hours_factor": 1.0,
@@ -101,77 +142,25 @@
         "rating_factor": 1.0,
         "review_count_factor": 1.0
       },
-      "matchPercentage": 95.0,
-      "matchReasoning": "The Grandfather Coffeeshop perfectly aligns with most of the constraints provided. The business has a high rating of 4.5, which exceeds the minimum required rating of 4.0 (rating_factor = 1.0). It also has 958 total reviews, far exceeding the minimum requirement of 50 reviews (review_count_factor = 1.0). The price level of the business is '$$', which matches the desired price range exactly (price_factor = 1.0). Furthermore, there's no constraint limiting the business hours, making the business hours a perfect match (hours_factor = 1.0). However, the sample reviews suggest elements like atmosphere and affordability but make less specific mention of keywords related to tasks beyond its ambiance, which provides only partial relevancy to specific business-focused keywords (keyword_factor = 0.75). This small gap in keyword relevancy reflects the slightly lower but still high match percentage of 95%. Overall, the business is an excellent match for the constraints provided.",
-      "placeName": "Grandfather Coffeeshop",
+      "matchPercentage": 90.0,
+      "matchReasoning": "The Origin Coffee & Dine closely matches the given constraints, achieving a 90% match percentage. It meets the minimum rating constraint with a 4.3 rating (rating_factor: 1.0) and surpasses the minimum review count with 263 reviews (review_count_factor: 1.0). The price level of '$$' matches the constraint perfectly (price_factor: 1.0), and the 'anytime' business hours do not impose a limitation on the match (hours_factor: 1.0). While the main business types\u2014cafe and restaurant\u2014fit the context, the keyword factor is slightly reduced to 0.75 due to some reviews mentioning the food as 'okay but not that great,' indicating a minor misalignment with exceptional food experience expectations in a cafe/restaurant context.",
+      "placeName": "The Origin Coffee & Dine",
       "priceLevel": "$$",
-      "rating": 4.5,
+      "rating": 4.3,
       "strengths": [
-        "High rating of 4.5 from 958 reviews indicates strong customer satisfaction and popularity.",
-        "Cozy atmosphere and unique vintage design that provide a distinctive dining experience and appeal to customers seeking an ambiance-focused venue.",
-        "Affordable pricing within a standard cafe range, making it accessible to students and casual diners."
+        "Based on available reviews"
       ],
-      "summaryNegativeReviews": "Customers praise the unique antique decor but criticize the excessively long service wait (two hours) with poor communication, suggesting improvement in service speed and updates.",
-      "summaryPositiveReviews": "Customers love the cozy, vintage atmosphere with live music, making it ideal for work or dining. It offers a diverse menu with highlights like Spicy Tofu and ginger lemon tea\u2014all at affordable prices.",
-      "totalRatings": 958,
+      "summaryNegativeReviews": "Customers appreciate the nice atmosphere and quick service but suggest a distinct separation between the hotel lobby and cafe for a clearer division of spaces.",
+      "summaryPositiveReviews": "The cafe offers a quiet workspace with fast Wi-Fi, great ambience, and friendly staff. Customers enjoy its affordable prices, coffee, and tea varieties, but suggest improving the main courses and W...",
+      "totalRatings": 263,
       "weaknesses": [
-        "Significant delays in service, with some customers experiencing long wait times for food, which can impact customer satisfaction negatively.",
-        "Less emphasis on task-specific business keywords in reviews, which may suggest the need for improvement in marketing specific offerings beyond ambiance."
-      ]
-    },
-    {
-      "address": "Jl. Sumatera No.40, Gubeng, Kec. Gubeng, Surabaya, Jawa Timur 60281, Indonesia",
-      "businessHours": [
-        "Monday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Tuesday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Wednesday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Thursday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Friday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Saturday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Sunday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM"
-      ],
-      "businessType": [
-        "cafe",
-        "point_of_interest",
-        "store",
-        "food",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "(031) 5033003",
-        "website": "http://www.society.co.id/"
-      },
-      "fitReason": "Historica possesses a strong foundation with a high customer satisfaction rate and diverse offerings, which align well with primary business constraints. However, noted issues with ambiance and certain operational aspects may require attention to fully realize its potential. With improvements in these areas, Historica can better enhance its customer experience and overall attraction.",
-      "fitScore": 78,
-      "matchFactors": {
-        "hours_factor": 1.0,
-        "keyword_factor": 0.5,
-        "price_factor": 1.0,
-        "rating_factor": 1.0,
-        "review_count_factor": 1.0
-      },
-      "matchPercentage": 85.0,
-      "matchReasoning": "Historica meets all primary constraints: it has a high rating (4.4), exceeds the minimum review count (1935 reviews), adheres to the specified price range ($$), and offers compatibility with the open business hours constraint ('anytime'). The keyword analysis, based on sample reviews, suggests mixed feedback regarding ambiance and odor, impacting the keyword factor negatively and slightly lowering the match percentage overall.",
-      "placeName": "Historica",
-      "priceLevel": "$$",
-      "rating": 4.4,
-      "strengths": [
-        "High customer rating of 4.4 out of 5 based on 1935 reviews indicates a strong customer satisfaction and reliable service quality.",
-        "Diverse offerings including a cafe, bar, and restaurant provide a multifaceted dining experience which can attract a broad customer base.",
-        "The establishment is described as cozy and well-designed, making it appealing for gatherings and events. This adds value and attractiveness for customers seeking venues for social or corporate events."
-      ],
-      "summaryPositiveReviews": "Historica Garden offers a cozy ambiance with spacious design, friendly staff, live band, good coffee, and delicious Western cuisine. Suitable for events with reasonable pricing and Instagrammable s...",
-      "totalRatings": 1935,
-      "weaknesses": [
-        "Negative feedback regarding ambiance and odor (such as a smelly odor like old humid fabric) has been noted, which can deter potential customers and impact overall customer experience.",
-        "Mixed reviews on food taste and areas like toilet odor suggest the need for improvements in specific operational aspects to enhance customer satisfaction.",
-        "The initial appearance of the establishment as an 'abandoned place' could generate negative first impressions, potentially influencing customer willingness to visit."
+        "Insufficient data for detailed analysis"
       ]
     }
   ],
   "$metadata": {
-    "createdAt": "2025-04-18T06:18:42.302667+00:00Z",
-    "startedAt": "2025-04-18T06:18:46.341656+00:00Z",
-    "executionTotal": 22
+    "createdAt": "2025-04-25T05:40:56.067254+00:00Z",
+    "startedAt": "2025-04-25T05:40:58.267695+00:00Z",
+    "executionTotal": 21
   }
 }
