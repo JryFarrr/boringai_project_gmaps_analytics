@@ -1,9 +1,12 @@
+from src.services.price_converter import process_price_range
+
 def create_initial_state(data):
     """
     Creates the initial state for the lead generation workflow
     
     Takes validated input data and constructs the initial state object
-    with default values for workflow management.
+    with default values for workflow management. Also processes price_range
+    to convert it to standardized format ($ symbols).
     
     Args:
         data (dict): Validated input data containing business type, 
@@ -12,6 +15,11 @@ def create_initial_state(data):
     Returns:
         dict: Initial state object with all necessary parameters
     """
+    # Process price_range if present
+    price_range = data.get("price_range", None)
+    if price_range:
+        price_range = process_price_range(price_range, business_type=data.get("business_type"))
+    
     return {
         "business_type": data["business_type"],
         "location": data["location"],
@@ -20,7 +28,7 @@ def create_initial_state(data):
         "min_rating": data.get("min_rating", None),
         "min_reviews": data.get("min_reviews", None),
         "max_reviews": data.get("max_reviews", None),
-        "price_range": data.get("price_range", None),
+        "price_range": price_range,
         "keywords": data.get("keywords", None),
         "leadCount": 0,
         "searchOffset": 0,
