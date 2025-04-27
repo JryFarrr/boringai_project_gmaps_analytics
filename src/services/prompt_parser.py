@@ -121,7 +121,7 @@ def parse_prompt_with_ai(prompt, client, headers, provider="openai"):
     
     Args:
         prompt (str): User prompt in the specified format
-        client: API client (OpenAI or OpenRouter)
+        client: API client (OpenAI)
         headers (dict): Headers for the API request
         provider (str): API provider ("openai" or "openrouter")
         
@@ -131,7 +131,7 @@ def parse_prompt_with_ai(prompt, client, headers, provider="openai"):
     try:
         # Common parameters for both APIs
         chat_params = {
-            "model": "gpt-4o-mini" if provider == "openrouter" else "gpt-4o",
+            "model": "gpt-4o-mini",
             "messages": [
                 {"role": "system", "content": get_system_prompt()},
                 {"role": "user", "content": prompt}
