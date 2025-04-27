@@ -28,24 +28,30 @@ Follow these guidelines:
    • $$$ = Upscale (50-75% price range)
    • $$$$ = Luxury/Premium (top 25% price range)
 5. For text descriptions without numbers:
-   • Terms like "cheap," "budget," "affordable", "terjangkau" → $
-   • Terms like "moderate," "standard," "average", "sedang" → $$
-   • Terms like "upscale," "premium," "high-end", "mewah" → $$$
-   • Terms like "luxury," "exclusive," "VIP", "eksklusif" → $$$$
+   • Terms like "cheap," "budget," "affordable" → $
+   • Terms like "moderate," "standard," "average" → $$
+   • Terms like "upscale," "premium," "high-end" → $$$
+   • Terms like "luxury," "exclusive," "VIP" → $$$$
 6. Always normalize the output to use only standard price level symbols regardless of input format
 
+For Indonesian currency (Rupiah/Rp) or colloquial formats (rb/ribu):
+• $ = Below Rp50,000 or below 50rb
+• $$ = Rp50,000 - Rp100,000 or 50rb-100rb
+• $$$ = Above Rp100,000 up to Rp300,000 or >100rb up to 300rb
+• $$$$ = Above Rp300,000 up to infinite or >300rb
+
 Examples of price range conversions:
-- "Rp5.000" → "$" 
-- "Rp10.000 - Rp25.000" → "$"
-- "Rp50.000 - Rp100.000" → "$$"
-- "Rp200.000+" → "$$$"
-- "harga terjangkau" → "$"
+- "Rp5,000" → "$" 
+- "Rp10,000 - Rp25,000" → "$"
+- "Rp50,000 - Rp100,000" → "$$"
+- "Rp200,000+" → "$$$"
+- "affordable price" → "$"
 - "premium price" → "$$$"
 - "200-300 baht" → "$$$" (for Thailand)
 - "₹500-₹1000" → "$$" (for India)
-- "murah" → "$"
+- "cheap" → "$"
 - "50rb-100rb" → "$$"
-- "menengah" → "$$"
+- "moderate" → "$$"
 - "$$$" → "$$$" (already in correct format)
 
 OUTPUT FORMAT:
@@ -58,7 +64,7 @@ RULES:
 3. Return ONLY the price level symbols, no explanation or additional text
 4. If uncertain, make a best estimate based on the provided guidelines
 5. For "luxury", "exclusive", "premium" descriptions, use "$$$$" unless context indicates otherwise
-6. For colloquial price formats in Indonesian (like "50rb", "100rb"), treat as Rp50.000, Rp100.000, etc.
+6. For colloquial price formats in Indonesian (like "50rb", "100rb"), treat as Rp50,000, Rp100,000, etc.
 """
 
 def convert_price_range_with_ai(price_string, business_type=None, client=None, headers=None, provider="openai"):
