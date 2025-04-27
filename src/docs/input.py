@@ -21,7 +21,7 @@ input_dict = {
                     },
                     'max_reviews': {'type': 'integer','example': 100
                     },
-                    'price_range': {'type': 'string','example': '$$'
+                    'price_range': {'type': 'string','example': '25rb-50rb'
                     },
                     'keywords': {'type': 'string','example': 'cocok buat nugas'
                     },
