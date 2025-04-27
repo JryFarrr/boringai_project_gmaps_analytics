@@ -80,7 +80,7 @@ Setelah server berjalan, dokumentasi API dapat diakses melalui:
   "min_rating": 4.0,
   "min_reviews": 50,
   "max_reviews": 100,
-  "price_range": "$$",
+  "price_range": "25rb-50rb",
   "keywords": "cocok buat nugas",
   "business_hours": "anytime"
 }
@@ -94,7 +94,7 @@ Setelah server berjalan, dokumentasi API dapat diakses melalui:
 | `min_rating`     | float   | No       | Rating minimal dari tempat yang dicari                        | `4.0`                |
 | `min_reviews`    | integer | No       | Jumlah minimal review dari tempat tersebut                    | `50`                 |
 | `max_reviews`    | integer | No       | Jumlah maximal review dari tempat tersebut                    | `100`                |
-| `price_range`    | string  | No       | Rentang harga dari tempat                                     | `"$$"`               |
+| `price_range`    | string  | No       | Rentang harga dari tempat                                     | `"25rb-50rb"`        |
 | `keywords`       | string  | No       | Kata kunci tambahan yang relevan dengan kebutuhan pengguna    | `"cocok buat nugas"` |
 | `business_hours` | string  | No       | Waktu operasional yang diinginkan (`anytime` / jam tertentu)  | `"anytime"`          |
 
