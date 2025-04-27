@@ -75,7 +75,7 @@ def analyze_route():
         else:
             current_app.logger.warning("No keywordMatch in review_summaries!")
             # Provide a default value if keywordMatch is missing
-            place_details["keywordMatch"] = "0 keywords found from 0 reviews"
+            place_details["keywordMatch"] = "Keywords not found"
         
         # Generate business insights
         current_app.logger.info("Generating business insights...")
@@ -97,15 +97,14 @@ def analyze_route():
             "matchPercentage": match_percentage,
             "strengths": insights.get("strengths", []),
             "weaknesses": insights.get("weaknesses", []),
-            "fitScore": insights.get("fitScore", 0),
-            "fitReason": insights.get("fitReason", ""),
+            "matchReasoning": match_analysis.get("reasoning", ""), 
             "phone": place_details.get("phone", ""),
             "website": place_details.get("website", ""),
             "businessHours": place_details.get("businessHours", []),
             "coordinates": place_details.get("coordinates", {}),
             "reviewSummary": place_details.get("reviewSummary", {}),
             # Make sure keywordMatch is included in the final result
-            "keywordMatch": place_details.get("keywordMatch", "0 keywords found from 0 reviews"),
+            "keywordMatch": place_details.get("keywordMatch", "Keywords not found"),
             "reviewCount": len(place_details.get("positiveReviews", [])) + len(place_details.get("negativeReviews", []))
         }
         
@@ -230,8 +229,6 @@ def create_result_object(place_details, match_percentage, match_analysis, summar
     if insights:
         result["strengths"] = insights.get("strengths", [])
         result["weaknesses"] = insights.get("weaknesses", [])
-        result["fitScore"] = insights.get("fitScore", match_percentage)
-        result["fitReason"] = insights.get("fitReason", "")
         
     # Add contact information if available
     if "contact" in place_details:
@@ -250,6 +247,6 @@ def create_result_object(place_details, match_percentage, match_analysis, summar
         result["keywordMatch"] = place_details["keywordMatch"]
     else:
         current_app.logger.warning("keywordMatch not found in place_details during result creation")
-        result["keywordMatch"] = "0 keywords found from 0 reviews"
+        result["keywordMatch"] = "Keywords not found"
         
     return result

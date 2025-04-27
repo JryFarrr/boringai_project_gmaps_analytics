@@ -195,116 +195,10 @@ def extract_key_themes(reviews, max_themes=5):
         common_words = [word for word, count in word_counts.most_common(max_themes)]
         
         return common_words
-
-def calculate_match_percentage_with_ai(place, parameters, reviews=None):
-    """
-    Calculate match percentage using OpenAI's analysis with improved error handling
-    """
-    try:
-        # Create client for OpenAI
-        client, headers, provider = create_client()
-        
-        # Simplify place data for OpenAI to reduce complexity
-        place_data = {
-            "name": place.get("name", ""),
-            "rating": place.get("rating", 0),
-            "total_reviews": place.get("user_ratings_total", 0),
-            "price_level": "$" * place.get("price_level", 0) if "price_level" in place else None,
-            "types": place.get("types", [])[:3],  # Limit to first 3 types
-        }
-        
-        # Simplify constraints data
-        constraints_data = {
-            "min_rating": parameters.get("min_rating", 0),
-            "min_reviews": parameters.get("min_reviews", 0),
-            "max_reviews": parameters.get("max_reviews",None),
-            "price_range": parameters.get("price_range", ""),
-            "business_hours": parameters.get("business_hours", "anytime"),
-        }
-        
-        # Limit sample reviews to reduce token usage
-        sample_reviews = ""
-        if reviews and len(reviews) > 0:
-            # Only use first 2 reviews and limit length
-            limited_reviews = [review[:200] + "..." if len(review) > 200 else review for review in reviews[:2]]
-            sample_reviews = "\n\n".join(limited_reviews)
-        
-        # Create a simplified prompt
-        prompt = f"""Analyze this business and determine how well it matches the given constraints.
-        
-        Business: {json.dumps(place_data)}
-        
-        Constraints: {json.dumps(constraints_data)}
-        
-        {f'Sample Reviews: {sample_reviews}' if sample_reviews else ''}
-        
-        Return a JSON object with:
-        1. match_percentage: A number from 0-100 indicating match quality
-        2. analysis: Object with rating_factor, review_count_factor, price_factor, hours_factor, keyword_factor (all 0-1)
-        3. reasoning: Brief explanation of the match percentage
-        """
-        
-        print("Sending request to OpenAI with prompt length:", len(prompt))
-        
-        # Call OpenAI API with JSON mode enabled
-        response = client.chat.completions.create(
-            model="gpt-4o",
-            messages=[
-                {"role": "system", "content": "You are a business analyst AI that evaluates match percentages."},
-                {"role": "user", "content": prompt}
-            ],
-            response_format={"type": "json_object"},
-            max_tokens=500
-        )
-        
-        # Extract and return the analysis
-        result_json = response.choices[0].message.content.strip()
-        
-        # Debug
-        print("OpenAI response received. Length:", len(result_json))
-        print("First 100 chars of response:", result_json[:100])
-        
-        try:
-            result = json.loads(result_json)
-        except json.JSONDecodeError as json_err:
-            print(f"JSON parsing error: {str(json_err)}")
-            print(f"Raw response: {result_json}")
-            raise ValueError(f"Failed to parse OpenAI response as JSON: {str(json_err)}")
-            
-        # Ensure result has expected structure
-        if "match_percentage" not in result:
-            print(f"Response missing match_percentage. Keys found: {list(result.keys())}")
-            raise ValueError("Missing match_percentage in OpenAI response")
-            
-        # Ensure match_percentage is within range
-        match_percentage = max(0, min(100, float(result["match_percentage"])))
-        
-        return match_percentage, result
-        
-    except Exception as e:
-        import traceback
-        print(f"Error calculating match percentage with AI: {str(e)}")
-        print(f"Detailed traceback: {traceback.format_exc()}")
-        
-        # Fallback to traditional calculation
-        match_percentage = calculate_match_percentage(place, parameters)
-        fallback_analysis = {
-            "match_percentage": match_percentage,
-            "analysis": {
-                "rating_factor": min(1.0, place.get("rating", 0) / 5.0),
-                "review_count_factor": min(1.0, place.get("user_ratings_total", 0) / 100),
-                "price_factor": 1.0 if place.get("price_match", True) else 0.0,
-                "hours_factor": 1.0 if place.get("hours_match", True) else 0.0,
-                "keyword_factor": place.get("keyword_matches", {}).get("match_percentage", 0) / 100
-            },
-            "reasoning": "Calculated using traditional algorithm due to specific AI service error: " + str(e)
-        }
-        
-        return match_percentage, fallback_analysis
-# Versi original yang tetap dipertahankan sebagai fallback
+    
 def calculate_match_percentage(place, parameters):
     """
-    Calculate match percentage based on various parameters
+    Calculate match percentage based on various parameters including address
     
     Args:
         place (dict): Place object with relevant data
@@ -316,12 +210,22 @@ def calculate_match_percentage(place, parameters):
     # Start with base score of 100
     score = 100
     
-    # Adjust score based on rating (weight: 30%)
+    # Define weights for different factors (total should be 100%)
+    weights = {
+        "rating": 25,          # Reduced from 30% to make room for address
+        "reviews": 20,
+        "price_range": 15,
+        "business_hours": 15,
+        "keywords": 15,        # Reduced from 20% to make room for address
+        "address": 10          # New weight for address matching
+    }
+    
+    # Adjust score based on rating (weight: 25%)
     max_rating = 5.0
     min_required_rating = parameters.get("min_rating", 0)
     if place.get("rating", 0) >= min_required_rating:
         rating_factor = min(1.0, place.get("rating", 0) / max_rating)
-        score -= (1 - rating_factor) * 30
+        score -= (1 - rating_factor) * weights["rating"]
     
     # Adjust score based on review count (weight: 20%)
     min_required_reviews = parameters.get("min_reviews", 0)
@@ -334,23 +238,43 @@ def calculate_match_percentage(place, parameters):
         # Logarithmic scale: 0 reviews = 0%, 10 reviews = 60%, 100 reviews = 80%, 1000+ reviews = 100%
         if review_count > 0:
             review_factor = min(1.0, math.log10(review_count) / 3)
-            score -= (1 - review_factor) * 20
+            score -= (1 - review_factor) * weights["reviews"]
         else:
-            score -= 20  # Full penalty for 0 reviews
+            score -= weights["reviews"]  # Full penalty for 0 reviews
     
     # Adjust score based on price level match (weight: 15%)
     if parameters.get("price_range", "") and "price_match" in place:
         if not place["price_match"]:
-            score -= 15
+            score -= weights["price_range"]
     
     # Adjust score based on business hours match (weight: 15%)
     if parameters.get("business_hours", "") != "anytime" and "hours_match" in place:
         if not place["hours_match"]:
-            score -= 15
+            score -= weights["business_hours"]
     
-    # Adjust score based on keyword matches (weight: 20%)
+    # Adjust score based on keyword matches (weight: 15%)
     if parameters.get("keywords", "") and "keyword_matches" in place:
         keyword_match_percentage = place["keyword_matches"].get("match_percentage", 0)
-        score -= (1 - (keyword_match_percentage / 100)) * 20
+        score -= (1 - (keyword_match_percentage / 100)) * weights["keywords"]
+    
+    # Adjust score based on address match (weight: 10%)
+    if parameters.get("address", "") and place.get("address", ""):
+        # Simple match check - can be enhanced with more sophisticated address matching
+        address_match_factor = 0
+        
+        # Check if the parameter address is contained within the place address
+        if parameters["address"].lower() in place["address"].lower():
+            address_match_factor = 1.0  # Full match
+        else:
+            # Partial matching using address components
+            param_address_parts = set([part.lower() for part in parameters["address"].split() if len(part) > 2])
+            place_address_parts = set([part.lower() for part in place["address"].split() if len(part) > 2])
+            
+            # Calculate overlap ratio
+            if param_address_parts:
+                common_parts = param_address_parts.intersection(place_address_parts)
+                address_match_factor = len(common_parts) / len(param_address_parts)
+        
+        score -= (1 - address_match_factor) * weights["address"]
     
     return max(0, min(100, score))
