@@ -80,7 +80,7 @@ Setelah server berjalan, dokumentasi API dapat diakses melalui:
   "min_rating": 4.0,
   "min_reviews": 50,
   "max_reviews": 100,
-  "price_range": "25rb-50rb",
+  "price_range": "25rb-50rb", # atau $
   "keywords": "cocok buat nugas",
   "business_hours": "anytime"
 }
