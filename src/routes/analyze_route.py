@@ -84,11 +84,9 @@ def analyze_route():
         
         # Increment lead count
         lead_count += 1
-        place_id = place_details.get("placeId", place_details.get("place_id", ""))
         # Prepare the result with place details, match percentage, and insights
         result = {
             "placeName": place_details["placeName"],
-            "placeId": place_details.get("placeId", ""),
             "address": place_details.get("address", ""),
             "rating": place_details.get("rating", 0),
             "totalRatings": place_details.get("totalRatings", 0),
@@ -108,8 +106,6 @@ def analyze_route():
             "reviewCount": len(place_details.get("positiveReviews", [])) + len(place_details.get("negativeReviews", []))
         }
         
-        # Log the keywordMatch value in the final result
-        current_app.logger.info(f"keywordMatch in final result: {result.get('keywordMatch', 'Not found')}")
         current_app.logger.info(f"Total reviews analyzed: {result.get('reviewCount', 0)}")
         
         # Return response with result and next action
@@ -199,7 +195,6 @@ def create_result_object(place_details, match_percentage, match_analysis, summar
     """
     result = {
         "placeName": place_details["placeName"],
-        "placeId" : place_details.get("placeId", []),
         "matchPercentage": match_percentage,
         "business_type": place_details.get("business_type", []),
         "address": place_details.get("address", ""),

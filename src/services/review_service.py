@@ -48,7 +48,7 @@ def generate_review_summaries(positive_reviews, negative_reviews, keywords=""):
     else:
         # Provide default value when no keywords specified
         current_app.logger.warning("No keywords provided, adding default keywordMatch")
-        result["keywordMatch"] = f"0 keywords found from {review_count} reviews"
+        result["keywordMatch"] = f"Keywords not found"
     
     # Fallback mechanism in case count_keywords_in_reviews fails
     if "keywordMatch" not in result:

@@ -1,5 +1,5 @@
 {
-  "$id": "ee62e148-b940-4740-b419-e317bed9c9cf",
+  "$id": "3646a94b-dcc3-4dea-9249-41b639918d27",
   "$state": {
     "business_hours": "jam 10 pagi sampai 6 malam",
     "business_type": "caf\u00e9",
@@ -11,104 +11,105 @@
     "min_reviews": 50,
     "numberOfLeads": 2,
     "price_range": "$$",
-    "remainingPlaceIds": [],
-    "searchOffset": 2,
-    "skippedCount": 0,
+    "remainingPlaceIds": [
+      "ChIJi_TlH1H71y0RzNybZ7EDA4o",
+      "ChIJOfCrNEH81y0R4J-kg72lHag"
+    ],
+    "searchOffset": 12,
+    "skippedCount": 8,
     "businessType": "caf\u00e9",
-    "nextPageToken": "AeeoHcKCzHujtAx6pWJwzICG4qxfEl2dCamcoN4kV9mMYQbOA45334mjBUxMpoml3lAPSdbHELMqrxAjYeJaW0exh5Rzx3hilBg7TDtWdvZAddslC4r9sW7aqAeV2BD8_LFlUzzVi4CRlD8CBLevyBrPt3Uw9PohcqJcCH2vNr71PuIdM5ik8YEtPqkQqgCpLXmvrcO9gXibQ2iSvGxn15S0SwJutTMSbRGuXoBm_ckmVzGmKnp-fpMirPwsKiwZNZzFaC1RxLanbGd41kIugxX2qU-e-HN1IHWSzDt8-nkRHsKxv0DpCKDJF2T0Kili5aumvAu9iWirfzgKpb7EnyExdSMO_TsLVqTNRJBnYKQcQSLofTdrhF-YPsi-urfC175f5Fo-65rZLHH2GnoledxH"
+    "nextPageToken": null,
+    "skippedConstraints": true
   },
   "$results": [
     {
-      "address": "Jl. Klampis Jaya No.144, Klampis Ngasem, Kec. Sukolilo, Surabaya, Jawa Timur 60117, Indonesia",
+      "address": "Jl. Tegalsari No.24, Kedungdoro, Kec. Tegalsari, Surabaya, Jawa Timur 60262, Indonesia",
       "businessHours": [
-        "Monday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Tuesday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Wednesday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Thursday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Friday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Saturday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Sunday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+        "Monday: 6:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 6:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 6:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 6:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 6:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 6:30\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: 6:30\u202fAM\u2009\u2013\u200910:00\u202fPM"
       ],
       "businessType": [
         "cafe",
         "restaurant",
         "food",
-        "point_of_interest",
         "store",
-        "establishment"
-      ],
-      "coordinates": {},
-      "keywordMatch": "2 keywords found from 10 reviews",
-      "matchPercentage": 98.0,
-      "matchReasoning": "This business matches 98.0% of your criteria. It has a good rating of 4.6/5.0. It has 2485 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
-      "phone": "(031) 5995500",
-      "placeId": null,
-      "placeName": "Demandailing Cafe & Eatery",
-      "priceRange": "$$",
-      "rating": 4.6,
-      "reviewCount": 10,
-      "reviewSummary": {
-        "negative": "Customers express disappointment with Demandailing Klampis due to a gloomy atmosphere, lack of promotion communication, slow service, and poor food quality compared to the Merr location.",
-        "positive": "Customers love the delicious food, cozy ambiance, and affordable prices. Recommendations include pastas and choco mint float. However, the space is small and some air conditioners are blocked."
-      },
-      "strengths": [
-        "High customer satisfaction with a strong overall rating of 4.6 out of 5 from a considerable 2485 reviews.",
-        "Competitive price range ($$) that aligns with numerous patrons' expectations of affordability while still offering quality food, beverages, and ambiance.",
-        "Diverse and expanding menu options along with a cozy and inviting environment which is favored for hangouts and gatherings."
-      ],
-      "totalRatings": 2485,
-      "weaknesses": [
-        "Inconsistency in service and experience across different branches, as indicated by negative feedback regarding the atmosphere and service at one location compared to another.",
-        "Potential issues with promotional communication, leading to dissatisfaction when offers are not properly communicated to customers.",
-        "Some minor criticisms on beverage quality and air conditioning effectiveness, suggesting areas for operational improvement."
-      ],
-      "website": "https://www.instagram.com/demandailingcafe"
-    },
-    {
-      "address": "Jl. Arief Rahman Hakim No.40, Klampis Ngasem, Kec. Sukolilo, Surabaya, Jawa Timur 60117, Indonesia",
-      "businessHours": [
-        "Monday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Tuesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Wednesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Thursday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Friday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Saturday: 9:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Sunday: 9:00\u202fAM\u2009\u2013\u20099:00\u202fPM"
-      ],
-      "businessType": [
-        "cafe",
-        "restaurant",
         "point_of_interest",
-        "food",
         "establishment"
       ],
       "coordinates": {},
-      "keywordMatch": "2 keywords found from 10 reviews",
-      "matchPercentage": 95.25720659045462,
-      "matchReasoning": "This business matches 95.3% of your criteria. It has a good rating of 4.3/5.0. It has 651 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
-      "phone": "(031) 5937373",
-      "placeId": null,
-      "placeName": "The Localist Coffee and Bistro Surabaya",
+      "keywordMatch": "3 keywords found from 10 reviews",
+      "matchPercentage": 98.5,
+      "matchReasoning": "This business matches 98.5% of your criteria. It has a good rating of 4.7/5.0. It has 2519 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0899-8000-099",
+      "placeName": "Ada Apa Dengan Kopi (AADK)",
       "priceRange": "$$",
-      "rating": 4.3,
+      "rating": 4.7,
       "reviewCount": 10,
       "reviewSummary": {
-        "negative": "",
-        "positive": "Cozy cafe with playground on the eye clinic's 2nd floor; ideal for families. Great for long visits. Highlights include carbonara spaghetti, good service, and a kids' book club. Prices are a bit high."
+        "negative": "Customers note that the venue is consistently crowded, despite having many open and photogenic spaces. No feedback on food or drinks was provided. Consider managing crowd levels.",
+        "positive": "Customers love this caf\u00e9 for its cozy ambiance, stylish decor, friendly service, and reasonable prices. It's spacious and ideal for working, unwinding, or socializing. A standout menu item is the b..."
       },
       "strengths": [
         "Based on available reviews"
       ],
-      "totalRatings": 651,
+      "totalRatings": 2519,
       "weaknesses": [
         "Insufficient data for detailed analysis"
       ],
-      "website": "N/A"
+      "website": "https://www.instagram.com/adaapadengankopi/?hl=en"
+    },
+    {
+      "address": "Jl. Ngagel Jaya Barat No.52, Pucang Sewu, Kec. Gubeng, Surabaya, Jawa Timur 60283, Indonesia",
+      "businessHours": [
+        "Monday: 12:00\u202fPM\u2009\u2013\u20093:00\u202fAM",
+        "Tuesday: 12:00\u202fPM\u2009\u2013\u20093:00\u202fAM",
+        "Wednesday: 12:00\u202fPM\u2009\u2013\u20093:00\u202fAM",
+        "Thursday: 12:00\u202fPM\u2009\u2013\u20093:00\u202fAM",
+        "Friday: 12:00\u202fPM\u2009\u2013\u20093:00\u202fAM",
+        "Saturday: 12:00\u202fPM\u2009\u2013\u20093:00\u202fAM",
+        "Sunday: 12:00\u202fPM\u2009\u2013\u20093:00\u202fAM"
+      ],
+      "businessType": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "3 keywords found from 10 reviews",
+      "matchPercentage": 96.71303314226401,
+      "matchReasoning": "This business matches 96.7% of your criteria. It has a good rating of 4.5/5.0. It has 762 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0812-1440-3727",
+      "placeName": "Avere cafe",
+      "priceRange": "$$",
+      "rating": 4.5,
+      "reviewCount": 10,
+      "reviewSummary": {
+        "negative": "Customers find the food and drinks too sweet, salty, or sour, lacking balance. Matcha and mentai particularly need improvement. Prices are considered high for the quality offered.",
+        "positive": "Customers appreciate the cafe's nearly 24-hour operation, ample parking, cozy outdoor seating, fast WiFi, great service, and its suitability for work, study, or relaxation."
+      },
+      "strengths": [
+        "High customer satisfaction as indicated by a 4.5/5 rating from 762 reviews, suggesting consistent quality service and experience.",
+        "Amenities such as fast WiFi, ample parking, and spacious outdoor seating make it an attractive spot for studying, working, or social gatherings.",
+        "Flexible payment options, including QR payments, which cater to a modern, tech-savvy audience."
+      ],
+      "totalRatings": 762,
+      "weaknesses": [
+        "Food quality issues, particularly with the specific items such as matcha, mentai, and ice chocolate as they received negative feedback concerning taste.",
+        "Perceived high price of food not matching the taste quality, which can affect repeat customer visits and word-of-mouth recommendations.",
+        "Although the cafe is nearly 24-hour, there are negative remarks about the limited operating hours, which do not align with some customers' expectations."
+      ],
+      "website": "https://instagram.com/avere.sub?utm_medium=copy_link"
     }
   ],
   "$metadata": {
-    "createdAt": "2025-04-28T09:58:49.200930+00:00Z",
-    "startedAt": "2025-04-28T09:58:51.295060+00:00Z",
-    "executionTotal": 8
+    "createdAt": "2025-04-28T12:49:49.215731+00:00Z",
+    "startedAt": "2025-04-28T12:49:52.313237+00:00Z",
+    "executionTotal": 34
   }
 }
