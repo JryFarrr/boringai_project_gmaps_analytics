@@ -1,75 +1,129 @@
 {
-  "$id": "899d0fe5-3d2a-4103-b5b8-aa5b81401931",
+  "$id": "83d74379-0a9b-4fc2-88cc-2ccf7f1e27b8",
   "$state": {
     "business_hours": "jam 10 pagi sampai 6 malam",
-    "business_type": "",
-    "keywords": "murah, nugas",
-    "leadCount": 1,
-    "location": "Indonesia",
+    "business_type": null,
+    "keywords": "cozy",
+    "leadCount": 2,
+    "location": "Surabaya",
     "max_reviews": 200,
     "min_rating": 4.0,
     "min_reviews": 50,
-    "numberOfLeads": 3,
+    "numberOfLeads": 2,
     "price_range": "$$",
     "remainingPlaceIds": [],
-    "searchOffset": 0,
+    "searchOffset": 2,
     "skippedCount": 0,
-    "nextPageToken": ""
+    "businessType": "caf\u00e9",
+    "nextPageToken": "AeeoHcK4mqysGCVJNIm_LT7AQmr6bAWwSvuY-qJq4W6MB_ve8XydX_pkLVPZvYzfKWW-_y9xBddKuUsT0rRw-gZiprQTyhWXoHY0-kZiRvKQjzmUuTEL2zuKYt1HsWLzutA5lcGsM95XlWwwb0iuEyRWgeE8PcyyqngjygnggyDqT4TUCN2ldvlWkxhfQMdlOsHHhUg4qzXMzrn4z1g4ZfNaEiFeBnAHk95LOpG74Xf89k1r8DLBTygjtB0bArclzyFNFtVl6lFEQWNFv_yhxGbIRVeWVf9TN240J1pd_sGMS-cABLmUjkLtZ5q6CC-Y2--8DPMFPueRbR28laPhpBcDn7fYaOlgUz0gMDzU5JiYc2wvwRuhlo47uZJADi5wMEC6XzTxwRs4AAqkCTT1EJSk"
   },
   "$results": [
     {
-      "address": null,
-      "businessHours": [],
+      "address": "Jl. Arief Rahman Hakim No.40, Klampis Ngasem, Kec. Sukolilo, Surabaya, Jawa Timur 60117, Indonesia",
+      "businessHours": [
+        "Monday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Tuesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Wednesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Thursday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Friday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Saturday: 9:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Sunday: 9:00\u202fAM\u2009\u2013\u20099:00\u202fPM"
+      ],
       "business_type": [],
+      "contact": {
+        "phone": "(031) 5937373",
+        "website": "N/A"
+      },
       "coordinates": {},
-      "keywordMatch": "Keywords not found",
+      "keywordMatch": {
+        "match_percentage": 0,
+        "matched_reviews": [],
+        "matches": {}
+      },
+      "location": {
+        "lat": -7.290008499999998,
+        "lng": 112.7770857
+      },
+      "matchPercentage": 83.25720659045462,
+      "matchReasoning": "This business matches 83.3% of your criteria. It has a good rating of 4.3/5.0. It has 651 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. None of your keywords were found in the reviews. ",
+      "phone": null,
+      "placeId": null,
+      "placeName": "The Localist Coffee and Bistro Surabaya",
+      "priceRange": "$$",
+      "rating": 4.3,
+      "reviewCount": 10,
+      "reviewSummary": {
+        "negative": "No negative reviews available.",
+        "positive": "The cafe provides a cozy spot with indoor/outdoor seating, a playground, and decent food, albeit pricey. It's perfect for families and long hangs, offering great service and a kid-friendly book club."
+      },
+      "strengths": [
+        "Good customer satisfaction with a rating of 4.3 from 651 reviews, indicating consistent service and product quality.",
+        "Offers a comfortable environment with both indoor and semi-outdoor seating, suitable for various customer needs, including families with children.",
+        "The flexibility of staying for extended hours without being asked to leave, which is appealing for groups or individuals looking to spend longer periods in a cafe setting."
+      ],
+      "totalRatings": 651,
+      "weaknesses": [
+        "Higher price range is noted in reviews, which may not appeal to cost-sensitive customers.",
+        "Limited visibility for certain keywords in reviews might indicate areas not currently addressed that are part of client expectations.",
+        "Potentially low foot traffic ('pretty empty most of the time'), which could impact the business's ability to attract spur-of-the-moment visitors."
+      ],
+      "website": null
+    },
+    {
+      "address": "Jl. Klampis Jaya No.144, Klampis Ngasem, Kec. Sukolilo, Surabaya, Jawa Timur 60117, Indonesia",
+      "businessHours": [
+        "Monday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+      ],
+      "business_type": [],
+      "contact": {
+        "phone": "(031) 5995500",
+        "website": "https://www.instagram.com/demandailingcafe"
+      },
+      "coordinates": {},
+      "keywordMatch": {
+        "match_percentage": 0,
+        "matched_reviews": [],
+        "matches": {}
+      },
       "location": {
         "lat": -7.2831208,
         "lng": 112.7767691
       },
-      "matchFactors": {
-        "keywords": {
-          "details": "No keywords found",
-          "score": 0
-        },
-        "rating": {
-          "details": "4.6/5.0 vs minimum 4.0/5.0",
-          "score": 100
-        },
-        "review_count": {
-          "details": "2485 reviews vs minimum 50",
-          "score": 100
-        }
-      },
-      "matchPercentage": 83.0,
-      "matchReasoning": "This business matches 83.0% of your criteria. It has a good rating of 4.6/5.0. It has 2485 reviews, meeting your minimum requirement. None of your keywords were found in the reviews. ",
-      "phone": "(031) 5995500",
-      "placeId": "ChIJPbj4Mkb61y0RjOMEdXaSRlo",
+      "matchPercentage": 86.0,
+      "matchReasoning": "This business matches 86.0% of your criteria. It has a good rating of 4.6/5.0. It has 2485 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. None of your keywords were found in the reviews. ",
+      "phone": null,
+      "placeId": null,
       "placeName": "Demandailing Cafe & Eatery",
-      "priceRange": null,
+      "priceRange": "$$",
       "rating": 4.6,
       "reviewCount": 10,
       "reviewSummary": {
-        "negative": "Demandailing Klampis disappointed; atmosphere gloomy, food subpar, and staff didn\u2019t inform about promotions. Merr branch praised for its food and service. Improve communication and food quality.",
-        "positive": "Great food, cozy ambience, quick service, and friendly prices. Issues include blocked air con and small space. Varied menu with desserts, ideal for hangouts. Recommended for food and drinks."
+        "negative": "Customers were disappointed with Demandailing Klampis due to a gloomy atmosphere, lack of promotion information, long wait times, and poor food quality, unlike the Merr location.",
+        "positive": "Customers love the tasty food, friendly prices, and cozy ambience despite some air conditioning issues. The cafe offers varied menus and quick service, making it a popular hangout spot."
       },
       "strengths": [
-        "The business has a high customer rating of 4.6/5 from a large sample size of 2485 reviews, indicating consistent customer satisfaction.",
-        "Customers praise the variety and quality of food and beverages, notably drawing attention to their affordability and taste.",
-        "The eatery is recognized for its cozy ambience and quick, friendly service, making it a suitable place for social gatherings and casual dining."
+        "Demandailing Cafe & Eatery has a strong overall rating of 4.6/5 from 2485 reviews, indicating a high level of customer satisfaction.",
+        "The cafe offers a variety of menu options that are described as delicious and reasonably priced, appealing to both students and general customers.",
+        "The ambiance and quick service are frequently highlighted as positive aspects, making it a comfortable and convenient place for dining and socializing."
       ],
       "totalRatings": 2485,
       "weaknesses": [
-        "Inconsistency between different locations impacts the overall brand reputation, as seen in the negative experiences at the Klampis location versus the Merr location.",
-        "There are logistical issues, such as inadequate air conditioning due to obstructive decor, that affect customer comfort.",
-        "Lack of communication regarding promotions can lead to customer dissatisfaction and missed opportunities to enhance the customer experience."
+        "There are occasional issues with the atmosphere and condition of the space, such as being too warm due to air conditioning obstructions by decor.",
+        "Inconsistent experiences across locations, as noted in reviews, can lead to customer disappointment, particularly with promotions and dish quality like the Mille Crepes and Chicken Roulades.",
+        "Lack of transparency or communication regarding promotions and service efficiency can lead to customer dissatisfaction."
       ],
-      "website": "https://www.instagram.com/demandailingcafe"
+      "website": null
     }
   ],
   "$metadata": {
-    "createdAt": "2025-04-28T02:17:48.617339+00:00Z",
-    "startedAt": "2025-04-28T02:17:51.563365+00:00Z",
-    "executionTotal": 5
+    "createdAt": "2025-04-28T06:02:44.297591+00:00Z",
+    "startedAt": "2025-04-28T06:02:46.502155+00:00Z",
+    "executionTotal": 8
   }
 }

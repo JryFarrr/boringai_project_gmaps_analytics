@@ -3,6 +3,7 @@ from src.utils.business_matcher import (
     check_business_hours,
     search_reviews_for_keywords,
     calculate_match_percentage,
+
 )
 
 def check_place_constraints(place_details, constraints):
@@ -68,24 +69,14 @@ def check_place_constraints(place_details, constraints):
     
     # Process reviews to find keywords if specified (SOFT CONSTRAINT)
     if parameters["keywords"]:
-        # Create a format that matches the business_matcher expectations
-        place_details_for_reviews = {
-            "name": place_details["placeName"],
-            "types": place_details.get("businessType", []),
-            "reviews": []
-        }
-        
-        # Format reviews to match expected structure
-        for review in place_details.get("positiveReviews", []):
-            place_details_for_reviews["reviews"].append({"text": review})
-        for review in place_details.get("negativeReviews", []):
-            place_details_for_reviews["reviews"].append({"text": review})
-            
-        # Find keyword matches
-        keyword_matches = search_reviews_for_keywords(place_details_for_reviews, parameters["keywords"])
+
+        keyword_matches = search_reviews_for_keywords(place_details, parameters["keywords"])
         place["keyword_matches"] = keyword_matches
+
+    all_reviews = []
+    all_reviews.extend(place_details.get("positiveReviews", []))
+    all_reviews.extend(place_details.get("negativeReviews", []))    
     
-    # Add business type to place info
     place["types"] = place_details.get("businessType", [])
     
     # Calculate match percentage

@@ -49,7 +49,7 @@ def format_place_data(place_details):
         "rating": place_details.get('rating', 0.0),
         "totalRatings": place_details.get('user_ratings_total', 0),
         "businessHours": place_details.get('opening_hours', {}).get('weekday_text', []),
-        "business_type": place_details.get('types', []),
+        "businessType": place_details.get('types', []),
         "priceRange": price_range,
         "Keywords" : place_details.get('keywords', []),
         "positiveReviews": [

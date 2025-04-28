@@ -10,7 +10,7 @@ from src.services.review_service import extract_reviews_by_sentiment
 from src.services.match_services import check_place_constraints
 from src.services.review_service import generate_review_summaries
 from src.docs.scrape import scrape_dict
-
+from src.utils.business_matcher import search_reviews_for_keywords
 @swag_from(scrape_dict)
 def scrape_route():
     """
@@ -40,37 +40,25 @@ def scrape_route():
         place_id = data.get("placeId")
         keyword = data.get("keyword")
         location = data.get("location", "Indonesia")
-        business_type = data.get("business_type", "")
         
         # Get constraints for calculating match percentage
         constraints = data.get("constraints", {})
         
-        # Extract remaining place IDs if present
-        remaining_place_ids = data.get("remainingPlaceIds", [])
-        search_offset = data.get("searchOffset", 0)
-        next_page_token = data.get("nextPageToken", "")
-
         # If no placeId is provided, we need a keyword to search
-        if not place_id and not keyword and not remaining_place_ids:
-            return error_response("Either placeId, keyword, or remainingPlaceIds is required")
+        if not place_id and not keyword:
+            return error_response("Either placeId or keyword is required")
 
         try:
             # If we don't have a place_id but have a keyword, search first
             if not place_id and keyword:
                 current_app.logger.info(f"Searching for keyword: {keyword} in {location}")
-                place_id = search_and_get_place_id(keyword, location, business_type, search_offset, next_page_token)
+                place_id = search_and_get_place_id(keyword, location)
                 
                 if not place_id:
                     return error_response("No valid Place ID found in search results", 404)
                     
                 current_app.logger.info(f"Found place ID: {place_id} for keyword '{keyword}'")
             
-            # If we have remaining place IDs, use the first one
-            elif not place_id and remaining_place_ids:
-                place_id = remaining_place_ids[0]
-                remaining_place_ids = remaining_place_ids[1:]  # Remove used place ID
-                current_app.logger.info(f"Using place ID from remainingPlaceIds: {place_id}")
-
             # Now we have a place_id, get the details
             current_app.logger.info(f"Scraping place ID: {place_id} (leadCount={lead_count}, skippedCount={skipped_count})")
             
@@ -91,10 +79,20 @@ def scrape_route():
             place_data["negativeReviews"] = negative_reviews
             
             # Calculate review count
-            review_count = len(positive_reviews) + len(negative_reviews)
+            review_count = len(all_reviews)
             place_data["reviewCount"] = review_count
-            current_app.logger.info(f"Reviews for analysis: positive={len(positive_reviews)}, negative={len(negative_reviews)}")
+            current_app.logger.info(f"Total reviews for analysis: {review_count}")
             
+            # Direct keyword matching on all reviews
+            current_app.logger.info("Performing direct keyword matching on all reviews...")
+            keyword_matching_results = search_reviews_for_keywords({"reviews": all_reviews}, keywords)
+            
+            # Add keyword match results to place details
+            place_data["keywordMatch"] = {
+                "keyword_counts": {k: v['count'] for k, v in keyword_matching_results['matches'].items()},
+                "matched_reviews": keyword_matching_results['matched_reviews']
+            }
+                    
             # Generate review summaries with keyword count
             current_app.logger.info("Calling generate_review_summaries...")
             review_summaries = generate_review_summaries(positive_reviews, negative_reviews, keywords)
@@ -128,23 +126,8 @@ def scrape_route():
                     "error": None
                 }), 200
 
-            # Create response with updated state
+            # Create response
             response = create_scrape_response(place_data, lead_count, skipped_count, number_of_leads)
-            
-            # Update response with remaining place IDs and search parameters
-            response["state"]["remainingPlaceIds"] = remaining_place_ids
-            response["state"]["searchOffset"] = search_offset
-            response["state"]["nextPageToken"] = next_page_token
-            response["state"]["business_type"] = business_type
-            response["state"]["location"] = location
-            
-            # Update payload with the same values
-            response["next"]["payload"]["remainingPlaceIds"] = "$state.remainingPlaceIds"
-            response["next"]["payload"]["searchOffset"] = "$state.searchOffset"
-            response["next"]["payload"]["nextPageToken"] = "$state.nextPageToken"
-            response["next"]["payload"]["business_type"] = "$state.business_type"
-            response["next"]["payload"]["location"] = "$state.location"
-            
             return jsonify(response), 200
             
         except Exception as e:

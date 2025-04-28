@@ -56,7 +56,7 @@ def control_route():
             "remaining_place_ids": remaining_place_ids,
             "search_offset": search_offset,
             "next_page_token": next_page_token,
-            "businessType": business_type,
+            "business_type": business_type,
             "location": location,
             "skipped_constraints": skipped_constraints,
             "skipped_count": skipped_count
