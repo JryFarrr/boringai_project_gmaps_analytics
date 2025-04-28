@@ -87,10 +87,6 @@ def collect_place_ids(business_type, location, total_needed, remaining_place_ids
                 # Re-raise the exception if we have no results at all
                 raise
     
-    # Limit place_ids based on total needed
-    if len(all_place_ids) > total_needed:
-        all_place_ids = all_place_ids[:total_needed]
-    
     return {
         "place_ids": all_place_ids,
         "next_page_token": current_next_page_token
