@@ -202,7 +202,7 @@ def regex_pattern_parsing(prompt):
     # Extract business type, location, and potentially top places
     match = re.search(r"Find (?:a )?(.*?) in (.*?) (?:that|with|from)", prompt, re.IGNORECASE)
     if match:
-        parameters['business_type'] = match.group(1).strip()
+        parameters['businessType'] = match.group(1).strip()
         parameters['location'] = match.group(2).strip()
     
     # Extract number of leads (total to search from)

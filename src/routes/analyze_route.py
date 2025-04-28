@@ -2,7 +2,7 @@ from flask import request, jsonify, current_app, Blueprint
 from flasgger import swag_from
 from src.utils.response_utils import error_response
 from src.services.match_services import check_place_constraints
-from src.services.review_service import generate_review_summaries, extract_key_themes_from_reviews
+from src.services.review_service import generate_review_summaries
 from src.services.insight_service import generate_business_insights
 from src.docs.analyze import analyze_dict
 # Create the blueprint
@@ -38,8 +38,11 @@ def analyze_route():
         number_of_leads = data.get("numberOfLeads", 0)
         current_app.logger.info(f"Lead count: {lead_count}, Skipped count: {skipped_count}, Target leads: {number_of_leads}")
         
-        # Check if place meets constraints
-        meets_constraints, match_percentage, match_analysis = check_place_constraints(place_details, constraints)
+        # Check if place meets constraints using match_percentage that was already calculated in scrape_route
+        match_percentage = place_details.get("matchPercentage", 0)
+        match_analysis = place_details.get("matchAnalysis", {}) 
+        meets_constraints = match_percentage >= 70  # Assuming 70% is the threshold
+        
         current_app.logger.info(f"Constraints check: meets={meets_constraints}, match={match_percentage}%")
         
         # If constraints not met, return skip response
@@ -47,37 +50,11 @@ def analyze_route():
             current_app.logger.info(f"Place does not meet constraints, skipping: {place_details.get('placeName', 'Unknown')}")
             response = create_skip_response(lead_count, skipped_count)
             return jsonify(response)
-            
-        # Extract reviews for summarization
-        positive_reviews = place_details.get("positiveReviews", [])
-        negative_reviews = place_details.get("negativeReviews", [])
-        current_app.logger.info(f"Reviews for analysis: positive={len(positive_reviews)}, negative={len(negative_reviews)}")
         
-        # Extract keywords from constraints - LOG THIS TO DEBUG KEYWORD ISSUE
-        keywords = constraints.get("keywords", "")
-        current_app.logger.info(f"Keywords for analysis: '{keywords}'")
+        # The review data and keyword matching are now coming from the scrape_route
+        # We just need to focus on additional insights generation
         
-        # Generate review summaries with keyword count
-        current_app.logger.info("Calling generate_review_summaries...")
-        review_summaries = generate_review_summaries(positive_reviews, negative_reviews, keywords)
-        current_app.logger.info(f"Review summaries result keys: {review_summaries.keys() if review_summaries else 'None'}")
-        
-        # Add review summaries to place details
-        place_details["reviewSummary"] = {
-            "positive": review_summaries.get("positive", ""),
-            "negative": review_summaries.get("negative", "")
-        }
-        
-        # Add keyword match if available - THIS IS CRITICAL FOR YOUR ISSUE
-        if "keywordMatch" in review_summaries:
-            place_details["keywordMatch"] = review_summaries["keywordMatch"]
-            current_app.logger.info(f"Added keywordMatch to place_details: {place_details['keywordMatch']}")
-        else:
-            current_app.logger.warning("No keywordMatch in review_summaries!")
-            # Provide a default value if keywordMatch is missing
-            place_details["keywordMatch"] = "Keywords not found"
-        
-        # Generate business insights
+        # Generate business insights using the data from scrape
         current_app.logger.info("Generating business insights...")
         insights = generate_business_insights(place_details, match_percentage, match_analysis)
         current_app.logger.info("Business insights generated successfully")
@@ -86,29 +63,9 @@ def analyze_route():
         lead_count += 1
         
         # Prepare the result with place details, match percentage, and insights
-        result = {
-            "placeName": place_details["placeName"],
-            "placeId": place_details.get("placeId", ""),
-            "address": place_details.get("address", ""),
-            "rating": place_details.get("rating", 0),
-            "totalRatings": place_details.get("totalRatings", 0),
-            "priceRange": place_details.get("priceRange", ""),
-            "businessType": place_details.get("businessType", []),
-            "matchPercentage": match_percentage,
-            "strengths": insights.get("strengths", []),
-            "weaknesses": insights.get("weaknesses", []),
-            "matchReasoning": match_analysis.get("reasoning", ""), 
-            "phone": place_details.get("phone", ""),
-            "website": place_details.get("website", ""),
-            "businessHours": place_details.get("businessHours", []),
-            "coordinates": place_details.get("coordinates", {}),
-            "reviewSummary": place_details.get("reviewSummary", {}),
-            # Make sure keywordMatch is included in the final result
-            "keywordMatch": place_details.get("keywordMatch", "Keywords not found"),
-            "reviewCount": len(place_details.get("positiveReviews", [])) + len(place_details.get("negativeReviews", []))
-        }
+        result = create_result_object(place_details, match_percentage, match_analysis, insights)
         
-        # Log the keywordMatch value in the final result
+        # Log the keywordMatch value in the final result  
         current_app.logger.info(f"keywordMatch in final result: {result.get('keywordMatch', 'Not found')}")
         current_app.logger.info(f"Total reviews analyzed: {result.get('reviewCount', 0)}")
         
@@ -129,7 +86,7 @@ def analyze_route():
                     "remainingPlaceIds": "$state.remainingPlaceIds",
                     "searchOffset": "$state.searchOffset",
                     "nextPageToken": "$state.nextPageToken",
-                    "business_type": "$state.business_type",
+                    "business_type": "$state.business_type",  # Sesuaikan dari business_type
                     "location": "$state.location",
                     "skippedCount": "$state.skippedCount"
                 }
@@ -171,7 +128,7 @@ def create_skip_response(lead_count, skipped_count):
                 "remainingPlaceIds": "$state.remainingPlaceIds",
                 "searchOffset": "$state.searchOffset",
                 "nextPageToken": "$state.nextPageToken",
-                "business_type": "$state.business_type",
+                "businessType": "$state.businessType",  # Sesuaikan dari business_type
                 "location": "$state.location",
                 "skippedConstraints": True,
                 "skippedCount": "$state.skippedCount"
@@ -182,16 +139,14 @@ def create_skip_response(lead_count, skipped_count):
     }
 
 
-def create_result_object(place_details, match_percentage, match_analysis, summaries, key_themes, insights):
+def create_result_object(place_details, match_percentage, match_analysis, insights):
     """
     Creates the result object with all business analysis data
     
     Args:
-        place_details (dict): Details about the business
+        place_details (dict): Details about the business including review summaries
         match_percentage (float): Match percentage calculated
-        match_analysis (dict): Analysis of the match percentage
-        summaries (dict): Summaries of positive and negative reviews
-        key_themes (list): Key themes extracted from reviews
+        match_analysis (dict): Analysis of the match percentage  
         insights (dict): Business insights and recommendations
         
     Returns:
@@ -199,32 +154,29 @@ def create_result_object(place_details, match_percentage, match_analysis, summar
     """
     result = {
         "placeName": place_details["placeName"],
-        "matchPercentage": match_percentage,
-        "business_type": place_details.get("business_type", []),
+        "placeId": place_details.get("placeId", ""),
+        "address": place_details.get("address", ""),
         "rating": place_details.get("rating", 0),
         "totalRatings": place_details.get("totalRatings", 0),
-        "priceLevel": place_details.get("priceRange", ""),
-        "reviewCount": len(place_details.get("positiveReviews", [])) + len(place_details.get("negativeReviews", []))
+        "priceRange": place_details.get("priceRange", ""),
+        "business_type": place_details.get("business_type", []),
+        "location" : place_details.get("location", []),
+        "matchPercentage": match_percentage,
+        "strengths": insights.get("strengths", []),
+        "weaknesses": insights.get("weaknesses", []),
+        "matchReasoning": match_analysis.get("reasoning", ""), 
+        "phone": place_details.get("phone", ""),
+        "website": place_details.get("website", ""),
+        "businessHours": place_details.get("businessHours", []),
+        "coordinates": place_details.get("coordinates", {}),
+        "reviewSummary": place_details.get("reviewSummary", {}),
+        "keywordMatch": place_details.get("keywordMatch", "Keywords not found"),
+        "reviewCount": place_details.get("reviewCount", 0)
     }
     
     # Add match analysis reasoning if available
-    if match_analysis and "reasoning" in match_analysis:
-        result["matchReasoning"] = match_analysis["reasoning"]
-    
-    # Add detailed factor scores if available
     if match_analysis and "analysis" in match_analysis:
         result["matchFactors"] = match_analysis["analysis"]
-    
-    # Add summaries if they exist
-    if "positive" in summaries and summaries["positive"]:
-        result["summaryPositiveReviews"] = summaries["positive"]
-    if "negative" in summaries and summaries["negative"]:
-        result["summaryNegativeReviews"] = summaries["negative"]
-    
-    # Add key themes
-    if key_themes:
-        result["keyThemes"] = key_themes
-    
     # Add insights
     if insights:
         result["strengths"] = insights.get("strengths", [])
@@ -248,5 +200,7 @@ def create_result_object(place_details, match_percentage, match_analysis, summar
     else:
         current_app.logger.warning("keywordMatch not found in place_details during result creation")
         result["keywordMatch"] = "Keywords not found"
+    
         
     return result
+

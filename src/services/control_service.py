@@ -35,7 +35,7 @@ def handle_skipped_constraints(params):
     next_page_token = params["next_page_token"]
     search_offset = params["search_offset"]
     lead_count = params["lead_count"]
-    business_type = params["business_type"]
+    business_type = params["businessType"]
     location = params["location"]
     number_of_leads = params["number_of_leads"]
     skipped_count = params["skipped_count"]
@@ -51,7 +51,7 @@ def handle_skipped_constraints(params):
                 "nextPageToken": next_page_token,
                 "searchOffset": search_offset,
                 "leadCount": lead_count,
-                "business_type": business_type,
+                "businessType": business_type,
                 "location": location,
                 "numberOfLeads": number_of_leads,
                 "skippedCount": skipped_count
@@ -80,7 +80,7 @@ def handle_skipped_constraints(params):
             "next": {
                 "key": "search",
                 "payload": {
-                    "business_type": business_type,
+                    "businessType": business_type,
                     "location": location,
                     "nextPageToken": next_page_token,
                     "numberOfLeads": number_of_leads,
@@ -101,7 +101,7 @@ def handle_skipped_constraints(params):
             "next": {
                 "key": "search",
                 "payload": {
-                    "business_type": business_type,
+                    "businessType": business_type,
                     "location": location,
                     "searchOffset": search_offset,
                     "numberOfLeads": number_of_leads,
@@ -135,7 +135,7 @@ def handle_next_place_id(params):
     next_page_token = params["next_page_token"]
     search_offset = params["search_offset"]
     lead_count = params["lead_count"]
-    business_type = params["business_type"]
+    business_type = params["businessType"]
     location = params["location"]
     number_of_leads = params["number_of_leads"]
     skipped_count = params["skipped_count"]
@@ -149,7 +149,7 @@ def handle_next_place_id(params):
             "remainingPlaceIds": new_remaining,
             "leadCount": lead_count,
             "numberOfLeads": number_of_leads,
-            "business_type": business_type,
+            "businessType": business_type,
             "location": location,
             "searchOffset": search_offset,
             "nextPageToken": next_page_token,
@@ -185,7 +185,7 @@ def handle_need_more_leads(params):
     Returns:
         dict: Response object with next action to take
     """
-    business_type = params["business_type"]
+    business_type = params["businessType"]
     location = params["location"]
     search_offset = params["search_offset"]
     number_of_leads = params["number_of_leads"]
@@ -198,7 +198,7 @@ def handle_need_more_leads(params):
         "next": {
             "key": "search",
             "payload": {
-                "business_type": business_type,
+                "businessType": business_type,
                 "location": location,
                 "searchOffset": search_offset,
                 "numberOfLeads": number_of_leads,

@@ -18,10 +18,10 @@ def create_initial_state(data):
     # Process price_range if present
     price_range = data.get("price_range", None)
     if price_range:
-        price_range = process_price_range(price_range, business_type=data.get("business_type"))
+        price_range = process_price_range(price_range, business_type=data.get("businessType"))
     
     return {
-        "business_type": data["business_type"],
+        "business_type": data["businessType"],
         "location": data["location"],
         "numberOfLeads": data["numberOfLeads"],
         "business_hours": data.get("business_hours", None),
@@ -54,7 +54,7 @@ def create_input_response(initial_state):
         "next": {
             "key": "search",
             "payload": {
-                "business_type": "$state.business_type",
+                "business_type": "$state.businessType",
                 "location": "$state.location",
                 "searchOffset": "$state.searchOffset",
                 "numberOfLeads": "$state.numberOfLeads"

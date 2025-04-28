@@ -32,27 +32,60 @@ def process_place_details(place_id):
         dict: Formatted place data with consistent structure
     """
     # Define the fields we want from Google Maps API
-    fields = [
-        "name",
-        "formatted_phone_number",
-        "website",
-        "price_level",
-        "reviews",
-        "formatted_address",
-        "geometry",
-        "rating",
-        "user_ratings_total",
-        "opening_hours",
-        "types"
-    ]
-    
-    # Get place details from Google Maps API
-    place_details = get_place_details(place_id, fields=fields)
-    
-    # Format the place data with consistent structure
-    place_data = format_place_data(place_details)
-    
-    return place_data
+    if not place_id:
+            print("Error: place_id is empty or None")
+            return {
+                "placeName": "Unknown",
+                "formattedAddress": "",
+                "rating": 0,
+                "totalRatings": 0,
+                "reviews": []
+            }
+        
+    # Get basic place details from Google Maps API
+    try:
+        place_details = get_place_details(place_id)
+        if not place_details:
+            print(f"Warning: No place details returned for place_id: {place_id}")
+            place_details = {}
+    except Exception as e:
+        print(f"Error getting place details: {str(e)}")
+        place_details = {}
+        
+        # Create a structured response with defaults for missing data
+    processed_data = {
+        "placeId": place_id,
+        "placeName": place_details.get("name", "Unknown"),
+        "formattedAddress": place_details.get("formatted_address", ""),
+        "phone": place_details.get("formatted_phone_number", ""),
+        "website": place_details.get("website", ""),
+        "rating": place_details.get("rating", 0),
+        "totalRatings": place_details.get("user_ratings_total", 0),
+        "businessStatus": place_details.get("business_status", ""),
+    }
+        
+        # Handle location data with error checking
+    try:
+        location = place_details.get("geometry", {}).get("location", {})
+        processed_data["location"] = {
+            "lat": location.get("lat", 0),
+            "lng": location.get("lng", 0)
+        }
+    except Exception as e:
+        print(f"Error processing location data: {str(e)}")
+        processed_data["location"] = {"lat": 0, "lng": 0}
+        
+    # Handle additional fields
+    processed_data["types"] = place_details.get("types", [])
+        
+        # Include reviews with validation
+    reviews = place_details.get("reviews", [])
+    if not isinstance(reviews, list):
+        print(f"Warning: reviews is not a list. Type: {type(reviews)}")
+        reviews = []
+    processed_data["reviews"] = reviews
+        
+    return processed_data
 
 def create_scrape_response(place_data, lead_count, skipped_count, number_of_leads):
     """

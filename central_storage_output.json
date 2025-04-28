@@ -1,49 +1,62 @@
 {
-  "$id": "ab4b76ad-3ccb-4ac5-af83-98558a15d5c8",
+  "$id": "d55fccef-ffbb-42b0-9be4-0d1a9f7c4549",
   "$state": {
     "business_hours": "jam 10 pagi sampai 6 malam",
-    "business_type": "caf\u00e9",
-    "keywords": "murah,nugas",
-    "leadCount": 0,
-    "location": "Surabaya",
+    "business_type": "",
+    "keywords": "murah",
+    "leadCount": 1,
+    "location": "Indonesia",
     "max_reviews": 200,
     "min_rating": 4.0,
     "min_reviews": 50,
     "numberOfLeads": 3,
     "price_range": "$$",
-    "remainingPlaceIds": [
-      "ChIJ95NZRKP71y0RiTT7EskTb8U",
-      "ChIJ_RxtFKr71y0RL10s_W5SP4I",
-      "ChIJ4V2fcEb61y0R7gOkG6JrR4E",
-      "ChIJ63RyTwD71y0R0Jif6k74VBk",
-      "ChIJPbj4Mkb61y0RjOMEdXaSRlo",
-      "ChIJKe5jttn71y0RHyF2VuhqHpA",
-      "ChIJ6eN4kaf51y0R5rtNY3lK5oY",
-      "ChIJ318h82T51y0RJ5dvMW9lTG4",
-      "ChIJH2QvWa371y0RsyqTX7ddZ2k",
-      "ChIJy4Hb5Vj61y0RxYLjEunUlsk",
-      "ChIJ-bts_bb51y0RigQ3aSeE-a0",
-      "ChIJ_bZtg5X51y0R2Sj9OLC1bCI",
-      "ChIJTRmF8wD71y0R1BleRFhItK8",
-      "ChIJBWFWltP71y0RySEWggF0GA0",
-      "ChIJGyAwmRX61y0RLonzrz-e12Q",
-      "ChIJT06_oVb51y0R0iggaEOBV9I",
-      "ChIJVXlBwbH71y0RB-4otoCDxE8",
-      "ChIJ39rV7LT51y0R5IAiDaoF32k",
-      "ChIJn4-Eowj71y0R3_Xud9WHy4s",
-      "ChIJDUFjTAD51y0R5Jajpt6RHaY",
-      "ChIJe3zs8hj71y0RaJDqL-UZ76E"
-    ],
-    "searchOffset": 45,
-    "skippedCount": 23,
-    "businessType": "caf\u00e9",
-    "nextPageToken": "AeeoHcJ6IWHxDk9V5x0stF9REPdtxtddMiAD5aVaTHG3C8yA4Pz8QBZUbGXUvxnWb7tbUv_bBk_pqevqtR3a11HwLJ_Js1JiqghRPlyOtgNRADTeLu6NIw1srpkfJhWf0poTdtbjraDU5V4tFcuT0gTIX2wFe0RZ30iU8sWMghbFmiXI-oZGZTV7CV9WuPFaHo28kqOfrSKudo1p3IerQWctVAoiTn3le5AgKbUViXUnijXfr4v2_ijyN6h1gKsP5A3lgZ9P_QykFz6f42JWDizx2pWxPXAz4VWsUJth7guMrgL22ViHRPZeNP-zENQg2gs-Wht6TjaiXID62eu-_vBxyoxbJ34OTPQwH_dD7FrftZg3oKOxLzt-zgWLPUwELrAchAHqIW2lvB1nyrMNHxwQvxoRaDRnLzOFJP9HLAZDp8oZqHUISFGFSDIXdLZ7lIvUBmAoVsnJ4Fl48n3s5MqVtY2_H41VEW09X702XFSKORS5PIhwl0Orhyr5JDOJsRKQzIuT4tevss84tFNVEqEK1G6kzjrh7c8P-fSfbjRsAyIB6K2fC6yM801_q9PVRToTSntbFnYwB1d6znhso9lKNcL6yeg5i5e9aWt4Gl-ipg",
-    "skippedConstraints": true
+    "remainingPlaceIds": [],
+    "searchOffset": 0,
+    "skippedCount": 0,
+    "nextPageToken": ""
   },
-  "$results": [],
+  "$results": [
+    {
+      "address": null,
+      "businessHours": [],
+      "business_type": [],
+      "coordinates": {},
+      "keywordMatch": "Keywords not found",
+      "location": {
+        "lat": -7.289412599999999,
+        "lng": 112.7766169
+      },
+      "matchFactors": {},
+      "matchPercentage": 94.1213448271133,
+      "matchReasoning": "This business matches 94.1% of your criteria. ",
+      "phone": "0851-7958-9588",
+      "placeId": "ChIJb9_Q3sD71y0RjSHGGj7GR_8",
+      "placeName": "Kogu Space",
+      "priceRange": null,
+      "rating": 4.4,
+      "reviewCount": 10,
+      "reviewSummary": {
+        "negative": "Food quality is mediocre, with specific complaints about spaghetti. Issues with ordering due to poor WiFi access create inconvenience. Customers find the ordering process confusing.",
+        "positive": "Spacious cafe with indoor/outdoor seating, VIP room, and good parking. Ideal for casual hangouts but noisy for working. Food is average; menu size misrepresents. Improvements needed in taste."
+      },
+      "strengths": [
+        "The business has a strong overall rating of 4.4/5 based on a significant number of reviews (370), indicating general customer satisfaction.",
+        "Kogu Space offers a versatile environment with both indoor and outdoor seating, as well as facilities for private meetings, making it attractive for diverse client requirements.",
+        "The additional amenities such as a spacious parking area, WiFi availability, and clean, elderly-friendly facilities add convenience for patrons."
+      ],
+      "totalRatings": 370,
+      "weaknesses": [
+        "There are inconsistencies reported between menu descriptions and actual food portions, which can disappoint customers expecting more from their order.",
+        "Complaints regarding the quality of food, like the spaghetti being subpar, highlight a potential gap in meeting culinary expectations.",
+        "Problems with accessing WiFi in some areas, coupled with inefficient customer service as described in the negative reviews, can hinder customer experience and deter return visits."
+      ],
+      "website": null
+    }
+  ],
   "$metadata": {
-    "createdAt": "2025-04-27T15:39:57.919059+00:00Z",
-    "startedAt": "2025-04-27T15:40:00.163307+00:00Z",
-    "executionTotal": 74
+    "createdAt": "2025-04-27T18:52:20.977030+00:00Z",
+    "startedAt": "2025-04-27T18:52:24.061575+00:00Z",
+    "executionTotal": 5
   }
 }

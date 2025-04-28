@@ -40,7 +40,7 @@ def control_route():
         remaining_place_ids = data.get("remainingPlaceIds", [])
         search_offset = data.get("searchOffset", 0)
         next_page_token = data.get("nextPageToken")
-        business_type = data.get("business_type")
+        business_type = data.get("businessType")
         location = data.get("location")
         skipped_constraints = data.get("skippedConstraints", False)
         skipped_count = data.get("skippedCount", 0)
@@ -56,7 +56,7 @@ def control_route():
             "remaining_place_ids": remaining_place_ids,
             "search_offset": search_offset,
             "next_page_token": next_page_token,
-            "business_type": business_type,
+            "businessType": business_type,
             "location": location,
             "skipped_constraints": skipped_constraints,
             "skipped_count": skipped_count

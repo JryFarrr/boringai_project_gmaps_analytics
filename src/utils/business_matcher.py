@@ -83,37 +83,64 @@ def check_business_hours(place, business_hours_constraint):
     
     return True  # Default to True for unknown constraints
 
-def search_reviews_for_keywords(place, keywords):
+def search_reviews_for_keywords(place_details, keywords):
     """
-    Search place reviews for specific keywords
+    Search reviews for specified keywords
     
     Args:
-        place (dict): Place object with reviews
-        keywords (str): Keywords to search for, comma-separated
-    
-    Returns:
-        dict: Dictionary with match percentage and matched keywords
-    """
-    if not keywords or "reviews" not in place or not place["reviews"]:
-        return {"match_percentage": 0, "matched_keywords": []}
-    
-    keywords_list = [k.strip().lower() for k in keywords.split(",")]
-    matches = []
-    
-    for review in place["reviews"]:
-        review_text = review.get("text", "").lower()
+        place_details (dict): Dictionary containing place details with reviews
+        keywords (str): Comma-separated keywords to search for
         
-        for keyword in keywords_list:
-            if keyword in review_text and keyword not in matches:
-                matches.append(keyword)
-    
-    match_percentage = round((len(matches) / len(keywords_list)) * 100, 2) if keywords_list else 0
-    
-    return {
-        "match_percentage": match_percentage,
-        "matched_keywords": matches
-    }
-
+    Returns:
+        dict: Dictionary with keyword counts
+    """
+    try:
+        # Validate inputs
+        if not isinstance(place_details, dict):
+            print(f"Warning: place_details is not a dictionary. Type: {type(place_details)}")
+            return {}
+            
+        if not isinstance(keywords, str):
+            print(f"Warning: keywords is not a string. Type: {type(keywords)}")
+            keywords = str(keywords) if keywords else ""
+        
+        keyword_list = [k.strip().lower() for k in keywords.split(',') if k.strip()]
+        if not keyword_list:
+            return {}
+            
+        keyword_matches = {}
+        reviews = place_details.get("reviews", [])
+        
+        if not isinstance(reviews, list):
+            print(f"Warning: reviews is not a list. Type: {type(reviews)}")
+            return {}
+        
+        for keyword in keyword_list:
+            count = 0
+            for review in reviews:
+                try:
+                    if not isinstance(review, dict):
+                        print(f"Warning: review is not a dictionary. Type: {type(review)}")
+                        continue
+                        
+                    review_text = review.get("text", "")
+                    if not isinstance(review_text, str):
+                        print(f"Warning: review text is not a string. Type: {type(review_text)}")
+                        review_text = str(review_text) if review_text else ""
+                        
+                    if keyword in review_text.lower():
+                        count += 1
+                except Exception as e:
+                    print(f"Error processing review for keywords: {str(e)}")
+                    continue
+                    
+            keyword_matches[keyword] = count
+        
+        return keyword_matches
+        
+    except Exception as e:
+        print(f"Error in search_reviews_for_keywords: {str(e)}")
+        return {}
 def extract_key_themes(reviews, max_themes=5):
     """
     Extract key themes from reviews using OpenAI
