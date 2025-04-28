@@ -121,14 +121,6 @@ def create_match_reasoning(place, parameters, match_percentage):
         else:
             reasoning += f"Its business hours don't match your {parameters['business_hours']} requirement. "
 
-    # Add keyword matches explanation
-    if parameters["keywords"] and "keyword_matches" in place:
-        matches = place["keyword_matches"].get("matched_keywords", [])
-        if matches:
-            reasoning += f"Found {len(matches)} of your keywords in reviews: {', '.join(matches)}. "
-        else:
-            reasoning += f"None of your keywords were found in the reviews. "
-
     # Add address match explanation if address parameter is provided
     if parameters["address"] and place.get("address"):
         # Simple substring match for address - could be more sophisticated

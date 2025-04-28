@@ -1,5 +1,5 @@
 {
-  "$id": "963d44c4-4fc7-4b49-a6c9-ff4f49d96e0f",
+  "$id": "ee62e148-b940-4740-b419-e317bed9c9cf",
   "$state": {
     "business_hours": "jam 10 pagi sampai 6 malam",
     "business_type": "caf\u00e9",
@@ -15,54 +15,9 @@
     "searchOffset": 2,
     "skippedCount": 0,
     "businessType": "caf\u00e9",
-    "nextPageToken": "AeeoHcIRgjxD1ib0bwHz-xk0QO6Ak5s0qo_O7aJEKeq_vFzSWbD5jrJOpzKAGPIfSj2oJ3yWCu6mIycv9YeXecjw7DDPQ_Z0vrHkgxazAN2-wxOHsBsr7pAy2jE9Aryv5B0wtpppsH5H8jocF2fN_iy8UUsApilJAt07cPSprlO6DU_umGupoDMQKeGkmdix9DoIQxBzgGMAuj5dV78MfaCK3BVfIdLJ2qpJYQ8zTbx5XaLMjJ9BBTXx_83NbSbzdLvegkb5R3cYcxU0QyEMHXCl3cZrm-TlC5fZF3uZFPnjy6y5rNu0pJa1Z6HBt_OabytD4kKmX1NaS7dz-6lr5u9712WNVPOrtZi1jc2FTylhxZf0FNUK_sm9KLjteI5gD40C_NR2PBmUHTftmQzrAp8G"
+    "nextPageToken": "AeeoHcKCzHujtAx6pWJwzICG4qxfEl2dCamcoN4kV9mMYQbOA45334mjBUxMpoml3lAPSdbHELMqrxAjYeJaW0exh5Rzx3hilBg7TDtWdvZAddslC4r9sW7aqAeV2BD8_LFlUzzVi4CRlD8CBLevyBrPt3Uw9PohcqJcCH2vNr71PuIdM5ik8YEtPqkQqgCpLXmvrcO9gXibQ2iSvGxn15S0SwJutTMSbRGuXoBm_ckmVzGmKnp-fpMirPwsKiwZNZzFaC1RxLanbGd41kIugxX2qU-e-HN1IHWSzDt8-nkRHsKxv0DpCKDJF2T0Kili5aumvAu9iWirfzgKpb7EnyExdSMO_TsLVqTNRJBnYKQcQSLofTdrhF-YPsi-urfC175f5Fo-65rZLHH2GnoledxH"
   },
   "$results": [
-    {
-      "address": "Jl. Arief Rahman Hakim No.40, Klampis Ngasem, Kec. Sukolilo, Surabaya, Jawa Timur 60117, Indonesia",
-      "businessHours": [
-        "Monday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Tuesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Wednesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Thursday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Friday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Saturday: 9:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Sunday: 9:00\u202fAM\u2009\u2013\u20099:00\u202fPM"
-      ],
-      "businessType": [
-        "cafe",
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "coordinates": {},
-      "keywordMatch": "2 keywords found from 10 reviews",
-      "matchPercentage": 95.25720659045462,
-      "matchReasoning": "This business matches 95.3% of your criteria. It has a good rating of 4.3/5.0. It has 651 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. Found 1 of your keywords in reviews: cozy. ",
-      "phone": null,
-      "placeId": null,
-      "placeName": "The Localist Coffee and Bistro Surabaya",
-      "priceRange": "$$",
-      "rating": 4.3,
-      "reviewCount": 10,
-      "reviewSummary": {
-        "negative": "",
-        "positive": "The cafe is conveniently located in an eye clinic, offering a cozy atmosphere, decent food, and good service. It's family-friendly with a playground and book club, although slightly pricey."
-      },
-      "strengths": [
-        "The Localist Coffee and Bistro Surabaya has a strong rating of 4.3 out of 5 from 651 reviews, indicating customer satisfaction.",
-        "The business is conveniently located within the Dr. Sjamsu eye clinic, providing a unique captive audience and a comfortable waiting environment with a playground for children.",
-        "The establishment offers a cozy atmosphere with both semi-outdoor and indoor seating, appealing for extended stays or get-togethers."
-      ],
-      "totalRatings": 651,
-      "weaknesses": [
-        "Some customers find the pricing to be on the expensive side, which could limit its appeal to more budget-conscious consumers.",
-        "Despite having a good range of offerings, the cafe\u2019s location on the second floor might deter walk-in customers who aren\u2019t visiting the eye clinic.",
-        "No significant negative reviews were provided, making it difficult to gauge potential areas for improvement from a customer dissatisfaction standpoint."
-      ],
-      "website": null
-    },
     {
       "address": "Jl. Klampis Jaya No.144, Klampis Ngasem, Kec. Sukolilo, Surabaya, Jawa Timur 60117, Indonesia",
       "businessHours": [
@@ -85,34 +40,75 @@
       "coordinates": {},
       "keywordMatch": "2 keywords found from 10 reviews",
       "matchPercentage": 98.0,
-      "matchReasoning": "This business matches 98.0% of your criteria. It has a good rating of 4.6/5.0. It has 2485 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. Found 1 of your keywords in reviews: cozy. ",
-      "phone": null,
+      "matchReasoning": "This business matches 98.0% of your criteria. It has a good rating of 4.6/5.0. It has 2485 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "(031) 5995500",
       "placeId": null,
       "placeName": "Demandailing Cafe & Eatery",
       "priceRange": "$$",
       "rating": 4.6,
       "reviewCount": 10,
       "reviewSummary": {
-        "negative": "Customers report a gloomy atmosphere, lack of promotion information, long wait times, and poor food quality at Demandailing Klampis, indicating a need for better communication and food consistency.",
-        "positive": "Customers praise the cafe's tasty food, reasonable prices, and cozy ambience, but note minor issues with beverage quality, air conditioning, and limited space. Desserts and diverse drink options ar..."
+        "negative": "Customers express disappointment with Demandailing Klampis due to a gloomy atmosphere, lack of promotion communication, slow service, and poor food quality compared to the Merr location.",
+        "positive": "Customers love the delicious food, cozy ambiance, and affordable prices. Recommendations include pastas and choco mint float. However, the space is small and some air conditioners are blocked."
       },
       "strengths": [
-        "High Customer Satisfaction: With a rating of 4.6/5 from 2485 reviews, the cafe shows a strong level of customer satisfaction.",
-        "Cozy Environment: Multiple reviews highlight the ambiance as cozy and an appealing place to hang out, which aligns with common customer preferences for cafes.",
-        "Affordable and Quality Food: The cafe is praised for its delicious food and affordable pricing, making it accessible to a wider customer base."
+        "High customer satisfaction with a strong overall rating of 4.6 out of 5 from a considerable 2485 reviews.",
+        "Competitive price range ($$) that aligns with numerous patrons' expectations of affordability while still offering quality food, beverages, and ambiance.",
+        "Diverse and expanding menu options along with a cozy and inviting environment which is favored for hangouts and gatherings."
       ],
       "totalRatings": 2485,
       "weaknesses": [
-        "Inconsistent Experience Across Locations: There are complaints about the quality of service and atmosphere varying between different locations, such as Klampis compared to Merr.",
-        "Issues with Promotions: Customers have reported not being properly informed about ongoing promotions, which can lead to dissatisfaction and disappointment.",
-        "Temperature Comfort: Some customers have noted that the cafe can be a bit hot, which may impact the comfort level, especially in a cozy setting."
+        "Inconsistency in service and experience across different branches, as indicated by negative feedback regarding the atmosphere and service at one location compared to another.",
+        "Potential issues with promotional communication, leading to dissatisfaction when offers are not properly communicated to customers.",
+        "Some minor criticisms on beverage quality and air conditioning effectiveness, suggesting areas for operational improvement."
       ],
-      "website": null
+      "website": "https://www.instagram.com/demandailingcafe"
+    },
+    {
+      "address": "Jl. Arief Rahman Hakim No.40, Klampis Ngasem, Kec. Sukolilo, Surabaya, Jawa Timur 60117, Indonesia",
+      "businessHours": [
+        "Monday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Tuesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Wednesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Thursday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Friday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Saturday: 9:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Sunday: 9:00\u202fAM\u2009\u2013\u20099:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "restaurant",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "2 keywords found from 10 reviews",
+      "matchPercentage": 95.25720659045462,
+      "matchReasoning": "This business matches 95.3% of your criteria. It has a good rating of 4.3/5.0. It has 651 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "(031) 5937373",
+      "placeId": null,
+      "placeName": "The Localist Coffee and Bistro Surabaya",
+      "priceRange": "$$",
+      "rating": 4.3,
+      "reviewCount": 10,
+      "reviewSummary": {
+        "negative": "",
+        "positive": "Cozy cafe with playground on the eye clinic's 2nd floor; ideal for families. Great for long visits. Highlights include carbonara spaghetti, good service, and a kids' book club. Prices are a bit high."
+      },
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "totalRatings": 651,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ],
+      "website": "N/A"
     }
   ],
   "$metadata": {
-    "createdAt": "2025-04-28T08:30:13.032504+00:00Z",
-    "startedAt": "2025-04-28T08:30:15.451968+00:00Z",
+    "createdAt": "2025-04-28T09:58:49.200930+00:00Z",
+    "startedAt": "2025-04-28T09:58:51.295060+00:00Z",
     "executionTotal": 8
   }
 }

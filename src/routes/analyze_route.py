@@ -84,7 +84,7 @@ def analyze_route():
         
         # Increment lead count
         lead_count += 1
-        
+        place_id = place_details.get("placeId", place_details.get("place_id", ""))
         # Prepare the result with place details, match percentage, and insights
         result = {
             "placeName": place_details["placeName"],
@@ -98,8 +98,8 @@ def analyze_route():
             "matchReasoning": match_analysis.get("reasoning", ""),
             "strengths": insights.get("strengths", []),
             "weaknesses": insights.get("weaknesses", []),
-            "phone": place_details.get("phone", ""),
-            "website": place_details.get("website", ""),
+            "phone": place_details.get("contact", {}).get("phone", ""),
+            "website": place_details.get("contact", {}).get("website", ""),
             "businessHours": place_details.get("businessHours", []),
             "coordinates": place_details.get("coordinates", {}),
             "reviewSummary": place_details.get("reviewSummary", {}),
@@ -199,13 +199,13 @@ def create_result_object(place_details, match_percentage, match_analysis, summar
     """
     result = {
         "placeName": place_details["placeName"],
+        "placeId" : place_details.get("placeId", []),
         "matchPercentage": match_percentage,
         "business_type": place_details.get("business_type", []),
-        "placeId": place_details.get("placeId", ""),
         "address": place_details.get("address", ""),
         "matchReasoning": match_analysis.get("reasoning", ""), 
-        "phone": place_details.get("phone", ""),
-        "website": place_details.get("website", ""),
+        "phone": place_details.get("contact", {}).get("phone", ""),
+        "website": place_details.get("contact", {}).get("website", ""),
         "rating": place_details.get("rating", 0),
         "totalRatings": place_details.get("totalRatings", 0),
         "priceLevel": place_details.get("priceRange", ""),

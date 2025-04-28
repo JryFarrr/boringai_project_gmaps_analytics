@@ -161,7 +161,7 @@ def run_simulation():
     storage = executor.get_storage()
     
     # Sort $results by fitScore in descending order
-    storage["$results"].sort(key=lambda x: x.get("fitScore", 0), reverse=True)
+    storage["$results"].sort(key=lambda x: x.get("matchPercentage", 0), reverse=True)
     
     # Replace empty fields with None in $results
     for result in storage["$results"]:
