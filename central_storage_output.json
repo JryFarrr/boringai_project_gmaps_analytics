@@ -1,5 +1,5 @@
 {
-  "$id": "2a1d6794-df59-43a6-8e62-2e54856954fb",
+  "$id": "899d0fe5-3d2a-4103-b5b8-aa5b81401931",
   "$state": {
     "business_hours": "jam 10 pagi sampai 6 malam",
     "business_type": "",
@@ -27,9 +27,22 @@
         "lat": -7.2831208,
         "lng": 112.7767691
       },
-      "matchFactors": {},
-      "matchPercentage": 98.0,
-      "matchReasoning": "This business matches 98.0% of your criteria. ",
+      "matchFactors": {
+        "keywords": {
+          "details": "No keywords found",
+          "score": 0
+        },
+        "rating": {
+          "details": "4.6/5.0 vs minimum 4.0/5.0",
+          "score": 100
+        },
+        "review_count": {
+          "details": "2485 reviews vs minimum 50",
+          "score": 100
+        }
+      },
+      "matchPercentage": 83.0,
+      "matchReasoning": "This business matches 83.0% of your criteria. It has a good rating of 4.6/5.0. It has 2485 reviews, meeting your minimum requirement. None of your keywords were found in the reviews. ",
       "phone": "(031) 5995500",
       "placeId": "ChIJPbj4Mkb61y0RjOMEdXaSRlo",
       "placeName": "Demandailing Cafe & Eatery",
@@ -37,26 +50,26 @@
       "rating": 4.6,
       "reviewCount": 10,
       "reviewSummary": {
-        "negative": "Customers are disappointed with the Klampis location's gloomy atmosphere, uncommunicated promotions, and poor food quality. Improve ambiance, staff communication, and meal quality.",
-        "positive": "Customers love the tasty food, cozy ambience, affordable prices, and quick service. The varied menu, especially desserts, is appreciated. Minor issues include blocked air conditioning and small space."
+        "negative": "Demandailing Klampis disappointed; atmosphere gloomy, food subpar, and staff didn\u2019t inform about promotions. Merr branch praised for its food and service. Improve communication and food quality.",
+        "positive": "Great food, cozy ambience, quick service, and friendly prices. Issues include blocked air con and small space. Varied menu with desserts, ideal for hangouts. Recommended for food and drinks."
       },
       "strengths": [
-        "The business has a strong overall rating of 4.6 out of 5, indicating a high level of customer satisfaction.",
-        "The cafe offers a cozy and welcoming atmosphere that is well-suited for social gatherings and hangouts.",
-        "The offerings are valued for their taste, affordability, and variety, especially with increasing menu options that cater to a broad clientele, including students."
+        "The business has a high customer rating of 4.6/5 from a large sample size of 2485 reviews, indicating consistent customer satisfaction.",
+        "Customers praise the variety and quality of food and beverages, notably drawing attention to their affordability and taste.",
+        "The eatery is recognized for its cozy ambience and quick, friendly service, making it a suitable place for social gatherings and casual dining."
       ],
       "totalRatings": 2485,
       "weaknesses": [
-        "Some locations, like Klampis, have inconsistent service quality, especially when compared to other branches such as Merr.",
-        "The physical arrangement and ambiance could be improved to avoid discomfort, such as blocked air conditioning by decor elements.",
-        "Issues with promotional communication and service responsiveness can lead to customer dissatisfaction and perceptions of unfairness."
+        "Inconsistency between different locations impacts the overall brand reputation, as seen in the negative experiences at the Klampis location versus the Merr location.",
+        "There are logistical issues, such as inadequate air conditioning due to obstructive decor, that affect customer comfort.",
+        "Lack of communication regarding promotions can lead to customer dissatisfaction and missed opportunities to enhance the customer experience."
       ],
       "website": "https://www.instagram.com/demandailingcafe"
     }
   ],
   "$metadata": {
-    "createdAt": "2025-04-28T01:41:55.572579+00:00Z",
-    "startedAt": "2025-04-28T01:41:59.268422+00:00Z",
+    "createdAt": "2025-04-28T02:17:48.617339+00:00Z",
+    "startedAt": "2025-04-28T02:17:51.563365+00:00Z",
     "executionTotal": 5
   }
 }

@@ -37,14 +37,11 @@ def analyze_route():
         skipped_count = data.get("skippedCount", 0)
         number_of_leads = data.get("numberOfLeads", 0)
         current_app.logger.info(f"Lead count: {lead_count}, Skipped count: {skipped_count}, Target leads: {number_of_leads}")
-        
-        # Check if place meets constraints using match_percentage that was already calculated in scrape_route
-        match_percentage = place_details.get("matchPercentage", 0)
-        match_analysis = place_details.get("matchAnalysis", {}) 
-        meets_constraints = match_percentage >= 70  # Assuming 70% is the threshold
-        
+
+        # Run constraint check to get match_percentage
+        meets_constraints, match_percentage, match_analysis = check_place_constraints(place_details, constraints)
         current_app.logger.info(f"Constraints check: meets={meets_constraints}, match={match_percentage}%")
-        
+  
         # If constraints not met, return skip response
         if not meets_constraints:
             current_app.logger.info(f"Place does not meet constraints, skipping: {place_details.get('placeName', 'Unknown')}")

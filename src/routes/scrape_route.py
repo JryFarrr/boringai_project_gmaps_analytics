@@ -115,11 +115,7 @@ def scrape_route():
                 # Provide a default value if keywordMatch is missing
                 place_data["keywordMatch"] = "Keywords not found"
                 
-            # Run constraint check to get match_percentage
-            meets_constraints, match_percentage, match_analysis = check_place_constraints(place_data, constraints)
-            place_data["matchPercentage"] = match_percentage
-            place_data["matchAnalysis"] = match_analysis
-            current_app.logger.info(f"Constraints check: meets={meets_constraints}, match={match_percentage}%")
+            
 
             # Check if we've already reached the target (to handle race conditions)
             if lead_count >= number_of_leads:
