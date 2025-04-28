@@ -5,101 +5,76 @@ from src.services.google_maps_service import get_place_reviews
 
 def generate_review_summaries(positive_reviews, negative_reviews, keywords=""):
     """
-    Generate summaries for positive and negative reviews and count keyword occurrences
+    Generates summaries for both positive and negative reviews
     
     Args:
         positive_reviews (list): List of positive review texts
         negative_reviews (list): List of negative review texts
-        keywords (str): Keywords to search for in reviews (comma-separated)
+        keywords (str): Optional keywords to count in reviews
         
     Returns:
-        dict: Dictionary with positive and negative summaries and keyword match info
+        dict: Dictionary containing positive and negative summaries and keyword match
     """
+    # Tambahkan log di awal fungsi
+    current_app.logger.info(f"generate_review_summaries called with keywords: '{keywords}'")
+    current_app.logger.info(f"Number of reviews: positive={len(positive_reviews)}, negative={len(negative_reviews)}")
+    
     result = {}
     
-    try:
-        # Validate inputs
-        if not isinstance(positive_reviews, list):
-            print(f"Warning: positive_reviews is not a list. Type: {type(positive_reviews)}")
-            positive_reviews = []
+    # Get positive review summary
+    if positive_reviews:
+        result["positive"] = generate_review_summary(positive_reviews, "positive")
+    
+    # Get negative review summary
+    if negative_reviews:
+        result["negative"] = generate_review_summary(negative_reviews, "negative")
+    
+    # Calculate keyword match regardless of whether explicit keywords are provided
+    # This ensures keywordMatch is always in the result
+    all_reviews = []
+    all_reviews.extend(positive_reviews)
+    all_reviews.extend(negative_reviews)
+    review_count = len(all_reviews)
+    
+    if keywords:
+        # Tambahkan log sebelum mencari keywords
+        current_app.logger.info(f"Searching for keywords: '{keywords}'")
+        
+        # Count keywords and add to result
+        result["keywordMatch"] = count_keywords_in_reviews(all_reviews, keywords)
+        
+        # Tambahkan log setelah menghitung keywords
+        current_app.logger.info(f"Keyword match result: {result.get('keywordMatch', 'Not found')}")
+    else:
+        # Provide default value when no keywords specified
+        current_app.logger.warning("No keywords provided, adding default keywordMatch")
+        result["keywordMatch"] = f"0 keywords found from {review_count} reviews"
+    
+    # Fallback mechanism in case count_keywords_in_reviews fails
+    if "keywordMatch" not in result:
+        current_app.logger.warning("keywordMatch missing, adding fallback calculation")
+        keyword_count = 0
+        
+        if keywords and review_count > 0:
+            # Split keywords if multiple (comma separated)
+            keyword_list = [k.strip().lower() for k in keywords.split(',')]
+            current_app.logger.info(f"Fallback - Keyword list: {keyword_list}")
             
-        if not isinstance(negative_reviews, list):
-            print(f"Warning: negative_reviews is not a list. Type: {type(negative_reviews)}")
-            negative_reviews = []
-            
-        if not isinstance(keywords, str):
-            print(f"Warning: keywords is not a string. Type: {type(keywords)}")
-            keywords = str(keywords) if keywords else ""
+            # Search in all reviews
+            for review in all_reviews:
+                current_app.logger.debug(f"Checking review: {review[:50]}...")
+                for keyword in keyword_list:
+                    if keyword.lower() in review.lower():  # Case insensitive search
+                        keyword_count += 1
+                        current_app.logger.debug(f"Found keyword '{keyword}' in review")
         
-        # Generate positive review summary
-        try:
-            if positive_reviews:
-                result["positive"] = generate_review_summary(positive_reviews, "positive")
-            else:
-                result["positive"] = "No positive reviews available."
-        except Exception as e:
-            print(f"Error generating positive review summary: {str(e)}")
-            result["positive"] = "Error generating positive review summary."
-        
-        # Generate negative review summary
-        try:
-            if negative_reviews:
-                result["negative"] = generate_review_summary(negative_reviews, "negative")
-            else:
-                result["negative"] = "No negative reviews available."
-        except Exception as e:
-            print(f"Error generating negative review summary: {str(e)}")
-            result["negative"] = "Error generating negative review summary."
-        
-        # Count keyword occurrences if keywords are provided
-        if keywords:
-            try:
-                keyword_list = [k.strip().lower() for k in keywords.split(',') if k.strip()]
-                if keyword_list:
-                    keyword_matches = {}
-                    all_reviews = positive_reviews + negative_reviews
-                    
-                    for keyword in keyword_list:
-                        count = 0
-                        for review in all_reviews:
-                            if not isinstance(review, str):
-                                print(f"Warning: review is not a string. Type: {type(review)}")
-                                continue
-                                
-                            if keyword in review.lower():
-                                count += 1
-                        keyword_matches[keyword] = count
-                    
-                    # Add keyword match summary
-                    result["keywordMatch"] = format_keyword_matches(keyword_matches)
-            except Exception as e:
-                print(f"Error processing keywords: {str(e)}")
-                result["keywordMatch"] = "Error processing keywords."
-        
-        return result
-        
-    except Exception as e:
-        print(f"Error in generate_review_summaries: {str(e)}")
-        return {
-            "positive": "Error generating summaries.",
-            "negative": "Error generating summaries.",
-            "keywordMatch": "Error processing keywords."
-        }
-
-def format_keyword_matches(keyword_matches):
-    """Format keyword matches into a readable string"""
-    try:
-        if not keyword_matches:
-            return "No keywords specified"
-            
-        matches = []
-        for keyword, count in keyword_matches.items():
-            matches.append(f"{keyword}: {count} mentions")
-        
-        return ", ".join(matches)
-    except Exception as e:
-        print(f"Error formatting keyword matches: {str(e)}")
-        return "Error processing keywords"
+        result["keywordMatch"] = f"{keyword_count} keywords found from {review_count} reviews"
+    
+    # Tambahkan log untuk hasil akhir
+    current_app.logger.info(f"Final review summary result keys: {result.keys()}")
+    current_app.logger.info(f"Final keywordMatch: {result.get('keywordMatch', 'Still missing!')}")
+    
+    return result
 
 def count_keywords_in_reviews(reviews, keywords):
     """
@@ -235,62 +210,3 @@ def get_reviews_for_place(place_id, max_reviews=100):
         "negative_reviews": negative_reviews,
         "all_reviews": all_reviews
     }
-
-def extract_reviews_by_sentiment(reviews):
-    """
-    Separates reviews into positive and negative lists based on their rating.
-    
-    Args:
-        reviews (list): List of review dictionaries
-        
-    Returns:
-        tuple: (positive_reviews, negative_reviews)
-    """
-    positive_reviews = []
-    negative_reviews = []
-    
-    try:
-        # Check if reviews is None or empty
-        if not reviews:
-            return [], []
-        
-        # Check if reviews is a list
-        if not isinstance(reviews, list):
-            print(f"Warning: reviews is not a list. Type: {type(reviews)}")
-            return [], []
-        
-        for i, review in enumerate(reviews):
-            try:
-                # Skip if review is not a dictionary
-                if not isinstance(review, dict):
-                    print(f"Warning: review at index {i} is not a dictionary. Type: {type(review)}")
-                    continue
-                    
-                # Extract rating - default to 0 if not found or invalid
-                try:
-                    rating = float(review.get('rating', 0))
-                except (ValueError, TypeError):
-                    print(f"Warning: invalid rating in review at index {i}. Using default: 0")
-                    rating = 0
-                
-                # Extract review text
-                review_text = review.get('text', '')
-                if not isinstance(review_text, str):
-                    print(f"Warning: review text at index {i} is not a string. Converting to string.")
-                    review_text = str(review_text)
-                
-                # Typically ratings 4-5 are positive, 1-3 are negative
-                if rating >= 4:
-                    positive_reviews.append(review_text)
-                else:
-                    negative_reviews.append(review_text)
-                    
-            except Exception as e:
-                print(f"Error processing review at index {i}: {str(e)}")
-                continue
-                
-        return positive_reviews, negative_reviews
-        
-    except Exception as e:
-        print(f"Error in extract_reviews_by_sentiment: {str(e)}")
-        return [], []

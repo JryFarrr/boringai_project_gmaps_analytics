@@ -1,8 +1,8 @@
 {
-  "$id": "83d74379-0a9b-4fc2-88cc-2ccf7f1e27b8",
+  "$id": "963d44c4-4fc7-4b49-a6c9-ff4f49d96e0f",
   "$state": {
     "business_hours": "jam 10 pagi sampai 6 malam",
-    "business_type": null,
+    "business_type": "caf\u00e9",
     "keywords": "cozy",
     "leadCount": 2,
     "location": "Surabaya",
@@ -15,7 +15,7 @@
     "searchOffset": 2,
     "skippedCount": 0,
     "businessType": "caf\u00e9",
-    "nextPageToken": "AeeoHcK4mqysGCVJNIm_LT7AQmr6bAWwSvuY-qJq4W6MB_ve8XydX_pkLVPZvYzfKWW-_y9xBddKuUsT0rRw-gZiprQTyhWXoHY0-kZiRvKQjzmUuTEL2zuKYt1HsWLzutA5lcGsM95XlWwwb0iuEyRWgeE8PcyyqngjygnggyDqT4TUCN2ldvlWkxhfQMdlOsHHhUg4qzXMzrn4z1g4ZfNaEiFeBnAHk95LOpG74Xf89k1r8DLBTygjtB0bArclzyFNFtVl6lFEQWNFv_yhxGbIRVeWVf9TN240J1pd_sGMS-cABLmUjkLtZ5q6CC-Y2--8DPMFPueRbR28laPhpBcDn7fYaOlgUz0gMDzU5JiYc2wvwRuhlo47uZJADi5wMEC6XzTxwRs4AAqkCTT1EJSk"
+    "nextPageToken": "AeeoHcIRgjxD1ib0bwHz-xk0QO6Ak5s0qo_O7aJEKeq_vFzSWbD5jrJOpzKAGPIfSj2oJ3yWCu6mIycv9YeXecjw7DDPQ_Z0vrHkgxazAN2-wxOHsBsr7pAy2jE9Aryv5B0wtpppsH5H8jocF2fN_iy8UUsApilJAt07cPSprlO6DU_umGupoDMQKeGkmdix9DoIQxBzgGMAuj5dV78MfaCK3BVfIdLJ2qpJYQ8zTbx5XaLMjJ9BBTXx_83NbSbzdLvegkb5R3cYcxU0QyEMHXCl3cZrm-TlC5fZF3uZFPnjy6y5rNu0pJa1Z6HBt_OabytD4kKmX1NaS7dz-6lr5u9712WNVPOrtZi1jc2FTylhxZf0FNUK_sm9KLjteI5gD40C_NR2PBmUHTftmQzrAp8G"
   },
   "$results": [
     {
@@ -29,23 +29,17 @@
         "Saturday: 9:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
         "Sunday: 9:00\u202fAM\u2009\u2013\u20099:00\u202fPM"
       ],
-      "business_type": [],
-      "contact": {
-        "phone": "(031) 5937373",
-        "website": "N/A"
-      },
+      "businessType": [
+        "cafe",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
       "coordinates": {},
-      "keywordMatch": {
-        "match_percentage": 0,
-        "matched_reviews": [],
-        "matches": {}
-      },
-      "location": {
-        "lat": -7.290008499999998,
-        "lng": 112.7770857
-      },
-      "matchPercentage": 83.25720659045462,
-      "matchReasoning": "This business matches 83.3% of your criteria. It has a good rating of 4.3/5.0. It has 651 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. None of your keywords were found in the reviews. ",
+      "keywordMatch": "2 keywords found from 10 reviews",
+      "matchPercentage": 95.25720659045462,
+      "matchReasoning": "This business matches 95.3% of your criteria. It has a good rating of 4.3/5.0. It has 651 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. Found 1 of your keywords in reviews: cozy. ",
       "phone": null,
       "placeId": null,
       "placeName": "The Localist Coffee and Bistro Surabaya",
@@ -53,19 +47,19 @@
       "rating": 4.3,
       "reviewCount": 10,
       "reviewSummary": {
-        "negative": "No negative reviews available.",
-        "positive": "The cafe provides a cozy spot with indoor/outdoor seating, a playground, and decent food, albeit pricey. It's perfect for families and long hangs, offering great service and a kid-friendly book club."
+        "negative": "",
+        "positive": "The cafe is conveniently located in an eye clinic, offering a cozy atmosphere, decent food, and good service. It's family-friendly with a playground and book club, although slightly pricey."
       },
       "strengths": [
-        "Good customer satisfaction with a rating of 4.3 from 651 reviews, indicating consistent service and product quality.",
-        "Offers a comfortable environment with both indoor and semi-outdoor seating, suitable for various customer needs, including families with children.",
-        "The flexibility of staying for extended hours without being asked to leave, which is appealing for groups or individuals looking to spend longer periods in a cafe setting."
+        "The Localist Coffee and Bistro Surabaya has a strong rating of 4.3 out of 5 from 651 reviews, indicating customer satisfaction.",
+        "The business is conveniently located within the Dr. Sjamsu eye clinic, providing a unique captive audience and a comfortable waiting environment with a playground for children.",
+        "The establishment offers a cozy atmosphere with both semi-outdoor and indoor seating, appealing for extended stays or get-togethers."
       ],
       "totalRatings": 651,
       "weaknesses": [
-        "Higher price range is noted in reviews, which may not appeal to cost-sensitive customers.",
-        "Limited visibility for certain keywords in reviews might indicate areas not currently addressed that are part of client expectations.",
-        "Potentially low foot traffic ('pretty empty most of the time'), which could impact the business's ability to attract spur-of-the-moment visitors."
+        "Some customers find the pricing to be on the expensive side, which could limit its appeal to more budget-conscious consumers.",
+        "Despite having a good range of offerings, the cafe\u2019s location on the second floor might deter walk-in customers who aren\u2019t visiting the eye clinic.",
+        "No significant negative reviews were provided, making it difficult to gauge potential areas for improvement from a customer dissatisfaction standpoint."
       ],
       "website": null
     },
@@ -80,23 +74,18 @@
         "Saturday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
         "Sunday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
       ],
-      "business_type": [],
-      "contact": {
-        "phone": "(031) 5995500",
-        "website": "https://www.instagram.com/demandailingcafe"
-      },
+      "businessType": [
+        "cafe",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
       "coordinates": {},
-      "keywordMatch": {
-        "match_percentage": 0,
-        "matched_reviews": [],
-        "matches": {}
-      },
-      "location": {
-        "lat": -7.2831208,
-        "lng": 112.7767691
-      },
-      "matchPercentage": 86.0,
-      "matchReasoning": "This business matches 86.0% of your criteria. It has a good rating of 4.6/5.0. It has 2485 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. None of your keywords were found in the reviews. ",
+      "keywordMatch": "2 keywords found from 10 reviews",
+      "matchPercentage": 98.0,
+      "matchReasoning": "This business matches 98.0% of your criteria. It has a good rating of 4.6/5.0. It has 2485 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. Found 1 of your keywords in reviews: cozy. ",
       "phone": null,
       "placeId": null,
       "placeName": "Demandailing Cafe & Eatery",
@@ -104,26 +93,26 @@
       "rating": 4.6,
       "reviewCount": 10,
       "reviewSummary": {
-        "negative": "Customers were disappointed with Demandailing Klampis due to a gloomy atmosphere, lack of promotion information, long wait times, and poor food quality, unlike the Merr location.",
-        "positive": "Customers love the tasty food, friendly prices, and cozy ambience despite some air conditioning issues. The cafe offers varied menus and quick service, making it a popular hangout spot."
+        "negative": "Customers report a gloomy atmosphere, lack of promotion information, long wait times, and poor food quality at Demandailing Klampis, indicating a need for better communication and food consistency.",
+        "positive": "Customers praise the cafe's tasty food, reasonable prices, and cozy ambience, but note minor issues with beverage quality, air conditioning, and limited space. Desserts and diverse drink options ar..."
       },
       "strengths": [
-        "Demandailing Cafe & Eatery has a strong overall rating of 4.6/5 from 2485 reviews, indicating a high level of customer satisfaction.",
-        "The cafe offers a variety of menu options that are described as delicious and reasonably priced, appealing to both students and general customers.",
-        "The ambiance and quick service are frequently highlighted as positive aspects, making it a comfortable and convenient place for dining and socializing."
+        "High Customer Satisfaction: With a rating of 4.6/5 from 2485 reviews, the cafe shows a strong level of customer satisfaction.",
+        "Cozy Environment: Multiple reviews highlight the ambiance as cozy and an appealing place to hang out, which aligns with common customer preferences for cafes.",
+        "Affordable and Quality Food: The cafe is praised for its delicious food and affordable pricing, making it accessible to a wider customer base."
       ],
       "totalRatings": 2485,
       "weaknesses": [
-        "There are occasional issues with the atmosphere and condition of the space, such as being too warm due to air conditioning obstructions by decor.",
-        "Inconsistent experiences across locations, as noted in reviews, can lead to customer disappointment, particularly with promotions and dish quality like the Mille Crepes and Chicken Roulades.",
-        "Lack of transparency or communication regarding promotions and service efficiency can lead to customer dissatisfaction."
+        "Inconsistent Experience Across Locations: There are complaints about the quality of service and atmosphere varying between different locations, such as Klampis compared to Merr.",
+        "Issues with Promotions: Customers have reported not being properly informed about ongoing promotions, which can lead to dissatisfaction and disappointment.",
+        "Temperature Comfort: Some customers have noted that the cafe can be a bit hot, which may impact the comfort level, especially in a cozy setting."
       ],
       "website": null
     }
   ],
   "$metadata": {
-    "createdAt": "2025-04-28T06:02:44.297591+00:00Z",
-    "startedAt": "2025-04-28T06:02:46.502155+00:00Z",
+    "createdAt": "2025-04-28T08:30:13.032504+00:00Z",
+    "startedAt": "2025-04-28T08:30:15.451968+00:00Z",
     "executionTotal": 8
   }
 }

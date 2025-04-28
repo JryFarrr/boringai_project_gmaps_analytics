@@ -4,13 +4,10 @@ from src.utils.response_utils import error_response
 from src.services.scrape_service import (
     search_and_get_place_id,
     process_place_details,
-    create_scrape_response,
+    create_scrape_response
 )
-from src.services.review_service import extract_reviews_by_sentiment
-from src.services.match_services import check_place_constraints
-from src.services.review_service import generate_review_summaries
 from src.docs.scrape import scrape_dict
-from src.utils.business_matcher import search_reviews_for_keywords
+
 @swag_from(scrape_dict)
 def scrape_route():
     """
@@ -40,10 +37,7 @@ def scrape_route():
         place_id = data.get("placeId")
         keyword = data.get("keyword")
         location = data.get("location", "Indonesia")
-        
-        # Get constraints for calculating match percentage
-        constraints = data.get("constraints", {})
-        
+
         # If no placeId is provided, we need a keyword to search
         if not place_id and not keyword:
             return error_response("Either placeId or keyword is required")
@@ -58,62 +52,13 @@ def scrape_route():
                     return error_response("No valid Place ID found in search results", 404)
                     
                 current_app.logger.info(f"Found place ID: {place_id} for keyword '{keyword}'")
-            
+
             # Now we have a place_id, get the details
             current_app.logger.info(f"Scraping place ID: {place_id} (leadCount={lead_count}, skippedCount={skipped_count})")
             
             # Process place details
             place_data = process_place_details(place_id)
             current_app.logger.info(f"Retrieved details for place: {place_data.get('placeName', 'Unknown')}")
-            
-            # Extract the keywords from constraints
-            keywords = constraints.get("keywords", "")
-            current_app.logger.info(f"Keywords for analysis: '{keywords}'")
-            
-            # Separate reviews by sentiment
-            all_reviews = place_data.get("reviews", [])
-            positive_reviews, negative_reviews = extract_reviews_by_sentiment(all_reviews)
-            
-            # Add positive and negative reviews to place_data
-            place_data["positiveReviews"] = positive_reviews
-            place_data["negativeReviews"] = negative_reviews
-            
-            # Calculate review count
-            review_count = len(all_reviews)
-            place_data["reviewCount"] = review_count
-            current_app.logger.info(f"Total reviews for analysis: {review_count}")
-            
-            # Direct keyword matching on all reviews
-            current_app.logger.info("Performing direct keyword matching on all reviews...")
-            keyword_matching_results = search_reviews_for_keywords({"reviews": all_reviews}, keywords)
-            
-            # Add keyword match results to place details
-            place_data["keywordMatch"] = {
-                "keyword_counts": {k: v['count'] for k, v in keyword_matching_results['matches'].items()},
-                "matched_reviews": keyword_matching_results['matched_reviews']
-            }
-                    
-            # Generate review summaries with keyword count
-            current_app.logger.info("Calling generate_review_summaries...")
-            review_summaries = generate_review_summaries(positive_reviews, negative_reviews, keywords)
-            current_app.logger.info(f"Review summaries result keys: {review_summaries.keys() if review_summaries else 'None'}")
-            
-            # Add review summaries to place details
-            place_data["reviewSummary"] = {
-                "positive": review_summaries.get("positive", ""),
-                "negative": review_summaries.get("negative", "")
-            }
-            
-            # Add keyword match if available
-            if "keywordMatch" in review_summaries:
-                place_data["keywordMatch"] = review_summaries["keywordMatch"]
-                current_app.logger.info(f"Added keywordMatch to place_details: {place_data['keywordMatch']}")
-            else:
-                current_app.logger.warning("No keywordMatch in review_summaries!")
-                # Provide a default value if keywordMatch is missing
-                place_data["keywordMatch"] = "Keywords not found"
-                
-            
 
             # Check if we've already reached the target (to handle race conditions)
             if lead_count >= number_of_leads:

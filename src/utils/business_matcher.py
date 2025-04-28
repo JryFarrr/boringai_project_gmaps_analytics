@@ -83,7 +83,7 @@ def check_business_hours(place, business_hours_constraint):
     
     return True  # Default to True for unknown constraints
 
-def search_reviews_for_keywords(place_details, keywords):
+def search_reviews_for_keywords(place, keywords):
     """
     Search reviews for specified keywords and return detailed results
     
@@ -94,123 +94,26 @@ def search_reviews_for_keywords(place_details, keywords):
     Returns:
         dict: Dictionary with keyword counts and detailed matches
     """
-    try:
-        # Add debugging
-        print(f"Searching for keywords: {keywords}")
+    if not keywords or "reviews" not in place or not place["reviews"]:
+        return {"match_percentage": 0, "matched_keywords": []}
+
+    keywords_list = [k.strip().lower() for k in keywords.split(",")]
+    matches = []
+
+    for review in place["reviews"]:
+        review_text = review.get("text", "").lower()
         
-        # Validate inputs
-        if not isinstance(place_details, dict):
-            print(f"Warning: place_details is not a dictionary. Type: {type(place_details)}")
-            return {"matches": {}, "match_percentage": 0, "matched_reviews": []}
-            
-        if not isinstance(keywords, str):
-            print(f"Warning: keywords is not a string. Type: {type(keywords)}")
-            keywords = str(keywords) if keywords else ""
+        for keyword in keywords_list:
+            if keyword in review_text and keyword not in matches:
+                matches.append(keyword)
+
+    match_percentage = round((len(matches) / len(keywords_list)) * 100, 2) if keywords_list else 0
+
+    return {
+        "match_percentage": match_percentage,
+        "matched_keywords": matches
+    }
         
-        # Split keywords and clean them up
-        keyword_list = [k.strip().lower() for k in keywords.split(',') if k.strip()]
-        if not keyword_list:
-            print("No valid keywords found after parsing")
-            return {"matches": {}, "match_percentage": 0, "matched_reviews": []}
-            
-        print(f"Parsed keywords: {keyword_list}")
-            
-        keyword_matches = {}
-        matched_reviews = []
-        reviews = place_details.get("reviews", [])
-        
-        if not isinstance(reviews, list):
-            print(f"Warning: reviews is not a list. Type: {type(reviews)}")
-            return {"matches": {}, "match_percentage": 0, "matched_reviews": []}
-        
-        print(f"Total reviews to search: {len(reviews)}")
-        
-        # Track which reviews match which keywords
-        review_keyword_matches = {}
-        
-        # Improved word matching with word boundaries
-        import re
-        
-        for keyword in keyword_list:
-            count = 0
-            matching_reviews = []
-            # Create a regex pattern that matches the keyword as a whole word
-            # This will match "cozy" but not "cozyness" 
-            pattern = re.compile(r'\b' + re.escape(keyword) + r'\b', re.IGNORECASE)
-            
-            for i, review in enumerate(reviews):
-                try:
-                    if not isinstance(review, dict):
-                        print(f"Warning: review is not a dictionary. Type: {type(review)}")
-                        continue
-                        
-                    review_text = review.get("text", "")
-                    if not isinstance(review_text, str):
-                        print(f"Warning: review text is not a string. Type: {type(review_text)}")
-                        review_text = str(review_text) if review_text else ""
-                    
-                    # Debug output for the first few reviews
-                    if i < 3:  # Just check the first 3 reviews for debugging
-                        print(f"Review {i} text: {review_text[:50]}...")  # First 50 chars
-                        print(f"Checking for '{keyword}' in review {i}")
-                    
-                    # Option 1: Simple substring match (case insensitive)
-                    # if keyword.lower() in review_text.lower():
-                    
-                    # Option 2: Regex match with word boundaries (preferred for accurate matching)
-                    if pattern.search(review_text):
-                        count += 1
-                        matching_reviews.append(i)  # Store index of matching review
-                        
-                        if i < 3:  # Debug
-                            print(f"✓ Match found for '{keyword}' in review {i}")
-                        
-                        # Track this review matched this keyword
-                        if i not in review_keyword_matches:
-                            review_keyword_matches[i] = []
-                        review_keyword_matches[i].append(keyword)
-                    elif i < 3:  # Debug
-                        print(f"✗ No match for '{keyword}' in review {i}")
-                        
-                except Exception as e:
-                    print(f"Error processing review {i} for keywords: {str(e)}")
-                    continue
-            
-            keyword_matches[keyword] = {
-                "count": count,
-                "matching_review_indices": matching_reviews
-            }
-            print(f"Keyword '{keyword}' found in {count} reviews")
-        
-        # Calculate overall match percentage based on how many reviews matched any keyword
-        total_reviews = len(reviews)
-        matched_review_count = len(review_keyword_matches)
-        match_percentage = (matched_review_count / total_reviews * 100) if total_reviews > 0 else 0
-        
-        # Create list of matched reviews with their matching keywords
-        for review_idx, matched_keywords in review_keyword_matches.items():
-            if review_idx < len(reviews):
-                review = reviews[review_idx]
-                matched_reviews.append({
-                    "review_text": review.get("text", ""),
-                    "author": review.get("author_name", "Unknown"),
-                    "rating": review.get("rating", 0),
-                    "date": review.get("time", ""),
-                    "matched_keywords": matched_keywords
-                })
-        
-        result = {
-            "matches": keyword_matches,
-            "match_percentage": round(match_percentage, 2),
-            "matched_reviews": matched_reviews
-        }
-        
-        print(f"Final results: {matched_review_count} of {total_reviews} reviews matched keywords ({match_percentage:.2f}%)")
-        return result
-        
-    except Exception as e:
-        print(f"Error in search_reviews_for_keywords: {str(e)}")
-        return {"matches": {}, "match_percentage": 0, "matched_reviews": []}
 def extract_key_themes(reviews, max_themes=5):
     """
     Extract key themes from reviews using OpenAI

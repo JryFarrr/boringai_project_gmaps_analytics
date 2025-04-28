@@ -60,7 +60,7 @@ def handle_skipped_constraints(params):
             "next": {
                 "key": "scrape",
                 "payload": {
-                    "business_type": business_type,  # Make sure this is included
+                    "businessType": business_type,  # Make sure this is included
                     "location": location,   
                     "placeId": next_place_id,
                     "skippedCount": skipped_count,

@@ -32,7 +32,7 @@ def create_initial_state(data):
         "keywords": data.get("keywords", None),
         "leadCount": 0,
         "searchOffset": 0,
-        "remainingPlaceIds": [20],
+        "remainingPlaceIds": [],
         "skippedCount": 0  # Adding skipped count to be consistent with other modules
     }
 
