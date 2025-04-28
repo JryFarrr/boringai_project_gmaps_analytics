@@ -1,9 +1,9 @@
 {
-  "$id": "d55fccef-ffbb-42b0-9be4-0d1a9f7c4549",
+  "$id": "2a1d6794-df59-43a6-8e62-2e54856954fb",
   "$state": {
     "business_hours": "jam 10 pagi sampai 6 malam",
     "business_type": "",
-    "keywords": "murah",
+    "keywords": "murah, nugas",
     "leadCount": 1,
     "location": "Indonesia",
     "max_reviews": 200,
@@ -24,39 +24,39 @@
       "coordinates": {},
       "keywordMatch": "Keywords not found",
       "location": {
-        "lat": -7.289412599999999,
-        "lng": 112.7766169
+        "lat": -7.2831208,
+        "lng": 112.7767691
       },
       "matchFactors": {},
-      "matchPercentage": 94.1213448271133,
-      "matchReasoning": "This business matches 94.1% of your criteria. ",
-      "phone": "0851-7958-9588",
-      "placeId": "ChIJb9_Q3sD71y0RjSHGGj7GR_8",
-      "placeName": "Kogu Space",
+      "matchPercentage": 98.0,
+      "matchReasoning": "This business matches 98.0% of your criteria. ",
+      "phone": "(031) 5995500",
+      "placeId": "ChIJPbj4Mkb61y0RjOMEdXaSRlo",
+      "placeName": "Demandailing Cafe & Eatery",
       "priceRange": null,
-      "rating": 4.4,
+      "rating": 4.6,
       "reviewCount": 10,
       "reviewSummary": {
-        "negative": "Food quality is mediocre, with specific complaints about spaghetti. Issues with ordering due to poor WiFi access create inconvenience. Customers find the ordering process confusing.",
-        "positive": "Spacious cafe with indoor/outdoor seating, VIP room, and good parking. Ideal for casual hangouts but noisy for working. Food is average; menu size misrepresents. Improvements needed in taste."
+        "negative": "Customers are disappointed with the Klampis location's gloomy atmosphere, uncommunicated promotions, and poor food quality. Improve ambiance, staff communication, and meal quality.",
+        "positive": "Customers love the tasty food, cozy ambience, affordable prices, and quick service. The varied menu, especially desserts, is appreciated. Minor issues include blocked air conditioning and small space."
       },
       "strengths": [
-        "The business has a strong overall rating of 4.4/5 based on a significant number of reviews (370), indicating general customer satisfaction.",
-        "Kogu Space offers a versatile environment with both indoor and outdoor seating, as well as facilities for private meetings, making it attractive for diverse client requirements.",
-        "The additional amenities such as a spacious parking area, WiFi availability, and clean, elderly-friendly facilities add convenience for patrons."
+        "The business has a strong overall rating of 4.6 out of 5, indicating a high level of customer satisfaction.",
+        "The cafe offers a cozy and welcoming atmosphere that is well-suited for social gatherings and hangouts.",
+        "The offerings are valued for their taste, affordability, and variety, especially with increasing menu options that cater to a broad clientele, including students."
       ],
-      "totalRatings": 370,
+      "totalRatings": 2485,
       "weaknesses": [
-        "There are inconsistencies reported between menu descriptions and actual food portions, which can disappoint customers expecting more from their order.",
-        "Complaints regarding the quality of food, like the spaghetti being subpar, highlight a potential gap in meeting culinary expectations.",
-        "Problems with accessing WiFi in some areas, coupled with inefficient customer service as described in the negative reviews, can hinder customer experience and deter return visits."
+        "Some locations, like Klampis, have inconsistent service quality, especially when compared to other branches such as Merr.",
+        "The physical arrangement and ambiance could be improved to avoid discomfort, such as blocked air conditioning by decor elements.",
+        "Issues with promotional communication and service responsiveness can lead to customer dissatisfaction and perceptions of unfairness."
       ],
-      "website": null
+      "website": "https://www.instagram.com/demandailingcafe"
     }
   ],
   "$metadata": {
-    "createdAt": "2025-04-27T18:52:20.977030+00:00Z",
-    "startedAt": "2025-04-27T18:52:24.061575+00:00Z",
+    "createdAt": "2025-04-28T01:41:55.572579+00:00Z",
+    "startedAt": "2025-04-28T01:41:59.268422+00:00Z",
     "executionTotal": 5
   }
 }

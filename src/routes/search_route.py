@@ -38,7 +38,7 @@ def search_route():
             return error_response(validation_error)
 
         # Extract data from request
-        business_type = data["businessType"]
+        business_type = data["business_type"]
         location = data["location"]
         search_offset = data["searchOffset"]
         number_of_leads = data["numberOfLeads"]

@@ -125,7 +125,7 @@ def create_search_response(place_ids, next_page_token, search_offset, lead_count
         "nextPageToken": next_page_token,
         "skippedCount": skipped_count,
         "leadCount": lead_count,
-        "businessType": business_type,
+        "business_type": business_type,
         "location": location,
         "numberOfLeads": number_of_leads
     }
