@@ -103,6 +103,19 @@ def check_business_hours(place_hours, business_hours_constraint):
         Result: True
         Explanation: 9:00 AM - 10:00 AM (09:00 - 10:00) is fully contained within 8:00 AM - 11:00 AM (08:00 - 11:00) on Monday and 8:00 AM - 10:00 PM (08:00 - 22:00) on other days.
 
+        Constraint: "1 siang - 10 malam"
+        Schedule: [
+            "Monday: 8:00 AM - 10:00 PM",
+            "Tuesday: 8:00 AM - 10:00 PM",
+            "Wednesday: 8:00 AM - 10:00 PM",
+            "Thursday: 8:00 AM - 10:00 PM",
+            "Friday: 8:00 AM - 10:00 PM",
+            "Saturday: 8:00 AM - 10:00 PM",
+            "Sunday: 8:00 AM - 10:00 PM"
+        ]
+        Result: True
+        Explanation: 1:00 PM (13:00) - 10:00 PM (22:00) is fully contained within 8:00 AM (08:00) - 10:00 PM (22:00) for all days.
+
         Constraint: "1 siang - 11 malam"
         Schedule: [
             "Monday: 8:00 AM - 10:00 PM",
@@ -177,9 +190,11 @@ def check_business_hours(place_hours, business_hours_constraint):
         current_app.logger.error(f"Error checking business hours: {str(e)}")
         return False  # Default to False if AI call fails
 
+
+# Enhanced function with semantic matching capability
 def search_reviews_for_keywords(place, keywords):
     """
-    Search reviews for specified keywords and return detailed results
+    Search reviews for specified keywords with semantic matching capability
     
     Args:
         place (dict): Dictionary containing place details with reviews
@@ -209,6 +224,7 @@ def search_reviews_for_keywords(place, keywords):
     keywords_list = [k.strip().lower() for k in keywords.split(",")]
     matches = []
 
+    # First attempt exact matching
     for review in reviews:
         # Handle both string reviews and dictionary reviews
         review_text = ""
@@ -220,12 +236,88 @@ def search_reviews_for_keywords(place, keywords):
         for keyword in keywords_list:
             if keyword in review_text and keyword not in matches:
                 matches.append(keyword)
-
+    
+    # If we haven't matched all keywords, try semantic matching with AI
+    unmatched_keywords = [k for k in keywords_list if k not in matches]
+    
+    if unmatched_keywords and reviews:
+        try:
+            # Create client for OpenAI
+            client, headers, provider = create_client()
+            
+            # Prepare the reviews as text (limit to avoid token limits)
+            reviews_text = "\n".join([
+                isinstance(r, str) and r or r.get("text", "") 
+                for r in reviews[:10]  # Limit to first 10 reviews
+            ])
+            
+            # Prepare prompt for semantic matching
+            prompt = f"""
+            I need to determine if these business reviews mention any concepts similar to these keywords: {', '.join(unmatched_keywords)}
+            
+            For example, if the keywords include "study friendly", I should match phrases like:
+            - "suitable for study"
+            - "good place to study"
+            - "great for studying"
+            - "perfect spot for students"
+            - "ideal for working on assignments"
+            
+            Or if looking for "quiet atmosphere", I should match:
+            - "peaceful environment"
+            - "not noisy"
+            - "calm ambiance" 
+            - "serene setting"
+            
+            Please analyze the reviews below and return a JSON object in this format:
+            {{
+                "semantic_matches": [
+                    {{
+                        "keyword": "original_keyword",
+                        "found": true/false,
+                        "similar_phrases": ["phrase found in review"]
+                    }}
+                ]
+            }}
+            
+            Reviews:
+            {reviews_text}
+            """
+            
+            # Call OpenAI API with JSON mode enabled
+            response = client.chat.completions.create(
+                model="gpt-4o",
+                messages=[
+                    {"role": "system", "content": "You are an AI assistant that analyzes business reviews for semantic keyword matches."},
+                    {"role": "user", "content": prompt}
+                ],
+                response_format={"type": "json_object"},
+                max_tokens=500
+            )
+            
+            # Extract and parse semantic matches
+            semantic_matches = json.loads(response.choices[0].message.content)
+            
+            # Add semantic matches to our matches list
+            for match in semantic_matches.get("semantic_matches", []):
+                if match.get("found", False) and match.get("keyword") not in matches:
+                    matches.append(match.get("keyword"))
+                    # Optional: store the similar phrases found for reference
+                    if not hasattr(place, "semantic_keyword_details"):
+                        place["semantic_keyword_details"] = {}
+                    place["semantic_keyword_details"][match.get("keyword")] = match.get("similar_phrases", [])
+                    
+        except Exception as e:
+            current_app.logger.error(f"Error in semantic keyword matching: {str(e)}")
+            # Continue with exact matches only if semantic matching fails
+    
     # Calculate match as discrete fraction: matched/total keywords
     total_keywords = len(keywords_list)
     matched_keywords = len(matches)
     
-    if total_keywords > 0:
+    if matched_keywords == 0:
+        match_percentage = 0
+    # Otherwise calculate based on matches/total
+    elif total_keywords > 0:
         # Each keyword represents a discrete fraction of 100%
         match_percentage = (matched_keywords / total_keywords) * 100
     else:

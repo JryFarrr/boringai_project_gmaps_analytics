@@ -38,10 +38,6 @@ def analyze_route():
         number_of_leads = data.get("numberOfLeads", 0)
         current_app.logger.info(f"Lead count: {lead_count}, Skipped count: {skipped_count}, Target leads: {number_of_leads}")
         
-        # Check if place meets constraints
-        meets_constraints, match_percentage, match_analysis = check_place_constraints(place_details, constraints)
-        current_app.logger.info(f"Constraints check: meets={meets_constraints}, match={match_percentage}%")
-            
         # Extract reviews for summarization
         positive_reviews = place_details.get("positiveReviews", [])
         negative_reviews = place_details.get("negativeReviews", [])
@@ -62,22 +58,49 @@ def analyze_route():
             "negative": review_summaries.get("negative", "")
         }
         
-        # Add keyword match if available - THIS IS CRITICAL FOR YOUR ISSUE
+        # Add keyword match if available and check if keywords were found
+        keyword_not_found = False
         if "keywordMatch" in review_summaries:
             place_details["keywordMatch"] = review_summaries["keywordMatch"]
             current_app.logger.info(f"Added keywordMatch to place_details: {place_details['keywordMatch']}")
+            
+            # Check if keywords were not found - check both possible formats
+            if review_summaries["keywordMatch"] == "keywords not found" or review_summaries["keywordMatch"] == "keyword not found":
+                keyword_not_found = True
+                current_app.logger.warning("Keywords not found! Will set match_percentage to 0")
         else:
             current_app.logger.warning("No keywordMatch in review_summaries!")
             # Provide a default value if keywordMatch is missing
             place_details["keywordMatch"] = "keywords not found"
+            keyword_not_found = True
+            current_app.logger.warning("No keywordMatch field! Will set match_percentage to 0")
+        
+        # Check if place meets constraints
+        # If keywords not found, we'll override match_percentage to 0 below
+        meets_constraints, match_percentage, match_analysis = check_place_constraints(place_details, constraints)
+        
+        # Additional check: Look directly at place_details for keyword match status
+        if "keywordMatch" in place_details and (place_details["keywordMatch"] == "keyword not found" or place_details["keywordMatch"] == "keywords not found"):
+            keyword_not_found = True
+            current_app.logger.warning(f"Detected keywordMatch={place_details['keywordMatch']} in place_details")
+        
+        # CRITICAL CHANGE: Force match_percentage to 0 if keywords not found
+        if keyword_not_found:
+            current_app.logger.warning(f"Forcing match_percentage from {match_percentage}% to 0% because keywords not found")
+            match_percentage = 0
+            meets_constraints = False
+            
+            # Update match_analysis reasoning to reflect keyword issue
+            if match_analysis and "reasoning" in match_analysis:
+                match_analysis["reasoning"] = "Keywords not found in reviews. " + match_analysis["reasoning"]
+        
+        current_app.logger.info(f"Constraints check: meets={meets_constraints}, match={match_percentage}%")
         
         # Generate business insights
         current_app.logger.info("Generating business insights...")
         insights = generate_business_insights(place_details, match_percentage, match_analysis)
         current_app.logger.info("Business insights generated successfully")
         
-        # Increment lead count
-        lead_count += 1
         # Prepare the result with place details, match percentage, and insights
         result = {
             "placeName": place_details["placeName"],
@@ -102,11 +125,19 @@ def analyze_route():
         
         current_app.logger.info(f"Total reviews analyzed: {result.get('reviewCount', 0)}")
 
+        # Log final decision factors
+        current_app.logger.info(f"FINAL CHECK - match_percentage: {match_percentage}")
+        current_app.logger.info(f"FINAL CHECK - keywordMatch: {place_details.get('keywordMatch')}")
+        current_app.logger.info(f"FINAL CHECK - meets_constraints: {meets_constraints}")
+
         # If constraints not met, return skip response
         if not meets_constraints:
             current_app.logger.info(f"Place does not meet constraints, skipping: {place_details.get('placeName', 'Unknown')}")
             response = create_skip_response(lead_count, skipped_count, result)
             return jsonify(response)
+        
+        # Only increment lead count for places we keep
+        lead_count += 1
         
         # Return response with result and next action
         response = {
