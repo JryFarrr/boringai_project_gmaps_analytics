@@ -4,6 +4,7 @@ from src.utils.business_matcher import (
     search_reviews_for_keywords,
     calculate_match_percentage,
 )
+from flask import current_app
 
 def check_place_constraints(place_details, constraints):
     """
@@ -59,9 +60,10 @@ def check_place_constraints(place_details, constraints):
                 meets_constraints = False
 
     if parameters["business_hours"] != "anytime" and "businessHours" in place_details:
-        hours_match = check_business_hours(place_details, parameters["business_hours"])
-        place["hours_match"] = hours_match
-        if not hours_match:
+        hours_match = check_business_hours(place_details["businessHours"], parameters["business_hours"])
+        place["hours_match"] = hours_match.lower() == "true" if isinstance(hours_match, str) else bool(hours_match)
+        current_app.logger.info(f"Business hours match: place {place['hours_match']}")
+        if not place["hours_match"]:
             meets_constraints = False
     
     # Process reviews to find keywords if specified (SOFT CONSTRAINT)
@@ -131,9 +133,6 @@ def create_match_reasoning(place, parameters, match_percentage):
     
 
     return reasoning
-
-    
-
 
 def create_factor_analysis(place, parameters):
     """

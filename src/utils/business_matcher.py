@@ -2,6 +2,7 @@ from datetime import datetime
 import re
 import json
 from src.services.api_clients.factory import create_client
+from flask import current_app
 
 # Fungsi-fungsi yang sudah ada tetap dipertahankan
 def match_price_range(place_price_range, constraint_price_range):
@@ -36,52 +37,116 @@ def match_price_range(place_price_range, constraint_price_range):
         
     return False
 
-def check_business_hours(place, business_hours_constraint):
+def check_business_hours(place_hours, business_hours_constraint):
     """
-    Check if place business hours match the constraint
+    Check if place business hours match the constraint using AI
     
     Args:
-        place (dict): Place object with opening_hours
-        business_hours_constraint (str): Business hours constraint (e.g., "anytime", "weekdays", "weekends", "24hours")
+        place_hours (list): List of daily business hours (e.g., ["Monday: 8:00 AM - 10:00 PM", ...])
+        business_hours_constraint (str): Business hours constraint (e.g., "6 pagi - 7 pagi" or "6 AM - 7 AM")
     
     Returns:
-        bool: True if matches, False otherwise
+        bool: True if the business is open for at least part of the constraint time range, False otherwise
     """
-    if business_hours_constraint == "anytime" or not business_hours_constraint:
-        return True
+    if not business_hours_constraint: 
+        return True  # Default to True if no constraint
+
+    try:
+        # Create client for OpenAI
+        client, headers, provider = create_client()
+
+        # Prepare few-shot prompt for OpenAI
+        prompt = f"""
+        You are an assistant that checks if a given business hours constraint overlaps with a provided business hours schedule.
+        The constraint is a time range (e.g., "6 pagi - 7 pagi" or "9 AM - 10 AM") in either Indonesian or English.
+        The schedule is a list of daily business hours in English format "Day: Start Time - End Time" (e.g., "Monday: 8:00 AM - 10:00 PM").
+        Return "True" if the business is open for at least part of the constraint time range on at least one day in the schedule (i.e., the constraint time range overlaps with the business hours).
+        Return "False" if there is no overlap with the business hours on any day.
+
+        To compare times:
+        1. Parse the constraint:
+           - For Indonesian: "pagi" = AM, "malam" = PM, "siang" = 12:00 PM, "tengah malam" = 12:00 AM.
+           - For English: Recognize "AM" and "PM" directly.
+           - Examples: "6 pagi" = 6:00 AM, "7 malam" = 7:00 PM, "9 AM" = 9:00 AM, "10 PM" = 10:00 PM.
+        2. Convert all times (constraint and schedule) to 24-hour format for comparison.
+        3. Check for overlap: The constraint range (start_constraint, end_constraint) overlaps with the schedule range (start_schedule, end_schedule) if:
+           - start_constraint <= end_schedule AND end_constraint >= start_schedule.
+        4. Ignore day names in the schedule; only compare time ranges.
+
+        Examples:
+        Constraint: "6 pagi - 7 pagi"
+        Schedule: [
+            "Monday: 8:00 AM - 10:00 PM",
+            "Tuesday: 8:00 AM - 10:00 PM",
+            "Wednesday: 8:00 AM - 10:00 PM",
+            "Thursday: 8:00 AM - 10:00 PM",
+            "Friday: 8:00 AM - 10:00 PM",
+            "Saturday: 8:00 AM - 10:00 PM",
+            "Sunday: 8:00 AM - 10:00 PM"
+        ]
+        Result: False
+        Explanation: 6:00 AM - 7:00 AM (06:00 - 07:00) does not overlap with 8:00 AM - 10:00 PM (08:00 - 22:00) for any day.
+
+        Constraint: "9 AM - 10 AM"
+        Schedule: [
+            "Monday: 8:00 AM - 11:00 AM",
+            "Tuesday: 8:00 AM - 10:00 PM",
+            "Wednesday: 8:00 AM - 10:00 PM",
+            "Thursday: 8:00 AM - 10:00 PM",
+            "Friday: 8:00 AM - 10:00 PM",
+            "Saturday: 8:00 AM - 10:00 PM",
+            "Sunday: 8:00 AM - 10:00 PM"
+        ]
+        Result: True
+        Explanation: 9:00 AM - 10:00 AM (09:00 - 10:00) overlaps with 8:00 AM - 11:00 AM (08:00 - 11:00) on Monday and 8:00 AM - 10:00 PM (08:00 - 22:00) on other days.
+
+        Constraint: "8 pagi - 9 malam"
+        Schedule: [
+            "Monday: 8:00 AM - 10:00 PM",
+            "Tuesday: 8:00 AM - 10:00 PM",
+            "Wednesday: 8:00 AM - 10:00 PM",
+            "Thursday: 8:00 AM - 10:00 PM",
+            "Friday: 8:00 AM - 10:00 PM",
+            "Saturday: 8:00 AM - 10:00 PM",
+            "Sunday: 8:00 AM - 10:00 PM"
+        ]
+        Result: True
+        Explanation: 8:00 AM - 9:00 PM (08:00 - 21:00) overlaps with 8:00 AM - 10:00 PM (08:00 - 22:00) for all days.
+
+        Constraint: "8 pagi - 12 malam"
+        Schedule: [
+            "Monday: 8:00 AM - 10:00 PM",
+            "Tuesday: 8:00 AM - 10:00 PM",
+            "Wednesday: 8:00 AM - 10:00 PM",
+            "Thursday: 8:00 AM - 10:00 PM",
+            "Friday: 8:00 AM - 10:00 PM",
+            "Saturday: 8:00 AM - 10:00 PM",
+            "Sunday: 8:00 AM - 10:00 PM"
+        ]
+        Result: False
+        Explanation: The constraint specifies availability from 8:00 AM to 12:00 AM (midnight), but the schedule only allows availability until 10:00 PM each day. Therefore, the constraint cannot be satisfied.
         
-    # If open_now check is required and available
-    if business_hours_constraint == "open_now" and "opening_hours" in place and "open_now" in place["opening_hours"]:
-        return place["opening_hours"]["open_now"]
-    
-    # If no opening hours data available, can't determine match
-    if "opening_hours" not in place or "weekday_text" not in place["opening_hours"]:
-        return True  # Default to True if no data
-    
-    weekday_text = place["opening_hours"]["weekday_text"]
-    
-    if business_hours_constraint == "24hours":
-        # Check if all days have "24 hours" or similar wording
-        return all("24 hours" in day.lower() or "open 24 hours" in day.lower() for day in weekday_text)
-    
-    elif business_hours_constraint == "weekdays":
-        # Check if Monday to Friday have reasonable business hours
-        weekday_pattern = re.compile(r'(monday|tuesday|wednesday|thursday|friday):', re.IGNORECASE)
-        weekday_hours = [day for day in weekday_text if weekday_pattern.search(day)]
-        return all("closed" not in day.lower() for day in weekday_hours)
-    
-    elif business_hours_constraint == "weekends":
-        # Check if Saturday and Sunday have reasonable business hours
-        weekend_pattern = re.compile(r'(saturday|sunday):', re.IGNORECASE)
-        weekend_hours = [day for day in weekday_text if weekend_pattern.search(day)]
-        return all("closed" not in day.lower() for day in weekend_hours)
-    
-    elif business_hours_constraint == "evenings":
-        # Check if place is open after 5PM
-        evening_pattern = re.compile(r'(\d{1,2}):00 PM–\d{1,2}', re.IGNORECASE)
-        return any(evening_pattern.search(day) for day in weekday_text)
-    
-    return True  # Default to True for unknown constraints
+        Constraint: "{business_hours_constraint}"
+        Schedule: {json.dumps(place_hours)}
+        Result:
+        """
+
+        # Call OpenAI API
+        response = client.chat.completions.create(
+            model="gpt-4o",
+            messages=[
+                {"role": "system", "content": "You are an assistant that checks for overlap between business hours constraints and schedules in English and Indonesian."},
+                {"role": "user", "content": prompt}
+            ],
+            max_tokens=1
+        )
+
+        # Extract and parse the result
+        result = response.choices[0].message.content.strip()
+        return result
+    except Exception as e:
+        current_app.logger.error(f"Error checking business hours: {str(e)}")
+        return False  # Default to False if AI call fails
 
 def search_reviews_for_keywords(place, keywords):
     """
