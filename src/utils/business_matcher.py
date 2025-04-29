@@ -88,32 +88,59 @@ def search_reviews_for_keywords(place, keywords):
     Search reviews for specified keywords and return detailed results
     
     Args:
-        place_details (dict): Dictionary containing place details with reviews
+        place (dict): Dictionary containing place details with reviews
         keywords (str): Comma-separated keywords to search for
         
     Returns:
         dict: Dictionary with keyword counts and detailed matches
     """
-    if not keywords or "reviews" not in place or not place["reviews"]:
+    # First, check if keywords are provided
+    if not keywords:
+        return {"match_percentage": 0, "matched_keywords": []}
+    
+    # Check if reviews exist in place object
+    reviews = []
+    
+    # Look for reviews in different possible locations
+    if "reviews" in place:
+        reviews = place["reviews"]
+    elif "positiveReviews" in place:
+        reviews.extend(place.get("positiveReviews", []))
+        reviews.extend(place.get("negativeReviews", []))
+    
+    # If no reviews found, return zero match
+    if not reviews:
         return {"match_percentage": 0, "matched_keywords": []}
 
     keywords_list = [k.strip().lower() for k in keywords.split(",")]
     matches = []
 
-    for review in place["reviews"]:
-        review_text = review.get("text", "").lower()
+    for review in reviews:
+        # Handle both string reviews and dictionary reviews
+        review_text = ""
+        if isinstance(review, str):
+            review_text = review.lower()
+        elif isinstance(review, dict) and "text" in review:
+            review_text = review.get("text", "").lower()
         
         for keyword in keywords_list:
             if keyword in review_text and keyword not in matches:
                 matches.append(keyword)
 
-    match_percentage = round((len(matches) / len(keywords_list)) * 100, 2) if keywords_list else 0
+    # Calculate match as discrete fraction: matched/total keywords
+    total_keywords = len(keywords_list)
+    matched_keywords = len(matches)
+    
+    if total_keywords > 0:
+        # Each keyword represents a discrete fraction of 100%
+        match_percentage = (matched_keywords / total_keywords) * 100
+    else:
+        match_percentage = 0
 
     return {
         "match_percentage": match_percentage,
         "matched_keywords": matches
     }
-        
 def extract_key_themes(reviews, max_themes=5):
     """
     Extract key themes from reviews using OpenAI
@@ -212,20 +239,44 @@ def calculate_match_percentage(place, parameters):
     
     # Define weights for different factors (total should be 100%)
     weights = {
-        "rating": 25,          # Reduced from 30% to make room for address
+        "rating": 25,
         "reviews": 20,
         "price_range": 15,
         "business_hours": 15,
-        "keywords": 15,        # Reduced from 20% to make room for address
-        "address": 10          # New weight for address matching
+        "keywords": 15,
+        "address": 10
     }
+    
+    # CRITICAL CHECK: If keywords were specified but none found, return 0% immediately
+    if parameters.get("keywords", ""):
+        keyword_match_found = False
+        
+        # Check in keyword_matches dictionary
+        if "keyword_matches" in place:
+            if place["keyword_matches"].get("matched_keywords", []):
+                keyword_match_found = True
+        
+        # Check in keywordMatch string
+        elif "keywordMatch" in place:
+            if "0 keywords found" not in place["keywordMatch"]:
+                keyword_match_found = True
+        
+        # If keywords were specified and NONE found, return 0%
+        if not keyword_match_found:
+            return 0.0  # Return exactly 0%
+    
+    # [Rest of the function remains the same...]
     
     # Adjust score based on rating (weight: 25%)
     max_rating = 5.0
     min_required_rating = parameters.get("min_rating", 0)
-    if place.get("rating", 0) >= min_required_rating:
-        rating_factor = min(1.0, place.get("rating", 0) / max_rating)
-        score -= (1 - rating_factor) * weights["rating"]
+    if min_required_rating > 0:
+        place_rating = place.get("rating", 0)
+        if place_rating < min_required_rating:
+            score -= weights["rating"]  # Full penalty if below minimum
+        else:
+            rating_factor = min(1.0, place_rating / max_rating)
+            score -= (1 - rating_factor) * weights["rating"]
     
     # Adjust score based on review count (weight: 20%)
     min_required_reviews = parameters.get("min_reviews", 0)
@@ -253,8 +304,19 @@ def calculate_match_percentage(place, parameters):
             score -= weights["business_hours"]
     
     # Adjust score based on keyword matches (weight: 15%)
-    if parameters.get("keywords", "") and "keyword_matches" in place:
-        keyword_match_percentage = place["keyword_matches"].get("match_percentage", 0)
+    # We already checked this above and returned 0 if no matches
+    # So here we handle partial matches only
+    if parameters.get("keywords", ""):
+        keyword_match_percentage = 0
+        
+        if "keyword_matches" in place:
+            keyword_match_percentage = place["keyword_matches"].get("match_percentage", 0)
+        elif "keywordMatch" in place and "0 keywords found" not in place["keywordMatch"]:
+            import re
+            match = re.search(r'(\d+)%', place["keywordMatch"])
+            if match:
+                keyword_match_percentage = int(match.group(1))
+        
         score -= (1 - (keyword_match_percentage / 100)) * weights["keywords"]
     
     # Adjust score based on address match (weight: 10%)

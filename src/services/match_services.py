@@ -128,8 +128,12 @@ def create_match_reasoning(place, parameters, match_percentage):
             reasoning += f"The address matches your criteria. "
         else:
             reasoning += f"The address doesn't exactly match your criteria. "
+    
 
     return reasoning
+
+    
+
 
 def create_factor_analysis(place, parameters):
     """

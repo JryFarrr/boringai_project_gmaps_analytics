@@ -41,12 +41,6 @@ def analyze_route():
         # Check if place meets constraints
         meets_constraints, match_percentage, match_analysis = check_place_constraints(place_details, constraints)
         current_app.logger.info(f"Constraints check: meets={meets_constraints}, match={match_percentage}%")
-        
-        # If constraints not met, return skip response
-        if not meets_constraints:
-            current_app.logger.info(f"Place does not meet constraints, skipping: {place_details.get('placeName', 'Unknown')}")
-            response = create_skip_response(lead_count, skipped_count)
-            return jsonify(response)
             
         # Extract reviews for summarization
         positive_reviews = place_details.get("positiveReviews", [])
@@ -75,7 +69,7 @@ def analyze_route():
         else:
             current_app.logger.warning("No keywordMatch in review_summaries!")
             # Provide a default value if keywordMatch is missing
-            place_details["keywordMatch"] = "Keywords not found"
+            place_details["keywordMatch"] = "keywords not found"
         
         # Generate business insights
         current_app.logger.info("Generating business insights...")
@@ -102,11 +96,17 @@ def analyze_route():
             "coordinates": place_details.get("coordinates", {}),
             "reviewSummary": place_details.get("reviewSummary", {}),
             # Make sure keywordMatch is included in the final result
-            "keywordMatch": place_details.get("keywordMatch", "Keywords not found"),
+            "keywordMatch": place_details.get("keywordMatch", "keywords not found"),
             "reviewCount": len(place_details.get("positiveReviews", [])) + len(place_details.get("negativeReviews", []))
         }
         
         current_app.logger.info(f"Total reviews analyzed: {result.get('reviewCount', 0)}")
+
+        # If constraints not met, return skip response
+        if not meets_constraints:
+            current_app.logger.info(f"Place does not meet constraints, skipping: {place_details.get('placeName', 'Unknown')}")
+            response = create_skip_response(lead_count, skipped_count, result)
+            return jsonify(response)
         
         # Return response with result and next action
         response = {
@@ -141,7 +141,7 @@ def analyze_route():
         return error_response(f"Analyze route failed: {str(e)}", 500)
 
 
-def create_skip_response(lead_count, skipped_count):
+def create_skip_response(lead_count, skipped_count,result):
     """
     Creates a response object for skipping a place that doesn't meet constraints
     
@@ -158,7 +158,7 @@ def create_skip_response(lead_count, skipped_count):
             "skippedConstraints": True,
             "skippedCount": skipped_count + 1
         },
-        "result": None,
+        "result": result,
         "next": {
             "key": "control",
             "payload": {
@@ -247,6 +247,6 @@ def create_result_object(place_details, match_percentage, match_analysis, summar
         result["keywordMatch"] = place_details["keywordMatch"]
     else:
         current_app.logger.warning("keywordMatch not found in place_details during result creation")
-        result["keywordMatch"] = "Keywords not found"
+        result["keywordMatch"] = "keywords not found"
         
     return result
