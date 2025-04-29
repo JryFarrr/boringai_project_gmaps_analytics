@@ -129,7 +129,7 @@ class WorkflowExecutor:
 def run_simulation():
     executor = WorkflowExecutor()
     
-    prompt = "Temukan 3 caffe di Surabaya dengan rating minimal 4 dan reviews lebih dari 50 dan kurang dari 200 yang cocok buat nugas dan murah dengan harga di antara 20.000 sampai 100.000 yang buka pada jam 10 pagi sampai 6 malam"
+    prompt = "Temukan 2 caffe recommended di Surabaya dengan rating minimal 4 dan reviews lebih dari 50 dan kurang dari 200 dengan harga di antara 20.000 sampai 100.000 yang buka pada jam 10 pagi sampai 6 malam"
     # prompt nanti diparsing untuk menentukan businessType, location, dan numberOfLeads
     # prompt juga diparsing untuk contraints pada match percentage
     # untuk match percentage disimpan pada instance, dan hanya digunakan di analyze
@@ -161,7 +161,7 @@ def run_simulation():
     storage = executor.get_storage()
     
     # Sort $results by fitScore in descending order
-    storage["$results"].sort(key=lambda x: x.get("fitScore", 0), reverse=True)
+    storage["$results"].sort(key=lambda x: x.get("matchPercentage", 0), reverse=True)
     
     # Replace empty fields with None in $results
     for result in storage["$results"]:

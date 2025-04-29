@@ -120,7 +120,7 @@ def get_place_details(place_id, fields=None):
         
         # Get the basic place details
         place_details = data.get("result", {})
-        
+        place_details["placeId"] = place_id
         # Add reviews from SearchAPI.io
         place_details["reviews"] = get_place_reviews(place_id)
         

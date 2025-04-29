@@ -48,7 +48,7 @@ def generate_review_summaries(positive_reviews, negative_reviews, keywords=""):
     else:
         # Provide default value when no keywords specified
         current_app.logger.warning("No keywords provided, adding default keywordMatch")
-        result["keywordMatch"] = f"0 keywords found from {review_count} reviews"
+        result["keywordMatch"] = f"Keywords not found"
     
     # Fallback mechanism in case count_keywords_in_reviews fails
     if "keywordMatch" not in result:
@@ -67,12 +67,11 @@ def generate_review_summaries(positive_reviews, negative_reviews, keywords=""):
                     if keyword.lower() in review.lower():  # Case insensitive search
                         keyword_count += 1
                         current_app.logger.debug(f"Found keyword '{keyword}' in review")
-        
-        result["keywordMatch"] = f"{keyword_count} keywords found from {review_count} reviews"
-    
-    # Tambahkan log untuk hasil akhir
-    current_app.logger.info(f"Final review summary result keys: {result.keys()}")
-    current_app.logger.info(f"Final keywordMatch: {result.get('keywordMatch', 'Still missing!')}")
+                        break  # Count each review only once
+            
+            result["keywordMatch"] = f"{keyword_count} reviews contain keywords out of {review_count} total reviews" if keyword_count > 0 else "keyword not found"
+        else:
+            result["keywordMatch"] = "keyword not found"
     
     return result
 
@@ -87,7 +86,7 @@ def count_keywords_in_reviews(reviews, keywords):
     Returns:
         str: String describing the keyword match
     """
-    keyword_count = 0
+    matching_reviews_count = 0
     review_count = len(reviews)
     
     # Split keywords if multiple (comma separated)
@@ -101,7 +100,7 @@ def count_keywords_in_reviews(reviews, keywords):
         
         for keyword in keyword_list:
             if keyword.lower() in review.lower():  # Case insensitive search
-                keyword_count += 1
+                matching_reviews_count += 1
                 review_matched = True
                 current_app.logger.debug(f"Found keyword '{keyword}' in review #{i+1}")
                 break  # Count each review only once
@@ -109,10 +108,14 @@ def count_keywords_in_reviews(reviews, keywords):
         if review_matched:
             current_app.logger.debug(f"Review #{i+1} matched at least one keyword")
     
-    result = f"{keyword_count} keywords found from {review_count} reviews"
+    # Change the return message format
+    if matching_reviews_count > 0:
+        result = f"{matching_reviews_count} reviews contain keywords out of {review_count} total reviews"
+    else:
+        result = "keyword not found"
+    
     current_app.logger.info(f"Keyword count result: {result}")
     return result
-
 def generate_review_summary(reviews, review_type="positive", max_length=200):
     """
     Generate a concise summary of reviews using OpenAI

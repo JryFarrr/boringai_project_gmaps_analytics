@@ -51,6 +51,14 @@ def process_place_details(place_id):
     
     # Format the place data with consistent structure
     place_data = format_place_data(place_details)
+
+    place_data["types"] = place_details.get("types", [])
+
+    reviews = place_details.get("reviews", [])
+    if not isinstance(reviews, list):
+        print(f"Warning: reviews is not a list. Type: {type(reviews)}")
+        reviews = []
+    place_data["reviews"] = reviews
     
     return place_data
 
