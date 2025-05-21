@@ -39,7 +39,7 @@ MATCH_WEIGHTS = {
 }
 
 # Maximum number of places to process in detail
-MAX_DETAILED_PLACES = 20
+MAX_DETAILED_PLACES = 3
 
 # Maximum number of pages to fetch in text search
 MAX_SEARCH_PAGES = 3
