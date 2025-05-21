@@ -248,7 +248,7 @@ def search_reviews_for_keywords(place, keywords):
             # Prepare the reviews as text (limit to avoid token limits)
             reviews_text = "\n".join([
                 isinstance(r, str) and r or r.get("text", "") 
-                for r in reviews[:10]  # Limit to first 10 reviews
+                for r in reviews
             ])
             
             # Prepare prompt for semantic matching

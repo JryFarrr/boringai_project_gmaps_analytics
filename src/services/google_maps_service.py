@@ -131,7 +131,7 @@ def get_place_details(place_id, fields=None):
 
 
 # === GET REVIEWS FOR A PLACE ===
-def get_place_reviews(place_id, max_reviews=10):
+def get_place_reviews(place_id, max_reviews=60):
     """
     Get reviews using SearchAPI.io with pagination to overcome the 20 review limit
     
@@ -274,7 +274,7 @@ def summarize_and_extract_keywords(reviews):
     openai.api_key = openai_api_key
 
     review_texts = [r.get("text", "") for r in reviews if r.get("text")]
-    joined_reviews = "\n".join(review_texts[:10])
+    joined_reviews = "\n".join(review_texts[:30])
 
     prompt = f"""
     I have the following customer reviews:\n{joined_reviews}\n
