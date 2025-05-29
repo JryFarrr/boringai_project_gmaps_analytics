@@ -1,82 +1,44 @@
 {
-  "$id": "a09612c2-2e36-4f62-b91a-2b3661d574e9",
+  "$id": "2f734f9c-207b-4c36-9633-9d08413dae1a",
   "$state": {
     "business_hours": "jam 10 pagi sampai 6 malam",
-    "business_type": "caf\u00e9",
-    "keywords": "recommended",
-    "leadCount": 2,
+    "business_type": "restaurant",
+    "keywords": "enak",
+    "leadCount": 1,
     "location": "Surabaya",
     "max_reviews": 200,
     "min_rating": 4.0,
     "min_reviews": 50,
-    "numberOfLeads": 2,
+    "numberOfLeads": 1,
     "price_range": "$$",
     "remainingPlaceIds": [
-      "ChIJ6c8BeaX71y0RiEsKuU9mPSE",
-      "ChIJVyuLjwX71y0Rp8--VvroUKY",
-      "ChIJCdr6aZP71y0RykctPAfwVF8",
-      "ChIJhS6qhGT51y0RUCoksi_dipo",
-      "ChIJ-bts_bb51y0RigQ3aSeE-a0",
-      "ChIJGYF9D2P51y0RsHYgHqaK6_A",
-      "ChIJXwiJZgD51y0R47N3uWvd_KA",
-      "ChIJjUgZ3Mj51y0RH7WmEvDyjR8",
-      "ChIJNS9LWgH51y0RjWjiOwh_IxA",
-      "ChIJKe5jttn71y0RHyF2VuhqHpA",
-      "ChIJI71_0Xn51y0R4q7BT7mkUNU",
-      "ChIJ6eN4kaf51y0R5rtNY3lK5oY"
+      "ChIJQ2tqvWz71y0RaamvEiavn2Y",
+      "ChIJxysqVW371y0Rx7u85Q-HT6U",
+      "ChIJk_ID-Lb71y0RNAXocH8IJIw",
+      "ChIJ5fNHGin71y0Rl-exz35L_gk",
+      "ChIJIVsQfdn71y0Ru2gt6e2Qu_U",
+      "ChIJU00o_jP61y0Rg7WmdkRBR5o",
+      "ChIJ_eGYztn71y0Rlil8U-fiI30",
+      "ChIJl9S7eN771y0Rpp7V9x6GXoU",
+      "ChIJcyPf0Qr51y0R9tTnFXG13iU",
+      "ChIJk4EvdQb51y0RFDLO6Ah0-sA",
+      "ChIJzclN-v351y0Rnpji2jU5UXM",
+      "ChIJ61drk0_71y0Rk5SedEyGnj0",
+      "ChIJDSJQ7jP61y0RSKgfSKuVcFo",
+      "ChIJy-5AIjP71y0RCu3GThEuDgY",
+      "ChIJ_be_gZT71y0RtRouzYwvi0Y",
+      "ChIJgbmcNdj71y0RweUb8pWkzoQ",
+      "ChIJGZkLM9L71y0Rmlp4O57qgps"
     ],
     "searchOffset": 20,
-    "skippedCount": 6,
-    "businessType": "caf\u00e9",
-    "nextPageToken": "AXQCQNRv_Jix_8Ok8Lg1nKEkLNbOPFD5Rl7Z-tpTdfZ9WU8_7tuUf7Thc4WcuFv4-cRb_HNMV2-clzqI2mvTYQqnfkY9A8Yj8UAyCwF6cHAWopTYwbyoLLpY-C56hK0mWPT82CFPXKu-p7GJDDeHFCi8FhjY0Uris_aZDpYkJIY-n6xTJTtA7l5e9AIIHauDBapTdaP8cFos7WE35coull7Npw7eBM3x4BITtNWaNJHnQ5kIXwUS28LqtYC7IIK8tDD5UG3QiJosTX_65cga4g4CzO6BCxDIgI1RH-KGRYMcm8yM8z1R3-NaVwDZmKv-_u0BpRQPNID3Sg96REwIKCiLPRWus8H3ZPcD0fdXVAD3e9ZeSnOzSOs-QQ9dkcHgOgKRf7J0jkyqfhp73EMffpLe",
+    "skippedCount": 2,
+    "businessType": "restaurant",
+    "nextPageToken": "AXQCQNQVOuDsXVI0KkASE9Nn2vt9EvCam1aHIzUREPZhV-zAdf4s4U60hXlIMBha9ipq_ylPbL3gjUNjiUbMxBUC5Jh5brjTTw1iHKne_1OAGVNKGQHwkBM1bsVyPALVLuYstDCf6ma2WCJ9fBqnVzaRXI0rurkYBuJ0jFIPWR4fdUYI3X9hBeVHeQFBnebAf9goMZnIBMPstPrOw8GCICRwC5w-me9vrGA-vO4F93YWFX9TU_PYBT4cHB8WXH9MqiokgL9nZXhlqzLFABhOMkFc0yWxLoHJAGb_w-TSrkFZndQTdj3z4s3mwFyJVX8Y4Jo-1KDWNzrUK7HQfLv6_2hAqXz2aEB2rMOJGTMS6W_wo9QWGt_9czk--vRifnoAfoEIFxR8h7gm6wygcmihziyBk6Bu8e0",
     "skippedConstraints": true
   },
   "$results": [
     {
-      "address": "PQV2+2R8, Jl. Ketabang Kali No.53, Ketabang, Kec. Genteng, Surabaya, Jawa Timur 60272, Indonesia",
-      "businessHours": [
-        "Monday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Tuesday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Wednesday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Thursday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Friday: 10:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
-        "Saturday: 10:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
-        "Sunday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM"
-      ],
-      "businessType": [
-        "cafe",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "coordinates": {},
-      "keywordMatch": "1 reviews contain keywords out of 48 total reviews",
-      "matchPercentage": 98.5,
-      "matchReasoning": "This business matches 98.5% of your criteria. It has a good rating of 4.7/5.0. It has 1058 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
-      "phone": "0817-328-080",
-      "placeName": "Sambang Cafe & Eatery",
-      "priceRange": "$$",
-      "rating": 4.7,
-      "reviewCount": 48,
-      "reviewSummary": {
-        "negative": "Customers noted slow service, cold food, unorganized staff, and an uninviting ambiance. Improvements needed in order efficiency and staff attentiveness for a better dining experience.",
-        "positive": "Customers highlight the beautiful atmosphere, friendly service, delicious food, and good coffee. The establishment feels welcoming and homey, with affordable prices and ample seating."
-      },
-      "strengths": [
-        "The caf\u00e9 has an excellent overall rating of 4.7/5 based on a substantial number of reviews (1058), indicating strong customer satisfaction.",
-        "Customers appreciate the pleasant atmosphere and ambience, with several noting that the environment is inviting and feels like home.",
-        "Positive reviews highlight excellent service and delectable food, contributing to a positive dining experience."
-      ],
-      "totalRatings": 1058,
-      "weaknesses": [
-        "Some customers experience slow service, particularly during busy periods, and note a lack of organization among staff.",
-        "Negative reviews mention issues with food temperature and timeliness, suggesting potential inconsistencies in the food preparation process.",
-        "The ambiance and service have been cited as uninviting and unsatisfactory by some visitors, indicating room for improvement in these areas."
-      ],
-      "website": "N/A"
-    },
-    {
-      "address": "Jl. Pandan No.5, Ketabang, Kec. Genteng, Surabaya, Jawa Timur 60272, Indonesia",
+      "address": "Jl. Raya Kertajaya Indah No.130, Manyar Sabrangan, Kec. Mulyorejo, Surabaya, Jawa Timur 60117, Indonesia",
       "businessHours": [
         "Monday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
         "Tuesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
@@ -87,303 +49,142 @@
         "Sunday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
       ],
       "businessType": [
-        "cafe",
+        "restaurant",
         "food",
         "point_of_interest",
         "establishment"
       ],
       "coordinates": {},
-      "keywordMatch": "2 reviews contain keywords out of 48 total reviews",
-      "matchPercentage": 95.49677977152366,
-      "matchReasoning": "This business matches 95.5% of your criteria. It has a good rating of 4.4/5.0. It has 595 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
-      "phone": "N/A",
-      "placeName": "Mawu Cafe",
+      "keywordCountN": 20,
+      "keywordMatch": "20 reviews contain keywords out of 659 total reviews",
+      "keywordTotalB": 659,
+      "matchFactors": null,
+      "matchPercentage": 95.79256943062673,
+      "matchReasoning": "This business matches 95.8% of your criteria. It has a good rating of 4.4/5.0. It has 659 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "(031) 59181830",
+      "placeName": "Hallo Surabaya Kertajaya",
       "priceRange": "$$",
       "rating": 4.4,
       "reviewCount": 48,
       "reviewSummary": {
-        "negative": "Key points:\n\n1. Unfriendly staff: A cashier\u2019s demeanor made a customer lose appetite.\n2. Drink portions are too small compared to the cup size.\n3. Average food taste; affordable prices but uncomfor...",
-        "positive": "Gen Z loves this spot for its affordable menu and prime location near schools. It features a cozy, contemporary design with a photobooth and both indoor and outdoor seating. Fast service; space lim..."
+        "negative": "Portion sizes are small, especially Garang Asem. Staff inattentive and unengaged, impacting service. Incorrect orders and quality issues like rotten/burnt fish are common concerns.",
+        "positive": "Customers love the delicious Indonesian food, especially unique dishes like Nasi Soto Bakar. They appreciate the beautiful d\u00e9cor, great service, and tasty gelato. More parking is needed."
       },
       "strengths": [
-        "High customer rating of 4.4/5 from 595 reviews indicating strong customer satisfaction.",
-        "Proximity to a school, attracting a young demographic and generating consistent business.",
-        "Menu offers reasonably priced items, appealing to budget-conscious customers while maintaining quality like the notable Nasi Kulit Sambal Bawang."
+        "The restaurant boasts a high satisfaction rating of 4.4/5 from 659 reviews, indicating strong overall customer approval.",
+        "The establishment offers a diverse and authentic menu, featuring traditional Indonesian dishes as well as options for kids like dimsum and noodles.",
+        "Service quality and ambiance are consistently highlighted as positives in customer reviews, contributing to a pleasant dining experience."
       ],
-      "totalRatings": 595,
+      "summaryNegativeReviews": "Portion sizes are small, especially Garang Asem. Staff inattentive and unengaged, impacting service. Incorrect orders and quality issues like rotten/burnt fish are common concerns.",
+      "summaryPositiveReviews": "Customers love the delicious Indonesian food, especially unique dishes like Nasi Soto Bakar. They appreciate the beautiful d\u00e9cor, great service, and tasty gelato. More parking is needed.",
+      "totalRatings": 659,
       "weaknesses": [
-        "Some inconsistency in product quality over time, as noted in reviews about the Ferrero Latte.",
-        "Indoor area is small, which may limit comfort and space for customers, especially during peak hours.",
-        "Concerns about customer service with specific feedback indicating dissatisfaction due to staff demeanor."
+        "Portion sizes have been cited as being smaller, which may not meet some customers' expectations.",
+        "There are occasional service errors, such as mix-ups in food orders, which have led to customer dissatisfaction.",
+        "Parking space is somewhat limited and may be a concern for customers visiting during peak hours."
       ],
       "website": "N/A"
     },
     {
-      "address": "Jl. Raya Kupang Indah No.51, Sonokwijenan, Kec. Sukomanunggal, Surabaya, Jawa Timur 60225, Indonesia",
+      "address": "No.F-303, Jl. Raya Kertajaya Indah, Manyar Sabrangan, Kec. Mulyorejo, Surabaya, Jawa Timur 60116, Indonesia",
       "businessHours": [
-        "Monday: Open 24 hours",
-        "Tuesday: Open 24 hours",
-        "Wednesday: Open 24 hours",
-        "Thursday: Open 24 hours",
-        "Friday: Open 24 hours",
-        "Saturday: Open 24 hours",
-        "Sunday: Open 24 hours"
+        "Monday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
       ],
       "businessType": [
-        "cafe",
         "restaurant",
-        "food",
         "point_of_interest",
-        "store",
+        "food",
         "establishment"
       ],
       "coordinates": {},
-      "keywordMatch": "1 reviews contain keywords out of 48 total reviews",
-      "matchPercentage": 83.5,
-      "matchReasoning": "This business matches 83.5% of your criteria. It has a good rating of 4.7/5.0. It has 1578 reviews, meeting your minimum requirement. Its price range ($$$) doesn't match your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
-      "phone": "0811-3055-8888",
-      "placeName": "\ufe0f Kollabora | The Best Thematic Cafe & Restaurant in Indonesia",
+      "keywordCountN": 20,
+      "keywordMatch": "20 reviews contain keywords out of 3179 total reviews",
+      "keywordTotalB": 3179,
+      "matchFactors": null,
+      "matchPercentage": 68.0,
+      "matchReasoning": "This business matches 68.0% of your criteria. It has a good rating of 4.6/5.0. It has 3179 reviews, meeting your minimum requirement. Its price range ($$$) doesn't match your criteria. Its business hours don't match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "(031) 5954800",
+      "placeName": "Botanika - Kertajaya Indah",
       "priceRange": "$$$",
-      "rating": 4.7,
+      "rating": 4.6,
       "reviewCount": 48,
       "reviewSummary": {
-        "negative": "Customers are upset about being asked to vacate their table early, before the agreed reservation time. They felt their dining experience was rushed and poorly managed.",
-        "positive": "Thematic decor changes 4-5 times a year, creating a great photo spot. Friendly staff but occasionally understaffed. Varied food quality; beef salad is recommended. Open 24/7 with VIP rooms."
+        "negative": "High prices and small portions are common complaints; customers expect better quality for the cost. Some food is too salty or lacks flavor. Service could be improved with friendlier staff.",
+        "positive": "The restaurant offers well-prepared, modern Indonesian cuisine, praised for its deliciousness and ambiance. Despite being pricey, the friendly staff and diverse menu enhance the experience."
       },
       "strengths": [
-        "Highly rated with 4.7/5 from a substantial number of 1578 reviews indicating strong customer satisfaction.",
-        "Unique selling proposition through thematic decorations and seasonal ambiance changes, attracting customers interested in experiences and photo opportunities.",
-        "Versatile offerings with availability for private events and workshops, and operating hours that exceed standard business hours, providing convenience to customers."
+        "High rating of 4.6 out of 5 from a large number of reviews (3179), indicating a generally positive customer experience.",
+        "Offers a diverse variety of Indonesian cuisines with positive feedback on the quality and presentation of the dishes.",
+        "Ambience and service are often highlighted as aspects that enhance the dining experience, with a distinct indoor and outdoor dining setting."
       ],
-      "totalRatings": 1578,
+      "summaryNegativeReviews": "High prices and small portions are common complaints; customers expect better quality for the cost. Some food is too salty or lacks flavor. Service could be improved with friendlier staff.",
+      "summaryPositiveReviews": "The restaurant offers well-prepared, modern Indonesian cuisine, praised for its deliciousness and ambiance. Despite being pricey, the friendly staff and diverse menu enhance the experience.",
+      "totalRatings": 3179,
       "weaknesses": [
-        "Price range may not align with more budget-conscious customers ($$$), potentially limiting the customer base.",
-        "Operational management issues, such as understaffing and being occasionally overwhelmed by reservations, leading to negative customer experiences related to service.",
-        "Thematic and food experience inconsistency, as satisfaction is dependent on the specific theme or chef of the day."
+        "Price point is considered high, with several customers noting the dishes as overpriced relative to portion size and quality.",
+        "Inconsistencies in food quality and service speed are mentioned, with some dishes lacking flavor and service being slow at times.",
+        "The business hours do not align with your specified requirement of open hours from 10 AM to 6 PM."
       ],
-      "website": "https://kollabora.id/"
+      "website": "http://www.botanikaresto.com/"
     },
     {
-      "address": "Jl. Kalasan No.25 I, Pacar Keling, Kec. Tambaksari, Surabaya, Jawa Timur 60131, Indonesia",
+      "address": "Jl. Raya Kertajaya Indah No.55 Blok I-1, Manyar Sabrangan, Kec. Mulyorejo, Surabaya, Jawa Timur 60116, Indonesia",
       "businessHours": [
-        "Monday: 5:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-        "Tuesday: 5:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-        "Wednesday: 5:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-        "Thursday: 5:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-        "Friday: 5:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-        "Saturday: 5:00\u202fPM\u2009\u2013\u200912:00\u202fAM",
-        "Sunday: 5:00\u202fPM\u2009\u2013\u200912:00\u202fAM"
+        "Monday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
       ],
       "businessType": [
-        "cafe",
-        "store",
+        "restaurant",
         "point_of_interest",
         "food",
         "establishment"
       ],
       "coordinates": {},
-      "keywordMatch": "2 reviews contain keywords out of 48 total reviews",
-      "matchPercentage": 82.39384689268554,
-      "matchReasoning": "This business matches 82.4% of your criteria. It has a good rating of 4.5/5.0. It has 964 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours don't match your jam 10 pagi sampai 6 malam requirement. ",
-      "phone": "0857-3333-1107",
-      "placeName": "Grandfather Coffeeshop",
-      "priceRange": "$$",
-      "rating": 4.5,
-      "reviewCount": 48,
-      "reviewSummary": {
-        "negative": "Grandfather Coffeeshop offers a charming antique atmosphere, but faces criticisms for very slow service, high food prices with small portions, and a noisy setting, deterring quick and efficient vis...",
-        "positive": "Customers appreciate the cozy, vintage atmosphere, live music, and affordable pricing. It's ideal for studying or meetings, with standout items like Spicy Tofu and ginger lemon tea. Great for Insta..."
-      },
-      "strengths": [
-        "Grandfather Coffeeshop has a strong rating of 4.5 out of 5, indicating a generally high level of customer satisfaction.",
-        "The ambiance and vintage decor are highly appreciated by customers, contributing to a unique and cozy atmosphere.",
-        "Affordability and good taste in food, especially the Spicy Tofu, are frequently highlighted by customers."
-      ],
-      "totalRatings": 964,
-      "weaknesses": [
-        "Service delays are a significant issue, with multiple reviews indicating long wait times for food and lack of communication from staff.",
-        "Noise levels due to live music can be disruptive, affecting the overall dining experience negatively.",
-        "Portion sizes are perceived as small relative to the price, which could decrease perceived value for money."
-      ],
-      "website": "N/A"
-    },
-    {
-      "address": "Jl. Kertajaya No.78, Kertajaya, Kec. Gubeng, Surabaya, Jawa Timur 60282, Indonesia",
-      "businessHours": [
-        "Monday: Open 24 hours",
-        "Tuesday: Open 24 hours",
-        "Wednesday: Open 24 hours",
-        "Thursday: Open 24 hours",
-        "Friday: Open 24 hours",
-        "Saturday: Open 24 hours",
-        "Sunday: Open 24 hours"
-      ],
-      "businessType": [
-        "cafe",
-        "food",
-        "store",
-        "point_of_interest",
-        "establishment"
-      ],
-      "coordinates": {},
-      "keywordMatch": "3 reviews contain keywords out of 48 total reviews",
-      "matchPercentage": 74.3056800776143,
-      "matchReasoning": "This business matches 74.3% of your criteria. It has a good rating of 4.5/5.0. It has 59 reviews, meeting your minimum requirement. Its price range () doesn't match your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
-      "phone": "0812-3426-0168",
-      "placeName": "TETRA Coffee & Eatery - Surabaya",
+      "keywordCountN": 20,
+      "keywordMatch": "20 reviews contain keywords out of 731 total reviews",
+      "keywordTotalB": 731,
+      "matchFactors": null,
+      "matchPercentage": 67.0927825130524,
+      "matchReasoning": "This business matches 67.1% of your criteria. It has a good rating of 4.6/5.0. It has 731 reviews, meeting your minimum requirement. Its price range () doesn't match your criteria. Its business hours don't match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0821-3949-2500",
+      "placeName": "Gachi Korean Cuisine - Kertajaya Indah",
       "priceRange": null,
-      "rating": 4.5,
+      "rating": 4.6,
       "reviewCount": 48,
       "reviewSummary": {
-        "negative": "Steak presentation inconsistent; service slow and inattentive; parking difficult; limited Wi-Fi; inconvenient reservation response times; good ambiance but operational issues with food/parking.",
-        "positive": "Customers praise the coffee shop for its high-quality coffee, especially the variety of beans, alongside tasty food. The inviting atmosphere encourages repeat visits."
+        "negative": "Reviews highlight greasy, overly sweet food and inconsistent quality. Key issues include lack of banchan and tea refills, with some dishes bland or improperly prepared. However, the atmosphere and ...",
+        "positive": "Customers appreciate the rose tteokbokki, kimchi, and half-half chicken. The restaurant offers a cozy ambiance and friendly staff but has minor issues with non-flat tables and hand sinks."
       },
       "strengths": [
-        "High customer satisfaction with a rating of 4.5/5 based on 59 reviews, indicating consistent positive experiences.",
-        "Wide selection of high-quality roasted coffee beans and good food offerings, which attract repeat customers.",
-        "Positive ambiance and comfortable environment, making it a desirable spot for patrons looking to relax or work."
+        "High customer satisfaction with a rating of 4.6/5 based on 731 reviews.",
+        "Diverse menu with popular items such as kimbap, rose tteokbokki, and bibimbap receiving positive feedback.",
+        "Cozy ambience and friendly staff enhance the dining experience."
       ],
-      "totalRatings": 59,
+      "summaryNegativeReviews": "Reviews highlight greasy, overly sweet food and inconsistent quality. Key issues include lack of banchan and tea refills, with some dishes bland or improperly prepared. However, the atmosphere and ...",
+      "summaryPositiveReviews": "Customers appreciate the rose tteokbokki, kimchi, and half-half chicken. The restaurant offers a cozy ambiance and friendly staff but has minor issues with non-flat tables and hand sinks.",
+      "totalRatings": 731,
       "weaknesses": [
-        "Price range information is missing, causing a potential mismatch with customer expectations regarding affordability.",
-        "Service issues such as confusion and inefficiency at the cashier, and issues with food preparation as noted in some reviews.",
-        "Parking difficulties and WiFi connectivity issues, which can deter customers who prefer convenient accessibility and reliable internet."
+        "Price range does not align with specified criteria, indicating potential pricing concerns for certain customers.",
+        "Operational issues with infrastructure, such as faulty handwashing sinks, affect customer experience.",
+        "Inconsistencies in food quality and service have been noted, along with a lack of refill options for side dishes, which can impact overall satisfaction."
       ],
-      "website": "N/A"
-    },
-    {
-      "address": "Jl. Taman Apsari No.7, RT.004/RW.02, Embong Kaliasin, Kec. Genteng, Surabaya, Jawa Timur 60271, Indonesia",
-      "businessHours": [
-        "Monday: 11:00\u202fAM\u2009\u2013\u20094:00\u202fAM",
-        "Tuesday: 11:00\u202fAM\u2009\u2013\u20094:00\u202fAM",
-        "Wednesday: 11:00\u202fAM\u2009\u2013\u20094:00\u202fAM",
-        "Thursday: 11:00\u202fAM\u2009\u2013\u20094:00\u202fAM",
-        "Friday: 11:00\u202fAM\u2009\u2013\u20094:00\u202fAM",
-        "Saturday: 11:00\u202fAM\u2009\u2013\u20094:00\u202fAM",
-        "Sunday: 11:00\u202fAM\u2009\u2013\u20094:00\u202fAM"
-      ],
-      "businessType": [
-        "cafe",
-        "food",
-        "point_of_interest",
-        "store",
-        "establishment"
-      ],
-      "coordinates": {},
-      "keywordMatch": "2 reviews contain keywords out of 48 total reviews",
-      "matchPercentage": 64.76381562966728,
-      "matchReasoning": "This business matches 64.8% of your criteria. It has a good rating of 4.3/5.0. It has 549 reviews, meeting your minimum requirement. Its price range () doesn't match your criteria. Its business hours don't match your jam 10 pagi sampai 6 malam requirement. ",
-      "phone": "N/A",
-      "placeName": "Locker Space Coffe & Eatery",
-      "priceRange": null,
-      "rating": 4.3,
-      "reviewCount": 48,
-      "reviewSummary": {
-        "negative": "Customers report overpriced, poor-quality food and drinks, unsatisfactory customer service, long wait times, and untrained staff. They suggest improvements in pricing, quality, and staff manners.",
-        "positive": "Customers praise this place for its lively atmosphere, delicious food, refreshing drinks (notably the \"21 Jump Street\"), friendly service, and central location. It's ideal for hangouts."
-      },
-      "strengths": [
-        "Locker Space Coffe & Eatery has a strong overall customer rating of 4.3 out of 5, based on 549 reviews, indicating a generally positive reputation.",
-        "It is strategically located in the center of Surabaya, which could contribute to its popularity as a hangout spot.",
-        "The cafe offers a vibrant atmosphere that appeals to a younger crowd, with elements like live music enhancing the customer experience."
-      ],
-      "totalRatings": 549,
-      "weaknesses": [
-        "There are significant complaints about the service quality, with reports of long wait times and unsatisfactory customer service.",
-        "The pricing is perceived as high relative to the quality of food and beverages, with some customers considering it not worth the cost.",
-        "Inconsistencies in food quality and presentation as evidenced by negative reviews citing dirty plates and poor food preparation."
-      ],
-      "website": "N/A"
-    },
-    {
-      "address": "Jl. Cempaka Jl. Raya Kendalsari No.2, Tegalsari, Kec. Tegalsari, Surabaya, Jawa Timur 60262, Indonesia",
-      "businessHours": [
-        "Monday: Open 24 hours",
-        "Tuesday: Open 24 hours",
-        "Wednesday: Open 24 hours",
-        "Thursday: Open 24 hours",
-        "Friday: Open 24 hours",
-        "Saturday: Open 24 hours",
-        "Sunday: Open 24 hours"
-      ],
-      "businessType": [
-        "cafe",
-        "food",
-        "point_of_interest",
-        "store",
-        "establishment"
-      ],
-      "coordinates": {},
-      "keywordMatch": "keyword not found",
-      "matchPercentage": 0,
-      "matchReasoning": "Keywords not found in reviews. This business matches 77.0% of your criteria. It has a good rating of 4.5/5.0. It has 151 reviews, meeting your minimum requirement. Its price range () doesn't match your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
-      "phone": "0823-3843-2977",
-      "placeName": "Cw Coffee & Eatery Surabaya",
-      "priceRange": null,
-      "rating": 4.5,
-      "reviewCount": 48,
-      "reviewSummary": {
-        "negative": "Key issues include misleading hours, high prices, unfriendly staff, food errors, and poor air circulation with smoke affecting comfort. Improve service accuracy, staff interaction, and smoke-free a...",
-        "positive": "CW Coffee & Eatery offers a cozy, versatile atmosphere with fast WiFi and friendly service, ideal for work or casual hangouts. It's open 24/7, with good food, drinks, and seating options."
-      },
-      "strengths": [
-        "The cafe has a good rating of 4.5 out of 5 from 151 reviews, indicating high customer satisfaction.",
-        "It is described as cozy and versatile, with features like a smoking room, cold air conditioning, and fast Wi-Fi, making it ideal for both work and leisure.",
-        "Open 24/7, the cafe offers a wide range of snacks and meals, praised for their taste and complemented by friendly service."
-      ],
-      "totalRatings": 151,
-      "weaknesses": [
-        "There is a discrepancy in operational hours as stated to be 24/7, but reports indicate unexpected closure at night.",
-        "Some customers perceive the pricing as high compared to similar cafes, potentially deterring price-sensitive visitors.",
-        "An incident of miscommunication and poor handling of dietary preferences has been reported, which raises concerns about the staff's attentiveness to specific customer needs."
-      ],
-      "website": "N/A"
-    },
-    {
-      "address": "Jl. Kusuma Bangsa No.116, Tambaksari, Kec. Tambaksari, Surabaya, Jawa Timur 60272, Indonesia",
-      "businessHours": [
-        "Monday: 7:30\u202fPM\u2009\u2013\u20091:30\u202fAM",
-        "Tuesday: 7:30\u202fPM\u2009\u2013\u20091:30\u202fAM",
-        "Wednesday: 7:30\u202fPM\u2009\u2013\u20092:00\u202fAM",
-        "Thursday: Closed",
-        "Friday: 7:00\u202fPM\u2009\u2013\u20091:00\u202fAM",
-        "Saturday: 7:00\u202fPM\u2009\u2013\u20092:00\u202fAM",
-        "Sunday: 7:30\u202fPM\u2009\u2013\u20091:30\u202fAM"
-      ],
-      "businessType": [
-        "cafe",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "coordinates": {},
-      "keywordMatch": "keyword not found",
-      "matchPercentage": 0,
-      "matchReasoning": "Keywords not found in reviews. This business matches 69.5% of your criteria. It has a good rating of 4.9/5.0. It only has 40 reviews, below your minimum of 50. Its price range () doesn't match your criteria. Its business hours don't match your jam 10 pagi sampai 6 malam requirement. ",
-      "phone": "0877-1562-7953",
-      "placeName": "Ngoparsiii",
-      "priceRange": null,
-      "rating": 4.9,
-      "reviewCount": 40,
-      "reviewSummary": {
-        "negative": "Of course! Please provide the reviews for the business that you'd like summarized.",
-        "positive": "Cozy coffee shop with friendly service, affordable menu, and a relaxed evening atmosphere. Located near stores and street vendors. Cat-friendly spot with artistic ambiance."
-      },
-      "strengths": [
-        "The business has an outstanding customer rating of 4.9 out of 5 from its existing reviews, indicating high customer satisfaction.",
-        "Being a cafe, Ngoparsiii is identified as a point of interest and establishment, which suggests it might attract foot traffic and tourists looking for unique food and beverage experiences."
-      ],
-      "totalRatings": 40,
-      "weaknesses": [
-        "There are only 40 reviews, which does not meet the minimum requirement of 50, suggesting limited feedback and data for comprehensive analysis.",
-        "The business does not meet the pricing criteria or business hours requirement, reducing its relevance for potential partnerships or investments that depend on these factors."
-      ],
-      "website": "N/A"
+      "website": "https://www.instagram.com/gachi.surabaya/"
     }
   ],
   "$metadata": {
-    "createdAt": "2025-05-21T17:05:57.963697+00:00Z",
-    "startedAt": "2025-05-21T17:06:00.706430+00:00Z",
-    "executionTotal": 26
+    "createdAt": "2025-05-29T10:24:19.331165+00:00Z",
+    "startedAt": "2025-05-29T10:24:22.108242+00:00Z",
+    "executionTotal": 11
   }
 }
