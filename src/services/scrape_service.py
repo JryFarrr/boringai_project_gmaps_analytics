@@ -37,7 +37,6 @@ def process_place_details(place_id):
         "formatted_phone_number",
         "website",
         "price_level",
-        "reviews",
         "formatted_address",
         "geometry",
         "rating",
@@ -54,11 +53,6 @@ def process_place_details(place_id):
 
     place_data["types"] = place_details.get("types", [])
 
-    reviews = place_details.get("reviews", [])
-    if not isinstance(reviews, list):
-        print(f"Warning: reviews is not a list. Type: {type(reviews)}")
-        reviews = []
-    place_data["reviews"] = reviews
     
     return place_data
 

@@ -1,8 +1,6 @@
 from src.services.api_clients.factory import create_client
 from src.utils.business_matcher import extract_key_themes
 from flask import current_app
-from src.services.google_maps_service import get_place_reviews # Asumsi ini adalah wrapper Anda untuk SearchAPI.io
-
 def generate_review_summaries(positive_reviews, negative_reviews, keywords=""):
     """
     Processes reviews to provide keyword match information and separate positive/negative reviews.
@@ -38,7 +36,7 @@ def generate_review_summaries(positive_reviews, negative_reviews, keywords=""):
             result["keywordMatch"] = f"{all_filtered_reviews_count} reviews found containing '{keywords}' (filtered by API)."
         else:
             # If keywords were given but the API returned no reviews, it means "not found"
-            result["keywordMatch"] = f"keyword '{keywords}' not found in any reviews via API search."
+            result["keywordMatch"] = f"keyword not found"
     else:
         # If no keywords were provided, the keywordMatch is explicitly "not found"
         result["keywordMatch"] = "keyword not found"
@@ -103,30 +101,3 @@ def extract_key_themes_from_reviews(reviews):
     
     # Assuming extract_key_themes handles an empty list gracefully.
     return extract_key_themes(reviews)
-
-def get_reviews_for_place(place_id, max_reviews=100, search_query=None):
-    """
-    Get reviews for a place using SearchAPI.io, with optional keyword filtering.
-    
-    Args:
-        place_id (str): Google Place ID
-        max_reviews (int): Maximum number of reviews to fetch (default: 100)
-        search_query (str, optional): Keywords to filter reviews by directly from the API.
-                                      Cannot be used with topic_id.
-                                      
-    Returns:
-        dict: Dictionary with positive_reviews, negative_reviews, and all_reviews separated
-    """
-    # Pass search_query to the underlying Google Maps reviews service
-    # This function is in Maps_service.py and modified in the previous turn.
-    all_reviews = get_place_reviews(place_id, max_reviews, search_query=search_query) 
-    
-    # Separate into positive and negative reviews
-    positive_reviews = [r['text'] for r in all_reviews if r.get('rating', 0) >= 4]
-    negative_reviews = [r['text'] for r in all_reviews if r.get('rating', 0) < 4]
-    
-    return {
-        "positive_reviews": positive_reviews,
-        "negative_reviews": negative_reviews,
-        "all_reviews": all_reviews # all_reviews here would be the reviews filtered by search_query if it was provided
-    }

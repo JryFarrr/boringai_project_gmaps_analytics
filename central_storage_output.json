@@ -1,10 +1,10 @@
 {
-  "$id": "768b68b2-60c8-42b1-8f86-1be810d8fbd8",
+  "$id": "3550db2c-226c-41d8-a7af-ab0318dc8d26",
   "$state": {
     "business_hours": "jam 10 pagi sampai 6 malam",
     "business_type": "caf\u00e9",
     "keywords": "recommended",
-    "leadCount": 2,
+    "leadCount": 0,
     "location": "Surabaya",
     "max_reviews": 200,
     "min_rating": 4.0,
@@ -12,179 +12,45 @@
     "numberOfLeads": 2,
     "price_range": "$$",
     "remainingPlaceIds": [
-      "ChIJQ6uIkf771y0RXdIgzZWRziM",
-      "ChIJT06_oVb51y0R0iggaEOBV9I",
-      "ChIJBeogymP71y0RKdX783oL6vk",
-      "ChIJ_bZtg5X51y0R2Sj9OLC1bCI",
-      "ChIJtU8fOQD71y0R_wzqyk6RZXs",
-      "ChIJ11E_u7D71y0RZyInsXZC6XY",
-      "ChIJd0R4vmL71y0Rh_Do1cGbB7U",
-      "ChIJQXiuyU771y0Ru6TlzyXauvQ",
-      "ChIJsZOt82b51y0R6QeJEJKHlTY",
-      "ChIJczw9GdP71y0RzToYbEpTbI8",
-      "ChIJ95NZRKP71y0RiTT7EskTb8U",
-      "ChIJSdLYCTj71y0R5T8YzHTk4E0",
-      "ChIJO0FUtXP71y0RBXwuRMe9hQM",
-      "ChIJKe5jttn71y0RHyF2VuhqHpA"
+      "ChIJl1w3Ksv51y0RrZ_p4-tkbyA",
+      "ChIJWclYj3n51y0Rcy83kV05PXs",
+      "ChIJi_TlH1H71y0RzNybZ7EDA4o",
+      "ChIJq6rq1kn81y0RfzYZGIl4yTc",
+      "ChIJSbyza7H71y0Ri9kipWEinko",
+      "ChIJ08PjtvX51y0RBqpIaXpMsTc",
+      "ChIJPxzwrAr71y0RA2wKuQN2LoE"
     ],
-    "searchOffset": 20,
-    "skippedCount": 4,
+    "searchOffset": 60,
+    "skippedCount": 52,
     "businessType": "caf\u00e9",
-    "nextPageToken": "AXQCQNSAj5ffauxnXA44ROrixjGg7LF90CGs5Z2lbG_0-KKF2-9PCpg9ilbhuaZK2rjhgGS3vf1VzC8r-DD5jnapwAlmDtkzuWwOVvrZQkfELK6CBGdDqtIlPHljHlF_zGN4RiZmBNW1IkyodLGswYoTEvjEATbnficsw10x-xT9ah4FSUHane-C9wUxs9m7bMiX3x0EIwXCMWmxB71WzLLwwG900s2G1oMjG61vZZzY3eG07aW9tnc8rtXrA4USAPz088oBtptHSf2uc-c9ZEGT4pIJNvwkBaZXewFzGHo9Mhyj-5L7idszGxCTMil5BOCeVHq12hpI_V0L-7rCXYCcRJXJVbF4MajIOoM9VMg6a1KCtV3igA3BrVvO1SKHWWItSZaeHDPewcYJsXUz8Ma3",
+    "nextPageToken": null,
     "skippedConstraints": true
   },
   "$results": [
     {
-      "address": "@Clubhouse Grand Peninsula, Mapan, Jl. Sutorejo Barat, Mulyorejo, Kec. Mulyorejo, Surabaya, Jawa Timur 60112, Indonesia",
+      "address": "Jl. Manyar Kertoarjo III No.9, Manyar Sabrangan, Kec. Mulyorejo, Surabaya, Jawa Timur 60116, Indonesia",
       "businessHours": [
-        "Monday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Tuesday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Wednesday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Thursday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Friday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Saturday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Sunday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM"
+        "Monday: 7:00\u202fAM\u2009\u2013\u20097:45\u202fPM",
+        "Tuesday: 7:00\u202fAM\u2009\u2013\u20097:45\u202fPM",
+        "Wednesday: 7:00\u202fAM\u2009\u2013\u20097:45\u202fPM",
+        "Thursday: 7:00\u202fAM\u2009\u2013\u20097:45\u202fPM",
+        "Friday: 7:00\u202fAM\u2009\u2013\u20097:45\u202fPM",
+        "Saturday: 7:00\u202fAM\u2009\u2013\u20097:45\u202fPM",
+        "Sunday: 7:00\u202fAM\u2009\u2013\u20097:45\u202fPM"
       ],
       "businessType": [
         "cafe",
         "food",
-        "point_of_interest",
         "store",
-        "establishment"
-      ],
-      "coordinates": {},
-      "keywordMatch": "keyword 'recommended' not found in any reviews via API search.",
-      "matchPercentage": 0.0,
-      "matchReasoning": "This business matches 0.0% of your criteria. It has a good rating of 4.7/5.0. It has 411 reviews, meeting your minimum requirement. Its price range () doesn't match your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
-      "phone": "0823-3256-8086",
-      "placeName": "Lot#1 coffee Bar",
-      "priceRange": null,
-      "rating": 4.7,
-      "reviewCount": 0,
-      "reviewSummary": {
-        "negative": "",
-        "positive": ""
-      },
-      "strengths": [
-        "High customer satisfaction is reflected in a strong rating of 4.7 out of 5 from 411 reviews, indicating good product/service quality.",
-        "The business operates within the desired timeframe (10 AM to 6 PM), meeting specific operational requirements."
-      ],
-      "totalRatings": 411,
-      "weaknesses": [
-        "The price range is unspecified and does not match any given criteria, making it difficult to assess financial suitability for certain customers.",
-        "The match percentage is 0.0%, which indicates a strong disconnect between the provided criteria and the business's offerings."
-      ],
-      "website": "N/A"
-    },
-    {
-      "address": "Jl. Lombok No.15, Ngagel, Kec. Wonokromo, Surabaya, Jawa Timur 60246, Indonesia",
-      "businessHours": [
-        "Monday: 9:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
-        "Tuesday: 9:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
-        "Wednesday: 9:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
-        "Thursday: 9:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
-        "Friday: 7:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
-        "Saturday: 7:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
-        "Sunday: 7:00\u202fAM\u2009\u2013\u200912:00\u202fAM"
-      ],
-      "businessType": [
-        "cafe",
-        "food",
         "point_of_interest",
         "establishment"
       ],
       "coordinates": {},
-      "keywordMatch": "keyword 'recommended' not found in any reviews via API search.",
-      "matchPercentage": 0.0,
-      "matchReasoning": "This business matches 0.0% of your criteria. It has a good rating of 4.8/5.0. It has 913 reviews, meeting your minimum requirement. Its price range () doesn't match your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
-      "phone": "0812-3415-3064",
-      "placeName": "Fifteenth Cafe by Mark Design",
-      "priceRange": null,
-      "rating": 4.8,
-      "reviewCount": 0,
-      "reviewSummary": {
-        "negative": "",
-        "positive": ""
-      },
-      "strengths": [
-        "High customer satisfaction with a rating of 4.8/5 based on 913 reviews",
-        "Operating hours align perfectly with specified requirements of 10 AM to 6 PM",
-        "Well-established business as indicated by the number of reviews"
-      ],
-      "totalRatings": 913,
-      "weaknesses": [
-        "The business does not meet price range criteria",
-        "There is no provided match percentage with client criteria, indicating complete misalignment",
-        "Lack of provided sample negative reviews limits understanding of potential areas for improvement"
-      ],
-      "website": "https://www.instagram.com/fifteenthcafe/"
-    },
-    {
-      "address": "Jl. Keputih No.19, Keputih, Kec. Sukolilo, Surabaya, Jawa Timur 60111, Indonesia",
-      "businessHours": [
-        "Monday: 7:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Tuesday: 7:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Wednesday: 7:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Thursday: 7:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Friday: 7:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Saturday: 7:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
-        "Sunday: 7:00\u202fAM\u2009\u2013\u200911:00\u202fPM"
-      ],
-      "businessType": [
-        "cafe",
-        "food",
-        "point_of_interest",
-        "store",
-        "establishment"
-      ],
-      "coordinates": {},
-      "keywordMatch": "keyword 'recommended' not found in any reviews via API search.",
-      "matchPercentage": 0.0,
-      "matchReasoning": "This business matches 0.0% of your criteria. It has a good rating of 4.8/5.0. It has 140 reviews, meeting your minimum requirement. Its price range () doesn't match your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
-      "phone": "1 500 280",
-      "placeName": "Point Coffee Gedhe ITS Surabaya",
-      "priceRange": null,
-      "rating": 4.8,
-      "reviewCount": 0,
-      "reviewSummary": {
-        "negative": "",
-        "positive": ""
-      },
-      "strengths": [
-        "High customer satisfaction with a rating of 4.8 out of 5 based on 140 reviews, indicating consistent positive experiences.",
-        "Convenient operating hours that align with typical customer needs, being open from 10 AM to 6 PM."
-      ],
-      "totalRatings": 140,
-      "weaknesses": [
-        "Lack of clarity on the price range, making it difficult to assess affordability or value proposition for potential customers.",
-        "The business currently shows a match percentage of 0.0% against specified criteria, indicating potential misalignment with targeted customer requirements."
-      ],
-      "website": "https://pointcoffee.id/"
-    },
-    {
-      "address": "Jl. Nginden Intan Raya No.39, Nginden Jangkungan, Kec. Sukolilo, Surabaya, Jawa Timur 60118, Indonesia",
-      "businessHours": [
-        "Monday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Tuesday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Wednesday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Thursday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Friday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Saturday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Sunday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM"
-      ],
-      "businessType": [
-        "cafe",
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "coordinates": {},
-      "keywordMatch": "keyword 'recommended' not found in any reviews via API search.",
-      "matchPercentage": 0.0,
-      "matchReasoning": "This business matches 0.0% of your criteria. It has a good rating of 4.7/5.0. It has 378 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
-      "phone": "0815-1575-8888",
-      "placeName": "Andzero",
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.7/5.0. It has 476 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0821-1688-1683",
+      "placeName": "Aucafe Specialty Coffee",
       "priceRange": "$$",
       "rating": 4.7,
       "reviewCount": 0,
@@ -193,60 +59,16 @@
         "positive": ""
       },
       "strengths": [
-        "High customer satisfaction with a rating of 4.7 out of 5, indicating excellent service and product quality.",
-        "Well-aligned pricing strategy with the target market as indicated by the $$ price range.",
-        "High engagement from customers, as shown by the number of reviews (378), suggesting a strong customer base and repeat patronage."
+        "High Customer Satisfaction: Aucafe Specialty Coffee boasts an impressive rating of 4.7 out of 5, indicating strong overall customer satisfaction.",
+        "High Review Volume: With 476 reviews, the business is well-reviewed, suggesting consistent service and product quality.",
+        "Suitable Price Range: The price range of $$ indicates affordability for customers looking for specialty coffee without premium pricing."
       ],
-      "totalRatings": 378,
+      "totalRatings": 476,
       "weaknesses": [
-        "No detailed reviews provided in the analysis to help understand specific customer concerns or areas of improvement.",
-        "The match percentage is 0.0%, suggesting a potential misalignment with certain non-quantitative criteria or preferences that were not disclosed."
+        "Zero Match Percentage: The business currently does not align with any specific criteria that might be prioritized, possibly indicating a lack of relevance to specific needs or preferences.",
+        "Lack of Review Insights: The absence of sample positive or negative reviews makes it difficult to identify specific areas of strengths or improvement directly from customer feedback."
       ],
-      "website": "https://www.instagram.com/andzero.id/"
-    },
-    {
-      "address": "Jl. Arief Rahman Hakim No.40, Klampis Ngasem, Kec. Sukolilo, Surabaya, Jawa Timur 60117, Indonesia",
-      "businessHours": [
-        "Monday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Tuesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Wednesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Thursday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Friday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Saturday: 9:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Sunday: 9:00\u202fAM\u2009\u2013\u20099:00\u202fPM"
-      ],
-      "businessType": [
-        "cafe",
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "coordinates": {},
-      "keywordMatch": "keyword 'recommended' not found in any reviews via API search.",
-      "matchPercentage": 0.0,
-      "matchReasoning": "This business matches 0.0% of your criteria. It has a good rating of 4.3/5.0. It has 654 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours don't match your jam 10 pagi sampai 6 malam requirement. ",
-      "phone": "(031) 5937373",
-      "placeName": "The Localist Coffee and Bistro Surabaya",
-      "priceRange": "$$",
-      "rating": 4.3,
-      "reviewCount": 0,
-      "reviewSummary": {
-        "negative": "",
-        "positive": ""
-      },
-      "strengths": [
-        "The Localist Coffee and Bistro Surabaya has a strong overall rating of 4.3 out of 5, which indicates a high level of customer satisfaction.",
-        "The establishment meets the minimum requirement for the number of reviews, with a substantial count of 654, suggesting it has a solid customer base and ample feedback to gauge its performance.",
-        "The pricing is within the desired range ($$), which aligns well with target budget preferences and could make it an attractive option for price-sensitive customers."
-      ],
-      "totalRatings": 654,
-      "weaknesses": [
-        "The business hours do not align with the desired operational time frame of 10 AM to 6 PM, which could impact its suitability if those hours are critical.",
-        "There is no match with the specified criteria, with a 0.0% match percentage, suggesting significant misalignment with established preferences or requirements.",
-        "No specific positive or negative reviews have been provided, potentially limiting insights into particular areas of excellence or concern."
-      ],
-      "website": "N/A"
+      "website": "http://instagram.com/aucafe.id"
     },
     {
       "address": "Jl. Klampis Jaya No.144, Klampis Ngasem, Kec. Sukolilo, Surabaya, Jawa Timur 60117, Indonesia",
@@ -268,9 +90,9 @@
         "establishment"
       ],
       "coordinates": {},
-      "keywordMatch": "keyword 'recommended' not found in any reviews via API search.",
-      "matchPercentage": 0.0,
-      "matchReasoning": "This business matches 0.0% of your criteria. It has a good rating of 4.5/5.0. It has 2492 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.5/5.0. It has 2492 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
       "phone": "(031) 5995500",
       "placeName": "Demandailing Cafe & Eatery",
       "priceRange": "$$",
@@ -281,21 +103,2163 @@
         "positive": ""
       },
       "strengths": [
-        "High customer satisfaction is evident from the strong rating of 4.5 out of 5 based on a large sample size of 2492 reviews, indicating consistent quality.",
-        "The business is price-competitive within its category, meeting your specified price range of $$.",
-        "Operational hours align well with your criteria of 10 AM to 6 PM, ensuring convenient accessibility for target customers."
+        "Based on available reviews"
       ],
       "totalRatings": 2492,
       "weaknesses": [
-        "The match percentage is 0.0%, indicating that while it meets specific individual criteria, it may lack alignment with overall strategic fit or other qualitative factors (not specified in the input).",
-        "Without insights from sample reviews, both positive and negative, there is a lack of qualitative data to further assess potential issues or unique selling propositions."
+        "Insufficient data for detailed analysis"
       ],
       "website": "https://www.instagram.com/demandailingcafe"
+    },
+    {
+      "address": "Jl. Manyar Kertoarjo No.75, Mojo, Kec. Gubeng, Surabaya, Jawa Timur 60116, Indonesia",
+      "businessHours": [
+        "Monday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.7/5.0. It has 1037 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0851-7963-9729",
+      "placeName": "PAPER CUP COFFEE MANYAR",
+      "priceRange": "$$",
+      "rating": 4.7,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High customer satisfaction with a 4.7/5 rating based on 1037 reviews, indicating a strong reputation and customer approval.",
+        "Affordable pricing with a $$ range, making it accessible for a wide customer segment looking for quality without premium prices.",
+        "Convenient operating hours that match specific customer needs, such as opening at 10 AM and closing at 6 PM, which likely aligns with customer demand for cafes."
+      ],
+      "totalRatings": 1037,
+      "weaknesses": [
+        "Lack of specific keyword matches in reviews, indicating that the business may not actively promote or highlight unique selling propositions corresponding to search criteria.",
+        "Absence of sample negative reviews makes it difficult to assess potential areas needing improvement from a customer feedback perspective.",
+        "A 0% match percentage suggests that the business may not be adequately catering to specific set criteria, possibly missing niche market opportunities."
+      ],
+      "website": "N/A"
+    },
+    {
+      "address": "Dharmahusada Indah Timur RR22, Mulyorejo, Kec. Mulyorejo, Surabaya, Jawa Timur 60115, Indonesia",
+      "businessHours": [
+        "Monday: 8:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Tuesday: 8:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Wednesday: 8:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Thursday: 8:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Friday: 8:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Saturday: 8:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Sunday: 8:00\u202fAM\u2009\u2013\u200912:00\u202fAM"
+      ],
+      "businessType": [
+        "store",
+        "cafe",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.7/5.0. It has 1052 reviews, meeting your minimum requirement. Its price range () doesn't match your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "N/A",
+      "placeName": "Second Cup Coffee",
+      "priceRange": null,
+      "rating": 4.7,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High customer satisfaction: With a rating of 4.7 out of 5 from 1052 reviews, this business enjoys a high level of customer satisfaction, indicating consistent quality and service.",
+        "Positive reputation: The store has accumulated over 1000 reviews, indicating a sizable customer base and strong community presence.",
+        "Convenient hours: The business operates within the specified business hours requirement (10 AM to 6 PM), making it potentially convenient for target customers."
+      ],
+      "totalRatings": 1052,
+      "weaknesses": [
+        "Lack of keyword relevance: The business currently matches 0% of the specified keyword criteria, indicating a potential lack of alignment with certain target customer expectations or marketing needs.",
+        "Undefined price range: The absence of a clearly defined price range could lead to confusion among customers who prioritize cost when choosing where to dine or have coffee.",
+        "Insufficient review insights: The absence of sample positive and negative reviews might lack qualitative feedback necessary to make informed decisions about the quality and service aspects."
+      ],
+      "website": "https://www.instagram.com/secondcup.sby"
+    },
+    {
+      "address": "Jl. Raya Dharma Husada Indah No.4 (A-8, Mojo, Kec. Gubeng, Surabaya, Jawa Timur 60285, Indonesia",
+      "businessHours": [
+        "Monday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.6/5.0. It has 822 reviews, meeting your minimum requirement. Its price range () doesn't match your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0859-5485-9984",
+      "placeName": "Borre Cafe",
+      "priceRange": null,
+      "rating": 4.6,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High customer satisfaction indicated by a 4.6 out of 5 rating from 822 reviews.",
+        "Large number of reviews suggests a well-established reputation and customer base.",
+        "Business hours align perfectly with specific requested criteria (operating from 10 AM to 6 PM)."
+      ],
+      "totalRatings": 822,
+      "weaknesses": [
+        "Price range details are absent, implying uncertainty about affordability and potential misalignment with budgetary criteria.",
+        "Zero match percentage with specified criteria might suggest a limited initial fit based on predefined attributes or keywords.",
+        "Lack of detailed positive or negative reviews results in uncertain understanding of customer sentiment beyond numerical ratings."
+      ],
+      "website": "N/A"
+    },
+    {
+      "address": "Jl. Arief Rahman Hakim No.40, Klampis Ngasem, Kec. Sukolilo, Surabaya, Jawa Timur 60117, Indonesia",
+      "businessHours": [
+        "Monday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Tuesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Wednesday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Thursday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Friday: 11:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Saturday: 9:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Sunday: 9:00\u202fAM\u2009\u2013\u20099:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.3/5.0. It has 654 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours don't match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "(031) 5937373",
+      "placeName": "The Localist Coffee and Bistro Surabaya",
+      "priceRange": "$$",
+      "rating": 4.3,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "The Localist Coffee and Bistro Surabaya has a strong customer satisfaction evidenced by a high rating of 4.3 out of 5 from 654 reviews.",
+        "The establishment offers a moderate price range ($$), making it accessible to a broad customer base without being perceived as overly expensive."
+      ],
+      "totalRatings": 654,
+      "weaknesses": [
+        "The business hours do not align with the specified criteria of operating from 10 AM to 6 PM, potentially limiting its suitability for certain customer segments looking for service during these hours.",
+        "The match percentage for keywords and criteria is 0%, suggesting a lack of targeted relevance or unique propositions that align with the specified needs."
+      ],
+      "website": "N/A"
+    },
+    {
+      "address": "@Clubhouse Grand Peninsula, Mapan, Jl. Sutorejo Barat, Mulyorejo, Kec. Mulyorejo, Surabaya, Jawa Timur 60112, Indonesia",
+      "businessHours": [
+        "Monday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Tuesday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Wednesday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Thursday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Friday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Saturday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Sunday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.7/5.0. It has 411 reviews, meeting your minimum requirement. Its price range () doesn't match your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0823-3256-8086",
+      "placeName": "Lot#1 coffee Bar",
+      "priceRange": null,
+      "rating": 4.7,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High customer satisfaction rating of 4.7 out of 5 indicates strong positive customer experiences.",
+        "Substantial number of reviews (411), suggesting the cafe is well-established and popular among its patrons.",
+        "Business hours align with customer's preferred time frame of 10 AM to 6 PM, indicating potential convenience for target clientele."
+      ],
+      "totalRatings": 411,
+      "weaknesses": [
+        "The price range is unspecified, and it does not align with the customer's criteria, which may indicate pricing issues or lack of transparency.",
+        "No keywords matching with the customer's criteria were found in the reviews, implying potential misalignment with customer's expectations or interests."
+      ],
+      "website": "N/A"
+    },
+    {
+      "address": "Jl. Kertajaya No.78, Kertajaya, Kec. Gubeng, Surabaya, Jawa Timur 60282, Indonesia",
+      "businessHours": [
+        "Monday: Open 24 hours",
+        "Tuesday: Open 24 hours",
+        "Wednesday: Open 24 hours",
+        "Thursday: Open 24 hours",
+        "Friday: Open 24 hours",
+        "Saturday: Open 24 hours",
+        "Sunday: Open 24 hours"
+      ],
+      "businessType": [
+        "store",
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.6/5.0. It has 70 reviews, meeting your minimum requirement. Its price range () doesn't match your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0812-3426-0168",
+      "placeName": "TETRA Coffee & Eatery - Surabaya",
+      "priceRange": null,
+      "rating": 4.6,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High customer satisfaction, reflected in a solid rating of 4.6 out of 5 from 70 reviews.",
+        "The business hours align well with the desired operating times, from 10 AM to 6 PM.",
+        "As a food-related establishment that includes both a cafe and eatery, it has a broad appeal to diverse customer base."
+      ],
+      "totalRatings": 70,
+      "weaknesses": [
+        "The business does not match any provided keyword criteria, resulting in a 0% match percentage.",
+        "Price range details are unspecified, which could be a deterrent for customers who are sensitive to budget constraints.",
+        "Sample reviews, both positive and negative, are missing, which limits the analysis of specific customer feedback."
+      ],
+      "website": "N/A"
+    },
+    {
+      "address": "Jl. Manyar Jaya No.2e, Menur Pumpungan, Kec. Sukolilo, Surabaya, Jawa Timur 60118, Indonesia",
+      "businessHours": [
+        "Monday: 8:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Tuesday: 8:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Wednesday: 8:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Thursday: 8:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Friday: 8:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Saturday: 7:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.6/5.0. It has 593 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours don't match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0812-6001-0910",
+      "placeName": "Eicy Cafe",
+      "priceRange": "$$",
+      "rating": 4.6,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High customer satisfaction with a rating of 4.6/5 from 593 reviews, indicating a strong reputation among customers.",
+        "Affordable pricing with a price range noted as $$, meeting criteria for budget-conscious consumers."
+      ],
+      "totalRatings": 593,
+      "weaknesses": [
+        "Mismatch in business hours, which do not align with preferred operating hours of 10 AM to 6 PM.",
+        "No identified keyword match in reviews, suggesting potential misalignment with specific search criteria or lack of targeted marketing keywords."
+      ],
+      "website": "N/A"
+    },
+    {
+      "address": "Oakwood Hotel & Residence Surabaya, Jl. Raya Kertajaya Indah No.79, Manyar Sabrangan, Mulyorejo, Surabaya, East Java 60116, Indonesia",
+      "businessHours": [
+        "Monday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Tuesday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Wednesday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Thursday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Friday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Saturday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Sunday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "night_club",
+        "bar",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.6/5.0. It has 109 reviews, meeting your minimum requirement. Its price range () doesn't match your criteria. Its business hours don't match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "(031) 2880388",
+      "placeName": "Deckside Lounge & Cafe",
+      "priceRange": null,
+      "rating": 4.6,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High customer rating with an average of 4.6 out of 5, suggesting overall customer satisfaction.",
+        "A diverse business type encompassing a cafe, bar, and nightclub, which can attract a wide range of customers and function in various business segments.",
+        "An adequate volume of reviews (109), indicating decent customer engagement and reliability of the rating."
+      ],
+      "totalRatings": 109,
+      "weaknesses": [
+        "Match percentage is at 0%, indicating the business doesn't align with specific search criteria.",
+        "The absence of a defined price range can make it challenging for customers to assess affordability, impacting decision-making.",
+        "Operating hours don't align with certain potential customer demands, particularly those preferring daytime visits."
+      ],
+      "website": "N/A"
+    },
+    {
+      "address": "Jl. Manyar Kertoarjo IV No.8, Mojo, Kec. Gubeng, Surabaya, Jawa Timur 60285, Indonesia",
+      "businessHours": [
+        "Monday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 7:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: 7:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.5/5.0. It has 396 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0812-3446-0168",
+      "placeName": "Kosaku Coffee Lab",
+      "priceRange": "$$",
+      "rating": 4.5,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "Kosaku Coffee Lab has an excellent customer rating of 4.5 out of 5 based on 396 reviews, indicating high customer satisfaction.",
+        "The business hours (10 AM to 6 PM) align with your specified requirements, ensuring customers can visit during preferred times.",
+        "The price range of $$ fits within your budget expectations, making it financially accessible for prospective clientele."
+      ],
+      "totalRatings": 396,
+      "weaknesses": [
+        "The match percentage is 0%, suggesting that the business does not align with specific keyword criteria possibly due to the absence of keyword mentions in the reviews.",
+        "There are no sample reviews available, making it difficult to analyze specific areas of improvements or customer pain points through textual feedback.",
+        "The analysis lacks detailed information about the type of food and services offered, making it hard to assess product variety or uniqueness."
+      ],
+      "website": "https://www.instagram.com/kosakucoffee"
+    },
+    {
+      "address": "Jl. Nginden Intan Raya No.39, Nginden Jangkungan, Kec. Sukolilo, Surabaya, Jawa Timur 60118, Indonesia",
+      "businessHours": [
+        "Monday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Tuesday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Wednesday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Thursday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Friday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Saturday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Sunday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.7/5.0. It has 377 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0815-1575-8888",
+      "placeName": "Andzero",
+      "priceRange": "$$",
+      "rating": 4.7,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High customer satisfaction with a rating of 4.7 out of 5 based on 377 reviews, indicating overall positive feedback.",
+        "The price range of $$ is attractive, suggesting good value for the quality offered.",
+        "Business hours align with the specified requirement of operation from 10 AM to 6 PM, providing convenience."
+      ],
+      "totalRatings": 377,
+      "weaknesses": [
+        "No sample reviews provided, making it difficult to gain detailed insight into customer perspectives.",
+        "The match percentage is 0%, indicating that the specific criteria or keywords you are looking for are not evident in the reviews.",
+        "Lack of keyword matches might suggest potential areas of misalignment with your specific preferences or search criteria."
+      ],
+      "website": "https://www.instagram.com/andzero.id/"
+    },
+    {
+      "address": "Jl. Pandan No.5, Ketabang, Kec. Genteng, Surabaya, Jawa Timur 60272, Indonesia",
+      "businessHours": [
+        "Monday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.4/5.0. It has 595 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "N/A",
+      "placeName": "Mawu Cafe",
+      "priceRange": "$$",
+      "rating": 4.4,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High customer satisfaction: Mawu Cafe has a solid rating of 4.4 out of 5, based on 595 reviews, indicating a strong customer approval.",
+        "Affordable pricing: The price range of $$ suggests that the cafe provides good value for money, appealing to budget-conscious customers.",
+        "Convenient business hours: Operating hours from 10 AM to 6 PM align well with typical customer availability for cafes, enhancing potential foot traffic."
+      ],
+      "totalRatings": 595,
+      "weaknesses": [
+        "No keyword alignment: The 0% match percentage suggests that the business may not currently align well with specific search criteria or niche expectations.",
+        "Lack of review insights: No specific samples of positive or negative reviews were provided, limiting the ability to understand detailed customer perceptions or areas of improvement.",
+        "Potential target audience mismatch: Since keywords or specific criteria did not match, it might indicate a misalignment with the intended target audience or market segment."
+      ],
+      "website": "N/A"
+    },
+    {
+      "address": "Jl. Gubeng Kertajaya IX Raya C Raya No.23, Airlangga, Kec. Gubeng, Surabaya, Jawa Timur 60286, Indonesia",
+      "businessHours": [
+        "Monday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.6/5.0. It has 223 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0823-1207-7948",
+      "placeName": "MADANI CAFE SURABAYA",
+      "priceRange": "$$",
+      "rating": 4.6,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High customer satisfaction indicated by a strong rating of 4.6 out of 5 from 223 reviews.",
+        "Affordably priced within the $$ range, appealing to a broad customer base.",
+        "Operating hours align with the required timeframe of 10 AM to 6 PM, offering convenience to potential customers."
+      ],
+      "totalRatings": 223,
+      "weaknesses": [
+        "No specific matching keywords found in reviews that align with unique preferences or criteria, leading to a match percentage of 0%.",
+        "Lack of sample reviews suggests a need for more detailed customer feedback analytics.",
+        "Potential gap in marketing strategy if not properly addressing or highlighting unique selling points according to set criteria."
+      ],
+      "website": "N/A"
+    },
+    {
+      "address": "PQV2+2R8, Jl. Ketabang Kali No.53, Ketabang, Kec. Genteng, Surabaya, Jawa Timur 60272, Indonesia",
+      "businessHours": [
+        "Monday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Tuesday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Wednesday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Thursday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Friday: 10:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Saturday: 10:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Sunday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.7/5.0. It has 1098 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0817-328-080",
+      "placeName": "Sambang Cafe & Eatery",
+      "priceRange": "$$",
+      "rating": 4.7,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High customer satisfaction with a strong rating of 4.7 out of 5 from 1098 reviews, indicating consistent quality and service.",
+        "The business meets operational hours criteria, open from 10 AM to 6 PM, which aligns well with certain customer segments or operational needs.",
+        "Price range ($$) aligns with moderate spending consumers, potentially appealing to a wide customer base that seeks value."
+      ],
+      "totalRatings": 1098,
+      "weaknesses": [
+        "The match percentage is 0%, indicating that the business might not align with specific criteria or keywords important to targeted marketing or customer segments.",
+        "Lack of accessible sample reviews makes it difficult to assess specific strengths and weaknesses based on customer feedback."
+      ],
+      "website": "N/A"
+    },
+    {
+      "address": "Jl. Jawa No.41, Gubeng, Kec. Gubeng, Surabaya, Jawa Timur 60281, Indonesia",
+      "businessHours": [
+        "Monday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.4/5.0. It has 355 reviews, meeting your minimum requirement. Its price range () doesn't match your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0817-0311-2860",
+      "placeName": "TENTWO Coffee & Kindness",
+      "priceRange": null,
+      "rating": 4.4,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "totalRatings": 355,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ],
+      "website": "https://instagram.com/tentwocoffee?igshid=1us3vfcjn4hnw"
+    },
+    {
+      "address": "Jl. Kaliwaron No.2, Mojo, Kec. Gubeng, Surabaya, Jawa Timur 60285, Indonesia",
+      "businessHours": [
+        "Monday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Saturday: 11:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Sunday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.7/5.0. It has 434 reviews, meeting your minimum requirement. Its price range () doesn't match your criteria. Its business hours don't match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0813-2320-0065",
+      "placeName": "De'Oasis Cafe Eatery",
+      "priceRange": null,
+      "rating": 4.7,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High average rating: De'Oasis Cafe Eatery boasts an excellent average rating of 4.7 out of 5, indicating strong customer satisfaction.",
+        "Substantial number of reviews: With 434 reviews, this cafe has a substantial customer base that provides insights into consistent performance and popularity."
+      ],
+      "totalRatings": 434,
+      "weaknesses": [
+        "Mismatch in business hours: The operational hours do not align with the requirement of 10 AM to 6 PM, potentially reducing its suitability for specific customer needs.",
+        "Keywords not aligned: The business does not meet any specified match criteria, indicating that it might not serve or align with particular sought-after features or attributes."
+      ],
+      "website": "N/A"
+    },
+    {
+      "address": "Jl. Sumatera No.40, Gubeng, Kec. Gubeng, Surabaya, Jawa Timur 60281, Indonesia",
+      "businessHours": [
+        "Monday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Tuesday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Wednesday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Thursday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Friday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Saturday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Sunday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.4/5.0. It has 1941 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "(031) 5033003",
+      "placeName": "Historica",
+      "priceRange": "$$",
+      "rating": 4.4,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "Historica has a strong average rating of 4.4 out of 5, indicating high customer satisfaction.",
+        "The business has a substantial number of reviews (1941), reflecting a well-established presence in the market.",
+        "The price range of $$ aligns with moderate pricing expectations, appealing to a broad range of customers."
+      ],
+      "totalRatings": 1941,
+      "weaknesses": [
+        "The match percentage is 0%, indicating that the business does not align with specific criteria or keywords you're seeking.",
+        "There is no qualitative data available from sample reviews, limiting insight into specific customer experiences.",
+        "The business fails to stand out in niche areas or specific criteria that are important to you, which could affect its appeal as a lead."
+      ],
+      "website": "http://www.society.co.id/"
+    },
+    {
+      "address": "Jl. Ngagel Jaya Utara No.16, Pucang Sewu, Kec. Gubeng, Surabaya, Jawa Timur 60283, Indonesia",
+      "businessHours": [
+        "Monday: 10:00\u202fAM\u2009\u2013\u20092:00\u202fAM",
+        "Tuesday: 10:00\u202fAM\u2009\u2013\u20092:00\u202fAM",
+        "Wednesday: 10:00\u202fAM\u2009\u2013\u20092:00\u202fAM",
+        "Thursday: 10:00\u202fAM\u2009\u2013\u20092:00\u202fAM",
+        "Friday: 10:00\u202fAM\u2009\u2013\u20092:00\u202fAM",
+        "Saturday: 8:00\u202fAM\u2009\u2013\u20092:00\u202fAM",
+        "Sunday: 8:00\u202fAM\u2009\u2013\u20092:00\u202fAM"
+      ],
+      "businessType": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.9/5.0. It has 883 reviews, meeting your minimum requirement. Its price range () doesn't match your criteria. Its business hours don't match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0812-3415-3064",
+      "placeName": "GNZA 100 - Coffee & Bakery by Fifteenth",
+      "priceRange": null,
+      "rating": 4.9,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "Exceptional overall rating of 4.9 out of 5, indicating high customer satisfaction.",
+        "Large number of reviews (883), suggesting the business is well-established and likely has a reliable customer base.",
+        "Identified as a point of interest, which could imply a popular or unique offering that attracts visitors."
+      ],
+      "totalRatings": 883,
+      "weaknesses": [
+        "No price range information provided, making it difficult to evaluate affordability or match with budget criteria.",
+        "Does not match time availability criteria (10 AM to 6 PM), possibly limiting certain customer visits.",
+        "Lack of keyword matches and negative reviews data, which makes it challenging to understand specific areas of improvement needed."
+      ],
+      "website": "https://www.instagram.com/gnza.100/"
+    },
+    {
+      "address": "Jl. Gubeng Masjid, Pacar Keling, Kec. Tambaksari, Surabaya, Jawa Timur 60131, Indonesia",
+      "businessHours": [
+        "Monday: 7:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+        "Tuesday: 7:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+        "Wednesday: 7:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+        "Thursday: 7:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+        "Friday: 7:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+        "Saturday: 7:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+        "Sunday: 7:00\u202fAM\u2009\u2013\u20098:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.7/5.0. It has 180 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "N/A",
+      "placeName": "LOKO CAFE STASIUN GUBENG",
+      "priceRange": "$$",
+      "rating": 4.7,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "totalRatings": 180,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ],
+      "website": "https://instagram.com/lokocafe?igshid=OTJlNzQ0NWM="
+    },
+    {
+      "address": "Jl. Walikota Mustajab No.67 - 69, Ketabang, Kec. Genteng, Surabaya, Jawa Timur 60272, Indonesia",
+      "businessHours": [
+        "Monday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Sunday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.5/5.0. It has 2104 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0812-2941-8452",
+      "placeName": "Calibre Coffee Roasters",
+      "priceRange": "$$",
+      "rating": 4.5,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High customer satisfaction as evidenced by a strong rating of 4.5 out of 5 from 2104 reviews, indicating a consistently positive experience for a large customer base.",
+        "The price range of $$ suggests affordability while maintaining quality, appealing to a wide variety of customers within the target market seeking good value.",
+        "The business hours, which align with peak times (10 AM to 6 PM), cater effectively to customer convenience during likely high-traffic coffee times."
+      ],
+      "totalRatings": 2104,
+      "weaknesses": [
+        "The absence of keywords in reviews suggests a disconnect between what the business offers and specific customer search criteria, potentially leading to missed opportunities in targeted marketing.",
+        "A match percentage of 0% indicates that the business may not currently fit specific client needs or criteria, calling for deeper analysis into what aspects are out of alignment.",
+        "Lack of provided sample reviews (both positive and negative) prevents a more nuanced understanding of specific customer sentiments and areas for improvement."
+      ],
+      "website": "https://instagram.com/calibrecoffeeroasters"
+    },
+    {
+      "address": "Jl. Slamet No.31 A, Ketabang, Kec. Genteng, Surabaya, Jawa Timur 60272, Indonesia",
+      "businessHours": [
+        "Monday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.9/5.0. It has 846 reviews, meeting your minimum requirement. Its price range () doesn't match your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0852-8088-8579",
+      "placeName": "OL and NU cafe eatery",
+      "priceRange": null,
+      "rating": 4.9,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High customer satisfaction indicated by an excellent average rating of 4.9/5 from 846 reviews.",
+        "Significant number of reviews suggest a well-established customer base and consistent service quality.",
+        "Business hours align perfectly with the specified requirement, operating from 10 AM to 6 PM."
+      ],
+      "totalRatings": 846,
+      "weaknesses": [
+        "Price range is unspecified and does not match specific financial criteria, possibly impacting budget-conscious customers.",
+        "Match Percentage at 0% indicates either a disconnect between the offered services and specific customer needs, or insufficient keyword optimization in reviews.",
+        "Lack of detailed review insights (sample positive and negative reviews) limits understanding of specific operational strengths and weaknesses."
+      ],
+      "website": "N/A"
+    },
+    {
+      "address": "Jalan Emerald Mansion Citraland TN1 No 9, Lidah Kulon, Kec. Lakarsantri, Surabaya, Jawa Timur 60213, Indonesia",
+      "businessHours": [
+        "Monday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+      ],
+      "businessType": [
+        "store",
+        "cafe",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.8/5.0. It has 855 reviews, meeting your minimum requirement. Its price range () doesn't match your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0851-8684-3889",
+      "placeName": "Brew and Else",
+      "priceRange": null,
+      "rating": 4.8,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High customer satisfaction: The business has an excellent rating of 4.8 out of 5 based on 855 reviews, indicating a high level of customer satisfaction.",
+        "Diverse business model: As a store, cafe, restaurant, and point of interest, the business is well-positioned to attract a varied customer base.",
+        "Convenient business hours: The business operates during the desired hours of 10 AM to 6 PM, aligning well with peak customer visitation times."
+      ],
+      "totalRatings": 855,
+      "weaknesses": [
+        "Unspecified price range: The lack of a defined price range may deter price-conscious customers or misalign with targeted customer segments.",
+        "Keywords mismatch: The business profiles poorly against specified criteria, suggesting potential misalignment with the target market's expectations or preferences.",
+        "Lack of review details: The absence of both positive and negative review samples doesn't provide detailed insights into specific customer likes or areas of improvement."
+      ],
+      "website": "http://www.linktr.ee/brewandelse.sby"
+    },
+    {
+      "address": "Jl. Tunjungan No.12, Genteng, Kec. Genteng, Surabaya, Jawa Timur 60275, Indonesia",
+      "businessHours": [
+        "Monday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.8/5.0. It only has 22 reviews, below your minimum of 50. Its price range () doesn't match your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0811-3200-5314",
+      "placeName": "THE KOFFEE Surabaya",
+      "priceRange": null,
+      "rating": 4.8,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High customer satisfaction with a rating of 4.8/5, indicating excellent service and product quality.",
+        "The business hours align exactly with the preferred timeframe of operation, from 10 AM to 6 PM."
+      ],
+      "totalRatings": 22,
+      "weaknesses": [
+        "Low number of reviews (22), which may not provide a reliable representation of customer satisfaction and experience.",
+        "The price range is unspecified, preventing a clear understanding of its affordability and positioning in the market."
+      ],
+      "website": "https://eatdrinkhilton.com/the-koffee-doubletree-surabaya/#/"
+    },
+    {
+      "address": "Jl. Mojopahit No.46, Keputran, Kec. Tegalsari, Surabaya, Jawa Timur 60265, Indonesia",
+      "businessHours": [
+        "Monday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Tuesday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Wednesday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Thursday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Friday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Saturday: 7:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: 7:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.6/5.0. It has 1358 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours don't match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "N/A",
+      "placeName": "Threelogy Coffee",
+      "priceRange": "$$",
+      "rating": 4.6,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "Highly rated with a score of 4.6 out of 5 from 1358 reviews, indicating strong customer satisfaction and quality service.",
+        "Has a broad presence as a cafe, store, food establishment, pointing to diverse potential in attracting various customer demographics.",
+        "Operates in a mid-level price range ($$), which is appealing to a wide audience looking for affordability combined with quality."
+      ],
+      "totalRatings": 1358,
+      "weaknesses": [
+        "No keyword matches found within reviews, suggesting a possible misalignment with specific preferences or expectations defined in the analysis criteria.",
+        "Business hours do not align with the specified preference of 10 AM to 6 PM, which could be problematic for scheduling visits within this timeframe.",
+        "The 0% match percentage indicates that other criteria or aspects yet defined are not currently being met, potentially leading to lower relevance for certain target customer segments."
+      ],
+      "website": "N/A"
+    },
+    {
+      "address": "Jl. Pemuda No.122, RT.001/RW.06, Ketabang, Kec. Genteng, Surabaya, Jawa Timur 60272, Indonesia",
+      "businessHours": [
+        "Monday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+      ],
+      "businessType": [
+        "store",
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.7/5.0. It has 366 reviews, meeting your minimum requirement. Its price range () doesn't match your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0877-7810-3652",
+      "placeName": "wantutu.",
+      "priceRange": null,
+      "rating": 4.7,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High rating of 4.7/5 based on 366 reviews, indicating strong customer satisfaction.",
+        "Wide array of business categories \u2013 store, cafe, food, point_of_interest, establishment \u2013 suggesting a versatile and multi-faceted service offering.",
+        "Operational hours align well with customer preferences, matching the specific requirement of being open from 10 AM to 6 PM."
+      ],
+      "totalRatings": 366,
+      "weaknesses": [
+        "The price range is unspecified, making it difficult to determine if it aligns with customer budget expectations or market standards.",
+        "Current customer reviews lack keyword matches against specific criteria, leading to a 0% match percentage, which suggests potential misalignment with targeted expectations.",
+        "No sample positive or negative reviews provided, limiting insight into customer opinions on specific aspects of the business."
+      ],
+      "website": "http://instagram.com/wantutu.id"
+    },
+    {
+      "address": "Jl. Basuki Rahmat No.23, belakang McD, Kec. Genteng, Surabaya, Jawa Timur 60261, Indonesia",
+      "businessHours": [
+        "Monday: 6:00\u202fAM\u2009\u2013\u200911:55\u202fPM",
+        "Tuesday: 6:00\u202fAM\u2009\u2013\u200911:55\u202fPM",
+        "Wednesday: 6:00\u202fAM\u2009\u2013\u200911:55\u202fPM",
+        "Thursday: 6:00\u202fAM\u2009\u2013\u200911:55\u202fPM",
+        "Friday: 6:00\u202fAM\u2009\u2013\u200911:55\u202fPM",
+        "Saturday: 6:00\u202fAM\u2009\u2013\u200911:55\u202fPM",
+        "Sunday: 6:00\u202fAM\u2009\u2013\u200911:55\u202fPM"
+      ],
+      "businessType": [
+        "store",
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.5/5.0. It has 2210 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0812-3778-7875",
+      "placeName": "Coffee TGC basra",
+      "priceRange": "$$",
+      "rating": 4.5,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High customer satisfaction with a rating of 4.5/5, indicating strong positive reception.",
+        "Large number of reviews (2210) suggests a well-established presence and consistent patronage.",
+        "Price range ($$) aligns with affordability criteria, making it attractive to a broader customer base."
+      ],
+      "totalRatings": 2210,
+      "weaknesses": [
+        "0% match percentage with your specific criteria indicates possible misalignment with target goals.",
+        "Lack of specific keyword alignment in reviews could mean a disconnect with unique value propositions or niche expectations.",
+        "Ambiguity in negative feedback, as there are no sample negative reviews provided for detailed analysis."
+      ],
+      "website": "http://coffeetgc.com/"
+    },
+    {
+      "address": "Jl. Arief Rahman Hakim No.59, Klampis Ngasem, Kec. Sukolilo, Surabaya, Jawa Timur 60117, Indonesia",
+      "businessHours": [
+        "Monday: 9:00\u202fAM\u2009\u2013\u20092:00\u202fAM",
+        "Tuesday: 9:00\u202fAM\u2009\u2013\u20092:00\u202fAM",
+        "Wednesday: 9:00\u202fAM\u2009\u2013\u20092:00\u202fAM",
+        "Thursday: 9:00\u202fAM\u2009\u2013\u20092:00\u202fAM",
+        "Friday: 9:00\u202fAM\u2009\u2013\u20092:00\u202fAM",
+        "Saturday: 9:00\u202fAM\u2009\u2013\u20092:00\u202fAM",
+        "Sunday: 9:00\u202fAM\u2009\u2013\u20092:00\u202fAM"
+      ],
+      "businessType": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.5/5.0. It has 418 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0851-7958-9588",
+      "placeName": "Kogu Space",
+      "priceRange": "$$",
+      "rating": 4.5,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "totalRatings": 418,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ],
+      "website": "N/A"
+    },
+    {
+      "address": "Jl. Untung Suropati No.83, DR. Soetomo, Kec. Tegalsari, Surabaya, Jawa Timur 60264, Indonesia",
+      "businessHours": [
+        "Monday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 1:00\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: Closed"
+      ],
+      "businessType": [
+        "cafe",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.6/5.0. It has 2637 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0811-3488-383",
+      "placeName": "Carpentier Kitchen",
+      "priceRange": "$$",
+      "rating": 4.6,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "totalRatings": 2637,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ],
+      "website": "https://www.instagram.com/carpentierkitchen"
+    },
+    {
+      "address": "Jl. Dharmahusada No.134, Mojo, Kec. Gubeng, Surabaya, Jawa Timur 60258, Indonesia",
+      "businessHours": [
+        "Monday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.8/5.0. It has 708 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0813-9988-8134",
+      "placeName": "Kawan Seduh Coffee",
+      "priceRange": "$$",
+      "rating": 4.8,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High customer satisfaction evidenced by a strong rating of 4.8 out of 5 from 708 reviews, indicating overall positive customer experience.",
+        "Meets both pricing and business hours criteria, with its price range ($$) and operational hours (10 AM to 6 PM), aligning well with potential consumer preferences.",
+        "Diverse business type offering multiple consumer experiences (cafe, store, food, point of interest) which increases foot traffic and overall appeal."
+      ],
+      "totalRatings": 708,
+      "weaknesses": [
+        "Match percentage is 0%, suggesting that none of the key criteria were found in existing reviews, potentially indicating a disconnection between consumer perceptions and the criteria set.",
+        "Absence of sample reviews for qualitative analysis could hinder deeper insight into specific customer pain points or areas for improvement.",
+        "Lack of keywords in customer feedback could suggest the business is not effectively communicating or highlighting its unique selling points."
+      ],
+      "website": "https://www.instagram.com/kawanseduh?igsh=OGxqZ24yZmc4N3k0"
+    },
+    {
+      "address": "Jl. Dr. Ir. H. Soekarno MERR No.168, Kalijudan, Kec. Mulyorejo, Surabaya, Jawa Timur 60114, Indonesia",
+      "businessHours": [
+        "Monday: 8:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Tuesday: 8:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Wednesday: 8:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Thursday: 8:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Friday: 8:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Saturday: 8:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Sunday: 8:00\u202fAM\u2009\u2013\u200911:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.6/5.0. It has 502 reviews, meeting your minimum requirement. Its price range () doesn't match your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0878-4437-4845",
+      "placeName": "SM\u00c9STA Coffee & Dining",
+      "priceRange": null,
+      "rating": 4.6,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High customer satisfaction as indicated by a strong rating of 4.6 out of 5 based on 502 reviews.",
+        "The business meets the operational hours requirement from 10 AM to 6 PM, aligning with your criteria."
+      ],
+      "totalRatings": 502,
+      "weaknesses": [
+        "The match percentage is 0%, indicating that the business's offerings or characteristics do not align with specified criteria.",
+        "The price range is unspecified and does not match the required criteria, indicating a potential misalignment with budget expectations."
+      ],
+      "website": "N/A"
+    },
+    {
+      "address": "Jl. Dharmahusada Utara No.11, RT.007/RW.02, Mojo, Kec. Gubeng, Surabaya, Jawa Timur 60285, Indonesia",
+      "businessHours": [
+        "Monday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Tuesday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Wednesday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Thursday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Friday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Saturday: 9:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Sunday: 7:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.7/5.0. It has 386 reviews, meeting your minimum requirement. Its price range () doesn't match your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0852-3483-7087",
+      "placeName": "KOPI BUJEND",
+      "priceRange": null,
+      "rating": 4.7,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High customer satisfaction indicated by a strong rating of 4.7 out of 5 based on 386 reviews.",
+        "The business hours align well with specified preferences, making it conveniently accessible from 10 AM to 6 PM.",
+        "Appears to have a broad offering as it is categorized as a cafe, store, food establishment, and point of interest, which may attract diverse customer groups."
+      ],
+      "totalRatings": 386,
+      "weaknesses": [
+        "The business has a Match Percentage of 0%, indicating it does not meet specific keyword criteria, which might limit its relevance to targeted searches or preferences.",
+        "Lack of detailed information on price range could hinder potential customers in evaluating affordability and value.",
+        "Absence of sample positive and negative reviews restricts the ability to assess specific strengths or areas of improvement from customer feedback."
+      ],
+      "website": "https://instagram.com/kopibujend?igshid=YmMyMTA2M2Y="
+    },
+    {
+      "address": "Jl. Dharmahusada Indah I No.37, Mulyorejo, Kec. Mulyorejo, Surabaya, Jawa Timur 60115, Indonesia",
+      "businessHours": [
+        "Monday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.7/5.0. It has 332 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0853-3685-9222",
+      "placeName": "Foresthree Coffee - Dharmahusada Indah 1",
+      "priceRange": "$$",
+      "rating": 4.7,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High customer satisfaction with a 4.7 out of 5 rating from 332 reviews, indicating consistent positive experiences amongst a substantial number of customers.",
+        "Affordable price range ($$), which aligns well with the target market seeking budget-friendly yet quality options.",
+        "Convenient business hours that meet specific criteria (10 AM to 6 PM), ensuring accessibility during key periods for potential customers."
+      ],
+      "totalRatings": 332,
+      "weaknesses": [
+        "0% match percentage in terms of keywords from reviews, suggesting possible gaps in perceived value propositions or alignment with specified criteria.",
+        "Lack of detailed feedback in the form of sample reviews makes it challenging to pinpoint specific areas for improvement or further align services/products with customer expectations.",
+        "The dual identity as both a cafe and store may dilute brand focus or create ambiguity in customer expectations and experiences."
+      ],
+      "website": "N/A"
+    },
+    {
+      "address": "Jl. Kenjeran No.546, Kalijudan, Kec. Mulyorejo, Surabaya, Jawa Timur 60114, Indonesia",
+      "businessHours": [
+        "Monday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.7/5.0. It has 962 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0878-5554-6387",
+      "placeName": "Kafe 27 Kenjeran",
+      "priceRange": "$$",
+      "rating": 4.7,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High customer satisfaction with a rating of 4.7 out of 5 from 962 reviews, suggesting consistently positive customer experiences.",
+        "Price range ($$) is appealing and aligns with common customer expectations for a caf\u00e9, suggesting good value for the offerings.",
+        "Business operates within your specified hours (10 AM to 6 PM), indicating it can match customer time preferences and availability."
+      ],
+      "totalRatings": 962,
+      "weaknesses": [
+        "0% match percentage due to keywords not found in reviews, suggesting a potential issue with keyword optimization or a mismatch with specified business criteria.",
+        "Lack of available positive and negative reviews samples, which may make it challenging to understand specific customer sentiments and potential areas for improvement.",
+        "While the high rating is a strength, the absence of detailed reviews might limit the understanding of specific aspects that could be further enhanced or marketing strategies that could be leveraged."
+      ],
+      "website": "N/A"
+    },
+    {
+      "address": "Jl. Tunjungan No.39, Genteng, Kec. Genteng, Surabaya, Jawa Timur 60275, Indonesia",
+      "businessHours": [
+        "Monday: 10:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Tuesday: 10:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Wednesday: 10:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Thursday: 10:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Friday: 10:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Saturday: 10:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Sunday: 10:00\u202fAM\u2009\u2013\u200912:00\u202fAM"
+      ],
+      "businessType": [
+        "cafe",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.7/5.0. It has 2507 reviews, meeting your minimum requirement. Its price range () doesn't match your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0811-3351-166",
+      "placeName": "Loca\u0101hands Tunjungan",
+      "priceRange": null,
+      "rating": 4.7,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High Customer Satisfaction: The cafe has a strong rating of 4.7 out of 5 based on 2507 reviews, indicating a high level of customer satisfaction.",
+        "High Volume of Reviews: A significant number of reviews suggest that the business is popular and well-frequented.",
+        "Business Hours: The operating hours of 10 AM to 6 PM align with potential customer requirements, enhancing accessibility during key hours."
+      ],
+      "totalRatings": 2507,
+      "weaknesses": [
+        "Price Range Information: There is a lack of specific information regarding the price range, making it difficult to assess affordability.",
+        "Mismatch with Criteria: The business has a 0% match with identified criteria, which could indicate divergence from specific expectations or requirements.",
+        "Lack of Review Specifics: The absence of detailed positive and negative reviews offers limited insights into specific strengths and weaknesses."
+      ],
+      "website": "http://locaahands.com/"
+    },
+    {
+      "address": "Jl. Srikana No.144, Airlangga, Kec. Gubeng, Surabaya, Jawa Timur 60286, Indonesia",
+      "businessHours": [
+        "Monday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Tuesday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Wednesday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Thursday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Friday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Saturday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Sunday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "restaurant",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.8/5.0. It has 176 reviews, meeting your minimum requirement. Its price range ($) doesn't match your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0812-2666-6080",
+      "placeName": "Rumah Keena",
+      "priceRange": "$",
+      "rating": 4.8,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High customer satisfaction is evident with a 4.8/5 rating across 176 reviews, indicating a well-received customer experience.",
+        "The business operates within required hours (10 AM to 6 PM), which matches potential operational hours when they can attract customers.",
+        "Affordable price range ($), making it accessible to a wide range of customers who are seeking value for money."
+      ],
+      "totalRatings": 176,
+      "weaknesses": [
+        "Match Percentage is 0%, suggesting there might be a gap between customer expectations based on keywords and what the business currently offers or promotes.",
+        "The price range does not align with higher spending customers who might seek premium options, potentially limiting market segment reach.",
+        "Lack of specific positive or negative review highlights in the analysis may indicate a need for detailed feedback to understand operational specifics and areas for improvement."
+      ],
+      "website": "http://taplink.cc/rumahkeena"
+    },
+    {
+      "address": "No Jl. Imam Bonjol No.21, DR. Soetomo, Kec. Tegalsari, Surabaya, Jawa Timur 60264, Indonesia",
+      "businessHours": [
+        "Monday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: 6:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.7/5.0. It has 914 reviews, meeting your minimum requirement. Its price range () doesn't match your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0811-3291-121",
+      "placeName": "Blue Doors Surabaya",
+      "priceRange": null,
+      "rating": 4.7,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "totalRatings": 914,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ],
+      "website": "N/A"
+    },
+    {
+      "address": "Jl. Klampis Ngasem IV No.39, Klampis Ngasem, Kec. Sukolilo, Surabaya, Jawa Timur 60117, Indonesia",
+      "businessHours": [
+        "Monday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.5/5.0. It has 401 reviews, meeting your minimum requirement. Its price range ($) doesn't match your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0812-3404-6606",
+      "placeName": "Konoae Warung A La Cafe, Klampis Ngasem",
+      "priceRange": "$",
+      "rating": 4.5,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High customer satisfaction with a rating of 4.5/5 based on 401 reviews, indicating consistent quality in customer service or product offering.",
+        "Affordability in pricing, as indicated by a price range of $, which could attract cost-conscious customers.",
+        "Business hours align with the required time frame of 10 AM to 6 PM, meeting specific operational criteria."
+      ],
+      "totalRatings": 401,
+      "weaknesses": [
+        "No match on specific criteria keywords, suggesting potential gaps in marketing, branding, or relevancy for particular customer needs.",
+        "Low match percentage (0%) indicates that the business does not currently meet specialized or niche criteria, possibly limiting targeted customer engagement.",
+        "The limited information on sample positive and negative reviews could hinder a deeper understanding of customer sentiment and areas for improvement."
+      ],
+      "website": "https://linktr.ee/konoae.sby"
+    },
+    {
+      "address": "Jl. Embong Tanjung No.33, Embong Kaliasin, Kec. Genteng, Surabaya, Jawa Timur 60271, Indonesia",
+      "businessHours": [
+        "Monday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.7/5.0. It has 317 reviews, meeting your minimum requirement. Its price range () doesn't match your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "N/A",
+      "placeName": "Greenstones Coffee",
+      "priceRange": null,
+      "rating": 4.7,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High customer satisfaction indicated by a strong rating of 4.7 out of 5.",
+        "A substantial number of reviews, which suggests the cafe has a steady stream of customers and a well-established presence.",
+        "Operating hours align well with target customer preferences (10 AM to 6 PM), likely capturing mid-day traffic."
+      ],
+      "totalRatings": 317,
+      "weaknesses": [
+        "No keywords from reviews match criteria, which may indicate a disconnect between customer feedback and the specific criteria sought.",
+        "Price range information is missing or not compatible with the criteria, making financial alignment uncertain.",
+        "0% match percentage suggests that the business may not directly align with specific search or partnership criteria."
+      ],
+      "website": "N/A"
+    },
+    {
+      "address": "Jl. Opak No.56, Darmo, Kec. Wonokromo, Surabaya, Jawa Timur 60261, Indonesia",
+      "businessHours": [
+        "Monday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+      ],
+      "businessType": [
+        "florist",
+        "cafe",
+        "home_goods_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.6/5.0. It has 1164 reviews, meeting your minimum requirement. Its price range ($$$) doesn't match your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0821-4291-0990",
+      "placeName": "ONNI House Surabaya",
+      "priceRange": "$$$",
+      "rating": 4.6,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "totalRatings": 1164,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ],
+      "website": "http://www.onni.co.id/"
+    },
+    {
+      "address": "Jl. Cempaka Jl. Raya Kendalsari No.2, Tegalsari, Kec. Tegalsari, Surabaya, Jawa Timur 60262, Indonesia",
+      "businessHours": [
+        "Monday: Open 24 hours",
+        "Tuesday: Open 24 hours",
+        "Wednesday: Open 24 hours",
+        "Thursday: Open 24 hours",
+        "Friday: Open 24 hours",
+        "Saturday: Open 24 hours",
+        "Sunday: Open 24 hours"
+      ],
+      "businessType": [
+        "cafe",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.5/5.0. It has 154 reviews, meeting your minimum requirement. Its price range () doesn't match your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0823-3843-2977",
+      "placeName": "Cw Coffee & Eatery Surabaya",
+      "priceRange": null,
+      "rating": 4.5,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "The business has a strong overall rating of 4.5 out of 5, indicating high customer satisfaction.",
+        "It has a significant number of reviews (154), suggesting it is relatively well-established and frequented by customers."
+      ],
+      "totalRatings": 154,
+      "weaknesses": [
+        "The price range is unclear, and it does not appear to match specific pricing criteria, which might impact budgeting decisions.",
+        "The match percentage of keywords from reviews is 0%, indicating a possible disconnect between the business offerings and specific consumer interests or expectations specified in criteria."
+      ],
+      "website": "N/A"
+    },
+    {
+      "address": "Jl. Kalimantan No.20, Gubeng, Kec. Gubeng, Surabaya, Jawa Timur 60281, Indonesia",
+      "businessHours": [
+        "Monday: 9:00\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Tuesday: 9:00\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Wednesday: 9:00\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Thursday: 9:00\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Friday: 9:00\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Saturday: 9:00\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Sunday: Closed"
+      ],
+      "businessType": [
+        "store",
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.8/5.0. It has 58 reviews, meeting your minimum requirement. Its price range () doesn't match your criteria. Its business hours don't match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0812-3725-4474",
+      "placeName": "LOTA Clubhouse Surabaya",
+      "priceRange": null,
+      "rating": 4.8,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "LOTA Clubhouse Surabaya has a high customer satisfaction rate as indicated by its rating of 4.8 out of 5.0, showing strong positive feedback from its clientele.",
+        "The business has accumulated 58 reviews, which suggests a consistent flow of customer engagement and repeat visits."
+      ],
+      "totalRatings": 58,
+      "weaknesses": [
+        "The business's price range is not specified and does not match the established criteria, indicating potential incompatibility with your budgetary requirements.",
+        "The business hours of operation do not align with your criteria of 10 AM to 6 PM, possibly limiting accessibility for potential customers during your preferred time window."
+      ],
+      "website": "N/A"
+    },
+    {
+      "address": "Jl. Ngagel Jaya Barat No.52, Pucang Sewu, Kec. Gubeng, Surabaya, Jawa Timur 60283, Indonesia",
+      "businessHours": [
+        "Monday: 10:00\u202fAM\u2009\u2013\u20093:00\u202fAM",
+        "Tuesday: 10:00\u202fAM\u2009\u2013\u20093:00\u202fAM",
+        "Wednesday: 10:00\u202fAM\u2009\u2013\u20093:00\u202fAM",
+        "Thursday: 10:00\u202fAM\u2009\u2013\u20093:00\u202fAM",
+        "Friday: 10:00\u202fAM\u2009\u2013\u20093:00\u202fAM",
+        "Saturday: 10:00\u202fAM\u2009\u2013\u20093:00\u202fAM",
+        "Sunday: 10:00\u202fAM\u2009\u2013\u20093:00\u202fAM"
+      ],
+      "businessType": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.6/5.0. It has 828 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0877-6777-7700",
+      "placeName": "Avere cafe",
+      "priceRange": "$$",
+      "rating": 4.6,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High customer satisfaction evidenced by an average rating of 4.6 out of 5 from 828 reviews. This suggests consistent quality and positive customer experiences.",
+        "Affordable price range ($$) that aligns with typical consumer expectations for a cafe, making it accessible to a broad customer base.",
+        "Business hours align well with typical consumer schedules, opening from 10 AM to 6 PM, which caters to both lunch and early dinner crowds."
+      ],
+      "totalRatings": 828,
+      "weaknesses": [
+        "Absence of keyword matches in reviews suggests a potential gap in meeting specific customer expectations or branding strategies that align with your criteria.",
+        "Lack of provided sample positive and negative reviews makes it difficult to perform an in-depth sentiment analysis or understand specific areas of customer feedback and improvement.",
+        "Match percentage of 0% indicates a significant misalignment with specific criteria or preferences, which might be crucial for decision-making."
+      ],
+      "website": "https://instagram.com/avere.sub?utm_medium=copy_link"
+    },
+    {
+      "address": "Jl. Undaan Wetan No.30a, Ketabang, Kec. Genteng, Surabaya, Jawa Timur 60272, Indonesia",
+      "businessHours": [
+        "Monday: 9:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Tuesday: 9:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Wednesday: 9:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Thursday: 9:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Friday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: 9:00\u202fAM\u2009\u2013\u20099:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.9/5.0. It has 143 reviews, meeting your minimum requirement. Its price range () doesn't match your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0823-2324-4639",
+      "placeName": "Aluama Coffee Bar",
+      "priceRange": null,
+      "rating": 4.9,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High Customer Satisfaction: Aluama Coffee Bar boasts an impressive rating of 4.9 out of 5 from 143 reviews, indicating a high level of customer satisfaction and strong positive reception.",
+        "Adequate Review Volume: With 143 reviews, the business has a good amount of feedback, which can indicate reliability and consistent customer traffic over time.",
+        "Convenient Business Hours: The cafe's operating hours match the requirement of being open from 10 AM to 6 PM, making it a potentially convenient option for customers looking for daytime services."
+      ],
+      "totalRatings": 143,
+      "weaknesses": [
+        "Incomplete Match to Criteria: The business's current offerings and keywords do not align with the specific search criteria, resulting in a match percentage of 0%.",
+        "Undefined Price Range: The absence of a specified price range makes it difficult to assess affordability and potential customer budget alignment.",
+        "Lack of Review Details: The absence of sample positive or negative reviews makes it challenging to conduct a more nuanced analysis of customer sentiment and specific aspects of service or quality."
+      ],
+      "website": "N/A"
+    },
+    {
+      "address": "Jl. Tunjungan No.10, Genteng, Kec. Genteng, Surabaya, Jawa Timur 60275, Indonesia",
+      "businessHours": [
+        "Monday: 7:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Tuesday: 7:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Wednesday: 7:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Thursday: 7:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Friday: 7:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Saturday: 7:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Sunday: 7:00\u202fAM\u2009\u2013\u200912:00\u202fAM"
+      ],
+      "businessType": [
+        "cafe",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.5/5.0. It has 62 reviews, meeting your minimum requirement. Its price range () doesn't match your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0881-0106-47848",
+      "placeName": "28 Finest Surabaya",
+      "priceRange": null,
+      "rating": 4.5,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "Based on available reviews"
+      ],
+      "totalRatings": 62,
+      "weaknesses": [
+        "Insufficient data for detailed analysis"
+      ],
+      "website": "http://linktr.ee/28finestcoffee"
+    },
+    {
+      "address": "Jl. Ngagel Jaya Utara No.66, Pucang Sewu, Kec. Gubeng, Surabaya, Jawa Timur 60283, Indonesia",
+      "businessHours": [
+        "Monday: 9:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Tuesday: 9:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Wednesday: 9:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Thursday: 9:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Friday: 9:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Saturday: 9:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Sunday: 9:00\u202fAM\u2009\u2013\u200912:00\u202fAM"
+      ],
+      "businessType": [
+        "cafe",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.7/5.0. It has 281 reviews, meeting your minimum requirement. Its price range () doesn't match your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "N/A",
+      "placeName": "Kopilaborasi",
+      "priceRange": null,
+      "rating": 4.7,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High customer satisfaction with a rating of 4.7 out of 5 from 281 reviews, suggesting consistent quality and service.",
+        "Versatile business type combining cafe, store, and food, potentially attracting a diverse clientele and revenue streams.",
+        "Business hours match the specified requirement (10 AM to 6 PM), providing scheduling alignment for potential collaborations."
+      ],
+      "totalRatings": 281,
+      "weaknesses": [
+        "Price range not provided, which could complicate decision-making for price-sensitive partnerships or customer attraction strategies.",
+        "Zero match percentage indicating a potential disconnect with specific keyword criteria, possibly affecting target audience engagement.",
+        "Lack of sample reviews (both positive and negative), hindering deeper qualitative analysis of customer feedback."
+      ],
+      "website": "http://www.instagram.com/kopilaborasi"
+    },
+    {
+      "address": "Jl. Kedungsari No.49, Wonorejo, Kec. Tegalsari, Surabaya, Jawa Timur 60113, Indonesia",
+      "businessHours": [
+        "Monday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Tuesday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Wednesday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Thursday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Friday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Saturday: 10:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Sunday: 12:00\u2009\u2013\u20099:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.6/5.0. It has 219 reviews, meeting your minimum requirement. Its price range () doesn't match your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0895-3394-19668",
+      "placeName": "Titik Tengah Surabaya",
+      "priceRange": null,
+      "rating": 4.6,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "The business has a high customer satisfaction rating of 4.6 out of 5, indicating a strong overall customer experience.",
+        "With 219 reviews, the cafe has received a substantial amount of feedback that could be valuable for continuous improvement and reputation building.",
+        "Operating hours from 10 AM to 6 PM align with the specified criteria, potentially offering convenience to patrons during daylight hours."
+      ],
+      "totalRatings": 219,
+      "weaknesses": [
+        "The business does not match any specific criteria as highlighted in the match analysis, suggesting a potential misalignment with target market preferences or expectations.",
+        "The unspecified price range in the analysis implies potential uncertainty regarding affordability and value for money from a customer's perspective.",
+        "Lack of available sample positive and negative reviews limits the ability to conduct a more detailed sentiment analysis."
+      ],
+      "website": "N/A"
+    },
+    {
+      "address": "Jl. Karang Menjangan V No.8, Mojo, Kec. Gubeng, Surabaya, Jawa Timur 60285, Indonesia",
+      "businessHours": [
+        "Monday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.6/5.0. It has 424 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0877-8757-9555",
+      "placeName": "KARMENSEVE Coffee Shop",
+      "priceRange": "$$",
+      "rating": 4.6,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "The business has a strong overall rating of 4.6 out of 5, indicating high customer satisfaction.",
+        "A significant amount of customer feedback is available, with 424 reviews, providing a reliable assessment of performance.",
+        "The pricing is considered moderate ($$), which aligns with customer expectations for a cafe and can attract a broad target audience."
+      ],
+      "totalRatings": 424,
+      "weaknesses": [
+        "There is no match found with the provided criteria in terms of keywords, which may indicate a potential misalignment with specific strategic goals or niche markets.",
+        "The absence of sample reviews (both positive and negative) limits detailed insight into specific customer experiences and operational areas needing improvement."
+      ],
+      "website": "https://www.instagram.com/karmenseve/?hl=en"
+    },
+    {
+      "address": "Jl. Arief Rahman Hakim No.181, Keputih, Kec. Sukolilo, Surabaya, Jawa Timur 60111, Indonesia",
+      "businessHours": [
+        "Monday: 7:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Tuesday: 7:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Wednesday: 7:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Thursday: 7:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Friday: 7:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Saturday: 7:00\u202fAM\u2009\u2013\u200911:00\u202fPM",
+        "Sunday: 7:00\u202fAM\u2009\u2013\u200911:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "restaurant",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.7/5.0. It has 1168 reviews, meeting your minimum requirement. Its price range () doesn't match your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0896-5676-3456",
+      "placeName": "AADK Coffee & Eatery (AR. Hakim)",
+      "priceRange": null,
+      "rating": 4.7,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High customer satisfaction with a rating of 4.7 out of 5 based on 1168 reviews, indicating a strong reputation.",
+        "Operational hours align with the specified requirement (10 am to 6 pm), suggesting convenience for potential target audiences.",
+        "Diverse business type including cafe, restaurant, and store, offering multiple options for customers."
+      ],
+      "totalRatings": 1168,
+      "weaknesses": [
+        "Price range is unspecified, which makes it challenging to ascertain its affordability and financial accessibility for certain customer segments.",
+        "0% match percentage indicates the business does not align with specific criteria that may be important, suggesting potential gaps in offerings or target market focus.",
+        "Lack of provided sample reviews, both positive and negative, limits the ability to understand specific customer perceptions and experiences."
+      ],
+      "website": "https://www.instagram.com/adaapadengankopi/?hl=en"
+    },
+    {
+      "address": "Jl. Raya Darmo No.68 - 78, DR. Soetomo, Kec. Tegalsari, Surabaya, Jawa Timur 60264, Indonesia",
+      "businessHours": [
+        "Monday: 6:00\u202fAM\u2009\u2013\u20097:00\u202fPM",
+        "Tuesday: 6:00\u202fAM\u2009\u2013\u20097:00\u202fPM",
+        "Wednesday: 6:00\u202fAM\u2009\u2013\u20097:00\u202fPM",
+        "Thursday: 6:00\u202fAM\u2009\u2013\u20097:00\u202fPM",
+        "Friday: 6:00\u202fAM\u2009\u2013\u20097:00\u202fPM",
+        "Saturday: 6:00\u202fAM\u2009\u2013\u20097:00\u202fPM",
+        "Sunday: 6:00\u202fAM\u2009\u2013\u20097:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "bar",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.2/5.0. It only has 25 reviews, below your minimum of 50. Its price range () doesn't match your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "(031) 5623000",
+      "placeName": "Coffee Cafe Surabaya",
+      "priceRange": null,
+      "rating": 4.2,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "The business has a good rating of 4.2 out of 5, indicating overall customer satisfaction.",
+        "It operates within the required business hours of 10 AM to 6 PM, which aligns well with certain operational needs."
+      ],
+      "totalRatings": 25,
+      "weaknesses": [
+        "The business has only 25 reviews, which is below the minimum threshold of 50 reviews, making it difficult to gauge consistent performance and customer satisfaction.",
+        "There is a 0% match percentage based on the absence of relevant keywords in the reviews, which suggests a potential misalignment with specified criteria or target market."
+      ],
+      "website": "https://all.accor.com/hotel/6155/index.en.shtml#section-facilities?utm_source=google+Maps&utm_medium=seo+maps&utm_campaign=seo+maps"
+    },
+    {
+      "address": "IG, Jl. Puncak Permai III No.23A, Tanjungsari, Kec. Sukomanunggal, Surabaya, Jawa Timur 60187, Indonesia",
+      "businessHours": [
+        "Monday: 10:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Tuesday: 10:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Wednesday: 10:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Thursday: 10:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Friday: 10:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Saturday: 10:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Sunday: Closed"
+      ],
+      "businessType": [
+        "cafe",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.3/5.0. It has 667 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0811-3161-166",
+      "placeName": "One Pose Cafe",
+      "priceRange": "$$",
+      "rating": 4.3,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High customer satisfaction with a strong rating of 4.3 out of 5 from a substantial number of reviews (667).",
+        "Mid-range price category ($$) which suggests affordability for a wide customer base.",
+        "Operational hours from 10 AM to 6 PM align well with client requirements for business hours."
+      ],
+      "totalRatings": 667,
+      "weaknesses": [
+        "Lack of keyword matches in reviews, suggesting that the cafe may not meet specific criteria or expectations based on your preferences.",
+        "No available sample reviews make it difficult to assess specific aspects of the customer experience.",
+        "0% match percentage indicates that the cafe might not align closely with the unique needs or specific criteria set by the client."
+      ],
+      "website": "N/A"
+    },
+    {
+      "address": "Jl. Sumatera No.21, Pacar Keling, Kec. Tambaksari, Surabaya, Jawa Timur 60281, Indonesia",
+      "businessHours": [
+        "Monday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+      ],
+      "businessType": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "coordinates": {},
+      "keywordMatch": "keyword not found",
+      "matchPercentage": 0,
+      "matchReasoning": "Keywords not found in reviews. This business matches 0.0% of your criteria. It has a good rating of 4.6/5.0. It has 326 reviews, meeting your minimum requirement. Its price range () doesn't match your criteria. Its business hours don't match your jam 10 pagi sampai 6 malam requirement. ",
+      "phone": "0811-3290-086",
+      "placeName": "Kateko Surabaya",
+      "priceRange": null,
+      "rating": 4.6,
+      "reviewCount": 0,
+      "reviewSummary": {
+        "negative": "",
+        "positive": ""
+      },
+      "strengths": [
+        "High customer satisfaction with a rating of 4.6 out of 5.",
+        "A relatively large number of reviews (326), indicating a solid customer base and consistent performance."
+      ],
+      "totalRatings": 326,
+      "weaknesses": [
+        "No keywords match your criteria, which suggests that the business may not align well with certain targeted preferences or niche markets.",
+        "Business hours do not fit your specified requirement of operating from 10 AM to 6 PM, indicating a possible mismatch in availability."
+      ],
+      "website": "N/A"
     }
   ],
   "$metadata": {
-    "createdAt": "2025-05-26T09:39:29.907130+00:00Z",
-    "startedAt": "2025-05-26T09:39:32.173971+00:00Z",
-    "executionTotal": 20
+    "createdAt": "2025-05-29T04:18:42.148453+00:00Z",
+    "startedAt": "2025-05-29T04:18:44.847832+00:00Z",
+    "executionTotal": 160
   }
 }

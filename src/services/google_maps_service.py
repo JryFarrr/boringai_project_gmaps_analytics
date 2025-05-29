@@ -11,6 +11,11 @@ api_key = None # For Google Places Text Search and Place Details (googleapis.com
 openai_api_key = None # Kept for other potential uses, not directly used in the main review flow
 search_api_key = None # For SearchAPI.io (searchapi.io)
 
+def simple_logger(level, message):
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    print(f"[{timestamp}] {level}: {message}")
+
+
 # === INIT API KEYS ===
 def init_api_key(key=None):
     """Initialize the Google Maps API key (for Google's direct APIs)"""
@@ -72,7 +77,6 @@ def search_places(query=None, page_token=None):
 
             return {'results': data.get('results', []), 'next_page_token': data.get('next_page_token')}
     except requests.RequestException as e:
-        current_app.logger.error(f"Google Places Text Search failed: {str(e)}") # Added logging
         raise Exception(f"Request failed: {str(e)}")
 
 
@@ -80,10 +84,9 @@ def search_places(query=None, page_token=None):
 def get_api_key():
     global api_key
     if api_key is None:
-        # Initialize the API key if not already done
         api_key = init_api_key()
         if not api_key:
-            raise ValueError("Google Maps API key not found. Make sure it's set in your config.")
+            raise ValueError("Google Maps API key not found. Make sure it's set in your config or directly.")
     return api_key
 
 
@@ -91,16 +94,15 @@ def get_api_key():
 def get_search_api_key():
     global search_api_key
     if search_api_key is None:
-        # Initialize the API key if not already done
         search_api_key = init_search_api_key()
         if not search_api_key:
-            raise ValueError("SearchAPI.io key not found. Make sure it's set in your config.")
+            raise ValueError("SearchAPI.io key not found. Make sure it's set in your config or directly.")
     return search_api_key
 
 
 # === GET PLACE DETAILS ===
 def get_place_details(place_id, fields=None):
-    google_api_key = get_api_key()  # Ensure we have a Google Maps API key for Place Details
+    google_api_key = get_api_key()
 
     url = "https://maps.googleapis.com/maps/api/place/details/json"
     params = {
@@ -111,85 +113,22 @@ def get_place_details(place_id, fields=None):
         params["fields"] = ",".join(fields)
 
     try:
-        current_app.logger.info(f"Fetching place details for place_id: {place_id}")
         response = requests.get(url, params=params)
         response.raise_for_status()
         data = response.json()
         
         if data["status"] != "OK":
-            current_app.logger.error(f"API error for place_id {place_id}: {data.get('error_message', data['status'])}")
             raise Exception(f"API error: {data.get('error_message', data['status'])}")
         
-        # Get the basic place details
         place_details = data.get("result", {})
         place_details["place_id"] = place_id
-        # Note: get_place_reviews is called here without a search_query,
-        # meaning it will fetch general reviews for displaying basic place details.
-        # Specific keyword-filtered reviews will be fetched by the generate_review_summaries/get_reviews_for_place flow.
-        place_details["reviews"] = get_place_reviews(place_id) 
         
         return place_details
     except requests.RequestException as e:
-        current_app.logger.error(f"Request error for place_id {place_id}: {str(e)}")
         raise Exception(f"Failed to call Google Maps API: {str(e)}")
 
 
-def get_place_reviews(place_id, max_reviews=100, search_query=None):
-    """
-    Fetches reviews for a given place_id using SearchAPI.io, with optional keyword filtering.
-    """
-    api_key_searchapi = get_search_api_key() # Get the SearchAPI.io key
-    url = "https://api.searchapi.io/api/v1/search"
-
-    params = {
-        "engine": "Maps_reviews", # Ensure this is correct as per SearchAPI.io docs (case-sensitive)
-        "place_id": place_id,
-        "num": min(max_reviews, 100), # max 100 per page for SearchAPI.io's 'num' parameter
-        "api_key": api_key_searchapi
-    }
-
-    if search_query:
-        params["search_query"] = search_query
-        current_app.logger.info(f"SearchAPI.io: Fetching reviews for place_id '{place_id}' with search_query: '{search_query}'")
-    else:
-        current_app.logger.info(f"SearchAPI.io: Fetching all reviews for place_id '{place_id}' (no search_query)")
-
-
-    all_reviews = []
-
-    while True:
-        try:
-            response = requests.get(url, params=params)
-            response.raise_for_status() # Raise HTTPError for bad responses (4xx or 5xx)
-            data = response.json()
-
-            if response.status_code != 200:
-                current_app.logger.error(f"Error fetching reviews from SearchAPI.io for place_id {place_id}: {data.get('error', 'Unknown error')}")
-                break
-
-            reviews_on_page = data.get('reviews', [])
-            all_reviews.extend(reviews_on_page)
-
-            # Handle pagination
-            next_page_token = data.get('serpapi_pagination', {}).get('next_page_token')
-            if next_page_token and len(all_reviews) < max_reviews:
-                params['next_page_token'] = next_page_token
-                # It's generally safe to keep 'num' as the API will still respect the max 100 per page.
-            else:
-                break # No more pages or max_reviews reached
-
-        except requests.exceptions.RequestException as e:
-            current_app.logger.error(f"Network or API request error while fetching reviews for place_id {place_id}: {str(e)}")
-            break # Exit loop on request error
-        except json.JSONDecodeError:
-            current_app.logger.error(f"Failed to decode JSON response from SearchAPI.io for place_id {place_id}")
-            break # Exit loop if JSON is invalid
-
-    current_app.logger.info(f"Fetched {len(all_reviews)} reviews for place_id {place_id}.")
-    return all_reviews[:max_reviews] # Ensure we don't return more than max_reviews
-
-
-# === SEARCH VIA SEARCHAPI.IO (replacing SerpAPI) ===
+# === SEARCH VIA SEARCHAPI.IO ===
 def search_business_with_search_api(keyword, location="Indonesia", max_results=5):
     """
     Searches for businesses by keyword using SearchAPI.io (Google Maps engine).
@@ -199,7 +138,7 @@ def search_business_with_search_api(keyword, location="Indonesia", max_results=5
     search_url = "https://api.searchapi.io/api/v1/search"
     
     params = {
-        "engine": "Maps", # Changed from 'Maps' to 'Maps' as per SearchAPI.io's documentation or common practice
+        "engine": "google_maps_reviews",
         "q": keyword,
         "location": location,
         "api_key": api_key_searchapi,
@@ -207,7 +146,7 @@ def search_business_with_search_api(keyword, location="Indonesia", max_results=5
     }
 
     try:
-        current_app.logger.info(f"SearchAPI.io: Searching for businesses with keyword: '{keyword}' in {location}")
+        simple_logger("INFO", f"SearchAPI.io: Searching for businesses with keyword: '{keyword}' in {location}")
         response = requests.get(search_url, params=params)
         response.raise_for_status()
         results = response.json()
@@ -221,9 +160,9 @@ def search_business_with_search_api(keyword, location="Indonesia", max_results=5
                 "gps_coordinates": biz.get("gps_coordinates", {}),
                 "rating": biz.get("rating"),
                 "reviews_count": biz.get("reviews"),
-                "Maps_url": biz.get("link") # Changed from 'Maps_url' to 'Maps_url' for consistency
+                "Maps_url": biz.get("link")
             })
-        current_app.logger.info(f"SearchAPI.io: Found {len(businesses)} businesses matching '{keyword}'.")
+
         return businesses
 
     except requests.exceptions.RequestException as e:
