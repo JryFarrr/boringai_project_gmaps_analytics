@@ -1,190 +1,94 @@
 {
-  "$id": "2f734f9c-207b-4c36-9633-9d08413dae1a",
+  "$id": "93e1d3a2-2e31-4b03-a960-cea45fcbebd9",
   "$state": {
-    "business_hours": "jam 10 pagi sampai 6 malam",
-    "business_type": "restaurant",
-    "keywords": "enak",
+    "business_hours": "anytime",
+    "business_type": "barbershop",
+    "keywords": "potongan bagus",
     "leadCount": 1,
     "location": "Surabaya",
-    "max_reviews": 200,
-    "min_rating": 4.0,
-    "min_reviews": 50,
+    "max_reviews": null,
+    "min_rating": 0.0,
+    "min_reviews": 0,
     "numberOfLeads": 1,
-    "price_range": "$$",
+    "price_range": "",
     "remainingPlaceIds": [
-      "ChIJQ2tqvWz71y0RaamvEiavn2Y",
-      "ChIJxysqVW371y0Rx7u85Q-HT6U",
-      "ChIJk_ID-Lb71y0RNAXocH8IJIw",
-      "ChIJ5fNHGin71y0Rl-exz35L_gk",
-      "ChIJIVsQfdn71y0Ru2gt6e2Qu_U",
-      "ChIJU00o_jP61y0Rg7WmdkRBR5o",
-      "ChIJ_eGYztn71y0Rlil8U-fiI30",
-      "ChIJl9S7eN771y0Rpp7V9x6GXoU",
-      "ChIJcyPf0Qr51y0R9tTnFXG13iU",
-      "ChIJk4EvdQb51y0RFDLO6Ah0-sA",
-      "ChIJzclN-v351y0Rnpji2jU5UXM",
-      "ChIJ61drk0_71y0Rk5SedEyGnj0",
-      "ChIJDSJQ7jP61y0RSKgfSKuVcFo",
-      "ChIJy-5AIjP71y0RCu3GThEuDgY",
-      "ChIJ_be_gZT71y0RtRouzYwvi0Y",
-      "ChIJgbmcNdj71y0RweUb8pWkzoQ",
-      "ChIJGZkLM9L71y0Rmlp4O57qgps"
+      "ChIJe_tS_CT71y0RHTj1UOK3o4s",
+      "ChIJ56RjFV391y0Rt_Z_Z9fYJP0",
+      "ChIJPWkXuJD71y0R1OQbqVWOYxA",
+      "ChIJC6NRZ2n71y0RMl6kVB7hwBY",
+      "ChIJQXmjyNj71y0RmasPngqN4No",
+      "ChIJvU4EKnn71y0RXPGocdE0TrQ",
+      "ChIJR7fIyGj91y0RfRDlOQKiFMo",
+      "ChIJAYax1kr91y0Rb9uGy_1OLkk",
+      "ChIJVSnl16j91y0R5lPGf3lm2BE",
+      "ChIJpdYSFEb61y0ROoHx3PFOH9Y",
+      "ChIJcafbLHj51y0RNm8qpAIx9O8",
+      "ChIJlUbaqt371y0R2HYCrrTiz7g",
+      "ChIJ0euZt7D71y0RTwGVcAQ8wuk",
+      "ChIJsaEf7SP91y0RE1Mta9JTVHg",
+      "ChIJtbr3Wyz51y0RIqaADztHDk0",
+      "ChIJKYeHrPn71y0R-D3JSkgXQ_k",
+      "ChIJnVKqtbj71y0RHNyLDT0KXFg",
+      "ChIJo0BJMXX71y0RsFE2212P3cY",
+      "ChIJAVcXGmX71y0RN8fFxFBpbeE"
     ],
     "searchOffset": 20,
-    "skippedCount": 2,
-    "businessType": "restaurant",
-    "nextPageToken": "AXQCQNQVOuDsXVI0KkASE9Nn2vt9EvCam1aHIzUREPZhV-zAdf4s4U60hXlIMBha9ipq_ylPbL3gjUNjiUbMxBUC5Jh5brjTTw1iHKne_1OAGVNKGQHwkBM1bsVyPALVLuYstDCf6ma2WCJ9fBqnVzaRXI0rurkYBuJ0jFIPWR4fdUYI3X9hBeVHeQFBnebAf9goMZnIBMPstPrOw8GCICRwC5w-me9vrGA-vO4F93YWFX9TU_PYBT4cHB8WXH9MqiokgL9nZXhlqzLFABhOMkFc0yWxLoHJAGb_w-TSrkFZndQTdj3z4s3mwFyJVX8Y4Jo-1KDWNzrUK7HQfLv6_2hAqXz2aEB2rMOJGTMS6W_wo9QWGt_9czk--vRifnoAfoEIFxR8h7gm6wygcmihziyBk6Bu8e0",
-    "skippedConstraints": true
+    "skippedCount": 0,
+    "businessType": "barbershop",
+    "nextPageToken": "AXQCQNQe0_5x3NZrRLnSPb7ufVyegmlaD9drCMnfdUcssMDHkQeFE-wwJrSGyvwnJ_81-Z6vmHSYYO7leu9QdvIgYLHE6mqIEmAjk-HfulxFUwaFuLmMMXvmqaGcmwTZDFtPVE0Lq7SsWZBOZWBnwqx9bLM2uJ66D_izmrPcMQEk1pbpo9wjOTJAPTODeTSD69B-oThYlBK5_f1pHn2-EKx4n08y8VmtDCywbct2Sw1R038Vm_WZ-LPHJBz3oHsrtJX7Bvbaje-lJ5EzU7Wz4QiGhx8D0V0Am6D11Nnn_omgMSLjn24lWd6MgjIV2pJ4blqEYeuLv0dPvxoOyG3gLSKTcnglCnZjW1HeYHSvRnLUO18Xj8bBADLqIOFF12OCyh8nIjjANmYz1n3n3pnR23G3VussJyE"
   },
   "$results": [
     {
-      "address": "Jl. Raya Kertajaya Indah No.130, Manyar Sabrangan, Kec. Mulyorejo, Surabaya, Jawa Timur 60117, Indonesia",
+      "address": "Jl. Dharmahusada No.189, RT.001/RW.04, Mojo, Kec. Gubeng, Surabaya, Jawa Timur 60285, Indonesia",
       "businessHours": [
-        "Monday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Tuesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Wednesday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Thursday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Friday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Saturday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Sunday: 10:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
+        "Monday: 10:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Tuesday: 10:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Wednesday: 10:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Thursday: 10:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Friday: 10:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Saturday: 10:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Sunday: 10:00\u202fAM\u2009\u2013\u20099:00\u202fPM"
       ],
       "businessType": [
-        "restaurant",
-        "food",
+        "hair_care",
+        "health",
         "point_of_interest",
         "establishment"
       ],
       "coordinates": {},
       "keywordCountN": 20,
-      "keywordMatch": "20 reviews contain keywords out of 659 total reviews",
-      "keywordTotalB": 659,
+      "keywordMatch": "20 reviews contain keywords out of 1958 total reviews",
+      "keywordTotalB": 1958,
       "matchFactors": null,
-      "matchPercentage": 95.79256943062673,
-      "matchReasoning": "This business matches 95.8% of your criteria. It has a good rating of 4.4/5.0. It has 659 reviews, meeting your minimum requirement. Its price range ($$) matches your criteria. Its business hours match your jam 10 pagi sampai 6 malam requirement. ",
-      "phone": "(031) 59181830",
-      "placeName": "Hallo Surabaya Kertajaya",
-      "priceRange": "$$",
-      "rating": 4.4,
-      "reviewCount": 48,
-      "reviewSummary": {
-        "negative": "Portion sizes are small, especially Garang Asem. Staff inattentive and unengaged, impacting service. Incorrect orders and quality issues like rotten/burnt fish are common concerns.",
-        "positive": "Customers love the delicious Indonesian food, especially unique dishes like Nasi Soto Bakar. They appreciate the beautiful d\u00e9cor, great service, and tasty gelato. More parking is needed."
-      },
-      "strengths": [
-        "The restaurant boasts a high satisfaction rating of 4.4/5 from 659 reviews, indicating strong overall customer approval.",
-        "The establishment offers a diverse and authentic menu, featuring traditional Indonesian dishes as well as options for kids like dimsum and noodles.",
-        "Service quality and ambiance are consistently highlighted as positives in customer reviews, contributing to a pleasant dining experience."
-      ],
-      "summaryNegativeReviews": "Portion sizes are small, especially Garang Asem. Staff inattentive and unengaged, impacting service. Incorrect orders and quality issues like rotten/burnt fish are common concerns.",
-      "summaryPositiveReviews": "Customers love the delicious Indonesian food, especially unique dishes like Nasi Soto Bakar. They appreciate the beautiful d\u00e9cor, great service, and tasty gelato. More parking is needed.",
-      "totalRatings": 659,
-      "weaknesses": [
-        "Portion sizes have been cited as being smaller, which may not meet some customers' expectations.",
-        "There are occasional service errors, such as mix-ups in food orders, which have led to customer dissatisfaction.",
-        "Parking space is somewhat limited and may be a concern for customers visiting during peak hours."
-      ],
-      "website": "N/A"
-    },
-    {
-      "address": "No.F-303, Jl. Raya Kertajaya Indah, Manyar Sabrangan, Kec. Mulyorejo, Surabaya, Jawa Timur 60116, Indonesia",
-      "businessHours": [
-        "Monday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Tuesday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Wednesday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Thursday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Friday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Saturday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Sunday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
-      ],
-      "businessType": [
-        "restaurant",
-        "point_of_interest",
-        "food",
-        "establishment"
-      ],
-      "coordinates": {},
-      "keywordCountN": 20,
-      "keywordMatch": "20 reviews contain keywords out of 3179 total reviews",
-      "keywordTotalB": 3179,
-      "matchFactors": null,
-      "matchPercentage": 68.0,
-      "matchReasoning": "This business matches 68.0% of your criteria. It has a good rating of 4.6/5.0. It has 3179 reviews, meeting your minimum requirement. Its price range ($$$) doesn't match your criteria. Its business hours don't match your jam 10 pagi sampai 6 malam requirement. ",
-      "phone": "(031) 5954800",
-      "placeName": "Botanika - Kertajaya Indah",
-      "priceRange": "$$$",
-      "rating": 4.6,
-      "reviewCount": 48,
-      "reviewSummary": {
-        "negative": "High prices and small portions are common complaints; customers expect better quality for the cost. Some food is too salty or lacks flavor. Service could be improved with friendlier staff.",
-        "positive": "The restaurant offers well-prepared, modern Indonesian cuisine, praised for its deliciousness and ambiance. Despite being pricey, the friendly staff and diverse menu enhance the experience."
-      },
-      "strengths": [
-        "High rating of 4.6 out of 5 from a large number of reviews (3179), indicating a generally positive customer experience.",
-        "Offers a diverse variety of Indonesian cuisines with positive feedback on the quality and presentation of the dishes.",
-        "Ambience and service are often highlighted as aspects that enhance the dining experience, with a distinct indoor and outdoor dining setting."
-      ],
-      "summaryNegativeReviews": "High prices and small portions are common complaints; customers expect better quality for the cost. Some food is too salty or lacks flavor. Service could be improved with friendlier staff.",
-      "summaryPositiveReviews": "The restaurant offers well-prepared, modern Indonesian cuisine, praised for its deliciousness and ambiance. Despite being pricey, the friendly staff and diverse menu enhance the experience.",
-      "totalRatings": 3179,
-      "weaknesses": [
-        "Price point is considered high, with several customers noting the dishes as overpriced relative to portion size and quality.",
-        "Inconsistencies in food quality and service speed are mentioned, with some dishes lacking flavor and service being slow at times.",
-        "The business hours do not align with your specified requirement of open hours from 10 AM to 6 PM."
-      ],
-      "website": "http://www.botanikaresto.com/"
-    },
-    {
-      "address": "Jl. Raya Kertajaya Indah No.55 Blok I-1, Manyar Sabrangan, Kec. Mulyorejo, Surabaya, Jawa Timur 60116, Indonesia",
-      "businessHours": [
-        "Monday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Tuesday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Wednesday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Thursday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Friday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Saturday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
-        "Sunday: 11:00\u202fAM\u2009\u2013\u200910:00\u202fPM"
-      ],
-      "businessType": [
-        "restaurant",
-        "point_of_interest",
-        "food",
-        "establishment"
-      ],
-      "coordinates": {},
-      "keywordCountN": 20,
-      "keywordMatch": "20 reviews contain keywords out of 731 total reviews",
-      "keywordTotalB": 731,
-      "matchFactors": null,
-      "matchPercentage": 67.0927825130524,
-      "matchReasoning": "This business matches 67.1% of your criteria. It has a good rating of 4.6/5.0. It has 731 reviews, meeting your minimum requirement. Its price range () doesn't match your criteria. Its business hours don't match your jam 10 pagi sampai 6 malam requirement. ",
-      "phone": "0821-3949-2500",
-      "placeName": "Gachi Korean Cuisine - Kertajaya Indah",
+      "matchPercentage": 100,
+      "matchReasoning": "This business matches 100.0% of your criteria. ",
+      "phone": "0812-3444-1070",
+      "placeName": "Captain Barbershop Premiere Surabaya",
       "priceRange": null,
-      "rating": 4.6,
+      "rating": 4.9,
       "reviewCount": 48,
       "reviewSummary": {
-        "negative": "Reviews highlight greasy, overly sweet food and inconsistent quality. Key issues include lack of banchan and tea refills, with some dishes bland or improperly prepared. However, the atmosphere and ...",
-        "positive": "Customers appreciate the rose tteokbokki, kimchi, and half-half chicken. The restaurant offers a cozy ambiance and friendly staff but has minor issues with non-flat tables and hand sinks."
+        "negative": "",
+        "positive": "Customers praise the barbershop for its expert staff, reasonable prices, and premium service. The beautiful interior architecture and excellent customer experiences are recurring highlights."
       },
       "strengths": [
-        "High customer satisfaction with a rating of 4.6/5 based on 731 reviews.",
-        "Diverse menu with popular items such as kimbap, rose tteokbokki, and bibimbap receiving positive feedback.",
-        "Cozy ambience and friendly staff enhance the dining experience."
+        "High customer satisfaction with a rating of 4.9 out of 5 from 1958 reviews, indicating excellent service and customer experience.",
+        "Positive comments on reasonable pricing and expert staff, suggesting good value for money and professional service.",
+        "Reviews highlight a beautiful interior and a premium experience, which enhances the overall customer experience."
       ],
-      "summaryNegativeReviews": "Reviews highlight greasy, overly sweet food and inconsistent quality. Key issues include lack of banchan and tea refills, with some dishes bland or improperly prepared. However, the atmosphere and ...",
-      "summaryPositiveReviews": "Customers appreciate the rose tteokbokki, kimchi, and half-half chicken. The restaurant offers a cozy ambiance and friendly staff but has minor issues with non-flat tables and hand sinks.",
-      "totalRatings": 731,
+      "summaryPositiveReviews": "Customers praise the barbershop for its expert staff, reasonable prices, and premium service. The beautiful interior architecture and excellent customer experiences are recurring highlights.",
+      "totalRatings": 1958,
       "weaknesses": [
-        "Price range does not align with specified criteria, indicating potential pricing concerns for certain customers.",
-        "Operational issues with infrastructure, such as faulty handwashing sinks, affect customer experience.",
-        "Inconsistencies in food quality and service have been noted, along with a lack of refill options for side dishes, which can impact overall satisfaction."
+        "No negative reviews were provided, which might indicate a lack of transparency or skewed sample; potential unknown issues might exist.",
+        "The business may rely heavily on its current location, which could be a limitation if considering expansion or attracting non-local clientele.",
+        "Being in a niche market, fluctuations in consumer trends in personal grooming or economic downturns could potentially impact business stability."
       ],
-      "website": "https://www.instagram.com/gachi.surabaya/"
+      "website": "http://captainbarbershop.co.id/"
     }
   ],
   "$metadata": {
-    "createdAt": "2025-05-29T10:24:19.331165+00:00Z",
-    "startedAt": "2025-05-29T10:24:22.108242+00:00Z",
-    "executionTotal": 11
+    "createdAt": "2025-06-06T14:16:35.352840+00:00Z",
+    "startedAt": "2025-06-06T14:16:38.116100+00:00Z",
+    "executionTotal": 5
   }
 }

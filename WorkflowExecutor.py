@@ -129,7 +129,7 @@ class WorkflowExecutor:
 def run_simulation():
     executor = WorkflowExecutor()
     
-    prompt = "Temukan restaurant enak di Surabaya dengan rating minimal 4 dan reviews lebih dari 50 dan kurang dari 200 dengan harga di antara 20.000 sampai 100.000 yang buka pada jam 10 pagi sampai 6 malam"
+    prompt = "Temukan barbershop yang potongannya bagus di surabaya"
     # prompt nanti diparsing untuk menentukan businessType, location, dan numberOfLeads
     # prompt juga diparsing untuk contraints pada match percentage
     # untuk match percentage disimpan pada instance, dan hanya digunakan di analyze
@@ -142,9 +142,9 @@ def run_simulation():
         print("Cannot proceed with workflow execution due to parsing failure.")
         return
     
-    # If numberOfLeads is empty, set it to 20; otherwise keep the original value
+    # If numberOfLeads is empty, set it to 1; otherwise keep the original value
     if parameters["numberOfLeads"] == "":
-        parameters["numberOfLeads"] = 20
+        parameters["numberOfLeads"] = 1
     
     # Make sure max_reviews is properly handled
     if "max_reviews" not in parameters:

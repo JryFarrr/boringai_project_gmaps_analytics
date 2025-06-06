@@ -99,17 +99,12 @@ RULES:
    - Special accommodations (e.g., "pet-friendly", "ramah hewan peliharaan")
    - Customer experience factors (e.g., "quick service", "layanan cepat")
 8. If a descriptive term like "luxury" or "mewah" is used and no explicit price range is provided, infer an appropriate price_range.
+9. **Conditional Price Range:** Only extract or infer a `price_range` if the `business_type` is 'restaurant', 'cafe', 'bar', 'hotel', or their direct synonyms and translations (e.g., 'restoran', 'kafe', 'kedai kopi', 'warung'). For ALL other business types (like 'salon', 'workshop', 'store', 'bengkel', 'toko'), you MUST set `price_range` to an empty string (""), even if the query mentions price-related terms like 'cheap' or 'expensive'.
 
 EXAMPLES:
 
 Input: "Find 3 luxury hotels in Surabaya that has a rating of at least 4.5 and at least 100 reviews."
 Output: {"business_type":"hotels","location":"Surabaya","min_rating":4.5,"min_reviews":100,"max_reviews":null,"price_range":"$$$$","business_hours":"anytime","keywords":"luxury","numberOfLeads":3}
-
-Input: "Cari hotel mewah di Bali dengan pemandangan laut dan pelayanan yang ramah."
-Output: {"business_type":"hotel","location":"Bali","min_rating":0,"min_reviews":0,"max_reviews":null,"price_range":"$$$$","business_hours":"anytime","keywords":"mewah, pemandangan laut, pelayanan ramah","numberOfLeads":""}
-
-Input: "I need a pet-friendly café in Seattle with outdoor seating and good WiFi for working."
-Output: {"business_type":"café","location":"Seattle","min_rating":0,"min_reviews":0,"max_reviews":null,"price_range":"","business_hours":"anytime","keywords":"pet-friendly, outdoor seating, good WiFi, working","numberOfLeads":""}
 
 Input: "Temukan 5 warung makan di Yogyakarta dengan harga di bawah Rp20.000 per porsi dan suasana tradisional."
 Output: {"business_type":"warung makan","location":"Yogyakarta","min_rating":0,"min_reviews":0,"max_reviews":null,"price_range":"$","business_hours":"anytime","keywords":"harga terjangkau, suasana tradisional","numberOfLeads":5}
@@ -117,11 +112,8 @@ Output: {"business_type":"warung makan","location":"Yogyakarta","min_rating":0,"
 Input: "Find a salon in Bandung that has a rating of at least 4.2 and at most 50 reviews. Additional Requirements: • The business must have a price range of Rp50.000 - Rp100.000. • The business operates at open now. • Business reviews and descriptions must include 'premium, luxury, service'."
 Output: {"business_type":"salon","location":"Bandung","min_rating":4.2,"min_reviews":0,"max_reviews":50,"price_range":"$$","business_hours":"open now","keywords":"premium, luxury, service","numberOfLeads":""}
 
-Input: "Saya mencari tempat makan yang cocok untuk keluarga dengan anak kecil di Jakarta Selatan, dengan area bermain dan menu anak-anak."
-Output: {"business_type":"tempat makan","location":"Jakarta Selatan","min_rating":0,"min_reviews":0,"max_reviews":null,"price_range":"","business_hours":"anytime","keywords":"cocok untuk keluarga, anak kecil, area bermain, menu anak-anak","numberOfLeads":""}
-
-Input: "Looking for a restaurant where I can have a quiet business meeting in downtown Chicago with sophisticated ambiance and reasonable prices."
-Output: {"business_type":"restaurant","location":"downtown Chicago","min_rating":0,"min_reviews":0,"max_reviews":null,"price_range":"$$","business_hours":"anytime","keywords":"quiet, business meeting, sophisticated ambiance, reasonable prices","numberOfLeads":""}
+Input: "Cari salon kecantikan yang murah di Surabaya"
+Output: {"business_type":"salon kecantikan","location":"Surabaya","min_rating":0,"min_reviews":0,"max_reviews":null,"price_range":"","business_hours":"anytime","keywords":"murah","numberOfLeads":""}
 
 Input: "Butuh restoran di Surabaya yang makanannya enak dan tempatnya nyaman untuk kumpul dengan teman-teman."
 Output: {"business_type":"restoran","location":"Surabaya","min_rating":0,"min_reviews":0,"max_reviews":null,"price_range":"","business_hours":"anytime","keywords":"makanan enak, tempat nyaman, kumpul dengan teman-teman","numberOfLeads":""}
