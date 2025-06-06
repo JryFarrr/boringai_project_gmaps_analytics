@@ -1,53 +1,53 @@
 {
-  "$id": "93e1d3a2-2e31-4b03-a960-cea45fcbebd9",
+  "$id": "7ec74898-b8b1-4155-872a-359e13049bc3",
   "$state": {
-    "business_hours": "anytime",
     "business_type": "barbershop",
-    "keywords": "potongan bagus",
+    "constraints": {
+      "business_hours": "anytime",
+      "keywords": "potongannya bagus",
+      "max_reviews": null,
+      "min_rating": 4.8,
+      "min_reviews": 0,
+      "price_range": ""
+    },
     "leadCount": 1,
     "location": "Surabaya",
-    "max_reviews": null,
-    "min_rating": 0.0,
-    "min_reviews": 0,
     "numberOfLeads": 1,
-    "price_range": "",
     "remainingPlaceIds": [
+      "ChIJPfd11qj71y0RxG5BR7DD5ZE",
       "ChIJe_tS_CT71y0RHTj1UOK3o4s",
-      "ChIJ56RjFV391y0Rt_Z_Z9fYJP0",
       "ChIJPWkXuJD71y0R1OQbqVWOYxA",
+      "ChIJvU4EKnn71y0RXPGocdE0TrQ",
+      "ChIJVSnl16j91y0R5lPGf3lm2BE",
       "ChIJC6NRZ2n71y0RMl6kVB7hwBY",
       "ChIJQXmjyNj71y0RmasPngqN4No",
-      "ChIJvU4EKnn71y0RXPGocdE0TrQ",
+      "ChIJefNOAFr71y0REmAycDv1AxE",
       "ChIJR7fIyGj91y0RfRDlOQKiFMo",
-      "ChIJAYax1kr91y0Rb9uGy_1OLkk",
-      "ChIJVSnl16j91y0R5lPGf3lm2BE",
       "ChIJpdYSFEb61y0ROoHx3PFOH9Y",
-      "ChIJcafbLHj51y0RNm8qpAIx9O8",
-      "ChIJlUbaqt371y0R2HYCrrTiz7g",
       "ChIJ0euZt7D71y0RTwGVcAQ8wuk",
-      "ChIJsaEf7SP91y0RE1Mta9JTVHg",
-      "ChIJtbr3Wyz51y0RIqaADztHDk0",
-      "ChIJKYeHrPn71y0R-D3JSkgXQ_k",
-      "ChIJnVKqtbj71y0RHNyLDT0KXFg",
+      "ChIJAYax1kr91y0Rb9uGy_1OLkk",
       "ChIJo0BJMXX71y0RsFE2212P3cY",
-      "ChIJAVcXGmX71y0RN8fFxFBpbeE"
+      "ChIJKYeHrPn71y0R-D3JSkgXQ_k",
+      "ChIJsaEf7SP91y0RE1Mta9JTVHg",
+      "ChIJRTihpM371y0RtnXzUChbw5M",
+      "ChIJGdlIWjb71y0R_gAGkTwIVKk",
+      "ChIJnVKqtbj71y0RHNyLDT0KXFg",
+      "ChIJlUbaqt371y0R2HYCrrTiz7g"
     ],
-    "searchOffset": 20,
+    "searchOffset": 0,
     "skippedCount": 0,
-    "businessType": "barbershop",
-    "nextPageToken": "AXQCQNQe0_5x3NZrRLnSPb7ufVyegmlaD9drCMnfdUcssMDHkQeFE-wwJrSGyvwnJ_81-Z6vmHSYYO7leu9QdvIgYLHE6mqIEmAjk-HfulxFUwaFuLmMMXvmqaGcmwTZDFtPVE0Lq7SsWZBOZWBnwqx9bLM2uJ66D_izmrPcMQEk1pbpo9wjOTJAPTODeTSD69B-oThYlBK5_f1pHn2-EKx4n08y8VmtDCywbct2Sw1R038Vm_WZ-LPHJBz3oHsrtJX7Bvbaje-lJ5EzU7Wz4QiGhx8D0V0Am6D11Nnn_omgMSLjn24lWd6MgjIV2pJ4blqEYeuLv0dPvxoOyG3gLSKTcnglCnZjW1HeYHSvRnLUO18Xj8bBADLqIOFF12OCyh8nIjjANmYz1n3n3pnR23G3VussJyE"
-  },
-  "$results": [
-    {
-      "address": "Jl. Dharmahusada No.189, RT.001/RW.04, Mojo, Kec. Gubeng, Surabaya, Jawa Timur 60285, Indonesia",
+    "nextPageToken": "AXQCQNQkMH6RERwT2pr8N-L1H3yQxQbhg9cenXkorTAcJjeghAOUvHbtbzgSangZOoh_owZMCnDMBcRgG_hKKIISCaUwsD42T9K0GiRt6Z3d1XvzTBey4-oLeWCI5Ubr7lve2NxKoZy6E7sCEpjBC-DI1f_RzewKzqMrL3tZONhij8da4mPQW1l1YmN7iPdDEiMZ7XEoHh_svYtFtCQjaz4SXAw1JK9Fck5w9EBKRur9O0e8hLtIQAkwR719ZRdnJzc64D2mLweUxkW36BTkH__TCQQfNzhF5kbB_nPJbDzqxmZkG9YQl__jhHSDMNvd7u_twdgj6OhBGCdWG0nA_u2tlevc-YEO9oXgMP7Xgi-L6JZJ6eLL2MQQEKxGmUzEhgmYnAlxLhiQKOXKZqTxtspyIS0",
+    "currentPlaceId": "ChIJ56RjFV391y0Rt_Z_Z9fYJP0",
+    "placeDetails": {
+      "address": "Jl. Jambangan No.22, Jambangan, Kec. Jambangan, Surabaya, Jawa Timur 60232, Indonesia",
       "businessHours": [
-        "Monday: 10:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Tuesday: 10:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Wednesday: 10:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Thursday: 10:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Friday: 10:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Saturday: 10:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
-        "Sunday: 10:00\u202fAM\u2009\u2013\u20099:00\u202fPM"
+        "Senin: 10.00\u201300.00",
+        "Selasa: 10.00\u201300.00",
+        "Rabu: 10.00\u201300.00",
+        "Kamis: 10.00\u201300.00",
+        "Jumat: 13.00\u201300.00",
+        "Sabtu: 10.00\u201300.00",
+        "Minggu: 10.00\u201300.00"
       ],
       "businessType": [
         "hair_care",
@@ -55,40 +55,64 @@
         "point_of_interest",
         "establishment"
       ],
-      "coordinates": {},
-      "keywordCountN": 20,
-      "keywordMatch": "20 reviews contain keywords out of 1958 total reviews",
-      "keywordTotalB": 1958,
-      "matchFactors": null,
-      "matchPercentage": 100,
-      "matchReasoning": "This business matches 100.0% of your criteria. ",
-      "phone": "0812-3444-1070",
-      "placeName": "Captain Barbershop Premiere Surabaya",
-      "priceRange": null,
-      "rating": 4.9,
-      "reviewCount": 48,
-      "reviewSummary": {
-        "negative": "",
-        "positive": "Customers praise the barbershop for its expert staff, reasonable prices, and premium service. The beautiful interior architecture and excellent customer experiences are recurring highlights."
+      "contact": {
+        "phone": "0822-3008-0323",
+        "website": "https://instagram.com/javacosmic_barbershop?igshid=NzZlODBkYWE4Ng=="
       },
+      "negativeReviews": [],
+      "placeId": "ChIJ56RjFV391y0Rt_Z_Z9fYJP0",
+      "placeName": "Java Cosmic Barbershop",
+      "positiveReviews": [],
+      "priceRange": "",
+      "rating": 4.9,
+      "totalRatings": 646
+    }
+  },
+  "$results": [
+    {
+      "address": "Jl. Jambangan No.22, Jambangan, Kec. Jambangan, Surabaya, Jawa Timur 60232, Indonesia",
+      "businessHours": [
+        "Senin: 10.00\u201300.00",
+        "Selasa: 10.00\u201300.00",
+        "Rabu: 10.00\u201300.00",
+        "Kamis: 10.00\u201300.00",
+        "Jumat: 13.00\u201300.00",
+        "Sabtu: 10.00\u201300.00",
+        "Minggu: 10.00\u201300.00"
+      ],
+      "businessType": [
+        "hair_care",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "0822-3008-0323",
+        "website": "https://instagram.com/javacosmic_barbershop?igshid=NzZlODBkYWE4Ng=="
+      },
+      "keywordMatch": "20 out of 646 reviews mention the keyword.",
+      "matchPercentage": 100.0,
+      "matchReasoning": "Meets primary criteria.",
+      "negativeReviews": [],
+      "placeId": "ChIJ56RjFV391y0Rt_Z_Z9fYJP0",
+      "placeName": "Java Cosmic Barbershop",
+      "positiveReviews": [],
+      "priceRange": "",
+      "rating": 4.9,
       "strengths": [
-        "High customer satisfaction with a rating of 4.9 out of 5 from 1958 reviews, indicating excellent service and customer experience.",
-        "Positive comments on reasonable pricing and expert staff, suggesting good value for money and professional service.",
-        "Reviews highlight a beautiful interior and a premium experience, which enhances the overall customer experience."
+        "High customer satisfaction indicated by a 4.9 rating from 646 reviews",
+        "Perfect match score of 100.0% suggests strong alignment with customer needs or market niche"
       ],
-      "summaryPositiveReviews": "Customers praise the barbershop for its expert staff, reasonable prices, and premium service. The beautiful interior architecture and excellent customer experiences are recurring highlights.",
-      "totalRatings": 1958,
+      "totalRatings": 646,
       "weaknesses": [
-        "No negative reviews were provided, which might indicate a lack of transparency or skewed sample; potential unknown issues might exist.",
-        "The business may rely heavily on its current location, which could be a limitation if considering expansion or attracting non-local clientele.",
-        "Being in a niche market, fluctuations in consumer trends in personal grooming or economic downturns could potentially impact business stability."
-      ],
-      "website": "http://captainbarbershop.co.id/"
+        "Potential over-reliance on customer reviews for reputation, as criticism may arise if expectations are not met",
+        "High rating may create pressure to maintain service quality, risking burnout among staff"
+      ]
     }
   ],
   "$metadata": {
-    "createdAt": "2025-06-06T14:16:35.352840+00:00Z",
-    "startedAt": "2025-06-06T14:16:38.116100+00:00Z",
-    "executionTotal": 5
+    "createdAt": "2025-06-06T15:40:31.652523+00:00Z",
+    "startedAt": "2025-06-06T15:40:31.653510+00:00Z",
+    "executionTotal": 6
   }
 }
