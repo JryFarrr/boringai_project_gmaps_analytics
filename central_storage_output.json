@@ -1,5 +1,5 @@
 {
-  "$id": "76ed45bf-a38a-4282-bd9c-4a80b5d59ca9",
+  "$id": "5e436a3b-d007-4e11-85ce-7228ef0d526d",
   "$state": {
     "business_type": "barbershop",
     "constraints": {
@@ -23,8 +23,8 @@
       "ChIJQXmjyNj71y0RmasPngqN4No",
       "ChIJR7fIyGj91y0RfRDlOQKiFMo",
       "ChIJefNOAFr71y0REmAycDv1AxE",
-      "ChIJ0euZt7D71y0RTwGVcAQ8wuk",
       "ChIJpdYSFEb61y0ROoHx3PFOH9Y",
+      "ChIJ0euZt7D71y0RTwGVcAQ8wuk",
       "ChIJAYax1kr91y0Rb9uGy_1OLkk",
       "ChIJKYeHrPn71y0R-D3JSkgXQ_k",
       "ChIJsaEf7SP91y0RE1Mta9JTVHg",
@@ -36,7 +36,7 @@
     ],
     "searchOffset": 0,
     "skippedCount": 0,
-    "nextPageToken": "AXQCQNRNa2mqzFOHe-RA_v5gJIwuh-GY4VgXs6SXZkhbupJlQ4TFrDmMligFS5TGXfCQqjMiDtiL8NDihMJWUwnBQuIG0ULuSTYtuDtnDJqtQ05QKIBfTIoUmxTA208ViqlIeRqYC8694i0eE9456UMqCEZAQHRARpNr6IlSL64Y8oD_8ZGNzaB184q2Mb4oxHuYWa9OO2YCAjyanLW2FDfM-BMMgJG3rtYb_RhSEc5sDMmQl94HaH98eSZ11IFcLuk16M1iy8QqDo32cmGJJkFz66-FLAdAnvV_eUoWWPYpsiZWFFxjL_7XC4YeR54k4W06n2PXatlMSk1WbqsS6lcEU2Xnc2JNKe3LzPd5HiCRiCA1G38rJyfXOAeuTGGl35amIcqLWHz50qO5DqtP1KGnnnw",
+    "nextPageToken": "AXQCQNRVe21ijJEn1OqAlSxXU2x-RFVtnQHrLsu5lWSIZM2IvtbpdEzTxxmGSmL7uLNG3FHLFWntCiKaXTwF2qwHDOhnTFg4GTssq78F_EeWfZdJJfWCmOCYwTFno3nIpfahpgN-Wq01OkeStECyroc90eLvCcHEW-OHXqxCUhIiPU8xdEdeOCAd8YCAvyB6TOhIZYy9Mb7mNJ2SbSJMkYL1dOXypllI_l2sYM51igaSgXE48M3U93Bp3woOQkSNtOiqa36S4XP_U0cbmRL2zuQfEkpsbhlPDEUv3Qan6dBKBjaZhXi56dPzNwhIRAoSxJ7kuqsGSuSk9LGRsh6BLoFnJ0xe0dBFBV0dWPhE68lCwWCVO92JkNHSaYPEsrjLyh_JbgyW99yNCN0J3wFfJakt-w8",
     "currentPlaceId": "ChIJPfd11qj71y0RxG5BR7DD5ZE",
     "placeDetails": {
       "address": "Jl. Dharmahusada No.189, RT.001/RW.04, Mojo, Kec. Gubeng, Surabaya, Jawa Timur 60285, Indonesia",
@@ -74,47 +74,7 @@
         "Nice place, nice peeps, affordable price",
         "Good atmosphere, good service. Excellent",
         "Good service, quality, and cozy place",
-        "Good service, quality, and cozy place",
-        "Good sevices for all employes. Recommend",
-        "Good service, Nice place \ud83e\udef6\ud83c\udffb",
-        "Premium class bro",
-        "Nice place for haircut. Good ambience. Cozy to wait",
-        "Nice place for haircut. Good ambience. Cozy to wait",
-        "Nice place for haircut. Good ambience. Cozy to wait",
-        "haircut dsni comfort banget dan reccomend. worth for haircut in here",
-        "Top",
-        "good service n price",
-        "Awesome service with good skill of the staff",
-        "nice place,good ambiance",
-        "good place and axcellent service\ud83d\udc4d\ud83c\udffb\ud83d\udc4d\ud83c\udffb\ud83d\udc4d\ud83c\udffb",
-        "Good place , nice vibe",
-        "Good service and good choice for hair cut and treatment",
-        "Good Place, Goof Ambience",
-        "First time i do and good for every man",
-        "nice place and good service",
-        "nice place and good service",
-        "Nice place good taste",
-        "nice place, nice price",
-        "Good place and seems cozy",
-        "Nice Place Good Service",
-        "Best Barbershop i ever go in Indonesia.",
-        "Keep up the good work & good service !",
-        "good place and excellent service \ud83e\udd29\ud83e\udd29\ud83e\udd29",
-        "Nice place for haircut..cozy and comfortable..sukses terus captain barbershop",
-        "good and comfortable place to cut your hair!",
-        "Good Place, Good Sevice \ud83d\udc4d",
-        "great place with a good service",
-        "Great services , thank you !",
-        "Reccomended bgt\ud83d\udc4d",
-        "Nice and premium place to groom",
-        "Nice place for haircut. Great ambience",
-        "good cut, nice service \ud83d\udc4d",
-        "cozy place, easy access",
-        "Good",
-        "Good!!",
-        "Nice place for haircut. Good ambience.",
-        "good cut, nice service",
-        "Nice place for grooming ur hair"
+        "Good service, quality, and cozy place"
       ],
       "priceRange": "",
       "rating": 4.9,
@@ -151,22 +111,22 @@
       "priceRange": "",
       "rating": 4.9,
       "strengths": [
-        "High customer satisfaction with a rating of 4.9 from 1958 reviews.",
-        "Expert staff providing quality haircuts and excellent service.",
-        "Cozy and well-designed interior contributing to an enjoyable atmosphere."
+        "High customer satisfaction with a 4.9 rating from nearly 2000 reviews.",
+        "Expert and friendly staff providing premium service.",
+        "Affordable pricing combined with high-quality offerings in a beautifully designed interior."
       ],
       "summaryNegative": "",
-      "summaryPositive": "This barbershop in Surabaya has garnered numerous positive reviews highlighting its reasonable prices, expert staff, and cozy, well-designed interior. Customers consistently praise the excellent service and quality of haircuts, often describing their experiences as premium or royal, with many expressing their intent to return. The inviting atmosphere and comfortable waiting area contribute to an enjoyable experience, making it a highly recommended choice for anyone seeking grooming services. Overall, this establishment stands out as one of the best barbershops in the area, known for its friendly staff and high-quality service.",
+      "summaryPositive": "The reviews highlight a barbershop in Surabaya as an excellent choice for haircuts, praised for its reasonable prices, expert and friendly staff, and beautifully designed interior. Customers rave about the premium service, with many describing their experiences as amazing and recommending the establishment for its cozy atmosphere and high-quality offerings. Overall, the barbershop is noted as a top destination for both its affordability and exceptional service.",
       "totalRatings": 1958,
       "weaknesses": [
-        "Limited information on services offered beyond haircuts.",
-        "Potentially high customer volume may lead to longer wait times."
+        "Potential over-reliance on positive reviews; any decline in service may impact reputation more significantly.",
+        "Limited market appeal if the focus is solely on haircuts without additional services."
       ]
     }
   ],
   "$metadata": {
-    "createdAt": "2025-06-06T16:21:00.098464+00:00Z",
-    "startedAt": "2025-06-06T16:21:00.098464+00:00Z",
+    "createdAt": "2025-06-06T16:45:01.484097+00:00Z",
+    "startedAt": "2025-06-06T16:45:01.484097+00:00Z",
     "executionTotal": 6
   }
 }

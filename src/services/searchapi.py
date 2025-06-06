@@ -9,7 +9,9 @@ class SearchApiService:
             raise ValueError("SEARCHAPI_API_KEY is not set or not loaded correctly from .env file.")
         self.base_url = "https://www.searchapi.io/api/v1/search"
 
-    def get_reviews(self, place_id, max_reviews=100):
+    def get_reviews(self, place_id, max_reviews=None):
+        if max_reviews is None:
+            max_reviews = Config.DEFAULT_MAX_REVIEWS
         all_reviews = []
         params = {
             "api_key": self.api_key, "engine": "google_maps_reviews",
