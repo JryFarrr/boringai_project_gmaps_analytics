@@ -36,7 +36,7 @@ cd boringai_project_gmaps_analytics
 ### 2. Siapkan File .env Mengacu dari File .env.example
 
 ```ini
-GOOGLE_MAPS_API_KEY=
+Maps_API_KEY=
 OPENAI_API_KEY=
 SEARCHAPI_API_KEY=
 DEFAULT_REFERER_URL=https://your-website.com
