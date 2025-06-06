@@ -64,7 +64,7 @@ class WorkflowExecutor:
 
 def run_simulation():
     executor = WorkflowExecutor()
-    prompt = "Temukan 1 barbershop di Surabaya yang potongannya bagus dan ratingnya di atas 4.8"
+    prompt = "Temukan 3 barbershop di Surabaya yang potongannya bagus dan ratingnya di atas 4.8"
     print("Starting workflow..."); executor.start_workflow(prompt)
     print("\n--- Final Central Storage ---"); storage = executor.get_storage()
     if storage.get("$results"):

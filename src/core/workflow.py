@@ -49,13 +49,21 @@ class Workflow:
         return {"state": state, "result": analysis_result, "next": {"key": "control", "payload": {"state": "$state"}}}
     def control(self, payload):
         state = payload['state']
-        if state['leadCount'] >= state['numberOfLeads']:
+        
+        # Konversi leadCount dan numberOfLeads ke integer untuk perbandingan yang aman
+        lead_count = int(state.get('leadCount', 0))
+        number_of_leads = int(state.get('numberOfLeads', 1))
+
+        if lead_count >= number_of_leads:
             print("Target number of leads reached.")
             return {"done": True, "state": state, "result": None}
-        if state['remainingPlaceIds']:
+        
+        if state.get('remainingPlaceIds'):
             state['currentPlaceId'] = state['remainingPlaceIds'].pop(0)
             return {"state": state, "next": {"key": "scrape", "payload": {"state": "$state"}}}
+        
         if state.get('nextPageToken'):
             return {"state": state, "next": {"key": "search", "payload": {"state": "$state"}}}
+        
         print("No more potential leads found.")
         return {"done": True, "state": state, "result": None}

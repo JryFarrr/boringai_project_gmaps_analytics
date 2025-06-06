@@ -1,5 +1,5 @@
 {
-  "$id": "5e436a3b-d007-4e11-85ce-7228ef0d526d",
+  "$id": "99864839-ed3b-4f43-95ec-06ff70c16e14",
   "$state": {
     "business_type": "barbershop",
     "constraints": {
@@ -10,36 +10,78 @@
       "min_reviews": 0,
       "price_range": ""
     },
-    "leadCount": 1,
+    "leadCount": 3,
     "location": "Surabaya",
-    "numberOfLeads": 1,
+    "numberOfLeads": 3,
     "remainingPlaceIds": [
-      "ChIJe_tS_CT71y0RHTj1UOK3o4s",
-      "ChIJPWkXuJD71y0R1OQbqVWOYxA",
       "ChIJvU4EKnn71y0RXPGocdE0TrQ",
-      "ChIJ56RjFV391y0Rt_Z_Z9fYJP0",
-      "ChIJVSnl16j91y0R5lPGf3lm2BE",
       "ChIJC6NRZ2n71y0RMl6kVB7hwBY",
       "ChIJQXmjyNj71y0RmasPngqN4No",
-      "ChIJR7fIyGj91y0RfRDlOQKiFMo",
-      "ChIJefNOAFr71y0REmAycDv1AxE",
-      "ChIJpdYSFEb61y0ROoHx3PFOH9Y",
-      "ChIJ0euZt7D71y0RTwGVcAQ8wuk",
+      "ChIJVSnl16j91y0R5lPGf3lm2BE",
       "ChIJAYax1kr91y0Rb9uGy_1OLkk",
-      "ChIJKYeHrPn71y0R-D3JSkgXQ_k",
-      "ChIJsaEf7SP91y0RE1Mta9JTVHg",
-      "ChIJRTihpM371y0RtnXzUChbw5M",
-      "ChIJGdlIWjb71y0R_gAGkTwIVKk",
+      "ChIJR7fIyGj91y0RfRDlOQKiFMo",
       "ChIJnVKqtbj71y0RHNyLDT0KXFg",
+      "ChIJsaEf7SP91y0RE1Mta9JTVHg",
+      "ChIJ56RjFV391y0Rt_Z_Z9fYJP0",
       "ChIJlUbaqt371y0R2HYCrrTiz7g",
-      "ChIJT-mQGpD71y0RqLtZMaNC4WU"
+      "ChIJRTihpM371y0RtnXzUChbw5M",
+      "ChIJ0euZt7D71y0RTwGVcAQ8wuk",
+      "ChIJpdYSFEb61y0ROoHx3PFOH9Y",
+      "ChIJKYeHrPn71y0R-D3JSkgXQ_k",
+      "ChIJefNOAFr71y0REmAycDv1AxE",
+      "ChIJ9btjwT351y0RgCacm3haNRg",
+      "ChIJ61H4nQz51y0RK3Cyet1d-O4"
     ],
     "searchOffset": 0,
     "skippedCount": 0,
-    "nextPageToken": "AXQCQNRVe21ijJEn1OqAlSxXU2x-RFVtnQHrLsu5lWSIZM2IvtbpdEzTxxmGSmL7uLNG3FHLFWntCiKaXTwF2qwHDOhnTFg4GTssq78F_EeWfZdJJfWCmOCYwTFno3nIpfahpgN-Wq01OkeStECyroc90eLvCcHEW-OHXqxCUhIiPU8xdEdeOCAd8YCAvyB6TOhIZYy9Mb7mNJ2SbSJMkYL1dOXypllI_l2sYM51igaSgXE48M3U93Bp3woOQkSNtOiqa36S4XP_U0cbmRL2zuQfEkpsbhlPDEUv3Qan6dBKBjaZhXi56dPzNwhIRAoSxJ7kuqsGSuSk9LGRsh6BLoFnJ0xe0dBFBV0dWPhE68lCwWCVO92JkNHSaYPEsrjLyh_JbgyW99yNCN0J3wFfJakt-w8",
-    "currentPlaceId": "ChIJPfd11qj71y0RxG5BR7DD5ZE",
+    "nextPageToken": "AXQCQNS9PTwJmC7mBka8zHQgGgwOerWt6H8y5feYNOWhYvCPikMkv8mxwINTCiY3Kn2gZ1ZyJsH-3KLPfza0CEMJ-sT0AOv_xhDWAolpPN2WvE-JyemkkV22C7Ca96JEUZGQisZOnU7TGHm1ZbHRho2wDwJzwvydp_WBwRkOOncznc8A2vm5-GQiwyqSfK_F9X2QyPUOYUbQBKX7SGdpSnuDPB_UsvfjrNZ1o7Dym_TpRadLhU2l7s957bk5WEzy2PwRAAi_v4W64qhOHXlfb26_v9fv13vu_0829BrBrdM6gvAwt2KPOy3RYYcPCVC--rA2ICJUHAULjqfMtvPT-urRElpE7DbDR_3SciQ8Z6Vq_gE9Ly9WWoGbMfvg9gh5ST3m4nlBXSefGu-cNoubUCFMC2g",
+    "currentPlaceId": "ChIJe_tS_CT71y0RHTj1UOK3o4s",
     "placeDetails": {
-      "address": "Jl. Dharmahusada No.189, RT.001/RW.04, Mojo, Kec. Gubeng, Surabaya, Jawa Timur 60285, Indonesia",
+      "address": "Jl. Rungkut Madya No.55A, Rungkut Kidul, Kec. Rungkut, Surabaya, Jawa Timur 60293, Indonesia",
+      "businessHours": [
+        "Senin: 11.00\u201321.00",
+        "Selasa: 11.00\u201321.00",
+        "Rabu: 11.00\u201321.00",
+        "Kamis: 11.00\u201321.00",
+        "Jumat: 11.00\u201322.00",
+        "Sabtu: 11.00\u201322.00",
+        "Minggu: 11.00\u201322.00"
+      ],
+      "businessType": [
+        "hair_care",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "0821-1000-9744",
+        "website": null
+      },
+      "keywordFoundCount": 20,
+      "keywordMatch": "20 out of 935 reviews mention the keyword.",
+      "negativeReviews": [],
+      "placeId": "ChIJe_tS_CT71y0RHTj1UOK3o4s",
+      "placeName": "Dutchman Barbershop",
+      "positiveReviews": [
+        "The haircut was very professional, gentle and relaxing. The use of perfumed hot and wet towels was nice along with the modish shampoo that made it a unique experience from other barbershops. The facility is well kept, the staff friendly and there's some parking along with a hot and cold coffee menu.....I don't mind coming back.",
+        "I had an amazing experience at this barbershop! The skilled stylists here not only delivered a fantastic haircut but also provided excellent customer service. The atmosphere is trendy and comfortable, creating a pleasant overall experience. The attention to detail and friendly staff make it my preferred choice for a stylish and satisfying haircut. Highly recommended!",
+        "Nice place, so comfy barbershop..\nThree times here to get best treatment..\nKeep up the good work",
+        "I request the cut and treatment few days before my wedding and everything just as requested. Services was excellent,  there was a barber man called jojo definitely would be my man for next cut. Price wise just worth it with all the service! Will be back",
+        "Good ambience and the cabster\u2019s really paying attention to a lot of detail and our request. Cabster\u2019s name: David",
+        "Great place to have a haircut, warm towel, and good service",
+        "Great clean place, friendly and professional hair stylist and the promotion is great. Will surely comeback for more",
+        "The place is really comfy & relaxing, the service was also great, both the barber & the receptionist were really nice. The cut is also great",
+        "good service, good experience \ud83d\udc4d\ud83c\udffb",
+        "amazing place, solid 10"
+      ],
+      "priceRange": "",
+      "rating": 5,
+      "totalRatings": 935
+    }
+  },
+  "$results": [
+    {
+      "address": "Jl. Rungkut Madya No.81, Rungkut Kidul, Kec. Rungkut, Surabaya, Jawa Timur 60293, Indonesia",
       "businessHours": [
         "Senin: 10.00\u201321.00",
         "Selasa: 10.00\u201321.00",
@@ -56,32 +98,30 @@
         "establishment"
       ],
       "contact": {
-        "phone": "0812-3444-1070",
+        "phone": "0812-3444-0775",
         "website": "http://captainbarbershop.co.id/"
       },
-      "keywordFoundCount": 20,
-      "keywordMatch": "20 out of 1958 reviews mention the keyword.",
-      "negativeReviews": [],
-      "placeId": "ChIJPfd11qj71y0RxG5BR7DD5ZE",
-      "placeName": "Captain Barbershop Premiere Surabaya",
-      "positiveReviews": [
-        "Was looking for a haircut online and found them and paid a visit. Reasonable prices and staff was expert and very nice just as expected from the reviews. Will get their service next time I\u2019ll be in Surabaya. Very beautiful interior architecture.",
-        "One of the best barbershop in Surabaya!",
-        "Came here for the first time and got the royal package. It was an amazing experience. Glad I came here to get my haircut.",
-        "The best barbershop with premium place and service\n\nGreat job \ud83d\udc4d\ud83d\udc4d",
-        "OMG good place the best",
-        "This place so cozy, service so excelent, so recommended \ud83e\udd29",
-        "Nice place, nice peeps, affordable price",
-        "Good atmosphere, good service. Excellent",
-        "Good service, quality, and cozy place",
-        "Good service, quality, and cozy place"
-      ],
+      "keywordMatch": "20 out of 2038 reviews mention the keyword.",
+      "matchPercentage": 100.0,
+      "matchReasoning": "Meets primary criteria.",
+      "placeId": "ChIJPWkXuJD71y0R1OQbqVWOYxA",
+      "placeName": "Captain Barbershop Rungkut Surabaya",
       "priceRange": "",
       "rating": 4.9,
-      "totalRatings": 1958
-    }
-  },
-  "$results": [
+      "strengths": [
+        "High rating of 4.9 from 2038 reviews indicating exceptional customer satisfaction.",
+        "Excellent service and professionalism of staff (capsters) recognized by multiple patrons.",
+        "Great design and comfort of the shop with amenities that enhance the customer experience."
+      ],
+      "summaryNegative": "Customer dissatisfaction with Captain Barbershop, despite its status as Indonesia's largest and most luxurious barbershop, primarily stems from excessively long wait times and inflexible queuing policies. Reviewers have reported waiting over an hour and a half, with some expressing frustration over being unable to leave the premises during their waits, even for brief periods. Many suggest improvements such as implementing a reservation system through an app or allowing customers to leave while queuing, to enhance the overall service and experience.",
+      "summaryPositive": "The reviews highlight a consistently positive experience at this barbershop, characterized by excellent service, great design, and affordable prices. Customers appreciate the cleanliness and comfort of the space, which includes amenities like charging stations. The staff, referred to as \"capsters,\" are noted for their professionalism, with many patrons recommending clear communication to achieve the best results. Many reviews express satisfaction with the variety of skilled barbers available, and some customers have even decided to become members after their first visit. Overall, the establishment receives high praise and is regarded as a top choice for grooming needs.",
+      "totalRatings": 2038,
+      "weaknesses": [
+        "Excessively long wait times reported by customers, with some waiting over an hour and a half.",
+        "Inflexible queuing policies leading to customer frustration regarding their ability to leave during waits.",
+        "Lack of a reservation system or app to streamline the appointment process."
+      ]
+    },
     {
       "address": "Jl. Dharmahusada No.189, RT.001/RW.04, Mojo, Kec. Gubeng, Surabaya, Jawa Timur 60285, Indonesia",
       "businessHours": [
@@ -111,22 +151,63 @@
       "priceRange": "",
       "rating": 4.9,
       "strengths": [
-        "High customer satisfaction with a 4.9 rating from nearly 2000 reviews.",
-        "Expert and friendly staff providing premium service.",
-        "Affordable pricing combined with high-quality offerings in a beautifully designed interior."
+        "High customer satisfaction with a rating of 4.9 from 1958 reviews.",
+        "Expert staff providing excellent service and high-quality experiences.",
+        "Inviting and cozy atmosphere complemented by a beautiful interior."
       ],
       "summaryNegative": "",
-      "summaryPositive": "The reviews highlight a barbershop in Surabaya as an excellent choice for haircuts, praised for its reasonable prices, expert and friendly staff, and beautifully designed interior. Customers rave about the premium service, with many describing their experiences as amazing and recommending the establishment for its cozy atmosphere and high-quality offerings. Overall, the barbershop is noted as a top destination for both its affordability and exceptional service.",
+      "summaryPositive": "The barbershop in Surabaya has garnered positive reviews for its reasonable prices, expert staff, and excellent service, consistently described as cozy and inviting. Customers appreciate the beautiful interior and the high-quality experiences offered, particularly noting the \"royal package\" as a standout. Overall, patrons highly recommend this barbershop for its premium service, welcoming atmosphere, and affordability.",
       "totalRatings": 1958,
       "weaknesses": [
-        "Potential over-reliance on positive reviews; any decline in service may impact reputation more significantly.",
-        "Limited market appeal if the focus is solely on haircuts without additional services."
+        "Potential over-reliance on the 'royal package' may limit awareness of other services.",
+        "Limited information on how to maintain customer engagement post-visit."
+      ]
+    },
+    {
+      "address": "Jl. Rungkut Madya No.55A, Rungkut Kidul, Kec. Rungkut, Surabaya, Jawa Timur 60293, Indonesia",
+      "businessHours": [
+        "Senin: 11.00\u201321.00",
+        "Selasa: 11.00\u201321.00",
+        "Rabu: 11.00\u201321.00",
+        "Kamis: 11.00\u201321.00",
+        "Jumat: 11.00\u201322.00",
+        "Sabtu: 11.00\u201322.00",
+        "Minggu: 11.00\u201322.00"
+      ],
+      "businessType": [
+        "hair_care",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "0821-1000-9744",
+        "website": null
+      },
+      "keywordMatch": "20 out of 935 reviews mention the keyword.",
+      "matchPercentage": 100.0,
+      "matchReasoning": "Meets primary criteria.",
+      "placeId": "ChIJe_tS_CT71y0RHTj1UOK3o4s",
+      "placeName": "Dutchman Barbershop",
+      "priceRange": "",
+      "rating": 5,
+      "strengths": [
+        "Highly skilled and professional stylists delivering exceptional haircuts.",
+        "Outstanding customer service and attention to detail.",
+        "Welcoming and trendy atmosphere with thoughtful amenities."
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "Customers consistently praise the barbershop for its professional and skilled stylists, who deliver exceptional haircuts along with outstanding customer service. Reviewers highlight the relaxing atmosphere, characterized by a trendy ambiance, attentive staff, and thoughtful touches such as perfumed hot towels and a variety of coffee options. The facility is well-maintained, adding to the overall comfort and pleasant experience. With an emphasis on detail and personalized service, patrons enthusiastically recommend the barbershop for anyone seeking a stylish haircut and a relaxing environment. Many express a strong desire to return, often mentioning specific staff members who left a lasting impression.",
+      "totalRatings": 935,
+      "weaknesses": [
+        "Potential for high demand leading to longer wait times during peak hours.",
+        "Limited negative feedback could indicate a lack of diverse service offerings."
       ]
     }
   ],
   "$metadata": {
-    "createdAt": "2025-06-06T16:45:01.484097+00:00Z",
-    "startedAt": "2025-06-06T16:45:01.484097+00:00Z",
-    "executionTotal": 6
+    "createdAt": "2025-06-06T18:10:56.684020+00:00Z",
+    "startedAt": "2025-06-06T18:10:56.684020+00:00Z",
+    "executionTotal": 12
   }
 }
