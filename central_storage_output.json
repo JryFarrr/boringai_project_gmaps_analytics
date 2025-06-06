@@ -1,5 +1,5 @@
 {
-  "$id": "7ec74898-b8b1-4155-872a-359e13049bc3",
+  "$id": "e62ed48c-9d63-41ea-a88f-3deae881a09d",
   "$state": {
     "business_type": "barbershop",
     "constraints": {
@@ -14,40 +14,40 @@
     "location": "Surabaya",
     "numberOfLeads": 1,
     "remainingPlaceIds": [
-      "ChIJPfd11qj71y0RxG5BR7DD5ZE",
       "ChIJe_tS_CT71y0RHTj1UOK3o4s",
       "ChIJPWkXuJD71y0R1OQbqVWOYxA",
       "ChIJvU4EKnn71y0RXPGocdE0TrQ",
-      "ChIJVSnl16j91y0R5lPGf3lm2BE",
       "ChIJC6NRZ2n71y0RMl6kVB7hwBY",
-      "ChIJQXmjyNj71y0RmasPngqN4No",
-      "ChIJefNOAFr71y0REmAycDv1AxE",
-      "ChIJR7fIyGj91y0RfRDlOQKiFMo",
-      "ChIJpdYSFEb61y0ROoHx3PFOH9Y",
-      "ChIJ0euZt7D71y0RTwGVcAQ8wuk",
-      "ChIJAYax1kr91y0Rb9uGy_1OLkk",
-      "ChIJo0BJMXX71y0RsFE2212P3cY",
-      "ChIJKYeHrPn71y0R-D3JSkgXQ_k",
-      "ChIJsaEf7SP91y0RE1Mta9JTVHg",
-      "ChIJRTihpM371y0RtnXzUChbw5M",
-      "ChIJGdlIWjb71y0R_gAGkTwIVKk",
+      "ChIJVSnl16j91y0R5lPGf3lm2BE",
       "ChIJnVKqtbj71y0RHNyLDT0KXFg",
-      "ChIJlUbaqt371y0R2HYCrrTiz7g"
+      "ChIJQXmjyNj71y0RmasPngqN4No",
+      "ChIJAYax1kr91y0Rb9uGy_1OLkk",
+      "ChIJ56RjFV391y0Rt_Z_Z9fYJP0",
+      "ChIJR7fIyGj91y0RfRDlOQKiFMo",
+      "ChIJsaEf7SP91y0RE1Mta9JTVHg",
+      "ChIJpdYSFEb61y0ROoHx3PFOH9Y",
+      "ChIJKYeHrPn71y0R-D3JSkgXQ_k",
+      "ChIJlUbaqt371y0R2HYCrrTiz7g",
+      "ChIJ0euZt7D71y0RTwGVcAQ8wuk",
+      "ChIJefNOAFr71y0REmAycDv1AxE",
+      "ChIJRTihpM371y0RtnXzUChbw5M",
+      "ChIJ9btjwT351y0RgCacm3haNRg",
+      "ChIJWVE7sST91y0Ra1xi4Hh8mHg"
     ],
     "searchOffset": 0,
     "skippedCount": 0,
-    "nextPageToken": "AXQCQNQkMH6RERwT2pr8N-L1H3yQxQbhg9cenXkorTAcJjeghAOUvHbtbzgSangZOoh_owZMCnDMBcRgG_hKKIISCaUwsD42T9K0GiRt6Z3d1XvzTBey4-oLeWCI5Ubr7lve2NxKoZy6E7sCEpjBC-DI1f_RzewKzqMrL3tZONhij8da4mPQW1l1YmN7iPdDEiMZ7XEoHh_svYtFtCQjaz4SXAw1JK9Fck5w9EBKRur9O0e8hLtIQAkwR719ZRdnJzc64D2mLweUxkW36BTkH__TCQQfNzhF5kbB_nPJbDzqxmZkG9YQl__jhHSDMNvd7u_twdgj6OhBGCdWG0nA_u2tlevc-YEO9oXgMP7Xgi-L6JZJ6eLL2MQQEKxGmUzEhgmYnAlxLhiQKOXKZqTxtspyIS0",
-    "currentPlaceId": "ChIJ56RjFV391y0Rt_Z_Z9fYJP0",
+    "nextPageToken": "AXQCQNTPbiiaLwfQxSahGEJeKPZfLDN6TrwEGIaVfJekTIQsARSx9JigbQwVPxNS3QZrLbaUPwczgDh9tFIYqQpv1LdHAG1X6cpoDCTtpdI0YHAe4RMAh4Zid8SUNLLo4lgH5lNYgkOfF00vBlUbmvbJO2ETSQ7UJ8sfjMZHoo74TKOsa4YoIjKi-xXpgDAbMZX8U-tkZNKWtcqL-IHl6sU8yub0COfB62HCfrEsn4k6D8PNqNVPaOqqYIPWoT9qzPGpOQvrhJSif5zimQikGcjNgmWmUe_FDG0OR7iRve0R8zJp1WnVNNZRohmFB2a5hUNzchBHZTNuRzsDzT-teA0_Dpa7xOcLTJu0R98GHSv6apM9WeLIQkRCLcMXjseQk3Us-43mnJ-6cdXg1H1x6EE1QCA",
+    "currentPlaceId": "ChIJPfd11qj71y0RxG5BR7DD5ZE",
     "placeDetails": {
-      "address": "Jl. Jambangan No.22, Jambangan, Kec. Jambangan, Surabaya, Jawa Timur 60232, Indonesia",
+      "address": "Jl. Dharmahusada No.189, RT.001/RW.04, Mojo, Kec. Gubeng, Surabaya, Jawa Timur 60285, Indonesia",
       "businessHours": [
-        "Senin: 10.00\u201300.00",
-        "Selasa: 10.00\u201300.00",
-        "Rabu: 10.00\u201300.00",
-        "Kamis: 10.00\u201300.00",
-        "Jumat: 13.00\u201300.00",
-        "Sabtu: 10.00\u201300.00",
-        "Minggu: 10.00\u201300.00"
+        "Senin: 10.00\u201321.00",
+        "Selasa: 10.00\u201321.00",
+        "Rabu: 10.00\u201321.00",
+        "Kamis: 10.00\u201321.00",
+        "Jumat: 10.00\u201321.00",
+        "Sabtu: 10.00\u201321.00",
+        "Minggu: 10.00\u201321.00"
       ],
       "businessType": [
         "hair_care",
@@ -56,29 +56,42 @@
         "establishment"
       ],
       "contact": {
-        "phone": "0822-3008-0323",
-        "website": "https://instagram.com/javacosmic_barbershop?igshid=NzZlODBkYWE4Ng=="
+        "phone": "0812-3444-1070",
+        "website": "http://captainbarbershop.co.id/"
       },
       "negativeReviews": [],
-      "placeId": "ChIJ56RjFV391y0Rt_Z_Z9fYJP0",
-      "placeName": "Java Cosmic Barbershop",
-      "positiveReviews": [],
+      "placeId": "ChIJPfd11qj71y0RxG5BR7DD5ZE",
+      "placeName": "Captain Barbershop Premiere Surabaya",
+      "positiveReviews": [
+        "Was looking for a haircut online and found them and paid a visit. Reasonable prices and staff was expert and very nice just as expected from the reviews. Will get their service next time I\u2019ll be in Surabaya. Very beautiful interior architecture.",
+        "One of the best barbershop in Surabaya!",
+        "Came here for the first time and got the royal package. It was an amazing experience. Glad I came here to get my haircut.",
+        "The best barbershop with premium place and service\n\nGreat job \ud83d\udc4d\ud83d\udc4d",
+        "OMG good place the best",
+        "This place so cozy, service so excelent, so recommended \ud83e\udd29",
+        "Nice place, nice peeps, affordable price",
+        "Good atmosphere, good service. Excellent",
+        "Good service, quality, and cozy place",
+        "Good service, quality, and cozy place",
+        "Good sevices for all employes. Recommend",
+        "Good service, Nice place \ud83e\udef6\ud83c\udffb"
+      ],
       "priceRange": "",
       "rating": 4.9,
-      "totalRatings": 646
+      "totalRatings": 1958
     }
   },
   "$results": [
     {
-      "address": "Jl. Jambangan No.22, Jambangan, Kec. Jambangan, Surabaya, Jawa Timur 60232, Indonesia",
+      "address": "Jl. Dharmahusada No.189, RT.001/RW.04, Mojo, Kec. Gubeng, Surabaya, Jawa Timur 60285, Indonesia",
       "businessHours": [
-        "Senin: 10.00\u201300.00",
-        "Selasa: 10.00\u201300.00",
-        "Rabu: 10.00\u201300.00",
-        "Kamis: 10.00\u201300.00",
-        "Jumat: 13.00\u201300.00",
-        "Sabtu: 10.00\u201300.00",
-        "Minggu: 10.00\u201300.00"
+        "Senin: 10.00\u201321.00",
+        "Selasa: 10.00\u201321.00",
+        "Rabu: 10.00\u201321.00",
+        "Kamis: 10.00\u201321.00",
+        "Jumat: 10.00\u201321.00",
+        "Sabtu: 10.00\u201321.00",
+        "Minggu: 10.00\u201321.00"
       ],
       "businessType": [
         "hair_care",
@@ -87,32 +100,33 @@
         "establishment"
       ],
       "contact": {
-        "phone": "0822-3008-0323",
-        "website": "https://instagram.com/javacosmic_barbershop?igshid=NzZlODBkYWE4Ng=="
+        "phone": "0812-3444-1070",
+        "website": "http://captainbarbershop.co.id/"
       },
-      "keywordMatch": "20 out of 646 reviews mention the keyword.",
+      "keywordMatch": "20 out of 1958 reviews mention the keyword.",
       "matchPercentage": 100.0,
       "matchReasoning": "Meets primary criteria.",
-      "negativeReviews": [],
-      "placeId": "ChIJ56RjFV391y0Rt_Z_Z9fYJP0",
-      "placeName": "Java Cosmic Barbershop",
-      "positiveReviews": [],
+      "placeId": "ChIJPfd11qj71y0RxG5BR7DD5ZE",
+      "placeName": "Captain Barbershop Premiere Surabaya",
       "priceRange": "",
       "rating": 4.9,
       "strengths": [
-        "High customer satisfaction indicated by a 4.9 rating from 646 reviews",
-        "Perfect match score of 100.0% suggests strong alignment with customer needs or market niche"
+        "Exceptional service with high customer satisfaction.",
+        "Reasonable pricing attracting a broad customer base.",
+        "Inviting atmosphere with beautiful interior design enhancing customer experience."
       ],
-      "totalRatings": 646,
+      "summaryNegative": "",
+      "summaryPositive": "The barbershop in Surabaya receives high praise for its exceptional service, reasonable pricing, and inviting atmosphere, making it a popular choice among customers. Reviewers commend the expertise and friendliness of the staff, as well as the beautiful interior design. Many note the quality of their experiences, particularly with the royal package, highlighting it as a must-visit venue. Overall, the combination of a cozy environment, excellent service, and affordability has led to strong recommendations from satisfied clients.",
+      "totalRatings": 1958,
       "weaknesses": [
-        "Potential over-reliance on customer reviews for reputation, as criticism may arise if expectations are not met",
-        "High rating may create pressure to maintain service quality, risking burnout among staff"
+        "Limited negative feedback suggests potential lack of awareness on areas for improvement.",
+        "High customer volume may impact personalized service during peak times."
       ]
     }
   ],
   "$metadata": {
-    "createdAt": "2025-06-06T15:40:31.652523+00:00Z",
-    "startedAt": "2025-06-06T15:40:31.653510+00:00Z",
+    "createdAt": "2025-06-06T16:02:45.412682+00:00Z",
+    "startedAt": "2025-06-06T16:02:45.412682+00:00Z",
     "executionTotal": 6
   }
 }

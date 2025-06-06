@@ -1,4 +1,5 @@
 from ..services.gmaps import GmapsService
+from ..services.searchapi import SearchApiService # <-- Import SearchApiService
 from ..utils.formatter import Formatter
 
 class Finder:
@@ -7,6 +8,7 @@ class Finder:
     """
     def __init__(self):
         self.gmaps = GmapsService()
+        self.searchapi = SearchApiService() # <-- Inisialisasi SearchApiService
         self.formatter = Formatter()
 
     def find_business_ids(self, state):
@@ -23,7 +25,8 @@ class Finder:
         if not raw_details:
             return None
             
-        reviews_data = self.gmaps.get_reviews_from_searchapi(place_id)
+        # --- PERBAIKAN: Memanggil fungsi yang benar untuk mengambil review ---
+        reviews_data = self.searchapi.get_reviews(place_id)
         raw_details['reviews_from_searchapi'] = reviews_data
         
         return self.formatter.format_place_details(raw_details)
