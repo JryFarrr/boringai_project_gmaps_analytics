@@ -67,7 +67,10 @@ def run_simulation():
     prompt = "Temukan 1 barbershop di Surabaya yang potongannya bagus dan ratingnya di atas 4.8"
     print("Starting workflow..."); executor.start_workflow(prompt)
     print("\n--- Final Central Storage ---"); storage = executor.get_storage()
-    if storage.get("$results"): storage["$results"].sort(key=lambda x: x.get("matchPercentage", 0), reverse=True)
+    if storage.get("$results"):
+        dict_results = [r for r in storage["$results"] if isinstance(r, dict)]
+        dict_results.sort(key=lambda x: x.get("matchPercentage", 0), reverse=True)
+        storage["$results"] = dict_results
     with open("central_storage_output.json", "w") as f: json.dump(storage, f, indent=2)
     print(f"Central Storage has been saved to central_storage_output.json")
     print(json.dumps(storage, indent=2))

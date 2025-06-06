@@ -1,5 +1,5 @@
 {
-  "$id": "e62ed48c-9d63-41ea-a88f-3deae881a09d",
+  "$id": "76ed45bf-a38a-4282-bd9c-4a80b5d59ca9",
   "$state": {
     "business_type": "barbershop",
     "constraints": {
@@ -17,26 +17,26 @@
       "ChIJe_tS_CT71y0RHTj1UOK3o4s",
       "ChIJPWkXuJD71y0R1OQbqVWOYxA",
       "ChIJvU4EKnn71y0RXPGocdE0TrQ",
-      "ChIJC6NRZ2n71y0RMl6kVB7hwBY",
-      "ChIJVSnl16j91y0R5lPGf3lm2BE",
-      "ChIJnVKqtbj71y0RHNyLDT0KXFg",
-      "ChIJQXmjyNj71y0RmasPngqN4No",
-      "ChIJAYax1kr91y0Rb9uGy_1OLkk",
       "ChIJ56RjFV391y0Rt_Z_Z9fYJP0",
+      "ChIJVSnl16j91y0R5lPGf3lm2BE",
+      "ChIJC6NRZ2n71y0RMl6kVB7hwBY",
+      "ChIJQXmjyNj71y0RmasPngqN4No",
       "ChIJR7fIyGj91y0RfRDlOQKiFMo",
-      "ChIJsaEf7SP91y0RE1Mta9JTVHg",
-      "ChIJpdYSFEb61y0ROoHx3PFOH9Y",
-      "ChIJKYeHrPn71y0R-D3JSkgXQ_k",
-      "ChIJlUbaqt371y0R2HYCrrTiz7g",
-      "ChIJ0euZt7D71y0RTwGVcAQ8wuk",
       "ChIJefNOAFr71y0REmAycDv1AxE",
+      "ChIJ0euZt7D71y0RTwGVcAQ8wuk",
+      "ChIJpdYSFEb61y0ROoHx3PFOH9Y",
+      "ChIJAYax1kr91y0Rb9uGy_1OLkk",
+      "ChIJKYeHrPn71y0R-D3JSkgXQ_k",
+      "ChIJsaEf7SP91y0RE1Mta9JTVHg",
       "ChIJRTihpM371y0RtnXzUChbw5M",
-      "ChIJ9btjwT351y0RgCacm3haNRg",
-      "ChIJWVE7sST91y0Ra1xi4Hh8mHg"
+      "ChIJGdlIWjb71y0R_gAGkTwIVKk",
+      "ChIJnVKqtbj71y0RHNyLDT0KXFg",
+      "ChIJlUbaqt371y0R2HYCrrTiz7g",
+      "ChIJT-mQGpD71y0RqLtZMaNC4WU"
     ],
     "searchOffset": 0,
     "skippedCount": 0,
-    "nextPageToken": "AXQCQNTPbiiaLwfQxSahGEJeKPZfLDN6TrwEGIaVfJekTIQsARSx9JigbQwVPxNS3QZrLbaUPwczgDh9tFIYqQpv1LdHAG1X6cpoDCTtpdI0YHAe4RMAh4Zid8SUNLLo4lgH5lNYgkOfF00vBlUbmvbJO2ETSQ7UJ8sfjMZHoo74TKOsa4YoIjKi-xXpgDAbMZX8U-tkZNKWtcqL-IHl6sU8yub0COfB62HCfrEsn4k6D8PNqNVPaOqqYIPWoT9qzPGpOQvrhJSif5zimQikGcjNgmWmUe_FDG0OR7iRve0R8zJp1WnVNNZRohmFB2a5hUNzchBHZTNuRzsDzT-teA0_Dpa7xOcLTJu0R98GHSv6apM9WeLIQkRCLcMXjseQk3Us-43mnJ-6cdXg1H1x6EE1QCA",
+    "nextPageToken": "AXQCQNRNa2mqzFOHe-RA_v5gJIwuh-GY4VgXs6SXZkhbupJlQ4TFrDmMligFS5TGXfCQqjMiDtiL8NDihMJWUwnBQuIG0ULuSTYtuDtnDJqtQ05QKIBfTIoUmxTA208ViqlIeRqYC8694i0eE9456UMqCEZAQHRARpNr6IlSL64Y8oD_8ZGNzaB184q2Mb4oxHuYWa9OO2YCAjyanLW2FDfM-BMMgJG3rtYb_RhSEc5sDMmQl94HaH98eSZ11IFcLuk16M1iy8QqDo32cmGJJkFz66-FLAdAnvV_eUoWWPYpsiZWFFxjL_7XC4YeR54k4W06n2PXatlMSk1WbqsS6lcEU2Xnc2JNKe3LzPd5HiCRiCA1G38rJyfXOAeuTGGl35amIcqLWHz50qO5DqtP1KGnnnw",
     "currentPlaceId": "ChIJPfd11qj71y0RxG5BR7DD5ZE",
     "placeDetails": {
       "address": "Jl. Dharmahusada No.189, RT.001/RW.04, Mojo, Kec. Gubeng, Surabaya, Jawa Timur 60285, Indonesia",
@@ -59,6 +59,8 @@
         "phone": "0812-3444-1070",
         "website": "http://captainbarbershop.co.id/"
       },
+      "keywordFoundCount": 20,
+      "keywordMatch": "20 out of 1958 reviews mention the keyword.",
       "negativeReviews": [],
       "placeId": "ChIJPfd11qj71y0RxG5BR7DD5ZE",
       "placeName": "Captain Barbershop Premiere Surabaya",
@@ -74,7 +76,45 @@
         "Good service, quality, and cozy place",
         "Good service, quality, and cozy place",
         "Good sevices for all employes. Recommend",
-        "Good service, Nice place \ud83e\udef6\ud83c\udffb"
+        "Good service, Nice place \ud83e\udef6\ud83c\udffb",
+        "Premium class bro",
+        "Nice place for haircut. Good ambience. Cozy to wait",
+        "Nice place for haircut. Good ambience. Cozy to wait",
+        "Nice place for haircut. Good ambience. Cozy to wait",
+        "haircut dsni comfort banget dan reccomend. worth for haircut in here",
+        "Top",
+        "good service n price",
+        "Awesome service with good skill of the staff",
+        "nice place,good ambiance",
+        "good place and axcellent service\ud83d\udc4d\ud83c\udffb\ud83d\udc4d\ud83c\udffb\ud83d\udc4d\ud83c\udffb",
+        "Good place , nice vibe",
+        "Good service and good choice for hair cut and treatment",
+        "Good Place, Goof Ambience",
+        "First time i do and good for every man",
+        "nice place and good service",
+        "nice place and good service",
+        "Nice place good taste",
+        "nice place, nice price",
+        "Good place and seems cozy",
+        "Nice Place Good Service",
+        "Best Barbershop i ever go in Indonesia.",
+        "Keep up the good work & good service !",
+        "good place and excellent service \ud83e\udd29\ud83e\udd29\ud83e\udd29",
+        "Nice place for haircut..cozy and comfortable..sukses terus captain barbershop",
+        "good and comfortable place to cut your hair!",
+        "Good Place, Good Sevice \ud83d\udc4d",
+        "great place with a good service",
+        "Great services , thank you !",
+        "Reccomended bgt\ud83d\udc4d",
+        "Nice and premium place to groom",
+        "Nice place for haircut. Great ambience",
+        "good cut, nice service \ud83d\udc4d",
+        "cozy place, easy access",
+        "Good",
+        "Good!!",
+        "Nice place for haircut. Good ambience.",
+        "good cut, nice service",
+        "Nice place for grooming ur hair"
       ],
       "priceRange": "",
       "rating": 4.9,
@@ -111,22 +151,22 @@
       "priceRange": "",
       "rating": 4.9,
       "strengths": [
-        "Exceptional service with high customer satisfaction.",
-        "Reasonable pricing attracting a broad customer base.",
-        "Inviting atmosphere with beautiful interior design enhancing customer experience."
+        "High customer satisfaction with a rating of 4.9 from 1958 reviews.",
+        "Expert staff providing quality haircuts and excellent service.",
+        "Cozy and well-designed interior contributing to an enjoyable atmosphere."
       ],
       "summaryNegative": "",
-      "summaryPositive": "The barbershop in Surabaya receives high praise for its exceptional service, reasonable pricing, and inviting atmosphere, making it a popular choice among customers. Reviewers commend the expertise and friendliness of the staff, as well as the beautiful interior design. Many note the quality of their experiences, particularly with the royal package, highlighting it as a must-visit venue. Overall, the combination of a cozy environment, excellent service, and affordability has led to strong recommendations from satisfied clients.",
+      "summaryPositive": "This barbershop in Surabaya has garnered numerous positive reviews highlighting its reasonable prices, expert staff, and cozy, well-designed interior. Customers consistently praise the excellent service and quality of haircuts, often describing their experiences as premium or royal, with many expressing their intent to return. The inviting atmosphere and comfortable waiting area contribute to an enjoyable experience, making it a highly recommended choice for anyone seeking grooming services. Overall, this establishment stands out as one of the best barbershops in the area, known for its friendly staff and high-quality service.",
       "totalRatings": 1958,
       "weaknesses": [
-        "Limited negative feedback suggests potential lack of awareness on areas for improvement.",
-        "High customer volume may impact personalized service during peak times."
+        "Limited information on services offered beyond haircuts.",
+        "Potentially high customer volume may lead to longer wait times."
       ]
     }
   ],
   "$metadata": {
-    "createdAt": "2025-06-06T16:02:45.412682+00:00Z",
-    "startedAt": "2025-06-06T16:02:45.412682+00:00Z",
+    "createdAt": "2025-06-06T16:21:00.098464+00:00Z",
+    "startedAt": "2025-06-06T16:21:00.098464+00:00Z",
     "executionTotal": 6
   }
 }

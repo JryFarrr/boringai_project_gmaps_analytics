@@ -3,103 +3,59 @@ from .analyzer import Analyzer
 from ..utils.validators import validate_payload
 
 class Workflow:
-    """
-    Mengelola dan mengorkestrasi seluruh langkah dalam alur kerja,
-    dari input, pencarian, scraping, analisis, hingga kontrol.
-    """
     def __init__(self):
         self.finder = Finder()
         self.analyzer = Analyzer()
-
     def start(self, params):
-        """Memulai alur kerja baru dengan parameter awal."""
         validation_error = validate_payload(params, ["business_type", "location", "numberOfLeads"])
-        if validation_error:
-            raise ValueError(validation_error)
-            
+        if validation_error: raise ValueError(validation_error)
         initial_state = {
-            "business_type": params["business_type"],
-            "location": params["location"],
+            "business_type": params["business_type"], "location": params["location"],
             "numberOfLeads": params["numberOfLeads"],
             "constraints": {
-                "min_rating": params.get("min_rating"),
-                "min_reviews": params.get("min_reviews"),
-                "max_reviews": params.get("max_reviews"),
-                "price_range": params.get("price_range"),
-                "keywords": params.get("keywords"),
-                "business_hours": params.get("business_hours", "anytime"),
+                "min_rating": params.get("min_rating"), "min_reviews": params.get("min_reviews"),
+                "max_reviews": params.get("max_reviews"), "price_range": params.get("price_range"),
+                "keywords": params.get("keywords"), "business_hours": params.get("business_hours", "anytime"),
             },
-            "leadCount": 0,
-            "searchOffset": 0,
-            "remainingPlaceIds": [],
-            "skippedCount": 0
+            "leadCount": 0, "searchOffset": 0, "remainingPlaceIds": [], "skippedCount": 0
         }
-        
         return {"state": initial_state, "next": {"key": "search", "payload": {"state": "$state"}}}
-
     def search(self, payload):
-        """Mencari place ID berdasarkan kriteria."""
         state = payload['state']
         place_ids, next_page_token = self.finder.find_business_ids(state)
-
-        if not place_ids:
+        if not place_ids and not state.get('remainingPlaceIds'):
             return {"done": True, "error": "No businesses found matching criteria.", "state": state, "result": None}
-
         state['remainingPlaceIds'].extend(place_ids)
         state['nextPageToken'] = next_page_token
-        
         return {"state": state, "next": {"key": "control", "payload": {"state": "$state"}}}
-
     def scrape(self, payload):
-        """Mengambil detail untuk satu place ID."""
         state = payload['state']
         place_id = state['currentPlaceId']
-        details = self.finder.get_business_details(place_id)
-        
-        if not details: # Jika scrape gagal, lewati dan lanjut
+        details = self.finder.get_business_details(place_id, state['constraints'])
+        if not details:
             state['skippedCount'] += 1
             return {"state": state, "next": {"key": "control", "payload": {"state": "$state"}}}
-
         state['placeDetails'] = details
         return {"state": state, "next": {"key": "analyze", "payload": {"state": "$state"}}}
-
     def analyze(self, payload):
-        """Menganalisis detail bisnis dan menghasilkan wawasan."""
         state = payload['state']
         details = state['placeDetails']
         constraints = state['constraints']
-        
         analysis_result, meets_constraints = self.analyzer.run(details, constraints)
-        
         if not meets_constraints:
             state['skippedCount'] += 1
-            return {
-                "state": state, "result": analysis_result,
-                "next": {"key": "control", "payload": {"state": "$state"}}
-            }
-
+            return {"state": state, "result": analysis_result, "next": {"key": "control", "payload": {"state": "$state"}}}
         state['leadCount'] += 1
-        return {
-            "state": state, "result": analysis_result,
-            "next": {"key": "control", "payload": {"state": "$state"}}
-        }
-
+        return {"state": state, "result": analysis_result, "next": {"key": "control", "payload": {"state": "$state"}}}
     def control(self, payload):
-        """Menentukan langkah selanjutnya dalam alur kerja."""
         state = payload['state']
-
         if state['leadCount'] >= state['numberOfLeads']:
-            # --- PERBAIKAN: Mengembalikan 'result: None' bukan string ---
             print("Target number of leads reached.")
             return {"done": True, "state": state, "result": None}
-
         if state['remainingPlaceIds']:
             state['currentPlaceId'] = state['remainingPlaceIds'].pop(0)
             return {"state": state, "next": {"key": "scrape", "payload": {"state": "$state"}}}
-        
         if state.get('nextPageToken'):
             return {"state": state, "next": {"key": "search", "payload": {"state": "$state"}}}
-        
-        # --- PERBAIKAN: Mengembalikan 'result: None' bukan string ---
         print("No more potential leads found.")
         return {"done": True, "state": state, "result": None}
