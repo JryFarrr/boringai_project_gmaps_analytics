@@ -141,7 +141,7 @@ def generate_review_summaries(positive_reviews, negative_reviews, keywords="", p
     else: # Handle errors or missing info
         result["keywordMatch"] = f"keyword search {keyword_match_status}"
 
-    current_app.logger.info(f"Final keyword match data: n={result["keywordCountN"]}, b={result["keywordTotalB"]}, string=")
+    current_app.logger.info(f"Final keyword match data: n={result['keywordCountN']}, b={result['keywordTotalB']}, string=")
     # --- END REVISED --- 
 
     return result
