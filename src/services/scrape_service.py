@@ -88,7 +88,7 @@ def create_scrape_response(place_data, lead_count, skipped_count, number_of_lead
     if "placeId" not in place_data:
         current_app.logger.error("CRITICAL: placeId missing from place_data in create_scrape_response!")
     else:
-        current_app.logger.info(f"Creating scrape response with placeId: {place_data["placeId"]}")
+        current_app.logger.info(f"Creating scrape response with placeId: {place_data['placeId']}")
         
     return {
         "state": {
