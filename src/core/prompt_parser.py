@@ -56,9 +56,25 @@ Output: {"business_type":"salon kecantikan","location":"Surabaya","min_rating":0
             response_text = completion.choices[0].message.content
             parsed = json.loads(response_text)
 
-            # --- LOGIKA KONVERSI TIPE DATA YANG DIPERBAIKI ---
-            # Menangani kasus di mana AI mengembalikan 'null' (None di Python)
+            # --- FIX: Penegakan Aturan Conditional Price Range ---
+            # Daftar tipe bisnis yang boleh memiliki price range.
+            ALLOWED_PRICE_RANGE_TYPES = {
+                'restaurant', 'restoran', 'rumah makan', 
+                'cafe', 'kafe', 'kedai kopi', 
+                'bar', 
+                'hotel', 'penginapan'
+            }
+            business_type = parsed.get("business_type", "").lower()
             
+            # Periksa apakah business_type yang diekstrak ada dalam daftar yang diizinkan.
+            # Menggunakan 'any' untuk menangani kasus seperti "cafe dan restoran".
+            is_allowed = any(allowed_type in business_type for allowed_type in ALLOWED_PRICE_RANGE_TYPES)
+            
+            if not is_allowed:
+                parsed["price_range"] = ""
+            # --- END FIX ---
+
+            # --- LOGIKA KONVERSI TIPE DATA YANG DIPERBAIKI ---
             min_rating_val = parsed.get("min_rating")
             parsed["min_rating"] = float(min_rating_val) if min_rating_val is not None else 0.0
 
@@ -74,14 +90,13 @@ Output: {"business_type":"salon kecantikan","location":"Surabaya","min_rating":0
                 try:
                     parsed["numberOfLeads"] = int(num_leads_val)
                 except (ValueError, TypeError):
-                    # Jika tidak bisa diubah ke int, biarkan apa adanya (string) atau set default
                     parsed["numberOfLeads"] = "" 
             
             return parsed
             
         except Exception as e:
             print(f"Error in parsing with AI: {e}")
-            return None # Fallback jika gagal
+            return None
 
     def parse(self, prompt):
         """

@@ -7,9 +7,9 @@ class Config:
     Maps_API_KEY = os.getenv("Maps_API_KEY")
     OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
     SEARCHAPI_API_KEY = os.getenv("SEARCHAPI_API_KEY", "DhyaGcMobTCxHcd2GaUJ6Z5o")
-    SEARCHAPI_NUM_REVIEWS = 20
+    SEARCHAPI_NUM_REVIEWS = 10
     DEFAULT_OPENAI_MODEL = os.getenv("DEFAULT_OPENAI_MODEL", "gpt-4o-mini")
-    DEFAULT_MAX_REVIEWS = 10
+    DEFAULT_MAX_REVIEWS = 2
     DEFAULT_SEARCH_PARAMS = {
         'business_type': "", 'location': "", 'min_rating': 0.0,
         'min_reviews': 0, 'max_reviews': None, 'price_range': "",
