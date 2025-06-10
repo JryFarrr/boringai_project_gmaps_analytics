@@ -17,7 +17,7 @@ class Workflow:
                 "max_reviews": params.get("max_reviews"), "price_range": params.get("price_range"),
                 "keywords": params.get("keywords"), "business_hours": params.get("business_hours", "anytime"),
             },
-            "leadCount": 0, "searchOffset": 0, "remainingPlaceIds": [], "skippedCount": 0
+            "leadCount": 0, "searchOffset": 20, "remainingPlaceIds": [], "skippedCount": 0
         }
         return {"state": initial_state, "next": {"key": "search", "payload": {"state": "$state"}}}
     def search(self, payload):
