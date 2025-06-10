@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class Config:
-    Maps_API_KEY = os.getenv("Maps_API_KEY")
+    GOOGLE_MAPS_API_KEY = os.getenv("GOOGLE_MAPS_API_KEY")
     OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
     SEARCHAPI_API_KEY = os.getenv("SEARCHAPI_API_KEY", "DhyaGcMobTCxHcd2GaUJ6Z5o")
     SEARCHAPI_NUM_REVIEWS = 10

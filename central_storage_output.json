@@ -1,5 +1,5 @@
 {
-  "$id": "37f94294-007a-4e7a-b3be-5dee418baffa",
+  "$id": "26aa174b-7123-4e51-829b-3448693aba8d",
   "$state": {
     "business_type": "gym",
     "constraints": {
@@ -10,44 +10,40 @@
       "min_reviews": 0,
       "price_range": ""
     },
-    "leadCount": 1,
+    "leadCount": 5,
     "location": "",
-    "numberOfLeads": 1,
+    "numberOfLeads": 5,
     "remainingPlaceIds": [
-      "ChIJh5v6_Kz71y0RBNE8VGQg61s",
-      "ChIJO3tGeo771y0RctkEWrapPzU",
-      "ChIJl8uAIA771y0RBR966qQ1qqY",
-      "ChIJf6pbwcb71y0R2a1fD-AY-Qc",
-      "ChIJN2WRWEn61y0RQDSQcTPeFIM",
-      "ChIJ0R3j1bL71y0R21GUymlSSPE",
-      "ChIJXWUWRgD71y0RDE_NpeZYJew",
-      "ChIJZ9ZFPAT71y0RTs4sNv7mTGY",
-      "ChIJQS1NRJr71y0Rmasga4EVIac",
-      "ChIJfeKhbsz71y0RlfUH832RN-Q",
-      "ChIJqw3Zkqr71y0RREFKxyS_4Tc",
+      "ChIJy5Y_8Qb71y0RR_cm8QIyP_w",
       "ChIJJQV7ACX71y0R9_Brj-g6QNQ",
-      "ChIJL1PXCNj71y0RW1VAxWg1qsk",
-      "ChIJO0PiFQD71y0RXsSJDROcWHY",
       "ChIJVUSkzyX71y0R_OIRSCymzkM",
-      "ChIJuflU2Br71y0RzQ_pOo_che0",
-      "ChIJwVxIJXr71y0RrlGJTnlvmLw",
-      "ChIJQyqRGXv71y0RdIZuOyUfz0E",
-      "ChIJQRFDL8v71y0RapKiMbrqkpY"
+      "ChIJL1PXCNj71y0RW1VAxWg1qsk",
+      "ChIJP9VyRDj61y0RGXig0g6gcQA",
+      "ChIJfeKhbsz71y0RlfUH832RN-Q",
+      "ChIJh5v6_Kz71y0RBNE8VGQg61s",
+      "ChIJXWUWRgD71y0RDE_NpeZYJew",
+      "ChIJ25XP1Q771y0RWTbVhXLVg80",
+      "ChIJ0R3j1bL71y0R21GUymlSSPE",
+      "ChIJSXUsEXz71y0RxCHrI1qD2Fo",
+      "ChIJSV69kH_71y0RT5TXLFCTbS0",
+      "ChIJO3tGeo771y0RctkEWrapPzU",
+      "ChIJmSW3gXP71y0RL8INy7RtNKY",
+      "ChIJCRM5WMn71y0Rq4FkOwkT8AI"
     ],
     "searchOffset": 0,
     "skippedCount": 0,
-    "nextPageToken": "AXQCQNSzfAcYqghc-idn2H5sC0hzXW35Ed69QfrskD-KsyVRFedH2Cjz9BSigGZ2LohHR1Hb6rasCm9C-giNP6sK7TAM84nbK1usgJaQPo0IGFIk_eWIknWS089cng-EVY6aPbT-gOKAFXQildf3Y0C39w-4BMgjYWXhJMR0b_4o5jikWsemXZGWqLVgGDK6VRn7Wnz87pqTFox41i2HX04CRCPm4O2HuV4wtAWjtG3xLufjnpAz4_vTKuXWBPwYIi-_4D7Gi-JqmnJI2qFBN6gz_jzEmNWlzf6GHScE3XoGXI2hyTWxp0TohSG03dKLDoQXGNGM7K0fpR3vB1CHVK7veW11aqmDtrthGlpbXylbqqNzuhx0p4gcRVI4d0eptVZiIzo",
-    "currentPlaceId": "ChIJmSW3gXP71y0RL8INy7RtNKY",
+    "nextPageToken": "AXQCQNSXbe9msrJgO-2nAeBzYqachqdWJSFG0KKXTfQMtMDK0h2urd52Sop8Uo9I572jTGp7m9WYKhzbEgsg15aPB7bLHBOS_JN9r8SMmBdX_aUL5NP3bSkAX5KbxzmAGPlbaaMplcIgj91yCWTfFR8QU4ZDHO39sIvaqSdXQ095KeDXwhYqfYzRLE4o0aYrAYHvisvILXuPa6H19Ym16CvLoFMzOF3reQS3SGu_dTxkujjNdHBl1XmKTEBBPij2A1doHoZpBUuEZiJaTghSe-gRk1ViNzvLZUxXBa17yCO3ON9s77eNBbaEUeJ7a3zjE13m7vwNtlaRvpfs9r79KYARVpWSlUWsMSMj756SRvRHojJXFmlByCgXctPc8nfzsJM99ck",
+    "currentPlaceId": "ChIJX6NulDz61y0RskhEKZ8jv8c",
     "placeDetails": {
-      "address": "Jl. Ciliwung No.8, Darmo, Kec. Wonokromo, Surabaya, Jawa Timur 60241, Indonesia",
+      "address": "Level 4, Galaxy Mall 2, Jl. Dharmahusada Indah Timur No.35 - 37, Mulyorejo, Surabaya, East Java 60115, Indonesia",
       "businessHours": [
-        "Senin: 09.00\u201320.00",
-        "Selasa: 09.00\u201320.00",
-        "Rabu: 09.00\u201320.00",
-        "Kamis: 09.00\u201320.00",
-        "Jumat: 09.00\u201320.00",
-        "Sabtu: 08.00\u201316.00",
-        "Minggu: Tutup"
+        "Senin: 06.00\u201322.00",
+        "Selasa: 06.00\u201322.00",
+        "Rabu: 06.00\u201322.00",
+        "Kamis: 08.00\u201322.00",
+        "Jumat: 06.00\u201322.00",
+        "Sabtu: 06.00\u201322.00",
+        "Minggu: 08.00\u201320.00"
       ],
       "businessType": [
         "gym",
@@ -56,34 +52,34 @@
         "establishment"
       ],
       "contact": {
-        "phone": "0811-3881-8820",
-        "website": null
+        "phone": "(021) 30514233",
+        "website": "https://www.celebrityfitness.co.id/clubs/galaxy-mall"
       },
-      "keywordFoundCount": 2,
-      "keywordMatch": "2 out of 652 reviews mention the keyword.",
+      "keywordFoundCount": 1,
+      "keywordMatch": "1 out of 258 reviews mention the keyword.",
       "negativeReviews": [],
-      "placeId": "ChIJmSW3gXP71y0RL8INy7RtNKY",
-      "placeName": "3C Gym Ciliwung",
+      "placeId": "ChIJX6NulDz61y0RskhEKZ8jv8c",
+      "placeName": "Celebrity Fitness Galaxy Mall",
       "positiveReviews": [
-        "Great gym with professional, corteous and knowledgeable staffs",
-        "Clean, comfort and private gym\u2026 with great hospitality"
+        "The most affordable yet best gym in Indonesia & Surabaya \ud83d\udcaa\ud83c\udffd\ud83d\ude0e",
+        "An awesome place for gym. The gym equipments are new and well maintained. Great instructors and PT. Love the classes the most, esp RPM, body pump, body combat"
       ],
       "priceRange": "",
-      "rating": 5,
-      "totalRatings": 652
+      "rating": 4.5,
+      "totalRatings": 258
     }
   },
   "$results": [
     {
-      "address": "Jl. Ciliwung No.8, Darmo, Kec. Wonokromo, Surabaya, Jawa Timur 60241, Indonesia",
+      "address": "Klampis jaya square C 24-25, Klampis Ngasem, Sukolilo, Surabaya, East Java 60117, Indonesia",
       "businessHours": [
-        "Senin: 09.00\u201320.00",
-        "Selasa: 09.00\u201320.00",
-        "Rabu: 09.00\u201320.00",
-        "Kamis: 09.00\u201320.00",
-        "Jumat: 09.00\u201320.00",
-        "Sabtu: 08.00\u201316.00",
-        "Minggu: Tutup"
+        "Senin: 06.30\u201321.00",
+        "Selasa: 06.30\u201321.00",
+        "Rabu: 06.30\u201321.00",
+        "Kamis: 06.30\u201321.00",
+        "Jumat: 06.30\u201321.00",
+        "Sabtu: 06.30\u201321.00",
+        "Minggu: 06.30\u201321.00"
       ],
       "businessType": [
         "gym",
@@ -92,33 +88,199 @@
         "establishment"
       ],
       "contact": {
-        "phone": "0811-3881-8820",
+        "phone": "(031) 5938286",
         "website": null
       },
-      "keywordMatch": "2 out of 652 reviews mention the keyword.",
+      "keywordMatch": "4 out of 33 reviews mention the keyword.",
       "matchPercentage": 100.0,
       "matchReasoning": "Meets primary criteria.",
-      "placeId": "ChIJmSW3gXP71y0RL8INy7RtNKY",
-      "placeName": "3C Gym Ciliwung",
+      "placeId": "ChIJwVxIJXr71y0RrlGJTnlvmLw",
+      "placeName": "AUDID GYM",
+      "priceRange": "",
+      "rating": 4.7,
+      "strengths": [
+        "High customer satisfaction with a rating of 4.7 from 33 reviews.",
+        "Inviting atmosphere and comfort level that enhances the workout experience.",
+        "Well-designed amenities that contribute to a pleasant environment."
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "The reviews highlight the comfort and appealing atmosphere of a gym in Surabaya, emphasizing its inviting environment and overall quality. Users appreciate the gym's amenities and design, making it a pleasant place to work out. Overall, the positive feedback reflects a strong satisfaction with both the comfort level and the gym's appeal, while the name \"Sipp\" could suggest a positive sentiment or brand recognition associated with the facility.",
+      "totalRatings": 33,
+      "weaknesses": [
+        "Limited number of reviews (only 33), which may not provide a comprehensive view of customer experiences.",
+        "Potential lack of brand recognition compared to larger gym chains, as indicated by the mention of the name 'Sipp' without further context."
+      ]
+    },
+    {
+      "address": "Lantai 2 Hotel Gunawangsa Manyar, Jl. Menur Pumpungan No.62, Menur Pumpungan, Kec. Sukolilo, Surabaya, Jawa Timur 60118, Indonesia",
+      "businessHours": [
+        "Senin: 06.00\u201322.00",
+        "Selasa: 06.00\u201322.00",
+        "Rabu: 06.00\u201322.00",
+        "Kamis: 06.00\u201322.00",
+        "Jumat: 06.00\u201322.00",
+        "Sabtu: 06.00\u201319.00",
+        "Minggu: 06.00\u201319.00"
+      ],
+      "businessType": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(031) 2957275",
+        "website": null
+      },
+      "keywordMatch": "5 out of 367 reviews mention the keyword.",
+      "matchPercentage": 100.0,
+      "matchReasoning": "Meets primary criteria.",
+      "placeId": "ChIJN2WRWEn61y0RQDSQcTPeFIM",
+      "placeName": "My Gym by Evolve Fitness",
+      "priceRange": "",
+      "rating": 4.8,
+      "strengths": [
+        "High customer satisfaction with a rating of 4.8 from 367 reviews.",
+        "Perfect match score of 100.0% indicates a strong market fit and alignment with customer expectations.",
+        "Positive reputation likely contributes to customer retention and word-of-mouth referrals."
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "",
+      "totalRatings": 367,
+      "weaknesses": [
+        "Lack of detailed positive and negative summaries makes it difficult to identify specific areas of high customer praise or concern.",
+        "Potential over-reliance on high ratings without addressing any emerging issues that customers may face.",
+        "Limited insights on service offerings or innovations that could enhance competitiveness."
+      ]
+    },
+    {
+      "address": "Jl. Dharmahusada Indah Barat III No.64-66, Mojo, Kec. Gubeng, Surabaya, Jawa Timur 60285, Indonesia",
+      "businessHours": [
+        "Senin: 06.00\u201321.00",
+        "Selasa: 06.00\u201321.00",
+        "Rabu: 06.00\u201321.00",
+        "Kamis: 06.00\u201321.00",
+        "Jumat: 06.00\u201321.00",
+        "Sabtu: 06.00\u201318.00",
+        "Minggu: 09.00\u201318.00"
+      ],
+      "businessType": [
+        "tourist_attraction",
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(031) 5961313",
+        "website": "https://instagram.com/atlassportclub.id"
+      },
+      "keywordMatch": "5 out of 4881 reviews mention the keyword.",
+      "matchPercentage": 100.0,
+      "matchReasoning": "Meets primary criteria.",
+      "placeId": "ChIJ50CpNi761y0RU7OUIqKBgh8",
+      "placeName": "Atlas Sports Club",
+      "priceRange": "",
+      "rating": 4.6,
+      "strengths": [
+        "High rating of 4.6 from 4881 reviews, indicating overall guest satisfaction.",
+        "Welcoming atmosphere with friendly staff, contributing to a comfortable stay.",
+        "Enjoyable leisure facilities, including a popular pool area that appeals to a diverse crowd."
+      ],
+      "summaryNegative": "Many reviewers expressed disappointment with the gym, particularly highlighting issues with the uncomfortable heat, as the air conditioning seemed inadequate or malfunctioning. Additionally, they noted that much of the gym equipment appeared old and in need of updating. Concerns about hygiene were also prevalent, with a lack of available towels and disinfectants for cleaning equipment after use, which detracted from the overall experience compared to other gyms.",
+      "summaryPositive": "The reviews highlight a comfortable stay with a clean bathroom and friendly staff, as well as an enjoyable pool area that appeals to a diverse crowd, including families and various individuals. The hot pool comes highly recommended, although it can get crowded during the morning hours. Overall, guests appreciate the welcoming atmosphere and leisure facilities.",
+      "totalRatings": 4881,
+      "weaknesses": [
+        "Inadequate air conditioning in the gym, leading to uncomfortable heat during workouts.",
+        "Outdated gym equipment that requires updating to meet guest expectations.",
+        "Hygiene concerns due to insufficient towels and disinfectants for cleaning equipment."
+      ]
+    },
+    {
+      "address": "Jl. Dharmahusada No.36-39, Mojo, Kec. Gubeng, Surabaya, Jawa Timur 60285, Indonesia",
+      "businessHours": [
+        "Senin: 06.00\u201320.00",
+        "Selasa: 06.00\u201320.00",
+        "Rabu: 06.00\u201320.00",
+        "Kamis: 06.00\u201320.00",
+        "Jumat: 06.00\u201320.00",
+        "Sabtu: 06.00\u201316.00",
+        "Minggu: Tutup"
+      ],
+      "businessType": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": null,
+        "website": null
+      },
+      "keywordMatch": "1 out of 487 reviews mention the keyword.",
+      "matchPercentage": 100.0,
+      "matchReasoning": "Meets primary criteria.",
+      "placeId": "ChIJh3yQMRL71y0RKEL4JuTuJ8E",
+      "placeName": "3C Gym Dharmahusada",
       "priceRange": "",
       "rating": 5,
       "strengths": [
-        "Highly praised professionalism and courteous, knowledgeable staff",
-        "Clean, comfortable, and private environment",
-        "Exceptional hospitality enhancing overall customer experience"
+        "Highly rated with a perfect score of 5 from 487 reviews, indicating strong customer satisfaction.",
+        "Knowledgeable and approachable trainer, Coach Iko, providing valuable support for personal improvement.",
+        "Intimate and focused atmosphere, ideal for members seeking personalized coaching and a quiet workout environment."
       ],
       "summaryNegative": "",
-      "summaryPositive": "The gym is highly praised for its professionalism and courteous, knowledgeable staff, contributing to an overall positive experience. Reviewers appreciate the clean, comfortable, and private environment, highlighting the exceptional hospitality that enhances their visits.",
-      "totalRatings": 652,
+      "summaryPositive": "The gym has garnered positive reviews for its knowledgeable and approachable trainer, Coach Iko, who offers valuable advice and support for personal improvement. Many appreciate the intimate and focused atmosphere, making it an ideal choice for those seeking a quiet workout environment with personalized coaching. Despite some limitations in gym equipment, the overall experience is highly regarded by long-term members.",
+      "totalRatings": 487,
       "weaknesses": [
-        "Potential lack of variety in available equipment or classes (not mentioned but could be inferred from the positive focus on staff and environment)",
-        "Limited information on pricing or membership options based on reviews"
+        "Limited gym equipment, which may not cater to all workout preferences or needs.",
+        "Potentially less appealing for members who prefer a more expansive gym facility with diverse equipment options."
+      ]
+    },
+    {
+      "address": "Level 4, Galaxy Mall 2, Jl. Dharmahusada Indah Timur No.35 - 37, Mulyorejo, Surabaya, East Java 60115, Indonesia",
+      "businessHours": [
+        "Senin: 06.00\u201322.00",
+        "Selasa: 06.00\u201322.00",
+        "Rabu: 06.00\u201322.00",
+        "Kamis: 08.00\u201322.00",
+        "Jumat: 06.00\u201322.00",
+        "Sabtu: 06.00\u201322.00",
+        "Minggu: 08.00\u201320.00"
+      ],
+      "businessType": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(021) 30514233",
+        "website": "https://www.celebrityfitness.co.id/clubs/galaxy-mall"
+      },
+      "keywordMatch": "1 out of 258 reviews mention the keyword.",
+      "matchPercentage": 100.0,
+      "matchReasoning": "Meets primary criteria.",
+      "placeId": "ChIJX6NulDz61y0RskhEKZ8jv8c",
+      "placeName": "Celebrity Fitness Galaxy Mall",
+      "priceRange": "",
+      "rating": 4.5,
+      "strengths": [
+        "Highly rated with a score of 4.5 from 258 reviews, indicating strong customer satisfaction.",
+        "Affordable pricing makes it accessible for a wider range of fitness enthusiasts.",
+        "Well-maintained, new equipment along with excellent instructors and personal trainers enhance the overall fitness experience."
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "The gym in Surabaya, Indonesia, stands out as the most affordable and best option available, offering a fantastic experience for fitness enthusiasts. It features new, well-maintained equipment and boasts excellent instructors and personal trainers. Members particularly enjoy the diverse class offerings, with RPM, body pump, and body combat being among the favorites.",
+      "totalRatings": 258,
+      "weaknesses": [
+        "Potential over-reliance on popularity may lead to overcrowding during peak times.",
+        "Limited awareness of brand outside the local region may affect membership growth.",
+        "Dependence on class offerings for member engagement could imply a lack of variety in self-directed workout options."
       ]
     }
   ],
   "$metadata": {
-    "createdAt": "2025-06-09T15:24:16.456385+00:00Z",
-    "startedAt": "2025-06-09T15:24:16.456385+00:00Z",
-    "executionTotal": 6
+    "createdAt": "2025-06-10T04:35:27.303011+00:00Z",
+    "startedAt": "2025-06-10T04:35:27.303011+00:00Z",
+    "executionTotal": 18
   }
 }

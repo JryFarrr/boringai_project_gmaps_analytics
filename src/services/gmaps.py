@@ -3,9 +3,9 @@ from config import Config
 
 class GmapsService:
     def __init__(self):
-        self.gmaps_key = Config.Maps_API_KEY
+        self.gmaps_key = Config.GOOGLE_MAPS_API_KEY
         self.searchapi_key = Config.SEARCHAPI_API_KEY
-        if not self.gmaps_key: raise ValueError("Maps_API_KEY is not set. Please check your .env file.")
+        if not self.gmaps_key: raise ValueError("GOOGLE_MAPS_API_KEY is not set. Please check your .env file.")
         if not self.searchapi_key: raise ValueError("SEARCHAPI_API_KEY is not set. Please check your .env file.")
         self.gmaps_search_url = "https://maps.googleapis.com/maps/api/place/textsearch/json"
         self.gmaps_details_url = "https://maps.googleapis.com/maps/api/place/details/json"

@@ -57,7 +57,7 @@ class WorkflowExecutor:
         self.storage["$metadata"]["startedAt"] = datetime.now(UTC).isoformat() + "Z"
         print("Parsing prompt..."); parameters = self.prompt_parser.parse(prompt)
         if "error" in parameters: print(f"Error parsing prompt: {parameters['error']}"); return
-        if not parameters.get("numberOfLeads"): parameters["numberOfLeads"] = 1
+        if not parameters.get("numberOfLeads"): parameters["numberOfLeads"] = 5
         print(f"Parsed parameters: {json.dumps(parameters, indent=2)}")
         return self.execute_task("input", parameters)
     def get_storage(self): return self.storage
