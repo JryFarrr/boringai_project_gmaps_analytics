@@ -15,7 +15,15 @@ class Config:
         'min_reviews': 0, 'max_reviews': None, 'price_range': "",
         'business_hours': "anytime", 'keywords': "", 'numberOfLeads': ""
     }
-    MATCH_WEIGHTS = {'rating': 25, 'reviews': 20, 'price_range': 15, 'business_hours': 15, 'keywords': 25}
+    # BOBOT YANG DIPERBARUI SESUAI SCREENSHOT
+    MATCH_WEIGHTS = {
+        'rating': 25,
+        'reviews': 20,
+        'price_range': 15,
+        'business_hours': 15,
+        'keywords': 15,
+        'address': 10 # Menambahkan bobot untuk address
+    }
     REVIEW_SAMPLING_RULES = {
         'low': {'max': 10, 'percentage': 1.0, 'min_sample': 0, 'max_sample': 10},
         'medium': {'max': 100, 'percentage': 0.4, 'min_sample': 5, 'max_sample': 30},
