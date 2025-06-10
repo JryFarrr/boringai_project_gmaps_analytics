@@ -1,39 +1,39 @@
 {
-  "$id": "da830b0b-dd36-4b6f-8227-e29416da3c18",
+  "$id": "2879cf5c-0872-40bc-b5de-64735edaa41e",
   "$state": {
     "business_type": "restaurant",
     "constraints": {
       "business_hours": "9 AM - 10 PM",
-      "keywords": "harga terjangkau",
-      "max_reviews": null,
+      "keywords": "terjangkau",
+      "max_reviews": 50,
       "min_rating": 4.5,
       "min_reviews": 30,
       "price_range": "$"
     },
-    "leadCount": 3,
+    "leadCount": 23,
     "location": "Jakarta Selatan",
-    "nextPageToken": "AXQCQNQoJzBMM6Q-t0LJkkNZ-ZNGVSsYLjyQ7oVIEK2K_UXNLdbFivVv4oVXDk9GqSXfku65Mj6-hnjttxhJW-efufkQwSw8lJSSzkIbzmDPiuF830qKCnpDWCUToVax1z1GEyC7-H4ZVdt58sxFK3ya2qBrk_nkYuGXTWW8TzUtr_KyrrZSnSNv-ei0LNXSFV9tn0GLKHnSna2LzbGbMETc1kKQDvtKy2y9Rob6C4MyMQ5EwjXL_UqkWcd9D1uabYUa2dpaaq9WUOnujnrHHMAlpglDfEf2g7kWjWXVGdf40f_R31ROCXc-doENOeA4QPV_tasuFraKpIMA9VpOJBECcmzjCdGqUOUuwVFphcEh6AMF96nC3cizOPVSM9U2VdCOM4o-iZekWiwLsCABRWaXrYfq3epLP3dT",
-    "numberOfLeads": 3,
+    "nextPageToken": "AXQCQNSRgVrj7-uwIc7gPZPA8B5nFTFGc4vj4_cPlRYV8GlsCiXAlw_tk01vvhMmWXFJy_02ZG7GirZ-7wt2CtddQbFlG_BWXwh_J_H0QcrLQFx15L2WJNRJmnjLL5Bs79wONniFbujXn6B0h_vj76ZPU2SzQJWD8GOStWKhEZmbNIOA8FrM2NtQAo2udv8G69-6YBihIPt3RAwRVKCLRPZjwtEVYNzY_pySlI8akGwUJ3xbDuW5P40nZCzacjqiJ_5oUBHKPXV1Rsj5ySfRZbUuOEXlZmxNIBI2dn8GBNVkUdm8w_P15LWCbUOWTX7CAIoV0uiFEeNRcruZYghX2zPDUXmvmH-1TRAz3XX0T9pu72gYR7hhcxpX14KMyLlkbJt89Z1PWPa5GkK-yq-tMl0A2VEIF7L4Q8tYHxPvAEZFoZ7cM6imUN_mWC-Azb37HPAWoX5cw9IQyMA2VSBnN8bJ5kftpPA_9Z4ZsH9yqR3MZodcy1pDVggBtICOWXmcsTmE_AQIvIrv6nuU0lX8VlzyUljKka8rCtmx4sdEUtGeI8S4yz8orNpYxegzv-sGW4n-h8wOjK0s6nlBtlDtTORYhJQLvJZc_4EISod1I4xW3AOf1i94jkVObA",
+    "numberOfLeads": 23,
     "remainingPlaceIds": [
-      "ChIJp5VZTgT0aS4R26oBEPT4nUw",
-      "ChIJ9_SrqF7xaS4Rdv0Jh5kKsMU",
-      "ChIJTxAy8WfxaS4Rt0KGZl6HS1Y",
-      "ChIJw5YEX7XxaS4RlLmg9SOZvCQ",
-      "ChIJKSZNwHHxaS4RHzihVeiYYN4",
-      "ChIJnSa5FlvxaS4R9_E5t2Wxalc",
-      "ChIJ64m4zIDxaS4RWGdN-VygPEE",
-      "ChIJD-TCQHPxaS4R2Ht75sQ3inw",
-      "ChIJD96XFmzxaS4RquSpmFq_Up8",
-      "ChIJGVSN3fnzaS4R3w9qNDpIbjs",
-      "ChIJZStnYbnxaS4R8YeHixd-ysE",
-      "ChIJ_02K8JbxaS4RX9G3vNqXim8",
-      "ChIJ4xqe_vfzaS4R2nzD8AUEB2Q",
-      "ChIJ_zh9TXfxaS4RoFJBiBh54Sw",
-      "ChIJVamq_YrxaS4R9hqyqiNogIs",
-      "ChIJP8bvQ13xaS4RgueoWi9kdBA",
-      "ChIJKxZmEsTxaS4RAIHG3WpIbho"
+      "ChIJKeh_VqPxaS4R0A9agctmiEg",
+      "ChIJl3B7QmjxaS4R8e8v0pvFOQo",
+      "ChIJMdhH0frzaS4RuN27H3mjXks",
+      "ChIJP9NKVX7xaS4RUqbmlwXVSpw",
+      "ChIJB-1nPnfxaS4RGh1dTxkvOqk",
+      "ChIJSz0SApvzaS4RAqgljvvEQnE",
+      "ChIJ-951TVDxaS4RmxnEibks5eY",
+      "ChIJsfzm6HLxaS4R2JKW-2UvUfk",
+      "ChIJq7CzCnjxaS4RMDz4jxG9G8g",
+      "ChIJpzfnEsLxaS4RHfWoEyAgoDg",
+      "ChIJF4BasgrxaS4RJz7tv7C_uJg",
+      "ChIJOTzB5kLxaS4R2uKKAQe8Z0Y",
+      "ChIJofaR0oHxaS4R5H5WbvuHw2E",
+      "ChIJN0GGMzDxaS4R7gHxeS_cA-A",
+      "ChIJDSt5qYnxaS4RAU-FK56OVQA",
+      "ChIJo5mN2BPxaS4RNc7VlMJRBu4",
+      "ChIJleELKTbxaS4R6ykVm4gEMQY"
     ],
-    "searchOffset": 20
+    "searchOffset": 40
   },
   "$results": [
     {
@@ -58,24 +58,24 @@
         "website": "https://plataran.com/property/plataran-dharmawangsa/"
       },
       "keywordMatch": "10 out of 3869 reviews mention the keyword.",
-      "matchPercentage": 70.0,
-      "matchReasoning": "Price range '$$$' does not match required '$'. Business hours do not match required '9 AM - 10 PM'.",
+      "matchPercentage": 50.0,
+      "matchReasoning": "Total reviews 3869 above maximum 50. Price range '$$$' does not match required '$'. Business hours do not match required '9 AM - 10 PM'.",
       "placeId": "ChIJU80L2nbxaS4R_m_3MgI5JiM",
       "placeName": "Plataran Dharmawangsa",
       "priceRange": "$$$",
       "rating": 4.6,
       "strengths": [
-        "High customer rating of 4.6 from nearly 4000 reviews indicates strong customer satisfaction.",
-        "Beautiful ambiance with elegant indoor and outdoor spaces suitable for various occasions.",
-        "Exceptional service and authentic Indonesian cuisine, with standout dishes praised for their flavor."
+        "High customer satisfaction with a rating of 4.6 from nearly 4,000 reviews.",
+        "Appealing ambiance highlighted by lush greenery and live traditional music, suitable for various occasions.",
+        "Renowned for authentic Indonesian dishes and high-quality food offerings."
       ],
       "summaryNegative": "",
-      "summaryPositive": "Plataran Dharmawangsa is celebrated as a hidden oasis in the city, offering a serene escape with lush greenery and soothing live music on weekends. Its elegant indoor and breezy outdoor spaces create the perfect ambiance for various occasions, from romantic lunches to professional meetings and family gatherings. Guests rave about the exceptional service and the authentic, beautifully presented Indonesian dishes, highlighting favorites like tahu nenek, kangkung belacaan, and oxtail soup, all noted for their balanced and clean flavors. The overall experience is enhanced by the attentive and friendly staff, making it a highly regarded dining destination.",
+      "summaryPositive": "The reviews highlight Plataran Dharmawangsa as a hidden oasis in the city, offering a serene escape complemented by lush greenery and traditional live music on weekends. Patrons praise the elegant indoor and outdoor spaces, creating an inviting atmosphere ideal for romantic lunches, professional gatherings, or family outings. The restaurant is lauded for its authentic Indonesian flavors and premium quality, with dishes like tahu nenek, kangkung belacaan, and ox tail soup receiving particular acclaim for their delicious and balanced flavors. The warm and friendly service further enhances the overall delightful dining experience.",
       "totalRatings": 3869,
       "weaknesses": [
-        "Match score of 70.0% suggests there may be areas for improvement in aligning with customer expectations.",
-        "Potential dependency on weekends for live music might deter weekday customers.",
-        "As a 'hidden oasis,' it may be less visible or accessible to new customers compared to competitors."
+        "Match Score of 50.0% suggests potential marketing or visibility issues.",
+        "The restaurant may be perceived as a 'hidden oasis', which could indicate difficulty in attracting new customers.",
+        "Limited weekend service may restrict access during peak dining times."
       ]
     },
     {
@@ -91,32 +91,33 @@
       ],
       "businessType": [
         "restaurant",
-        "food",
         "point_of_interest",
+        "food",
         "establishment"
       ],
       "contact": {
         "phone": "0877-7264-6253",
         "website": "http://www.animalejakarta.com/"
       },
-      "keywordMatch": "10 out of 1232 reviews mention the keyword.",
-      "matchPercentage": 70.0,
-      "matchReasoning": "Price range 'N/A' does not match required '$'. Business hours do not match required '9 AM - 10 PM'.",
+      "keywordMatch": "7 out of 1232 reviews mention the keyword.",
+      "matchPercentage": 50.0,
+      "matchReasoning": "Total reviews 1232 above maximum 50. Price range 'N/A' does not match required '$'. Business hours do not match required '9 AM - 10 PM'.",
       "placeId": "ChIJE1GvDtn1aS4RLfcz-MionU8",
       "placeName": "Animale Restaurant",
       "priceRange": "",
       "rating": 4.7,
       "strengths": [
-        "Exceptional service and accommodating staff, even during peak times.",
-        "High-quality food with standout dishes that guests particularly enjoy, such as cauliflower steak.",
-        "Thoughtful gestures for special occasions that enhance the overall dining experience."
+        "High customer satisfaction with a rating of 4.7 from over 1200 reviews.",
+        "Exceptional service characterized by accommodating staff and attention to guest needs.",
+        "Signature dishes, such as the cauliflower steak, are highly praised, enhancing menu appeal."
       ],
       "summaryNegative": "",
-      "summaryPositive": "Guests consistently praise the exceptional service and accommodating staff at the restaurant, even in challenging situations like being fully booked. Reviewers highlight the quality and delight of the food, particularly noting standout dishes like the cauliflower steak. Additionally, thoughtful gestures, such as complimentary treats for special occasions, enhance the dining experience, making it a memorable outing that encourages return visits.",
+      "summaryPositive": "Reviews highlight a consistently positive experience at the restaurant, with exceptional service and delicious food as key themes. Guests appreciated the accommodating staff, who went out of their way to find dining options even for walk-ins. Signature dishes, particularly the cauliflower steak, received high praise, and special touches like complimentary birthday treats added to the overall enjoyment. Visitors felt that their experiences were so delightful that they were eager to return.",
       "totalRatings": 1232,
       "weaknesses": [
-        "The match score of 70.0% suggests there may be room for improvement in aligning with customer expectations or preferences.",
-        "While the restaurant has a strong rating, further analysis may reveal specific aspects of the dining experience that could be fine-tuned to boost customer satisfaction."
+        "Match score of 50.0% indicates potential room for improvement in customer retention or engagement.",
+        "Dependency on signature dishes could limit menu diversity or options for repeat visitors.",
+        "Potential challenges in managing walk-in dining due to possibly limited seating or table availability."
       ]
     },
     {
@@ -140,30 +141,875 @@
         "phone": "(021) 72788003",
         "website": "http://www.lequartier.co.id/"
       },
-      "keywordMatch": "10 out of 3042 reviews mention the keyword.",
-      "matchPercentage": 70.0,
-      "matchReasoning": "Price range '$$$$' does not match required '$'. Business hours do not match required '9 AM - 10 PM'.",
+      "keywordMatch": "3 out of 3042 reviews mention the keyword.",
+      "matchPercentage": 50.0,
+      "matchReasoning": "Total reviews 3042 above maximum 50. Price range '$$$$' does not match required '$'. Business hours do not match required '9 AM - 10 PM'.",
       "placeId": "ChIJOU-DRF3xaS4RglxqldO_Chc",
       "placeName": "Le Quartier",
       "priceRange": "$$$$",
       "rating": 4.6,
       "strengths": [
         "Exceptional hospitality and attentive service from staff",
-        "Outstanding taste and quality of food, particularly truffle pasta and black angus steak",
-        "Inviting ambiance, particularly the glass-top dining area"
+        "Highly praised food quality, with standout dishes that impress guests",
+        "Positive guest enthusiasm for repeat visits with family and friends"
       ],
       "summaryNegative": "",
-      "summaryPositive": "The reviews highlight outstanding hospitality and attentive service from the staff, who go above and beyond for their guests, enhancing the overall dining experience. Diners praised the exceptional taste of the food, with standout dishes including truffle pasta and black angus steak, although some items like the Caesar salad and pork belly received mixed feedback. The ambiance, particularly the glass-top dining area, was appreciated, though it was noted that it could be warmer than comfortable. Overall, guests expressed a desire to return, indicating that the enjoyable food and high-quality service make the experience worthwhile.",
+      "summaryPositive": "Guests consistently rave about the exceptional hospitality and attentive service provided by the staff, who go above and beyond to ensure a pleasant dining experience. The food is highly praised for its incredible taste, with standout dishes such as escargot, lobster bisque, and perfectly grilled steak leaving a lasting impression. Reviewers express enthusiasm about returning with family and friends, although some suggest improvements, like adding sun-protection stickers to the glass top dining area for comfort. Overall, the combination of delicious cuisine and friendly service makes for a memorable visit.",
       "totalRatings": 3042,
       "weaknesses": [
-        "Some menu items, like Caesar salad and pork belly, received mixed reviews",
-        "The dining area can be warmer than comfortable"
+        "Match score of 50.0% may indicate some areas for improvement",
+        "Suggestion to improve comfort with sun-protection stickers in the dining area"
+      ]
+    },
+    {
+      "address": "Jl. Setia Budi Tengah No.11, RT.1/RW.1, Kuningan, Setia Budi, Kecamatan Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12910, Indonesia",
+      "businessHours": [
+        "Senin: 11.00\u201321.30",
+        "Selasa: 11.00\u201321.30",
+        "Rabu: 11.00\u201321.30",
+        "Kamis: 11.00\u201321.30",
+        "Jumat: 11.00\u201322.00",
+        "Sabtu: 11.00\u201322.00",
+        "Minggu: 11.00\u201321.30"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(021) 5252605",
+        "website": "http://warungmjs.com/#thebase"
+      },
+      "keywordMatch": "10 out of 6097 reviews mention the keyword.",
+      "matchPercentage": 50.0,
+      "matchReasoning": "Total reviews 6097 above maximum 50. Price range '$$' does not match required '$'. Business hours do not match required '9 AM - 10 PM'.",
+      "placeId": "ChIJp5VZTgT0aS4R26oBEPT4nUw",
+      "placeName": "Warung MJS",
+      "priceRange": "$$",
+      "rating": 4.5,
+      "strengths": [
+        "Wide variety of delicious Indonesian dishes with high food quality.",
+        "Charming vintage interior with unique decor that enhances the dining experience.",
+        "Convenient location with accessible transportation options."
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "The restaurant offers a wide variety of delicious Indonesian dishes, earning rave reviews for its food quality, with some even rating it as an 11/10 and expressing a strong desire to return. The interior boasts a charming vintage style, featuring a mini pool and outdoor area adorned with unique old items that complement the overall theme, although some customers found it cramped and hot. While parking can be challenging, the location is convenient, especially with ample green SM taxis available nearby. Overall, despite some subjective preferences regarding the ambiance, the exceptional food is the main highlight that draws patrons in.",
+      "totalRatings": 6097,
+      "weaknesses": [
+        "Cramped and hot ambiance, which may detract from customer comfort.",
+        "Challenging parking situation that can deter potential customers.",
+        "Mixed reviews on the interior space, indicating some customers may not enjoy the atmosphere."
+      ]
+    },
+    {
+      "address": "10, Jl. Suryo No.1 10, RT.10/RW.3, Rw. Bar., Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12180, Indonesia",
+      "businessHours": [
+        "Senin: 11.00\u201322.00",
+        "Selasa: 11.00\u201322.00",
+        "Rabu: 11.00\u201322.00",
+        "Kamis: 11.00\u201322.00",
+        "Jumat: 11.00\u201323.00",
+        "Sabtu: 11.00\u201323.00",
+        "Minggu: 11.00\u201322.00"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(021) 27933565",
+        "website": null
+      },
+      "keywordMatch": "7 out of 2815 reviews mention the keyword.",
+      "matchPercentage": 50.0,
+      "matchReasoning": "Total reviews 2815 above maximum 50. Price range '$$$' does not match required '$'. Business hours do not match required '9 AM - 10 PM'.",
+      "placeId": "ChIJ9_SrqF7xaS4Rdv0Jh5kKsMU",
+      "placeName": "Okuzono Japanese Dining",
+      "priceRange": "$$$",
+      "rating": 4.6,
+      "strengths": [
+        "Exceptional staff service characterized by politeness and attentiveness.",
+        "Many dishes stand out, including fresh raw oysters, comforting ochazuke, and the highly recommended banana caramel dessert.",
+        "Patrons feel the quality and ambiance justify the somewhat high prices, leading to a desire to return."
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "The restaurant is praised for its exceptional staff service, characterized by politeness and attentiveness, which greatly enhances the dining experience. While the food is generally good, some items, like the sushi rice, fell short in temperature and portion size, notably the small serving of edamame. However, many dishes stood out, such as the fresh raw oysters, comforting ochazuke, and the highly recommended banana caramel dessert. Although the prices are somewhat high, patrons feel the quality and ambiance justify the cost, leading to a desire to return in the future.",
+      "totalRatings": 2815,
+      "weaknesses": [
+        "Some food items, like the sushi rice, fall short in temperature and portion size.",
+        "Small serving of edamame is noted as a downside.",
+        "High prices may deter some potential customers despite perceived quality."
+      ]
+    },
+    {
+      "address": "Jl. Brawijaya VIII No.6A, Pulo, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12160, Indonesia",
+      "businessHours": [
+        "Senin: Tutup",
+        "Selasa: 19.00\u201322.00",
+        "Rabu: 19.00\u201322.00",
+        "Kamis: 19.00\u201322.00",
+        "Jumat: 19.00\u201322.00",
+        "Sabtu: 19.00\u201322.00",
+        "Minggu: Tutup"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "0811-1557-798",
+        "website": "http://www.namaazdining.com/"
+      },
+      "keywordMatch": "8 out of 909 reviews mention the keyword.",
+      "matchPercentage": 50.0,
+      "matchReasoning": "Total reviews 909 above maximum 50. Price range '$$$$' does not match required '$'. Business hours do not match required '9 AM - 10 PM'.",
+      "placeId": "ChIJTxAy8WfxaS4Rt0KGZl6HS1Y",
+      "placeName": "Namaaz Dining",
+      "priceRange": "$$$$",
+      "rating": 4.6,
+      "strengths": [
+        "Unique and enjoyable dining experience with creative food presentation",
+        "Friendly service and emphasis on artistry and experimentation",
+        "Exceptional value compared to similar offerings, making it a must-try for culinary enthusiasts"
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "The reviews highlight a unique and enjoyable dining experience characterized by creative food presentation and friendly service. Diners appreciate the element of surprise in each dish, with a focus on artistry and experimentation, even if some flavors may not suit every palate. While there may be longer wait times for courses due to busy periods, the overall experience is deemed worth it for those seeking something beyond typical fine dining. Reviewers encourage potential visitors to approach the experience with an open mind and an appreciation for the Indonesian chef's innovative techniques, which they believe offer exceptional value compared to similar offerings elsewhere. Despite some minor venue improvements needed, the consensus is that this restaurant is a must-try for anyone looking for a memorable culinary adventure.",
+      "totalRatings": 909,
+      "weaknesses": [
+        "Longer wait times for courses during busy periods",
+        "Some flavors may not suit every palate, leading to potential dissatisfaction",
+        "Minor venue improvements needed to enhance overall ambiance"
+      ]
+    },
+    {
+      "address": "Jl. Ampera Raya No.9, RT.4/RW.2, Cilandak Tim., Ps. Minggu, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12560, Indonesia",
+      "businessHours": [
+        "Senin: 10.00\u201322.00",
+        "Selasa: 10.00\u201322.00",
+        "Rabu: 10.00\u201322.00",
+        "Kamis: 10.00\u201322.00",
+        "Jumat: 10.00\u201322.00",
+        "Sabtu: 10.00\u201322.00",
+        "Minggu: 10.00\u201322.00"
+      ],
+      "businessType": [
+        "restaurant",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(021) 78831600",
+        "website": "http://www.ceritarasanusantara.com/"
+      },
+      "keywordMatch": "10 out of 4545 reviews mention the keyword.",
+      "matchPercentage": 50.0,
+      "matchReasoning": "Total reviews 4545 above maximum 50. Price range '$$' does not match required '$'. Business hours do not match required '9 AM - 10 PM'.",
+      "placeId": "ChIJw5YEX7XxaS4RlLmg9SOZvCQ",
+      "placeName": "Cerita Rasa Nusantara",
+      "priceRange": "$$",
+      "rating": 4.6,
+      "strengths": [
+        "Inviting and comfortable atmosphere with a tranquil Koi pond and non-smoking outdoor seating area.",
+        "Affordability of menu items, particularly the well-received umami rice, encourages repeat visits.",
+        "Ample parking space adds convenience for guests."
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "The reviews highlight a positive overall experience at the restaurant, particularly appreciating the inviting and comfortable atmosphere, complemented by features like an expansive parking lot and a tranquil Koi pond. Patrons love the affordability of the menu items, especially praising the umami rice, and express a desire to return and try more dishes with family. Additionally, the thoughtful inclusion of a non-smoking outdoor seating area stands out as a refreshing change, enhancing the dining experience. However, some critiques mention that while the ambiance is commendable, the food quality tends to be average and lacks the distinctiveness that would warrant repeat visits, suggesting a need for improvement in flavors or a reevaluation of pricing.",
+      "totalRatings": 4545,
+      "weaknesses": [
+        "Food quality is considered average and lacks distinctiveness, which may hinder repeat patronage.",
+        "The overall match score of 50.0% suggests room for improvement in aligning offerings with customer expectations.",
+        "Critiques indicate a need for enhancement in flavors to create a more memorable dining experience."
+      ]
+    },
+    {
+      "address": "Jl. Wijaya XIII No.45, RT.2/RW.5, Melawai, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12160, Indonesia",
+      "businessHours": [
+        "Senin: 10.00\u201322.00",
+        "Selasa: 10.00\u201322.00",
+        "Rabu: 10.00\u201322.00",
+        "Kamis: 10.00\u201322.00",
+        "Jumat: 10.00\u201322.00",
+        "Sabtu: 10.00\u201322.00",
+        "Minggu: 10.00\u201322.00"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "0821-1226-7787",
+        "website": "http://www.plataran.com/patio-jakarta/"
+      },
+      "keywordMatch": "5 out of 1974 reviews mention the keyword.",
+      "matchPercentage": 50.0,
+      "matchReasoning": "Total reviews 1974 above maximum 50. Price range '$$$' does not match required '$'. Business hours do not match required '9 AM - 10 PM'.",
+      "placeId": "ChIJKSZNwHHxaS4RHzihVeiYYN4",
+      "placeName": "Patio Jakarta",
+      "priceRange": "$$$",
+      "rating": 4.6,
+      "strengths": [
+        "Charming vintage ambiance that enhances customer experience",
+        "Highly praised food quality, particularly popular dishes like Spaghetti Ala Ragu and Tiramisu",
+        "Consistently top-notch service complemented by live music"
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "Patio is a charming hidden gem that combines vintage vibes with a cozy ambiance, making it a perfect spot for various occasions, from dates to gatherings with friends. Reviewers rave about the delicious food, highlighting favorites like Spaghetti Ala Ragu and Tiramisu, although some noted that the steak could use improvement in taste and doneness. The service is consistently praised as top-notch, and the atmosphere is enhanced by warm lighting and live music, which adds to the inviting experience. Overall, Patio is highly recommended for anyone seeking a delightful dining experience in a nostalgic setting.",
+      "totalRatings": 1974,
+      "weaknesses": [
+        "Mixed reviews regarding the steak, indicating room for improvement in certain menu items",
+        "Moderate match score of 50.0%, suggesting potential room for better alignment with customer expectations"
+      ]
+    },
+    {
+      "address": "Jl. Gunawarman No.3 6, RT.6/RW.3, Selong, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12110, Indonesia",
+      "businessHours": [
+        "Senin: 07.00\u201323.00",
+        "Selasa: 07.00\u201323.00",
+        "Rabu: 07.00\u201323.00",
+        "Kamis: 07.00\u201323.00",
+        "Jumat: 07.00\u201323.00",
+        "Sabtu: 07.00\u201323.00",
+        "Minggu: 07.00\u201323.00"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "0878-2277-0007",
+        "website": "http://www.thegunawarman.com/"
+      },
+      "keywordMatch": "4 out of 1991 reviews mention the keyword.",
+      "matchPercentage": 50.0,
+      "matchReasoning": "Total reviews 1991 above maximum 50. Price range '$$$' does not match required '$'. Business hours do not match required '9 AM - 10 PM'.",
+      "placeId": "ChIJnSa5FlvxaS4R9_E5t2Wxalc",
+      "placeName": "Sofia at The Gunawarman",
+      "priceRange": "$$$",
+      "rating": 4.5,
+      "strengths": [
+        "Stunning classical European architecture and ambiance that enhances the dining experience.",
+        "Attentive service that contributes to guest satisfaction.",
+        "Signature dishes like burrata salad and crab and scallop fried rice are well-received by patrons."
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "Sofia, a restaurant within the Gunawarman hotel, offers a unique dining experience characterized by its stunning classical European architecture and attentive service. Patrons rave about signature dishes like the burrata salad and crab and scallop fried rice, although the main dishes lack sides, prompting some to recommend dining with larger groups to fully enjoy the substantial entrees like steaks and lobsters. While the ambiance and decor earn high praise, some reviewers note that the food can be hit-or-miss, with particular dishes being bland or not meeting expectations. Additionally, the combination of smoking and non-smoking areas indoors is a concern for some diners. Overall, Sofia is recognized more for its aesthetic appeal than for consistently memorable cuisine.",
+      "totalRatings": 1991,
+      "weaknesses": [
+        "Main dishes often lack sides, which may detract from the overall dining experience.",
+        "Inconsistency in food quality, with some dishes being bland or not meeting expectations.",
+        "Concerns regarding the combination of smoking and non-smoking areas indoors may deter some diners."
+      ]
+    },
+    {
+      "address": "Jl. Kemang Raya No.58, RT.8/RW.2, Bangka, Kec. Mampang Prpt., Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12730, Indonesia",
+      "businessHours": [
+        "Senin: 10.30\u201322.00",
+        "Selasa: 10.30\u201322.00",
+        "Rabu: 10.30\u201322.00",
+        "Kamis: 10.30\u201322.00",
+        "Jumat: 11.00\u201323.00",
+        "Sabtu: 11.00\u201323.00",
+        "Minggu: 10.30\u201322.00"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(021) 71791592",
+        "website": "http://www.mammarosy.com/"
+      },
+      "keywordMatch": "2 out of 3665 reviews mention the keyword.",
+      "matchPercentage": 50.0,
+      "matchReasoning": "Total reviews 3665 above maximum 50. Price range '$$$' does not match required '$'. Business hours do not match required '9 AM - 10 PM'.",
+      "placeId": "ChIJ64m4zIDxaS4RWGdN-VygPEE",
+      "placeName": "Mamma Rosy",
+      "priceRange": "$$$",
+      "rating": 4.5,
+      "strengths": [
+        "Welcoming atmosphere and home-like ambiance that enhances customer experience.",
+        "High-quality, authentic Italian food with signature dishes receiving positive acclaim.",
+        "Attentive and helpful staff, including a hands-on owner, contributing to exceptional hospitality."
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "Many positive reviews highlight the welcoming atmosphere and authentic Italian food at Mamma Rosy, with patrons appreciating the home-like ambiance and attentive service. Guests commend the staff, particularly owner Mrs. Vigone, for their helpfulness in resolving any issues, contributing to a strong sense of hospitality. Notable dishes, including Gnocchi Pesto, Potato Balls with Bolognese Sauce, and Tiramisu, received high praise for their delicious flavors. While some mention that the prices are a bit high, most agree that the quality of food and service makes it a worthwhile experience, encouraging diners to give the restaurant a second chance.",
+      "totalRatings": 3665,
+      "weaknesses": [
+        "Prices are perceived as a bit high by some customers.",
+        "Match score of 50.0% suggests there may be room for improvement in overall customer satisfaction."
+      ]
+    },
+    {
+      "address": "Jl. Prapanca Raya No.40A, Pulo, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12160, Indonesia",
+      "businessHours": [
+        "Senin: 10.00\u201322.00",
+        "Selasa: 10.00\u201322.00",
+        "Rabu: 10.00\u201322.00",
+        "Kamis: 10.00\u201322.00",
+        "Jumat: 10.00\u201322.00",
+        "Sabtu: 10.00\u201322.00",
+        "Minggu: 10.00\u201322.00"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(021) 80600900",
+        "website": "https://lumpangemas.com/"
+      },
+      "keywordMatch": "10 out of 1048 reviews mention the keyword.",
+      "matchPercentage": 50.0,
+      "matchReasoning": "Total reviews 1048 above maximum 50. Price range '$$' does not match required '$'. Business hours do not match required '9 AM - 10 PM'.",
+      "placeId": "ChIJD-TCQHPxaS4R2Ht75sQ3inw",
+      "placeName": "Lumpang Emas - Wijaya II",
+      "priceRange": "$$",
+      "rating": 4.8,
+      "strengths": [
+        "High customer rating (4.8 from 1048 reviews) indicating strong customer satisfaction.",
+        "Spacious and beautiful dining areas that enhance the dining experience.",
+        "Diverse menu that appeals to both locals and foreigners, with standout dishes receiving praise."
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "This elegant restaurant in South Jakarta is renowned for its spacious and beautiful dining areas, offering a mix of Indonesian traditional cuisines along with a diverse menu that appeals to both locals and foreigners. Diners praise the food for its great taste and lovely presentation, with standout dishes like lontong sayur, laksa, and the highly recommended 'Ayam Goreng Bawang Putih.' While the service is noted for being friendly and efficient, some local patrons feel that the flavors could be bolder, contrasting with the more subtle taste that foreign guests tend to appreciate. The restaurant's convenient facilities, including a prayer room and adequate restrooms, add to its appeal, although it is somewhat hidden amidst the busy streets. Additionally, private VIP rooms are available for those seeking a more exclusive dining experience. Overall, it\u2019s a fitting place for both casual brunches and fine dining.",
+      "totalRatings": 1048,
+      "weaknesses": [
+        "Flavors may be perceived as too subtle for local patrons, potentially limiting appeal.",
+        "Location is somewhat hidden, which may affect visibility and accessibility.",
+        "Match score of 50.0% suggests potential improvements are needed in aligning customer expectations."
+      ]
+    },
+    {
+      "address": "Jl. Melawai 6 No.8, RT.3/RW.1, Melawai, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12160, Indonesia",
+      "businessHours": [
+        "Senin: 11.30\u201322.00",
+        "Selasa: 11.30\u201322.00",
+        "Rabu: 11.30\u201322.00",
+        "Kamis: 11.30\u201322.00",
+        "Jumat: 11.30\u201322.00",
+        "Sabtu: 11.30\u201322.00",
+        "Minggu: 11.30\u201322.00"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "0812-9562-1060",
+        "website": "https://yukijapaneseresto.com/"
+      },
+      "keywordMatch": "10 out of 10923 reviews mention the keyword.",
+      "matchPercentage": 50.0,
+      "matchReasoning": "Total reviews 10923 above maximum 50. Price range 'N/A' does not match required '$'. Business hours do not match required '9 AM - 10 PM'.",
+      "placeId": "ChIJD96XFmzxaS4RquSpmFq_Up8",
+      "placeName": "Yuki Japanese Restaurant, Bar & Karaoke",
+      "priceRange": "",
+      "rating": 4.9,
+      "strengths": [
+        "High rating of 4.9 from over 10,000 reviews indicates strong customer satisfaction.",
+        "Known for authentic Japanese cuisine and exceptional service, creating a positive dining experience.",
+        "Generous portions at reasonable prices, appealing to value-conscious customers.",
+        "Long-standing history since 1983 enhances reputation and customer trust."
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "The reviews highlight a positive dining experience at Yuki, a Japanese restaurant known for its authentic cuisine and exceptional service. Despite the long wait during peak hours, customers appreciated the humble and helpful staff, who even provided access to a VIP room without a minimum spend. Diners praised the authentic Japanese dishes, particularly the Salmon Belly Nigiri and California Roll, noting generous portions at reasonable prices compared to other restaurants. The establishment's long-standing history since 1983 further reinforces its reputation for delivering genuine Japanese hospitality, leaving patrons eager to return and explore more of the menu.",
+      "totalRatings": 10923,
+      "weaknesses": [
+        "Long wait times during peak hours may deter potential customers.",
+        "The match score of 50.0% suggests there may be areas for improvement in overall business performance.",
+        "Limited VIP room availability may limit customer experiences during busy times."
+      ]
+    },
+    {
+      "address": "Hotel Rasuna Icon Lt. 3A, Jalan Karet Pedurenan No.3, Setiabudi, RT.6/RW.7, Kuningan, Karet Kuningan, Kecamatan Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12940, Indonesia",
+      "businessHours": [
+        "Senin: Buka 24 jam",
+        "Selasa: Buka 24 jam",
+        "Rabu: Buka 24 jam",
+        "Kamis: Buka 24 jam",
+        "Jumat: Buka 24 jam",
+        "Sabtu: Buka 24 jam",
+        "Minggu: Buka 24 jam"
+      ],
+      "businessType": [
+        "cafe",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(021) 5201642",
+        "website": "https://www.skygardencafe.com/"
+      },
+      "keywordMatch": "4 out of 419 reviews mention the keyword.",
+      "matchPercentage": 50.0,
+      "matchReasoning": "Total reviews 419 above maximum 50. Price range 'N/A' does not match required '$'. Business hours do not match required '9 AM - 10 PM'.",
+      "placeId": "ChIJGVSN3fnzaS4R3w9qNDpIbjs",
+      "placeName": "Sky Garden Cafe",
+      "priceRange": "",
+      "rating": 4.5,
+      "strengths": [
+        "Attractive indoor and outdoor settings with city views and sunsets",
+        "Diverse menu offering both western and local dishes, popular items include sop buntut, pizza, and beer buckets",
+        "Convenient rooftop location in Hotel Rasuna Icon, ideal for social gatherings and after-work relaxation"
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "Sky Garden Cafe, recently renovated, offers a delightful experience with its improved indoor setting and picturesque outdoor space, perfect for enjoying city views and sunsets. Diners can savor a diverse menu featuring both western and local dishes, with standout favorites like sop buntut, pizza, and beer buckets. Conveniently located on the rooftop of the Hotel Rasuna Icon, it's a great spot for social gatherings, especially for those looking to escape Friday traffic. While the service could be more attentive, the overall atmosphere is charming and relaxed, making it a recommended hangout close to the office without being too expensive.",
+      "totalRatings": 419,
+      "weaknesses": [
+        "Service could be more attentive",
+        "Match score of 50.0% indicates potential areas for improvement in customer satisfaction",
+        "Possible competition from other nearby dining options"
+      ]
+    },
+    {
+      "address": "Setiabudi, Lippo Kuningan Building, Jl. H. R. Rasuna Said No.Kav. B 12 Ground floor, RT.6/RW.7, Kuningan, Karet Kuningan, Kecamatan Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12940, Indonesia",
+      "businessHours": [
+        "Senin: 10.30\u201322.00",
+        "Selasa: 10.30\u201322.00",
+        "Rabu: 10.30\u201322.00",
+        "Kamis: 10.30\u201322.00",
+        "Jumat: 10.30\u201323.00",
+        "Sabtu: 10.30\u201323.00",
+        "Minggu: 10.30\u201322.00"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(021) 29110145",
+        "website": "http://pokenbir.com/"
+      },
+      "keywordMatch": "4 out of 5754 reviews mention the keyword.",
+      "matchPercentage": 50.0,
+      "matchReasoning": "Total reviews 5754 above maximum 50. Price range '$$' does not match required '$'. Business hours do not match required '9 AM - 10 PM'.",
+      "placeId": "ChIJ4xqe_vfzaS4R2nzD8AUEB2Q",
+      "placeName": "PokenBir",
+      "priceRange": "$$",
+      "rating": 4.7,
+      "strengths": [
+        "Cozy and relaxed atmosphere ideal for socializing",
+        "Flavorful non-halal dishes highly praised by diners",
+        "Reasonable pricing with suitable options for both solo diners and groups"
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "The reviews highlight a cozy and relaxed atmosphere ideal for socializing, where guests can enjoy flavorful non-halal dishes without needing to raise their voices. Diners recommend the Poken Big Rice as a great shareable option for groups and praise dishes like andaliman pork and the Sumatran plate for their delicious flavors, particularly the tender pork belly. The restaurant offers reasonable pricing, with meals suitable for solo diners and groups alike, allowing for a budget of around 150k per person. While the food receives high marks, there are mentions of service needing improvement, yet the overall vibe remains enjoyable.\n",
+      "totalRatings": 5754,
+      "weaknesses": [
+        "Service requires improvement as mentioned in reviews",
+        "Match score of 50.0% indicates potential room for improvement in overall customer satisfaction"
+      ]
+    },
+    {
+      "address": "Jl. Brawijaya Raya No.26, RT.1/RW.2, Kebayoran Baru, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12160, Indonesia",
+      "businessHours": [
+        "Senin: 07.00\u201322.00",
+        "Selasa: 07.00\u201322.00",
+        "Rabu: 07.00\u201322.00",
+        "Kamis: 07.00\u201322.00",
+        "Jumat: 07.00\u201322.00",
+        "Sabtu: 07.00\u201322.00",
+        "Minggu: 07.00\u201322.00"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "0811-1025-999",
+        "website": null
+      },
+      "keywordMatch": "3 out of 647 reviews mention the keyword.",
+      "matchPercentage": 50.0,
+      "matchReasoning": "Total reviews 647 above maximum 50. Price range 'N/A' does not match required '$'. Business hours do not match required '9 AM - 10 PM'.",
+      "placeId": "ChIJ_zh9TXfxaS4RoFJBiBh54Sw",
+      "placeName": "Jakarta Restaurant",
+      "priceRange": "",
+      "rating": 4.7,
+      "strengths": [
+        "Exceptional service from staff, particularly noted for attentiveness and warmth.",
+        "High-quality breakfast offerings, despite a limited selection.",
+        "Inviting ambience with outdoor seating and quieter indoor areas, enhancing the dining experience."
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "Guests consistently praised their experiences at the restaurant for the attentive and warm service provided by the staff, notably highlighting individuals like Pak Arya and Pak Ahmadi. The breakfast, while not vast in selection, was noted for its high quality, contributing to an enjoyable start to the day. Reviewers also appreciated the inviting ambience, offering both outdoor seating for a relaxed atmosphere and quieter indoor areas for a refined dining experience. Overall, the combination of excellent service, quality food, and pleasant surroundings made a lasting impression, leaving guests eager to return.",
+      "totalRatings": 647,
+      "weaknesses": [
+        "Match score of 50.0% indicates potential areas for improvement in overall performance or customer satisfaction.",
+        "Limited breakfast selection may not cater to all guest preferences.",
+        "Potential overcrowding or noise issues with outdoor seating affecting the overall experience."
+      ]
+    },
+    {
+      "address": "Jl. Gunawarman No.32, RT.5/RW.2, Selong, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12110, Indonesia",
+      "businessHours": [
+        "Senin: 11.30\u201323.00",
+        "Selasa: 11.30\u201323.00",
+        "Rabu: 11.30\u201323.00",
+        "Kamis: 11.30\u201323.00",
+        "Jumat: 11.30\u201300.00",
+        "Sabtu: 11.30\u201300.00",
+        "Minggu: 11.30\u201323.00"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "0859-2105-9068",
+        "website": "http://www.turkuazjakarta.com/"
+      },
+      "keywordMatch": "1 out of 1410 reviews mention the keyword.",
+      "matchPercentage": 50.0,
+      "matchReasoning": "Total reviews 1410 above maximum 50. Price range '$$$' does not match required '$'. Business hours do not match required '9 AM - 10 PM'.",
+      "placeId": "ChIJP8bvQ13xaS4RgueoWi9kdBA",
+      "placeName": "Turkuaz",
+      "priceRange": "$$$",
+      "rating": 4.5,
+      "strengths": [
+        "Delicious and authentic Turkish cuisine with generous portions ideal for sharing.",
+        "Attentive yet unobtrusive service in a warm atmosphere with beautiful decor.",
+        "Diverse menu featuring flavorful mezze platters and tender grilled meats, along with excellent baklava and tea selection."
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "Turkuaz is highly praised for its delicious and authentic Turkish cuisine, characterized by generous portions perfect for sharing, making it an ideal spot for gatherings with friends. Reviewers appreciate the attentive yet unobtrusive service, warm atmosphere adorned with beautiful Turkish decor, and a diverse menu ranging from flavorful mezze platters to tender grilled meats. While some diners noted that the service could be slower during busy times, particularly for larger groups, the overall experience is enhanced by the stunning presentation of food, excellent baklava, and a great selection of teas. Many guests are loyal patrons, often returning after memorable experiences like special occasions, highlighting the restaurant's lasting appeal.",
+      "totalRatings": 1410,
+      "weaknesses": [
+        "Service can be slower during busy times, especially for larger groups.",
+        "Match score of 50.0% may indicate room for improvement in overall business alignment."
+      ]
+    },
+    {
+      "address": "Jl. Cipete Raya No.79 7, RT.7/RW.4, Cipete Sel., Kec. Cilandak, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12410, Indonesia",
+      "businessHours": [
+        "Senin: 08.00\u201322.00",
+        "Selasa: 08.00\u201322.00",
+        "Rabu: 08.00\u201322.00",
+        "Kamis: 08.00\u201322.00",
+        "Jumat: 13.00\u201322.00",
+        "Sabtu: 08.00\u201322.00",
+        "Minggu: 08.00\u201322.00"
+      ],
+      "businessType": [
+        "restaurant",
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(021) 75904015",
+        "website": null
+      },
+      "keywordMatch": "10 out of 3778 reviews mention the keyword.",
+      "matchPercentage": 50.0,
+      "matchReasoning": "Total reviews 3778 above maximum 50. Price range '$$' does not match required '$'. Business hours do not match required '9 AM - 10 PM'.",
+      "placeId": "ChIJKxZmEsTxaS4RAIHG3WpIbho",
+      "placeName": "Toodz House - Cipete",
+      "priceRange": "$$",
+      "rating": 4.7,
+      "strengths": [
+        "Outstanding hospitality highlighted in customer reviews.",
+        "Unique features such as creatively designed prayer area with fish pond and fountain.",
+        "High quality and delicious food that encourages repeat visits."
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "Reviews for this caf\u00e9 in Cipete, South Jakarta highlight its outstanding hospitality and unique features, particularly the creatively designed prayer area that includes a fish pond and fountain. Guests appreciate the quality of the food, which they find delicious and worth revisiting, despite some concerns about the wait time for meals and occasional service confusion. While there are issues with parking and cleanliness in the bathrooms, the overall positive experience makes it a favorite destination for many patrons.",
+      "totalRatings": 3778,
+      "weaknesses": [
+        "Long wait times for meals.",
+        "Occasional service confusion.",
+        "Issues with parking and cleanliness in bathrooms."
+      ]
+    },
+    {
+      "address": "Jl. Wolter Monginsidi No.25, Rw. Bar., Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12180, Indonesia",
+      "businessHours": [
+        "Senin: 11.00\u201302.00",
+        "Selasa: 11.00\u201302.00",
+        "Rabu: 11.00\u201302.00",
+        "Kamis: 11.00\u201302.00",
+        "Jumat: 11.00\u201302.00",
+        "Sabtu: 11.00\u201302.00",
+        "Minggu: 11.00\u201302.00"
+      ],
+      "businessType": [
+        "bar",
+        "night_club",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "0822-9999-6366",
+        "website": "https://www.instagram.com/pennjakarta/"
+      },
+      "keywordMatch": "2 out of 316 reviews mention the keyword.",
+      "matchPercentage": 50.0,
+      "matchReasoning": "Total reviews 316 above maximum 50. Price range 'N/A' does not match required '$'. Business hours do not match required '9 AM - 10 PM'.",
+      "placeId": "ChIJZStnYbnxaS4R8YeHixd-ysE",
+      "placeName": "PENN JAKARTA",
+      "priceRange": "",
+      "rating": 4.7,
+      "strengths": [
+        "Vibrant atmosphere reminiscent of New York's nightlife",
+        "Highly praised food, especially the Spaghetti Carbonara and Cheeseburgers",
+        "Welcoming and friendly staff enhancing the dining experience",
+        "Extensive and creative cocktail menu with skilled bartenders",
+        "Engaging events like Lindy Hop night that create memorable experiences"
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "Penn Jakarta is a must-visit, offering a vibrant atmosphere that captures the essence of New York's nightlife. Guests rave about the delicious food, particularly the creamy Spaghetti Carbonara and juicy Cheeseburgers. The welcoming and friendly staff enhance the overall dining experience, complemented by lovely decorations. While the culinary execution can be inconsistent, the extensive and creative cocktail menu, along with skilled bartenders, ensures a great beverage experience. Penn truly stands out with its lively events like Lindy Hop night, creating an energetic space that prioritizes memorable experiences over mere dining.",
+      "totalRatings": 316,
+      "weaknesses": [
+        "Inconsistent culinary execution",
+        "Match score of 50.0% indicates potential areas for improvement in customer satisfaction"
+      ]
+    },
+    {
+      "address": "Darmawangsa Square City Walk Jl. Darmawangsa VI & IX, Kebayoran Baru, RT.5/RW.1, Pulo, Jakarta Selatan, RT.5/RW.1, Pulo, Kebayoran Baru, DKI Jakarta, Jakarta 12160, Indonesia",
+      "businessHours": [
+        "Senin: 09.00\u201321.00",
+        "Selasa: 09.00\u201321.00",
+        "Rabu: 09.00\u201321.00",
+        "Kamis: 09.00\u201321.00",
+        "Jumat: 07.00\u201321.00",
+        "Sabtu: 07.00\u201321.00",
+        "Minggu: 07.00\u201321.00"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(021) 27513687",
+        "website": "https://plataran.com/property/teras-by-plataran-dharmawangsa/"
+      },
+      "keywordMatch": "7 out of 652 reviews mention the keyword.",
+      "matchPercentage": 50.0,
+      "matchReasoning": "Total reviews 652 above maximum 50. Price range 'N/A' does not match required '$'. Business hours do not match required '9 AM - 10 PM'.",
+      "placeId": "ChIJ26DvRnHxaS4R_Z_iQtBnNTQ",
+      "placeName": "Teras by Plataran Dharmawangsa",
+      "priceRange": "",
+      "rating": 4.5,
+      "strengths": [
+        "High customer satisfaction with a rating of 4.5 from 652 reviews.",
+        "Positive dining experience highlighted by delicious food and pleasant ambience.",
+        "Exceptional service from helpful and humble staff."
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "The reviews highlight a positive dining experience marked by a pleasant ambience and delicious food, with recommendations including duck noodles, mango salad, and pad Thai among others. Diners appreciate the standard portion sizes that offer good value for the price, and they commend the exceptional service provided by helpful and humble staff.",
+      "totalRatings": 652,
+      "weaknesses": [
+        "A match score of 50.0% indicates potential misalignment with customer expectations or competition.",
+        "Limited negative feedback highlights may suggest areas for improvement, possibly in menu variety or consistency."
+      ]
+    },
+    {
+      "address": "Jl. Melawai I No.28, RT.3/RW.1, Melawai, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12160, Indonesia",
+      "businessHours": [
+        "Senin: 09.00\u201322.00",
+        "Selasa: 09.00\u201322.00",
+        "Rabu: 09.00\u201322.00",
+        "Kamis: 09.00\u201322.00",
+        "Jumat: 09.00\u201322.00",
+        "Sabtu: 09.00\u201322.00",
+        "Minggu: 09.00\u201322.00"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "0811-1010-9929",
+        "website": "https://www.umaoma.com/"
+      },
+      "keywordMatch": "10 out of 1218 reviews mention the keyword.",
+      "matchPercentage": 50.0,
+      "matchReasoning": "Total reviews 1218 above maximum 50. Price range '$$' does not match required '$'. Business hours do not match required '9 AM - 10 PM'.",
+      "placeId": "ChIJhURaFpzxaS4RID2Uwh5tTNA",
+      "placeName": "UMA OMA CAFE",
+      "priceRange": "$$",
+      "rating": 4.7,
+      "strengths": [
+        "Unique dining experience with Indonesian-style cuisine",
+        "Comfortable atmosphere created by a mix of elderly and younger staff",
+        "Efficient ordering system enhancing customer engagement",
+        "Generously sized and flavorful iced sweet tea",
+        "Strong ambiance and service quality"
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "The cafe-restaurant offers a unique dining experience with its Indonesian-style cuisine, served by a mix of elderly and younger staff who enhance the comfortable atmosphere. The ordering system is efficient, allowing diners to engage with the vibrant environment, especially on the first floor reminiscent of a traditional Warteg. While the food, though filling, may not stand out, it elevates home-style Indonesian dishes and justifies the somewhat higher prices. Guests particularly enjoy the generously sized, flavorful iced sweet tea, although some note that the air conditioning could be improved. Overall, the establishment is appreciated for its ambiance and service, making it a worthwhile visit despite minor drawbacks.",
+      "totalRatings": 1218,
+      "weaknesses": [
+        "Food may not stand out despite being filling",
+        "Higher prices may deter some customers",
+        "Air conditioning could be improved"
+      ]
+    },
+    {
+      "address": "East Mall Grand Indonesia, Jl. M.H. Thamrin No.1 Lt. 1, RT.1/RW.5, Menteng, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10310, Indonesia",
+      "businessHours": [
+        "Senin: 11.00\u201323.00",
+        "Selasa: 11.00\u201323.00",
+        "Rabu: 11.00\u201323.00",
+        "Kamis: 11.00\u201323.00",
+        "Jumat: 11.00\u201301.00",
+        "Sabtu: 11.00\u201301.00",
+        "Minggu: 11.00\u201300.00"
+      ],
+      "businessType": [
+        "restaurant",
+        "night_club",
+        "liquor_store",
+        "bar",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(021) 23581818",
+        "website": "https://www.ismaya.com/eat-drink/social-house"
+      },
+      "keywordMatch": "10 out of 6195 reviews mention the keyword.",
+      "matchPercentage": 50.0,
+      "matchReasoning": "Total reviews 6195 above maximum 50. Price range '$$$' does not match required '$'. Business hours do not match required '9 AM - 10 PM'.",
+      "placeId": "ChIJgWKDuiH0aS4RpXOh9dwgKmU",
+      "placeName": "Social House Grand Indonesia",
+      "priceRange": "$$$",
+      "rating": 4.7,
+      "strengths": [
+        "Cozy atmosphere that enhances the dining experience.",
+        "Impeccable service that is frequently praised by guests.",
+        "High-quality food and drinks, particularly unique offerings like Orange Clove and Hibiscus Fizz Tea."
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "The reviews highlight a cozy atmosphere, impeccable service, and delicious food and drinks at Social House Grand Indonesia. Guests appreciate the high-quality offerings, such as the refreshing Orange Clove drink and the visually stunning Hibiscus Fizz Tea, which is praised for its perfect balance of floral and fruity flavors, topped with vibrant berry sorbet and fresh mint. Overall, the establishment is commended for providing a delightful culinary experience that is well worth the price.",
+      "totalRatings": 6195,
+      "weaknesses": [
+        "A match score of 50.0% indicates potential areas for improvement in customer satisfaction.",
+        "High expectations set by excellent reviews may lead to disappointment for some guests."
+      ]
+    },
+    {
+      "address": "Sudirman Central Business District (SCBD, Jl. Jend. Sudirman kav 52-53, RT.5/RW.3, Senayan, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12190, Indonesia",
+      "businessHours": [
+        "Senin: 06.30\u201322.00",
+        "Selasa: 06.30\u201322.00",
+        "Rabu: 06.30\u201322.00",
+        "Kamis: 06.30\u201322.00",
+        "Jumat: 06.30\u201322.00",
+        "Sabtu: 06.30\u201322.00",
+        "Minggu: 06.30\u201322.00"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(021) 25501993",
+        "website": "https://www.marriott.com/en-us/dining/restaurant-bar/jktrt-the-ritz-carlton-jakarta-pacific-place/153917-pa-so-la-restaurant.mi"
+      },
+      "keywordMatch": "0 out of 496 reviews mention the keyword.",
+      "matchPercentage": 20.0,
+      "matchReasoning": "Total reviews 496 above maximum 50. Price range 'N/A' does not match required '$'. Business hours do not match required '9 AM - 10 PM'. Keyword 'terjangkau' not found in reviews.",
+      "placeId": "ChIJ_02K8JbxaS4RX9G3vNqXim8",
+      "placeName": "PA.SO.LA Restaurant",
+      "priceRange": "",
+      "rating": 4.7,
+      "strengths": [
+        "High customer satisfaction with a rating of 4.7 from 496 reviews.",
+        "Diverse and appealing gourmet buffet with a strong focus on American cuisine.",
+        "Upscale yet comfortable ambiance complemented by friendly and attentive staff."
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "PA.SO.LA Jakarta offers a delightful dining experience with a nice variety of food, particularly a gourmet buffet featuring a USA-themed menu that includes classic American dishes like BBQ ribs and mac and cheese, alongside an impressive selection of salads and desserts. The upscale yet comfortable ambiance enhances the meal, complemented by friendly and attentive staff. Guests also appreciate the live performances, with a suggestion to communicate with the staff for optimal seating. While a few more signature American dishes could have enhanced the theme, overall, it provides a quality dining experience with a unique international flair.",
+      "totalRatings": 496,
+      "weaknesses": [
+        "Match score of 20.0% may indicate limited market presence or competition.",
+        "Limited variety of signature American dishes could detract from the overall theme.",
+        "Reliance on staff communication for optimal seating may lead to inconsistent guest experiences."
+      ]
+    },
+    {
+      "address": "SCBD Lot 11, Jl. Jenderal Sudirman, RT.5/RW.3, Senayan, Kec. Kby. Baru, Jakarta, Daerah Khusus Ibukota Jakarta 12910, Indonesia",
+      "businessHours": [
+        "Senin: 16.00\u201300.00",
+        "Selasa: 16.00\u201300.00",
+        "Rabu: 16.00\u201300.00",
+        "Kamis: 16.00\u201300.00",
+        "Jumat: 16.00\u201302.00",
+        "Sabtu: 16.00\u201302.00",
+        "Minggu: 10.00\u201300.00"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "0811-9628-001",
+        "website": "http://www.chaochaojkt.com/"
+      },
+      "keywordMatch": "0 out of 921 reviews mention the keyword.",
+      "matchPercentage": 20.0,
+      "matchReasoning": "Total reviews 921 above maximum 50. Price range 'N/A' does not match required '$'. Business hours do not match required '9 AM - 10 PM'. Keyword 'terjangkau' not found in reviews.",
+      "placeId": "ChIJVamq_YrxaS4R9hqyqiNogIs",
+      "placeName": "Chao Chao Jakarta",
+      "priceRange": "",
+      "rating": 4.6,
+      "strengths": [
+        "High customer satisfaction with a rating of 4.6 from 921 reviews.",
+        "Attentive and professional staff response to service issues, enhancing overall guest experience.",
+        "Appealing rooftop access that adds to the venue's charm and ambiance."
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "The overall experience at the venue was positive, highlighted by a warm welcome from security and the reception team upon arrival. While there was an initial hiccup with an unwelcoming waitress, the swift and professional response from the supervisor to reassign a more attentive server significantly improved the dining experience. The rooftop access added a charming touch, further enhancing the evening. Guests also praised the quality of the Sunday brunch, particularly enjoying the diverse and delicious offerings, including dim sum, crispy pork, and Peking duck.",
+      "totalRatings": 921,
+      "weaknesses": [
+        "Initial service issues indicated by the presence of an unwelcoming waitress.",
+        "A relatively low match score of 20.0%, suggesting potential difficulties in attracting new customers."
       ]
     }
   ],
   "$metadata": {
-    "createdAt": "2025-06-10T18:59:22.733782+00:00Z",
-    "startedAt": "2025-06-10T18:59:22.733782+00:00Z",
-    "executionTotal": 11
+    "createdAt": "2025-06-10T19:07:29.387129+00:00Z",
+    "startedAt": "2025-06-10T19:07:29.387129+00:00Z",
+    "executionTotal": 72
   }
 }
