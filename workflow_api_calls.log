@@ -1,0 +1,1004 @@
+2025-06-11 01:58:55,644 - INFO - REQUEST to [input]
+PAYLOAD:
+{
+  "business_type": "restaurant",
+  "location": "Jakarta Selatan",
+  "min_rating": 4.5,
+  "min_reviews": 30,
+  "max_reviews": null,
+  "price_range": "$",
+  "business_hours": "9 AM - 10 PM",
+  "keywords": "terjangkau",
+  "numberOfLeads": 3
+}
+2025-06-11 01:58:58,142 - INFO - RESPONSE from [input]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "search",
+    "payload": {
+      "business_type": "$state.business_type",
+      "constraints": "$state.constraints",
+      "location": "$state.location",
+      "nextPageToken": "$state.nextPageToken",
+      "searchOffset": "$state.searchOffset"
+    }
+  },
+  "result": null,
+  "state": {
+    "business_type": "restaurant",
+    "constraints": {
+      "business_hours": "9 AM - 10 PM",
+      "keywords": "terjangkau",
+      "max_reviews": null,
+      "min_rating": 4.5,
+      "min_reviews": 30,
+      "price_range": "$"
+    },
+    "leadCount": 0,
+    "location": "Jakarta Selatan",
+    "nextPageToken": null,
+    "numberOfLeads": 3,
+    "remainingPlaceIds": [],
+    "searchOffset": 0
+  }
+}
+2025-06-11 01:58:58,143 - INFO - REQUEST to [search]
+PAYLOAD:
+{
+  "business_type": "restaurant",
+  "constraints": {
+    "business_hours": "9 AM - 10 PM",
+    "keywords": "terjangkau",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 30,
+    "price_range": "$"
+  },
+  "location": "Jakarta Selatan",
+  "nextPageToken": null,
+  "searchOffset": 0
+}
+2025-06-11 01:59:01,094 - INFO - RESPONSE from [search]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "scrape",
+    "payload": {
+      "constraints": "$state.constraints",
+      "placeId": "ChIJU80L2nbxaS4R_m_3MgI5JiM"
+    }
+  },
+  "result": null,
+  "state": {
+    "nextPageToken": "AXQCQNQoJzBMM6Q-t0LJkkNZ-ZNGVSsYLjyQ7oVIEK2K_UXNLdbFivVv4oVXDk9GqSXfku65Mj6-hnjttxhJW-efufkQwSw8lJSSzkIbzmDPiuF830qKCnpDWCUToVax1z1GEyC7-H4ZVdt58sxFK3ya2qBrk_nkYuGXTWW8TzUtr_KyrrZSnSNv-ei0LNXSFV9tn0GLKHnSna2LzbGbMETc1kKQDvtKy2y9Rob6C4MyMQ5EwjXL_UqkWcd9D1uabYUa2dpaaq9WUOnujnrHHMAlpglDfEf2g7kWjWXVGdf40f_R31ROCXc-doENOeA4QPV_tasuFraKpIMA9VpOJBECcmzjCdGqUOUuwVFphcEh6AMF96nC3cizOPVSM9U2VdCOM4o-iZekWiwLsCABRWaXrYfq3epLP3dT",
+    "remainingPlaceIds": [
+      "ChIJE1GvDtn1aS4RLfcz-MionU8",
+      "ChIJOU-DRF3xaS4RglxqldO_Chc",
+      "ChIJp5VZTgT0aS4R26oBEPT4nUw",
+      "ChIJ9_SrqF7xaS4Rdv0Jh5kKsMU",
+      "ChIJTxAy8WfxaS4Rt0KGZl6HS1Y",
+      "ChIJw5YEX7XxaS4RlLmg9SOZvCQ",
+      "ChIJKSZNwHHxaS4RHzihVeiYYN4",
+      "ChIJnSa5FlvxaS4R9_E5t2Wxalc",
+      "ChIJ64m4zIDxaS4RWGdN-VygPEE",
+      "ChIJD-TCQHPxaS4R2Ht75sQ3inw",
+      "ChIJD96XFmzxaS4RquSpmFq_Up8",
+      "ChIJGVSN3fnzaS4R3w9qNDpIbjs",
+      "ChIJZStnYbnxaS4R8YeHixd-ysE",
+      "ChIJ_02K8JbxaS4RX9G3vNqXim8",
+      "ChIJ4xqe_vfzaS4R2nzD8AUEB2Q",
+      "ChIJ_zh9TXfxaS4RoFJBiBh54Sw",
+      "ChIJVamq_YrxaS4R9hqyqiNogIs",
+      "ChIJP8bvQ13xaS4RgueoWi9kdBA",
+      "ChIJKxZmEsTxaS4RAIHG3WpIbho"
+    ],
+    "searchOffset": 20
+  }
+}
+2025-06-11 01:59:01,094 - INFO - REQUEST to [scrape]
+PAYLOAD:
+{
+  "constraints": {
+    "business_hours": "9 AM - 10 PM",
+    "keywords": "terjangkau",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 30,
+    "price_range": "$"
+  },
+  "placeId": "ChIJU80L2nbxaS4R_m_3MgI5JiM"
+}
+2025-06-11 01:59:12,766 - INFO - RESPONSE from [scrape]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "analyze",
+    "payload": {
+      "constraints": "$state.constraints",
+      "leadCount": "$state.leadCount",
+      "placeDetails": {
+        "address": "Jl. Dharmawangsa Raya No.6, RT.4/RW.2, Pulo, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12160, Indonesia",
+        "businessHours": [
+          "Senin: 11.00\u201322.00",
+          "Selasa: 11.00\u201322.00",
+          "Rabu: 11.00\u201322.00",
+          "Kamis: 11.00\u201322.00",
+          "Jumat: 11.00\u201322.00",
+          "Sabtu: 11.00\u201322.00",
+          "Minggu: 11.00\u201322.00"
+        ],
+        "businessType": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "contact": {
+          "phone": "(021) 29044167",
+          "website": "https://plataran.com/property/plataran-dharmawangsa/"
+        },
+        "keywordFoundCount": 10,
+        "keywordMatch": "10 out of 3869 reviews mention the keyword.",
+        "negativeReviews": [],
+        "placeId": "ChIJU80L2nbxaS4R_m_3MgI5JiM",
+        "placeName": "Plataran Dharmawangsa",
+        "positiveReviews": [
+          "A hidden oasis in the heart of the city. Lunch at @plataran.dharmawangsa feels like a little escape, surrounded by lush greenery, warm service, and the calming sounds of traditional live music on the weekends.\nFrom the elegant indoor space to the breezy patio and peaceful outdoor area, the vibe is just right.\nAuthentic Indonesian flavors with premium quality, served beautifully.\nPerfect for a romantic lunch with your partner, a classy after office meet up with colleagues, or a relaxing weekend with family.",
+          "I had lunch with my husband and their service and food is just amazing. We ordered tahu nenek, kangkung belacaan, ox tail soup, nasi goreng kecombrang and dharmawangsa chicken. All the food were delicious, balance clean flavor. Not to mention, their friendly service is just superb."
+        ],
+        "priceRange": "$$$",
+        "rating": 4.6,
+        "totalRatings": 3869
+      }
+    }
+  },
+  "result": null,
+  "state": null
+}
+2025-06-11 01:59:12,767 - INFO - REQUEST to [analyze]
+PAYLOAD:
+{
+  "constraints": {
+    "business_hours": "9 AM - 10 PM",
+    "keywords": "terjangkau",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 30,
+    "price_range": "$"
+  },
+  "leadCount": 0,
+  "placeDetails": {
+    "address": "Jl. Dharmawangsa Raya No.6, RT.4/RW.2, Pulo, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12160, Indonesia",
+    "businessHours": [
+      "Senin: 11.00\u201322.00",
+      "Selasa: 11.00\u201322.00",
+      "Rabu: 11.00\u201322.00",
+      "Kamis: 11.00\u201322.00",
+      "Jumat: 11.00\u201322.00",
+      "Sabtu: 11.00\u201322.00",
+      "Minggu: 11.00\u201322.00"
+    ],
+    "businessType": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "contact": {
+      "phone": "(021) 29044167",
+      "website": "https://plataran.com/property/plataran-dharmawangsa/"
+    },
+    "keywordFoundCount": 10,
+    "keywordMatch": "10 out of 3869 reviews mention the keyword.",
+    "negativeReviews": [],
+    "placeId": "ChIJU80L2nbxaS4R_m_3MgI5JiM",
+    "placeName": "Plataran Dharmawangsa",
+    "positiveReviews": [
+      "A hidden oasis in the heart of the city. Lunch at @plataran.dharmawangsa feels like a little escape, surrounded by lush greenery, warm service, and the calming sounds of traditional live music on the weekends.\nFrom the elegant indoor space to the breezy patio and peaceful outdoor area, the vibe is just right.\nAuthentic Indonesian flavors with premium quality, served beautifully.\nPerfect for a romantic lunch with your partner, a classy after office meet up with colleagues, or a relaxing weekend with family.",
+      "I had lunch with my husband and their service and food is just amazing. We ordered tahu nenek, kangkung belacaan, ox tail soup, nasi goreng kecombrang and dharmawangsa chicken. All the food were delicious, balance clean flavor. Not to mention, their friendly service is just superb."
+    ],
+    "priceRange": "$$$",
+    "rating": 4.6,
+    "totalRatings": 3869
+  }
+}
+2025-06-11 01:59:19,717 - ERROR - API call to [analyze] FAILED: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2025-06-11 01:59:25,382 - INFO - REQUEST to [input]
+PAYLOAD:
+{
+  "business_type": "restaurant",
+  "location": "Jakarta Selatan",
+  "min_rating": 4.5,
+  "min_reviews": 30,
+  "max_reviews": null,
+  "price_range": "$",
+  "business_hours": "9 AM - 10 PM",
+  "keywords": "harga terjangkau",
+  "numberOfLeads": 3
+}
+2025-06-11 01:59:27,434 - INFO - RESPONSE from [input]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "search",
+    "payload": {
+      "business_type": "$state.business_type",
+      "constraints": "$state.constraints",
+      "location": "$state.location",
+      "nextPageToken": "$state.nextPageToken",
+      "searchOffset": "$state.searchOffset"
+    }
+  },
+  "result": null,
+  "state": {
+    "business_type": "restaurant",
+    "constraints": {
+      "business_hours": "9 AM - 10 PM",
+      "keywords": "harga terjangkau",
+      "max_reviews": null,
+      "min_rating": 4.5,
+      "min_reviews": 30,
+      "price_range": "$"
+    },
+    "leadCount": 0,
+    "location": "Jakarta Selatan",
+    "nextPageToken": null,
+    "numberOfLeads": 3,
+    "remainingPlaceIds": [],
+    "searchOffset": 0
+  }
+}
+2025-06-11 01:59:27,434 - INFO - REQUEST to [search]
+PAYLOAD:
+{
+  "business_type": "restaurant",
+  "constraints": {
+    "business_hours": "9 AM - 10 PM",
+    "keywords": "harga terjangkau",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 30,
+    "price_range": "$"
+  },
+  "location": "Jakarta Selatan",
+  "nextPageToken": null,
+  "searchOffset": 0
+}
+2025-06-11 01:59:29,968 - INFO - RESPONSE from [search]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "scrape",
+    "payload": {
+      "constraints": "$state.constraints",
+      "placeId": "ChIJU80L2nbxaS4R_m_3MgI5JiM"
+    }
+  },
+  "result": null,
+  "state": {
+    "nextPageToken": "AXQCQNQoJzBMM6Q-t0LJkkNZ-ZNGVSsYLjyQ7oVIEK2K_UXNLdbFivVv4oVXDk9GqSXfku65Mj6-hnjttxhJW-efufkQwSw8lJSSzkIbzmDPiuF830qKCnpDWCUToVax1z1GEyC7-H4ZVdt58sxFK3ya2qBrk_nkYuGXTWW8TzUtr_KyrrZSnSNv-ei0LNXSFV9tn0GLKHnSna2LzbGbMETc1kKQDvtKy2y9Rob6C4MyMQ5EwjXL_UqkWcd9D1uabYUa2dpaaq9WUOnujnrHHMAlpglDfEf2g7kWjWXVGdf40f_R31ROCXc-doENOeA4QPV_tasuFraKpIMA9VpOJBECcmzjCdGqUOUuwVFphcEh6AMF96nC3cizOPVSM9U2VdCOM4o-iZekWiwLsCABRWaXrYfq3epLP3dT",
+    "remainingPlaceIds": [
+      "ChIJE1GvDtn1aS4RLfcz-MionU8",
+      "ChIJOU-DRF3xaS4RglxqldO_Chc",
+      "ChIJp5VZTgT0aS4R26oBEPT4nUw",
+      "ChIJ9_SrqF7xaS4Rdv0Jh5kKsMU",
+      "ChIJTxAy8WfxaS4Rt0KGZl6HS1Y",
+      "ChIJw5YEX7XxaS4RlLmg9SOZvCQ",
+      "ChIJKSZNwHHxaS4RHzihVeiYYN4",
+      "ChIJnSa5FlvxaS4R9_E5t2Wxalc",
+      "ChIJ64m4zIDxaS4RWGdN-VygPEE",
+      "ChIJD-TCQHPxaS4R2Ht75sQ3inw",
+      "ChIJD96XFmzxaS4RquSpmFq_Up8",
+      "ChIJGVSN3fnzaS4R3w9qNDpIbjs",
+      "ChIJZStnYbnxaS4R8YeHixd-ysE",
+      "ChIJ_02K8JbxaS4RX9G3vNqXim8",
+      "ChIJ4xqe_vfzaS4R2nzD8AUEB2Q",
+      "ChIJ_zh9TXfxaS4RoFJBiBh54Sw",
+      "ChIJVamq_YrxaS4R9hqyqiNogIs",
+      "ChIJP8bvQ13xaS4RgueoWi9kdBA",
+      "ChIJKxZmEsTxaS4RAIHG3WpIbho"
+    ],
+    "searchOffset": 20
+  }
+}
+2025-06-11 01:59:29,969 - INFO - REQUEST to [scrape]
+PAYLOAD:
+{
+  "constraints": {
+    "business_hours": "9 AM - 10 PM",
+    "keywords": "harga terjangkau",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 30,
+    "price_range": "$"
+  },
+  "placeId": "ChIJU80L2nbxaS4R_m_3MgI5JiM"
+}
+2025-06-11 01:59:40,067 - INFO - RESPONSE from [scrape]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "analyze",
+    "payload": {
+      "constraints": "$state.constraints",
+      "leadCount": "$state.leadCount",
+      "placeDetails": {
+        "address": "Jl. Dharmawangsa Raya No.6, RT.4/RW.2, Pulo, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12160, Indonesia",
+        "businessHours": [
+          "Senin: 11.00\u201322.00",
+          "Selasa: 11.00\u201322.00",
+          "Rabu: 11.00\u201322.00",
+          "Kamis: 11.00\u201322.00",
+          "Jumat: 11.00\u201322.00",
+          "Sabtu: 11.00\u201322.00",
+          "Minggu: 11.00\u201322.00"
+        ],
+        "businessType": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "contact": {
+          "phone": "(021) 29044167",
+          "website": "https://plataran.com/property/plataran-dharmawangsa/"
+        },
+        "keywordFoundCount": 10,
+        "keywordMatch": "10 out of 3869 reviews mention the keyword.",
+        "negativeReviews": [],
+        "placeId": "ChIJU80L2nbxaS4R_m_3MgI5JiM",
+        "placeName": "Plataran Dharmawangsa",
+        "positiveReviews": [
+          "A hidden oasis in the heart of the city. Lunch at @plataran.dharmawangsa feels like a little escape, surrounded by lush greenery, warm service, and the calming sounds of traditional live music on the weekends.\nFrom the elegant indoor space to the breezy patio and peaceful outdoor area, the vibe is just right.\nAuthentic Indonesian flavors with premium quality, served beautifully.\nPerfect for a romantic lunch with your partner, a classy after office meet up with colleagues, or a relaxing weekend with family.",
+          "I had lunch with my husband and their service and food is just amazing. We ordered tahu nenek, kangkung belacaan, ox tail soup, nasi goreng kecombrang and dharmawangsa chicken. All the food were delicious, balance clean flavor. Not to mention, their friendly service is just superb."
+        ],
+        "priceRange": "$$$",
+        "rating": 4.6,
+        "totalRatings": 3869
+      }
+    }
+  },
+  "result": null,
+  "state": null
+}
+2025-06-11 01:59:40,068 - INFO - REQUEST to [analyze]
+PAYLOAD:
+{
+  "constraints": {
+    "business_hours": "9 AM - 10 PM",
+    "keywords": "harga terjangkau",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 30,
+    "price_range": "$"
+  },
+  "leadCount": 0,
+  "placeDetails": {
+    "address": "Jl. Dharmawangsa Raya No.6, RT.4/RW.2, Pulo, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12160, Indonesia",
+    "businessHours": [
+      "Senin: 11.00\u201322.00",
+      "Selasa: 11.00\u201322.00",
+      "Rabu: 11.00\u201322.00",
+      "Kamis: 11.00\u201322.00",
+      "Jumat: 11.00\u201322.00",
+      "Sabtu: 11.00\u201322.00",
+      "Minggu: 11.00\u201322.00"
+    ],
+    "businessType": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "contact": {
+      "phone": "(021) 29044167",
+      "website": "https://plataran.com/property/plataran-dharmawangsa/"
+    },
+    "keywordFoundCount": 10,
+    "keywordMatch": "10 out of 3869 reviews mention the keyword.",
+    "negativeReviews": [],
+    "placeId": "ChIJU80L2nbxaS4R_m_3MgI5JiM",
+    "placeName": "Plataran Dharmawangsa",
+    "positiveReviews": [
+      "A hidden oasis in the heart of the city. Lunch at @plataran.dharmawangsa feels like a little escape, surrounded by lush greenery, warm service, and the calming sounds of traditional live music on the weekends.\nFrom the elegant indoor space to the breezy patio and peaceful outdoor area, the vibe is just right.\nAuthentic Indonesian flavors with premium quality, served beautifully.\nPerfect for a romantic lunch with your partner, a classy after office meet up with colleagues, or a relaxing weekend with family.",
+      "I had lunch with my husband and their service and food is just amazing. We ordered tahu nenek, kangkung belacaan, ox tail soup, nasi goreng kecombrang and dharmawangsa chicken. All the food were delicious, balance clean flavor. Not to mention, their friendly service is just superb."
+    ],
+    "priceRange": "$$$",
+    "rating": 4.6,
+    "totalRatings": 3869
+  }
+}
+2025-06-11 01:59:47,690 - INFO - RESPONSE from [analyze]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "control",
+    "payload": {
+      "state": "$state"
+    }
+  },
+  "result": {
+    "address": "Jl. Dharmawangsa Raya No.6, RT.4/RW.2, Pulo, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12160, Indonesia",
+    "businessHours": [
+      "Senin: 11.00\u201322.00",
+      "Selasa: 11.00\u201322.00",
+      "Rabu: 11.00\u201322.00",
+      "Kamis: 11.00\u201322.00",
+      "Jumat: 11.00\u201322.00",
+      "Sabtu: 11.00\u201322.00",
+      "Minggu: 11.00\u201322.00"
+    ],
+    "businessType": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "contact": {
+      "phone": "(021) 29044167",
+      "website": "https://plataran.com/property/plataran-dharmawangsa/"
+    },
+    "keywordMatch": "10 out of 3869 reviews mention the keyword.",
+    "matchPercentage": 70.0,
+    "matchReasoning": "Price range '$$$' does not match required '$'. Business hours do not match required '9 AM - 10 PM'.",
+    "placeId": "ChIJU80L2nbxaS4R_m_3MgI5JiM",
+    "placeName": "Plataran Dharmawangsa",
+    "priceRange": "$$$",
+    "rating": 4.6,
+    "strengths": [
+      "High customer rating of 4.6 from nearly 4000 reviews indicates strong customer satisfaction.",
+      "Beautiful ambiance with elegant indoor and outdoor spaces suitable for various occasions.",
+      "Exceptional service and authentic Indonesian cuisine, with standout dishes praised for their flavor."
+    ],
+    "summaryNegative": "",
+    "summaryPositive": "Plataran Dharmawangsa is celebrated as a hidden oasis in the city, offering a serene escape with lush greenery and soothing live music on weekends. Its elegant indoor and breezy outdoor spaces create the perfect ambiance for various occasions, from romantic lunches to professional meetings and family gatherings. Guests rave about the exceptional service and the authentic, beautifully presented Indonesian dishes, highlighting favorites like tahu nenek, kangkung belacaan, and oxtail soup, all noted for their balanced and clean flavors. The overall experience is enhanced by the attentive and friendly staff, making it a highly regarded dining destination.",
+    "totalRatings": 3869,
+    "weaknesses": [
+      "Match score of 70.0% suggests there may be areas for improvement in aligning with customer expectations.",
+      "Potential dependency on weekends for live music might deter weekday customers.",
+      "As a 'hidden oasis,' it may be less visible or accessible to new customers compared to competitors."
+    ]
+  },
+  "state": {
+    "leadCount": 1
+  }
+}
+2025-06-11 01:59:47,691 - INFO - REQUEST to [control]
+PAYLOAD:
+{
+  "business_type": "restaurant",
+  "constraints": {
+    "business_hours": "9 AM - 10 PM",
+    "keywords": "harga terjangkau",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 30,
+    "price_range": "$"
+  },
+  "leadCount": 1,
+  "location": "Jakarta Selatan",
+  "nextPageToken": "AXQCQNQoJzBMM6Q-t0LJkkNZ-ZNGVSsYLjyQ7oVIEK2K_UXNLdbFivVv4oVXDk9GqSXfku65Mj6-hnjttxhJW-efufkQwSw8lJSSzkIbzmDPiuF830qKCnpDWCUToVax1z1GEyC7-H4ZVdt58sxFK3ya2qBrk_nkYuGXTWW8TzUtr_KyrrZSnSNv-ei0LNXSFV9tn0GLKHnSna2LzbGbMETc1kKQDvtKy2y9Rob6C4MyMQ5EwjXL_UqkWcd9D1uabYUa2dpaaq9WUOnujnrHHMAlpglDfEf2g7kWjWXVGdf40f_R31ROCXc-doENOeA4QPV_tasuFraKpIMA9VpOJBECcmzjCdGqUOUuwVFphcEh6AMF96nC3cizOPVSM9U2VdCOM4o-iZekWiwLsCABRWaXrYfq3epLP3dT",
+  "numberOfLeads": 3,
+  "remainingPlaceIds": [
+    "ChIJE1GvDtn1aS4RLfcz-MionU8",
+    "ChIJOU-DRF3xaS4RglxqldO_Chc",
+    "ChIJp5VZTgT0aS4R26oBEPT4nUw",
+    "ChIJ9_SrqF7xaS4Rdv0Jh5kKsMU",
+    "ChIJTxAy8WfxaS4Rt0KGZl6HS1Y",
+    "ChIJw5YEX7XxaS4RlLmg9SOZvCQ",
+    "ChIJKSZNwHHxaS4RHzihVeiYYN4",
+    "ChIJnSa5FlvxaS4R9_E5t2Wxalc",
+    "ChIJ64m4zIDxaS4RWGdN-VygPEE",
+    "ChIJD-TCQHPxaS4R2Ht75sQ3inw",
+    "ChIJD96XFmzxaS4RquSpmFq_Up8",
+    "ChIJGVSN3fnzaS4R3w9qNDpIbjs",
+    "ChIJZStnYbnxaS4R8YeHixd-ysE",
+    "ChIJ_02K8JbxaS4RX9G3vNqXim8",
+    "ChIJ4xqe_vfzaS4R2nzD8AUEB2Q",
+    "ChIJ_zh9TXfxaS4RoFJBiBh54Sw",
+    "ChIJVamq_YrxaS4R9hqyqiNogIs",
+    "ChIJP8bvQ13xaS4RgueoWi9kdBA",
+    "ChIJKxZmEsTxaS4RAIHG3WpIbho"
+  ],
+  "searchOffset": 20
+}
+2025-06-11 01:59:49,755 - INFO - RESPONSE from [control]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "scrape",
+    "payload": {
+      "constraints": "$state.constraints",
+      "placeId": "ChIJE1GvDtn1aS4RLfcz-MionU8"
+    }
+  },
+  "result": null,
+  "state": {
+    "remainingPlaceIds": [
+      "ChIJOU-DRF3xaS4RglxqldO_Chc",
+      "ChIJp5VZTgT0aS4R26oBEPT4nUw",
+      "ChIJ9_SrqF7xaS4Rdv0Jh5kKsMU",
+      "ChIJTxAy8WfxaS4Rt0KGZl6HS1Y",
+      "ChIJw5YEX7XxaS4RlLmg9SOZvCQ",
+      "ChIJKSZNwHHxaS4RHzihVeiYYN4",
+      "ChIJnSa5FlvxaS4R9_E5t2Wxalc",
+      "ChIJ64m4zIDxaS4RWGdN-VygPEE",
+      "ChIJD-TCQHPxaS4R2Ht75sQ3inw",
+      "ChIJD96XFmzxaS4RquSpmFq_Up8",
+      "ChIJGVSN3fnzaS4R3w9qNDpIbjs",
+      "ChIJZStnYbnxaS4R8YeHixd-ysE",
+      "ChIJ_02K8JbxaS4RX9G3vNqXim8",
+      "ChIJ4xqe_vfzaS4R2nzD8AUEB2Q",
+      "ChIJ_zh9TXfxaS4RoFJBiBh54Sw",
+      "ChIJVamq_YrxaS4R9hqyqiNogIs",
+      "ChIJP8bvQ13xaS4RgueoWi9kdBA",
+      "ChIJKxZmEsTxaS4RAIHG3WpIbho"
+    ]
+  }
+}
+2025-06-11 01:59:49,756 - INFO - REQUEST to [scrape]
+PAYLOAD:
+{
+  "constraints": {
+    "business_hours": "9 AM - 10 PM",
+    "keywords": "harga terjangkau",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 30,
+    "price_range": "$"
+  },
+  "placeId": "ChIJE1GvDtn1aS4RLfcz-MionU8"
+}
+2025-06-11 02:00:00,663 - INFO - RESPONSE from [scrape]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "analyze",
+    "payload": {
+      "constraints": "$state.constraints",
+      "leadCount": "$state.leadCount",
+      "placeDetails": {
+        "address": "MD Place 11th Floor Jl Setia Budi Selatan No 7, Setia Budi, RT 5, RT.5/RW.1, Kuningan, Setia Budi, Kuningan, Jakarta, Daerah Khusus Ibukota Jakarta 12910, Indonesia",
+        "businessHours": [
+          "Senin: 12.00\u201323.00",
+          "Selasa: 12.00\u201323.00",
+          "Rabu: 12.00\u201323.00",
+          "Kamis: 12.00\u201323.00",
+          "Jumat: 12.00\u201323.00",
+          "Sabtu: 12.00\u201323.00",
+          "Minggu: 12.00\u201323.00"
+        ],
+        "businessType": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "contact": {
+          "phone": "0877-7264-6253",
+          "website": "http://www.animalejakarta.com/"
+        },
+        "keywordFoundCount": 10,
+        "keywordMatch": "10 out of 1232 reviews mention the keyword.",
+        "negativeReviews": [],
+        "placeId": "ChIJE1GvDtn1aS4RLfcz-MionU8",
+        "placeName": "Animale Restaurant",
+        "positiveReviews": [
+          "Came without a reservation, only to find the restaurant fully booked due to a group event. Fortunately, the hostess was kind and accommodating, and managed to find me a table in a private dining room setting. I ordered a selection of their signature dishes and personal favorites\u2014and every single one turned out to be delightful. This was my first visit, and certainly the first of many to come.",
+          "Overall had a really great evening, the service was amazing, cocktails were fantastic, the food was good. The cauliflower steak was amazing and my favourite dish of the evening. We received a beautiful Birthday treat for our son which was such a nice gesture. Overall great experience."
+        ],
+        "priceRange": "",
+        "rating": 4.7,
+        "totalRatings": 1232
+      }
+    }
+  },
+  "result": null,
+  "state": null
+}
+2025-06-11 02:00:00,663 - INFO - REQUEST to [analyze]
+PAYLOAD:
+{
+  "constraints": {
+    "business_hours": "9 AM - 10 PM",
+    "keywords": "harga terjangkau",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 30,
+    "price_range": "$"
+  },
+  "leadCount": 1,
+  "placeDetails": {
+    "address": "MD Place 11th Floor Jl Setia Budi Selatan No 7, Setia Budi, RT 5, RT.5/RW.1, Kuningan, Setia Budi, Kuningan, Jakarta, Daerah Khusus Ibukota Jakarta 12910, Indonesia",
+    "businessHours": [
+      "Senin: 12.00\u201323.00",
+      "Selasa: 12.00\u201323.00",
+      "Rabu: 12.00\u201323.00",
+      "Kamis: 12.00\u201323.00",
+      "Jumat: 12.00\u201323.00",
+      "Sabtu: 12.00\u201323.00",
+      "Minggu: 12.00\u201323.00"
+    ],
+    "businessType": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "contact": {
+      "phone": "0877-7264-6253",
+      "website": "http://www.animalejakarta.com/"
+    },
+    "keywordFoundCount": 10,
+    "keywordMatch": "10 out of 1232 reviews mention the keyword.",
+    "negativeReviews": [],
+    "placeId": "ChIJE1GvDtn1aS4RLfcz-MionU8",
+    "placeName": "Animale Restaurant",
+    "positiveReviews": [
+      "Came without a reservation, only to find the restaurant fully booked due to a group event. Fortunately, the hostess was kind and accommodating, and managed to find me a table in a private dining room setting. I ordered a selection of their signature dishes and personal favorites\u2014and every single one turned out to be delightful. This was my first visit, and certainly the first of many to come.",
+      "Overall had a really great evening, the service was amazing, cocktails were fantastic, the food was good. The cauliflower steak was amazing and my favourite dish of the evening. We received a beautiful Birthday treat for our son which was such a nice gesture. Overall great experience."
+    ],
+    "priceRange": "",
+    "rating": 4.7,
+    "totalRatings": 1232
+  }
+}
+2025-06-11 02:00:08,843 - INFO - RESPONSE from [analyze]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "control",
+    "payload": {
+      "state": "$state"
+    }
+  },
+  "result": {
+    "address": "MD Place 11th Floor Jl Setia Budi Selatan No 7, Setia Budi, RT 5, RT.5/RW.1, Kuningan, Setia Budi, Kuningan, Jakarta, Daerah Khusus Ibukota Jakarta 12910, Indonesia",
+    "businessHours": [
+      "Senin: 12.00\u201323.00",
+      "Selasa: 12.00\u201323.00",
+      "Rabu: 12.00\u201323.00",
+      "Kamis: 12.00\u201323.00",
+      "Jumat: 12.00\u201323.00",
+      "Sabtu: 12.00\u201323.00",
+      "Minggu: 12.00\u201323.00"
+    ],
+    "businessType": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "contact": {
+      "phone": "0877-7264-6253",
+      "website": "http://www.animalejakarta.com/"
+    },
+    "keywordMatch": "10 out of 1232 reviews mention the keyword.",
+    "matchPercentage": 70.0,
+    "matchReasoning": "Price range 'N/A' does not match required '$'. Business hours do not match required '9 AM - 10 PM'.",
+    "placeId": "ChIJE1GvDtn1aS4RLfcz-MionU8",
+    "placeName": "Animale Restaurant",
+    "priceRange": "",
+    "rating": 4.7,
+    "strengths": [
+      "Exceptional service and accommodating staff, even during peak times.",
+      "High-quality food with standout dishes that guests particularly enjoy, such as cauliflower steak.",
+      "Thoughtful gestures for special occasions that enhance the overall dining experience."
+    ],
+    "summaryNegative": "",
+    "summaryPositive": "Guests consistently praise the exceptional service and accommodating staff at the restaurant, even in challenging situations like being fully booked. Reviewers highlight the quality and delight of the food, particularly noting standout dishes like the cauliflower steak. Additionally, thoughtful gestures, such as complimentary treats for special occasions, enhance the dining experience, making it a memorable outing that encourages return visits.",
+    "totalRatings": 1232,
+    "weaknesses": [
+      "The match score of 70.0% suggests there may be room for improvement in aligning with customer expectations or preferences.",
+      "While the restaurant has a strong rating, further analysis may reveal specific aspects of the dining experience that could be fine-tuned to boost customer satisfaction."
+    ]
+  },
+  "state": {
+    "leadCount": 2
+  }
+}
+2025-06-11 02:00:08,843 - INFO - REQUEST to [control]
+PAYLOAD:
+{
+  "business_type": "restaurant",
+  "constraints": {
+    "business_hours": "9 AM - 10 PM",
+    "keywords": "harga terjangkau",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 30,
+    "price_range": "$"
+  },
+  "leadCount": 2,
+  "location": "Jakarta Selatan",
+  "nextPageToken": "AXQCQNQoJzBMM6Q-t0LJkkNZ-ZNGVSsYLjyQ7oVIEK2K_UXNLdbFivVv4oVXDk9GqSXfku65Mj6-hnjttxhJW-efufkQwSw8lJSSzkIbzmDPiuF830qKCnpDWCUToVax1z1GEyC7-H4ZVdt58sxFK3ya2qBrk_nkYuGXTWW8TzUtr_KyrrZSnSNv-ei0LNXSFV9tn0GLKHnSna2LzbGbMETc1kKQDvtKy2y9Rob6C4MyMQ5EwjXL_UqkWcd9D1uabYUa2dpaaq9WUOnujnrHHMAlpglDfEf2g7kWjWXVGdf40f_R31ROCXc-doENOeA4QPV_tasuFraKpIMA9VpOJBECcmzjCdGqUOUuwVFphcEh6AMF96nC3cizOPVSM9U2VdCOM4o-iZekWiwLsCABRWaXrYfq3epLP3dT",
+  "numberOfLeads": 3,
+  "remainingPlaceIds": [
+    "ChIJOU-DRF3xaS4RglxqldO_Chc",
+    "ChIJp5VZTgT0aS4R26oBEPT4nUw",
+    "ChIJ9_SrqF7xaS4Rdv0Jh5kKsMU",
+    "ChIJTxAy8WfxaS4Rt0KGZl6HS1Y",
+    "ChIJw5YEX7XxaS4RlLmg9SOZvCQ",
+    "ChIJKSZNwHHxaS4RHzihVeiYYN4",
+    "ChIJnSa5FlvxaS4R9_E5t2Wxalc",
+    "ChIJ64m4zIDxaS4RWGdN-VygPEE",
+    "ChIJD-TCQHPxaS4R2Ht75sQ3inw",
+    "ChIJD96XFmzxaS4RquSpmFq_Up8",
+    "ChIJGVSN3fnzaS4R3w9qNDpIbjs",
+    "ChIJZStnYbnxaS4R8YeHixd-ysE",
+    "ChIJ_02K8JbxaS4RX9G3vNqXim8",
+    "ChIJ4xqe_vfzaS4R2nzD8AUEB2Q",
+    "ChIJ_zh9TXfxaS4RoFJBiBh54Sw",
+    "ChIJVamq_YrxaS4R9hqyqiNogIs",
+    "ChIJP8bvQ13xaS4RgueoWi9kdBA",
+    "ChIJKxZmEsTxaS4RAIHG3WpIbho"
+  ],
+  "searchOffset": 20
+}
+2025-06-11 02:00:10,896 - INFO - RESPONSE from [control]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "scrape",
+    "payload": {
+      "constraints": "$state.constraints",
+      "placeId": "ChIJOU-DRF3xaS4RglxqldO_Chc"
+    }
+  },
+  "result": null,
+  "state": {
+    "remainingPlaceIds": [
+      "ChIJp5VZTgT0aS4R26oBEPT4nUw",
+      "ChIJ9_SrqF7xaS4Rdv0Jh5kKsMU",
+      "ChIJTxAy8WfxaS4Rt0KGZl6HS1Y",
+      "ChIJw5YEX7XxaS4RlLmg9SOZvCQ",
+      "ChIJKSZNwHHxaS4RHzihVeiYYN4",
+      "ChIJnSa5FlvxaS4R9_E5t2Wxalc",
+      "ChIJ64m4zIDxaS4RWGdN-VygPEE",
+      "ChIJD-TCQHPxaS4R2Ht75sQ3inw",
+      "ChIJD96XFmzxaS4RquSpmFq_Up8",
+      "ChIJGVSN3fnzaS4R3w9qNDpIbjs",
+      "ChIJZStnYbnxaS4R8YeHixd-ysE",
+      "ChIJ_02K8JbxaS4RX9G3vNqXim8",
+      "ChIJ4xqe_vfzaS4R2nzD8AUEB2Q",
+      "ChIJ_zh9TXfxaS4RoFJBiBh54Sw",
+      "ChIJVamq_YrxaS4R9hqyqiNogIs",
+      "ChIJP8bvQ13xaS4RgueoWi9kdBA",
+      "ChIJKxZmEsTxaS4RAIHG3WpIbho"
+    ]
+  }
+}
+2025-06-11 02:00:10,896 - INFO - REQUEST to [scrape]
+PAYLOAD:
+{
+  "constraints": {
+    "business_hours": "9 AM - 10 PM",
+    "keywords": "harga terjangkau",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 30,
+    "price_range": "$"
+  },
+  "placeId": "ChIJOU-DRF3xaS4RglxqldO_Chc"
+}
+2025-06-11 02:00:25,060 - INFO - RESPONSE from [scrape]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "analyze",
+    "payload": {
+      "constraints": "$state.constraints",
+      "leadCount": "$state.leadCount",
+      "placeDetails": {
+        "address": "Jl. Gunawarman No.34, Selong, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12110, Indonesia",
+        "businessHours": [
+          "Senin: 07.00\u201323.00",
+          "Selasa: 07.00\u201323.00",
+          "Rabu: 07.00\u201323.00",
+          "Kamis: 07.00\u201323.00",
+          "Jumat: 07.00\u201323.00",
+          "Sabtu: 07.00\u201323.00",
+          "Minggu: 07.00\u201323.00"
+        ],
+        "businessType": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "contact": {
+          "phone": "(021) 72788003",
+          "website": "http://www.lequartier.co.id/"
+        },
+        "keywordFoundCount": 10,
+        "keywordMatch": "10 out of 3042 reviews mention the keyword.",
+        "negativeReviews": [],
+        "placeId": "ChIJOU-DRF3xaS4RglxqldO_Chc",
+        "placeName": "Le Quartier",
+        "positiveReviews": [
+          "First time here and auto-love it!! Best hospitality from their F&B service staff, Best Taste in Food and Drink! I was so touched with their staff who really took care of their guests. They noticed that I needed a toothpick, they delivered it without me asking\u2026\nStarting from escargot, lobster bisque, steak and halibut, till souffle\u2026 c\u2019est delicieux!\nI would love to return with family and friends.  Nevertheless, the glass top dining area was a bit hot that they need to consider to put sun-protection stickers on to reduce the heat absorbed by the glass.",
+          "Cobain beberapa makanan disini:\n1. Caesar salad: ini isinya just some lettuce aja i think, and crouton, and an egg. Nothing special sih. Taste good, but similar with the others.\n2. Truffle pasta: enak sih ini! Pastanya al dente. Bumbunya creamy, cheesy,dan seasoningnya pas. Ga ada yg over. But there's no topping on there ya. Simply pasta, sauce, and slice of truffle aja, so better order another menu\n3. Contre filet : ini black angus meat. I ordered medium. Matangnya sih sebetulnya pas ya. But since they served it on a hotplate, jd proses cookingnya tetep jalan ya. So if you dont eat it fast, they will be well done. Anw for the meat is really good. The sauce is unique but mixed quite well\n4. White ham & truffle oil pizza: tekstur pizza nya yg cukup tebal ya. Dan cukup mengenyangkan for share up to 2-3 persons. But i dont know why, actually i expect it will be full of truffle aroma, but unfortunately its not.\n5. Pork belly kurobuta: out of all the menu, this one is my least favorite. The pork itself is not really crispy, and i still smell quite strong aroma of the pork meat there, which is not really good. But the rest is okay\n6. Mont blanc: quite good for the dessert. Its creamy, and have caramel sauce on it\n\nOverall, for the service and the ambiance i have nothing to complain, yea worth the price. The food overall was also good and give me pleasant experience."
+        ],
+        "priceRange": "$$$$",
+        "rating": 4.6,
+        "totalRatings": 3042
+      }
+    }
+  },
+  "result": null,
+  "state": null
+}
+2025-06-11 02:00:25,060 - INFO - REQUEST to [analyze]
+PAYLOAD:
+{
+  "constraints": {
+    "business_hours": "9 AM - 10 PM",
+    "keywords": "harga terjangkau",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 30,
+    "price_range": "$"
+  },
+  "leadCount": 2,
+  "placeDetails": {
+    "address": "Jl. Gunawarman No.34, Selong, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12110, Indonesia",
+    "businessHours": [
+      "Senin: 07.00\u201323.00",
+      "Selasa: 07.00\u201323.00",
+      "Rabu: 07.00\u201323.00",
+      "Kamis: 07.00\u201323.00",
+      "Jumat: 07.00\u201323.00",
+      "Sabtu: 07.00\u201323.00",
+      "Minggu: 07.00\u201323.00"
+    ],
+    "businessType": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "contact": {
+      "phone": "(021) 72788003",
+      "website": "http://www.lequartier.co.id/"
+    },
+    "keywordFoundCount": 10,
+    "keywordMatch": "10 out of 3042 reviews mention the keyword.",
+    "negativeReviews": [],
+    "placeId": "ChIJOU-DRF3xaS4RglxqldO_Chc",
+    "placeName": "Le Quartier",
+    "positiveReviews": [
+      "First time here and auto-love it!! Best hospitality from their F&B service staff, Best Taste in Food and Drink! I was so touched with their staff who really took care of their guests. They noticed that I needed a toothpick, they delivered it without me asking\u2026\nStarting from escargot, lobster bisque, steak and halibut, till souffle\u2026 c\u2019est delicieux!\nI would love to return with family and friends.  Nevertheless, the glass top dining area was a bit hot that they need to consider to put sun-protection stickers on to reduce the heat absorbed by the glass.",
+      "Cobain beberapa makanan disini:\n1. Caesar salad: ini isinya just some lettuce aja i think, and crouton, and an egg. Nothing special sih. Taste good, but similar with the others.\n2. Truffle pasta: enak sih ini! Pastanya al dente. Bumbunya creamy, cheesy,dan seasoningnya pas. Ga ada yg over. But there's no topping on there ya. Simply pasta, sauce, and slice of truffle aja, so better order another menu\n3. Contre filet : ini black angus meat. I ordered medium. Matangnya sih sebetulnya pas ya. But since they served it on a hotplate, jd proses cookingnya tetep jalan ya. So if you dont eat it fast, they will be well done. Anw for the meat is really good. The sauce is unique but mixed quite well\n4. White ham & truffle oil pizza: tekstur pizza nya yg cukup tebal ya. Dan cukup mengenyangkan for share up to 2-3 persons. But i dont know why, actually i expect it will be full of truffle aroma, but unfortunately its not.\n5. Pork belly kurobuta: out of all the menu, this one is my least favorite. The pork itself is not really crispy, and i still smell quite strong aroma of the pork meat there, which is not really good. But the rest is okay\n6. Mont blanc: quite good for the dessert. Its creamy, and have caramel sauce on it\n\nOverall, for the service and the ambiance i have nothing to complain, yea worth the price. The food overall was also good and give me pleasant experience."
+    ],
+    "priceRange": "$$$$",
+    "rating": 4.6,
+    "totalRatings": 3042
+  }
+}
+2025-06-11 02:00:32,960 - INFO - RESPONSE from [analyze]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "control",
+    "payload": {
+      "state": "$state"
+    }
+  },
+  "result": {
+    "address": "Jl. Gunawarman No.34, Selong, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12110, Indonesia",
+    "businessHours": [
+      "Senin: 07.00\u201323.00",
+      "Selasa: 07.00\u201323.00",
+      "Rabu: 07.00\u201323.00",
+      "Kamis: 07.00\u201323.00",
+      "Jumat: 07.00\u201323.00",
+      "Sabtu: 07.00\u201323.00",
+      "Minggu: 07.00\u201323.00"
+    ],
+    "businessType": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "contact": {
+      "phone": "(021) 72788003",
+      "website": "http://www.lequartier.co.id/"
+    },
+    "keywordMatch": "10 out of 3042 reviews mention the keyword.",
+    "matchPercentage": 70.0,
+    "matchReasoning": "Price range '$$$$' does not match required '$'. Business hours do not match required '9 AM - 10 PM'.",
+    "placeId": "ChIJOU-DRF3xaS4RglxqldO_Chc",
+    "placeName": "Le Quartier",
+    "priceRange": "$$$$",
+    "rating": 4.6,
+    "strengths": [
+      "Exceptional hospitality and attentive service from staff",
+      "Outstanding taste and quality of food, particularly truffle pasta and black angus steak",
+      "Inviting ambiance, particularly the glass-top dining area"
+    ],
+    "summaryNegative": "",
+    "summaryPositive": "The reviews highlight outstanding hospitality and attentive service from the staff, who go above and beyond for their guests, enhancing the overall dining experience. Diners praised the exceptional taste of the food, with standout dishes including truffle pasta and black angus steak, although some items like the Caesar salad and pork belly received mixed feedback. The ambiance, particularly the glass-top dining area, was appreciated, though it was noted that it could be warmer than comfortable. Overall, guests expressed a desire to return, indicating that the enjoyable food and high-quality service make the experience worthwhile.",
+    "totalRatings": 3042,
+    "weaknesses": [
+      "Some menu items, like Caesar salad and pork belly, received mixed reviews",
+      "The dining area can be warmer than comfortable"
+    ]
+  },
+  "state": {
+    "leadCount": 3
+  }
+}
+2025-06-11 02:00:32,960 - INFO - REQUEST to [control]
+PAYLOAD:
+{
+  "business_type": "restaurant",
+  "constraints": {
+    "business_hours": "9 AM - 10 PM",
+    "keywords": "harga terjangkau",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 30,
+    "price_range": "$"
+  },
+  "leadCount": 3,
+  "location": "Jakarta Selatan",
+  "nextPageToken": "AXQCQNQoJzBMM6Q-t0LJkkNZ-ZNGVSsYLjyQ7oVIEK2K_UXNLdbFivVv4oVXDk9GqSXfku65Mj6-hnjttxhJW-efufkQwSw8lJSSzkIbzmDPiuF830qKCnpDWCUToVax1z1GEyC7-H4ZVdt58sxFK3ya2qBrk_nkYuGXTWW8TzUtr_KyrrZSnSNv-ei0LNXSFV9tn0GLKHnSna2LzbGbMETc1kKQDvtKy2y9Rob6C4MyMQ5EwjXL_UqkWcd9D1uabYUa2dpaaq9WUOnujnrHHMAlpglDfEf2g7kWjWXVGdf40f_R31ROCXc-doENOeA4QPV_tasuFraKpIMA9VpOJBECcmzjCdGqUOUuwVFphcEh6AMF96nC3cizOPVSM9U2VdCOM4o-iZekWiwLsCABRWaXrYfq3epLP3dT",
+  "numberOfLeads": 3,
+  "remainingPlaceIds": [
+    "ChIJp5VZTgT0aS4R26oBEPT4nUw",
+    "ChIJ9_SrqF7xaS4Rdv0Jh5kKsMU",
+    "ChIJTxAy8WfxaS4Rt0KGZl6HS1Y",
+    "ChIJw5YEX7XxaS4RlLmg9SOZvCQ",
+    "ChIJKSZNwHHxaS4RHzihVeiYYN4",
+    "ChIJnSa5FlvxaS4R9_E5t2Wxalc",
+    "ChIJ64m4zIDxaS4RWGdN-VygPEE",
+    "ChIJD-TCQHPxaS4R2Ht75sQ3inw",
+    "ChIJD96XFmzxaS4RquSpmFq_Up8",
+    "ChIJGVSN3fnzaS4R3w9qNDpIbjs",
+    "ChIJZStnYbnxaS4R8YeHixd-ysE",
+    "ChIJ_02K8JbxaS4RX9G3vNqXim8",
+    "ChIJ4xqe_vfzaS4R2nzD8AUEB2Q",
+    "ChIJ_zh9TXfxaS4RoFJBiBh54Sw",
+    "ChIJVamq_YrxaS4R9hqyqiNogIs",
+    "ChIJP8bvQ13xaS4RgueoWi9kdBA",
+    "ChIJKxZmEsTxaS4RAIHG3WpIbho"
+  ],
+  "searchOffset": 20
+}
+2025-06-11 02:00:35,004 - INFO - RESPONSE from [control]
+BODY:
+{
+  "done": true,
+  "error": null,
+  "next": null,
+  "result": null,
+  "state": null
+}

@@ -93,11 +93,11 @@ class Analyzer:
         return final_score, meets, " ".join(reasoning) or "Meets primary criteria."
 
     def run(self, details, constraints):
-        match_percentage, meets_constraints, reason = self._calculate_match(details, constraints)
+        match_percentage, _, reason = self._calculate_match(details, constraints)
         
         insights, positive_summary, negative_summary = {}, "", ""
-        # Hanya generate insights jika memenuhi kriteria dan match_percentage > 0
-        if meets_constraints and match_percentage > 0: # Cek tambahan: match_percentage harus lebih dari 0
+        # Hanya generate insights jika match_percentage > 0
+        if match_percentage > 0:
              insights, positive_summary, negative_summary = self.openai.generate_insights(details, match_percentage)
 
         # Hapus data mentah yang tidak perlu dari output akhir
@@ -116,9 +116,4 @@ class Analyzer:
             "summaryNegative": negative_summary,
         }
         
-        # Jika match_percentage adalah 0, maka meets_constraints juga harus False
-        # Ini untuk memastikan logic di workflow.py benar
-        if match_percentage == 0:
-            meets_constraints = False
-
-        return analysis_result, meets_constraints
+        return analysis_result

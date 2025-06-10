@@ -1,10 +1,10 @@
 {
-  "$id": "24e337cb-44d8-4c88-b215-5997e34d7a25",
+  "$id": "da830b0b-dd36-4b6f-8227-e29416da3c18",
   "$state": {
     "business_type": "restaurant",
     "constraints": {
       "business_hours": "9 AM - 10 PM",
-      "keywords": "terjangkau",
+      "keywords": "harga terjangkau",
       "max_reviews": null,
       "min_rating": 4.5,
       "min_reviews": 30,
@@ -12,64 +12,28 @@
     },
     "leadCount": 3,
     "location": "Jakarta Selatan",
+    "nextPageToken": "AXQCQNQoJzBMM6Q-t0LJkkNZ-ZNGVSsYLjyQ7oVIEK2K_UXNLdbFivVv4oVXDk9GqSXfku65Mj6-hnjttxhJW-efufkQwSw8lJSSzkIbzmDPiuF830qKCnpDWCUToVax1z1GEyC7-H4ZVdt58sxFK3ya2qBrk_nkYuGXTWW8TzUtr_KyrrZSnSNv-ei0LNXSFV9tn0GLKHnSna2LzbGbMETc1kKQDvtKy2y9Rob6C4MyMQ5EwjXL_UqkWcd9D1uabYUa2dpaaq9WUOnujnrHHMAlpglDfEf2g7kWjWXVGdf40f_R31ROCXc-doENOeA4QPV_tasuFraKpIMA9VpOJBECcmzjCdGqUOUuwVFphcEh6AMF96nC3cizOPVSM9U2VdCOM4o-iZekWiwLsCABRWaXrYfq3epLP3dT",
     "numberOfLeads": 3,
     "remainingPlaceIds": [
-      "ChIJTxAy8WfxaS4Rt0KGZl6HS1Y",
+      "ChIJp5VZTgT0aS4R26oBEPT4nUw",
       "ChIJ9_SrqF7xaS4Rdv0Jh5kKsMU",
-      "ChIJnSa5FlvxaS4R9_E5t2Wxalc",
+      "ChIJTxAy8WfxaS4Rt0KGZl6HS1Y",
       "ChIJw5YEX7XxaS4RlLmg9SOZvCQ",
       "ChIJKSZNwHHxaS4RHzihVeiYYN4",
-      "ChIJp5VZTgT0aS4R26oBEPT4nUw",
+      "ChIJnSa5FlvxaS4R9_E5t2Wxalc",
       "ChIJ64m4zIDxaS4RWGdN-VygPEE",
       "ChIJD-TCQHPxaS4R2Ht75sQ3inw",
-      "ChIJ_02K8JbxaS4RX9G3vNqXim8",
-      "ChIJ_zh9TXfxaS4RoFJBiBh54Sw",
-      "ChIJBTgBuKr2aS4RnmNQqmrwMA8",
       "ChIJD96XFmzxaS4RquSpmFq_Up8",
-      "ChIJRzuNrlvxaS4RF8trJRwc9ek",
+      "ChIJGVSN3fnzaS4R3w9qNDpIbjs",
+      "ChIJZStnYbnxaS4R8YeHixd-ysE",
+      "ChIJ_02K8JbxaS4RX9G3vNqXim8",
+      "ChIJ4xqe_vfzaS4R2nzD8AUEB2Q",
+      "ChIJ_zh9TXfxaS4RoFJBiBh54Sw",
       "ChIJVamq_YrxaS4R9hqyqiNogIs",
       "ChIJP8bvQ13xaS4RgueoWi9kdBA",
-      "ChIJZStnYbnxaS4R8YeHixd-ysE",
-      "ChIJ4xqe_vfzaS4R2nzD8AUEB2Q"
+      "ChIJKxZmEsTxaS4RAIHG3WpIbho"
     ],
-    "searchOffset": 20,
-    "skippedCount": 0,
-    "nextPageToken": "AXQCQNTEw0IPIl2ciRspT3goxqTl1jkDUZjqscFu81eAMUdyT2IrEFnkZetTOgAR4kFBcQ10kLskj7GLNzwEZNSq_Hzx47pIXyxnJJM4qus-Zfz64VYGM_Acomh1vYUO2u1H2ZxJZ590TaOakwyvoIMiTQjwly_3f8lybRTsU0GzvUjoDT_tZfvQtq38NTdybRkSGerQJV6lrTppRyEDDLMDdtdh31S8hSY3bM4KBwj6VU-tPNsBN0aDF1r9qEO1MEeyl4T0gfxpwF87RbHIPBn9_6f2SxM8zaDcZdq56Ieb2Jht7dCJ3j0rfBovgBk8pFkLBXjBXo3mR7bIDJCyJ1avdEZacRLMRxx1yI-Uel287uYaT1yipac_fGZyCO68HKA4etsaDUtMZHXnydJwEy5Ucx9jqJ5TMw8d",
-    "currentPlaceId": "ChIJOU-DRF3xaS4RglxqldO_Chc",
-    "placeDetails": {
-      "address": "Jl. Gunawarman No.34, Selong, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12110, Indonesia",
-      "businessHours": [
-        "Senin: 07.00\u201323.00",
-        "Selasa: 07.00\u201323.00",
-        "Rabu: 07.00\u201323.00",
-        "Kamis: 07.00\u201323.00",
-        "Jumat: 07.00\u201323.00",
-        "Sabtu: 07.00\u201323.00",
-        "Minggu: 07.00\u201323.00"
-      ],
-      "businessType": [
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "contact": {
-        "phone": "(021) 72788003",
-        "website": "http://www.lequartier.co.id/"
-      },
-      "keywordFoundCount": 3,
-      "keywordMatch": "3 out of 3041 reviews mention the keyword.",
-      "negativeReviews": [],
-      "placeId": "ChIJOU-DRF3xaS4RglxqldO_Chc",
-      "placeName": "Le Quartier",
-      "positiveReviews": [
-        "First time here and auto-love it!! Best hospitality from their F&B service staff, Best Taste in Food and Drink! I was so touched with their staff who really took care of their guests. They noticed that I needed a toothpick, they delivered it without me asking\u2026\nStarting from escargot, lobster bisque, steak and halibut, till souffle\u2026 c\u2019est delicieux!\nI would love to return with family and friends.  Nevertheless, the glass top dining area was a bit hot that they need to consider to put sun-protection stickers on to reduce the heat absorbed by the glass.",
-        "I came for late xmas lunch. We ordered farfalle carbonara and rib eye steak(?) sorry i forget. The pasta was so good, it melt in my mouth. The steak was very well grilled and easy to chew. The staff was so friendly and helpful too. Will be back for sure hehe"
-      ],
-      "priceRange": "$$$$",
-      "rating": 4.6,
-      "totalRatings": 3041
-    }
+    "searchOffset": 20
   },
   "$results": [
     {
@@ -101,16 +65,17 @@
       "priceRange": "$$$",
       "rating": 4.6,
       "strengths": [
-        "Exceptional service and delicious, authentically Indonesian dishes with clean, balanced flavors.",
-        "Serene atmosphere enhanced by lush greenery and live traditional music.",
-        "Elegant indoor and breezy outdoor spaces suitable for various occasions."
+        "High customer rating of 4.6 from nearly 4000 reviews indicates strong customer satisfaction.",
+        "Beautiful ambiance with elegant indoor and outdoor spaces suitable for various occasions.",
+        "Exceptional service and authentic Indonesian cuisine, with standout dishes praised for their flavor."
       ],
       "summaryNegative": "",
-      "summaryPositive": "The reviews highlight a standout dining experience at Plataran Dharmawangsa, characterized by exceptional service and delicious, authentically Indonesian dishes that feature clean, balanced flavors. Guests appreciate the serene atmosphere, enhanced by lush greenery and live traditional music, making it a perfect escape from the city's hustle and bustle. The restaurant's elegant indoor and breezy outdoor spaces provide an inviting backdrop for various occasions, from romantic lunches to professional meet-ups and family gatherings. Overall, patrons celebrate the restaurant as a hidden gem for its premium quality and warm hospitality.",
+      "summaryPositive": "Plataran Dharmawangsa is celebrated as a hidden oasis in the city, offering a serene escape with lush greenery and soothing live music on weekends. Its elegant indoor and breezy outdoor spaces create the perfect ambiance for various occasions, from romantic lunches to professional meetings and family gatherings. Guests rave about the exceptional service and the authentic, beautifully presented Indonesian dishes, highlighting favorites like tahu nenek, kangkung belacaan, and oxtail soup, all noted for their balanced and clean flavors. The overall experience is enhanced by the attentive and friendly staff, making it a highly regarded dining destination.",
       "totalRatings": 3869,
       "weaknesses": [
-        "Rating of 4.6 indicates room for improvement in certain areas.",
-        "Match score of 70.0% suggests there may be areas where customer expectations are not fully met."
+        "Match score of 70.0% suggests there may be areas for improvement in aligning with customer expectations.",
+        "Potential dependency on weekends for live music might deter weekday customers.",
+        "As a 'hidden oasis,' it may be less visible or accessible to new customers compared to competitors."
       ]
     },
     {
@@ -134,7 +99,7 @@
         "phone": "0877-7264-6253",
         "website": "http://www.animalejakarta.com/"
       },
-      "keywordMatch": "8 out of 1232 reviews mention the keyword.",
+      "keywordMatch": "10 out of 1232 reviews mention the keyword.",
       "matchPercentage": 70.0,
       "matchReasoning": "Price range 'N/A' does not match required '$'. Business hours do not match required '9 AM - 10 PM'.",
       "placeId": "ChIJE1GvDtn1aS4RLfcz-MionU8",
@@ -142,17 +107,16 @@
       "priceRange": "",
       "rating": 4.7,
       "strengths": [
-        "High customer satisfaction reflected in a 4.7 rating from over 1200 reviews.",
-        "The match score of 70.0% indicates a strong alignment with customer preferences and expectations.",
-        "Positive reputation that may lead to repeat business and customer loyalty."
+        "Exceptional service and accommodating staff, even during peak times.",
+        "High-quality food with standout dishes that guests particularly enjoy, such as cauliflower steak.",
+        "Thoughtful gestures for special occasions that enhance the overall dining experience."
       ],
       "summaryNegative": "",
-      "summaryPositive": "",
+      "summaryPositive": "Guests consistently praise the exceptional service and accommodating staff at the restaurant, even in challenging situations like being fully booked. Reviewers highlight the quality and delight of the food, particularly noting standout dishes like the cauliflower steak. Additionally, thoughtful gestures, such as complimentary treats for special occasions, enhance the dining experience, making it a memorable outing that encourages return visits.",
       "totalRatings": 1232,
       "weaknesses": [
-        "The match score, while good, suggests there may still be areas for improvement to fully meet customer expectations.",
-        "A significant number of reviews may point to variability in guest experiences, indicating inconsistency in service or food quality.",
-        "Lack of detailed feedback in positive and negative summaries may hinder identification of specific strengths and areas for improvement."
+        "The match score of 70.0% suggests there may be room for improvement in aligning with customer expectations or preferences.",
+        "While the restaurant has a strong rating, further analysis may reveal specific aspects of the dining experience that could be fine-tuned to boost customer satisfaction."
       ]
     },
     {
@@ -176,7 +140,7 @@
         "phone": "(021) 72788003",
         "website": "http://www.lequartier.co.id/"
       },
-      "keywordMatch": "3 out of 3041 reviews mention the keyword.",
+      "keywordMatch": "10 out of 3042 reviews mention the keyword.",
       "matchPercentage": 70.0,
       "matchReasoning": "Price range '$$$$' does not match required '$'. Business hours do not match required '9 AM - 10 PM'.",
       "placeId": "ChIJOU-DRF3xaS4RglxqldO_Chc",
@@ -184,23 +148,22 @@
       "priceRange": "$$$$",
       "rating": 4.6,
       "strengths": [
-        "Exceptional dining experience with outstanding hospitality",
-        "High-quality food with praised menu items like escargot and lobster bisque",
-        "Inviting atmosphere that encourages guests to return and recommend to others"
+        "Exceptional hospitality and attentive service from staff",
+        "Outstanding taste and quality of food, particularly truffle pasta and black angus steak",
+        "Inviting ambiance, particularly the glass-top dining area"
       ],
       "summaryNegative": "",
-      "summaryPositive": "The reviews highlight an exceptional dining experience characterized by outstanding hospitality and delicious food. Guests praised the attentive staff who proactively catered to their needs, enhancing their overall enjoyment. Menu items, including escargot, lobster bisque, and perfectly grilled steaks, received high accolades for their taste and quality. Additionally, the inviting atmosphere was noted, though some suggested improvements, such as sun-protection for the glass dining area to enhance comfort. Overall, diners expressed a strong desire to return and recommend the restaurant to family and friends.",
-      "totalRatings": 3041,
+      "summaryPositive": "The reviews highlight outstanding hospitality and attentive service from the staff, who go above and beyond for their guests, enhancing the overall dining experience. Diners praised the exceptional taste of the food, with standout dishes including truffle pasta and black angus steak, although some items like the Caesar salad and pork belly received mixed feedback. The ambiance, particularly the glass-top dining area, was appreciated, though it was noted that it could be warmer than comfortable. Overall, guests expressed a desire to return, indicating that the enjoyable food and high-quality service make the experience worthwhile.",
+      "totalRatings": 3042,
       "weaknesses": [
-        "Need for sun-protection in the glass dining area for enhanced comfort",
-        "Match score of 70.0% indicates potential areas for improvement",
-        "High dependency on positive guest experiences could be a risk if service quality fluctuates"
+        "Some menu items, like Caesar salad and pork belly, received mixed reviews",
+        "The dining area can be warmer than comfortable"
       ]
     }
   ],
   "$metadata": {
-    "createdAt": "2025-06-10T13:57:04.650947+00:00Z",
-    "startedAt": "2025-06-10T13:57:04.650947+00:00Z",
-    "executionTotal": 12
+    "createdAt": "2025-06-10T18:59:22.733782+00:00Z",
+    "startedAt": "2025-06-10T18:59:22.733782+00:00Z",
+    "executionTotal": 11
   }
 }
