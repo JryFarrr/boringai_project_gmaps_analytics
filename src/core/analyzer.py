@@ -15,20 +15,17 @@ class Analyzer:
         min_rating = constraints.get("min_rating")
         if min_rating is not None and details.get("rating", 0) < min_rating:
             score -= self.weights['rating']
-            # meets = False # Meets akan disimpulkan di akhir berdasarkan skor
             reasoning.append(f"Rating {details.get('rating')} below minimum {min_rating}.")
 
         # Cek Reviews (min_reviews dan max_reviews)
         min_reviews = constraints.get("min_reviews")
         if min_reviews is not None and details.get("totalRatings", 0) < min_reviews:
             score -= self.weights['reviews']
-            # meets = False
             reasoning.append(f"Total reviews {details.get('totalRatings')} below minimum {min_reviews}.")
         
         max_reviews = constraints.get("max_reviews")
         if max_reviews is not None and details.get("totalRatings", 0) > max_reviews:
             score -= self.weights['reviews']
-            # meets = False
             reasoning.append(f"Total reviews {details.get('totalRatings')} above maximum {max_reviews}.")
 
         # Cek Price Range
@@ -36,11 +33,9 @@ class Analyzer:
         if price_range and details.get("priceRange") != price_range:
             if not details.get("priceRange") and price_range:
                 score -= self.weights['price_range']
-                # meets = False
                 reasoning.append(f"Price range '{details.get('priceRange') or 'N/A'}' does not match required '{price_range}'.")
             elif details.get("priceRange") and details.get("priceRange") != price_range:
                 score -= self.weights['price_range']
-                # meets = False
                 reasoning.append(f"Price range '{details.get('priceRange')}' does not match required '{price_range}'.")
 
 
@@ -54,7 +49,6 @@ class Analyzer:
                     break
             if not is_open_match:
                 score -= self.weights['business_hours']
-                # meets = False
                 reasoning.append(f"Business hours do not match required '{business_hours}'.")
 
         # Cek Keyword
@@ -64,6 +58,7 @@ class Analyzer:
             if keyword_n == 0:
                 score -= self.weights['keywords'] * 2 # Kurangi lebih banyak jika keyword tidak ditemukan
                 reasoning.append(f"Keyword '{keywords}' not found in reviews.")
+                meets = False # <<--- TAMBAHAN PENTING DI SINI
             elif keyword_n == -1: # API Call gagal
                 score -= self.weights['keywords']
                 reasoning.append("Keyword search failed.")
@@ -72,32 +67,30 @@ class Analyzer:
         location = constraints.get("location")
         if location and not details.get("address", "").lower().count(location.lower()):
             score -= self.weights['address']
-            # meets = False
             reasoning.append(f"Address '{details.get('address')}' does not contain required location '{location}'.")
 
         # Pastikan skor tidak negatif
         final_score = max(0, score)
         
         # Tentukan 'meets' berdasarkan final_score
-        # Jika skor adalah 0, secara otomatis 'meets' menjadi False
         if final_score == 0:
             meets = False
-        else:
-            # Jika ada reasoning, dan skor > 0, meets bisa tetap True
-            # tergantung pada seberapa ketat kriteria Anda
-            # Untuk kasus ini, jika skor > 0, kita asumsikan meets True
-            # kecuali jika ada kondisi lain yang secara eksplisit menjadikannya False.
-            # Namun, karena kita ingin jika 0% match tidak discrap, logika di atas sudah cukup.
-            pass # meets akan tetap True jika skor > 0 dan tidak ada kondisi 'meets=False' di atas
+        
+        # Penting: Jika meets sudah FALSE karena keyword, pastikan final_score tidak mengabaikannya
+        # Jika meets sudah FALSE karena alasan lain, biarkan tetap FALSE.
+        # Jika keyword_n adalah 0 DAN keywords adalah constraints, maka meets HARUS False.
+        if keywords and details.get("keywordFoundCount", 0) == 0:
+            meets = False
+
 
         return final_score, meets, " ".join(reasoning) or "Meets primary criteria."
 
     def run(self, details, constraints):
-        match_percentage, _, reason = self._calculate_match(details, constraints)
+        match_percentage, meets_constraints, reason = self._calculate_match(details, constraints)
         
         insights, positive_summary, negative_summary = {}, "", ""
-        # Hanya generate insights jika match_percentage > 0
-        if match_percentage > 0:
+        # Hanya generate insights jika memenuhi kriteria dan match_percentage > 0
+        if meets_constraints and match_percentage > 0:
              insights, positive_summary, negative_summary = self.openai.generate_insights(details, match_percentage)
 
         # Hapus data mentah yang tidak perlu dari output akhir
@@ -116,4 +109,17 @@ class Analyzer:
             "summaryNegative": negative_summary,
         }
         
-        return analysis_result
+        # Jika match_percentage adalah 0, maka meets_constraints juga harus False
+        # Ini untuk memastikan logic di workflow.py benar
+        if match_percentage == 0:
+            meets_constraints = False
+        
+        # Menambahkan pengecekan eksplisit untuk keywordFoundCount di sini juga
+        # Jika keywords ada di constraints dan keywordFoundCount adalah 0,
+        # maka meets_constraints harus FALSE, meskipun matchPercentage > 0.
+        keywords = constraints.get("keywords")
+        if keywords and details.get("keywordFoundCount", 0) == 0:
+            meets_constraints = False
+
+
+        return analysis_result, meets_constraints
