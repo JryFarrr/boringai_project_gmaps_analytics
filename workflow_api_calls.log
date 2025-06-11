@@ -10643,3 +10643,2355 @@ BODY:
   "result": null,
   "state": null
 }
+2025-06-11 10:49:42,597 - INFO - REQUEST to [input]
+PAYLOAD:
+{
+  "business_type": "restaurant",
+  "location": "lembang bandung",
+  "min_rating": 4.5,
+  "min_reviews": 0,
+  "max_reviews": null,
+  "price_range": "",
+  "business_hours": "anytime",
+  "keywords": "",
+  "numberOfLeads": 10
+}
+2025-06-11 10:49:44,645 - INFO - RESPONSE from [input]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "search",
+    "payload": {
+      "business_type": "$state.business_type",
+      "constraints": "$state.constraints",
+      "location": "$state.location",
+      "nextPageToken": "$state.nextPageToken",
+      "searchOffset": "$state.searchOffset"
+    }
+  },
+  "result": null,
+  "state": {
+    "business_type": "restaurant",
+    "constraints": {
+      "business_hours": "anytime",
+      "keywords": "",
+      "max_reviews": null,
+      "min_rating": 4.5,
+      "min_reviews": 0,
+      "price_range": ""
+    },
+    "leadCount": 0,
+    "location": "lembang bandung",
+    "nextPageToken": null,
+    "numberOfLeads": 10,
+    "remainingPlaceIds": [],
+    "searchOffset": 0
+  }
+}
+2025-06-11 10:49:44,645 - INFO - REQUEST to [search]
+PAYLOAD:
+{
+  "business_type": "restaurant",
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "location": "lembang bandung",
+  "nextPageToken": null,
+  "searchOffset": 0
+}
+2025-06-11 10:49:47,799 - INFO - RESPONSE from [search]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "scrape",
+    "payload": {
+      "constraints": "$state.constraints",
+      "placeId": "ChIJSbQtpGPhaC4RzcddTC3RHbo"
+    }
+  },
+  "result": null,
+  "state": {
+    "nextPageToken": "AXQCQNTF3nb_8j0-EoB_Y_ljZccBBYhCVx5T1f8KkL7Xedsk1_nE67FQaT_PfLoIXLSdSTBVdaDPMgOloJt2llqQxZqKLEAQemSPd_STNbP9BrA9y8yd98VV21fUx1MZv7fPWDXZ8I3JWyOa5M9XGk-VVJJX_j3rV8ASeq_chF4HWu8CcNgJi2yDoLvizL44x3NqwOWEjnQ-uGY4ntKu7BlviVo-tKie4iGP75b1UgPvdL2_q8bnDQ0KKnJGQ9_B-P6oG3b--AONNJoYeN_NHAwQjp4udN21Wma4j_vVNvugauVk-nmi4J5tYOOLYhFwt8d4SOgP7PRYEo-DEd44Hz_l_Tav2m-JpiJxr6Tk8uV34QZZRBBx1Eta9KFLyY4ZDuOokikjMJiSY7kTzuzKKEC6w2HsE8H7w95A",
+    "remainingPlaceIds": [
+      "ChIJbaZPnZ_haC4RfU0Xemztjik",
+      "ChIJnznCrP3gaC4RV3zGJvmlJyQ",
+      "ChIJ37FsoxzhaC4RePntVP-5bRQ",
+      "ChIJw8K1qujhaC4RrMzBfVrMDWE",
+      "ChIJKxdgfPXhaC4R7d5WcE1J4Og",
+      "ChIJ3ZWFGp7haC4R54uMRwMFoBI",
+      "ChIJu7-VgQPhaC4Rx7n87RdWOSg",
+      "ChIJg2xKjwPhaC4RzqdKfm1mHWQ",
+      "ChIJf_bhfePgaC4R31thEiIhnWc",
+      "ChIJNf1XRW7haC4R4nOdCUthQEk",
+      "ChIJh-LRFU7haC4R0Mms61x2FFs",
+      "ChIJdUjq01fhaC4R3M61zlA1DSo",
+      "ChIJ1815tznhaC4Rf0IShUpERQs",
+      "ChIJVXM_DT3haC4RotdH7cpfx_0",
+      "ChIJL6qdKTRIaC4RShUgKNkpSN8",
+      "ChIJb68a6zDhaC4RqV_iB1ZdjLM",
+      "ChIJs_AFewDhaC4RyxHtYs4VmLs",
+      "ChIJfRsSy-TgaC4R7S6UEan7BOQ",
+      "ChIJbZ1pCorgaC4RieAvK0RawOM"
+    ],
+    "searchOffset": 20
+  }
+}
+2025-06-11 10:49:47,801 - INFO - REQUEST to [scrape]
+PAYLOAD:
+{
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "placeId": "ChIJSbQtpGPhaC4RzcddTC3RHbo"
+}
+2025-06-11 10:49:55,838 - INFO - RESPONSE from [scrape]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "analyze",
+    "payload": {
+      "constraints": "$state.constraints",
+      "leadCount": "$state.leadCount",
+      "placeDetails": {
+        "address": "Jl. Raya Lembang No.27, Gudangkahuripan, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40391, Indonesia",
+        "businessHours": [
+          "Senin: 08.00\u201322.00",
+          "Selasa: 08.00\u201322.00",
+          "Rabu: 08.00\u201322.00",
+          "Kamis: 08.00\u201322.00",
+          "Jumat: 08.00\u201322.00",
+          "Sabtu: 08.00\u201322.00",
+          "Minggu: 08.00\u201322.00"
+        ],
+        "businessType": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "contact": {
+          "phone": "0821-1525-1545",
+          "website": "http://www.darmagasunda.id/"
+        },
+        "keywordFoundCount": 0,
+        "keywordMatch": "0 out of 0 reviews mention the keyword.",
+        "negativeReviews": [],
+        "placeId": "ChIJSbQtpGPhaC4RzcddTC3RHbo",
+        "placeName": "Darmaga Sunda Lembang",
+        "positiveReviews": [],
+        "priceRange": "$$",
+        "rating": 4.6,
+        "totalRatings": 3418
+      }
+    }
+  },
+  "result": null,
+  "state": null
+}
+2025-06-11 10:49:55,838 - INFO - REQUEST to [analyze]
+PAYLOAD:
+{
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "leadCount": 0,
+  "placeDetails": {
+    "address": "Jl. Raya Lembang No.27, Gudangkahuripan, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40391, Indonesia",
+    "businessHours": [
+      "Senin: 08.00\u201322.00",
+      "Selasa: 08.00\u201322.00",
+      "Rabu: 08.00\u201322.00",
+      "Kamis: 08.00\u201322.00",
+      "Jumat: 08.00\u201322.00",
+      "Sabtu: 08.00\u201322.00",
+      "Minggu: 08.00\u201322.00"
+    ],
+    "businessType": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "contact": {
+      "phone": "0821-1525-1545",
+      "website": "http://www.darmagasunda.id/"
+    },
+    "keywordFoundCount": 0,
+    "keywordMatch": "0 out of 0 reviews mention the keyword.",
+    "negativeReviews": [],
+    "placeId": "ChIJSbQtpGPhaC4RzcddTC3RHbo",
+    "placeName": "Darmaga Sunda Lembang",
+    "positiveReviews": [],
+    "priceRange": "$$",
+    "rating": 4.6,
+    "totalRatings": 3418
+  }
+}
+2025-06-11 10:50:01,798 - INFO - RESPONSE from [analyze]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "control",
+    "payload": {
+      "state": "$state"
+    }
+  },
+  "result": [
+    {
+      "address": "Jl. Raya Lembang No.27, Gudangkahuripan, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40391, Indonesia",
+      "businessHours": [
+        "Senin: 08.00\u201322.00",
+        "Selasa: 08.00\u201322.00",
+        "Rabu: 08.00\u201322.00",
+        "Kamis: 08.00\u201322.00",
+        "Jumat: 08.00\u201322.00",
+        "Sabtu: 08.00\u201322.00",
+        "Minggu: 08.00\u201322.00"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "0821-1525-1545",
+        "website": "http://www.darmagasunda.id/"
+      },
+      "keywordMatch": "0 out of 0 reviews mention the keyword.",
+      "matchPercentage": 100.0,
+      "matchReasoning": "Meets primary criteria.",
+      "placeId": "ChIJSbQtpGPhaC4RzcddTC3RHbo",
+      "placeName": "Darmaga Sunda Lembang",
+      "priceRange": "$$",
+      "rating": 4.6,
+      "strengths": [
+        "High customer rating of 4.6 indicates strong customer satisfaction.",
+        "A significant number of reviews (3418) suggests a solid and trusted reputation.",
+        "Perfect match score of 100.0% reflects alignment with customer preferences or market needs."
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "",
+      "totalRatings": 3418,
+      "weaknesses": [
+        "Lack of detailed positive and negative summaries may limit insights into specific customer experiences.",
+        "No mention of unique selling points or competitive advantages that differentiate the business from others."
+      ]
+    },
+    true
+  ],
+  "state": {
+    "leadCount": 1
+  }
+}
+2025-06-11 10:50:01,798 - INFO - REQUEST to [control]
+PAYLOAD:
+{
+  "business_type": "restaurant",
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "leadCount": 1,
+  "location": "lembang bandung",
+  "nextPageToken": "AXQCQNTF3nb_8j0-EoB_Y_ljZccBBYhCVx5T1f8KkL7Xedsk1_nE67FQaT_PfLoIXLSdSTBVdaDPMgOloJt2llqQxZqKLEAQemSPd_STNbP9BrA9y8yd98VV21fUx1MZv7fPWDXZ8I3JWyOa5M9XGk-VVJJX_j3rV8ASeq_chF4HWu8CcNgJi2yDoLvizL44x3NqwOWEjnQ-uGY4ntKu7BlviVo-tKie4iGP75b1UgPvdL2_q8bnDQ0KKnJGQ9_B-P6oG3b--AONNJoYeN_NHAwQjp4udN21Wma4j_vVNvugauVk-nmi4J5tYOOLYhFwt8d4SOgP7PRYEo-DEd44Hz_l_Tav2m-JpiJxr6Tk8uV34QZZRBBx1Eta9KFLyY4ZDuOokikjMJiSY7kTzuzKKEC6w2HsE8H7w95A",
+  "numberOfLeads": 10,
+  "remainingPlaceIds": [
+    "ChIJbaZPnZ_haC4RfU0Xemztjik",
+    "ChIJnznCrP3gaC4RV3zGJvmlJyQ",
+    "ChIJ37FsoxzhaC4RePntVP-5bRQ",
+    "ChIJw8K1qujhaC4RrMzBfVrMDWE",
+    "ChIJKxdgfPXhaC4R7d5WcE1J4Og",
+    "ChIJ3ZWFGp7haC4R54uMRwMFoBI",
+    "ChIJu7-VgQPhaC4Rx7n87RdWOSg",
+    "ChIJg2xKjwPhaC4RzqdKfm1mHWQ",
+    "ChIJf_bhfePgaC4R31thEiIhnWc",
+    "ChIJNf1XRW7haC4R4nOdCUthQEk",
+    "ChIJh-LRFU7haC4R0Mms61x2FFs",
+    "ChIJdUjq01fhaC4R3M61zlA1DSo",
+    "ChIJ1815tznhaC4Rf0IShUpERQs",
+    "ChIJVXM_DT3haC4RotdH7cpfx_0",
+    "ChIJL6qdKTRIaC4RShUgKNkpSN8",
+    "ChIJb68a6zDhaC4RqV_iB1ZdjLM",
+    "ChIJs_AFewDhaC4RyxHtYs4VmLs",
+    "ChIJfRsSy-TgaC4R7S6UEan7BOQ",
+    "ChIJbZ1pCorgaC4RieAvK0RawOM"
+  ],
+  "searchOffset": 20
+}
+2025-06-11 10:50:03,858 - INFO - RESPONSE from [control]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "scrape",
+    "payload": {
+      "constraints": "$state.constraints",
+      "placeId": "ChIJbaZPnZ_haC4RfU0Xemztjik"
+    }
+  },
+  "result": null,
+  "state": {
+    "remainingPlaceIds": [
+      "ChIJnznCrP3gaC4RV3zGJvmlJyQ",
+      "ChIJ37FsoxzhaC4RePntVP-5bRQ",
+      "ChIJw8K1qujhaC4RrMzBfVrMDWE",
+      "ChIJKxdgfPXhaC4R7d5WcE1J4Og",
+      "ChIJ3ZWFGp7haC4R54uMRwMFoBI",
+      "ChIJu7-VgQPhaC4Rx7n87RdWOSg",
+      "ChIJg2xKjwPhaC4RzqdKfm1mHWQ",
+      "ChIJf_bhfePgaC4R31thEiIhnWc",
+      "ChIJNf1XRW7haC4R4nOdCUthQEk",
+      "ChIJh-LRFU7haC4R0Mms61x2FFs",
+      "ChIJdUjq01fhaC4R3M61zlA1DSo",
+      "ChIJ1815tznhaC4Rf0IShUpERQs",
+      "ChIJVXM_DT3haC4RotdH7cpfx_0",
+      "ChIJL6qdKTRIaC4RShUgKNkpSN8",
+      "ChIJb68a6zDhaC4RqV_iB1ZdjLM",
+      "ChIJs_AFewDhaC4RyxHtYs4VmLs",
+      "ChIJfRsSy-TgaC4R7S6UEan7BOQ",
+      "ChIJbZ1pCorgaC4RieAvK0RawOM"
+    ]
+  }
+}
+2025-06-11 10:50:03,862 - INFO - REQUEST to [scrape]
+PAYLOAD:
+{
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "placeId": "ChIJbaZPnZ_haC4RfU0Xemztjik"
+}
+2025-06-11 10:50:08,530 - INFO - RESPONSE from [scrape]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "analyze",
+    "payload": {
+      "constraints": "$state.constraints",
+      "leadCount": "$state.leadCount",
+      "placeDetails": {
+        "address": "Jl. Maribaya No.11b, Kayuambon, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40391, Indonesia",
+        "businessHours": [
+          "Senin: 10.00\u201322.00",
+          "Selasa: 10.00\u201322.00",
+          "Rabu: 10.00\u201322.00",
+          "Kamis: 10.00\u201322.00",
+          "Jumat: 10.00\u201322.00",
+          "Sabtu: 08.00\u201322.00",
+          "Minggu: 08.00\u201322.00"
+        ],
+        "businessType": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "contact": {
+          "phone": "0822-4030-3971",
+          "website": "https://linktr.ee/marketing.teuan?utm_source=linktree_profile_share&ltsid=5abf94d6-6e39-4963-b8b3-b3aa18f8fdb1"
+        },
+        "keywordFoundCount": 0,
+        "keywordMatch": "0 out of 0 reviews mention the keyword.",
+        "negativeReviews": [],
+        "placeId": "ChIJbaZPnZ_haC4RfU0Xemztjik",
+        "placeName": "Teuan Cafe and Resto",
+        "positiveReviews": [],
+        "priceRange": "",
+        "rating": 4.7,
+        "totalRatings": 1295
+      }
+    }
+  },
+  "result": null,
+  "state": null
+}
+2025-06-11 10:50:08,530 - INFO - REQUEST to [analyze]
+PAYLOAD:
+{
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "leadCount": 1,
+  "placeDetails": {
+    "address": "Jl. Maribaya No.11b, Kayuambon, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40391, Indonesia",
+    "businessHours": [
+      "Senin: 10.00\u201322.00",
+      "Selasa: 10.00\u201322.00",
+      "Rabu: 10.00\u201322.00",
+      "Kamis: 10.00\u201322.00",
+      "Jumat: 10.00\u201322.00",
+      "Sabtu: 08.00\u201322.00",
+      "Minggu: 08.00\u201322.00"
+    ],
+    "businessType": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "contact": {
+      "phone": "0822-4030-3971",
+      "website": "https://linktr.ee/marketing.teuan?utm_source=linktree_profile_share&ltsid=5abf94d6-6e39-4963-b8b3-b3aa18f8fdb1"
+    },
+    "keywordFoundCount": 0,
+    "keywordMatch": "0 out of 0 reviews mention the keyword.",
+    "negativeReviews": [],
+    "placeId": "ChIJbaZPnZ_haC4RfU0Xemztjik",
+    "placeName": "Teuan Cafe and Resto",
+    "positiveReviews": [],
+    "priceRange": "",
+    "rating": 4.7,
+    "totalRatings": 1295
+  }
+}
+2025-06-11 10:50:13,178 - INFO - RESPONSE from [analyze]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "control",
+    "payload": {
+      "state": "$state"
+    }
+  },
+  "result": [
+    {
+      "address": "Jl. Maribaya No.11b, Kayuambon, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40391, Indonesia",
+      "businessHours": [
+        "Senin: 10.00\u201322.00",
+        "Selasa: 10.00\u201322.00",
+        "Rabu: 10.00\u201322.00",
+        "Kamis: 10.00\u201322.00",
+        "Jumat: 10.00\u201322.00",
+        "Sabtu: 08.00\u201322.00",
+        "Minggu: 08.00\u201322.00"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "0822-4030-3971",
+        "website": "https://linktr.ee/marketing.teuan?utm_source=linktree_profile_share&ltsid=5abf94d6-6e39-4963-b8b3-b3aa18f8fdb1"
+      },
+      "keywordMatch": "0 out of 0 reviews mention the keyword.",
+      "matchPercentage": 100.0,
+      "matchReasoning": "Meets primary criteria.",
+      "placeId": "ChIJbaZPnZ_haC4RfU0Xemztjik",
+      "placeName": "Teuan Cafe and Resto",
+      "priceRange": "",
+      "rating": 4.7,
+      "strengths": [
+        "High customer satisfaction with a rating of 4.7 from 1295 reviews.",
+        "Perfect match score of 100.0%, indicating strong alignment with customer expectations.",
+        "Strong brand reputation likely due to consistent positive feedback."
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "",
+      "totalRatings": 1295,
+      "weaknesses": [
+        "Limited insight into specific areas of customer concern due to lack of detailed negative summary.",
+        "Potential over-reliance on positive reviews, which may not fully capture the complete customer experience."
+      ]
+    },
+    true
+  ],
+  "state": {
+    "leadCount": 2
+  }
+}
+2025-06-11 10:50:13,194 - INFO - REQUEST to [control]
+PAYLOAD:
+{
+  "business_type": "restaurant",
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "leadCount": 2,
+  "location": "lembang bandung",
+  "nextPageToken": "AXQCQNTF3nb_8j0-EoB_Y_ljZccBBYhCVx5T1f8KkL7Xedsk1_nE67FQaT_PfLoIXLSdSTBVdaDPMgOloJt2llqQxZqKLEAQemSPd_STNbP9BrA9y8yd98VV21fUx1MZv7fPWDXZ8I3JWyOa5M9XGk-VVJJX_j3rV8ASeq_chF4HWu8CcNgJi2yDoLvizL44x3NqwOWEjnQ-uGY4ntKu7BlviVo-tKie4iGP75b1UgPvdL2_q8bnDQ0KKnJGQ9_B-P6oG3b--AONNJoYeN_NHAwQjp4udN21Wma4j_vVNvugauVk-nmi4J5tYOOLYhFwt8d4SOgP7PRYEo-DEd44Hz_l_Tav2m-JpiJxr6Tk8uV34QZZRBBx1Eta9KFLyY4ZDuOokikjMJiSY7kTzuzKKEC6w2HsE8H7w95A",
+  "numberOfLeads": 10,
+  "remainingPlaceIds": [
+    "ChIJnznCrP3gaC4RV3zGJvmlJyQ",
+    "ChIJ37FsoxzhaC4RePntVP-5bRQ",
+    "ChIJw8K1qujhaC4RrMzBfVrMDWE",
+    "ChIJKxdgfPXhaC4R7d5WcE1J4Og",
+    "ChIJ3ZWFGp7haC4R54uMRwMFoBI",
+    "ChIJu7-VgQPhaC4Rx7n87RdWOSg",
+    "ChIJg2xKjwPhaC4RzqdKfm1mHWQ",
+    "ChIJf_bhfePgaC4R31thEiIhnWc",
+    "ChIJNf1XRW7haC4R4nOdCUthQEk",
+    "ChIJh-LRFU7haC4R0Mms61x2FFs",
+    "ChIJdUjq01fhaC4R3M61zlA1DSo",
+    "ChIJ1815tznhaC4Rf0IShUpERQs",
+    "ChIJVXM_DT3haC4RotdH7cpfx_0",
+    "ChIJL6qdKTRIaC4RShUgKNkpSN8",
+    "ChIJb68a6zDhaC4RqV_iB1ZdjLM",
+    "ChIJs_AFewDhaC4RyxHtYs4VmLs",
+    "ChIJfRsSy-TgaC4R7S6UEan7BOQ",
+    "ChIJbZ1pCorgaC4RieAvK0RawOM"
+  ],
+  "searchOffset": 20
+}
+2025-06-11 10:50:15,218 - INFO - RESPONSE from [control]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "scrape",
+    "payload": {
+      "constraints": "$state.constraints",
+      "placeId": "ChIJnznCrP3gaC4RV3zGJvmlJyQ"
+    }
+  },
+  "result": null,
+  "state": {
+    "remainingPlaceIds": [
+      "ChIJ37FsoxzhaC4RePntVP-5bRQ",
+      "ChIJw8K1qujhaC4RrMzBfVrMDWE",
+      "ChIJKxdgfPXhaC4R7d5WcE1J4Og",
+      "ChIJ3ZWFGp7haC4R54uMRwMFoBI",
+      "ChIJu7-VgQPhaC4Rx7n87RdWOSg",
+      "ChIJg2xKjwPhaC4RzqdKfm1mHWQ",
+      "ChIJf_bhfePgaC4R31thEiIhnWc",
+      "ChIJNf1XRW7haC4R4nOdCUthQEk",
+      "ChIJh-LRFU7haC4R0Mms61x2FFs",
+      "ChIJdUjq01fhaC4R3M61zlA1DSo",
+      "ChIJ1815tznhaC4Rf0IShUpERQs",
+      "ChIJVXM_DT3haC4RotdH7cpfx_0",
+      "ChIJL6qdKTRIaC4RShUgKNkpSN8",
+      "ChIJb68a6zDhaC4RqV_iB1ZdjLM",
+      "ChIJs_AFewDhaC4RyxHtYs4VmLs",
+      "ChIJfRsSy-TgaC4R7S6UEan7BOQ",
+      "ChIJbZ1pCorgaC4RieAvK0RawOM"
+    ]
+  }
+}
+2025-06-11 10:50:15,219 - INFO - REQUEST to [scrape]
+PAYLOAD:
+{
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "placeId": "ChIJnznCrP3gaC4RV3zGJvmlJyQ"
+}
+2025-06-11 10:50:21,949 - INFO - RESPONSE from [scrape]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "analyze",
+    "payload": {
+      "constraints": "$state.constraints",
+      "leadCount": "$state.leadCount",
+      "placeDetails": {
+        "address": "Jl. Raya Tangkuban Parahu No.423A, Cibogo, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40391, Indonesia",
+        "businessHours": [
+          "Senin: 10.00\u201321.00",
+          "Selasa: 10.00\u201321.00",
+          "Rabu: 10.00\u201321.00",
+          "Kamis: 10.00\u201321.00",
+          "Jumat: 10.00\u201322.00",
+          "Sabtu: 10.00\u201322.00",
+          "Minggu: 10.00\u201321.00"
+        ],
+        "businessType": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "contact": {
+          "phone": "(022) 2789582",
+          "website": null
+        },
+        "keywordFoundCount": 0,
+        "keywordMatch": "0 out of 0 reviews mention the keyword.",
+        "negativeReviews": [],
+        "placeId": "ChIJnznCrP3gaC4RV3zGJvmlJyQ",
+        "placeName": "Balibu Rumah Makan Khas Sunda",
+        "positiveReviews": [],
+        "priceRange": "$$",
+        "rating": 4.5,
+        "totalRatings": 2312
+      }
+    }
+  },
+  "result": null,
+  "state": null
+}
+2025-06-11 10:50:21,949 - INFO - REQUEST to [analyze]
+PAYLOAD:
+{
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "leadCount": 2,
+  "placeDetails": {
+    "address": "Jl. Raya Tangkuban Parahu No.423A, Cibogo, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40391, Indonesia",
+    "businessHours": [
+      "Senin: 10.00\u201321.00",
+      "Selasa: 10.00\u201321.00",
+      "Rabu: 10.00\u201321.00",
+      "Kamis: 10.00\u201321.00",
+      "Jumat: 10.00\u201322.00",
+      "Sabtu: 10.00\u201322.00",
+      "Minggu: 10.00\u201321.00"
+    ],
+    "businessType": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "contact": {
+      "phone": "(022) 2789582",
+      "website": null
+    },
+    "keywordFoundCount": 0,
+    "keywordMatch": "0 out of 0 reviews mention the keyword.",
+    "negativeReviews": [],
+    "placeId": "ChIJnznCrP3gaC4RV3zGJvmlJyQ",
+    "placeName": "Balibu Rumah Makan Khas Sunda",
+    "positiveReviews": [],
+    "priceRange": "$$",
+    "rating": 4.5,
+    "totalRatings": 2312
+  }
+}
+2025-06-11 10:50:26,604 - INFO - RESPONSE from [analyze]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "control",
+    "payload": {
+      "state": "$state"
+    }
+  },
+  "result": [
+    {
+      "address": "Jl. Raya Tangkuban Parahu No.423A, Cibogo, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40391, Indonesia",
+      "businessHours": [
+        "Senin: 10.00\u201321.00",
+        "Selasa: 10.00\u201321.00",
+        "Rabu: 10.00\u201321.00",
+        "Kamis: 10.00\u201321.00",
+        "Jumat: 10.00\u201322.00",
+        "Sabtu: 10.00\u201322.00",
+        "Minggu: 10.00\u201321.00"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(022) 2789582",
+        "website": null
+      },
+      "keywordMatch": "0 out of 0 reviews mention the keyword.",
+      "matchPercentage": 100.0,
+      "matchReasoning": "Meets primary criteria.",
+      "placeId": "ChIJnznCrP3gaC4RV3zGJvmlJyQ",
+      "placeName": "Balibu Rumah Makan Khas Sunda",
+      "priceRange": "$$",
+      "rating": 4.5,
+      "strengths": [
+        "High customer satisfaction with a rating of 4.5 from over 2300 reviews.",
+        "Perfect match score of 100.0%, indicating alignment with customer preferences or market demand.",
+        "Specialization in Sundanese cuisine, which can attract a niche market."
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "",
+      "totalRatings": 2312,
+      "weaknesses": [
+        "Lack of a detailed positive and negative summary may hinder understanding of specific customer feedback.",
+        "High expectations set by the current rating could lead to challenges in maintaining customer satisfaction.",
+        "Dependence on a single cuisine type may limit the customer base compared to more diverse establishments."
+      ]
+    },
+    true
+  ],
+  "state": {
+    "leadCount": 3
+  }
+}
+2025-06-11 10:50:26,619 - INFO - REQUEST to [control]
+PAYLOAD:
+{
+  "business_type": "restaurant",
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "leadCount": 3,
+  "location": "lembang bandung",
+  "nextPageToken": "AXQCQNTF3nb_8j0-EoB_Y_ljZccBBYhCVx5T1f8KkL7Xedsk1_nE67FQaT_PfLoIXLSdSTBVdaDPMgOloJt2llqQxZqKLEAQemSPd_STNbP9BrA9y8yd98VV21fUx1MZv7fPWDXZ8I3JWyOa5M9XGk-VVJJX_j3rV8ASeq_chF4HWu8CcNgJi2yDoLvizL44x3NqwOWEjnQ-uGY4ntKu7BlviVo-tKie4iGP75b1UgPvdL2_q8bnDQ0KKnJGQ9_B-P6oG3b--AONNJoYeN_NHAwQjp4udN21Wma4j_vVNvugauVk-nmi4J5tYOOLYhFwt8d4SOgP7PRYEo-DEd44Hz_l_Tav2m-JpiJxr6Tk8uV34QZZRBBx1Eta9KFLyY4ZDuOokikjMJiSY7kTzuzKKEC6w2HsE8H7w95A",
+  "numberOfLeads": 10,
+  "remainingPlaceIds": [
+    "ChIJ37FsoxzhaC4RePntVP-5bRQ",
+    "ChIJw8K1qujhaC4RrMzBfVrMDWE",
+    "ChIJKxdgfPXhaC4R7d5WcE1J4Og",
+    "ChIJ3ZWFGp7haC4R54uMRwMFoBI",
+    "ChIJu7-VgQPhaC4Rx7n87RdWOSg",
+    "ChIJg2xKjwPhaC4RzqdKfm1mHWQ",
+    "ChIJf_bhfePgaC4R31thEiIhnWc",
+    "ChIJNf1XRW7haC4R4nOdCUthQEk",
+    "ChIJh-LRFU7haC4R0Mms61x2FFs",
+    "ChIJdUjq01fhaC4R3M61zlA1DSo",
+    "ChIJ1815tznhaC4Rf0IShUpERQs",
+    "ChIJVXM_DT3haC4RotdH7cpfx_0",
+    "ChIJL6qdKTRIaC4RShUgKNkpSN8",
+    "ChIJb68a6zDhaC4RqV_iB1ZdjLM",
+    "ChIJs_AFewDhaC4RyxHtYs4VmLs",
+    "ChIJfRsSy-TgaC4R7S6UEan7BOQ",
+    "ChIJbZ1pCorgaC4RieAvK0RawOM"
+  ],
+  "searchOffset": 20
+}
+2025-06-11 10:50:28,660 - INFO - RESPONSE from [control]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "scrape",
+    "payload": {
+      "constraints": "$state.constraints",
+      "placeId": "ChIJ37FsoxzhaC4RePntVP-5bRQ"
+    }
+  },
+  "result": null,
+  "state": {
+    "remainingPlaceIds": [
+      "ChIJw8K1qujhaC4RrMzBfVrMDWE",
+      "ChIJKxdgfPXhaC4R7d5WcE1J4Og",
+      "ChIJ3ZWFGp7haC4R54uMRwMFoBI",
+      "ChIJu7-VgQPhaC4Rx7n87RdWOSg",
+      "ChIJg2xKjwPhaC4RzqdKfm1mHWQ",
+      "ChIJf_bhfePgaC4R31thEiIhnWc",
+      "ChIJNf1XRW7haC4R4nOdCUthQEk",
+      "ChIJh-LRFU7haC4R0Mms61x2FFs",
+      "ChIJdUjq01fhaC4R3M61zlA1DSo",
+      "ChIJ1815tznhaC4Rf0IShUpERQs",
+      "ChIJVXM_DT3haC4RotdH7cpfx_0",
+      "ChIJL6qdKTRIaC4RShUgKNkpSN8",
+      "ChIJb68a6zDhaC4RqV_iB1ZdjLM",
+      "ChIJs_AFewDhaC4RyxHtYs4VmLs",
+      "ChIJfRsSy-TgaC4R7S6UEan7BOQ",
+      "ChIJbZ1pCorgaC4RieAvK0RawOM"
+    ]
+  }
+}
+2025-06-11 10:50:28,660 - INFO - REQUEST to [scrape]
+PAYLOAD:
+{
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "placeId": "ChIJ37FsoxzhaC4RePntVP-5bRQ"
+}
+2025-06-11 10:50:35,114 - INFO - RESPONSE from [scrape]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "analyze",
+    "payload": {
+      "constraints": "$state.constraints",
+      "leadCount": "$state.leadCount",
+      "placeDetails": {
+        "address": "Jl. Raya Tangkuban Parahu No.KM.1, RW.No.68, Cibogo, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40391, Indonesia",
+        "businessHours": [
+          "Senin: 10.00\u201321.00",
+          "Selasa: 10.00\u201321.00",
+          "Rabu: 10.00\u201321.00",
+          "Kamis: 10.00\u201321.00",
+          "Jumat: 10.00\u201321.00",
+          "Sabtu: 10.00\u201321.00",
+          "Minggu: 10.00\u201321.00"
+        ],
+        "businessType": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "contact": {
+          "phone": "(022) 2784978",
+          "website": null
+        },
+        "keywordFoundCount": 0,
+        "keywordMatch": "0 out of 0 reviews mention the keyword.",
+        "negativeReviews": [],
+        "placeId": "ChIJ37FsoxzhaC4RePntVP-5bRQ",
+        "placeName": "Gubug Makan Mang Engking Lembang",
+        "positiveReviews": [],
+        "priceRange": "$$",
+        "rating": 4.4,
+        "totalRatings": 4315
+      }
+    }
+  },
+  "result": null,
+  "state": null
+}
+2025-06-11 10:50:35,114 - INFO - REQUEST to [analyze]
+PAYLOAD:
+{
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "leadCount": 3,
+  "placeDetails": {
+    "address": "Jl. Raya Tangkuban Parahu No.KM.1, RW.No.68, Cibogo, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40391, Indonesia",
+    "businessHours": [
+      "Senin: 10.00\u201321.00",
+      "Selasa: 10.00\u201321.00",
+      "Rabu: 10.00\u201321.00",
+      "Kamis: 10.00\u201321.00",
+      "Jumat: 10.00\u201321.00",
+      "Sabtu: 10.00\u201321.00",
+      "Minggu: 10.00\u201321.00"
+    ],
+    "businessType": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "contact": {
+      "phone": "(022) 2784978",
+      "website": null
+    },
+    "keywordFoundCount": 0,
+    "keywordMatch": "0 out of 0 reviews mention the keyword.",
+    "negativeReviews": [],
+    "placeId": "ChIJ37FsoxzhaC4RePntVP-5bRQ",
+    "placeName": "Gubug Makan Mang Engking Lembang",
+    "positiveReviews": [],
+    "priceRange": "$$",
+    "rating": 4.4,
+    "totalRatings": 4315
+  }
+}
+2025-06-11 10:50:42,320 - INFO - RESPONSE from [analyze]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "control",
+    "payload": {
+      "state": "$state"
+    }
+  },
+  "result": [
+    {
+      "address": "Jl. Raya Tangkuban Parahu No.KM.1, RW.No.68, Cibogo, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40391, Indonesia",
+      "businessHours": [
+        "Senin: 10.00\u201321.00",
+        "Selasa: 10.00\u201321.00",
+        "Rabu: 10.00\u201321.00",
+        "Kamis: 10.00\u201321.00",
+        "Jumat: 10.00\u201321.00",
+        "Sabtu: 10.00\u201321.00",
+        "Minggu: 10.00\u201321.00"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(022) 2784978",
+        "website": null
+      },
+      "keywordMatch": "0 out of 0 reviews mention the keyword.",
+      "matchPercentage": 75.0,
+      "matchReasoning": "Rating 4.4 below minimum 4.5.",
+      "placeId": "ChIJ37FsoxzhaC4RePntVP-5bRQ",
+      "placeName": "Gubug Makan Mang Engking Lembang",
+      "priceRange": "$$",
+      "rating": 4.4,
+      "strengths": [
+        "High customer satisfaction with a rating of 4.4 from over 4300 reviews.",
+        "Strong match score of 75.0%, indicating good alignment with customer expectations.",
+        "Positive reputation suggests a good quality of food and service."
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "",
+      "totalRatings": 4315,
+      "weaknesses": [
+        "The match score, while decent, indicates there may be areas for improvement.",
+        "Potential for customer fatigue due to a large number of reviews, which may skew perceptions over time.",
+        "Lack of detailed positive and negative summaries may limit understanding of specific strengths and weaknesses."
+      ]
+    },
+    true
+  ],
+  "state": {
+    "leadCount": 4
+  }
+}
+2025-06-11 10:50:42,320 - INFO - REQUEST to [control]
+PAYLOAD:
+{
+  "business_type": "restaurant",
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "leadCount": 4,
+  "location": "lembang bandung",
+  "nextPageToken": "AXQCQNTF3nb_8j0-EoB_Y_ljZccBBYhCVx5T1f8KkL7Xedsk1_nE67FQaT_PfLoIXLSdSTBVdaDPMgOloJt2llqQxZqKLEAQemSPd_STNbP9BrA9y8yd98VV21fUx1MZv7fPWDXZ8I3JWyOa5M9XGk-VVJJX_j3rV8ASeq_chF4HWu8CcNgJi2yDoLvizL44x3NqwOWEjnQ-uGY4ntKu7BlviVo-tKie4iGP75b1UgPvdL2_q8bnDQ0KKnJGQ9_B-P6oG3b--AONNJoYeN_NHAwQjp4udN21Wma4j_vVNvugauVk-nmi4J5tYOOLYhFwt8d4SOgP7PRYEo-DEd44Hz_l_Tav2m-JpiJxr6Tk8uV34QZZRBBx1Eta9KFLyY4ZDuOokikjMJiSY7kTzuzKKEC6w2HsE8H7w95A",
+  "numberOfLeads": 10,
+  "remainingPlaceIds": [
+    "ChIJw8K1qujhaC4RrMzBfVrMDWE",
+    "ChIJKxdgfPXhaC4R7d5WcE1J4Og",
+    "ChIJ3ZWFGp7haC4R54uMRwMFoBI",
+    "ChIJu7-VgQPhaC4Rx7n87RdWOSg",
+    "ChIJg2xKjwPhaC4RzqdKfm1mHWQ",
+    "ChIJf_bhfePgaC4R31thEiIhnWc",
+    "ChIJNf1XRW7haC4R4nOdCUthQEk",
+    "ChIJh-LRFU7haC4R0Mms61x2FFs",
+    "ChIJdUjq01fhaC4R3M61zlA1DSo",
+    "ChIJ1815tznhaC4Rf0IShUpERQs",
+    "ChIJVXM_DT3haC4RotdH7cpfx_0",
+    "ChIJL6qdKTRIaC4RShUgKNkpSN8",
+    "ChIJb68a6zDhaC4RqV_iB1ZdjLM",
+    "ChIJs_AFewDhaC4RyxHtYs4VmLs",
+    "ChIJfRsSy-TgaC4R7S6UEan7BOQ",
+    "ChIJbZ1pCorgaC4RieAvK0RawOM"
+  ],
+  "searchOffset": 20
+}
+2025-06-11 10:50:44,362 - INFO - RESPONSE from [control]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "scrape",
+    "payload": {
+      "constraints": "$state.constraints",
+      "placeId": "ChIJw8K1qujhaC4RrMzBfVrMDWE"
+    }
+  },
+  "result": null,
+  "state": {
+    "remainingPlaceIds": [
+      "ChIJKxdgfPXhaC4R7d5WcE1J4Og",
+      "ChIJ3ZWFGp7haC4R54uMRwMFoBI",
+      "ChIJu7-VgQPhaC4Rx7n87RdWOSg",
+      "ChIJg2xKjwPhaC4RzqdKfm1mHWQ",
+      "ChIJf_bhfePgaC4R31thEiIhnWc",
+      "ChIJNf1XRW7haC4R4nOdCUthQEk",
+      "ChIJh-LRFU7haC4R0Mms61x2FFs",
+      "ChIJdUjq01fhaC4R3M61zlA1DSo",
+      "ChIJ1815tznhaC4Rf0IShUpERQs",
+      "ChIJVXM_DT3haC4RotdH7cpfx_0",
+      "ChIJL6qdKTRIaC4RShUgKNkpSN8",
+      "ChIJb68a6zDhaC4RqV_iB1ZdjLM",
+      "ChIJs_AFewDhaC4RyxHtYs4VmLs",
+      "ChIJfRsSy-TgaC4R7S6UEan7BOQ",
+      "ChIJbZ1pCorgaC4RieAvK0RawOM"
+    ]
+  }
+}
+2025-06-11 10:50:44,362 - INFO - REQUEST to [scrape]
+PAYLOAD:
+{
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "placeId": "ChIJw8K1qujhaC4RrMzBfVrMDWE"
+}
+2025-06-11 10:50:51,644 - INFO - RESPONSE from [scrape]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "analyze",
+    "payload": {
+      "constraints": "$state.constraints",
+      "leadCount": "$state.leadCount",
+      "placeDetails": {
+        "address": "Jl. Raya Lembang No.191, Jayagiri, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40391, Indonesia",
+        "businessHours": [
+          "Senin: 10.00\u201322.00",
+          "Selasa: 10.00\u201322.00",
+          "Rabu: 10.00\u201322.00",
+          "Kamis: 10.00\u201322.00",
+          "Jumat: 10.00\u201322.00",
+          "Sabtu: 10.00\u201322.00",
+          "Minggu: 10.00\u201322.00"
+        ],
+        "businessType": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "contact": {
+          "phone": "0822-9555-9496",
+          "website": "https://www.alasdaun.com/Lembang"
+        },
+        "keywordFoundCount": 0,
+        "keywordMatch": "0 out of 0 reviews mention the keyword.",
+        "negativeReviews": [],
+        "placeId": "ChIJw8K1qujhaC4RrMzBfVrMDWE",
+        "placeName": "RM Alas Daun Lembang",
+        "positiveReviews": [],
+        "priceRange": "",
+        "rating": 4.5,
+        "totalRatings": 438
+      }
+    }
+  },
+  "result": null,
+  "state": null
+}
+2025-06-11 10:50:51,646 - INFO - REQUEST to [analyze]
+PAYLOAD:
+{
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "leadCount": 4,
+  "placeDetails": {
+    "address": "Jl. Raya Lembang No.191, Jayagiri, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40391, Indonesia",
+    "businessHours": [
+      "Senin: 10.00\u201322.00",
+      "Selasa: 10.00\u201322.00",
+      "Rabu: 10.00\u201322.00",
+      "Kamis: 10.00\u201322.00",
+      "Jumat: 10.00\u201322.00",
+      "Sabtu: 10.00\u201322.00",
+      "Minggu: 10.00\u201322.00"
+    ],
+    "businessType": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "contact": {
+      "phone": "0822-9555-9496",
+      "website": "https://www.alasdaun.com/Lembang"
+    },
+    "keywordFoundCount": 0,
+    "keywordMatch": "0 out of 0 reviews mention the keyword.",
+    "negativeReviews": [],
+    "placeId": "ChIJw8K1qujhaC4RrMzBfVrMDWE",
+    "placeName": "RM Alas Daun Lembang",
+    "positiveReviews": [],
+    "priceRange": "",
+    "rating": 4.5,
+    "totalRatings": 438
+  }
+}
+2025-06-11 10:50:56,084 - INFO - RESPONSE from [analyze]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "control",
+    "payload": {
+      "state": "$state"
+    }
+  },
+  "result": [
+    {
+      "address": "Jl. Raya Lembang No.191, Jayagiri, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40391, Indonesia",
+      "businessHours": [
+        "Senin: 10.00\u201322.00",
+        "Selasa: 10.00\u201322.00",
+        "Rabu: 10.00\u201322.00",
+        "Kamis: 10.00\u201322.00",
+        "Jumat: 10.00\u201322.00",
+        "Sabtu: 10.00\u201322.00",
+        "Minggu: 10.00\u201322.00"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "0822-9555-9496",
+        "website": "https://www.alasdaun.com/Lembang"
+      },
+      "keywordMatch": "0 out of 0 reviews mention the keyword.",
+      "matchPercentage": 100.0,
+      "matchReasoning": "Meets primary criteria.",
+      "placeId": "ChIJw8K1qujhaC4RrMzBfVrMDWE",
+      "placeName": "RM Alas Daun Lembang",
+      "priceRange": "",
+      "rating": 4.5,
+      "strengths": [
+        "High rating of 4.5 signifies strong customer satisfaction.",
+        "Perfect match score of 100.0% indicates excellent service alignment with customer preferences.",
+        "A substantial number of reviews (438) suggests a solid customer base and trust in the brand."
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "",
+      "totalRatings": 438,
+      "weaknesses": [
+        "Lack of specific positive and negative summary details makes it challenging to identify precise strengths and areas for improvement.",
+        "With a high volume of reviews, any single negative experience could disproportionately affect the overall perception."
+      ]
+    },
+    true
+  ],
+  "state": {
+    "leadCount": 5
+  }
+}
+2025-06-11 10:50:56,084 - INFO - REQUEST to [control]
+PAYLOAD:
+{
+  "business_type": "restaurant",
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "leadCount": 5,
+  "location": "lembang bandung",
+  "nextPageToken": "AXQCQNTF3nb_8j0-EoB_Y_ljZccBBYhCVx5T1f8KkL7Xedsk1_nE67FQaT_PfLoIXLSdSTBVdaDPMgOloJt2llqQxZqKLEAQemSPd_STNbP9BrA9y8yd98VV21fUx1MZv7fPWDXZ8I3JWyOa5M9XGk-VVJJX_j3rV8ASeq_chF4HWu8CcNgJi2yDoLvizL44x3NqwOWEjnQ-uGY4ntKu7BlviVo-tKie4iGP75b1UgPvdL2_q8bnDQ0KKnJGQ9_B-P6oG3b--AONNJoYeN_NHAwQjp4udN21Wma4j_vVNvugauVk-nmi4J5tYOOLYhFwt8d4SOgP7PRYEo-DEd44Hz_l_Tav2m-JpiJxr6Tk8uV34QZZRBBx1Eta9KFLyY4ZDuOokikjMJiSY7kTzuzKKEC6w2HsE8H7w95A",
+  "numberOfLeads": 10,
+  "remainingPlaceIds": [
+    "ChIJKxdgfPXhaC4R7d5WcE1J4Og",
+    "ChIJ3ZWFGp7haC4R54uMRwMFoBI",
+    "ChIJu7-VgQPhaC4Rx7n87RdWOSg",
+    "ChIJg2xKjwPhaC4RzqdKfm1mHWQ",
+    "ChIJf_bhfePgaC4R31thEiIhnWc",
+    "ChIJNf1XRW7haC4R4nOdCUthQEk",
+    "ChIJh-LRFU7haC4R0Mms61x2FFs",
+    "ChIJdUjq01fhaC4R3M61zlA1DSo",
+    "ChIJ1815tznhaC4Rf0IShUpERQs",
+    "ChIJVXM_DT3haC4RotdH7cpfx_0",
+    "ChIJL6qdKTRIaC4RShUgKNkpSN8",
+    "ChIJb68a6zDhaC4RqV_iB1ZdjLM",
+    "ChIJs_AFewDhaC4RyxHtYs4VmLs",
+    "ChIJfRsSy-TgaC4R7S6UEan7BOQ",
+    "ChIJbZ1pCorgaC4RieAvK0RawOM"
+  ],
+  "searchOffset": 20
+}
+2025-06-11 10:50:58,120 - INFO - RESPONSE from [control]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "scrape",
+    "payload": {
+      "constraints": "$state.constraints",
+      "placeId": "ChIJKxdgfPXhaC4R7d5WcE1J4Og"
+    }
+  },
+  "result": null,
+  "state": {
+    "remainingPlaceIds": [
+      "ChIJ3ZWFGp7haC4R54uMRwMFoBI",
+      "ChIJu7-VgQPhaC4Rx7n87RdWOSg",
+      "ChIJg2xKjwPhaC4RzqdKfm1mHWQ",
+      "ChIJf_bhfePgaC4R31thEiIhnWc",
+      "ChIJNf1XRW7haC4R4nOdCUthQEk",
+      "ChIJh-LRFU7haC4R0Mms61x2FFs",
+      "ChIJdUjq01fhaC4R3M61zlA1DSo",
+      "ChIJ1815tznhaC4Rf0IShUpERQs",
+      "ChIJVXM_DT3haC4RotdH7cpfx_0",
+      "ChIJL6qdKTRIaC4RShUgKNkpSN8",
+      "ChIJb68a6zDhaC4RqV_iB1ZdjLM",
+      "ChIJs_AFewDhaC4RyxHtYs4VmLs",
+      "ChIJfRsSy-TgaC4R7S6UEan7BOQ",
+      "ChIJbZ1pCorgaC4RieAvK0RawOM"
+    ]
+  }
+}
+2025-06-11 10:50:58,122 - INFO - REQUEST to [scrape]
+PAYLOAD:
+{
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "placeId": "ChIJKxdgfPXhaC4R7d5WcE1J4Og"
+}
+2025-06-11 10:51:06,334 - INFO - RESPONSE from [scrape]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "analyze",
+    "payload": {
+      "constraints": "$state.constraints",
+      "leadCount": "$state.leadCount",
+      "placeDetails": {
+        "address": "Jl. Raya Tangkuban Parahu, RT.05/RW.07, Cikole, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40391, Indonesia",
+        "businessHours": [
+          "Senin: 08.00\u201320.00",
+          "Selasa: 08.00\u201320.00",
+          "Rabu: 08.00\u201320.00",
+          "Kamis: 08.00\u201320.00",
+          "Jumat: 08.00\u201320.00",
+          "Sabtu: 08.00\u201322.00",
+          "Minggu: 08.00\u201322.00"
+        ],
+        "businessType": [
+          "tourist_attraction",
+          "cafe",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "contact": {
+          "phone": null,
+          "website": "https://www.instagram.com/limasegidipinus/"
+        },
+        "keywordFoundCount": 0,
+        "keywordMatch": "0 out of 0 reviews mention the keyword.",
+        "negativeReviews": [],
+        "placeId": "ChIJKxdgfPXhaC4R7d5WcE1J4Og",
+        "placeName": "Limasegi Dipinus Coffee Cikole Lembang",
+        "positiveReviews": [],
+        "priceRange": "",
+        "rating": 4.9,
+        "totalRatings": 6419
+      }
+    }
+  },
+  "result": null,
+  "state": null
+}
+2025-06-11 10:51:06,334 - INFO - REQUEST to [analyze]
+PAYLOAD:
+{
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "leadCount": 5,
+  "placeDetails": {
+    "address": "Jl. Raya Tangkuban Parahu, RT.05/RW.07, Cikole, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40391, Indonesia",
+    "businessHours": [
+      "Senin: 08.00\u201320.00",
+      "Selasa: 08.00\u201320.00",
+      "Rabu: 08.00\u201320.00",
+      "Kamis: 08.00\u201320.00",
+      "Jumat: 08.00\u201320.00",
+      "Sabtu: 08.00\u201322.00",
+      "Minggu: 08.00\u201322.00"
+    ],
+    "businessType": [
+      "tourist_attraction",
+      "cafe",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "store",
+      "establishment"
+    ],
+    "contact": {
+      "phone": null,
+      "website": "https://www.instagram.com/limasegidipinus/"
+    },
+    "keywordFoundCount": 0,
+    "keywordMatch": "0 out of 0 reviews mention the keyword.",
+    "negativeReviews": [],
+    "placeId": "ChIJKxdgfPXhaC4R7d5WcE1J4Og",
+    "placeName": "Limasegi Dipinus Coffee Cikole Lembang",
+    "positiveReviews": [],
+    "priceRange": "",
+    "rating": 4.9,
+    "totalRatings": 6419
+  }
+}
+2025-06-11 10:51:10,985 - INFO - RESPONSE from [analyze]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "control",
+    "payload": {
+      "state": "$state"
+    }
+  },
+  "result": [
+    {
+      "address": "Jl. Raya Tangkuban Parahu, RT.05/RW.07, Cikole, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40391, Indonesia",
+      "businessHours": [
+        "Senin: 08.00\u201320.00",
+        "Selasa: 08.00\u201320.00",
+        "Rabu: 08.00\u201320.00",
+        "Kamis: 08.00\u201320.00",
+        "Jumat: 08.00\u201320.00",
+        "Sabtu: 08.00\u201322.00",
+        "Minggu: 08.00\u201322.00"
+      ],
+      "businessType": [
+        "tourist_attraction",
+        "cafe",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "contact": {
+        "phone": null,
+        "website": "https://www.instagram.com/limasegidipinus/"
+      },
+      "keywordMatch": "0 out of 0 reviews mention the keyword.",
+      "matchPercentage": 100.0,
+      "matchReasoning": "Meets primary criteria.",
+      "placeId": "ChIJKxdgfPXhaC4R7d5WcE1J4Og",
+      "placeName": "Limasegi Dipinus Coffee Cikole Lembang",
+      "priceRange": "",
+      "rating": 4.9,
+      "strengths": [
+        "High customer satisfaction with a rating of 4.9 from 6419 reviews.",
+        "Perfect match score of 100.0%, indicating strong alignment with customer expectations.",
+        "Strong reputation and positive brand image in the coffee business."
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "",
+      "totalRatings": 6419,
+      "weaknesses": [
+        "Lack of detailed positive and negative summaries may indicate a need for improved feedback collection.",
+        "High ratings could lead to increased customer expectations, creating pressure to maintain quality.",
+        "Potential over-reliance on existing customer base without systematic efforts to attract new customers."
+      ]
+    },
+    true
+  ],
+  "state": {
+    "leadCount": 6
+  }
+}
+2025-06-11 10:51:10,985 - INFO - REQUEST to [control]
+PAYLOAD:
+{
+  "business_type": "restaurant",
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "leadCount": 6,
+  "location": "lembang bandung",
+  "nextPageToken": "AXQCQNTF3nb_8j0-EoB_Y_ljZccBBYhCVx5T1f8KkL7Xedsk1_nE67FQaT_PfLoIXLSdSTBVdaDPMgOloJt2llqQxZqKLEAQemSPd_STNbP9BrA9y8yd98VV21fUx1MZv7fPWDXZ8I3JWyOa5M9XGk-VVJJX_j3rV8ASeq_chF4HWu8CcNgJi2yDoLvizL44x3NqwOWEjnQ-uGY4ntKu7BlviVo-tKie4iGP75b1UgPvdL2_q8bnDQ0KKnJGQ9_B-P6oG3b--AONNJoYeN_NHAwQjp4udN21Wma4j_vVNvugauVk-nmi4J5tYOOLYhFwt8d4SOgP7PRYEo-DEd44Hz_l_Tav2m-JpiJxr6Tk8uV34QZZRBBx1Eta9KFLyY4ZDuOokikjMJiSY7kTzuzKKEC6w2HsE8H7w95A",
+  "numberOfLeads": 10,
+  "remainingPlaceIds": [
+    "ChIJ3ZWFGp7haC4R54uMRwMFoBI",
+    "ChIJu7-VgQPhaC4Rx7n87RdWOSg",
+    "ChIJg2xKjwPhaC4RzqdKfm1mHWQ",
+    "ChIJf_bhfePgaC4R31thEiIhnWc",
+    "ChIJNf1XRW7haC4R4nOdCUthQEk",
+    "ChIJh-LRFU7haC4R0Mms61x2FFs",
+    "ChIJdUjq01fhaC4R3M61zlA1DSo",
+    "ChIJ1815tznhaC4Rf0IShUpERQs",
+    "ChIJVXM_DT3haC4RotdH7cpfx_0",
+    "ChIJL6qdKTRIaC4RShUgKNkpSN8",
+    "ChIJb68a6zDhaC4RqV_iB1ZdjLM",
+    "ChIJs_AFewDhaC4RyxHtYs4VmLs",
+    "ChIJfRsSy-TgaC4R7S6UEan7BOQ",
+    "ChIJbZ1pCorgaC4RieAvK0RawOM"
+  ],
+  "searchOffset": 20
+}
+2025-06-11 10:51:13,031 - INFO - RESPONSE from [control]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "scrape",
+    "payload": {
+      "constraints": "$state.constraints",
+      "placeId": "ChIJ3ZWFGp7haC4R54uMRwMFoBI"
+    }
+  },
+  "result": null,
+  "state": {
+    "remainingPlaceIds": [
+      "ChIJu7-VgQPhaC4Rx7n87RdWOSg",
+      "ChIJg2xKjwPhaC4RzqdKfm1mHWQ",
+      "ChIJf_bhfePgaC4R31thEiIhnWc",
+      "ChIJNf1XRW7haC4R4nOdCUthQEk",
+      "ChIJh-LRFU7haC4R0Mms61x2FFs",
+      "ChIJdUjq01fhaC4R3M61zlA1DSo",
+      "ChIJ1815tznhaC4Rf0IShUpERQs",
+      "ChIJVXM_DT3haC4RotdH7cpfx_0",
+      "ChIJL6qdKTRIaC4RShUgKNkpSN8",
+      "ChIJb68a6zDhaC4RqV_iB1ZdjLM",
+      "ChIJs_AFewDhaC4RyxHtYs4VmLs",
+      "ChIJfRsSy-TgaC4R7S6UEan7BOQ",
+      "ChIJbZ1pCorgaC4RieAvK0RawOM"
+    ]
+  }
+}
+2025-06-11 10:51:13,031 - INFO - REQUEST to [scrape]
+PAYLOAD:
+{
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "placeId": "ChIJ3ZWFGp7haC4R54uMRwMFoBI"
+}
+2025-06-11 10:51:17,651 - INFO - RESPONSE from [scrape]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "analyze",
+    "payload": {
+      "constraints": "$state.constraints",
+      "leadCount": "$state.leadCount",
+      "placeDetails": {
+        "address": "Jl. Raya Lembang No.17, Gudangkahuripan, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40391, Indonesia",
+        "businessHours": [],
+        "businessType": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "contact": {
+          "phone": null,
+          "website": null
+        },
+        "keywordFoundCount": 0,
+        "keywordMatch": "0 out of 0 reviews mention the keyword.",
+        "negativeReviews": [],
+        "placeId": "ChIJ3ZWFGp7haC4R54uMRwMFoBI",
+        "placeName": "Cibiuk Resto Lembang",
+        "positiveReviews": [],
+        "priceRange": "$$",
+        "rating": 4.7,
+        "totalRatings": 936
+      }
+    }
+  },
+  "result": null,
+  "state": null
+}
+2025-06-11 10:51:17,651 - INFO - REQUEST to [analyze]
+PAYLOAD:
+{
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "leadCount": 6,
+  "placeDetails": {
+    "address": "Jl. Raya Lembang No.17, Gudangkahuripan, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40391, Indonesia",
+    "businessHours": [],
+    "businessType": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "contact": {
+      "phone": null,
+      "website": null
+    },
+    "keywordFoundCount": 0,
+    "keywordMatch": "0 out of 0 reviews mention the keyword.",
+    "negativeReviews": [],
+    "placeId": "ChIJ3ZWFGp7haC4R54uMRwMFoBI",
+    "placeName": "Cibiuk Resto Lembang",
+    "positiveReviews": [],
+    "priceRange": "$$",
+    "rating": 4.7,
+    "totalRatings": 936
+  }
+}
+2025-06-11 10:51:22,381 - INFO - RESPONSE from [analyze]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "control",
+    "payload": {
+      "state": "$state"
+    }
+  },
+  "result": [
+    {
+      "address": "Jl. Raya Lembang No.17, Gudangkahuripan, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40391, Indonesia",
+      "businessHours": [],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": null,
+        "website": null
+      },
+      "keywordMatch": "0 out of 0 reviews mention the keyword.",
+      "matchPercentage": 100.0,
+      "matchReasoning": "Meets primary criteria.",
+      "placeId": "ChIJ3ZWFGp7haC4R54uMRwMFoBI",
+      "placeName": "Cibiuk Resto Lembang",
+      "priceRange": "$$",
+      "rating": 4.7,
+      "strengths": [
+        "High customer satisfaction with a rating of 4.7 out of 5 from a substantial number of reviews (936), indicating a strong reputation.",
+        "Perfect match score (100.0%), suggesting that the business meets customer expectations and preferences effectively.",
+        "Potential for strong word-of-mouth referrals and repeat customers due to positive reviews."
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "",
+      "totalRatings": 936,
+      "weaknesses": [
+        "Lack of detailed insights from positive and negative summaries, making it hard to identify specific areas for improvement or customer concerns.",
+        "The reliance on online reviews indicates a need for consistent quality and service to maintain the high rating."
+      ]
+    },
+    true
+  ],
+  "state": {
+    "leadCount": 7
+  }
+}
+2025-06-11 10:51:22,381 - INFO - REQUEST to [control]
+PAYLOAD:
+{
+  "business_type": "restaurant",
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "leadCount": 7,
+  "location": "lembang bandung",
+  "nextPageToken": "AXQCQNTF3nb_8j0-EoB_Y_ljZccBBYhCVx5T1f8KkL7Xedsk1_nE67FQaT_PfLoIXLSdSTBVdaDPMgOloJt2llqQxZqKLEAQemSPd_STNbP9BrA9y8yd98VV21fUx1MZv7fPWDXZ8I3JWyOa5M9XGk-VVJJX_j3rV8ASeq_chF4HWu8CcNgJi2yDoLvizL44x3NqwOWEjnQ-uGY4ntKu7BlviVo-tKie4iGP75b1UgPvdL2_q8bnDQ0KKnJGQ9_B-P6oG3b--AONNJoYeN_NHAwQjp4udN21Wma4j_vVNvugauVk-nmi4J5tYOOLYhFwt8d4SOgP7PRYEo-DEd44Hz_l_Tav2m-JpiJxr6Tk8uV34QZZRBBx1Eta9KFLyY4ZDuOokikjMJiSY7kTzuzKKEC6w2HsE8H7w95A",
+  "numberOfLeads": 10,
+  "remainingPlaceIds": [
+    "ChIJu7-VgQPhaC4Rx7n87RdWOSg",
+    "ChIJg2xKjwPhaC4RzqdKfm1mHWQ",
+    "ChIJf_bhfePgaC4R31thEiIhnWc",
+    "ChIJNf1XRW7haC4R4nOdCUthQEk",
+    "ChIJh-LRFU7haC4R0Mms61x2FFs",
+    "ChIJdUjq01fhaC4R3M61zlA1DSo",
+    "ChIJ1815tznhaC4Rf0IShUpERQs",
+    "ChIJVXM_DT3haC4RotdH7cpfx_0",
+    "ChIJL6qdKTRIaC4RShUgKNkpSN8",
+    "ChIJb68a6zDhaC4RqV_iB1ZdjLM",
+    "ChIJs_AFewDhaC4RyxHtYs4VmLs",
+    "ChIJfRsSy-TgaC4R7S6UEan7BOQ",
+    "ChIJbZ1pCorgaC4RieAvK0RawOM"
+  ],
+  "searchOffset": 20
+}
+2025-06-11 10:51:24,418 - INFO - RESPONSE from [control]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "scrape",
+    "payload": {
+      "constraints": "$state.constraints",
+      "placeId": "ChIJu7-VgQPhaC4Rx7n87RdWOSg"
+    }
+  },
+  "result": null,
+  "state": {
+    "remainingPlaceIds": [
+      "ChIJg2xKjwPhaC4RzqdKfm1mHWQ",
+      "ChIJf_bhfePgaC4R31thEiIhnWc",
+      "ChIJNf1XRW7haC4R4nOdCUthQEk",
+      "ChIJh-LRFU7haC4R0Mms61x2FFs",
+      "ChIJdUjq01fhaC4R3M61zlA1DSo",
+      "ChIJ1815tznhaC4Rf0IShUpERQs",
+      "ChIJVXM_DT3haC4RotdH7cpfx_0",
+      "ChIJL6qdKTRIaC4RShUgKNkpSN8",
+      "ChIJb68a6zDhaC4RqV_iB1ZdjLM",
+      "ChIJs_AFewDhaC4RyxHtYs4VmLs",
+      "ChIJfRsSy-TgaC4R7S6UEan7BOQ",
+      "ChIJbZ1pCorgaC4RieAvK0RawOM"
+    ]
+  }
+}
+2025-06-11 10:51:24,418 - INFO - REQUEST to [scrape]
+PAYLOAD:
+{
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "placeId": "ChIJu7-VgQPhaC4Rx7n87RdWOSg"
+}
+2025-06-11 10:51:30,683 - INFO - RESPONSE from [scrape]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "analyze",
+    "payload": {
+      "constraints": "$state.constraints",
+      "leadCount": "$state.leadCount",
+      "placeDetails": {
+        "address": "Jl. Raya Lembang No.233, Jayagiri, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40391, Indonesia",
+        "businessHours": [
+          "Senin: 08.00\u201320.00",
+          "Selasa: 08.00\u201320.00",
+          "Rabu: 08.00\u201320.00",
+          "Kamis: 08.00\u201320.00",
+          "Jumat: 08.00\u201320.00",
+          "Sabtu: 08.00\u201320.00",
+          "Minggu: 08.00\u201320.00"
+        ],
+        "businessType": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "contact": {
+          "phone": "(022) 2786087",
+          "website": null
+        },
+        "keywordFoundCount": 0,
+        "keywordMatch": "0 out of 0 reviews mention the keyword.",
+        "negativeReviews": [],
+        "placeId": "ChIJu7-VgQPhaC4Rx7n87RdWOSg",
+        "placeName": "Restaurant Lembang",
+        "positiveReviews": [],
+        "priceRange": "$$",
+        "rating": 4.5,
+        "totalRatings": 426
+      }
+    }
+  },
+  "result": null,
+  "state": null
+}
+2025-06-11 10:51:30,683 - INFO - REQUEST to [analyze]
+PAYLOAD:
+{
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "leadCount": 7,
+  "placeDetails": {
+    "address": "Jl. Raya Lembang No.233, Jayagiri, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40391, Indonesia",
+    "businessHours": [
+      "Senin: 08.00\u201320.00",
+      "Selasa: 08.00\u201320.00",
+      "Rabu: 08.00\u201320.00",
+      "Kamis: 08.00\u201320.00",
+      "Jumat: 08.00\u201320.00",
+      "Sabtu: 08.00\u201320.00",
+      "Minggu: 08.00\u201320.00"
+    ],
+    "businessType": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "contact": {
+      "phone": "(022) 2786087",
+      "website": null
+    },
+    "keywordFoundCount": 0,
+    "keywordMatch": "0 out of 0 reviews mention the keyword.",
+    "negativeReviews": [],
+    "placeId": "ChIJu7-VgQPhaC4Rx7n87RdWOSg",
+    "placeName": "Restaurant Lembang",
+    "positiveReviews": [],
+    "priceRange": "$$",
+    "rating": 4.5,
+    "totalRatings": 426
+  }
+}
+2025-06-11 10:51:35,300 - INFO - RESPONSE from [analyze]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "control",
+    "payload": {
+      "state": "$state"
+    }
+  },
+  "result": [
+    {
+      "address": "Jl. Raya Lembang No.233, Jayagiri, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40391, Indonesia",
+      "businessHours": [
+        "Senin: 08.00\u201320.00",
+        "Selasa: 08.00\u201320.00",
+        "Rabu: 08.00\u201320.00",
+        "Kamis: 08.00\u201320.00",
+        "Jumat: 08.00\u201320.00",
+        "Sabtu: 08.00\u201320.00",
+        "Minggu: 08.00\u201320.00"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(022) 2786087",
+        "website": null
+      },
+      "keywordMatch": "0 out of 0 reviews mention the keyword.",
+      "matchPercentage": 100.0,
+      "matchReasoning": "Meets primary criteria.",
+      "placeId": "ChIJu7-VgQPhaC4Rx7n87RdWOSg",
+      "placeName": "Restaurant Lembang",
+      "priceRange": "$$",
+      "rating": 4.5,
+      "strengths": [
+        "High customer satisfaction with a rating of 4.5 from 426 reviews.",
+        "Perfect match score of 100.0% indicating strong alignment with customer expectations.",
+        "Positive reputation likely attracting more patrons."
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "",
+      "totalRatings": 426,
+      "weaknesses": [
+        "Lack of detailed positive and negative summaries may indicate incomplete insight into specific customer feedback.",
+        "Potential over-reliance on reviews without qualitative metrics to address areas needing improvement."
+      ]
+    },
+    true
+  ],
+  "state": {
+    "leadCount": 8
+  }
+}
+2025-06-11 10:51:35,300 - INFO - REQUEST to [control]
+PAYLOAD:
+{
+  "business_type": "restaurant",
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "leadCount": 8,
+  "location": "lembang bandung",
+  "nextPageToken": "AXQCQNTF3nb_8j0-EoB_Y_ljZccBBYhCVx5T1f8KkL7Xedsk1_nE67FQaT_PfLoIXLSdSTBVdaDPMgOloJt2llqQxZqKLEAQemSPd_STNbP9BrA9y8yd98VV21fUx1MZv7fPWDXZ8I3JWyOa5M9XGk-VVJJX_j3rV8ASeq_chF4HWu8CcNgJi2yDoLvizL44x3NqwOWEjnQ-uGY4ntKu7BlviVo-tKie4iGP75b1UgPvdL2_q8bnDQ0KKnJGQ9_B-P6oG3b--AONNJoYeN_NHAwQjp4udN21Wma4j_vVNvugauVk-nmi4J5tYOOLYhFwt8d4SOgP7PRYEo-DEd44Hz_l_Tav2m-JpiJxr6Tk8uV34QZZRBBx1Eta9KFLyY4ZDuOokikjMJiSY7kTzuzKKEC6w2HsE8H7w95A",
+  "numberOfLeads": 10,
+  "remainingPlaceIds": [
+    "ChIJg2xKjwPhaC4RzqdKfm1mHWQ",
+    "ChIJf_bhfePgaC4R31thEiIhnWc",
+    "ChIJNf1XRW7haC4R4nOdCUthQEk",
+    "ChIJh-LRFU7haC4R0Mms61x2FFs",
+    "ChIJdUjq01fhaC4R3M61zlA1DSo",
+    "ChIJ1815tznhaC4Rf0IShUpERQs",
+    "ChIJVXM_DT3haC4RotdH7cpfx_0",
+    "ChIJL6qdKTRIaC4RShUgKNkpSN8",
+    "ChIJb68a6zDhaC4RqV_iB1ZdjLM",
+    "ChIJs_AFewDhaC4RyxHtYs4VmLs",
+    "ChIJfRsSy-TgaC4R7S6UEan7BOQ",
+    "ChIJbZ1pCorgaC4RieAvK0RawOM"
+  ],
+  "searchOffset": 20
+}
+2025-06-11 10:51:37,338 - INFO - RESPONSE from [control]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "scrape",
+    "payload": {
+      "constraints": "$state.constraints",
+      "placeId": "ChIJg2xKjwPhaC4RzqdKfm1mHWQ"
+    }
+  },
+  "result": null,
+  "state": {
+    "remainingPlaceIds": [
+      "ChIJf_bhfePgaC4R31thEiIhnWc",
+      "ChIJNf1XRW7haC4R4nOdCUthQEk",
+      "ChIJh-LRFU7haC4R0Mms61x2FFs",
+      "ChIJdUjq01fhaC4R3M61zlA1DSo",
+      "ChIJ1815tznhaC4Rf0IShUpERQs",
+      "ChIJVXM_DT3haC4RotdH7cpfx_0",
+      "ChIJL6qdKTRIaC4RShUgKNkpSN8",
+      "ChIJb68a6zDhaC4RqV_iB1ZdjLM",
+      "ChIJs_AFewDhaC4RyxHtYs4VmLs",
+      "ChIJfRsSy-TgaC4R7S6UEan7BOQ",
+      "ChIJbZ1pCorgaC4RieAvK0RawOM"
+    ]
+  }
+}
+2025-06-11 10:51:37,338 - INFO - REQUEST to [scrape]
+PAYLOAD:
+{
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "placeId": "ChIJg2xKjwPhaC4RzqdKfm1mHWQ"
+}
+2025-06-11 10:51:44,559 - INFO - RESPONSE from [scrape]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "analyze",
+    "payload": {
+      "constraints": "$state.constraints",
+      "leadCount": "$state.leadCount",
+      "placeDetails": {
+        "address": "Jl. Raya Lembang No.249, Jayagiri, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40391, Indonesia",
+        "businessHours": [
+          "Senin: 11.00\u201320.00",
+          "Selasa: 11.00\u201320.00",
+          "Rabu: 11.00\u201320.00",
+          "Kamis: 11.00\u201320.00",
+          "Jumat: 11.00\u201320.00",
+          "Sabtu: 11.00\u201320.00",
+          "Minggu: 11.00\u201320.00"
+        ],
+        "businessType": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "contact": {
+          "phone": null,
+          "website": "http://www.instagram.com/mandarinrestoran.lembang"
+        },
+        "keywordFoundCount": 0,
+        "keywordMatch": "0 out of 0 reviews mention the keyword.",
+        "negativeReviews": [],
+        "placeId": "ChIJg2xKjwPhaC4RzqdKfm1mHWQ",
+        "placeName": "Restoran Mandarin",
+        "positiveReviews": [],
+        "priceRange": "$$",
+        "rating": 4.4,
+        "totalRatings": 2225
+      }
+    }
+  },
+  "result": null,
+  "state": null
+}
+2025-06-11 10:51:44,559 - INFO - REQUEST to [analyze]
+PAYLOAD:
+{
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "leadCount": 8,
+  "placeDetails": {
+    "address": "Jl. Raya Lembang No.249, Jayagiri, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40391, Indonesia",
+    "businessHours": [
+      "Senin: 11.00\u201320.00",
+      "Selasa: 11.00\u201320.00",
+      "Rabu: 11.00\u201320.00",
+      "Kamis: 11.00\u201320.00",
+      "Jumat: 11.00\u201320.00",
+      "Sabtu: 11.00\u201320.00",
+      "Minggu: 11.00\u201320.00"
+    ],
+    "businessType": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "contact": {
+      "phone": null,
+      "website": "http://www.instagram.com/mandarinrestoran.lembang"
+    },
+    "keywordFoundCount": 0,
+    "keywordMatch": "0 out of 0 reviews mention the keyword.",
+    "negativeReviews": [],
+    "placeId": "ChIJg2xKjwPhaC4RzqdKfm1mHWQ",
+    "placeName": "Restoran Mandarin",
+    "positiveReviews": [],
+    "priceRange": "$$",
+    "rating": 4.4,
+    "totalRatings": 2225
+  }
+}
+2025-06-11 10:51:50,265 - INFO - RESPONSE from [analyze]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "control",
+    "payload": {
+      "state": "$state"
+    }
+  },
+  "result": [
+    {
+      "address": "Jl. Raya Lembang No.249, Jayagiri, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40391, Indonesia",
+      "businessHours": [
+        "Senin: 11.00\u201320.00",
+        "Selasa: 11.00\u201320.00",
+        "Rabu: 11.00\u201320.00",
+        "Kamis: 11.00\u201320.00",
+        "Jumat: 11.00\u201320.00",
+        "Sabtu: 11.00\u201320.00",
+        "Minggu: 11.00\u201320.00"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": null,
+        "website": "http://www.instagram.com/mandarinrestoran.lembang"
+      },
+      "keywordMatch": "0 out of 0 reviews mention the keyword.",
+      "matchPercentage": 75.0,
+      "matchReasoning": "Rating 4.4 below minimum 4.5.",
+      "placeId": "ChIJg2xKjwPhaC4RzqdKfm1mHWQ",
+      "placeName": "Restoran Mandarin",
+      "priceRange": "$$",
+      "rating": 4.4,
+      "strengths": [
+        "High customer rating of 4.4, indicating overall satisfaction.",
+        "Significant number of reviews (2225), suggesting a solid customer base and trust.",
+        "Match score of 75.0% indicates a strong alignment with customer expectations."
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "",
+      "totalRatings": 2225,
+      "weaknesses": [
+        "Lack of a clear positive summary may indicate inconsistencies in service or offerings.",
+        "Absence of a negative summary can be a missed opportunity to address specific issues.",
+        "A match score of 75.0% suggests there is room for improvement in meeting customer preferences."
+      ]
+    },
+    true
+  ],
+  "state": {
+    "leadCount": 9
+  }
+}
+2025-06-11 10:51:50,272 - INFO - REQUEST to [control]
+PAYLOAD:
+{
+  "business_type": "restaurant",
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "leadCount": 9,
+  "location": "lembang bandung",
+  "nextPageToken": "AXQCQNTF3nb_8j0-EoB_Y_ljZccBBYhCVx5T1f8KkL7Xedsk1_nE67FQaT_PfLoIXLSdSTBVdaDPMgOloJt2llqQxZqKLEAQemSPd_STNbP9BrA9y8yd98VV21fUx1MZv7fPWDXZ8I3JWyOa5M9XGk-VVJJX_j3rV8ASeq_chF4HWu8CcNgJi2yDoLvizL44x3NqwOWEjnQ-uGY4ntKu7BlviVo-tKie4iGP75b1UgPvdL2_q8bnDQ0KKnJGQ9_B-P6oG3b--AONNJoYeN_NHAwQjp4udN21Wma4j_vVNvugauVk-nmi4J5tYOOLYhFwt8d4SOgP7PRYEo-DEd44Hz_l_Tav2m-JpiJxr6Tk8uV34QZZRBBx1Eta9KFLyY4ZDuOokikjMJiSY7kTzuzKKEC6w2HsE8H7w95A",
+  "numberOfLeads": 10,
+  "remainingPlaceIds": [
+    "ChIJf_bhfePgaC4R31thEiIhnWc",
+    "ChIJNf1XRW7haC4R4nOdCUthQEk",
+    "ChIJh-LRFU7haC4R0Mms61x2FFs",
+    "ChIJdUjq01fhaC4R3M61zlA1DSo",
+    "ChIJ1815tznhaC4Rf0IShUpERQs",
+    "ChIJVXM_DT3haC4RotdH7cpfx_0",
+    "ChIJL6qdKTRIaC4RShUgKNkpSN8",
+    "ChIJb68a6zDhaC4RqV_iB1ZdjLM",
+    "ChIJs_AFewDhaC4RyxHtYs4VmLs",
+    "ChIJfRsSy-TgaC4R7S6UEan7BOQ",
+    "ChIJbZ1pCorgaC4RieAvK0RawOM"
+  ],
+  "searchOffset": 20
+}
+2025-06-11 10:51:52,292 - INFO - RESPONSE from [control]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "scrape",
+    "payload": {
+      "constraints": "$state.constraints",
+      "placeId": "ChIJf_bhfePgaC4R31thEiIhnWc"
+    }
+  },
+  "result": null,
+  "state": {
+    "remainingPlaceIds": [
+      "ChIJNf1XRW7haC4R4nOdCUthQEk",
+      "ChIJh-LRFU7haC4R0Mms61x2FFs",
+      "ChIJdUjq01fhaC4R3M61zlA1DSo",
+      "ChIJ1815tznhaC4Rf0IShUpERQs",
+      "ChIJVXM_DT3haC4RotdH7cpfx_0",
+      "ChIJL6qdKTRIaC4RShUgKNkpSN8",
+      "ChIJb68a6zDhaC4RqV_iB1ZdjLM",
+      "ChIJs_AFewDhaC4RyxHtYs4VmLs",
+      "ChIJfRsSy-TgaC4R7S6UEan7BOQ",
+      "ChIJbZ1pCorgaC4RieAvK0RawOM"
+    ]
+  }
+}
+2025-06-11 10:51:52,292 - INFO - REQUEST to [scrape]
+PAYLOAD:
+{
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "placeId": "ChIJf_bhfePgaC4R31thEiIhnWc"
+}
+2025-06-11 10:51:58,292 - INFO - RESPONSE from [scrape]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "analyze",
+    "payload": {
+      "constraints": "$state.constraints",
+      "leadCount": "$state.leadCount",
+      "placeDetails": {
+        "address": "Jl. Wira No.22, Lembang, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40115, Indonesia",
+        "businessHours": [
+          "Senin: 07.00\u201319.00",
+          "Selasa: 07.00\u201319.00",
+          "Rabu: 07.00\u201319.00",
+          "Kamis: 07.00\u201319.00",
+          "Jumat: 07.00\u201319.00",
+          "Sabtu: 07.00\u201319.00",
+          "Minggu: 07.00\u201319.00"
+        ],
+        "businessType": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "contact": {
+          "phone": "(022) 2786042",
+          "website": null
+        },
+        "keywordFoundCount": 0,
+        "keywordMatch": "0 out of 0 reviews mention the keyword.",
+        "negativeReviews": [],
+        "placeId": "ChIJf_bhfePgaC4R31thEiIhnWc",
+        "placeName": "Restoran Rumah Kayu",
+        "positiveReviews": [],
+        "priceRange": "$$",
+        "rating": 4.4,
+        "totalRatings": 1919
+      }
+    }
+  },
+  "result": null,
+  "state": null
+}
+2025-06-11 10:51:58,292 - INFO - REQUEST to [analyze]
+PAYLOAD:
+{
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "leadCount": 9,
+  "placeDetails": {
+    "address": "Jl. Wira No.22, Lembang, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40115, Indonesia",
+    "businessHours": [
+      "Senin: 07.00\u201319.00",
+      "Selasa: 07.00\u201319.00",
+      "Rabu: 07.00\u201319.00",
+      "Kamis: 07.00\u201319.00",
+      "Jumat: 07.00\u201319.00",
+      "Sabtu: 07.00\u201319.00",
+      "Minggu: 07.00\u201319.00"
+    ],
+    "businessType": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "contact": {
+      "phone": "(022) 2786042",
+      "website": null
+    },
+    "keywordFoundCount": 0,
+    "keywordMatch": "0 out of 0 reviews mention the keyword.",
+    "negativeReviews": [],
+    "placeId": "ChIJf_bhfePgaC4R31thEiIhnWc",
+    "placeName": "Restoran Rumah Kayu",
+    "positiveReviews": [],
+    "priceRange": "$$",
+    "rating": 4.4,
+    "totalRatings": 1919
+  }
+}
+2025-06-11 10:52:02,176 - INFO - RESPONSE from [analyze]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "control",
+    "payload": {
+      "state": "$state"
+    }
+  },
+  "result": [
+    {
+      "address": "Jl. Wira No.22, Lembang, Kec. Lembang, Kabupaten Bandung Barat, Jawa Barat 40115, Indonesia",
+      "businessHours": [
+        "Senin: 07.00\u201319.00",
+        "Selasa: 07.00\u201319.00",
+        "Rabu: 07.00\u201319.00",
+        "Kamis: 07.00\u201319.00",
+        "Jumat: 07.00\u201319.00",
+        "Sabtu: 07.00\u201319.00",
+        "Minggu: 07.00\u201319.00"
+      ],
+      "businessType": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "contact": {
+        "phone": "(022) 2786042",
+        "website": null
+      },
+      "keywordMatch": "0 out of 0 reviews mention the keyword.",
+      "matchPercentage": 75.0,
+      "matchReasoning": "Rating 4.4 below minimum 4.5.",
+      "placeId": "ChIJf_bhfePgaC4R31thEiIhnWc",
+      "placeName": "Restoran Rumah Kayu",
+      "priceRange": "$$",
+      "rating": 4.4,
+      "strengths": [
+        "Strong customer rating of 4.4 from a significant number of reviews (1919), indicating high satisfaction.",
+        "Match score of 75.0% suggests a good alignment with customer expectations and preferences."
+      ],
+      "summaryNegative": "",
+      "summaryPositive": "",
+      "totalRatings": 1919,
+      "weaknesses": [
+        "The absence of a detailed positive summary may indicate a lack of clearly identified unique selling points.",
+        "The lack of negative summary could suggest areas of improvement are not being acknowledged or communicated effectively."
+      ]
+    },
+    true
+  ],
+  "state": {
+    "leadCount": 10
+  }
+}
+2025-06-11 10:52:02,176 - INFO - REQUEST to [control]
+PAYLOAD:
+{
+  "business_type": "restaurant",
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "",
+    "max_reviews": null,
+    "min_rating": 4.5,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "leadCount": 10,
+  "location": "lembang bandung",
+  "nextPageToken": "AXQCQNTF3nb_8j0-EoB_Y_ljZccBBYhCVx5T1f8KkL7Xedsk1_nE67FQaT_PfLoIXLSdSTBVdaDPMgOloJt2llqQxZqKLEAQemSPd_STNbP9BrA9y8yd98VV21fUx1MZv7fPWDXZ8I3JWyOa5M9XGk-VVJJX_j3rV8ASeq_chF4HWu8CcNgJi2yDoLvizL44x3NqwOWEjnQ-uGY4ntKu7BlviVo-tKie4iGP75b1UgPvdL2_q8bnDQ0KKnJGQ9_B-P6oG3b--AONNJoYeN_NHAwQjp4udN21Wma4j_vVNvugauVk-nmi4J5tYOOLYhFwt8d4SOgP7PRYEo-DEd44Hz_l_Tav2m-JpiJxr6Tk8uV34QZZRBBx1Eta9KFLyY4ZDuOokikjMJiSY7kTzuzKKEC6w2HsE8H7w95A",
+  "numberOfLeads": 10,
+  "remainingPlaceIds": [
+    "ChIJNf1XRW7haC4R4nOdCUthQEk",
+    "ChIJh-LRFU7haC4R0Mms61x2FFs",
+    "ChIJdUjq01fhaC4R3M61zlA1DSo",
+    "ChIJ1815tznhaC4Rf0IShUpERQs",
+    "ChIJVXM_DT3haC4RotdH7cpfx_0",
+    "ChIJL6qdKTRIaC4RShUgKNkpSN8",
+    "ChIJb68a6zDhaC4RqV_iB1ZdjLM",
+    "ChIJs_AFewDhaC4RyxHtYs4VmLs",
+    "ChIJfRsSy-TgaC4R7S6UEan7BOQ",
+    "ChIJbZ1pCorgaC4RieAvK0RawOM"
+  ],
+  "searchOffset": 20
+}
+2025-06-11 10:52:04,212 - INFO - RESPONSE from [control]
+BODY:
+{
+  "done": true,
+  "error": null,
+  "next": null,
+  "result": null,
+  "state": null
+}

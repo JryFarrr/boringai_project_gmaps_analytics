@@ -122,4 +122,4 @@ class Analyzer:
             meets_constraints = False
 
 
-        return analysis_result, meets_constraints
+        return analysis_result, meets_constraints 

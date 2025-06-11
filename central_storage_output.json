@@ -1,44 +1,37 @@
 {
-  "$id": "e4f074b9-f5cb-4472-bc77-8ede388364ba",
+  "$id": "84ba3214-7ed5-46d8-be52-fd8682261d97",
   "$state": {
     "business_type": "restaurant",
     "constraints": {
-      "business_hours": "9 AM - 10 PM",
-      "keywords": "terjangkau",
-      "max_reviews": 50,
+      "business_hours": "anytime",
+      "keywords": "",
+      "max_reviews": null,
       "min_rating": 4.5,
-      "min_reviews": 30,
-      "price_range": "$"
+      "min_reviews": 0,
+      "price_range": ""
     },
-    "leadCount": 23,
-    "location": "Jakarta Selatan",
-    "nextPageToken": "AXQCQNTDBdksL8CiUvZ-vcYUKg9NgfvObUY2J4drWpz-jLsB-LQl6yArDrlMO5zrW7vnJ00eRgHeMcsFO_QE_PK-r8nq6x-BMxBfqe29yjSp3JzD_3mUQqUsCTrwr7uZruJyh-OjaecYThQp-QkkFA4NLbOR_a1Fa9s88G61pbkaWm2_BM2M2MlUndG8QTIhY9u6S6H1PMzEm1vU7oNFJNH7RuC8f_805KD8094UvVvJC7fydQZh7K6aB0ULd7alNGYdftUR9nUv4holE2G5Q70ADkTd08659tSXUc4pAWZaunDMCQ9pcr8J-oopII0MQLzndyk368HbIdSZOnVjTMroHcZTESltjPh8pXPSrjRw47ZGo_xWbe57VrqcurEXZA-eSJ9iSHbbt1_3aMYAV7-ijl6uo1AmqfR3y-H1mOl_ctYpFPp1J_-Kpa9_mU165I18JYcRWVgRIx8nUfiP0fQ4BnI8d3wV_r9-ojm54uG8W3wVUISoyAqmgzx5byOEuefh_XV05Iu85qfTZ5AfkZqJXnUe35kae8t7TPr0qIRHrEhJDqU0oDximwgexzp79AQ2DhGH89nRLArkLnZauhincgAaBQkeVtnwiggSKg5NpmDdZvCGlbvUXQ",
-    "numberOfLeads": 23,
+    "leadCount": 10,
+    "location": "lembang bandung",
+    "nextPageToken": "AXQCQNTF3nb_8j0-EoB_Y_ljZccBBYhCVx5T1f8KkL7Xedsk1_nE67FQaT_PfLoIXLSdSTBVdaDPMgOloJt2llqQxZqKLEAQemSPd_STNbP9BrA9y8yd98VV21fUx1MZv7fPWDXZ8I3JWyOa5M9XGk-VVJJX_j3rV8ASeq_chF4HWu8CcNgJi2yDoLvizL44x3NqwOWEjnQ-uGY4ntKu7BlviVo-tKie4iGP75b1UgPvdL2_q8bnDQ0KKnJGQ9_B-P6oG3b--AONNJoYeN_NHAwQjp4udN21Wma4j_vVNvugauVk-nmi4J5tYOOLYhFwt8d4SOgP7PRYEo-DEd44Hz_l_Tav2m-JpiJxr6Tk8uV34QZZRBBx1Eta9KFLyY4ZDuOokikjMJiSY7kTzuzKKEC6w2HsE8H7w95A",
+    "numberOfLeads": 10,
     "remainingPlaceIds": [
-      "ChIJGVSN3fnzaS4R3w9qNDpIbjs",
-      "ChIJVamq_YrxaS4R9hqyqiNogIs",
-      "ChIJ7-51aNXzaS4RypEtKv8a4tI",
-      "ChIJN0GGMzDxaS4R7gHxeS_cA-A",
-      "ChIJgWKDuiH0aS4RpXOh9dwgKmU",
-      "ChIJZStnYbnxaS4R8YeHixd-ysE",
-      "ChIJl3B7QmjxaS4R8e8v0pvFOQo",
-      "ChIJP9NKVX7xaS4RUqbmlwXVSpw",
-      "ChIJh7ERVn7xaS4RNX60ukUre7M",
-      "ChIJB-1nPnfxaS4RGh1dTxkvOqk",
-      "ChIJtymEhvvzaS4RsVx2kUWa8f8",
-      "ChIJpwv3wYjxaS4R4ChILWnhbXw",
-      "ChIJsfzm6HLxaS4R2JKW-2UvUfk",
-      "ChIJ22OByHLxaS4RLMY1bVzr_Cs",
-      "ChIJOTzB5kLxaS4R2uKKAQe8Z0Y",
-      "ChIJF4BasgrxaS4RJz7tv7C_uJg",
-      "ChIJq7CzCnjxaS4RMDz4jxG9G8g"
+      "ChIJNf1XRW7haC4R4nOdCUthQEk",
+      "ChIJh-LRFU7haC4R0Mms61x2FFs",
+      "ChIJdUjq01fhaC4R3M61zlA1DSo",
+      "ChIJ1815tznhaC4Rf0IShUpERQs",
+      "ChIJVXM_DT3haC4RotdH7cpfx_0",
+      "ChIJL6qdKTRIaC4RShUgKNkpSN8",
+      "ChIJb68a6zDhaC4RqV_iB1ZdjLM",
+      "ChIJs_AFewDhaC4RyxHtYs4VmLs",
+      "ChIJfRsSy-TgaC4R7S6UEan7BOQ",
+      "ChIJbZ1pCorgaC4RieAvK0RawOM"
     ],
-    "searchOffset": 40
+    "searchOffset": 20
   },
   "$results": [],
   "$metadata": {
-    "createdAt": "2025-06-11T02:17:57.608962+00:00Z",
-    "startedAt": "2025-06-11T02:17:57.608962+00:00Z",
-    "executionTotal": 72
+    "createdAt": "2025-06-11T03:49:37.857919+00:00Z",
+    "startedAt": "2025-06-11T03:49:37.857919+00:00Z",
+    "executionTotal": 32
   }
 }

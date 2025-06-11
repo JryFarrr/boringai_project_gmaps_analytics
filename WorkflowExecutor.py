@@ -145,7 +145,7 @@ class WorkflowExecutor:
 def run_simulation():
     """Menjalankan simulasi alur kerja dari awal hingga akhir."""
     executor = WorkflowExecutor()
-    prompt = "Cari 23 restaurant di Jakarta Selatan yang memiliki rating di atas 4.5, dengan harga terjangkau, dengan jumlah review minimal 30 maximal 50 buka dari jam 9 pagi sampai 10 malam"
+    prompt = "Cari 10 restaurant dengan rating minimal 4.5 di daerah lembang bandung"
     
     print("Starting workflow...")
     executor.start_workflow(prompt)
