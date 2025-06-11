@@ -5304,3 +5304,311 @@ BODY:
   "result": null,
   "state": null
 }
+2025-06-11 13:28:18,623 - INFO - REQUEST to [input]
+PAYLOAD:
+{
+  "business_type": "restoran",
+  "location": "Surabaya",
+  "min_rating": 0.0,
+  "min_reviews": 0,
+  "max_reviews": null,
+  "price_range": "",
+  "business_hours": "anytime",
+  "keywords": "obat batuk",
+  "numberOfLeads": 1
+}
+2025-06-11 13:28:20,671 - INFO - RESPONSE from [input]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "search",
+    "payload": {
+      "business_type": "$state.business_type",
+      "constraints": "$state.constraints",
+      "location": "$state.location",
+      "nextPageToken": "$state.nextPageToken",
+      "searchOffset": "$state.searchOffset"
+    }
+  },
+  "result": null,
+  "state": {
+    "business_type": "restoran",
+    "constraints": {
+      "business_hours": "anytime",
+      "keywords": "obat batuk",
+      "max_reviews": null,
+      "min_rating": 0.0,
+      "min_reviews": 0,
+      "price_range": ""
+    },
+    "leadCount": 0,
+    "location": "Surabaya",
+    "nextPageToken": null,
+    "numberOfLeads": 1,
+    "remainingPlaceIds": [],
+    "searchOffset": 0
+  }
+}
+2025-06-11 13:28:20,671 - INFO - REQUEST to [search]
+PAYLOAD:
+{
+  "business_type": "restoran",
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "obat batuk",
+    "max_reviews": null,
+    "min_rating": 0.0,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "location": "Surabaya",
+  "nextPageToken": null,
+  "searchOffset": 0
+}
+2025-06-11 13:28:23,714 - INFO - RESPONSE from [search]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "scrape",
+    "payload": {
+      "constraints": "$state.constraints",
+      "placeId": "ChIJxS_eoMz71y0RviYs82U-yzE"
+    }
+  },
+  "result": null,
+  "state": {
+    "nextPageToken": "AXQCQNRsxg4O9Oa-8Ut0Z1BF1i1pnFoi9mmWTj_a5endP7N7Qbn751nAXaVWL38dQH8GvYvHuyKZyEzKfgZm-MPBV8gj8iG8wNBv7eyusB7tng3J62OSm0OK2XFwbJfBnFzUh3lmy42J6MJIqfUDol8nPhuZBnwwB3EI_2gHFX0DUgAgh-rzDKOMghezV-380DkDZbb7FY_0YvG1qaCwAfpObG2n60XSX8O6dyNVl5HVpSi_Y7GjKCx1twth6LqvLH78RmSm8c1DpA54Cn2wXc_KmQKhqPu6jcIe_iUDbwXl_uoVH4O7OK6jxc7aN_zs041DhKR2QEdZBlKjBuPqIpIlrt79X9xO6lGmziOlTGXuJDfWKUjrxfgvSZuTkgFx7fWe2z3IgSJ_7V_zEoekWfAg",
+    "remainingPlaceIds": [
+      "ChIJAVY39Fz51y0Rrdj4dRb1lEo",
+      "ChIJk4EvdQb51y0RFDLO6Ah0-sA",
+      "ChIJcyPf0Qr51y0R9tTnFXG13iU",
+      "ChIJl9S7eN771y0Rpp7V9x6GXoU",
+      "ChIJZZ7CcRyfeC4RVcVjRZWlFa4",
+      "ChIJ_eGYztn71y0Rlil8U-fiI30",
+      "ChIJIVsQfdn71y0Ru2gt6e2Qu_U",
+      "ChIJxysqVW371y0Rx7u85Q-HT6U",
+      "ChIJT_E8vs_71y0RMq3dvGdcPTM",
+      "ChIJ0-G0ELj91y0RH_C1TriQbGU",
+      "ChIJtYF-4-n71y0Rhkmb0cnEUKI",
+      "ChIJ4dmodsv91y0RplONgMO1wsc",
+      "ChIJNz9aADr61y0RURGK4jZ90Kg",
+      "ChIJtfSoW-771y0RL_Ki4UavEGo",
+      "ChIJue7fcOD71y0Rsa8tO1xTy98",
+      "ChIJVTjbYwT71y0RHtYK6WpXePI",
+      "ChIJIwdfCt791y0Rl-Yzhyjhvxk",
+      "ChIJLztEjF371y0RyFV0sifZjp4",
+      "ChIJETSpNBv61y0R6zHDlL1jtT4"
+    ],
+    "searchOffset": 20
+  }
+}
+2025-06-11 13:28:23,714 - INFO - REQUEST to [scrape]
+PAYLOAD:
+{
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "obat batuk",
+    "max_reviews": null,
+    "min_rating": 0.0,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "placeId": "ChIJxS_eoMz71y0RviYs82U-yzE"
+}
+2025-06-11 13:28:35,698 - INFO - RESPONSE from [scrape]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "analyze",
+    "payload": {
+      "constraints": "$state.constraints",
+      "leadCount": "$state.leadCount",
+      "placeDetails": {
+        "address": "Jl. Jawa No.6, Gubeng, Kec. Gubeng, Surabaya, Jawa Timur 60281, Indonesia",
+        "businessHours": [
+          "Senin: 10.00\u201300.00",
+          "Selasa: 10.00\u201300.00",
+          "Rabu: 10.00\u201300.00",
+          "Kamis: 10.00\u201300.00",
+          "Jumat: 10.00\u201300.00",
+          "Sabtu: 10.00\u201300.00",
+          "Minggu: 10.00\u201300.00"
+        ],
+        "businessType": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "contact": {
+          "phone": "0811-3281-166",
+          "website": "http://www.locaahands.com/"
+        },
+        "keywordFoundCount": 0,
+        "keywordMatch": "0 out of 1658 reviews mention the keyword.",
+        "negativeReviews": [],
+        "placeId": "ChIJxS_eoMz71y0RviYs82U-yzE",
+        "placeName": "Loca\u0101hands - Dining Club",
+        "positiveReviews": [
+          "Highly recommended. One of the best restaurants in Surabaya. Fantastic Pizza and affordable prices. I liked the atmosphere with the open kitchen design. Service is excellent. 5/5 for me.",
+          "This is one of my favorite places in Surabaya! The service here is incredibly friendly and attentive, which makes every visit feel special. The food is not only delicious but also thoughtfully prepared with great attention to detail. It\u2019s rare to find a spot like this in Surabaya that also has a bar, making it perfect for a relaxed evening out. The atmosphere is fantastic, with a high standard in every aspect, from the quality of the food to the overall vibe. The music adds such a nice touch, creating the perfect ambiance. I absolutely love coming here and would highly recommend it to anyone!"
+        ],
+        "priceRange": "",
+        "rating": 4.8,
+        "totalRatings": 1658
+      }
+    }
+  },
+  "result": null,
+  "state": null
+}
+2025-06-11 13:28:35,698 - INFO - REQUEST to [analyze]
+PAYLOAD:
+{
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "obat batuk",
+    "max_reviews": null,
+    "min_rating": 0.0,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "leadCount": 0,
+  "placeDetails": {
+    "address": "Jl. Jawa No.6, Gubeng, Kec. Gubeng, Surabaya, Jawa Timur 60281, Indonesia",
+    "businessHours": [
+      "Senin: 10.00\u201300.00",
+      "Selasa: 10.00\u201300.00",
+      "Rabu: 10.00\u201300.00",
+      "Kamis: 10.00\u201300.00",
+      "Jumat: 10.00\u201300.00",
+      "Sabtu: 10.00\u201300.00",
+      "Minggu: 10.00\u201300.00"
+    ],
+    "businessType": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "contact": {
+      "phone": "0811-3281-166",
+      "website": "http://www.locaahands.com/"
+    },
+    "keywordFoundCount": 0,
+    "keywordMatch": "0 out of 1658 reviews mention the keyword.",
+    "negativeReviews": [],
+    "placeId": "ChIJxS_eoMz71y0RviYs82U-yzE",
+    "placeName": "Loca\u0101hands - Dining Club",
+    "positiveReviews": [
+      "Highly recommended. One of the best restaurants in Surabaya. Fantastic Pizza and affordable prices. I liked the atmosphere with the open kitchen design. Service is excellent. 5/5 for me.",
+      "This is one of my favorite places in Surabaya! The service here is incredibly friendly and attentive, which makes every visit feel special. The food is not only delicious but also thoughtfully prepared with great attention to detail. It\u2019s rare to find a spot like this in Surabaya that also has a bar, making it perfect for a relaxed evening out. The atmosphere is fantastic, with a high standard in every aspect, from the quality of the food to the overall vibe. The music adds such a nice touch, creating the perfect ambiance. I absolutely love coming here and would highly recommend it to anyone!"
+    ],
+    "priceRange": "",
+    "rating": 4.8,
+    "totalRatings": 1658
+  }
+}
+2025-06-11 13:28:37,764 - INFO - RESPONSE from [analyze]
+BODY:
+{
+  "done": false,
+  "error": null,
+  "next": {
+    "key": "control",
+    "payload": {
+      "state": "$state"
+    }
+  },
+  "result": {
+    "address": "Jl. Jawa No.6, Gubeng, Kec. Gubeng, Surabaya, Jawa Timur 60281, Indonesia",
+    "businessHours": [
+      "Senin: 10.00\u201300.00",
+      "Selasa: 10.00\u201300.00",
+      "Rabu: 10.00\u201300.00",
+      "Kamis: 10.00\u201300.00",
+      "Jumat: 10.00\u201300.00",
+      "Sabtu: 10.00\u201300.00",
+      "Minggu: 10.00\u201300.00"
+    ],
+    "businessType": [
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "contact": {
+      "phone": "0811-3281-166",
+      "website": "http://www.locaahands.com/"
+    },
+    "keywordMatch": "0 out of 1658 reviews mention the keyword.",
+    "matchPercentage": 0,
+    "matchReasoning": "Keyword 'obat batuk' not found in reviews.",
+    "placeId": "ChIJxS_eoMz71y0RviYs82U-yzE",
+    "placeName": "Loca\u0101hands - Dining Club",
+    "priceRange": "",
+    "rating": 4.8,
+    "strengths": [],
+    "summaryNegative": "",
+    "summaryPositive": "",
+    "totalRatings": 1658,
+    "weaknesses": []
+  },
+  "state": {
+    "leadCount": 1
+  }
+}
+2025-06-11 13:28:37,765 - INFO - REQUEST to [control]
+PAYLOAD:
+{
+  "business_type": "restoran",
+  "constraints": {
+    "business_hours": "anytime",
+    "keywords": "obat batuk",
+    "max_reviews": null,
+    "min_rating": 0.0,
+    "min_reviews": 0,
+    "price_range": ""
+  },
+  "leadCount": 1,
+  "location": "Surabaya",
+  "nextPageToken": "AXQCQNRsxg4O9Oa-8Ut0Z1BF1i1pnFoi9mmWTj_a5endP7N7Qbn751nAXaVWL38dQH8GvYvHuyKZyEzKfgZm-MPBV8gj8iG8wNBv7eyusB7tng3J62OSm0OK2XFwbJfBnFzUh3lmy42J6MJIqfUDol8nPhuZBnwwB3EI_2gHFX0DUgAgh-rzDKOMghezV-380DkDZbb7FY_0YvG1qaCwAfpObG2n60XSX8O6dyNVl5HVpSi_Y7GjKCx1twth6LqvLH78RmSm8c1DpA54Cn2wXc_KmQKhqPu6jcIe_iUDbwXl_uoVH4O7OK6jxc7aN_zs041DhKR2QEdZBlKjBuPqIpIlrt79X9xO6lGmziOlTGXuJDfWKUjrxfgvSZuTkgFx7fWe2z3IgSJ_7V_zEoekWfAg",
+  "numberOfLeads": 1,
+  "remainingPlaceIds": [
+    "ChIJAVY39Fz51y0Rrdj4dRb1lEo",
+    "ChIJk4EvdQb51y0RFDLO6Ah0-sA",
+    "ChIJcyPf0Qr51y0R9tTnFXG13iU",
+    "ChIJl9S7eN771y0Rpp7V9x6GXoU",
+    "ChIJZZ7CcRyfeC4RVcVjRZWlFa4",
+    "ChIJ_eGYztn71y0Rlil8U-fiI30",
+    "ChIJIVsQfdn71y0Ru2gt6e2Qu_U",
+    "ChIJxysqVW371y0Rx7u85Q-HT6U",
+    "ChIJT_E8vs_71y0RMq3dvGdcPTM",
+    "ChIJ0-G0ELj91y0RH_C1TriQbGU",
+    "ChIJtYF-4-n71y0Rhkmb0cnEUKI",
+    "ChIJ4dmodsv91y0RplONgMO1wsc",
+    "ChIJNz9aADr61y0RURGK4jZ90Kg",
+    "ChIJtfSoW-771y0RL_Ki4UavEGo",
+    "ChIJue7fcOD71y0Rsa8tO1xTy98",
+    "ChIJVTjbYwT71y0RHtYK6WpXePI",
+    "ChIJIwdfCt791y0Rl-Yzhyjhvxk",
+    "ChIJLztEjF371y0RyFV0sifZjp4",
+    "ChIJETSpNBv61y0R6zHDlL1jtT4"
+  ],
+  "searchOffset": 20
+}
+2025-06-11 13:28:39,840 - INFO - RESPONSE from [control]
+BODY:
+{
+  "done": true,
+  "error": null,
+  "next": null,
+  "result": null,
+  "state": null
+}

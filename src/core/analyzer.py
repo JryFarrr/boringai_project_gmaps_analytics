@@ -59,10 +59,11 @@ class Analyzer:
 
         # Cek Keyword
         keywords = constraints.get("keywords")
+        keyword_not_found = False
         if keywords:
             keyword_n = details.get("keywordFoundCount", 0)
             if keyword_n == 0:
-                score -= self.weights['keywords'] * 2 # Kurangi lebih banyak jika keyword tidak ditemukan
+                keyword_not_found = True
                 reasoning.append(f"Keyword '{keywords}' not found in reviews.")
             elif keyword_n == -1: # API Call gagal
                 score -= self.weights['keywords']
@@ -77,18 +78,13 @@ class Analyzer:
 
         # Pastikan skor tidak negatif
         final_score = max(0, score)
+
+        if keyword_not_found:
+            final_score = 0
         
         # Tentukan 'meets' berdasarkan final_score
-        # Jika skor adalah 0, secara otomatis 'meets' menjadi False
         if final_score == 0:
             meets = False
-        else:
-            # Jika ada reasoning, dan skor > 0, meets bisa tetap True
-            # tergantung pada seberapa ketat kriteria Anda
-            # Untuk kasus ini, jika skor > 0, kita asumsikan meets True
-            # kecuali jika ada kondisi lain yang secara eksplisit menjadikannya False.
-            # Namun, karena kita ingin jika 0% match tidak discrap, logika di atas sudah cukup.
-            pass # meets akan tetap True jika skor > 0 dan tidak ada kondisi 'meets=False' di atas
 
         return final_score, meets, " ".join(reasoning) or "Meets primary criteria."
 
